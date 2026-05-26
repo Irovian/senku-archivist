@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_C",
+  "title": "Appendix C - Compliance Schedule / Calendar",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_C_COMPLIANCE_CALENDAR_DOC",
+    "SRC-13_APPENDICES_APPENDIX_C_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-D2-TESTING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

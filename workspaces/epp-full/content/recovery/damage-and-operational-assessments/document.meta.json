@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC-RECOVERY-DAMAGE_AND_OPERATIONAL_ASSESSMENTS",
+  "title": "Damage and Operational Assessments",
+  "content_group": "recovery",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-D2-TESTING",
+    "REQ-LTC-48373-E-POWER-SYSTEMS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

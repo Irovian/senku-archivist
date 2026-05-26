@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "Q-0005",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should we pursue old-browser feature parity first, or rebuild only the parts that feel product-ready?",
+  "recommended_answer": "Target full behavior parity as the acceptance contract, but implement it as staged React/service slices.",
+  "answer": "Target full behavior parity as the acceptance contract, but implement it as staged React/service slices.",
+  "rationale": "The user wants all existing Markdown functionality and chat ported. A parity contract prevents accidental loss while staged slices avoid copying generated HTML as architecture.",
+  "related_backlog_items": [
+    "SG-0003"
+  ],
+  "related_requirements": [
+    "REQ-0014",
+    "REQ-0015",
+    "REQ-0031"
+  ],
+  "resolved_by": "DEC-SG-0011",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

@@ -1,0 +1,24 @@
+{
+  "doc_id": "DOC-HAZARD_SPECIFIC_PROCEDURES-TORNADO_HIGH_WINDS",
+  "title": "Tornado / High Winds",
+  "content_group": "hazard-specific-procedures",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
+    "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
+    "SRC-10_SECTION_E_EMERGENCY_PROCEDURES_PART_3_MISSING_RESIDENT_THROUGH_WILDFIRE_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A1A2-RISK-STRATEGIES",
+    "REQ-LTC-48373-B-OVERALL-POLICIES",
+    "REQ-LTC-48373-B2-B8-OPERATIONS",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

@@ -1,0 +1,104 @@
+{
+  "doc_id": "REG-SOMZ-E-0019",
+  "title": "E-0019 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0019",
+      "E-0019",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0019",
+      "E-0019"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "HHA",
+      "Hospice",
+      "PACE"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0019",
+    "canonical_tag": "E-0019",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7418.113(b)(2)",
+      "\u00a7460.84(b)(4)",
+      "\u00a7484.102(b)(2)"
+    ],
+    "provider_types": [
+      "HHA",
+      "Hospice",
+      "PACE"
+    ],
+    "ltc_relevant": false,
+    "applicability_notes": [
+      "NOTE: The regulatory language for hospices under \u00a7418.113(b)(2) does not include",
+      "NOTE: This only applies to homebound Hospice, PACE and HHAs."
+    ],
+    "source_span": {
+      "start_line": 1810,
+      "end_line": 1878,
+      "start_page": 41,
+      "end_page": 43
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0019-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 9,
+        "end_line": 13,
+        "applies_to": [
+          "HHA",
+          "Hospice",
+          "PACE"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7418.113(b)(2)",
+          "\u00a7460.84(b)(4)",
+          "\u00a7484.102(b)(2)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "HHA, Hospice, PACE",
+        "text_sha256": "66d907d5890080563af4ac4f089f7b928340878c1eb1edc0e459a6f7936eca44"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

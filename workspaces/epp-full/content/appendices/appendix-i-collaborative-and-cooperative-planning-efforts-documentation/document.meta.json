@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_I",
+  "title": "Appendix I - Collaborative and Cooperative Planning Efforts Documentation",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_I_COLLABORATIVE_AND_COOPERATIVE_PLANNING_EFFORTS_XLS",
+    "SRC-13_APPENDICES_APPENDIX_I_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A4-COLLABORATION"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

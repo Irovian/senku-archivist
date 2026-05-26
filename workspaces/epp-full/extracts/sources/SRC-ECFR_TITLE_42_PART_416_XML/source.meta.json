@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "source_id": "SRC-ECFR_TITLE_42_PART_416_XML",
+  "source_path": "_sources/regulatory/ecfr/title-42/part-416/title-42-part-416-ecfr-2026-04-28.xml",
+  "source_type": "xml",
+  "extraction_method": "xml_text",
+  "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-04-28/title-42.xml?part=416",
+  "warning": null,
+  "generated_at": "2026-05-10T23:49:56Z"
+}

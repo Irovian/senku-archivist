@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0012",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the EPP workspace stay as a small seed subset, or should the full EPP content corpus live in this repo?",
+  "recommended_answer": "Import the full EPP content corpus into this repo as a standalone workspace while keeping the seed workspace for fast scaffold tests.",
+  "answer": "Import the full EPP content corpus into this repo as a standalone workspace while keeping the seed workspace for fast scaffold tests.",
+  "rationale": "The user explicitly wants all EPP content here, and the full corpus is needed to expose appendix, compliance, artifact, and navigation edge cases.",
+  "related_backlog_items": [
+    "SG-0007"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022"
+  ],
+  "resolved_by": "DEC-SG-0006",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

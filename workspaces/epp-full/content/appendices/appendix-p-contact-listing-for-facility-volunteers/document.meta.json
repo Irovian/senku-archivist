@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_P",
+  "title": "Appendix P - Contact Listing for Facility Volunteers",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_P_CONTACT_LISTING_FOR_FACILITY_VOLUNTEERS_1_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_P_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-C1-COMMUNICATION-CONTACTS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME",
+    "PLH-LTC-OMBUDSMAN-CONTACT",
+    "PLH-PRIMARY-EMERGENCY-CONTACT"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

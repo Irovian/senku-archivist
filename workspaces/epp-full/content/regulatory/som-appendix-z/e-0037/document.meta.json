@@ -1,0 +1,405 @@
+{
+  "doc_id": "REG-SOMZ-E-0037",
+  "title": "E-0037 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0037",
+      "E-0037",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0037",
+      "E-0037"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0037",
+    "canonical_tag": "E-0037",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748",
+      "\u00a7403.748(d)(1)",
+      "\u00a7416.54",
+      "\u00a7416.54(d)(1)",
+      "\u00a7418.113(d)",
+      "\u00a7418.113(d)(1)",
+      "\u00a7441.184(d)",
+      "\u00a7441.184(d)(1)",
+      "\u00a7460.84(d)",
+      "\u00a7460.84(d)(1)",
+      "\u00a7482.15",
+      "\u00a7482.15(d)(1)",
+      "\u00a7483.475",
+      "\u00a7483.475(d)(1)",
+      "\u00a7483.73(d)",
+      "\u00a7483.73(d)(1)",
+      "\u00a7484.102",
+      "\u00a7484.102(d)(1)",
+      "\u00a7485.625(d)",
+      "\u00a7485.625(d)(1)",
+      "\u00a7485.68(d)",
+      "\u00a7485.68(d)(1)",
+      "\u00a7485.727",
+      "\u00a7485.727(d)(1)",
+      "\u00a7485.920(d)",
+      "\u00a7485.920(d)(1)",
+      "\u00a7486.360",
+      "\u00a7486.360(d)(1)",
+      "\u00a7491.12",
+      "\u00a7491.12(d)(1)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs or ESRD facilities.",
+      "NOTE: For ease of demonstrating compliance that the facility has updated its training"
+    ],
+    "source_span": {
+      "start_line": 3385,
+      "end_line": 3636,
+      "start_page": 76,
+      "end_page": 82
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 5,
+        "end_line": 18,
+        "applies_to": [
+          "ASC",
+          "HHA",
+          "Hospital",
+          "ICF/IID",
+          "OPO",
+          "OPT/OSP",
+          "RHC/FQHC",
+          "RNHCI"
+        ],
+        "does_not_apply_to": [
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "Hospice",
+          "LTC Facility",
+          "PACE",
+          "PRTF",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7403.748",
+          "\u00a7416.54",
+          "\u00a7482.15",
+          "\u00a7483.475",
+          "\u00a7484.102",
+          "\u00a7485.727",
+          "\u00a7486.360",
+          "\u00a7491.12"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "ASC, HHA, Hospital, ICF/IID, OPO, OPT/OSP, RHC/FQHC, RNHCI",
+        "text_sha256": "15038b16a5892e40e38edec46343c9cbd04d07d11a15d3d34f4d9f91c6907fd5"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-2",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 2",
+        "source_section": "Regulatory Text",
+        "start_line": 19,
+        "end_line": 34,
+        "applies_to": [
+          "Hospice"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7418.113(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "Hospice",
+        "text_sha256": "43b1f567670b2cb326f01ac0e1b9c66c796e6cf2d5bf4eda773114a6e781710e"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-3",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 3",
+        "source_section": "Regulatory Text",
+        "start_line": 35,
+        "end_line": 47,
+        "applies_to": [
+          "PRTF"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7441.184(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "PRTF",
+        "text_sha256": "4eb1c22d25ad056c3399f2120fe3ec178c84261dab17aa801e22acf5352861ec"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-4",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 4",
+        "source_section": "Regulatory Text",
+        "start_line": 48,
+        "end_line": 61,
+        "applies_to": [
+          "OPT/OSP",
+          "PACE"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7460.84(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "OPT/OSP, PACE",
+        "text_sha256": "c6f57877df7cfeee486a5855c48c43a70c3b7ce16fcff3282647cae5a120490c"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-5",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 5",
+        "source_section": "Regulatory Text",
+        "start_line": 62,
+        "end_line": 70,
+        "applies_to": [
+          "LTC Facility"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7483.73(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "LTC Facility",
+        "text_sha256": "8c4c4bec44b4fc08754db3ccb8b820e3f0a1a5eaaa51c4b198b4940d4c91bcbf"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-6",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 6",
+        "source_section": "Regulatory Text",
+        "start_line": 71,
+        "end_line": 85,
+        "applies_to": [
+          "CORF"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7485.68(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "CORF",
+        "text_sha256": "9fe346439a21857fb701b277faf10543960f9f8149e119395008891bdf3642e6"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-7",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 7",
+        "source_section": "Regulatory Text",
+        "start_line": 86,
+        "end_line": 99,
+        "applies_to": [
+          "CAH"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7485.625(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "CAH",
+        "text_sha256": "a944edf08c1a83c1072b74e2be56fd3faed9389db95a9686163ba7e0cf6b8f8f"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0037-REGULATORY-BRANCH-8",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 8",
+        "source_section": "Regulatory Text",
+        "start_line": 100,
+        "end_line": 105,
+        "applies_to": [
+          "CMHC"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7485.920(d)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "CMHC",
+        "text_sha256": "84dafbbfbd08c469fafe21864dfc5249184b7b7a55c7762279e48b2ca2bbc061"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

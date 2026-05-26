@@ -1,0 +1,201 @@
+{
+  "doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+  "title": "Incident Command System Organizational Chart",
+  "content_group": "incident-command",
+  "content_type": "support_artifact",
+  "source_ids": [
+    "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+    "REQ-LTC-48373-D-OVERALL-TRAINING-TESTING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started",
+  "search": {
+    "keywords": [
+      "incident command system",
+      "ICS organizational chart",
+      "command roles",
+      "command center roles",
+      "section chiefs",
+      "role assignments",
+      "emergency leadership"
+    ],
+    "aliases": [
+      "ICS Org Chart",
+      "Incident Command Org Chart",
+      "Command Structure Chart"
+    ],
+    "legacy_titles": [
+      "Incident Command System Organizational Chart"
+    ],
+    "audience_terms": [
+      "Administrator",
+      "Incident Commander",
+      "section chiefs",
+      "emergency leadership team"
+    ]
+  },
+  "retrieval": {
+    "canonical_terms": [
+      "Incident Command System organizational chart",
+      "ICS role structure",
+      "command role chart"
+    ],
+    "aliases": [
+      "ICS org chart",
+      "incident command org chart",
+      "command structure chart"
+    ],
+    "legacy_terms": [
+      "Incident Command System Organizational Chart",
+      "command center organizational chart",
+      "emergency leadership chart"
+    ],
+    "task_queries": [
+      "Who reports to the Incident Commander?",
+      "Which command roles can be activated?",
+      "How should staff find emergency leadership roles?",
+      "Which chart should be printed for command role assignments?"
+    ],
+    "role_terms": [
+      "Administrator",
+      "Incident Commander",
+      "Documentation Recorder",
+      "Public Information Officer",
+      "Operations Section Chief",
+      "Planning Section Chief",
+      "Logistics Section Chief",
+      "Finance Section Chief"
+    ],
+    "trigger_terms": [
+      "EOP activation",
+      "command center activation",
+      "role assignment",
+      "annual emergency preparedness review",
+      "post-incident command structure gap"
+    ],
+    "artifact_terms": [
+      "org chart",
+      "role nodes",
+      "assigned person fields",
+      "alternate fields",
+      "contact fields"
+    ],
+    "semantic_queries": [
+      "emergency command reporting structure for facility response",
+      "printable chart for assigning incident command roles",
+      "who leads operations planning logistics and finance during an incident"
+    ],
+    "facets": {
+      "artifact_type": [
+        "org_chart"
+      ],
+      "audiences": [
+        "Administrator",
+        "Incident Commander",
+        "section chiefs"
+      ],
+      "response_phase": [
+        "command activation",
+        "incident management"
+      ],
+      "outputs": [
+        "printable chart",
+        "role assignment view",
+        "related role cards"
+      ]
+    }
+  },
+  "education": {
+    "training_relevance": "high",
+    "audiences": [
+      "leadership",
+      "incident command staff",
+      "section chiefs"
+    ],
+    "role_groups": [
+      "Incident Commander",
+      "Documentation Recorder",
+      "Public Information Officer",
+      "Operations Section Chief",
+      "Planning Section Chief",
+      "Logistics Section Chief",
+      "Finance Section Chief"
+    ],
+    "competency_domains": [
+      "incident command structure",
+      "role reporting relationships",
+      "command center staffing",
+      "emergency leadership communication"
+    ],
+    "training_triggers": [
+      "policy created",
+      "material policy change",
+      "annual review",
+      "post-drill gap",
+      "post-incident gap",
+      "role change"
+    ],
+    "suggested_learning_outputs": [
+      "staff briefing",
+      "microlearning outline",
+      "quiz draft",
+      "competency checklist",
+      "drill prep prompt"
+    ],
+    "quiz_affordances": [
+      "match command roles to responsibilities",
+      "identify who reports to the Incident Commander",
+      "recognize which section chief owns operations planning logistics or finance"
+    ],
+    "change_impact_prompts": [
+      "If command role labels or reporting relationships change, review whether role-specific training and drill materials need updates.",
+      "If the printable chart changes, confirm whether command center orientation materials need updated screenshots or handouts."
+    ]
+  },
+  "document_control": {
+    "policy_number": null,
+    "version": null,
+    "approval_status": "draft",
+    "effective_date": null,
+    "last_reviewed_date": null,
+    "next_review_due": null,
+    "approved_by": null,
+    "approved_title": null,
+    "signature_required": true,
+    "signature_label": "Administrator / Designee Signature"
+  },
+  "manual": {
+    "section_number": null,
+    "display_number": null
+  },
+  "export": {
+    "preferred_profile": "support_artifact",
+    "orientation": "landscape",
+    "show_document_control": true,
+    "show_related_documents": true
+  },
+  "related_documents": [
+    {
+      "doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "relationship": "companion",
+      "label": "Incident Commander",
+      "rationale": "The role card defines the lead role shown at the top of the organizational chart."
+    },
+    {
+      "doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "relationship": "supports",
+      "label": "Activation of the Incident Command System",
+      "rationale": "The activation topic uses the command structure shown in this artifact when command roles are assigned."
+    }
+  ]
+}

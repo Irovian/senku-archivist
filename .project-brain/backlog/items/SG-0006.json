@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "SG-0006",
+  "title": "Inventory and port active artifact renderers",
+  "type": "research",
+  "status": "needs_research",
+  "priority": "medium",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Inventory artifact block usage across active EPP content and decide which runtime renderers must exist before full EPP migration.",
+  "acceptance_criteria": [
+    "Active artifact payloads are counted by artifact type and renderer template",
+    "Required live runtime renderers for full EPP migration are listed",
+    "Rare, inactive, or unknown artifact blocks have graceful source-aware placeholder behavior until a runtime renderer exists",
+    "HVA workbook migration risk is called out separately"
+  ],
+  "non_goals": [
+    "Implementing all artifact renderers during inventory",
+    "Pre-rendering the full EPP corpus as the normal browse path",
+    "Finalizing print/export behavior"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0014",
+    "REQ-0015",
+    "REQ-0020",
+    "REQ-0036"
+  ],
+  "related_questions": [
+    "Q-0010"
+  ],
+  "validation": [
+    "Run an artifact inventory script over the EPP source repo",
+    "Spot-check inventory against _project/artifact_index_seed.json"
+  ],
+  "notes": "This should happen before declaring full EPP workspace migration complete. Browse-time document rendering should stay source-driven; generated snapshots are for export, print, review, or disposable caches."
+}

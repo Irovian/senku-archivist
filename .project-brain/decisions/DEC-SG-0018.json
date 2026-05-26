@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0018",
+  "title": "Create granular commits for accepted review units",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "One accepted model proposal or approved manual-draft batch should create one Git commit by default. Review-session batching can be added later only if granular commits become too noisy.",
+  "context": "Archivist uses Git for durable file snapshots and an audit ledger for proposal, approval, rationale, export, and review metadata. Policy content needs transparent history that can answer what changed, when, and why without forcing reviewers to untangle broad mixed commits.",
+  "rationale": "Granular accepted-review-unit commits keep policy changes auditable, reviewable, and easier to roll back or explain. Batching is a convenience optimization that can wait until real review sessions prove it is needed.",
+  "alternatives_considered": [
+    "Batch all accepted changes from a review session into one commit by default",
+    "Let the model decide commit grouping automatically",
+    "Store accepted review history only in an audit ledger without Git commits"
+  ],
+  "consequences": [
+    "Q-0009 is resolved",
+    "Accepted model proposals and approved manual-draft batches share the same default commit granularity",
+    "The audit ledger should link each accepted review unit to its resulting commit hash",
+    "SG-0005 no longer needs grilling and remains blocked only by earlier browser, renderer, and proposal workflow slices"
+  ],
+  "related_requirements": [
+    "REQ-0009",
+    "REQ-0018",
+    "REQ-0038"
+  ],
+  "related_backlog_items": [
+    "SG-0005",
+    "SG-0004",
+    "SG-0014"
+  ],
+  "related_questions": [
+    "Q-0009"
+  ]
+}

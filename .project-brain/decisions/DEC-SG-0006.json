@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0006",
+  "title": "Import the full EPP content corpus",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should contain the full EPP content corpus for this migration, not only a small seed subset.",
+  "context": "The user wants the EPP manual to remain the first serious proving workspace because its full corpus contains the edge cases needed to shape Archivist, especially Appendix A and other appendix/tool documents.",
+  "rationale": "A tiny seed is useful for scaffolding, but it hides navigation, renderer, compliance, source, appendix, and artifact cases that will determine whether Archivist is actually useful for policy work.",
+  "alternatives_considered": [
+    "Keep only a small seed workspace until the app shell is complete",
+    "Open the original EPP repo externally instead of importing content into Archivist",
+    "Copy only selected high-value EPP files"
+  ],
+  "consequences": [
+    "Full-content import must be repeatable so the workspace can be refreshed from the old EPP repo",
+    "The full EPP workspace must include project metadata and source references, not just Markdown bodies",
+    "The app can keep the seed workspace for fast scaffold testing while using the full workspace for parity and edge-case work",
+    "Appendix A and other interactive artifacts become migration drivers rather than deferred oddities"
+  ],
+  "related_requirements": [
+    "REQ-0002",
+    "REQ-0014",
+    "REQ-0015",
+    "REQ-0021",
+    "REQ-0022"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0008"
+  ],
+  "related_questions": [
+    "Q-0012"
+  ]
+}

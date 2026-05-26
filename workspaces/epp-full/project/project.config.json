@@ -1,0 +1,103 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "project_name": "SNF Emergency Preparedness Program Rewrite",
+  "domain": "regulated_manual_rewrite",
+  "source_root_patterns": [
+    "2 - *",
+    "3 - *",
+    "4 - *",
+    "5 - *",
+    "6 - *",
+    "7 - *",
+    "8 - *",
+    "9 - *",
+    "10 - *",
+    "11 - *",
+    "12 - *",
+    "13 - Appendices/**/*",
+    "SOM Appendix Z 2019.pdf",
+    "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+    "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-*.xml",
+    "_sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html"
+  ],
+  "content_groups": [
+    {
+      "id": "governance-and-planning",
+      "title": "Governance and Planning",
+      "path": "_content/governance-and-planning"
+    },
+    {
+      "id": "all-hazards-response",
+      "title": "All-Hazards Response",
+      "path": "_content/all-hazards-response"
+    },
+    {
+      "id": "incident-command",
+      "title": "Incident Command",
+      "path": "_content/incident-command"
+    },
+    {
+      "id": "evacuation",
+      "title": "Evacuation",
+      "path": "_content/evacuation"
+    },
+    {
+      "id": "hazard-specific-procedures",
+      "title": "Hazard-Specific Procedures",
+      "path": "_content/hazard-specific-procedures"
+    },
+    {
+      "id": "resources-and-lists",
+      "title": "Resources and Lists",
+      "path": "_content/resources-and-lists"
+    },
+    {
+      "id": "recovery",
+      "title": "Recovery",
+      "path": "_content/recovery"
+    },
+    {
+      "id": "appendices",
+      "title": "Appendices",
+      "path": "_content/appendices"
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory References",
+      "path": "_content/regulatory"
+    }
+  ],
+  "workflow": {
+    "stages": [
+      "inventory",
+      "compliance_mapping",
+      "drafting",
+      "human_review",
+      "revision",
+      "approved"
+    ],
+    "states": [
+      "not_started",
+      "in_progress",
+      "blocked",
+      "done"
+    ]
+  },
+  "placeholder_style": "structured_tokens",
+  "citation_style": "inline_statute_and_e_tag",
+  "applicability_scope": {
+    "provider_type": "nursing_home",
+    "provider_subtype": "snf_nursing_home",
+    "statutory_anchor": "\u00a7483.73",
+    "exclude_non_ltc_appendix_z_content": false,
+    "regulatory_corpus_strategy": "full_all_provider_capture_with_provider_filtering"
+  },
+  "rule_pack": {
+    "name": "cms-ltc-appendix-z-epp",
+    "version": "0.1.0",
+    "source_document": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+    "notes": "Seeded for LTC emergency preparedness rewrite work and designed to be refined during crosswalk review.",
+    "primary_regulatory_source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "source_revision": "204"
+  }
+}

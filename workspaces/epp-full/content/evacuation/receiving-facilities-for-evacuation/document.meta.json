@@ -1,0 +1,141 @@
+{
+  "doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+  "title": "Receiving Facilities for Evacuation",
+  "content_group": "evacuation",
+  "content_type": "support_artifact",
+  "source_ids": [
+    "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-B2-B8-OPERATIONS",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C4-C7-INFORMATION-SHARING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started",
+  "retrieval": {
+    "canonical_terms": [
+      "Receiving facility directory",
+      "evacuation receiving facilities",
+      "evacuation destination records"
+    ],
+    "aliases": [
+      "receiving facility list",
+      "evacuation destination directory",
+      "transfer destination list",
+      "regional backup facilities"
+    ],
+    "legacy_terms": [
+      "Receiving Facilities for Evacuation",
+      "receiving-facility pages"
+    ],
+    "task_queries": [
+      "Where can residents be evacuated to?",
+      "How do I find receiving facilities with capacity?",
+      "What contact information is needed for evacuation destinations?",
+      "Which receiving facilities have an MOU or agreement?"
+    ],
+    "role_terms": [
+      "Incident Commander",
+      "resident placement staff",
+      "transportation coordinators",
+      "resident-care leaders",
+      "command center"
+    ],
+    "trigger_terms": [
+      "partial evacuation",
+      "full evacuation",
+      "resident placement",
+      "receiving partner confirmation",
+      "transportation feasibility",
+      "capacity confirmation"
+    ],
+    "artifact_terms": [
+      "receiving facility records",
+      "agreement status",
+      "population fit",
+      "capacity",
+      "primary contact"
+    ],
+    "semantic_queries": [
+      "find evacuation destinations by distance agreement status and population fit",
+      "confirm receiving facility contact and capacity during evacuation",
+      "directory for nearby and regional resident placement options"
+    ],
+    "facets": {
+      "artifact_type": [
+        "receiving_facility_directory"
+      ],
+      "response_phase": [
+        "evacuation planning",
+        "resident placement"
+      ],
+      "audiences": [
+        "command center",
+        "resident placement staff",
+        "transportation coordinators",
+        "resident-care leaders"
+      ],
+      "filters": [
+        "distance category",
+        "facility type",
+        "agreement status",
+        "capacity",
+        "population fit",
+        "active record"
+      ],
+      "outputs": [
+        "searchable directory",
+        "compact print directory"
+      ]
+    }
+  },
+  "education": {
+    "training_relevance": "medium",
+    "audiences": [
+      "command center",
+      "resident placement staff",
+      "transportation coordinators",
+      "resident-care leaders"
+    ],
+    "role_groups": [
+      "Incident Commander",
+      "resident placement staff",
+      "transportation coordinators",
+      "resident-care leaders"
+    ],
+    "competency_domains": [
+      "evacuation destination lookup",
+      "receiving facility confirmation",
+      "capacity and population-fit review",
+      "evacuation communication documentation"
+    ],
+    "training_triggers": [
+      "policy created",
+      "material policy change",
+      "annual review",
+      "post-drill gap",
+      "post-incident gap"
+    ],
+    "suggested_learning_outputs": [
+      "staff briefing",
+      "microlearning outline",
+      "quiz draft",
+      "drill prep prompt"
+    ],
+    "quiz_affordances": [
+      "identify information needed before using a receiving facility",
+      "select factors that affect receiving destination suitability",
+      "recognize that real-time capacity must be confirmed during the incident"
+    ],
+    "change_impact_prompts": [
+      "If receiving facility fields or agreement-status options change, review evacuation drill instructions and staff lookup guidance.",
+      "If destination confirmation workflow changes, confirm whether resident placement and transportation coordinator training need updates."
+    ]
+  }
+}

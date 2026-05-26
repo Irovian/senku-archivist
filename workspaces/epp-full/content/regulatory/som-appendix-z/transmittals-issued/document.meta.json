@@ -1,0 +1,37 @@
+{
+  "doc_id": "REG-SOMZ-SUPPORT-TRANSMITTALS_ISSUED",
+  "title": "Appendix Z Transmittals Issued for this Chapter",
+  "content_group": "regulatory",
+  "content_type": "regulatory_support",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "Appendix Z",
+      "Transmittals Issued for this Chapter"
+    ],
+    "aliases": [
+      "Transmittals Issued for this Chapter"
+    ],
+    "legacy_titles": [],
+    "audience_terms": []
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "support_section",
+    "source_span": {
+      "start_line": 4758,
+      "end_line": 4787,
+      "start_page": 108,
+      "end_page": 108
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

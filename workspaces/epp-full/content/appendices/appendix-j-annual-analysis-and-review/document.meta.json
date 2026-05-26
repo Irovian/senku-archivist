@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_J",
+  "title": "Appendix J - Annual Analysis and Review",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_J_ANNUAL_ANALYSIS_AND_REVIEW_XLS",
+    "SRC-13_APPENDICES_APPENDIX_J_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-D2-TESTING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

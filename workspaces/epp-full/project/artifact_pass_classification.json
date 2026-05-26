@@ -1,0 +1,1790 @@
+{
+  "schema_version": "epp-artifact-classification/v1",
+  "generated_at": "2026-05-06T19:41:34Z",
+  "scope": "Remaining resource, appendix, chart, form, job action sheet, map, workbook, and quick-reference items after prose drafting batches.",
+  "principles": [
+    "Preserve function and intent, not legacy Word or Excel visual design.",
+    "Keep Markdown as the native authoring wrapper.",
+    "Use structured artifact blocks or sidecars for fields, rows, formulas, choices, repeat groups, and chart nodes.",
+    "Use HTML/CSS templates for PDF and print rendering, especially for fixed-page forms, charts, worksheets, and wide quick references.",
+    "Favor digital-friendly controls such as checkboxes, dropdowns, date/time inputs, repeatable records, attachments, and calculated outputs."
+  ],
+  "visual_evidence": {
+    "contact_sheets": [
+      "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png",
+      "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png",
+      "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png",
+      "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+    ],
+    "note": "Visual inspection used generated PDFs, layout text, and page images created from the original Word/Excel sources. Intermediate render files are not retained; contact sheets are kept as durable evidence and sources can be regenerated from the original files."
+  },
+  "recommended_pilot_items": [
+    "ITEM-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+    "ITEM-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+    "ITEM-EVACUATION-FULL_BUILDING_EVACUATION_PLAN_ALGORITHM",
+    "ITEM-EVACUATION-RESIDENT_EVACUATION_TRACKING_FORM",
+    "ITEM-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS",
+    "ITEM-APPENDICES-APPENDIX_A",
+    "ITEM-APPENDICES-APPENDIX_K",
+    "ITEM-APPENDICES-APPENDIX_M"
+  ],
+  "items": [
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "title": "Incident Command System Organizational Chart",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "org_chart",
+      "renderer_template": "org-chart-v1",
+      "interaction_controls": [
+        "role nodes",
+        "assigned person fields",
+        "alternate fields",
+        "contact fields",
+        "node ordering",
+        "conditional role visibility"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          8
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a static hierarchy chart with role boxes and placeholder names.",
+      "functional_intent": "Show command hierarchy and reporting relationships for facility incident command roles.",
+      "authoring_strategy": "Use structured nodes and role metadata in an epp-artifact block; render as responsive HTML/SVG org chart.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+      "doc_id": "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+      "title": "Command Center Organizational Chart",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "org_chart",
+      "renderer_template": "command-center-org-chart-v1",
+      "interaction_controls": [
+        "role nodes",
+        "assigned person fields",
+        "alternate fields",
+        "contact fields",
+        "node ordering",
+        "conditional role visibility"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          9
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a crowded command-center chart with overlapping boxes and color outlines.",
+      "functional_intent": "Show activated command center roles, section chiefs, support roles, and reporting lines.",
+      "authoring_strategy": "Use structured nodes grouped by command/operations/planning/logistics/finance and render as clean HTML/SVG chart.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-JOB_ACTION_SHEETS_AND_ASSOCIATED_FORMS",
+      "doc_id": "DOC-INCIDENT_COMMAND-JOB_ACTION_SHEETS_AND_ASSOCIATED_FORMS",
+      "title": "Job Action Sheets and Associated Forms",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "artifact_index",
+      "renderer_template": "artifact-index-v1",
+      "interaction_controls": [
+        "artifact links",
+        "role/category filters",
+        "template references",
+        "owner fields"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          2,
+          5,
+          10
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a packet index that points to many job action sheets and forms.",
+      "functional_intent": "Provide navigation and ownership map for role sheets and associated forms.",
+      "authoring_strategy": "Use Markdown overview plus structured artifact index linking each role, form, and template.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "title": "Incident Commander",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Incident Commander role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+      "doc_id": "DOC-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+      "title": "Documentation Recorder",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          17,
+          18,
+          19
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Documentation Recorder role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-SAFETY_SECURITY_LIAISON_OFFICER",
+      "doc_id": "DOC-INCIDENT_COMMAND-SAFETY_SECURITY_LIAISON_OFFICER",
+      "title": "Safety / Security / Liaison Officer",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          43,
+          44,
+          45,
+          46
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Safety / Security / Liaison Officer role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-PUBLIC_INFORMATION_OFFICER",
+      "doc_id": "DOC-INCIDENT_COMMAND-PUBLIC_INFORMATION_OFFICER",
+      "title": "Public Information Officer",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          53,
+          54,
+          55,
+          56
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Public Information Officer role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-LOGISTICS_SECTION_CHIEF",
+      "doc_id": "DOC-INCIDENT_COMMAND-LOGISTICS_SECTION_CHIEF",
+      "title": "Logistics Section Chief",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          65,
+          66,
+          67
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Logistics Section Chief role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-PLANNING_SECTION_CHIEF",
+      "doc_id": "DOC-INCIDENT_COMMAND-PLANNING_SECTION_CHIEF",
+      "title": "Planning Section Chief",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          85,
+          86,
+          87
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Planning Section Chief role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-LABOR_POOL_UNIT_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-LABOR_POOL_UNIT_LEADER",
+      "title": "Labor Pool Unit Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          103,
+          104,
+          105
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Labor Pool Unit Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "title": "Floor Evacuation Team - Team Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          111
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a compact evacuation team leader assignment sheet with leader/location fields and practical movement instructions.",
+      "functional_intent": "Guide the Floor Evacuation Team - Team Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-ELEVATOR_EVACUATION_TEAM_TEAM_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-ELEVATOR_EVACUATION_TEAM_TEAM_LEADER",
+      "title": "Elevator Evacuation Team - Team Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          112
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a compact evacuation team leader assignment sheet with leader/location fields and practical movement instructions.",
+      "functional_intent": "Guide the Elevator Evacuation Team - Team Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-STAIRWELL_EVACUATION_TEAM_TEAM_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-STAIRWELL_EVACUATION_TEAM_TEAM_LEADER",
+      "title": "Stairwell Evacuation Team - Team Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          113
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a compact evacuation team leader assignment sheet with leader/location fields and practical movement instructions.",
+      "functional_intent": "Guide the Stairwell Evacuation Team - Team Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-DISCHARGE_FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-DISCHARGE_FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "title": "Discharge Floor Evacuation Team - Team Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          114
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a compact evacuation team leader assignment sheet with leader/location fields and practical movement instructions.",
+      "functional_intent": "Guide the Discharge Floor Evacuation Team - Team Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-FINANCE_SECTION_CHIEF",
+      "doc_id": "DOC-INCIDENT_COMMAND-FINANCE_SECTION_CHIEF",
+      "title": "Finance Section Chief",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          116,
+          117,
+          118
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Finance Section Chief role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-OPERATIONS_SECTION_CHIEF",
+      "doc_id": "DOC-INCIDENT_COMMAND-OPERATIONS_SECTION_CHIEF",
+      "title": "Operations Section Chief",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          137,
+          138,
+          139
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Operations Section Chief role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-NURSING_SUPERVISOR_DIRECTOR_OF_NURSING_CHARGE_NURSE_DEPARTMENT_DIRECTOR",
+      "doc_id": "DOC-INCIDENT_COMMAND-NURSING_SUPERVISOR_DIRECTOR_OF_NURSING_CHARGE_NURSE_DEPARTMENT_DIRECTOR",
+      "title": "Nursing Supervisor / Director of Nursing / Charge Nurse / Department Director",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          157,
+          158
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Nursing Supervisor / Director of Nursing / Charge Nurse / Department Director role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-TRIAGE_UNIT_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-TRIAGE_UNIT_LEADER",
+      "title": "Triage Unit Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          161,
+          162
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Triage Unit Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-INCIDENT_COMMAND-HOLDING_AREA_UNIT_LEADER",
+      "doc_id": "DOC-INCIDENT_COMMAND-HOLDING_AREA_UNIT_LEADER",
+      "title": "Holding Area Unit Leader",
+      "content_group": "incident-command",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "job_action_sheet",
+      "renderer_template": "job-action-sheet-v1",
+      "interaction_controls": [
+        "role assignment fields",
+        "date/time fields",
+        "phone/radio fields",
+        "checkbox task lists",
+        "repeatable action groups",
+        "linked forms",
+        "notes"
+      ],
+      "visual_evidence": {
+        "source_pdf": "6 - Section C - Incident Command System.pdf",
+        "pages_inspected": [
+          163,
+          164
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-c-selected.png"
+      },
+      "visual_observation": "Original is a role assignment sheet with mission, assigned-to fields, attached forms, and checkbox action lists; some roles include location or resident movement tables.",
+      "functional_intent": "Guide the Holding Area Unit Leader role during incident command activation and evacuation response.",
+      "authoring_strategy": "Use one shared job-action-sheet schema: mission, reports-to, assignment fields, linked forms, action groups, and role-specific repeatable tables.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-EVACUATION-FULL_BUILDING_EVACUATION_PLAN_ALGORITHM",
+      "doc_id": "DOC-EVACUATION-FULL_BUILDING_EVACUATION_PLAN_ALGORITHM",
+      "title": "Full Building Evacuation Plan Algorithm",
+      "content_group": "evacuation",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "workflow_algorithm",
+      "renderer_template": "evacuation-algorithm-v1",
+      "interaction_controls": [
+        "decision nodes",
+        "action nodes",
+        "role ownership",
+        "branch conditions",
+        "linked artifacts"
+      ],
+      "visual_evidence": {
+        "source_pdf": "7 - Section D - Full Building Evacuation Plan.pdf",
+        "pages_inspected": [
+          4
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png"
+      },
+      "visual_observation": "Original is a dense flowchart that is difficult to read after conversion.",
+      "functional_intent": "Represent the decision and action flow for full building evacuation activation, roles, and resident movement.",
+      "authoring_strategy": "Model nodes, edges, roles, prerequisites, and linked procedures; render as readable flowchart HTML/SVG with optional print layout.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-EVACUATION-INTERNAL_ROUTES_OF_TRAVEL",
+      "doc_id": "DOC-EVACUATION-INTERNAL_ROUTES_OF_TRAVEL",
+      "title": "Internal Routes of Travel",
+      "content_group": "evacuation",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "route_matrix",
+      "renderer_template": "route-matrix-v1",
+      "interaction_controls": [
+        "file attachment",
+        "floor/area dropdown",
+        "route labels",
+        "stair/elevator labels",
+        "holding/pickup point markers",
+        "revision date"
+      ],
+      "visual_evidence": {
+        "source_pdf": "7 - Section D - Full Building Evacuation Plan.pdf",
+        "pages_inspected": [
+          11
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png"
+      },
+      "visual_observation": "Original is prose plus stair/elevator labels with single-story/elevator applicability notes.",
+      "functional_intent": "Define staff and emergency service access routes versus resident movement routes.",
+      "authoring_strategy": "Use route records tied to floor/area, stair/elevator labels, allowed uses, and map attachments.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-EVACUATION-RESIDENT_EVACUATION_TRACKING_FORM",
+      "doc_id": "DOC-EVACUATION-RESIDENT_EVACUATION_TRACKING_FORM",
+      "title": "Resident Evacuation Tracking Form",
+      "content_group": "evacuation",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "fixed_page_form",
+      "renderer_template": "resident-evacuation-tracking-form-v1",
+      "interaction_controls": [
+        "text inputs",
+        "date picker",
+        "time inputs",
+        "checkboxes",
+        "dropdowns",
+        "signature/initial fields",
+        "repeatable note blocks",
+        "print line areas"
+      ],
+      "visual_evidence": {
+        "source_pdf": "7 - Section D - Full Building Evacuation Plan.pdf",
+        "pages_inspected": [
+          22
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png"
+      },
+      "visual_observation": "Original is a multi-section fixed-page form with resident, transport, holding-area, and receiving-facility sections.",
+      "functional_intent": "Track resident identity, records, equipment, medications, transport, holding, destination, and notifications during evacuation.",
+      "authoring_strategy": "Use structured field groups and repeatable status sections; render as an HTML form optimized for print and possible digital entry.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "critical",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-EVACUATION-EVACUATION_FLOOR_PLANS",
+      "doc_id": "DOC-EVACUATION-EVACUATION_FLOOR_PLANS",
+      "title": "Evacuation Floor Plans",
+      "content_group": "evacuation",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "map_attachment",
+      "renderer_template": "floor-plan-attachment-v1",
+      "interaction_controls": [
+        "file attachment",
+        "floor/area dropdown",
+        "route labels",
+        "stair/elevator labels",
+        "holding/pickup point markers",
+        "revision date"
+      ],
+      "visual_evidence": {
+        "source_pdf": "7 - Section D - Full Building Evacuation Plan.pdf",
+        "pages_inspected": [
+          24
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png"
+      },
+      "visual_observation": "Original is a placeholder page for floor plans.",
+      "functional_intent": "Attach and label floor plans showing evacuation routes, stair/elevator use, holding areas, and pickup locations.",
+      "authoring_strategy": "Use Markdown as control page plus structured map metadata and uploaded/reference assets per floor.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "title": "Receiving Facilities for Evacuation",
+      "content_group": "evacuation",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "receiving_facility_directory",
+      "renderer_template": "receiving-facility-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "7 - Section D - Full Building Evacuation Plan.pdf",
+        "pages_inspected": [
+          25,
+          26
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-d-selected.png"
+      },
+      "visual_observation": "Original repeats a blank facility information page for each receiving facility.",
+      "functional_intent": "Maintain receiving facility capacity, contacts, type, MOA status, and surge capacity for evacuation placement.",
+      "authoring_strategy": "Use repeatable facility records; render as searchable cards for digital use and compact table/card pages for PDF.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-FACILITY_INFORMATION_DETAIL",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-FACILITY_INFORMATION_DETAIL",
+      "title": "Facility Information Detail",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "facility_profile",
+      "renderer_template": "facility-profile-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "phone inputs",
+        "email inputs",
+        "location fields",
+        "conditional fields"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          4
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a facility profile with phone numbers, command center locations, alert systems, and local/regional systems.",
+      "functional_intent": "Maintain facility identity, command contact details, census assumptions, and communication systems.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS",
+      "title": "Emergency Contacts",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "contact_directory",
+      "renderer_template": "emergency-contact-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          5
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a primary/secondary/alternate contact form repeated vertically.",
+      "functional_intent": "Maintain emergency primary, secondary, and alternate contacts.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-SUPPLY_DELIVERY_LOCATION",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-SUPPLY_DELIVERY_LOCATION",
+      "title": "Supply Delivery Location",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "site_access_record",
+      "renderer_template": "supply-delivery-location-v1",
+      "interaction_controls": [
+        "text inputs",
+        "location fields",
+        "latitude/longitude fields",
+        "yes/no dropdowns",
+        "map link or attachment"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          6
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a short site access form with delivery type, location, liftgate/ramp, and coordinates.",
+      "functional_intent": "Describe delivery access points for emergency supply drop-off.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-DISASTER_KIT_CONTENTS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-DISASTER_KIT_CONTENTS",
+      "title": "Disaster Kit Contents",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "inventory_checklist",
+      "renderer_template": "disaster-kit-inventory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "location fields",
+        "status dropdown",
+        "repeatable rows",
+        "optional restock checkbox"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          7
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original mixes kit location, blank content bullets, and suggested contents.",
+      "functional_intent": "Maintain disaster kit contents, location, and readiness.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_RESPONSE_AGENCY_PHONE_NUMBERS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_RESPONSE_AGENCY_PHONE_NUMBERS",
+      "title": "Emergency Response Agency Phone Numbers",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "contact_directory",
+      "renderer_template": "agency-contact-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          8
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a boxed service/phone table for emergency agencies.",
+      "functional_intent": "Maintain emergency response agency contacts and alternates.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EXTERNAL_RESPONSE_PARTNERS_PHONE_NUMBERS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EXTERNAL_RESPONSE_PARTNERS_PHONE_NUMBERS",
+      "title": "External Response Partners Phone Numbers",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "contact_directory",
+      "renderer_template": "partner-contact-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          9
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a service/phone table for external response partners.",
+      "functional_intent": "Maintain external partner and support agency contacts.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_BEDDING_MATERIALS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_BEDDING_MATERIALS",
+      "title": "Emergency Bedding Materials",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "resource_inventory",
+      "renderer_template": "resource-inventory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "location fields",
+        "status dropdown",
+        "repeatable rows",
+        "optional restock checkbox"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          10
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a boxed equipment/quantity/location table.",
+      "functional_intent": "Track bedding materials needed for sheltering or surge.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_FOOD_SUPPLY_LIST",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_FOOD_SUPPLY_LIST",
+      "title": "Emergency Food Supply List",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "resource_inventory",
+      "renderer_template": "food-supply-inventory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "location fields",
+        "status dropdown",
+        "repeatable rows",
+        "optional restock checkbox"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          11
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original includes food supply location, access key, item, and quantity stored.",
+      "functional_intent": "Track emergency food supplies and access information.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_TRANSPORT_EQUIPMENT_TO_MOVE_RESIDENTS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_TRANSPORT_EQUIPMENT_TO_MOVE_RESIDENTS",
+      "title": "Emergency Transport Equipment to Move Residents",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "resource_inventory",
+      "renderer_template": "transport-equipment-inventory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "location fields",
+        "status dropdown",
+        "repeatable rows",
+        "optional restock checkbox"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          12
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is an equipment/quantity/location table for wheelchairs, stretchers, lifts, chairs, and sleds.",
+      "functional_intent": "Track equipment for resident movement during evacuation.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-ELEVATOR_KEYS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-ELEVATOR_KEYS",
+      "title": "Elevator Keys",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "key_control_table",
+      "renderer_template": "elevator-key-control-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "location fields",
+        "status dropdown",
+        "repeatable rows",
+        "optional restock checkbox"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          13
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a key location/control/access table with single-story applicability note.",
+      "functional_intent": "Maintain elevator key locations, controlled elevators, and 24/7 access owner.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-TRANSPORTATION_RESOURCES_FACILITY_OWNED_VEHICLES",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-TRANSPORTATION_RESOURCES_FACILITY_OWNED_VEHICLES",
+      "title": "Transportation Resources - Facility Owned Vehicles",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "vehicle_roster",
+      "renderer_template": "vehicle-roster-v1",
+      "interaction_controls": [
+        "text inputs",
+        "dropdowns for vehicle/fuel type",
+        "number inputs",
+        "location fields",
+        "key/driver owner fields",
+        "repeatable vehicle records"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          14,
+          15
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a repeated vehicle profile over two pages.",
+      "functional_intent": "Maintain facility-owned vehicle capabilities for transport and logistics.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_UTILITY_SHUT_OFF_LOCATIONS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_UTILITY_SHUT_OFF_LOCATIONS",
+      "title": "Emergency Utility Shut-Off Locations",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "utility_matrix",
+      "renderer_template": "utility-shutoff-matrix-v1",
+      "interaction_controls": [
+        "utility dropdown",
+        "location fields",
+        "method text area",
+        "24/7 access owner",
+        "repeatable rows"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          16
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a utility/location/method/access matrix.",
+      "functional_intent": "Maintain emergency shut-off locations and access instructions for utility systems.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-GENERATOR_INFORMATION",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-GENERATOR_INFORMATION",
+      "title": "Generator Information",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "generator_profile",
+      "renderer_template": "generator-profile-v1",
+      "interaction_controls": [
+        "text inputs",
+        "number inputs",
+        "fuel type dropdowns",
+        "checkboxes for supported systems",
+        "quick-connect yes/no",
+        "repeatable generator records"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          17,
+          18
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original is a repeated generator profile with supported systems, fuel, runtime, and quick-connect fields.",
+      "functional_intent": "Maintain generator capability, fuel, runtime, and connection details.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-VENDOR_SOURCES_OF_FUEL",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-VENDOR_SOURCES_OF_FUEL",
+      "title": "Vendor Sources of Fuel",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "vendor_directory",
+      "renderer_template": "fuel-vendor-directory-v1",
+      "interaction_controls": [
+        "service category dropdown",
+        "text inputs",
+        "phone inputs",
+        "24/7 availability checkbox",
+        "agreement status dropdown",
+        "repeatable vendor records"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          19
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original groups vendor fields by diesel, gasoline, and propane.",
+      "functional_intent": "Maintain fuel vendor contacts and agreement status.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-RESOURCES_AND_LISTS-EMERGENCY_CONTRACTOR_VENDOR_LISTS",
+      "doc_id": "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTRACTOR_VENDOR_LISTS",
+      "title": "Emergency Contractor / Vendor Lists",
+      "content_group": "resources-and-lists",
+      "current_content_type": "topic_document",
+      "recommended_content_type": "support_artifact",
+      "artifact_type": "vendor_directory",
+      "renderer_template": "contractor-vendor-directory-v1",
+      "interaction_controls": [
+        "service category dropdown",
+        "text inputs",
+        "phone inputs",
+        "24/7 availability checkbox",
+        "agreement status dropdown",
+        "repeatable vendor records"
+      ],
+      "visual_evidence": {
+        "source_pdf": "11 - Section F - Emergency Lists.pdf",
+        "pages_inspected": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/section-f-selected.png"
+      },
+      "visual_observation": "Original repeats vendor/contact fields by service category across many pages.",
+      "functional_intent": "Maintain emergency contractor and vendor contacts by service category.",
+      "authoring_strategy": "Use structured records in Markdown with repeatable rows/cards; render as digital directory or printable compact list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_A",
+      "doc_id": "DOC-APPENDICES-APPENDIX_A",
+      "title": "Appendix A - Hazard Vulnerability Assessment",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "assessment_workbook",
+      "renderer_template": "hva-workbook-v1",
+      "interaction_controls": [
+        "numeric inputs",
+        "formula outputs",
+        "unit dropdowns",
+        "scenario rows",
+        "exported calculation summary"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix A2 Community HVA (placeholder).pdf; Appendix A3 HVA Evidence of Annual Analysis and Review - Compliance Document.pdf; Appendix A AHCA HVA Worksheets.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original uses Excel-style HVA worksheet and annual review evidence pages.",
+      "functional_intent": "Maintain hazard vulnerability assessment scoring, risk review, and annual analysis evidence.",
+      "authoring_strategy": "Use structured workbook sections with scoring fields/formulas and separate annual review log; render to wide worksheet HTML/PDF.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "critical",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_B",
+      "doc_id": "DOC-APPENDICES-APPENDIX_B",
+      "title": "Appendix B - Mutual Aid Agreements / Memoranda of Understanding",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "legal_template",
+      "renderer_template": "mou-template-v1",
+      "interaction_controls": [
+        "party fields",
+        "facility fields",
+        "term fields",
+        "checkboxes for covered services",
+        "signature blocks",
+        "date fields"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix B1 Sample Stop Over Point Memorandum of Understanding (MOU).pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a stop-over point memorandum of agreement with highlighted placeholders and signature intent.",
+      "functional_intent": "Provide an editable MOU/MOA template for evacuation stop-over or mutual aid relationships.",
+      "authoring_strategy": "Use structured agreement fields and clause blocks; render as a clean agreement document with signature blocks.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_C",
+      "doc_id": "DOC-APPENDICES-APPENDIX_C",
+      "title": "Appendix C - Compliance Schedule / Calendar",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "compliance_calendar",
+      "renderer_template": "compliance-calendar-v1",
+      "interaction_controls": [
+        "date fields",
+        "frequency dropdowns",
+        "owner fields",
+        "task status dropdown",
+        "recurrence rules",
+        "repeatable schedule rows"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix C Compliance Calendar.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a wide planning schedule/calendar table.",
+      "functional_intent": "Maintain annual EPP compliance schedule, owners, timing, and evidence.",
+      "authoring_strategy": "Use recurring task records; render as calendar/table and optionally drive reminders later.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_D",
+      "doc_id": "DOC-APPENDICES-APPENDIX_D",
+      "title": "Appendix D - Sample Vendor Agreement",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "legal_template",
+      "renderer_template": "vendor-agreement-template-v1",
+      "interaction_controls": [
+        "party fields",
+        "facility fields",
+        "term fields",
+        "checkboxes for covered services",
+        "signature blocks",
+        "date fields"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix D Sample Vendor Agreement.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a vendor agreement template with many highlighted facility placeholders.",
+      "functional_intent": "Provide an agreement template for support vendors during emergencies.",
+      "authoring_strategy": "Use structured party/service/term fields and reusable clause sections; render as a clean agreement.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_E",
+      "doc_id": "DOC-APPENDICES-APPENDIX_E",
+      "title": "Appendix E - Evacuation Route Maps",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "map_attachment",
+      "renderer_template": "evacuation-route-map-attachment-v1",
+      "interaction_controls": [
+        "file attachment",
+        "floor/area dropdown",
+        "route labels",
+        "stair/elevator labels",
+        "holding/pickup point markers",
+        "revision date"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix E Evacuation Maps - Placeholder.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a placeholder for evacuation route maps.",
+      "functional_intent": "Store and label route maps for evacuation planning and response.",
+      "authoring_strategy": "Use attachment metadata for each map image/PDF with route, floor, revision, and use notes.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_F",
+      "doc_id": "DOC-APPENDICES-APPENDIX_F",
+      "title": "Appendix F - Organizational Chart and Key Disaster Roles",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "org_chart",
+      "renderer_template": "key-disaster-roles-chart-v1",
+      "interaction_controls": [
+        "role nodes",
+        "assigned person fields",
+        "alternate fields",
+        "contact fields",
+        "node ordering",
+        "conditional role visibility"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix F Organizational Chart of Staff with Key Disaster Roles.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a static org chart of key disaster roles.",
+      "functional_intent": "Show staff assigned to key disaster roles and alternates.",
+      "authoring_strategy": "Use structured role nodes and assignee fields; render as clean responsive org chart.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_G",
+      "doc_id": "DOC-APPENDICES-APPENDIX_G",
+      "title": "Appendix G - Resident and Responsible Party Emergency Communications Plan",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "communications_guide",
+      "renderer_template": "resident-party-communications-guide-v1",
+      "interaction_controls": [
+        "audience dropdowns",
+        "message channel fields",
+        "script blocks",
+        "checkbox delivery methods",
+        "website/phone fields"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix G Resident Reponsible Party Emergency Communcations Plan.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a resident/responsible-party guide with communication methods and scripts.",
+      "functional_intent": "Explain how residents and responsible parties receive emergency communications.",
+      "authoring_strategy": "Use audience/message/channel records and short guidance blocks; render as readable handout and staff reference.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_H",
+      "doc_id": "DOC-APPENDICES-APPENDIX_H",
+      "title": "Appendix H - Staff Competency Post Training Test",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "training_quiz",
+      "renderer_template": "staff-competency-test-v1",
+      "interaction_controls": [
+        "question records",
+        "answer options",
+        "single-choice controls",
+        "answer key",
+        "scoring fields",
+        "review date"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix H Staff Competency Post Training Test.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a numbered post-training test with multiple-choice answers.",
+      "functional_intent": "Assess staff emergency preparedness competency after training.",
+      "authoring_strategy": "Use question records, choices, answer key, scoring, and review metadata; render as quiz or printable test.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_I",
+      "doc_id": "DOC-APPENDICES-APPENDIX_I",
+      "title": "Appendix I - Collaborative and Cooperative Planning Efforts Documentation",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "planning_log",
+      "renderer_template": "collaborative-planning-log-v1",
+      "interaction_controls": [
+        "agency fields",
+        "planning effort dropdown",
+        "date fields",
+        "contact fields",
+        "repeatable log rows",
+        "evidence attachment"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix I Collaborative and Cooperative Planning Efforts.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a wide collaborative planning efforts log.",
+      "functional_intent": "Document collaborative and cooperative planning contacts and evidence.",
+      "authoring_strategy": "Use repeatable planning records with agency, effort type, date, person contacted, notes, and attachments.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_J",
+      "doc_id": "DOC-APPENDICES-APPENDIX_J",
+      "title": "Appendix J - Annual Analysis and Review",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "review_log",
+      "renderer_template": "annual-analysis-review-log-v1",
+      "interaction_controls": [
+        "section/component fields",
+        "date fields",
+        "reviewer fields",
+        "status dropdown",
+        "action notes",
+        "repeatable rows"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix J Annual Analysis and Review.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a wide annual analysis/review table.",
+      "functional_intent": "Document annual EPP component reviews, reviewers, dates, and follow-up.",
+      "authoring_strategy": "Use repeatable review records linked to program components and action items.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "high",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_K",
+      "doc_id": "DOC-APPENDICES-APPENDIX_K",
+      "title": "Appendix K - EPP Quick Reference Guide",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "quick_reference",
+      "renderer_template": "quick-reference-guide-v1",
+      "interaction_controls": [
+        "hazard/action records",
+        "icon/category fields",
+        "priority labels",
+        "wide-format layout metadata"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix K EPP Quick Reference Guide (11x17) v3.pdf",
+        "pages_inspected": [
+          1,
+          2
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is an 11x17 quick reference sheet with icons, disasters, instructions, and actions.",
+      "functional_intent": "Provide a fast emergency quick reference for staff.",
+      "authoring_strategy": "Use structured hazard/action records with icon metadata and render as a designed 11x17 or responsive quick guide.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "critical",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_L",
+      "doc_id": "DOC-APPENDICES-APPENDIX_L",
+      "title": "Appendix L - 1135 Waivers",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "reference_guide",
+      "renderer_template": "waiver-reference-guide-v1",
+      "interaction_controls": [
+        "section blocks",
+        "checklists",
+        "links",
+        "owner fields",
+        "review date"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix L 1135 Waiver (1).pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a narrative 1135 waiver reference and request checklist.",
+      "functional_intent": "Explain 1135 waiver examples and information needed for waiver requests.",
+      "authoring_strategy": "Use reference sections plus request checklist fields; render as guide/checklist.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_M",
+      "doc_id": "DOC-APPENDICES-APPENDIX_M",
+      "title": "Appendix M - PPE Burn Rate Calculator",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "calculator",
+      "renderer_template": "ppe-burn-rate-calculator-v1",
+      "interaction_controls": [
+        "numeric inputs",
+        "formula outputs",
+        "unit dropdowns",
+        "scenario rows",
+        "exported calculation summary"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix M PPE Burn Rate Calculator.pdf",
+        "pages_inspected": [
+          1,
+          2,
+          3
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a wide Excel-style PPE burn rate calculator.",
+      "functional_intent": "Calculate PPE days on hand based on inventory and usage assumptions.",
+      "authoring_strategy": "Use structured inputs, formulas, and output summaries; render as interactive calculator and printable summary.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "critical",
+      "pilot_candidate": true
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_N",
+      "doc_id": "DOC-APPENDICES-APPENDIX_N",
+      "title": "Appendix N - Contact Listing for Facility Physicians",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "contact_directory",
+      "renderer_template": "physician-contact-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix N Contact Listing for Facility Physicians 3-2022.pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a contact listing template with repeated physician fields.",
+      "functional_intent": "Maintain facility physician contacts.",
+      "authoring_strategy": "Use repeatable contact records; render as sortable directory or compact printable list.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_O",
+      "doc_id": "DOC-APPENDICES-APPENDIX_O",
+      "title": "Appendix O - Entities Providing Services Under Arrangement",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "vendor_directory",
+      "renderer_template": "entities-under-arrangement-directory-v1",
+      "interaction_controls": [
+        "service category dropdown",
+        "text inputs",
+        "phone inputs",
+        "24/7 availability checkbox",
+        "agreement status dropdown",
+        "repeatable vendor records"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix O Entities Providing Services Under Arrangement (1).pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a repeated services-under-arrangement listing.",
+      "functional_intent": "Maintain entities providing services under arrangement.",
+      "authoring_strategy": "Use repeatable service provider records with service/product, phone, and 24-hour contact fields.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    },
+    {
+      "item_id": "ITEM-APPENDICES-APPENDIX_P",
+      "doc_id": "DOC-APPENDICES-APPENDIX_P",
+      "title": "Appendix P - Contact Listing for Facility Volunteers",
+      "content_group": "appendices",
+      "current_content_type": "appendix",
+      "recommended_content_type": "appendix",
+      "artifact_type": "contact_directory",
+      "renderer_template": "volunteer-contact-directory-v1",
+      "interaction_controls": [
+        "text inputs",
+        "phone inputs",
+        "email inputs",
+        "role/category dropdown",
+        "repeatable records",
+        "active/inactive toggle"
+      ],
+      "visual_evidence": {
+        "source_pdf": "Appendix P Contact Listing for Facility Volunteers (1).pdf",
+        "pages_inspected": [
+          1
+        ],
+        "contact_sheet": "_reviews/artifact-pass/evidence/contact-sheets/appendix-selected.png"
+      },
+      "visual_observation": "Original is a contact listing template with repeated volunteer fields.",
+      "functional_intent": "Maintain facility volunteer contacts.",
+      "authoring_strategy": "Use repeatable contact records with role/availability fields and printable directory output.",
+      "design_direction": "Redesign for function and usability; do not preserve legacy Word/Excel visual styling except where page-critical fields must remain grouped.",
+      "production_priority": "medium",
+      "pilot_candidate": false
+    }
+  ]
+}

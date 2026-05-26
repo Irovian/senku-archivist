@@ -1,0 +1,224 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-07T04:15:28Z",
+  "status": "pilot_seed_for_review",
+  "document_count": 3,
+  "documents": [
+    {
+      "doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "title": "Activation of Emergency Operations Plan (EOP)",
+      "path": "_content/all-hazards-response/activation-of-emergency-operations-plan-eop/document.md",
+      "content_group": "all-hazards-response",
+      "content_type": "topic_document",
+      "lifecycle_status": "drafting",
+      "requirement_ids": [
+        "REQ-LTC-48373-B-OVERALL-POLICIES",
+        "REQ-LTC-48373-B2-B8-OPERATIONS",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS"
+      ],
+      "requirement_terms": [
+        "REQ-LTC-48373-B-OVERALL-POLICIES",
+        "\u00a7483.73(b)",
+        "E-0013",
+        "REQ-LTC-48373-B2-B8-OPERATIONS",
+        "\u00a7483.73(b)(2)-(7)",
+        "E-0020",
+        "E-0021",
+        "E-0024",
+        "E-0025",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "\u00a7483.73(c)",
+        "E-0029",
+        "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "\u00a7483.73(c)(3)",
+        "E-0032"
+      ],
+      "training_relevance": "high",
+      "audiences": [
+        "leadership",
+        "department heads",
+        "direct-care staff"
+      ],
+      "role_groups": [
+        "Administrator",
+        "Incident Commander",
+        "department heads",
+        "direct-care staff"
+      ],
+      "competency_domains": [
+        "emergency response activation",
+        "staff alert recognition",
+        "initial protective actions",
+        "incident command transition"
+      ],
+      "training_triggers": [
+        "policy created",
+        "material policy change",
+        "annual review",
+        "post-drill gap",
+        "post-incident gap"
+      ],
+      "suggested_learning_outputs": [
+        "staff briefing",
+        "microlearning outline",
+        "quiz draft",
+        "attestation prompt"
+      ],
+      "quiz_affordances": [
+        "identify the approved activation alert",
+        "select first staff actions after EOP activation",
+        "recognize when leadership may activate command roles"
+      ],
+      "change_impact_prompts": [
+        "If activation language or emergency code wording changes, review whether staff alert training and quiz wording need updates.",
+        "If activation authority or notification ownership changes, confirm whether leadership and department head briefing materials need updates."
+      ],
+      "human_review_required": true
+    },
+    {
+      "doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "title": "Incident Command System Organizational Chart",
+      "path": "_content/incident-command/incident-command-system-organizational-chart/document.md",
+      "content_group": "incident-command",
+      "content_type": "support_artifact",
+      "lifecycle_status": "drafting",
+      "requirement_ids": [
+        "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "REQ-LTC-48373-D-OVERALL-TRAINING-TESTING"
+      ],
+      "requirement_terms": [
+        "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+        "\u00a7483.73(a)(3)",
+        "E-0007",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "\u00a7483.73(c)",
+        "E-0029",
+        "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "\u00a7483.73(c)(3)",
+        "E-0032",
+        "REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "\u00a7483.73(d)",
+        "E-0036"
+      ],
+      "training_relevance": "high",
+      "audiences": [
+        "leadership",
+        "incident command staff",
+        "section chiefs"
+      ],
+      "role_groups": [
+        "Incident Commander",
+        "Documentation Recorder",
+        "Public Information Officer",
+        "Operations Section Chief",
+        "Planning Section Chief",
+        "Logistics Section Chief",
+        "Finance Section Chief"
+      ],
+      "competency_domains": [
+        "incident command structure",
+        "role reporting relationships",
+        "command center staffing",
+        "emergency leadership communication"
+      ],
+      "training_triggers": [
+        "policy created",
+        "material policy change",
+        "annual review",
+        "post-drill gap",
+        "post-incident gap",
+        "role change"
+      ],
+      "suggested_learning_outputs": [
+        "staff briefing",
+        "microlearning outline",
+        "quiz draft",
+        "competency checklist",
+        "drill prep prompt"
+      ],
+      "quiz_affordances": [
+        "match command roles to responsibilities",
+        "identify who reports to the Incident Commander",
+        "recognize which section chief owns operations planning logistics or finance"
+      ],
+      "change_impact_prompts": [
+        "If command role labels or reporting relationships change, review whether role-specific training and drill materials need updates.",
+        "If the printable chart changes, confirm whether command center orientation materials need updated screenshots or handouts."
+      ],
+      "human_review_required": true
+    },
+    {
+      "doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "title": "Receiving Facilities for Evacuation",
+      "path": "_content/evacuation/receiving-facilities-for-evacuation/document.md",
+      "content_group": "evacuation",
+      "content_type": "support_artifact",
+      "lifecycle_status": "drafting",
+      "requirement_ids": [
+        "REQ-LTC-48373-B2-B8-OPERATIONS",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "REQ-LTC-48373-C4-C7-INFORMATION-SHARING"
+      ],
+      "requirement_terms": [
+        "REQ-LTC-48373-B2-B8-OPERATIONS",
+        "\u00a7483.73(b)(2)-(7)",
+        "E-0020",
+        "E-0021",
+        "E-0024",
+        "E-0025",
+        "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+        "\u00a7483.73(c)",
+        "E-0029",
+        "REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "\u00a7483.73(c)(4)-(7)",
+        "E-0033",
+        "E-0034"
+      ],
+      "training_relevance": "medium",
+      "audiences": [
+        "command center",
+        "resident placement staff",
+        "transportation coordinators",
+        "resident-care leaders"
+      ],
+      "role_groups": [
+        "Incident Commander",
+        "resident placement staff",
+        "transportation coordinators",
+        "resident-care leaders"
+      ],
+      "competency_domains": [
+        "evacuation destination lookup",
+        "receiving facility confirmation",
+        "capacity and population-fit review",
+        "evacuation communication documentation"
+      ],
+      "training_triggers": [
+        "policy created",
+        "material policy change",
+        "annual review",
+        "post-drill gap",
+        "post-incident gap"
+      ],
+      "suggested_learning_outputs": [
+        "staff briefing",
+        "microlearning outline",
+        "quiz draft",
+        "drill prep prompt"
+      ],
+      "quiz_affordances": [
+        "identify information needed before using a receiving facility",
+        "select factors that affect receiving destination suitability",
+        "recognize that real-time capacity must be confirmed during the incident"
+      ],
+      "change_impact_prompts": [
+        "If receiving facility fields or agreement-status options change, review evacuation drill instructions and staff lookup guidance.",
+        "If destination confirmation workflow changes, confirm whether resident placement and transportation coordinator training need updates."
+      ],
+      "human_review_required": true
+    }
+  ]
+}

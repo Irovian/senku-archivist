@@ -1,0 +1,178 @@
+{
+  "doc_id": "REG-SOMZ-E-0031",
+  "title": "E-0031 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0031",
+      "E-0031",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0031",
+      "E-0031"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0031",
+    "canonical_tag": "E-0031",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748(c)(2)",
+      "\u00a7416.54(c)(2)",
+      "\u00a7418.113(c)(2)",
+      "\u00a7441.184(c)(2)",
+      "\u00a7460.84(c)(2)",
+      "\u00a7482.15(c)(2)",
+      "\u00a7483.475(c)",
+      "\u00a7483.475(c)(2)",
+      "\u00a7483.73(c)",
+      "\u00a7483.73(c)(2)",
+      "\u00a7484.102(c)(2)",
+      "\u00a7485.625(c)(2)",
+      "\u00a7485.68(c)(2)",
+      "\u00a7485.727(c)(2)",
+      "\u00a7485.920(c)(2)",
+      "\u00a7486.360(c)(2)",
+      "\u00a7491.12(c)(2)",
+      "\u00a7494.62(c)(2)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs.",
+      "NOTE: Even though the communications plan must include contact information, it does"
+    ],
+    "source_span": {
+      "start_line": 2848,
+      "end_line": 2911,
+      "start_page": 64,
+      "end_page": 66
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0031-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 15,
+        "end_line": 20,
+        "applies_to": [
+          "LTC Facility"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7483.73(c)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "LTC Facility",
+        "text_sha256": "1fcbf8b383be53c5a5f67d42c93b3a1c0d672063943314cb3380b94ecb85f5f5"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0031-REGULATORY-BRANCH-2",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 2",
+        "source_section": "Regulatory Text",
+        "start_line": 21,
+        "end_line": 25,
+        "applies_to": [
+          "ICF/IID"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7483.475(c)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "ICF/IID",
+        "text_sha256": "9b456a070ca2f44d712d2820eb5fdc1bcd4a10dd8d6bf5a1125b9dab10a6cd02"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

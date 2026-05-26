@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SG-0004",
+  "title": "Port local chat, proposal, and review workflows",
+  "type": "build_slice",
+  "status": "blocked",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Bring the old local manual-agent/chat workflow into the standalone app with proposal review, current-view sync, pending review events, and guarded apply.",
+  "acceptance_criteria": [
+    "The app has a desktop chat/recommendation affordance connected to a local provider adapter",
+    "Selected-text instructions can create hash-checked proposals",
+    "Apply/reject stays review-gated and demo-safe until live write mode is explicit",
+    "Pending reviews and current-view sync are represented",
+    "Developer/debug diagnostics remain available but separate from the main flow"
+  ],
+  "non_goals": [
+    "Cloud model providers by default",
+    "Unattended model writes",
+    "Mobile chat layout"
+  ],
+  "blocked_by": [
+    "SG-0013",
+    "SG-0003"
+  ],
+  "related_requirements": [
+    "REQ-0013",
+    "REQ-0016",
+    "REQ-0017",
+    "REQ-0018",
+    "REQ-0037"
+  ],
+  "related_questions": [
+    "Q-0007"
+  ],
+  "validation": [
+    "Smoke provider status with a local loopback endpoint",
+    "Smoke proposal creation against a small Markdown fixture",
+    "Smoke apply/reject in demo mode",
+    "Run npm run build"
+  ],
+  "notes": "Provider shape is resolved: define a provider-neutral local agent interface with an LM Studio/OpenAI-compatible local endpoint as the first adapter. Service-backed document reads are expected to arrive through SG-0013."
+}

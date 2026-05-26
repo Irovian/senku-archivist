@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0017",
+  "title": "Separate edit inputs and unify accepted review output",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Inline manual edits and model proposals should stay separate at input time, but accepted manual draft batches and accepted model proposals should converge into the same review, Git history, and Archivist audit ledger path.",
+  "context": "Manual edits need to feel low-ceremony and paper-like, while model proposals need explicit intent, preview, and approval. The old browser's draft review and proposal lens already point toward a shared review language after changes are captured.",
+  "rationale": "Separating input preserves the right UX for humans and agents. Unifying accepted output keeps policy history transparent and avoids two incompatible approval/audit systems.",
+  "alternatives_considered": [
+    "Collapse all manual edits into model-style proposals at input time",
+    "Treat manual drafts and model proposals as unrelated workflows forever",
+    "Bypass review for manual edits but require review for model proposals"
+  ],
+  "consequences": [
+    "Q-0008 is resolved",
+    "Manual edits remain low-ceremony autosaved drafts",
+    "Model proposals remain explicit reviewable suggestions",
+    "Accepted manual draft batches and accepted model proposals share the same approval, history, and audit output path",
+    "SG-0005 still needs the history granularity decision before it can leave grilling"
+  ],
+  "related_requirements": [
+    "REQ-0017",
+    "REQ-0018",
+    "REQ-0033"
+  ],
+  "related_backlog_items": [
+    "SG-0005",
+    "SG-0004",
+    "SG-0014"
+  ],
+  "related_questions": [
+    "Q-0008"
+  ]
+}

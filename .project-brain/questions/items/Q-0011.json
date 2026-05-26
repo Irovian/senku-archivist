@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0011",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should Appendix A be treated as a normal Markdown appendix with an embedded HVA widget, or as a first-class HVA workbook/tool surface attached to the Appendix A document record?",
+  "recommended_answer": "Make Appendix A the first implementation of a first-class workbook artifact family.",
+  "answer": "Make Appendix A the first implementation of a first-class workbook artifact family.",
+  "rationale": "Appendix A already carries structured workbook data, scoring, mitigation actions, annual review evidence, JSON import/export intent, print rules, and Appendix J linkage pressure. The user also expects future workbooks.",
+  "related_backlog_items": [
+    "SG-0008"
+  ],
+  "related_requirements": [
+    "REQ-0025",
+    "REQ-0027"
+  ],
+  "resolved_by": "DEC-SG-0007",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

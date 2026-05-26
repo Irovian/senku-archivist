@@ -1,0 +1,81 @@
+{
+  "doc_id": "REG-CFR-42-416-45",
+  "title": "42 CFR \u00a7416.45 Condition for coverage\u2014Medical staff",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_416_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 416.45",
+      "\u00a7416.45",
+      "Condition for coverage\u2014Medical staff"
+    ],
+    "aliases": [
+      "42 CFR 416.45(c)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_416_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "416",
+    "section": "416.45",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 416.45(c)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 416.45",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "75bf18e40a1b9ea3f4be70f0e9a196eda8cb78a56221eca3e15e01dbd3286a81"
+      },
+      {
+        "citation": "42 CFR 416.45(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "06e9f8b3f721ec5500ed7b94ccbb5583af520af2f9c99b7976b0d21e0fb131c1"
+      },
+      {
+        "citation": "42 CFR 416.45(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "d67f87dbd225e6b4390cfad63a68bdb756464a3844058a6f16c7d283bf8eac87"
+      },
+      {
+        "citation": "42 CFR 416.45(c)",
+        "anchor_id": "subsection-c",
+        "path": [
+          "c"
+        ],
+        "text_sha256": "c01865eb0c9f385f219353cdf6e38880672670e1ede32c9019e047f7b6094074"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 4,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

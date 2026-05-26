@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SG-0008",
+  "title": "Prototype HVA as the first workbook implementation",
+  "type": "prototype",
+  "status": "needs_prototype",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Prototype Appendix A / HVA as the first implementation of Archivist's reusable workbook artifact family.",
+  "acceptance_criteria": [
+    "Appendix A source evidence is summarized from the EPP Markdown artifact block and project metadata",
+    "The prototype preserves HVA hazard selection, scoring, prioritization, mitigation actions, annual review evidence, JSON import/export, and print intent",
+    "The design keeps the Markdown appendix wrapper and source/compliance traceability visible",
+    "Appendix J linkage is explicitly considered",
+    "The copyright guardrail against copying proprietary worksheet language, row order, layout, or comments is preserved",
+    "The prototype demonstrates the reusable workbook contract rather than hard-coding an Appendix A-only model"
+  ],
+  "non_goals": [
+    "Finalizing all Appendix A scoring policy",
+    "Replacing the old workbook renderer without a reviewed prototype",
+    "Expanding the HVA model beyond the existing EPP content evidence"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0023",
+    "REQ-0024",
+    "REQ-0025",
+    "REQ-0026",
+    "REQ-0027"
+  ],
+  "related_questions": [
+    "Q-0013",
+    "Q-0011"
+  ],
+  "validation": [
+    "Spot-check the prototype against workspaces/epp-full/content/appendices/appendix-a-hazard-vulnerability-assessment/document.md",
+    "Confirm artifact metadata maps to docs/architecture/workbook-artifact-contract.md and workspaces/epp-full/project/artifact_index_seed.json",
+    "Run desktop-only app smoke after prototype implementation"
+  ],
+  "notes": "Appendix A is the most important current edge case because it is simultaneously Markdown, structured data, a guided local tool, a print/export packet, and a review-evidence source."
+}

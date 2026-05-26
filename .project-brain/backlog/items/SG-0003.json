@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "SG-0003",
+  "title": "Port the EPP Markdown and compliance renderer contract",
+  "type": "build_slice",
+  "status": "needs_grill",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Preserve the old EPP manual-browser Markdown, compliance, CFR, and regulatory rendering behavior in the standalone app.",
+  "acceptance_criteria": [
+    "Reader output strips internal sections while keeping canonical Markdown unchanged",
+    "Headings, anchors, lists, code blocks, tables, assembly blocks, regulatory segments, placeholders, and inline CFR links render correctly",
+    "Compliance graph links, source metadata, CFR pages, Appendix Z pages, and static regulatory lockout are represented",
+    "Desktop screenshot smoke covers representative policy, Appendix Z, CFR, and placeholder-heavy documents"
+  ],
+  "non_goals": [
+    "Final export generation",
+    "Editing or rewriting regulatory source documents",
+    "Full redesign of every artifact renderer"
+  ],
+  "blocked_by": [
+    "SG-0013"
+  ],
+  "related_requirements": [
+    "REQ-0013",
+    "REQ-0014",
+    "REQ-0015"
+  ],
+  "related_questions": [
+    "Q-0005",
+    "Q-0006"
+  ],
+  "validation": [
+    "Compare rendered output against the old generated browser for representative documents",
+    "Run desktop Chrome screenshot smoke",
+    "Run npm run build"
+  ],
+  "notes": "Use the old generator as behavior evidence. Prefer staged React/service slices over copying generated HTML. Service-backed document reads are expected to arrive through SG-0013."
+}

@@ -1,0 +1,175 @@
+{
+  "doc_id": "REG-SOMZ-E-0001",
+  "title": "E-0001 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0001",
+      "E-0001",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0001",
+      "E-0001"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0001",
+    "canonical_tag": "E-0001",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748",
+      "\u00a7416.54",
+      "\u00a7418.113",
+      "\u00a7441.184",
+      "\u00a7460.84",
+      "\u00a7482.15",
+      "\u00a7483.475",
+      "\u00a7483.73",
+      "\u00a7483.73(a)",
+      "\u00a7484.102",
+      "\u00a7485.625",
+      "\u00a7485.68",
+      "\u00a7485.727",
+      "\u00a7485.920",
+      "\u00a7486.360",
+      "\u00a7491.12"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs.",
+      "NOTE: The word comprehensive is not used in the language for ASCs.",
+      "NOTE: The emergency preparedness program and its elements must be reviewed and"
+    ],
+    "source_span": {
+      "start_line": 305,
+      "end_line": 421,
+      "start_page": 8,
+      "end_page": 11
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0001-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 16,
+        "end_line": 21,
+        "applies_to": [
+          "Hospital"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7482.15"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "Hospital",
+        "text_sha256": "f95202cc9982125758d279e0d79009caa9ddccb826f9137e559ff78e248ad1c1"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0001-REGULATORY-BRANCH-2",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 2",
+        "source_section": "Regulatory Text",
+        "start_line": 22,
+        "end_line": 26,
+        "applies_to": [
+          "CAH"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7485.625"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "CAH",
+        "text_sha256": "24c1f73b753016e818a7b18edc7395f7f284f1afb2dcdef03ddf51e65e732617"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

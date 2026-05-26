@@ -1,0 +1,38 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-TRAINING",
+  "title": "Training",
+  "document_path": "_content/governance-and-planning/training/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-TRAINING-COMPETENCY-METHOD-REVIEW",
+      "title": "Training Competency Method Review",
+      "category": "alternate_wording",
+      "target_ref": "working_notes.training_competency_method_review",
+      "action_summary": "Preserve the reviewed source note that competency-testing methods should match facility practice before approval.",
+      "section_heading": "Working Notes",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-30 (footnote 30).",
+        "legacy_topic": "Training",
+        "original_superscript": "30",
+        "original_instruction_text": "Revise as needed",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

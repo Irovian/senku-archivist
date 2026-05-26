@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_H",
+  "title": "Appendix H - Staff Competency Post Training Test",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_H_COVER_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_H_STAFF_COMPETENCY_POST_TRAINING_TEST_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-D1-TRAINING-PROGRAM"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0010",
+  "title": "Let the first HVA UI write draft sidecar state",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "The first HVA UI prototype should edit draft workbook sidecar state directly, with approved workbook state remaining locked until a future review/apply workflow exists.",
+  "context": "The service-backed sidecar boundary is in place. The next HVA UI step needs to feel live without bypassing the approved-history guardrails.",
+  "rationale": "Draft sidecar writes let the workbook become useful immediately while protecting approved state, Git history, and audit semantics. This mirrors the broader low-ceremony draft plus explicit approval model for document edits.",
+  "alternatives_considered": [
+    "Keep the first HVA UI read-only against approved sidecar state",
+    "Allow the HVA UI to write approved sidecar state directly",
+    "Use front-end-only state until the full review workflow exists"
+  ],
+  "consequences": [
+    "The HVA UI can save local draft workbook state through the service",
+    "Approved sidecar writes remain blocked at the generic service endpoint",
+    "Future review/apply work must promote draft sidecar state into approved sidecar state with audit and Git history",
+    "The UI must make draft versus approved state visible"
+  ],
+  "related_requirements": [
+    "REQ-0028",
+    "REQ-0029",
+    "REQ-0030"
+  ],
+  "related_backlog_items": [
+    "SG-0008",
+    "SG-0011"
+  ],
+  "related_questions": [
+    "Q-0015"
+  ]
+}

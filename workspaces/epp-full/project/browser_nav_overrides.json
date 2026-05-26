@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "updated": "2026-05-10",
+  "description": "Browser-only manual navigation taxonomy. These display groups do not move source files, catalog records, or policy/regulatory content.",
+  "groups": [
+    {
+      "id": "governance-and-planning",
+      "label": "Governance and Planning",
+      "order": 10
+    },
+    {
+      "id": "all-hazards-response",
+      "label": "All-Hazards Response",
+      "order": 20
+    },
+    {
+      "id": "staffing-and-operations",
+      "label": "Staffing and Operations",
+      "order": 30
+    },
+    {
+      "id": "communications",
+      "label": "Communications",
+      "order": 40
+    },
+    {
+      "id": "evacuation",
+      "label": "Evacuation",
+      "order": 50
+    },
+    {
+      "id": "hazard-specific-procedures",
+      "label": "Hazard-Specific Procedures",
+      "order": 60
+    },
+    {
+      "id": "recovery",
+      "label": "Recovery",
+      "order": 70
+    },
+    {
+      "id": "resources-and-attachments",
+      "label": "Resources and Attachments",
+      "order": 80
+    },
+    {
+      "id": "appendices",
+      "label": "Appendices",
+      "order": 90
+    },
+    {
+      "id": "som-appendix-z",
+      "label": "Survey Guidance",
+      "order": 100
+    },
+    {
+      "id": "cfr-title-42",
+      "label": "Code of Federal Regulations",
+      "order": 110
+    }
+  ],
+  "subgroups": {
+    "governance-and-planning": [
+      "Program Foundation",
+      "Activation and Authority",
+      "Continuity and Regulatory Flexibility",
+      "Training and Testing"
+    ],
+    "all-hazards-response": [
+      "Activation and Command",
+      "Resident and Facility Operations",
+      "Security and Safety",
+      "Utilities and Access",
+      "Response Operations"
+    ],
+    "staffing-and-operations": [
+      "Staffing Program",
+      "Staffing Activation",
+      "Staff Support",
+      "Evacuation Staffing",
+      "Staffing Recovery"
+    ],
+    "communications": [
+      "Communication Planning",
+      "Resident and Family Communications",
+      "Internal Communications",
+      "External Communications",
+      "Evacuation Communications"
+    ],
+    "evacuation": [
+      "Evacuation Planning and Activation",
+      "Movement, Transportation, and Holding Areas",
+      "Resident Continuity During Evacuation",
+      "Resident Preparation Guides",
+      "Evacuation Tools and Attachments"
+    ],
+    "hazard-specific-procedures": [
+      "Initial Response Tools",
+      "Security and Human-Caused Events",
+      "Fire and Life Safety",
+      "Utility and Infrastructure Disruptions",
+      "Weather and Natural Hazards",
+      "Infectious Disease",
+      "Resident Safety Events"
+    ],
+    "recovery": [
+      "Recovery Governance",
+      "Assessment and Checklists",
+      "Service Recovery"
+    ],
+    "resources-and-attachments": [
+      "Supplies and Assets",
+      "Capability Assessments",
+      "Reference Attachments"
+    ],
+    "appendices": [
+      "Risk, Compliance, and Review",
+      "Agreements and Vendors",
+      "Communications and Contacts",
+      "Training and Testing",
+      "Tools and Quick Reference",
+      "Maps and Attachments",
+      "Regulatory and Waiver References"
+    ],
+    "som-appendix-z": [
+      "E-Tags",
+      "Support Sections"
+    ]
+  },
+  "overrides": {
+    "DOC-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS": {
+      "nav_group": "all-hazards-response",
+      "nav_subgroup": "Activation and Command",
+      "reason": "Incident command source section is presented with activation/command response workflow."
+    },
+    "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM": {
+      "nav_group": "all-hazards-response",
+      "nav_subgroup": "Activation and Command",
+      "reason": "Incident command source section is presented with activation/command response workflow."
+    },
+    "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS": {
+      "nav_group": "communications",
+      "nav_subgroup": "Communication Planning",
+      "reason": "Cross-cutting communications content is surfaced in the browser communications bucket."
+    },
+    "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION": {
+      "nav_group": "communications",
+      "nav_subgroup": "Resident and Family Communications",
+      "reason": "Resident/family information belongs with communication workflows in the browser."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN": {
+      "nav_group": "communications",
+      "nav_subgroup": "Communication Planning",
+      "reason": "Cross-cutting communications content is surfaced in the browser communications bucket."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER": {
+      "nav_group": "communications",
+      "nav_subgroup": "Internal Communications",
+      "reason": "Internal disaster communications are easier to find in the communications bucket."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER": {
+      "nav_group": "communications",
+      "nav_subgroup": "External Communications",
+      "reason": "External disaster communications are easier to find in the communications bucket."
+    },
+    "DOC-EVACUATION-COMMUNICATIONS": {
+      "nav_group": "communications",
+      "nav_subgroup": "Evacuation Communications",
+      "reason": "Evacuation communications is cross-cutting enough to surface with communications."
+    },
+    "DOC-GOVERNANCE_AND_PLANNING-DISASTER_STAFFING": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Program",
+      "reason": "Staffing program content belongs in the staffing workflow bucket."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Activation",
+      "reason": "Staff management during disasters is a staffing workflow."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-NOTIFICATION_OF_OFF_DUTY_STAFF_DISASTER_STAFFING_OPTIONS": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Activation",
+      "reason": "Off-duty staff notification is a staffing activation workflow."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staff Support",
+      "reason": "Staff sheltering is staff support content."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-STAFF_FAMILY_SHELTERING": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staff Support",
+      "reason": "Staff family sheltering is staff support content."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-STAFF_PET_SHELTERING": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staff Support",
+      "reason": "Staff pet sheltering is staff support content."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-CRITICAL_INCIDENT_STRESS_DEBRIEFING_CISD_FOR_STAFF": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staff Support",
+      "reason": "Staff stress debriefing is staff support content."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CREDENTIALING_PROGRAM": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Program",
+      "reason": "Emergency credentialing is part of staffing readiness."
+    },
+    "DOC-EVACUATION-ACTIVATE_LABOR_POOL": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Activation",
+      "reason": "Labor pool activation is cross-cutting staffing content, not an evacuation-only child."
+    },
+    "DOC-EVACUATION-STAFF_AND_EMERGENCY_SERVICES": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Evacuation Staffing",
+      "reason": "Evacuation staff and emergency services belongs with staffing operations."
+    },
+    "DOC-HAZARD_SPECIFIC_PROCEDURES-DEPARTMENT_SPECIFIC_EVACUATION_GUIDELINES": {
+      "nav_group": "evacuation",
+      "nav_subgroup": "Evacuation Tools and Attachments",
+      "reason": "Department-specific evacuation guidance is an evacuation support reference in the browser."
+    },
+    "DOC-RECOVERY-STAFFING_RECOVERY": {
+      "nav_group": "staffing-and-operations",
+      "nav_subgroup": "Staffing Recovery",
+      "reason": "Staffing recovery is grouped with staffing operations for scanning."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS": {
+      "nav_group": "resources-and-attachments",
+      "nav_subgroup": "Supplies and Assets",
+      "reason": "Resource and asset management is surfaced with reusable resources."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES": {
+      "nav_group": "resources-and-attachments",
+      "nav_subgroup": "Supplies and Assets",
+      "reason": "Critical supply responsibilities are surfaced with reusable resources."
+    },
+    "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES": {
+      "nav_group": "resources-and-attachments",
+      "nav_subgroup": "Capability Assessments",
+      "reason": "96-hour capability assessment is easier to find with resource/capability tools."
+    }
+  }
+}

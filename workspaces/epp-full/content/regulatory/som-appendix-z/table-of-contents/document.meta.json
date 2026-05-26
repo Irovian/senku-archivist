@@ -1,0 +1,37 @@
+{
+  "doc_id": "REG-SOMZ-SUPPORT-TABLE_OF_CONTENTS",
+  "title": "Appendix Z Table of Contents",
+  "content_group": "regulatory",
+  "content_type": "regulatory_support",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "Appendix Z",
+      "Table of Contents"
+    ],
+    "aliases": [
+      "Table of Contents"
+    ],
+    "legacy_titles": [],
+    "audience_terms": []
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "support_section",
+    "source_span": {
+      "start_line": 1,
+      "end_line": 48,
+      "start_page": 1,
+      "end_page": 2
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

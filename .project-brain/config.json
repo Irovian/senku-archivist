@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "project_id": "senku-archivist",
+  "project_name": "Senku Archivist",
+  "description": "Local-first document workbench for live browsing, proposal-reviewed editing, workspace packaging, and eventual export workflows.",
+  "created_at": "2026-05-26",
+  "id_prefixes": {
+    "backlog": "SG",
+    "decision": "DEC-SG",
+    "session": "SES-SG",
+    "requirement": "REQ"
+  },
+  "paths": {
+    "discovery_packet": "docs/discovery/senku-grill-discovery-packet.md",
+    "requirements": "docs/requirements/senku-grill-requirements.draft.json",
+    "backlog_index": ".project-brain/backlog/index.json",
+    "backlog_items": ".project-brain/backlog/items",
+    "decisions": ".project-brain/decisions",
+    "sessions": ".project-brain/sessions",
+    "questions_index": ".project-brain/questions/index.json",
+    "questions": ".project-brain/questions/items",
+    "schemas": ".project-brain/schemas",
+    "runs": ".project-brain/runs"
+  },
+  "default_run_policy": {
+    "mode": "supervised",
+    "concurrency": 1,
+    "allow_daemon": false,
+    "require_human_review": true,
+    "allow_auto_merge": false
+  }
+}

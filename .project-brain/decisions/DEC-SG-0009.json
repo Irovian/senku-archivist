@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0009",
+  "title": "Prototype HVA on the service-backed sidecar boundary",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "The HVA prototype should start by proving the service-backed workbook sidecar state boundary before investing in a more polished HVA UI surface.",
+  "context": "The workbook family and sidecar JSON state decisions are accepted. The next implementation risk is whether workbook state can be discovered, read, and drafted through the local service in a reusable way.",
+  "rationale": "Service-backed state proves the boundary future workbooks, audit history, import/export, and coworker local copies depend on. The UI can stay simple while this contract hardens.",
+  "alternatives_considered": [
+    "Build a front-end-only HVA mock first",
+    "Hard-code Appendix A state directly into the React app",
+    "Wait for the full proposal/review workflow before adding any workbook state endpoint"
+  ],
+  "consequences": [
+    "SG-0010 should focus on discovery/read/draft-write service endpoints and path conventions",
+    "Approved workbook writes remain reserved for a future review/apply workflow",
+    "HVA UI work can consume a real local sidecar state shape instead of mock-only data",
+    "The sidecar skeleton should avoid Appendix A-only storage assumptions"
+  ],
+  "related_requirements": [
+    "REQ-0028",
+    "REQ-0029"
+  ],
+  "related_backlog_items": [
+    "SG-0008",
+    "SG-0010"
+  ],
+  "related_questions": [
+    "Q-0014"
+  ]
+}

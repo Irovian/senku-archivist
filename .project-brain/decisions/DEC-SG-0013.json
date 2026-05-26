@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0013",
+  "title": "Use compatibility rendering before final React renderer rebuilds",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Markdown, CFR, compliance, and artifact output should first be ported through a live compatibility renderer, then high-value surfaces can be promoted into polished React components after the browser shell is stable.",
+  "context": "The old EPP browser renderer has many edge cases across Markdown, CFR pages, compliance links, artifact blocks, placeholders, anchors, draft-review lenses, and editing affordances. The user agreed that restoring the full browser shell/navigation comes first and later clarified that compatibility should not mean pre-rendering the full corpus as a static build artifact.",
+  "rationale": "A live compatibility renderer lets Archivist regain document coverage quickly from canonical source, including Appendix A and other edge-case EPP content, while preserving a future path to native React components for the surfaces that prove valuable.",
+  "alternatives_considered": [
+    "Rebuild all Markdown and artifact rendering directly as final React components before full EPP browsing is restored",
+    "Keep the old generated HTML browser as the long-term renderer",
+    "Only render simple Markdown until each artifact family is redesigned"
+  ],
+  "consequences": [
+    "Q-0006 and Q-0018 are resolved",
+    "SG-0014 remains blocked by SG-0013 but no longer needs renderer-strategy grilling",
+    "The first renderer pass can prioritize live behavior parity and coverage over component polish",
+    "High-value artifact families can be promoted to React components after usage and review prove the need"
+  ],
+  "related_requirements": [
+    "REQ-0020",
+    "REQ-0033",
+    "REQ-0034"
+  ],
+  "related_backlog_items": [
+    "SG-0013",
+    "SG-0014",
+    "SG-0003",
+    "SG-0006"
+  ],
+  "related_questions": [
+    "Q-0006",
+    "Q-0018"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0004",
+  "title": "Use a bundled EPP seed workspace for the first scaffold",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist v1 should start with a small bundled EPP seed workspace for development and demos while preserving a workspace manifest shape that can later open a full external EPP workspace.",
+  "context": "The app needs to be runnable immediately and easy to share, but should not trap tool development inside the original Emergency Prep Project process repo.",
+  "rationale": "A seed workspace gives the frontend and service concrete content without copying the entire generated browser or process repo. A manifest boundary keeps the future path open for full EPP imports, coworker copies, and non-EPP document collections.",
+  "alternatives_considered": [
+    "Copy the full EPP process repo into this app repo",
+    "Only open the original EPP repo by absolute path",
+    "Use generic fake content with no EPP seed"
+  ],
+  "consequences": [
+    "The first app can build and run without depending on the original EPP checkout",
+    "Seed content must be clearly marked as proof content, not the full EPP migration",
+    "The next service slice should read workspace manifests and documents through the local service",
+    "Full coworker EPP distribution remains a later packaging/import task"
+  ],
+  "related_requirements": [
+    "REQ-0001",
+    "REQ-0002",
+    "REQ-0011",
+    "REQ-0012"
+  ],
+  "related_backlog_items": [
+    "SG-0001"
+  ]
+}

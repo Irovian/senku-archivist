@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SG-0001",
+  "title": "Scaffold the app-first Archivist workspace shell",
+  "type": "build_slice",
+  "status": "needs_review",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Create the first runnable Archivist app shape: a Vite browser app, a local service boundary, and a workspace abstraction that can host EPP as the first seed without trapping the product inside EPP.",
+  "acceptance_criteria": [
+    "The repo has a Vite app shell that opens to a useful document-workbench surface rather than a marketing page",
+    "The app can describe at least one local workspace without hardcoding the original EPP repo as the only possible corpus",
+    "The local service boundary is named and documented even if the first slice uses fixtures",
+    "The EPP source repo is treated as import evidence or a seed workspace, not as the permanent app layout",
+    "The first slice preserves local-only and human-reviewed write assumptions",
+    "The first slice names Git-backed history plus an Archivist audit ledger as the history model",
+    "The first slice names how the latest document version and historical change lookup will be represented",
+    "The repo has a bundled EPP seed workspace with a manifest and representative Markdown bundles"
+  ],
+  "non_goals": [
+    "Migrating the full EPP corpus in the first commit",
+    "Building final export tooling",
+    "Adding cloud sync, external tracker sync, or unattended model writes",
+    "Replacing the original EPP process repo"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0001",
+    "REQ-0002",
+    "REQ-0003",
+    "REQ-0004",
+    "REQ-0005",
+    "REQ-0006",
+    "REQ-0007",
+    "REQ-0008",
+    "REQ-0009",
+    "REQ-0010",
+    "REQ-0011",
+    "REQ-0012"
+  ],
+  "related_questions": [
+    "Q-0004"
+  ],
+  "validation": [
+    "Run Senku Prep project-brain validation",
+    "Run the Vite build once the scaffold exists",
+    "Smoke the app locally in a browser after the first UI slice exists"
+  ],
+  "notes": "This is the first build item after resolving that Archivist should be general and app-first, with EPP as the first serious workspace/proving corpus. Markdown bundles are canonical for v1; history uses real Git for durable file versions plus an Archivist audit ledger for policy-workflow context. The first scaffold uses a small bundled EPP seed workspace and leaves full external workspace opening for the next service-backed slice."
+}

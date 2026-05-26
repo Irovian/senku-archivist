@@ -1,0 +1,175 @@
+{
+  "doc_id": "REG-SOMZ-E-0024",
+  "title": "E-0024 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0024",
+      "E-0024",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0024",
+      "E-0024"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0024",
+    "canonical_tag": "E-0024",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748(b)",
+      "\u00a7403.748(b)(6)",
+      "\u00a7416.54(b)(5)",
+      "\u00a7418.113(b)",
+      "\u00a7418.113(b)(4)",
+      "\u00a7441.184(b)(6)",
+      "\u00a7460.84(b)(7)",
+      "\u00a7482.15(b)(6)",
+      "\u00a7483.475(b)(6)",
+      "\u00a7483.73(b)(6)",
+      "\u00a7484.102(b)(5)",
+      "\u00a7485.625(b)(6)",
+      "\u00a7485.68(b)(4)",
+      "\u00a7485.727(b)(4)",
+      "\u00a7485.920(b)(5)",
+      "\u00a7491.12(b)(4)",
+      "\u00a7494.62(b)(5)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs, or OPOs.",
+      "NOTE: Facilities are required to have a risk assessment in accordance with E-0004,"
+    ],
+    "source_span": {
+      "start_line": 2174,
+      "end_line": 2312,
+      "start_page": 49,
+      "end_page": 52
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0024-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 18,
+        "end_line": 21,
+        "applies_to": [
+          "RNHCI"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7403.748(b)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "RNHCI",
+        "text_sha256": "927bf5cfec01c471d86a72caf6853a4ab33da08ed883cc6a74af41b5eafc2e98"
+      },
+      {
+        "segment_id": "SEG-SOMZ-E-0024-REGULATORY-BRANCH-2",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 2",
+        "source_section": "Regulatory Text",
+        "start_line": 22,
+        "end_line": 25,
+        "applies_to": [
+          "Hospice"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7418.113(b)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "Hospice",
+        "text_sha256": "ae571ae547d98e5d253f8895c8463103c5cf4e64466519bfdb7d7438d0c5fcfe"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0002",
+  "title": "Keep Markdown canonical and make history first-class",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist v1 should keep Markdown bundles as the canonical document source while making latest-version viewing and long-term change history first-class product behavior.",
+  "context": "The app needs to support policy and manual content where transparency matters. Users should see the latest approved document by default, while humans and models can review prior versions, change timing, and change rationale over long periods.",
+  "rationale": "Canonical Markdown keeps local workspaces inspectable and portable for coworkers. First-class history supports policy transparency, audit review, future rollback investigation, and model-assisted comparison without turning the app into an opaque database-first document store.",
+  "alternatives_considered": [
+    "Store document truth only in app state and export Markdown later",
+    "Rely on ad hoc filesystem backups",
+    "Show only current document state in the app"
+  ],
+  "consequences": [
+    "Document writes must pass through review-aware gates rather than silent background mutation",
+    "The app needs a visible history model that can retrieve older document states and diffs",
+    "The exact history backend remains open: real Git, app ledger, or a hybrid",
+    "Exports should be traceable to the latest approved document set and its history"
+  ],
+  "related_requirements": [
+    "REQ-0005",
+    "REQ-0006",
+    "REQ-0007",
+    "REQ-0008"
+  ],
+  "related_backlog_items": [
+    "SG-0001"
+  ]
+}

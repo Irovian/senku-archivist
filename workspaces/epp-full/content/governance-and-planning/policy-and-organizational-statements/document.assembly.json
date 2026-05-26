@@ -1,0 +1,106 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+  "title": "Policy and Organizational Statements",
+  "document_path": "_content/governance-and-planning/policy-and-organizational-statements/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-COLLABORATIVE-PARTNERS",
+      "token": "{{collaborative_partners}}",
+      "usage": "value_insertion",
+      "notes": "Organizations and stakeholders who participated in planning."
+    },
+    {
+      "placeholder_id": "PLH-LOCAL-RESPONSE-AGENCIES",
+      "token": "{{local_response_agencies}}",
+      "usage": "value_insertion",
+      "notes": "Emergency response agencies that reviewed or align with the plan."
+    },
+    {
+      "placeholder_id": "PLH-PLAN-OWNER-TITLE",
+      "token": "{{plan_owner_title}}",
+      "usage": "value_insertion",
+      "notes": "Facility role accountable for plan ownership and review."
+    },
+    {
+      "placeholder_id": "PLH-MATCH-TABLE-CONTENTS",
+      "token": "{{match_table_contents}}",
+      "usage": "value_insertion",
+      "notes": "Review-only token preserving the instruction to align appendix references and content labels with the final table of contents.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-5 (footnote 5).",
+        "legacy_topic": "Policy and Organizational Statements",
+        "original_superscript": "5",
+        "original_instruction_text": "Revise to match Table of Contents",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-TRAINING-PROGRAM-OWNER-TITLE",
+      "token": "{{training_program_owner_title}}",
+      "usage": "value_insertion",
+      "notes": "Facility title responsible for training program ownership when that ownership is stated in related program text.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-6 (footnote 6).",
+        "legacy_topic": "Policy and Organizational Statements",
+        "original_superscript": "6",
+        "original_instruction_text": "Insert correct position title",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-POLICY-MATCH-TABLE-CONTENTS",
+      "title": "Match Table of Contents",
+      "category": "alternate_wording",
+      "target_ref": "working_notes.match_table_contents",
+      "action_summary": "Preserve the reviewer instruction to align appendix references and section labels with the final table of contents before approval.",
+      "section_heading": "Working Notes",
+      "placeholder_ids": [
+        "PLH-MATCH-TABLE-CONTENTS"
+      ],
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-5 (footnote 5).",
+        "legacy_topic": "Policy and Organizational Statements",
+        "original_superscript": "5",
+        "original_instruction_text": "Revise to match Table of Contents",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-POLICY-TRAINING-PROGRAM-OWNER-TITLE",
+      "title": "Training Program Owner Title",
+      "category": "value_insertion",
+      "target_ref": "working_notes.training_program_owner_title",
+      "action_summary": "Use the reviewed training-program owner title where ownership is stated in the appropriate governance or training program document.",
+      "section_heading": "Working Notes",
+      "placeholder_ids": [
+        "PLH-TRAINING-PROGRAM-OWNER-TITLE"
+      ],
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-6 (footnote 6).",
+        "legacy_topic": "Policy and Organizational Statements",
+        "original_superscript": "6",
+        "original_instruction_text": "Insert correct position title",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

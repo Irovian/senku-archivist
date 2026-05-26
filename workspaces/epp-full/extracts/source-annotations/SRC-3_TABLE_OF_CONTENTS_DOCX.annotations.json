@@ -1,0 +1,307 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-04T02:28:52Z",
+  "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+  "source_path": "3 - Table of Contents.docx",
+  "source_type": "docx",
+  "annotations": [
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-2",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "2",
+      "instruction_text": "Insert facility name",
+      "anchor_text": "<Insert Facility Name>",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": "{{name}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-3",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "3",
+      "instruction_text": "Revise if different than 96 hours",
+      "anchor_text": "Baseline Assessment of 96 Hr Capability",
+      "heading_context": "Responsibilities for Ensuring Critical Supplies and Activities",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES"
+      ],
+      "suggested_token": "{{different_than_hours}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-4",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "4",
+      "instruction_text": "Delete procedure if no Carbon Monoxide alarms",
+      "anchor_text": "Carbon Monoxide Alarm Activation",
+      "heading_context": "Carbon Monoxide Alarm Activation",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-CARBON_MONOXIDE_ALARM_ACTIVATION"
+      ],
+      "suggested_token": "{{procedure_carbon_monoxide_alarms}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-5",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "5",
+      "instruction_text": "Generic plan for any facility outside NYS. Plan specific to NYS located in Part 3 -Section E: Pandemic Emergency Plan.",
+      "anchor_text": "Emerging Infectious Disease",
+      "heading_context": "Emerging Infectious Disease",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-EMERGING_INFECTIOUS_DISEASE"
+      ],
+      "suggested_token": "{{generic_plan_any_outside_nys_plan}}",
+      "suggested_action": "review_context",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-6",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "6",
+      "instruction_text": "Delete if not a risk for your region",
+      "anchor_text": "Hurricane",
+      "heading_context": "Hurricane",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-HURRICANE"
+      ],
+      "suggested_token": "{{not_risk_region}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-7",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "7",
+      "instruction_text": "Revise if propane versus natural gas",
+      "anchor_text": "Loss of Natural Gas / Propane",
+      "heading_context": "Loss of Natural Gas / Propane",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE"
+      ],
+      "suggested_token": "{{propane_versus_natural_gas}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-8",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "8",
+      "instruction_text": "Delete if no piped med gases in facility",
+      "anchor_text": "Loss of Oxygen / Vacuum",
+      "heading_context": "Loss of Oxygen / Vacuum",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "suggested_token": "{{piped_med_gases}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-9",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "9",
+      "instruction_text": "Delete if no steam service in facility",
+      "anchor_text": "Loss of Steam Pressure",
+      "heading_context": "Loss of Steam Pressure",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE"
+      ],
+      "suggested_token": "{{steam_service}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-10",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "10",
+      "instruction_text": "Revise if propane versus natural gas",
+      "anchor_text": "Natural Gas Odor / Propane Odor / Leak",
+      "heading_context": "Missing Resident",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-MISSING_RESIDENT"
+      ],
+      "suggested_token": "{{propane_versus_natural_gas}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-11",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "11",
+      "instruction_text": "This plan is specific to NYS. General Emerging Infectious Disease Plan for any other state located in Part 1 \u2013 Section E.",
+      "anchor_text": "Pandemic Emergency Plan \u2013 Emerging Infectious Disease",
+      "heading_context": "Emerging Infectious Disease",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-EMERGING_INFECTIOUS_DISEASE"
+      ],
+      "suggested_token": "{{this_plan_specific_nys_general_emerging}}",
+      "suggested_action": "review_context",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-12",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "12",
+      "instruction_text": "Delete if not a risk for your region",
+      "anchor_text": "Snow Emergency / Ice Storm",
+      "heading_context": "Snow Emergency / Ice Storm",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-SNOW_EMERGENCY_ICE_STORM"
+      ],
+      "suggested_token": "{{not_risk_region}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-13",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "13",
+      "instruction_text": "Delete if not a risk for your region",
+      "anchor_text": "Volcanic Eruption",
+      "heading_context": "Volcanic Eruption",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-VOLCANIC_ERUPTION"
+      ],
+      "suggested_token": "{{not_risk_region}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-14",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "14",
+      "instruction_text": "Delete if not a risk for your region",
+      "anchor_text": "Wildfire",
+      "heading_context": "Wildfire",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-WILDFIRE"
+      ],
+      "suggested_token": "{{not_risk_region}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footnote-15",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "15",
+      "instruction_text": "Customize Appendices and insert into plan",
+      "anchor_text": "APPENDICES:",
+      "heading_context": "Form 301 - Department Rapid Assessment Form",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-RECOVERY-FORM_301_DEPARTMENT_RAPID_ASSESSMENT_FORM"
+      ],
+      "suggested_token": "{{customize_appendices_into_plan}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-footer-footer2",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footer",
+      "marker_id": "footer2",
+      "instruction_text": "9",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-3_TABLE_OF_CONTENTS_DOCX-header-header2",
+      "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header2",
+      "instruction_text": "EMERGENCY PREPAREDNESS BEST PRACTICE GUIDEBOOK FOR LONG TERM CARE",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    }
+  ]
+}

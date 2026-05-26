@@ -1,0 +1,20 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_O",
+  "title": "Appendix O - Entities Providing Services Under Arrangement",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_O_COVER_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_O_ENTITIES_PROVIDING_SERVICES_UNDER_ARRANGEMENT_1_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-B-OVERALL-POLICIES"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

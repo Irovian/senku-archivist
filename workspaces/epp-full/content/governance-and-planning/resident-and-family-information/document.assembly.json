@@ -1,0 +1,72 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION",
+  "title": "Resident and Family Information",
+  "document_path": "_content/governance-and-planning/resident-and-family-information/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-WEBSITE",
+      "token": "{{facility_website}}",
+      "usage": "value_insertion",
+      "notes": "Identifies the facility website or emergency update page when it is used for resident and family information.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-13 (footnote 13).",
+        "legacy_topic": "Resident and Family Information",
+        "original_superscript": "13",
+        "original_instruction_text": "Delete statement if not applicable to facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+      "token": "{{include_facility_website_reference}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the website-update sentence remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-13 (footnote 13).",
+        "legacy_topic": "Resident and Family Information",
+        "original_superscript": "13",
+        "original_instruction_text": "Delete statement if not applicable to facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-RESIDENT-FAMILY-INFORMATION-FACILITY-WEBSITE-REFERENCE",
+      "title": "Facility Website Reference",
+      "category": "optional_paragraph",
+      "target_ref": "information_sharing_approach.facility_website_reference",
+      "action_summary": "Keep the website-update sentence only when the facility uses a website for emergency updates.",
+      "section_heading": "Information Sharing Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+        "PLH-FACILITY-WEBSITE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+      "condition_expected_value": "true",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-13 (footnote 13).",
+        "legacy_topic": "Resident and Family Information",
+        "original_superscript": "13",
+        "original_instruction_text": "Delete statement if not applicable to facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

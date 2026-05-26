@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0008",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should inline manual edits and model proposals stay as separate workflows, or collapse into one proposal system?",
+  "recommended_answer": "Keep them separate at input time, but unify their review/audit output.",
+  "answer": "Keep them separate at input time, but unify their review/audit output.",
+  "rationale": "Manual edits need low ceremony. Model edits need explicit proposal intent. Accepted output should still share history and audit contracts.",
+  "related_backlog_items": [
+    "SG-0005"
+  ],
+  "related_requirements": [
+    "REQ-0017",
+    "REQ-0018"
+  ],
+  "resolved_by": "DEC-SG-0017",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

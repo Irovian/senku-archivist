@@ -1,0 +1,11 @@
+{
+  "source_id": "SRC-CMS_R204SOMA_TRANSMITTAL_HTML",
+  "path": "_sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
+  "extract_status": "generated",
+  "extract_method": "html_text",
+  "warning": null,
+  "generated_at": "2026-05-19T23:14:25Z",
+  "source_role": "raw_regulatory_source",
+  "revision": "204",
+  "sha256": "f04ac6bd4c311cf8f0682eaf8312204a767a725057b5088e3d90ddbe744fd9f0"
+}

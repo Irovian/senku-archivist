@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_M",
+  "title": "Appendix M - PPE Burn Rate Calculator",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_M_COVER_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_M_PPE_BURN_RATE_CALCULATOR_XLSX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-B1-SUBSISTENCE-UTILITIES"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

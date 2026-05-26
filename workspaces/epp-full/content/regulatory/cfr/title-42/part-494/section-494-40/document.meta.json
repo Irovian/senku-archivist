@@ -1,0 +1,187 @@
+{
+  "doc_id": "REG-CFR-42-494-40",
+  "title": "42 CFR \u00a7494.40 Condition: Water and dialysate quality",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_494_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 494.40",
+      "\u00a7494.40",
+      "Condition: Water and dialysate quality"
+    ],
+    "aliases": [
+      "42 CFR 494.40(a)(4)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_494_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "494",
+    "section": "494.40",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 494.40(a)(4)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 494.40",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "ac93710e69e35ddeb67287b76446b91d699df4183e0844ddc7e2abd908dc4959"
+      },
+      {
+        "citation": "42 CFR 494.40(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "e87c675dcceb60d694483928d4f0a98d2cacbc767437580a8808dd79f25f4c7c"
+      },
+      {
+        "citation": "42 CFR 494.40(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "13d3e7050b24297f4b6a5b2e27bf805b54b42ba60219ac8ceaaf1cd6f5d40ad1"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)",
+        "anchor_id": "subsection-b-2",
+        "path": [
+          "b",
+          "2"
+        ],
+        "text_sha256": "5c826594b5f2e4f8b4f3780a0c1fa8feda89eeb902351ce6ccb0938a8865ab07"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)(ii)",
+        "anchor_id": "subsection-b-2-ii",
+        "path": [
+          "b",
+          "2",
+          "ii"
+        ],
+        "text_sha256": "4703aeb6fd87c49c8c44d9b9d167a5515eeb062217289a3bb316b482e5511d9f"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)(ii)(a)",
+        "anchor_id": "subsection-b-2-ii-a",
+        "path": [
+          "b",
+          "2",
+          "ii",
+          "a"
+        ],
+        "text_sha256": "abb5a45fc520fd35da88b8969f91c97be0e7f517af9a7a1a57121acf0a8047d2"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)(ii)(b)",
+        "anchor_id": "subsection-b-2-ii-b",
+        "path": [
+          "b",
+          "2",
+          "ii",
+          "b"
+        ],
+        "text_sha256": "528acc6c3858f7da929c76be248bd0dd2dbaadcb3e6f3dabad1b073aabed8874"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)(ii)(c)",
+        "anchor_id": "subsection-b-2-ii-c",
+        "path": [
+          "b",
+          "2",
+          "ii",
+          "c"
+        ],
+        "text_sha256": "8b98ec30230ba8163ac29b68d6f231bf55e04953364458da8b582987fe6bd26f"
+      },
+      {
+        "citation": "42 CFR 494.40(b)(2)(ii)(d)",
+        "anchor_id": "subsection-b-2-ii-d",
+        "path": [
+          "b",
+          "2",
+          "ii",
+          "d"
+        ],
+        "text_sha256": "d0921a69c6b1e48939b74a0bf4249314e88f48d81278c1e2cbe02478ade8793b"
+      },
+      {
+        "citation": "42 CFR 494.40(c)",
+        "anchor_id": "subsection-c",
+        "path": [
+          "c"
+        ],
+        "text_sha256": "22f661a61cff6bb8df606d5d7f71842871e986330986cf8cb578a27a8e79c9de"
+      },
+      {
+        "citation": "42 CFR 494.40(d)",
+        "anchor_id": "subsection-d",
+        "path": [
+          "d"
+        ],
+        "text_sha256": "cbb46eef4c82b4b413d6bdc68c3dfbe98f535fe354c9ee89ad10002289ba69d6"
+      },
+      {
+        "citation": "42 CFR 494.40(d)(1)",
+        "anchor_id": "subsection-d-1",
+        "path": [
+          "d",
+          "1"
+        ],
+        "text_sha256": "c87ef752eef07fd438bdcc2ebe2aaa04a734da34ee2a7c3fe9e9a75cd37b4253"
+      },
+      {
+        "citation": "42 CFR 494.40(d)(2)",
+        "anchor_id": "subsection-d-2",
+        "path": [
+          "d",
+          "2"
+        ],
+        "text_sha256": "41a5655b51cf4c92fc099e20ffdc8db10acc07f536cd650bf30ad3a22a594415"
+      },
+      {
+        "citation": "42 CFR 494.40(d)(3)",
+        "anchor_id": "subsection-d-3",
+        "path": [
+          "d",
+          "3"
+        ],
+        "text_sha256": "0640f8f5236329d73487cc50a188538eeeec226eb61b7dd7dc2501258dad19e5"
+      },
+      {
+        "citation": "42 CFR 494.40(e)",
+        "anchor_id": "subsection-e",
+        "path": [
+          "e"
+        ],
+        "text_sha256": "8ad6b31525a07ec5bf45d47c1101895b483948913a910de61e5cb19effb70117"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 15,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

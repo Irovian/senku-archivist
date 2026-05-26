@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "Q-0007",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the old LM Studio bridge remain the agent/chat contract, or should Archivist define a provider-neutral local agent interface with LM Studio as the first adapter?",
+  "recommended_answer": "Define a provider-neutral local agent interface, with an LM Studio/OpenAI-compatible local endpoint as the first adapter.",
+  "answer": "Define a provider-neutral local agent interface, with an LM Studio/OpenAI-compatible local endpoint as the first adapter.",
+  "rationale": "The app remains local-first, but the interface should not freeze all future agent work to one provider implementation.",
+  "related_backlog_items": [
+    "SG-0004"
+  ],
+  "related_requirements": [
+    "REQ-0037"
+  ],
+  "resolved_by": "DEC-SG-0016",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

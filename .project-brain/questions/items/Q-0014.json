@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "Q-0014",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the HVA prototype start with a service-backed sidecar state skeleton, or with a front-end-only mock state?",
+  "recommended_answer": "Start with a service-backed sidecar state skeleton.",
+  "answer": "Start with a service-backed sidecar state skeleton.",
+  "rationale": "The UI can stay simple, but future workbooks, audit, import/export, approved-state history, and coworker local copies all depend on proving the state boundary early.",
+  "related_backlog_items": [
+    "SG-0010"
+  ],
+  "related_requirements": [
+    "REQ-0029"
+  ],
+  "resolved_by": "DEC-SG-0009",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

@@ -1,0 +1,60 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-04T02:28:51Z",
+  "source_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX",
+  "source_path": "13 - Appendices/Appendices - Table of Contents.docx",
+  "source_type": "docx",
+  "annotations": [
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX-footnote-2",
+      "source_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "2",
+      "instruction_text": "Customize Appendices and insert into plan",
+      "anchor_text": "APPENDICES:",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": "{{customize_appendices_into_plan}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX-header-header2",
+      "source_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header2",
+      "instruction_text": "EMERGENCY OPERATIONS PLAN",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX-header-header3",
+      "source_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header3",
+      "instruction_text": "EMERGENCY OPERATIONS PLAN",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    }
+  ]
+}

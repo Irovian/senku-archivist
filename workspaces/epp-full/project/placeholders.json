@@ -1,0 +1,2666 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-06T23:26:00Z",
+  "placeholders": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "label": "Facility Name",
+      "description": "Official facility name used throughout the program.",
+      "scope": "project_wide",
+      "example_value": "Example Skilled Nursing and Rehab Center",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES",
+        "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
+        "DOC-ALL_HAZARDS_RESPONSE-CENSUS_REDUCTION_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-CRITICAL_INCIDENT_STRESS_DEBRIEFING_CISD_FOR_STAFF",
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES",
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CREDENTIALING_PROGRAM",
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-LOSS_OF_PARKING_INABILITY_TO_COMMUTE_TO_FACILITY",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESIDENTS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_SECURITY_AND_SAFETY_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-MORGUE_MASS_FATALITY_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-NOTIFICATION_OF_OFF_DUTY_STAFF_DISASTER_STAFFING_OPTIONS",
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_FAMILY_SHELTERING",
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_PET_SHELTERING",
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING",
+        "DOC-ALL_HAZARDS_RESPONSE-SURGE_CAPACITY_PLAN",
+        "DOC-APPENDICES-APPENDIX_A",
+        "DOC-APPENDICES-APPENDIX_B",
+        "DOC-APPENDICES-APPENDIX_C",
+        "DOC-APPENDICES-APPENDIX_D",
+        "DOC-APPENDICES-APPENDIX_E",
+        "DOC-APPENDICES-APPENDIX_F",
+        "DOC-APPENDICES-APPENDIX_G",
+        "DOC-APPENDICES-APPENDIX_H",
+        "DOC-APPENDICES-APPENDIX_I",
+        "DOC-APPENDICES-APPENDIX_J",
+        "DOC-APPENDICES-APPENDIX_K",
+        "DOC-APPENDICES-APPENDIX_L",
+        "DOC-APPENDICES-APPENDIX_M",
+        "DOC-APPENDICES-APPENDIX_N",
+        "DOC-APPENDICES-APPENDIX_O",
+        "DOC-APPENDICES-APPENDIX_P",
+        "DOC-EVACUATION-ACTION_PLAN",
+        "DOC-EVACUATION-ACTIVATE_LABOR_POOL",
+        "DOC-EVACUATION-ACTIVATION_OF_PLAN",
+        "DOC-EVACUATION-ASSIGNMENT_OF_RESIDENT_EVACUATION_STAFF",
+        "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES",
+        "DOC-EVACUATION-CENSUS_REDUCTION",
+        "DOC-EVACUATION-COMMUNICATIONS",
+        "DOC-EVACUATION-EVACUATION_FLOOR_PLANS",
+        "DOC-EVACUATION-EVACUATION_ORDER",
+        "DOC-EVACUATION-EVACUATION_PRIORITIZATION",
+        "DOC-EVACUATION-FULL_BUILDING_EVACUATION_PLAN_ALGORITHM",
+        "DOC-EVACUATION-HOLDING_AREAS",
+        "DOC-EVACUATION-INTERNAL_ROUTES_OF_TRAVEL",
+        "DOC-EVACUATION-INTRODUCTION",
+        "DOC-EVACUATION-MEDICATIONS_AND_FEDERALLY_CONTROLLED_SUBSTANCES",
+        "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+        "DOC-EVACUATION-RESIDENT_EVACUATION_TRACKING_FORM",
+        "DOC-EVACUATION-RESIDENT_MEDICAL_RECORDS",
+        "DOC-EVACUATION-RESIDENT_PERSONAL_BELONGINGS",
+        "DOC-EVACUATION-RESIDENT_PLACEMENT_INTO_OTHER_FACILITIES",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_ASSISTED_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_INDEPENDENT_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_SKILLED_NURSING_RESIDENTS",
+        "DOC-EVACUATION-STAFF_AND_EMERGENCY_SERVICES",
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL",
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING",
+        "DOC-GOVERNANCE_AND_PLANNING-AUTHORITY_TO_ACTIVATE_THE_PLAN",
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-DISASTER_STAFFING",
+        "DOC-GOVERNANCE_AND_PLANNING-LOSS_OF_UTILITIES",
+        "DOC-GOVERNANCE_AND_PLANNING-MITIGATION_OVERVIEW",
+        "DOC-GOVERNANCE_AND_PLANNING-ORDER_OF_SUCCESSION_INCIDENT_COMMAND_TEAM",
+        "DOC-GOVERNANCE_AND_PLANNING-PLANNING_ASSUMPTIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION",
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION",
+        "DOC-GOVERNANCE_AND_PLANNING-RISK_ASSESSMENT_PROCESS",
+        "DOC-GOVERNANCE_AND_PLANNING-ROLE_OF_THE_FACILITY_UNDER_AN_1135_WAIVER",
+        "DOC-GOVERNANCE_AND_PLANNING-SERVING_AS_AN_ALTERNATE_CARE_SITE",
+        "DOC-GOVERNANCE_AND_PLANNING-SHELTER_IN_PLACE_PLAN",
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING",
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-ACTIVE_SHOOTER_PERSON_WITH_A_WEAPON",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-AGGRESSIVE_OR_VIOLENT_BEHAVIOR_GUIDE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-BIOTERRORISM_TERRORISM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-BOMB_THREAT_CALL_LOG",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-BOMB_THREAT_SUSPICIOUS_PACKAGE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-BUILDING_SEARCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-CARBON_MONOXIDE_ALARM_ACTIVATION",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-CIVIL_DISTURBANCE_DEMONSTRATION",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-CONTAMINATION_OF_OUTSIDE_AIR",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-DATA_SECURITY_BREACH_CYBER_ATTACK",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-DEPARTMENT_SPECIFIC_EVACUATION_GUIDELINES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-EARTHQUAKE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-EMERGING_INFECTIOUS_DISEASE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRST_24_HOUR_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FLOOD_INTERNAL_EXTERNAL",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-HAZARDOUS_MATERIAL_SPILL_OR_LEAK",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-HOSTAGE_TAKING",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-HURRICANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_CENTRAL_SERVICES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_INFORMATION_TECHNOLOGY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-MISSING_RESIDENT",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-MISSING_RESIDENT_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-MISSING_RESIDENT_INFORMATION_SHEET",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-PANDEMIC_EMERGENCY_PLAN",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-SECURITY_SITUATION",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-SNOW_EMERGENCY_ICE_STORM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-TORNADO_HIGH_WINDS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-VOLCANIC_ERUPTION",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-WILDFIRE",
+        "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+        "DOC-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS",
+        "DOC-INCIDENT_COMMAND-DISCHARGE_FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+        "DOC-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+        "DOC-INCIDENT_COMMAND-ELEVATOR_EVACUATION_TEAM_TEAM_LEADER",
+        "DOC-INCIDENT_COMMAND-FINANCE_SECTION_CHIEF",
+        "DOC-INCIDENT_COMMAND-FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+        "DOC-INCIDENT_COMMAND-HOLDING_AREA_UNIT_LEADER",
+        "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+        "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+        "DOC-INCIDENT_COMMAND-JOB_ACTION_SHEETS_AND_ASSOCIATED_FORMS",
+        "DOC-INCIDENT_COMMAND-LABOR_POOL_UNIT_LEADER",
+        "DOC-INCIDENT_COMMAND-LOGISTICS_SECTION_CHIEF",
+        "DOC-INCIDENT_COMMAND-NURSING_SUPERVISOR_DIRECTOR_OF_NURSING_CHARGE_NURSE_DEPARTMENT_DIRECTOR",
+        "DOC-INCIDENT_COMMAND-OPERATIONS_SECTION_CHIEF",
+        "DOC-INCIDENT_COMMAND-PLANNING_SECTION_CHIEF",
+        "DOC-INCIDENT_COMMAND-PUBLIC_INFORMATION_OFFICER",
+        "DOC-INCIDENT_COMMAND-SAFETY_SECURITY_LIAISON_OFFICER",
+        "DOC-INCIDENT_COMMAND-STAIRWELL_EVACUATION_TEAM_TEAM_LEADER",
+        "DOC-INCIDENT_COMMAND-TRIAGE_UNIT_LEADER",
+        "DOC-RECOVERY-DAMAGE_AND_OPERATIONAL_ASSESSMENTS",
+        "DOC-RECOVERY-FACILITY_SYSTEM_STATUS_REPORT",
+        "DOC-RECOVERY-FOOD_SERVICES_RECOVERY",
+        "DOC-RECOVERY-FORM_301_DEPARTMENT_RAPID_ASSESSMENT_FORM",
+        "DOC-RECOVERY-FULL_RECOVERY_STRUCTURE",
+        "DOC-RECOVERY-INFORMATION_TECHNOLOGY_RECOVERY",
+        "DOC-RECOVERY-RECOVERY_CHECKLIST",
+        "DOC-RECOVERY-RECOVERY_PLAN_OVERVIEW",
+        "DOC-RECOVERY-RESIDENT_SERVICES_RECOVERY",
+        "DOC-RECOVERY-STAFFING_RECOVERY",
+        "DOC-RECOVERY-UTILITIES_RECOVERY",
+        "DOC-RESOURCES_AND_LISTS-DISASTER_KIT_CONTENTS",
+        "DOC-RESOURCES_AND_LISTS-ELEVATOR_KEYS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_BEDDING_MATERIALS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTRACTOR_VENDOR_LISTS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_FOOD_SUPPLY_LIST",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_RESPONSE_AGENCY_PHONE_NUMBERS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_TRANSPORT_EQUIPMENT_TO_MOVE_RESIDENTS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_UTILITY_SHUT_OFF_LOCATIONS",
+        "DOC-RESOURCES_AND_LISTS-EXTERNAL_RESPONSE_PARTNERS_PHONE_NUMBERS",
+        "DOC-RESOURCES_AND_LISTS-FACILITY_INFORMATION_DETAIL",
+        "DOC-RESOURCES_AND_LISTS-GENERATOR_INFORMATION",
+        "DOC-RESOURCES_AND_LISTS-SUPPLY_DELIVERY_LOCATION",
+        "DOC-RESOURCES_AND_LISTS-TRANSPORTATION_RESOURCES_FACILITY_OWNED_VEHICLES",
+        "DOC-RESOURCES_AND_LISTS-VENDOR_SOURCES_OF_FUEL"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-COLLABORATIVE-PARTNERS",
+      "token": "{{collaborative_partners}}",
+      "label": "Collaborative Partners",
+      "description": "Organizations and stakeholders who participated in planning.",
+      "scope": "project_wide",
+      "example_value": "county emergency management, local hospital, fire rescue",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-APPENDICES-APPENDIX_F",
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-LOCAL-RESPONSE-AGENCIES",
+      "token": "{{local_response_agencies}}",
+      "label": "Local Response Agencies",
+      "description": "Emergency response agencies that reviewed or align with the plan.",
+      "scope": "project_wide",
+      "example_value": "County Emergency Management, Fire Rescue, Public Health",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-APPENDICES-APPENDIX_F",
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-PLAN-OWNER-TITLE",
+      "token": "{{plan_owner_title}}",
+      "label": "Plan Owner Title",
+      "description": "Title of the role responsible for annual plan review and updates.",
+      "scope": "project_wide",
+      "example_value": "Administrator",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-APPENDICES-APPENDIX_F",
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-COUNTY-NAME",
+      "token": "{{county_name}}",
+      "label": "County Name",
+      "description": "County or jurisdiction served by the facility.",
+      "scope": "facility_profile",
+      "example_value": "Orange County",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": []
+    },
+    {
+      "placeholder_id": "PLH-COMMAND-CENTER-PRIMARY",
+      "token": "{{primary_command_center_location}}",
+      "label": "Primary Command Center Location",
+      "description": "Primary command center location inside the facility.",
+      "scope": "facility_profile",
+      "example_value": "Administration Conference Room",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-EVACUATION-ACTION_PLAN",
+        "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-COMMAND-CENTER-ALTERNATE",
+      "token": "{{alternate_command_center_location}}",
+      "label": "Alternate Command Center Location",
+      "description": "Fallback command center location.",
+      "scope": "facility_profile",
+      "example_value": "Dining Room B",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-EVACUATION-ACTION_PLAN",
+        "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-CODE-ALERT",
+      "token": "{{emergency_code_alert}}",
+      "label": "Emergency Code Alert",
+      "description": "Facility-specific overhead code or alert phrase.",
+      "scope": "procedural",
+      "example_value": "Code Alert",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES",
+        "DOC-EVACUATION-ACTION_PLAN",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-CARBON_MONOXIDE_ALARM_ACTIVATION",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER",
+        "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-PRIMARY-EMERGENCY-CONTACT",
+      "token": "{{primary_emergency_contact_name}}",
+      "label": "Primary Emergency Contact",
+      "description": "Primary facility emergency contact name.",
+      "scope": "facility_profile",
+      "example_value": "Jamie Smith",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-APPENDICES-APPENDIX_G",
+        "DOC-APPENDICES-APPENDIX_N",
+        "DOC-APPENDICES-APPENDIX_P",
+        "DOC-EVACUATION-COMMUNICATIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-LTC-OMBUDSMAN-CONTACT",
+      "token": "{{state_ltc_ombudsman_contact}}",
+      "label": "State LTC Ombudsman Contact",
+      "description": "State long-term care ombudsman contact information reference.",
+      "scope": "compliance",
+      "example_value": "1-800-555-0100",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-APPENDICES-APPENDIX_G",
+        "DOC-APPENDICES-APPENDIX_N",
+        "DOC-APPENDICES-APPENDIX_P",
+        "DOC-EVACUATION-COMMUNICATIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-TYPE-DESIGNATION",
+      "token": "{{facility_type_designation}}",
+      "label": "Facility Type Designation",
+      "description": "Facility type label used in continuity planning, such as nursing home or skilled nursing facility.",
+      "scope": "facility_profile",
+      "example_value": "Skilled Nursing Facility",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS",
+        "DOC-GOVERNANCE_AND_PLANNING-RISK_ASSESSMENT_PROCESS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-SERVICE-LINES-OFFERED-BULLETS",
+      "token": "{{service_lines_offered_bullets}}",
+      "label": "Service Lines Offered Bullets",
+      "description": "Formatted bullet list of the services or care lines the facility provides.",
+      "scope": "facility_profile",
+      "example_value": "- Dementia/Alzheimer's Care\n- Rehabilitation\n- IV/Tube Feedings",
+      "required": true,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-THERAPY-REFERRAL-LOCATION",
+      "token": "{{therapy_referral_location}}",
+      "label": "Therapy Referral Location",
+      "description": "Location or provider used if therapy services cannot be provided on site.",
+      "scope": "facility_profile",
+      "example_value": "Regional Rehab Clinic",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-ADULT-DAY-CARE-REFERRAL-LOCATION",
+      "token": "{{adult_day_care_referral_location}}",
+      "label": "Adult Day Care Referral Location",
+      "description": "Location or provider used if adult day care services must be redirected.",
+      "scope": "facility_profile",
+      "example_value": "Community Adult Day Center",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-HOME-CARE-REFERRAL-DESTINATION",
+      "token": "{{home_care_referral_destination}}",
+      "label": "Home Care Referral Destination",
+      "description": "Service or location used if home care services cannot continue.",
+      "scope": "facility_profile",
+      "example_value": "Partner Home Health Agency",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-TEMPORARY-STOPOVER-LOCATION",
+      "token": "{{temporary_stopover_location}}",
+      "label": "Temporary Stop-Over Location",
+      "description": "Pre-arranged temporary stop-over location used during resident relocation.",
+      "scope": "facility_profile",
+      "example_value": "First Baptist Family Life Center",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-EVACUATION-HOLDING_AREAS",
+        "DOC-EVACUATION-INTRODUCTION",
+        "DOC-EVACUATION-RESIDENT_PLACEMENT_INTO_OTHER_FACILITIES",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_ASSISTED_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_INDEPENDENT_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_SKILLED_NURSING_RESIDENTS",
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-RECEIVING-FACILITY-PARTNERS",
+      "token": "{{receiving_facility_partners}}",
+      "label": "Receiving Facility Partners",
+      "description": "Receiving facilities or partner providers used for alternate care arrangements or evacuation.",
+      "scope": "facility_profile",
+      "example_value": "Example Medical Center and Harbor View Rehab",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-EVACUATION-EVACUATION_PRIORITIZATION",
+        "DOC-EVACUATION-INTRODUCTION",
+        "DOC-EVACUATION-RESIDENT_PLACEMENT_INTO_OTHER_FACILITIES",
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL",
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-MUTUAL-AID-PLAN-SUPPORT-CLAUSE",
+      "token": "{{include_mutual_aid_plan_support_clause}}",
+      "label": "Include Mutual Aid Plan Support Clause",
+      "description": "Boolean-style working token indicating whether the mutual aid plan support clause stays in the final document.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING",
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-OUTPATIENT-SERVICES-REFERRAL-SECTION",
+      "token": "{{include_outpatient_services_referral_section}}",
+      "label": "Include Outpatient Services Referral Section",
+      "description": "Boolean-style working token indicating whether the outpatient referral subsection stays in the final document.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-THERAPY-REFERRAL-BULLET",
+      "token": "{{include_therapy_referral_bullet}}",
+      "label": "Include Therapy Referral Bullet",
+      "description": "Boolean-style working token indicating whether the therapy referral bullet stays in the final document.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-ADULT-DAY-CARE-REFERRAL-BULLET",
+      "token": "{{include_adult_day_care_referral_bullet}}",
+      "label": "Include Adult Day Care Referral Bullet",
+      "description": "Boolean-style working token indicating whether the adult day care referral bullet stays in the final document.",
+      "scope": "automation_rules",
+      "example_value": "false",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-HOME-CARE-REFERRAL-BULLET",
+      "token": "{{include_home_care_referral_bullet}}",
+      "label": "Include Home Care Referral Bullet",
+      "description": "Boolean-style working token indicating whether the home care referral bullet stays in the final document.",
+      "scope": "automation_rules",
+      "example_value": "false",
+      "required": false,
+      "aliases": [],
+      "status": "approved",
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ]
+    },
+    {
+      "placeholder_id": "PLH-AFTER-ACTION-REPORT-FORMAT",
+      "token": "{{after_action_report_format}}",
+      "label": "After-Action Report Format",
+      "description": "Documentation format used for drills, tabletop exercises, emergency events, and improvement plan capture.",
+      "scope": "facility_profile",
+      "example_value": "After-Action Report (AAR)",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-AFTER-ACTION-IMPROVEMENT-OWNER",
+      "token": "{{after_action_improvement_owner}}",
+      "label": "After-Action Improvement Owner",
+      "description": "Position title or committee responsible for reviewing, tracking, and assigning improvement tasks after drills or exercises.",
+      "scope": "facility_profile",
+      "example_value": "Emergency Preparedness Committee",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ACTIVATION-AUTHORITY-POSITION-TITLES",
+      "token": "{{activation_authority_position_titles}}",
+      "label": "Activation Authority Position Titles",
+      "description": "Facility position titles that may assume activation authority when the usual leaders are unavailable.",
+      "scope": "facility_profile",
+      "example_value": "Director of Nursing, Charge Nurse, Department Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-AUTHORITY_TO_ACTIVATE_THE_PLAN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMPLOYEE-CONTACT-INFORMATION-LOCATION",
+      "token": "{{employee_contact_information_location}}",
+      "label": "Employee Contact Information Location",
+      "description": "System, list, intranet location, or other source where staff emergency contact information is maintained.",
+      "scope": "facility_profile",
+      "example_value": "the HRIS staff directory on the facility intranet",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-REPORTING-SYSTEM-NAME",
+      "token": "{{emergency_reporting_system_name}}",
+      "label": "Emergency Reporting System Name",
+      "description": "Jurisdiction-specific electronic reporting system used for emergency status, resource, or health alert reporting when applicable.",
+      "scope": "facility_profile",
+      "example_value": "Health Alert Network (HAN)",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+        "DOC-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS"
+      ],
+      "aliases": [
+        "Health Alert Network",
+        "HAN",
+        "HHAN"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EMERGENCY-REPORTING-SYSTEM-REFERENCE",
+      "token": "{{include_emergency_reporting_system_reference}}",
+      "label": "Include Emergency Reporting System Reference",
+      "description": "Assembly control for keeping the emergency reporting system reference when the facility uses an applicable system.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-HOME-HEALTHCARE-COMPONENT-CLAUSE",
+      "token": "{{include_home_healthcare_component_clause}}",
+      "label": "Include Home Healthcare Component Clause",
+      "description": "Assembly control for keeping the reminder that a facility with a Home Healthcare component must include it in planning and exercises.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCIDENT-COMMAND-SUCCESSION-TITLES",
+      "token": "{{incident_command_succession_titles}}",
+      "label": "Incident Command Succession Titles",
+      "description": "Facility-specific position titles used in the incident command order of succession.",
+      "scope": "facility_profile",
+      "example_value": "Administrator; Director of Nursing; Charge Nurse; Maintenance Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-ORDER_OF_SUCCESSION_INCIDENT_COMMAND_TEAM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PLANNED-SHELTER-IN-PLACE-DURATION",
+      "token": "{{planned_shelter_in_place_duration}}",
+      "label": "Planned Shelter-in-Place Duration",
+      "description": "Planning duration the facility uses for shelter-in-place and self-sustaining resource assumptions.",
+      "scope": "facility_profile",
+      "example_value": "96 hours",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-PLANNING_ASSUMPTIONS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MATCH-TABLE-CONTENTS",
+      "token": "{{match_table_contents}}",
+      "label": "Match Table of Contents",
+      "description": "Review token reminding authors to align appendix and content references with the final table of contents.",
+      "scope": "review_context",
+      "example_value": "Confirm appendix list matches final table of contents.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-TRAINING-PROGRAM-OWNER-TITLE",
+      "token": "{{training_program_owner_title}}",
+      "label": "Training Program Owner Title",
+      "description": "Position title responsible for emergency preparedness training program oversight or related program ownership.",
+      "scope": "facility_profile",
+      "example_value": "Staff Development Coordinator",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MEDICAL-RECORDS-SYSTEM-DESCRIPTION",
+      "token": "{{medical_records_system_description}}",
+      "label": "Medical Records System Description",
+      "description": "Facility-specific description of electronic, paper, hybrid, backup, storage, security, and access arrangements for medical records.",
+      "scope": "facility_profile",
+      "example_value": "Hybrid EHR and paper chart system with nightly backup and secured paper downtime binders.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-RESIDENT_MEDICAL_RECORDS",
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EHR-SYSTEM-NAME",
+      "token": "{{ehr_system_name}}",
+      "label": "EHR System Name",
+      "description": "Name of the electronic health record system used by the facility when applicable.",
+      "scope": "facility_profile",
+      "example_value": "PointClickCare",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-RESIDENT_MEDICAL_RECORDS",
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EHR-SYSTEM-REFERENCE",
+      "token": "{{include_ehr_system_reference}}",
+      "label": "Include EHR System Reference",
+      "description": "Assembly control for keeping the electronic health record system paragraph when the facility uses an EHR.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-WEBSITE",
+      "token": "{{facility_website}}",
+      "label": "Facility Website",
+      "description": "Facility website or emergency update webpage used for resident and family information when applicable.",
+      "scope": "facility_profile",
+      "example_value": "https://example.org/emergency-updates",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+      "token": "{{include_facility_website_reference}}",
+      "label": "Include Facility Website Reference",
+      "description": "Assembly control for keeping website-update language when the facility uses a website for emergency information.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EOP-ACTIVATION-CODE-WORD",
+      "token": "{{eop_activation_code_word}}",
+      "label": "EOP Activation Code Word",
+      "description": "Code word, phrase, or alert term used to initiate emergency operations plan activation when applicable.",
+      "scope": "facility_profile",
+      "example_value": "Code Triage",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-ACTIVATION_OF_PLAN",
+        "DOC-GOVERNANCE_AND_PLANNING-SHELTER_IN_PLACE_PLAN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-STATE-SPECIFIC-SEMIANNUAL-REVIEW-CLAUSE",
+      "token": "{{include_state_specific_semiannual_review_clause}}",
+      "label": "Include State-Specific Semiannual Review Clause",
+      "description": "Assembly control for keeping semiannual training and testing review language when state rules require it.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-TRAINING-TESTING-REVIEW-OWNER-TITLE",
+      "token": "{{training_testing_review_owner_title}}",
+      "label": "Training and Testing Review Owner Title",
+      "description": "Position title responsible for reviewing and updating the training and testing program.",
+      "scope": "facility_profile",
+      "example_value": "Emergency Preparedness Program Manager",
+      "required": false,
+      "used_in_docs": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CODE-ALERT-HAS-BEEN-PROVIDED-SAMPLE",
+      "token": "{{code_alert_has_been_provided_sample}}",
+      "label": "General Disaster Code Word Review",
+      "description": "Review context for replacing the sample general disaster code word when the facility uses another EOP activation alert term.",
+      "scope": "review_context",
+      "example_value": "Use Code Triage instead of Code Alert.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CODE-WORD-TERM-IDENTIFY-FIRE-SITUATION",
+      "token": "{{code_word_term_identify_fire_situation}}",
+      "label": "Fire Situation Code Word",
+      "description": "Facility code word, plain-language term, or alert phrase used to identify a fire situation.",
+      "scope": "facility_profile",
+      "example_value": "Code Red",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-REGULATORY-AGENCY-NAME",
+      "token": "{{regulatory_agency_name}}",
+      "label": "Regulatory Agency Name",
+      "description": "Name of the state or other regulatory agency notified when emergency operations procedures require it.",
+      "scope": "facility_profile",
+      "example_value": "State Agency for Health Care Administration",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-NAME-COUNTY-EMERGENCY-MANAGEMENT-AGENCY",
+      "token": "{{name_county_emergency_management_agency}}",
+      "label": "County Emergency Management Agency Name",
+      "description": "County emergency management agency name used in emergency notification and coordination procedures.",
+      "scope": "facility_profile",
+      "example_value": "Orange County Emergency Management",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-USING-EXECUTIVE-DIRECTOR-CHANGE-THROUGHOUT-PLAN",
+      "token": "{{using_executive_director_change_throughout_plan}}",
+      "label": "Executive Director Terminology Review",
+      "description": "Review context for using Executive Director terminology consistently throughout the plan when that is the facility title.",
+      "scope": "review_context",
+      "example_value": "Use Executive Director instead of Administrator throughout the plan.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CODE-WORD-DIFFERENT-THAN-INDICATED",
+      "token": "{{code_word_different_than_indicated}}",
+      "label": "Alternate Code Word",
+      "description": "Facility code word used when the sample code word in the source material differs from facility practice.",
+      "scope": "facility_profile",
+      "example_value": "Code Triage",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIFFERENT-THAN-HOURS",
+      "token": "{{different_than_hours}}",
+      "label": "Alternate Planning Duration",
+      "description": "Facility-specific planning duration used when the plan differs from a 96-hour capability assumption.",
+      "scope": "facility_profile",
+      "example_value": "72 hours",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIFFERENT-THAN-HOURS-FOOD-WATER-MEDICAL",
+      "token": "{{different_than_hours_food_water_medical}}",
+      "label": "Alternate Food Water and Medical Supply Duration",
+      "description": "Facility-specific food, water, medical supply, and pharmaceutical planning duration when different from 96 hours.",
+      "scope": "facility_profile",
+      "example_value": "72 hours for food and water; 96 hours for pharmaceuticals",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INDICATE-NUMBER-DAYS-UNLIMITED-SUPPLY-THIS",
+      "token": "{{indicate_number_days_unlimited_supply_this}}",
+      "label": "Supply Duration or Unlimited Supply",
+      "description": "Number of days or unlimited-supply designation used in baseline capability tables.",
+      "scope": "facility_profile",
+      "example_value": "96 hours",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EXAMPLES-ONLY-REFLECT-CAPABILITIES-THIS-COLUMN",
+      "token": "{{examples_only_reflect_capabilities_this_column}}",
+      "label": "Capability Examples Review",
+      "description": "Review context reminding authors to replace example baseline-capability table entries with facility-specific capabilities.",
+      "scope": "review_context",
+      "example_value": "Replace sample entries with facility capabilities.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-REFLECT-PROPER-SYSTEM-PLACE",
+      "token": "{{reflect_proper_system_place}}",
+      "label": "Facility System in Place",
+      "description": "Facility-specific system or systems in place for the applicable baseline capability row.",
+      "scope": "facility_profile",
+      "example_value": "backup generator and battery-powered emergency lighting",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ROW-NOT-APPLICABLE",
+      "token": "{{row_not_applicable}}",
+      "label": "Row Not Applicable",
+      "description": "Assembly control for deleting a table row or item when it does not apply to the facility.",
+      "scope": "automation_rules",
+      "example_value": "false",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INDICATE-METHOD-MEANS-USED-ALERT-STAFF",
+      "token": "{{indicate_method_means_used_alert_staff}}",
+      "label": "Staff Alert Method",
+      "description": "Method or means the facility uses to alert staff during emergency code activation.",
+      "scope": "facility_profile",
+      "example_value": "overhead announcement and mass notification text",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-THIS-COMMON-CODE-WORDS-MATCH-PROCEDURES",
+      "token": "{{this_common_code_words_match_procedures}}",
+      "label": "Emergency Code List Review",
+      "description": "Review context for aligning listed emergency codes or plain-language alerts with facility procedures.",
+      "scope": "review_context",
+      "example_value": "Update code list to match facility emergency code terminology.",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INTERNAL-COMMUNICATION-EQUIPMENT-LOCATIONS",
+      "token": "{{internal_communication_equipment_locations}}",
+      "label": "Internal Communication Equipment Locations",
+      "description": "Locations where internal backup communication equipment can be obtained during a disaster.",
+      "scope": "facility_profile",
+      "example_value": "command center supply cabinet; nurse supervisor office",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INTERNAL-WIRELESS-COMMUNICATION-SYSTEMS",
+      "token": "{{internal_wireless_communication_systems}}",
+      "label": "Internal Wireless Communication Systems",
+      "description": "Facility-specific wireless, pager, phone, or other internal communication systems available during a disaster.",
+      "scope": "facility_profile",
+      "example_value": "portable radios and secure messaging phones",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INTERNAL-RECORDED-MESSAGE-PHONE",
+      "token": "{{internal_recorded_message_phone_number}}",
+      "label": "Internal Recorded Message Phone Number",
+      "description": "Phone number used for pre-recorded staff, resident, or internal emergency information messages.",
+      "scope": "facility_profile",
+      "example_value": "555-0100",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-INTRANET-NAME",
+      "token": "{{facility_intranet_name}}",
+      "label": "Facility Intranet Name",
+      "description": "Facility intranet or internal information platform name used for emergency updates when applicable.",
+      "scope": "facility_profile",
+      "example_value": "TeamNet",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-COMMUNICATION-UPDATE-OWNER-TITLE",
+      "token": "{{communication_update_owner_title}}",
+      "label": "Communication Update Owner Title",
+      "description": "Position title authorized to update website, intranet, hotline, or other emergency information channels.",
+      "scope": "facility_profile",
+      "example_value": "Public Information Officer",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EXTERNAL-HEALTH-ALERT-SYSTEM-NAME",
+      "token": "{{external_health_alert_system_name}}",
+      "label": "External Health Alert System Name",
+      "description": "Jurisdiction-specific health alert or emergency reporting system used for external emergency communications.",
+      "scope": "facility_profile",
+      "example_value": "Health Alert Network",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EXTERNAL-RADIO-SYSTEM-LOCATION",
+      "token": "{{external_radio_system_location}}",
+      "label": "External Radio System Location",
+      "description": "Location and name of any local, regional, or state radio system used for external disaster communications.",
+      "scope": "facility_profile",
+      "example_value": "radio cache in command center",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-SATELLITE-PHONE-LOCATION",
+      "token": "{{satellite_phone_location}}",
+      "label": "Satellite Phone Location",
+      "description": "Location of satellite phone equipment used for internal or external emergency communication.",
+      "scope": "facility_profile",
+      "example_value": "administrator office emergency cabinet",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-COMMUNITY-HOTLINE-PHONE",
+      "token": "{{community_hotline_phone_number}}",
+      "label": "Community Hotline Phone Number",
+      "description": "Phone number used for public or community emergency information messages when activated.",
+      "scope": "facility_profile",
+      "example_value": "555-0111",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ARES-CERT-CONTACT-PROCESS",
+      "token": "{{ares_cert_contact_process}}",
+      "label": "ARES CERT Contact Process",
+      "description": "Process or contact path for amateur radio, CERT, or similar emergency communication support when applicable.",
+      "scope": "facility_profile",
+      "example_value": "request through county emergency management",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-SISTER-SYSTEM-FACILITY-COMMUNICATIONS",
+      "token": "{{sister_system_facility_communications}}",
+      "label": "Sister or System Facility Communications",
+      "description": "Sister, system, or corporate facility communication relationships used during disasters when applicable.",
+      "scope": "facility_profile",
+      "example_value": "regional operations center and sister campus contacts",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-POWER-FAIL-PHONES",
+      "token": "{{include_internal_power_fail_phones}}",
+      "label": "Include Internal Power-Fail Phones",
+      "description": "Assembly control for keeping internal power-fail or emergency phone content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-PUBLIC-PAY-PHONES",
+      "token": "{{include_internal_public_pay_phones}}",
+      "label": "Include Internal Public Pay Phones",
+      "description": "Assembly control for keeping internal public/pay phone content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-SATELLITE-PHONE",
+      "token": "{{include_internal_satellite_phone}}",
+      "label": "Include Internal Satellite Phone",
+      "description": "Assembly control for keeping internal satellite phone content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-FACILITY-INTRANET-REFERENCE",
+      "token": "{{include_facility_intranet_reference}}",
+      "label": "Include Facility Intranet Reference",
+      "description": "Assembly control for keeping facility intranet emergency update content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-SISTER-SYSTEM-FACILITIES-COMMUNICATION",
+      "token": "{{include_sister_system_facilities_communication}}",
+      "label": "Include Sister System Facilities Communication",
+      "description": "Assembly control for keeping sister or system facility external communication content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EXTERNAL-RADIO-SYSTEM",
+      "token": "{{include_external_radio_system}}",
+      "label": "Include External Radio System",
+      "description": "Assembly control for keeping local, regional, or state radio system communication content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EXTERNAL-SATELLITE-PHONE",
+      "token": "{{include_external_satellite_phone}}",
+      "label": "Include External Satellite Phone",
+      "description": "Assembly control for keeping external satellite phone communication content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-ARES-CERT-COMMUNICATION",
+      "token": "{{include_ares_cert_communication}}",
+      "label": "Include ARES CERT Communication",
+      "description": "Assembly control for keeping ARES, CERT, or amateur radio support content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-COMMUNITY-HOTLINE",
+      "token": "{{include_community_hotline}}",
+      "label": "Include Community Hotline",
+      "description": "Assembly control for keeping community hotline content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PORTABLE-RADIO-SOURCE-LOCATION",
+      "token": "{{portable_radio_source_location}}",
+      "label": "Portable Radio Source Location",
+      "description": "Location or access process for portable radios used for internal disaster communication.",
+      "scope": "facility_profile",
+      "example_value": "nursing supervisor office radio cache",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-BACKUP-CELL-PHONE-SOURCE-LOCATION",
+      "token": "{{backup_cell_phone_source_location}}",
+      "label": "Backup Cell Phone Source Location",
+      "description": "Location or access process for backup or emergency cell phones used during a disaster.",
+      "scope": "facility_profile",
+      "example_value": "administrator office emergency device cabinet",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-POWER-FAIL-PHONE-LOCATIONS",
+      "token": "{{power_fail_phone_locations}}",
+      "label": "Power-Fail Phone Locations",
+      "description": "Locations and numbers for power-fail or emergency phones used when the internal phone system or power fails.",
+      "scope": "facility_profile",
+      "example_value": "red emergency phones at nurses stations and command center",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PUBLIC-PAY-PHONE-LOCATIONS",
+      "token": "{{public_pay_phone_locations}}",
+      "label": "Public or Pay Phone Locations",
+      "description": "Locations of public, pay, or other outgoing-call phones that may remain available during a disaster.",
+      "scope": "facility_profile",
+      "example_value": "lobby vestibule and visitor entrance",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-BACKUP-COMMUNICATION-DEVICE-RETURN-PROCESS",
+      "token": "{{backup_communication_device_return_process}}",
+      "label": "Backup Communication Device Return Process",
+      "description": "Role, location, or process for returning, inventorying, recharging, repairing, and storing backup communication devices after use.",
+      "scope": "facility_profile",
+      "example_value": "return devices to the Documentation Recorder for inventory and storage in the command center cache",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_TELEPHONE_SERVICE_INTERNAL_COMMUNICATIONS_NURSE_CALL"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-PORTABLE-RADIOS",
+      "token": "{{include_internal_portable_radios}}",
+      "label": "Include Internal Portable Radios",
+      "description": "Assembly control for keeping internal portable radio content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-BACKUP-CELL-PHONES",
+      "token": "{{include_internal_backup_cell_phones}}",
+      "label": "Include Internal Backup Cell Phones",
+      "description": "Assembly control for keeping backup or emergency cell phone content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-INTERNAL-WIRELESS-PAGER-SYSTEMS",
+      "token": "{{include_internal_wireless_pager_systems}}",
+      "label": "Include Internal Wireless Pager Systems",
+      "description": "Assembly control for keeping internal wireless, pager, phone, or other device-based communication system content when applicable.",
+      "scope": "automation_rules",
+      "example_value": "true",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-RESOURCE-SUSTAINMENT-DURATION",
+      "token": "{{resource_sustainment_duration}}",
+      "label": "Resource Sustainment Duration",
+      "description": "Facility planning duration for sustaining critical resources and assets during isolation or disrupted supply conditions.",
+      "scope": "facility_profile",
+      "example_value": "96 hours",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-RESOURCE-SUSTAINMENT-BASIS",
+      "token": "{{resource_sustainment_basis}}",
+      "label": "Resource Sustainment Basis",
+      "description": "Basis for the resource sustainment duration, such as HVA results, state or local requirements, average census, or delivery timing.",
+      "scope": "facility_profile",
+      "example_value": "HVA findings and state/local emergency preparedness expectations",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-RESOURCE-VENDOR-PARTNER-SOURCES",
+      "token": "{{resource_vendor_partner_sources}}",
+      "label": "Resource Vendor and Partner Sources",
+      "description": "Normal and contingency sources for critical supplies, equipment, facilities, or services.",
+      "scope": "facility_profile",
+      "example_value": "primary vendors, alternate regional vendors, sister facilities, healthcare coalition contacts, and mutual aid partners",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DEPARTMENT-RAPID-ASSESSMENT-FORM-LOCATION",
+      "token": "{{department_rapid_assessment_form_location}}",
+      "label": "Department Rapid Assessment Form Location",
+      "description": "Where staff can find the Department Rapid Assessment Form or equivalent assessment tool.",
+      "scope": "facility_profile",
+      "example_value": "Incident Command System forms section",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS",
+        "DOC-EVACUATION-ACTIVATION_OF_PLAN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CONSERVATION-PLAN-COMMUNICATION-METHODS",
+      "token": "{{conservation_plan_communication_methods}}",
+      "label": "Conservation Plan Communication Methods",
+      "description": "Methods used to communicate conservation plans and emergency resource lists to staff, residents, and other affected audiences.",
+      "scope": "facility_profile",
+      "example_value": "department head meetings, intranet, website, information boards, and unit huddles",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CLINICAL-RESOURCE-OWNER-TITLES",
+      "token": "{{clinical_resource_owner_titles}}",
+      "label": "Clinical Resource Owner Titles",
+      "description": "Facility titles responsible for resident clinical needs and clinical resource coordination.",
+      "scope": "facility_profile",
+      "example_value": "Medical Director and Director of Nursing",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFFING-RESOURCE-OWNER-TITLE",
+      "token": "{{staffing_resource_owner_title}}",
+      "label": "Staffing Resource Owner Title",
+      "description": "Facility title responsible for staffing resources during resource-constrained operations.",
+      "scope": "facility_profile",
+      "example_value": "Human Resources Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MAINTENANCE-RESOURCE-OWNER-TITLE",
+      "token": "{{maintenance_resource_owner_title}}",
+      "label": "Maintenance Resource Owner Title",
+      "description": "Facility title responsible for utility, fuel, mechanical, water, and facility support resources.",
+      "scope": "facility_profile",
+      "example_value": "Maintenance Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PURCHASING-RESOURCE-OWNER-TITLE",
+      "token": "{{purchasing_resource_owner_title}}",
+      "label": "Purchasing Resource Owner Title",
+      "description": "Facility title responsible for purchasing, vendor coordination, and replenishment of assigned critical supplies.",
+      "scope": "facility_profile",
+      "example_value": "Purchasing Manager",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DINING-RESOURCE-OWNER-TITLE",
+      "token": "{{dining_resource_owner_title}}",
+      "label": "Dining Resource Owner Title",
+      "description": "Facility title responsible for food, potable water, and dining-service resource coordination.",
+      "scope": "facility_profile",
+      "example_value": "Dining Services Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ENVIRONMENTAL-RESOURCE-OWNER-TITLE",
+      "token": "{{environmental_resource_owner_title}}",
+      "label": "Environmental Resource Owner Title",
+      "description": "Facility title responsible for linen, housekeeping, waste, and environmental service supplies.",
+      "scope": "facility_profile",
+      "example_value": "Environmental Services Director",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-BOILER-FUEL-RESPONSIBILITY-DESCRIPTION",
+      "token": "{{boiler_fuel_responsibility_description}}",
+      "label": "Boiler Fuel Responsibility Description",
+      "description": "Facility-specific description of boiler, heating, or other fuel responsibilities when applicable.",
+      "scope": "facility_profile",
+      "example_value": "boiler fuel monitoring and replenishment coordination",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GENERATOR-FUEL-TYPE",
+      "token": "{{generator_fuel_type}}",
+      "label": "Generator Fuel Type",
+      "description": "Facility-specific generator fuel type used for emergency power planning.",
+      "scope": "facility_profile",
+      "example_value": "diesel",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{fuel_type_not_diesel}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GENERATOR-FULL-LOAD-RUNTIME",
+      "token": "{{generator_full_load_runtime}}",
+      "label": "Generator Full Load Runtime",
+      "description": "Estimated runtime for the emergency generator at full load before refueling is required.",
+      "scope": "facility_profile",
+      "example_value": "24 hours",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{indicate_number_hours}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GENERATOR-LOAD-SHED-RUNTIME",
+      "token": "{{generator_load_shed_runtime}}",
+      "label": "Generator Load Shed Runtime",
+      "description": "Estimated extended generator runtime when safe load shedding is available.",
+      "scope": "facility_profile",
+      "example_value": "36 hours with nonessential loads shed",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{load_can_shed_extend_runtime_indicate}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-POWER-SUPPORTED-SERVICES",
+      "token": "{{emergency_power_supported_services}}",
+      "label": "Emergency Power Supported Services",
+      "description": "Services the facility can continue while operating on emergency power.",
+      "scope": "facility_profile",
+      "example_value": "emergency lighting, selected outlets, medication refrigeration, nurse call, and essential clinical equipment",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{services_that_supported_emergency_power}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-POWER-UNSUPPORTED-SERVICES",
+      "token": "{{emergency_power_unsupported_services}}",
+      "label": "Emergency Power Unsupported Services",
+      "description": "Services that cannot be provided or may be limited while the facility operates on emergency power.",
+      "scope": "facility_profile",
+      "example_value": "nonessential laundry, selected kitchen equipment, administrative equipment, and noncritical HVAC zones",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{services_that_cannot_provided_when_emergency}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-POWER-SUPPORTED-AREAS-EQUIPMENT",
+      "token": "{{emergency_power_supported_areas_equipment}}",
+      "label": "Emergency Power Supported Areas and Equipment",
+      "description": "Facility areas and critical equipment supported by emergency generator power.",
+      "scope": "facility_profile",
+      "example_value": "resident care units, emergency lighting circuits, medication refrigerators, fire alarm systems, and selected clinical equipment",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_EMERGENCY_GENERATOR_POWER"
+      ],
+      "aliases": [
+        "{{areas_specific_critical_equipment_that_supported}}",
+        "{{detail_what_served_generator_incident_commander}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-UTILITY-IMPACTED-SERVICES",
+      "token": "{{utility_impacted_services}}",
+      "label": "Utility Impacted Services",
+      "description": "Facility-specific services, systems, or areas most likely to be affected by utility disruptions.",
+      "scope": "facility_profile",
+      "example_value": "elevators, HVAC, kitchen equipment, laundry, fire protection, medical gas support, and selected clinical equipment",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-WATER-SUPPLY-LINE-COUNT",
+      "token": "{{water_supply_line_count}}",
+      "label": "Water Supply Line Count",
+      "description": "Number of domestic water supply lines serving the building or campus.",
+      "scope": "facility_profile",
+      "example_value": "one domestic water supply line",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [
+        "{{number_water_supply_lines_servicing_building}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-POTABLE-WATER-DAILY-GALLONS",
+      "token": "{{potable_water_daily_gallons}}",
+      "label": "Potable Water Daily Gallons",
+      "description": "Estimated daily potable water need under restricted-use conditions.",
+      "scope": "facility_profile",
+      "example_value": "300 gallons per day",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [
+        "{{expected_number_gallons_used_daily_basis}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-POTABLE-WATER-SOURCES",
+      "token": "{{potable_water_sources}}",
+      "label": "Potable Water Sources",
+      "description": "Stored potable water and other safe drinking-water sources available to the facility.",
+      "scope": "facility_profile",
+      "example_value": "stored bottled water, potable water tanks, and approved hot water storage capacity",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [
+        "{{sources_stored_potable_water_other_liquid}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-POTABLE-WATER-VENDORS",
+      "token": "{{potable_water_vendors}}",
+      "label": "Potable Water Vendors",
+      "description": "Vendors or alternate sources that can provide bottled or bulk potable water.",
+      "scope": "facility_profile",
+      "example_value": "approved bottled-water vendor, municipal emergency water source, and healthcare coalition resource contact",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [
+        "{{vendor_information_those_that_can_bottled}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-NONPOTABLE-WATER-SOURCES",
+      "token": "{{nonpotable_water_sources}}",
+      "label": "Non-Potable Water Sources",
+      "description": "Non-potable water sources available for building operations, sanitation, or fire protection support.",
+      "scope": "facility_profile",
+      "example_value": "boiler tanks, approved storage tanks, pools, ponds, wells, or other non-drinking-water sources",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [
+        "{{sources_stored_non_potable_water_building}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-NONPOTABLE-WATER-VENDORS",
+      "token": "{{nonpotable_water_vendors}}",
+      "label": "Non-Potable Water Vendors",
+      "description": "Vendors or alternate sources that can provide bulk non-potable water for operations or fire protection support.",
+      "scope": "facility_profile",
+      "example_value": "bulk water hauler, municipal public works contact, or contracted tanker source",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [
+        "{{vendor_information_that_can_non_potable}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DISPOSABLE-LINEN-SOURCE",
+      "token": "{{disposable_linen_source}}",
+      "label": "Disposable Linen Source",
+      "description": "Facility source for disposable linens or linen substitutes during water or laundry disruption.",
+      "scope": "facility_profile",
+      "example_value": "central supply, emergency supply cache, or contracted linen vendor",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_CONTAMINATION_OF_WATER_SUPPLY"
+      ],
+      "aliases": [
+        "{{location_applicable}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ELECTRIC-UTILITY-CONTACT",
+      "token": "{{electric_utility_contact}}",
+      "label": "Electric Utility Contact",
+      "description": "Facility-specific electric utility or outage reporting contact used for priority restoration coordination.",
+      "scope": "facility_profile",
+      "example_value": "Local electric utility outage desk: 555-0100",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-POWER-CIRCUIT-IDENTIFICATION",
+      "token": "{{emergency_power_circuit_identification}}",
+      "label": "Emergency Power Circuit Identification",
+      "description": "How emergency-power outlets, panels, circuits, or supported receptacles are identified in the facility.",
+      "scope": "facility_profile",
+      "example_value": "red receptacle covers and labeled emergency panels",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-CRITICAL-POWER-DEPENDENT-EQUIPMENT",
+      "token": "{{critical_power_dependent_equipment}}",
+      "label": "Critical Power-Dependent Equipment",
+      "description": "Facility-specific equipment or systems that require priority assessment during loss of electric service.",
+      "scope": "facility_profile",
+      "example_value": "oxygen concentrators, suction, medication refrigerators, call systems, electronic locks, and selected IT systems",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GAS-SERVICE-TYPE",
+      "token": "{{gas_service_type}}",
+      "label": "Gas Service Type",
+      "description": "The fuel type used by the facility for gas-dependent systems, such as natural gas, propane, or both.",
+      "scope": "facility_profile",
+      "example_value": "natural gas",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GAS-DEPENDENT-EQUIPMENT",
+      "token": "{{gas_dependent_equipment}}",
+      "label": "Gas-Dependent Equipment",
+      "description": "Facility-specific equipment, appliances, or services dependent on natural gas or propane.",
+      "scope": "facility_profile",
+      "example_value": "boilers, domestic hot water, kitchen ranges, dryers, and selected heating equipment",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GAS-UTILITY-CONTACT",
+      "token": "{{gas_utility_contact}}",
+      "label": "Gas Utility Contact",
+      "description": "Facility-specific gas utility, propane supplier, or emergency service contact.",
+      "scope": "facility_profile",
+      "example_value": "Gas utility emergency line: 555-0111",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-GAS-SHUTOFF-LOCATIONS",
+      "token": "{{gas_shutoff_locations}}",
+      "label": "Gas Shut-Off Locations",
+      "description": "Facility-specific gas or propane shut-off valve locations or reference to the utility shut-off list.",
+      "scope": "facility_profile",
+      "example_value": "main gas shutoff at the exterior meter bank; appliance shutoffs listed in Emergency Utility Shut-Off Locations",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-NATURAL_GAS_PROPANE_ODOR_LEAK"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ALTERNATE-COOKING-METHODS",
+      "token": "{{alternate_cooking_methods}}",
+      "label": "Alternate Cooking Methods",
+      "description": "Facility-specific alternate cooking, meal preparation, or food service methods when normal gas-supported cooking is unavailable.",
+      "scope": "facility_profile",
+      "example_value": "electric warmers, microwave-safe meal plans, shelf-stable meals, and contracted meal delivery",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_NATURAL_GAS_PROPANE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-HEATING-SYSTEM-DESCRIPTION",
+      "token": "{{heating_system_description}}",
+      "label": "Heating System Description",
+      "description": "Facility-specific description of heating systems, zones, fuel dependencies, or areas served.",
+      "scope": "facility_profile",
+      "example_value": "central boiler heat serving resident units and common areas, with separate rooftop units for selected spaces",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-TEMPERATURE-MONITORING-LOCATIONS",
+      "token": "{{temperature_monitoring_locations}}",
+      "label": "Temperature Monitoring Locations",
+      "description": "Facility-specific resident areas or building zones where temperatures should be monitored during heating disruption.",
+      "scope": "facility_profile",
+      "example_value": "resident units, dining areas, medication rooms, lobby, and other occupied zones",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MINIMUM-SAFE-TEMPERATURE-THRESHOLD",
+      "token": "{{minimum_safe_temperature_threshold}}",
+      "label": "Minimum Safe Temperature Threshold",
+      "description": "Facility-specific minimum indoor temperature threshold or regulatory standard used to trigger escalation during heat loss.",
+      "scope": "facility_profile",
+      "example_value": "state-required minimum resident-area temperature or facility-approved evacuation trigger",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ALTERNATE-HEAT-SOURCES",
+      "token": "{{alternate_heat_sources}}",
+      "label": "Alternate Heat Sources",
+      "description": "Facility-specific alternate heating resources, vendors, or methods available during heating system loss.",
+      "scope": "facility_profile",
+      "example_value": "portable boiler vendor, approved temporary heaters, and warmed relocation areas",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_HEATING_SYSTEM",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-SEWER-WASTE-VENDOR-CONTACTS",
+      "token": "{{sewer_waste_vendor_contacts}}",
+      "label": "Sewer Waste Vendor Contacts",
+      "description": "Facility-specific plumber, sewer department, waste-hauling, or sanitation vendor contacts used during sewer or waste disruption.",
+      "scope": "facility_profile",
+      "example_value": "plumbing contractor and municipal sewer department contact list",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-WASTE-STORAGE-LOCATION",
+      "token": "{{waste_storage_location}}",
+      "label": "Waste Storage Location",
+      "description": "Facility-specific temporary storage location for bagged waste or sanitation containers during sewer system loss.",
+      "scope": "facility_profile",
+      "example_value": "secured exterior waste staging area behind maintenance",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PORTABLE-TOILET-SOURCES",
+      "token": "{{portable_toilet_sources}}",
+      "label": "Portable Toilet Sources",
+      "description": "Facility-specific sources for portable toilets, commodes, sanitation bags, or alternate toileting supplies.",
+      "scope": "facility_profile",
+      "example_value": "portable restroom vendor and disaster sanitation supply cache",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_SEWER_WASTE_SYSTEM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-FOOD-SUPPLY-LOCATION",
+      "token": "{{emergency_food_supply_location}}",
+      "label": "Emergency Food Supply Location",
+      "description": "Facility-specific storage location or access instructions for emergency food supplies.",
+      "scope": "facility_profile",
+      "example_value": "dry storage room beside the main kitchen",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-NON-COOKING-MENU-LOCATION",
+      "token": "{{non_cooking_menu_location}}",
+      "label": "Non-Cooking Menu Location",
+      "description": "Facility-specific location of emergency menus that do not require cooking or normal kitchen operation.",
+      "scope": "facility_profile",
+      "example_value": "Emergency Food Supply binder and dining services shared drive",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-KITCHEN-ACCESS-METHOD",
+      "token": "{{kitchen_access_method}}",
+      "label": "Kitchen Access Method",
+      "description": "How authorized staff access the kitchen or emergency food supplies during an outage or off-hours event.",
+      "scope": "facility_profile",
+      "example_value": "maintenance key box and dining services on-call supervisor",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_COOKING_ABILITY"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STEAM-DEPENDENT-SERVICES",
+      "token": "{{steam_dependent_services}}",
+      "label": "Steam-Dependent Services",
+      "description": "Facility-specific services, equipment, or departments dependent on steam pressure.",
+      "scope": "facility_profile",
+      "example_value": "heat, domestic hot water, laundry, selected kitchen equipment, and sterilization support when applicable",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STEAM-SYSTEM-DESCRIPTION",
+      "token": "{{steam_system_description}}",
+      "label": "Steam System Description",
+      "description": "Facility-specific description of steam source, system scope, and whether the procedure applies.",
+      "scope": "facility_profile",
+      "example_value": "central steam boiler serving heat, hot water, and laundry support",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ALTERNATE-LAUNDRY-SERVICE",
+      "token": "{{alternate_laundry_service}}",
+      "label": "Alternate Laundry Service",
+      "description": "Facility-specific alternate laundry provider, process, or linen conservation approach.",
+      "scope": "facility_profile",
+      "example_value": "contracted laundry vendor and linen conservation protocol",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_STEAM_PRESSURE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ELEVATOR-SERVICE-CONTACT",
+      "token": "{{elevator_service_contact}}",
+      "label": "Elevator Service Contact",
+      "description": "Facility-specific elevator vendor or emergency elevator service contact.",
+      "scope": "facility_profile",
+      "example_value": "elevator service vendor emergency dispatch: 555-0130",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ELEVATOR-LOCATIONS",
+      "token": "{{elevator_locations}}",
+      "label": "Elevator Locations",
+      "description": "Facility-specific elevator locations, labels, or service areas.",
+      "scope": "facility_profile",
+      "example_value": "main lobby passenger elevator and service elevator near dining",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-EVACUATION_ORDER",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_ASSISTED_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_INDEPENDENT_LIVING_RESIDENTS",
+        "DOC-EVACUATION-RESIDENT_PREPARATION_GUIDE_SKILLED_NURSING_RESIDENTS",
+        "DOC-EVACUATION-STAFF_AND_EMERGENCY_SERVICES",
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-ALTERNATE-VERTICAL-TRANSPORT-METHODS",
+      "token": "{{alternate_vertical_transport_methods}}",
+      "label": "Alternate Vertical Transport Methods",
+      "description": "Facility-specific methods or resources for moving residents, supplies, meals, or staff when elevators are unavailable.",
+      "scope": "facility_profile",
+      "example_value": "stair-chair team, fire department lift assistance, and relocation to lower-floor rooms",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-EVACUATION_ORDER",
+        "DOC-EVACUATION-STAFF_AND_EMERGENCY_SERVICES",
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELEVATOR_SERVICE"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FIRE-PROTECTION-SYSTEM-DESCRIPTION",
+      "token": "{{fire_protection_system_description}}",
+      "label": "Fire Protection System Description",
+      "description": "Facility-specific fire alarm, detection, sprinkler, suppression, or monitoring systems.",
+      "scope": "facility_profile",
+      "example_value": "fire alarm, smoke detection, sprinkler water-flow monitoring, and kitchen hood suppression",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FIRE-DEPARTMENT-CONTACT",
+      "token": "{{fire_department_contact}}",
+      "label": "Fire Department Contact",
+      "description": "Local fire department contact or reporting instructions for fire protection system impairment.",
+      "scope": "facility_profile",
+      "example_value": "local fire department non-emergency/fire marshal line: 555-0140",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FIRE-WATCH-PROCEDURE-LOCATION",
+      "token": "{{fire_watch_procedure_location}}",
+      "label": "Fire Watch Procedure Location",
+      "description": "Facility-specific location of fire watch procedure, checklist, forms, or documentation instructions.",
+      "scope": "facility_profile",
+      "example_value": "Fire Watch Checklist in Section E and maintenance fire watch log binder",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FIRE-IMPAIRMENT-NOTIFICATION-LIST",
+      "token": "{{fire_impairment_notification_list}}",
+      "label": "Fire Impairment Notification List",
+      "description": "Facility-specific people, agencies, insurer, monitoring company, or authorities notified during fire protection impairment.",
+      "scope": "facility_profile",
+      "example_value": "fire department, alarm monitoring company, administrator, state agency, and insurer when applicable",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_FIRE_PROTECTION_SYSTEMS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-COOLING-AREA-LOCATIONS",
+      "token": "{{cooling_area_locations}}",
+      "label": "Cooling Area Locations",
+      "description": "Facility-specific common areas or rooms used as cooled areas during AC loss or high heat.",
+      "scope": "facility_profile",
+      "example_value": "main dining room, activities room, and first-floor lounge",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PORTABLE-COOLING-SOURCES",
+      "token": "{{portable_cooling_sources}}",
+      "label": "Portable Cooling Sources",
+      "description": "Facility-specific portable cooling equipment, vendors, or rental sources.",
+      "scope": "facility_profile",
+      "example_value": "portable AC rental vendor, facility fans, and temporary cooling equipment cache",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-HIGH-HEAT-REPORTING-CONTACTS",
+      "token": "{{high_heat_reporting_contacts}}",
+      "label": "High Heat Reporting Contacts",
+      "description": "Facility-specific contacts for reporting heat-related illness, death, or unsafe heat conditions.",
+      "scope": "facility_profile",
+      "example_value": "state licensing agency and local health department reporting contacts",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MAXIMUM-SAFE-TEMPERATURE-THRESHOLD",
+      "token": "{{maximum_safe_temperature_threshold}}",
+      "label": "Maximum Safe Temperature Threshold",
+      "description": "Facility-specific indoor temperature, heat-index, or escalation threshold for high heat response.",
+      "scope": "facility_profile",
+      "example_value": "state-required maximum resident-area temperature or facility heat-index escalation trigger",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_AIR_CONDITIONING_HIGH_HEAT"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MEDICAL-GAS-SYSTEM-DESCRIPTION",
+      "token": "{{medical_gas_system_description}}",
+      "label": "Medical Gas System Description",
+      "description": "Facility-specific description of piped oxygen, vacuum, medical air, or related medical gas systems and whether the procedure applies.",
+      "scope": "facility_profile",
+      "example_value": "central piped oxygen and vacuum system serving skilled nursing resident care areas",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-MEDICAL-GAS-SUPPLIER-CONTACT",
+      "token": "{{medical_gas_supplier_contact}}",
+      "label": "Medical Gas Supplier Contact",
+      "description": "Facility-specific oxygen, vacuum, medical gas, or respiratory equipment supplier contact used during system disruption.",
+      "scope": "facility_profile",
+      "example_value": "medical gas supplier emergency dispatch: 555-0160",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PORTABLE-OXYGEN-SUPPLY-LOCATION",
+      "token": "{{portable_oxygen_supply_location}}",
+      "label": "Portable Oxygen Supply Location",
+      "description": "Facility-specific location or access process for portable oxygen cylinders or emergency oxygen supply.",
+      "scope": "facility_profile",
+      "example_value": "oxygen storage room near respiratory supplies",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES",
+        "DOC-EVACUATION-HOLDING_AREAS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [
+        "{{storage_location}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-OXYGEN-SHUTOFF-LOCATIONS",
+      "token": "{{oxygen_shutoff_locations}}",
+      "label": "Oxygen Shutoff Locations",
+      "description": "Facility-specific emergency shutoff locations or references for oxygen or medical gas systems.",
+      "scope": "facility_profile",
+      "example_value": "zone valve locations listed on the utility shut-off map",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [
+        "{{oxygen_zone_valve_locations}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-OXYGEN-QUICK-CONNECT-LOCATION",
+      "token": "{{oxygen_quick_connect_location}}",
+      "label": "Oxygen Quick Connect Location",
+      "description": "Facility-specific location of emergency oxygen quick-connect or low-pressure gaseous oxygen connection when applicable.",
+      "scope": "facility_profile",
+      "example_value": "emergency low-pressure oxygen connection outside the medical gas manifold room",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [
+        "{{location_oxygen_quick_connection}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-PORTABLE-SUCTION-LOCATION",
+      "token": "{{portable_suction_location}}",
+      "label": "Portable Suction Location",
+      "description": "Facility-specific location or access process for portable suction machines.",
+      "scope": "facility_profile",
+      "example_value": "portable suction machines in the respiratory equipment closet",
+      "required": false,
+      "used_in_docs": [
+        "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES",
+        "DOC-EVACUATION-HOLDING_AREAS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [
+        "{{portable_suction_storage_location}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-RESPIRATORY-THERAPY-CONTACT-PROCESS",
+      "token": "{{respiratory_therapy_contact_process}}",
+      "label": "Respiratory Therapy Contact Process",
+      "description": "Facility-specific role, vendor, or process for reaching respiratory therapy or clinical respiratory support.",
+      "scope": "facility_profile",
+      "example_value": "on-call respiratory therapy vendor through nursing supervisor",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_OXYGEN_VACUUM"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIALYSIS-STAFF-CONTACT-PROCESS",
+      "token": "{{dialysis_staff_contact_process}}",
+      "label": "Dialysis Staff Contact Process",
+      "description": "Facility-specific process for contacting dialysis staff, contracted dialysis provider, or dialysis clinical support during a utility disruption.",
+      "scope": "facility_profile",
+      "example_value": "contracted dialysis provider on-call number and nursing supervisor escalation path",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [
+        "{{validate_procedure_dialysis_staff}}",
+        "{{validate_following_emergency_procedure_dialysis_staff}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIALYSIS-GENERATOR-TRANSFER-TIME",
+      "token": "{{dialysis_generator_transfer_time}}",
+      "label": "Dialysis Generator Transfer Time",
+      "description": "Expected generator transfer or emergency power availability time for dialysis-supporting systems when applicable.",
+      "scope": "facility_profile",
+      "example_value": "10 seconds or facility-tested transfer time",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [
+        "{{time_frame}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIALYSIS-WATER-CONTINGENCY-PROCESS",
+      "token": "{{dialysis_water_contingency_process}}",
+      "label": "Dialysis Water Contingency Process",
+      "description": "Facility-specific process for dialysis service interruption, water quality concern, alternate dialysis arrangement, or clinical escalation during water loss.",
+      "scope": "facility_profile",
+      "example_value": "contract dialysis provider downtime procedure and resident transfer coordination process",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DIALYSIS-RESIDENT-TRANSFER-ARRANGEMENTS",
+      "token": "{{dialysis_resident_transfer_arrangements}}",
+      "label": "Dialysis Resident Transfer Arrangements",
+      "description": "Facility-specific transfer, alternate treatment, or receiving-provider arrangements for residents requiring dialysis during utility disruption.",
+      "scope": "facility_profile",
+      "example_value": "alternate outpatient dialysis center and EMS/transport contact process",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_ELECTRIC_SERVICE_DURING_DIALYSIS",
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-LOSS_OF_WATER_SERVICE_DURING_DIALYSIS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-FIRE-WATCH-ROUND-INTERVAL",
+      "token": "{{fire_watch_round_interval}}",
+      "label": "Fire Watch Round Interval",
+      "description": "Facility-specific fire watch patrol interval or documentation frequency required by policy or authority having jurisdiction.",
+      "scope": "facility_profile",
+      "example_value": "at least every 15 minutes or as directed by the fire department/fire marshal",
+      "required": false,
+      "used_in_docs": [
+        "DOC-HAZARD_SPECIFIC_PROCEDURES-FIRE_WATCH_CHECKLIST"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-SECURITY-STAFFING-ARRANGEMENTS",
+      "token": "{{security_staffing_arrangements}}",
+      "label": "Security Staffing Arrangements",
+      "description": "Facility-specific staffing model for security roles during a disaster, including whether security, maintenance, or other assigned staff monitor access and sensitive areas.",
+      "scope": "facility_profile",
+      "example_value": "Security staff when on duty; otherwise maintenance and assigned department staff support access monitoring",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_SECURITY_AND_SAFETY_DURING_A_DISASTER"
+      ],
+      "aliases": [
+        "{{replace_security_staff}}",
+        "{{security_staff}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-SENSITIVE-AREA-MONITORING-LOCATIONS",
+      "token": "{{sensitive_area_monitoring_locations}}",
+      "label": "Sensitive Area Monitoring Locations",
+      "description": "Facility-specific areas requiring monitoring during lockdown or security-sensitive operations.",
+      "scope": "facility_profile",
+      "example_value": "main entrance, loading dock, medication rooms, oxygen storage, generator area, and exterior doors",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGING_SECURITY_AND_SAFETY_DURING_A_DISASTER"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-LOCKDOWN-ENTRY-POINTS",
+      "token": "{{lockdown_entry_points}}",
+      "label": "Lockdown Entry Points",
+      "description": "Facility-specific entry points kept open, staffed, locked, or monitored during lockdown.",
+      "scope": "facility_profile",
+      "example_value": "main entrance only unless the command center approves another access point",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-LOCKDOWN-ACCESS-SCREENING-PROCESS",
+      "token": "{{lockdown_access_screening_process}}",
+      "label": "Lockdown Access Screening Process",
+      "description": "Facility-specific process for screening or authorizing entry during lockdown while preserving required egress.",
+      "scope": "facility_profile",
+      "example_value": "assigned staff screen entrants at the main entrance, verify role and need, log entry, and escalate concerns to the command center",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFF-CALL-DOWN-PROCESS",
+      "token": "{{staff_call_down_process}}",
+      "label": "Staff Call-Down Process",
+      "description": "Facility-specific process, tool, or list used to notify off-duty staff and request disaster staffing support.",
+      "scope": "facility_profile",
+      "example_value": "department call trees and the emergency notification system maintained by nursing administration",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-NOTIFICATION_OF_OFF_DUTY_STAFF_DISASTER_STAFFING_OPTIONS",
+        "DOC-EVACUATION-ACTIVATE_LABOR_POOL",
+        "DOC-EVACUATION-ACTIVATION_OF_PLAN"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-DISASTER-STAFFING-OPTIONS",
+      "token": "{{disaster_staffing_options}}",
+      "label": "Disaster Staffing Options",
+      "description": "Facility-specific staffing sources, reassignment options, agency contacts, or contingency staffing methods used during disaster operations.",
+      "scope": "facility_profile",
+      "example_value": "off-duty staff call-in, department reassignment, contracted agency staff, approved volunteers, and leadership redeployment",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER",
+        "DOC-ALL_HAZARDS_RESPONSE-NOTIFICATION_OF_OFF_DUTY_STAFF_DISASTER_STAFFING_OPTIONS"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFF-SHELTERING-LOCATIONS",
+      "token": "{{staff_sheltering_locations}}",
+      "label": "Staff Sheltering Locations",
+      "description": "Facility-specific pre-designated locations where staff may rest, sleep, or shelter during extended emergency operations.",
+      "scope": "facility_profile",
+      "example_value": "training room, chapel overflow area, and designated vacant resident rooms when available",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING"
+      ],
+      "aliases": [
+        "{{pre_designated_locations}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFF-SHELTERING-SETUP-OWNER-TITLE",
+      "token": "{{staff_sheltering_setup_owner_title}}",
+      "label": "Staff Sheltering Setup Owner Title",
+      "description": "Facility title or department responsible for setting up staff sheltering/rest areas.",
+      "scope": "facility_profile",
+      "example_value": "Environmental Services Supervisor",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING"
+      ],
+      "aliases": [
+        "{{correct_department_name}}"
+      ],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFF-SHELTERING-ALTERNATE-LOCATIONS",
+      "token": "{{staff_sheltering_alternate_locations}}",
+      "label": "Staff Sheltering Alternate Locations",
+      "description": "Facility-specific alternate off-site or community locations that may support staff sheltering when on-site space is not sufficient.",
+      "scope": "facility_profile",
+      "example_value": "local hotels, community shelters, or partner facilities contacted by administration",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING"
+      ],
+      "aliases": [],
+      "status": "approved"
+    },
+    {
+      "placeholder_id": "PLH-STAFF-SHELTERING-PARTNER-AGREEMENTS",
+      "token": "{{staff_sheltering_partner_agreements}}",
+      "label": "Staff Sheltering Partner Agreements",
+      "description": "Facility-specific MOUs, informal partner contacts, or agreement status for staff sheltering, lodging, or support.",
+      "scope": "facility_profile",
+      "example_value": "current lodging and sheltering agreements listed in the emergency contact/resource directory",
+      "required": false,
+      "used_in_docs": [
+        "DOC-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING"
+      ],
+      "aliases": [
+        "{{mous_place}}"
+      ],
+      "status": "approved"
+    }
+  ]
+}

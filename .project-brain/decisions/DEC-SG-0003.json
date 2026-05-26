@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0003",
+  "title": "Use Git plus an Archivist audit ledger for history",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should use actual Git commits for durable Markdown file history and an Archivist-owned audit ledger for proposal, approval, rationale, export, and review metadata linked to commit hashes.",
+  "context": "Policy and manual content needs transparent long-term history. The latest approved document should be the normal reading surface, while humans and models should be able to inspect older versions, diffs, dates, rationale, and review context even a year or more later.",
+  "rationale": "Git already provides proven snapshots, diffs, and rollback investigation for text files. An app ledger can capture workflow context that raw commits do not naturally express, including model prompts, approval state, reviewer notes, export events, and UI review metadata.",
+  "alternatives_considered": [
+    "Use only raw Git history",
+    "Use only an Archivist-managed append-only ledger",
+    "Store history only in exported snapshots",
+    "Keep autosaves and drafts in the same history stream as approved changes"
+  ],
+  "consequences": [
+    "Accepted document changes should create or map to Git commits",
+    "Drafts and autosaves should remain outside committed document history until accepted",
+    "The local service needs Git inspection capabilities for history, diff, and current-version status",
+    "The audit ledger needs stable links to commit hashes and proposal/review identifiers",
+    "The app can show latest approved content by default while exposing timeline and diff views"
+  ],
+  "related_requirements": [
+    "REQ-0006",
+    "REQ-0007",
+    "REQ-0008",
+    "REQ-0009",
+    "REQ-0010"
+  ],
+  "related_backlog_items": [
+    "SG-0001"
+  ]
+}

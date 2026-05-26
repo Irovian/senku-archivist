@@ -1,0 +1,60 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-04T02:28:52Z",
+  "source_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
+  "source_path": "13 - Appendices/Appendix G Resident Reponsible Party Emergency Communcations Plan.doc",
+  "source_type": "doc",
+  "annotations": [
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC-footnote-2",
+      "source_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
+      "source_type": "doc",
+      "marker_type": "footnote",
+      "marker_id": "2",
+      "instruction_text": "Develop messaging that can be shared with facility residents and resident responsible parties that provides some basic information around emergency preparedness. This provided information is a sample and should be reviewed and tailored accordingly before being finalized and disseminated",
+      "anchor_text": "RESIDENT / RESPONSIBLE PARTY GUIDE",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": "{{develop_messaging_that_can_shared_residents}}",
+      "suggested_action": "review_context",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC-footer-footer1",
+      "source_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
+      "source_type": "doc",
+      "marker_type": "footer",
+      "marker_id": "footer1",
+      "instruction_text": "3 APPENDIX G",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC-footer-footer2",
+      "source_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
+      "source_type": "doc",
+      "marker_type": "footer",
+      "marker_id": "footer2",
+      "instruction_text": "\u00a9 Copyright 2022, Jensen Hughes, Inc. All rights reserved. APPENDIX G",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    }
+  ]
+}

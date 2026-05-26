@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "Q-0004",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the next slice connect the Vite app to the local service for workspace/document reads, or keep static imports briefly while building the Git history inspector?",
+  "recommended_answer": "Fold service-backed workspace and document reads into SG-0013.",
+  "answer": "Fold service-backed workspace and document reads into SG-0013.",
+  "rationale": "Write gates, Git history, external workspaces, and export all need the same trusted filesystem boundary. Connecting reads first gives that boundary a low-risk proof point.",
+  "related_backlog_items": [
+    "SG-0001",
+    "SG-0002",
+    "SG-0013"
+  ],
+  "related_requirements": [
+    "REQ-0012",
+    "REQ-0035"
+  ],
+  "resolved_by": "DEC-SG-0014",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

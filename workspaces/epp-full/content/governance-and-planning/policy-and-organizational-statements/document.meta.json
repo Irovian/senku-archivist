@@ -1,0 +1,25 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS",
+  "title": "Policy and Organizational Statements",
+  "content_group": "governance-and-planning",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A4-COLLABORATION",
+    "REQ-LTC-48373-OVERALL-PROGRAM"
+  ],
+  "placeholder_ids": [
+    "PLH-COLLABORATIVE-PARTNERS",
+    "PLH-FACILITY-NAME",
+    "PLH-LOCAL-RESPONSE-AGENCIES",
+    "PLH-PLAN-OWNER-TITLE",
+    "PLH-MATCH-TABLE-CONTENTS",
+    "PLH-TRAINING-PROGRAM-OWNER-TITLE"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

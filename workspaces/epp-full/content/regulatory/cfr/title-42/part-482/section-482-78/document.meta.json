@@ -1,0 +1,79 @@
+{
+  "doc_id": "REG-CFR-42-482-78",
+  "title": "42 CFR \u00a7482.78 Condition of participation: Emergency preparedness for transplant programs",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_482_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 482.78",
+      "\u00a7482.78",
+      "Condition of participation: Emergency preparedness for transplant programs"
+    ],
+    "aliases": [
+      "42 CFR 482.78",
+      "42 CFR 482.78(a)",
+      "42 CFR 482.78(b)",
+      "42 CFR 482.78(f)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_482_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "482",
+    "section": "482.78",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 482.78",
+      "42 CFR 482.78(a)",
+      "42 CFR 482.78(b)",
+      "42 CFR 482.78(f)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 482.78",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "fd17eca7222cdd1858e71358fa56f8c194be8632f7f8ba69a5a2a7a322e5663f"
+      },
+      {
+        "citation": "42 CFR 482.78(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "3a7f76b0d50ac7f90d3a75cd4285b605811318c2a16a9ca187c5b83948ff60c4"
+      },
+      {
+        "citation": "42 CFR 482.78(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "e6cfde0218bbbef4d5a892a2c3cb8cd80df5b68dad51486e7ea3f82d86d1d6e0"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 3,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

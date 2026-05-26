@@ -1,0 +1,329 @@
+{
+  "doc_id": "DOC-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
+  "title": "External Communications During a Disaster",
+  "document_path": "_content/all-hazards-response/external-communications-during-a-disaster/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-LTC-OMBUDSMAN-CONTACT",
+      "token": "{{state_ltc_ombudsman_contact}}",
+      "usage": "value_insertion",
+      "notes": "State long-term care ombudsman contact information reference."
+    },
+    {
+      "placeholder_id": "PLH-PRIMARY-EMERGENCY-CONTACT",
+      "token": "{{primary_emergency_contact_name}}",
+      "usage": "value_insertion",
+      "notes": "Primary facility emergency contact name."
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-WEBSITE",
+      "token": "{{facility_website}}",
+      "usage": "value_insertion",
+      "notes": "Facility website or emergency update page used for external emergency information.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-34.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "34",
+        "original_instruction_text": "Insert website",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-COMMUNICATION-UPDATE-OWNER-TITLE",
+      "token": "{{communication_update_owner_title}}",
+      "usage": "value_insertion",
+      "notes": "Position title authorized to coordinate real-time public information updates.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-35.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "35",
+        "original_instruction_text": "Insert position title",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-EXTERNAL-HEALTH-ALERT-SYSTEM-NAME",
+      "token": "{{external_health_alert_system_name}}",
+      "usage": "value_insertion",
+      "notes": "Jurisdiction-specific external health alert or reporting system name.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-30.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "30",
+        "original_instruction_text": "Revise to reflect correct terminology, if applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-EXTERNAL-RADIO-SYSTEM-LOCATION",
+      "token": "{{external_radio_system_location}}",
+      "usage": "value_insertion",
+      "notes": "Location and name of local, regional, or state radio system used for external emergency communication.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-31.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "31",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-SATELLITE-PHONE-LOCATION",
+      "token": "{{satellite_phone_location}}",
+      "usage": "value_insertion",
+      "notes": "Location of satellite phone equipment used for external emergency communication.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-32.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "32",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-COMMUNITY-HOTLINE-PHONE",
+      "token": "{{community_hotline_phone_number}}",
+      "usage": "value_insertion",
+      "notes": "Community hotline phone number used for public emergency information when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-36.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "36",
+        "original_instruction_text": "Insert phone number or delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-ARES-CERT-CONTACT-PROCESS",
+      "token": "{{ares_cert_contact_process}}",
+      "usage": "value_insertion",
+      "notes": "Contact or request process for ARES, CERT, or similar emergency communication support.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-33.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "33",
+        "original_instruction_text": "Revise to reflect proper terminology or delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-SISTER-SYSTEM-FACILITY-COMMUNICATIONS",
+      "token": "{{sister_system_facility_communications}}",
+      "usage": "value_insertion",
+      "notes": "Sister, system, or corporate facility communication relationships used during disasters.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-28.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "28",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+      "token": "{{include_facility_website_reference}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether the website public-information paragraph remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-SISTER-SYSTEM-FACILITIES-COMMUNICATION",
+      "token": "{{include_sister_system_facilities_communication}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether sister/system facility communication content remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EXTERNAL-RADIO-SYSTEM",
+      "token": "{{include_external_radio_system}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether external radio system content remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EXTERNAL-SATELLITE-PHONE",
+      "token": "{{include_external_satellite_phone}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether external satellite phone content remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-ARES-CERT-COMMUNICATION",
+      "token": "{{include_ares_cert_communication}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether ARES/CERT communication content remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-COMMUNITY-HOTLINE",
+      "token": "{{include_community_hotline}}",
+      "usage": "assembly_condition",
+      "notes": "Controls whether community hotline content remains in the export."
+    },
+    {
+      "placeholder_id": "PLH-BACKUP-COMMUNICATION-DEVICE-RETURN-PROCESS",
+      "token": "{{backup_communication_device_return_process}}",
+      "usage": "value_insertion",
+      "notes": "Return, inventory, recharge, repair, and storage process for backup communication devices.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-37.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "37",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-EXTERNAL-SISTER-SYSTEM-FACILITIES",
+      "title": "Sister or System Facilities",
+      "category": "optional_paragraph",
+      "target_ref": "external_audiences.sister_system_facilities",
+      "section_heading": "External Audiences",
+      "placeholder_ids": [
+        "PLH-SISTER-SYSTEM-FACILITY-COMMUNICATIONS",
+        "PLH-INCLUDE-SISTER-SYSTEM-FACILITIES-COMMUNICATION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-SISTER-SYSTEM-FACILITIES-COMMUNICATION",
+      "condition_expected_value": "true",
+      "action_summary": "Keep sister/system facility communication content only when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-28.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "28",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-EXTERNAL-RADIO-SYSTEM",
+      "title": "Local Regional or State Radio System",
+      "category": "optional_paragraph",
+      "target_ref": "external_communication_methods.radio_system",
+      "section_heading": "External Communication Methods",
+      "placeholder_ids": [
+        "PLH-EXTERNAL-RADIO-SYSTEM-LOCATION",
+        "PLH-INCLUDE-EXTERNAL-RADIO-SYSTEM"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-EXTERNAL-RADIO-SYSTEM",
+      "condition_expected_value": "true",
+      "action_summary": "Keep radio-system communication content only when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-31.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "31",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-EXTERNAL-SATELLITE-PHONE",
+      "title": "External Satellite Phone",
+      "category": "optional_paragraph",
+      "target_ref": "external_communication_methods.satellite_phone",
+      "section_heading": "External Communication Methods",
+      "placeholder_ids": [
+        "PLH-SATELLITE-PHONE-LOCATION",
+        "PLH-INCLUDE-EXTERNAL-SATELLITE-PHONE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-EXTERNAL-SATELLITE-PHONE",
+      "condition_expected_value": "true",
+      "action_summary": "Keep external satellite phone content only when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-32.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "32",
+        "original_instruction_text": "Delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-EXTERNAL-ARES-CERT",
+      "title": "ARES CERT Communication Support",
+      "category": "optional_paragraph",
+      "target_ref": "external_communication_methods.ares_cert",
+      "section_heading": "External Communication Methods",
+      "placeholder_ids": [
+        "PLH-ARES-CERT-CONTACT-PROCESS",
+        "PLH-INCLUDE-ARES-CERT-COMMUNICATION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-ARES-CERT-COMMUNICATION",
+      "condition_expected_value": "true",
+      "action_summary": "Keep ARES/CERT communication support content only when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-33.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "33",
+        "original_instruction_text": "Revise to reflect proper terminology or delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-EXTERNAL-FACILITY-WEBSITE",
+      "title": "Facility Website Public Information",
+      "category": "optional_paragraph",
+      "target_ref": "public_information_channels.facility_website",
+      "section_heading": "Public Information Channels",
+      "placeholder_ids": [
+        "PLH-FACILITY-WEBSITE",
+        "PLH-COMMUNICATION-UPDATE-OWNER-TITLE",
+        "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-FACILITY-WEBSITE-REFERENCE",
+      "condition_expected_value": "true",
+      "action_summary": "Keep website public-information content only when the facility uses a website for emergency updates.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotations SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-34 and footnote-35.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "34-35",
+        "original_instruction_text": "Insert website; Insert position title",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-EXTERNAL-COMMUNITY-HOTLINE",
+      "title": "Community Hotline",
+      "category": "optional_paragraph",
+      "target_ref": "public_information_channels.community_hotline",
+      "section_heading": "Public Information Channels",
+      "placeholder_ids": [
+        "PLH-COMMUNITY-HOTLINE-PHONE",
+        "PLH-INCLUDE-COMMUNITY-HOTLINE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-COMMUNITY-HOTLINE",
+      "condition_expected_value": "true",
+      "action_summary": "Keep community hotline content only when applicable.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-36.",
+        "legacy_topic": "External Communications During a Disaster",
+        "original_superscript": "36",
+        "original_instruction_text": "Insert phone number or delete if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

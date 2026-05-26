@@ -1,0 +1,256 @@
+{
+  "schema_version": "retrieval-query-tests/v1",
+  "created_at": "2026-05-07T00:00:00Z",
+  "purpose": "Small pilot suite for checking whether generated and curated retrieval metadata can find expected EPP documents and artifacts.",
+  "tests": [
+    {
+      "test_id": "RQ-001",
+      "query": "Where can residents be evacuated to?",
+      "query_family": "staff_task",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-EVACUATION-RESIDENT_PLACEMENT_INTO_OTHER_FACILITIES",
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL"
+      ],
+      "expected_artifact_types": [
+        "receiving_facility_directory"
+      ],
+      "rationale": "A staff user looking for evacuation destinations should find the receiving-facility directory first."
+    },
+    {
+      "test_id": "RQ-002",
+      "query": "What form tracks residents during evacuation?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-EVACUATION-RESIDENT_EVACUATION_TRACKING_FORM"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-EVACUATION-RESIDENT_MEDICAL_RECORDS",
+        "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES"
+      ],
+      "expected_artifact_types": [
+        "fixed_page_form"
+      ],
+      "rationale": "Evacuation tracking should retrieve the dedicated resident evacuation tracking form."
+    },
+    {
+      "test_id": "RQ-003",
+      "query": "Which chart shows incident command roles?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+        "DOC-APPENDICES-APPENDIX_F"
+      ],
+      "expected_artifact_types": [
+        "org_chart"
+      ],
+      "rationale": "A role-chart query should find the ICS organizational chart or a closely related org chart artifact."
+    },
+    {
+      "test_id": "RQ-004",
+      "query": "Who reports to the Incident Commander?",
+      "query_family": "role_based",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+        "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART"
+      ],
+      "expected_artifact_types": [
+        "org_chart",
+        "job_action_sheet"
+      ],
+      "rationale": "Reporting-relationship questions should land on role charts or the Incident Commander job action sheet."
+    },
+    {
+      "test_id": "RQ-005",
+      "query": "What should staff do when the EOP is activated?",
+      "query_family": "staff_task",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES"
+      ],
+      "expected_artifact_types": [],
+      "rationale": "Initial EOP activation behavior should retrieve the all-hazards EOP activation topic."
+    },
+    {
+      "test_id": "RQ-006",
+      "query": "What code or alert activates emergency operations?",
+      "query_family": "staff_task",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES",
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-GOVERNANCE_AND_PLANNING-SHELTER_IN_PLACE_PLAN",
+        "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM"
+      ],
+      "expected_artifact_types": [],
+      "rationale": "Emergency alert and activation language should find emergency codes and EOP activation content."
+    },
+    {
+      "test_id": "RQ-007",
+      "query": "Where are the internal evacuation routes?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-EVACUATION-INTERNAL_ROUTES_OF_TRAVEL"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_E",
+        "DOC-EVACUATION-EVACUATION_FLOOR_PLANS"
+      ],
+      "expected_artifact_types": [
+        "route_matrix",
+        "map_attachment"
+      ],
+      "rationale": "Route questions should find the internal route matrix and related map artifacts."
+    },
+    {
+      "test_id": "RQ-008",
+      "query": "What should be in the disaster kit?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-DISASTER_KIT_CONTENTS"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_FOOD_SUPPLY_LIST",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_BEDDING_MATERIALS"
+      ],
+      "expected_artifact_types": [
+        "inventory_checklist"
+      ],
+      "rationale": "Inventory questions should find the structured disaster kit checklist."
+    },
+    {
+      "test_id": "RQ-009",
+      "query": "Where are emergency utility shut off locations?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_UTILITY_SHUT_OFF_LOCATIONS"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-GENERATOR_INFORMATION"
+      ],
+      "expected_artifact_types": [
+        "utility_matrix"
+      ],
+      "rationale": "Utility shutoff lookup should find the utility matrix."
+    },
+    {
+      "test_id": "RQ-010",
+      "query": "Who are the emergency response agency contacts?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_RESPONSE_AGENCY_PHONE_NUMBERS"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-EXTERNAL_RESPONSE_PARTNERS_PHONE_NUMBERS",
+        "DOC-RESOURCES_AND_LISTS-EMERGENCY_CONTACTS"
+      ],
+      "expected_artifact_types": [
+        "contact_directory"
+      ],
+      "rationale": "Agency contact queries should find the emergency response agency directory."
+    },
+    {
+      "test_id": "RQ-011",
+      "query": "Show the compliance schedule calendar",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_C"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_J"
+      ],
+      "expected_artifact_types": [
+        "compliance_calendar"
+      ],
+      "rationale": "Calendar wording should find the compliance schedule appendix."
+    },
+    {
+      "test_id": "RQ-012",
+      "query": "How do we calculate PPE burn rate?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_M"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-DISASTER_KIT_CONTENTS"
+      ],
+      "expected_artifact_types": [
+        "calculator"
+      ],
+      "rationale": "PPE burn-rate questions should find the calculator appendix."
+    },
+    {
+      "test_id": "RQ-013",
+      "query": "Where is the annual analysis and review log?",
+      "query_family": "compliance_task",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_J"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "expected_artifact_types": [
+        "review_log"
+      ],
+      "rationale": "Annual review evidence should retrieve the annual analysis and review artifact."
+    },
+    {
+      "test_id": "RQ-014",
+      "query": "Which facility owned vehicles are available for transportation?",
+      "query_family": "artifact_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-RESOURCES_AND_LISTS-TRANSPORTATION_RESOURCES_FACILITY_OWNED_VEHICLES"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL"
+      ],
+      "expected_artifact_types": [
+        "vehicle_roster"
+      ],
+      "rationale": "Transportation resource questions should find the facility-owned vehicle roster."
+    },
+    {
+      "test_id": "RQ-015",
+      "query": "What training or competency test covers emergency preparedness?",
+      "query_family": "education_lookup",
+      "priority": "pilot",
+      "expected_doc_ids": [
+        "DOC-APPENDICES-APPENDIX_H"
+      ],
+      "acceptable_doc_ids": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING",
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "expected_artifact_types": [
+        "training_quiz"
+      ],
+      "rationale": "Training and competency-test language should find the staff competency post-training test."
+    }
+  ]
+}

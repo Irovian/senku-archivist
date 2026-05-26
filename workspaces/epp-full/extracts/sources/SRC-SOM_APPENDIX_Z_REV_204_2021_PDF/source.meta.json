@@ -1,0 +1,11 @@
+{
+  "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+  "path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+  "extract_status": "generated",
+  "extract_method": "pdftotext -layout",
+  "warning": null,
+  "generated_at": "2026-05-19T23:14:24Z",
+  "source_role": "primary_regulatory_source",
+  "revision": "204",
+  "sha256": "5e407c9e1edf2a13ecaa781a0e6d5aed34feea71e74cd368644f5e3acc33a3ad"
+}

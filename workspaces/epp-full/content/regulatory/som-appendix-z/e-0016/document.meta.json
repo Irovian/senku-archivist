@@ -1,0 +1,58 @@
+{
+  "doc_id": "REG-SOMZ-E-0016",
+  "title": "E-0016 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0016",
+      "E-0016",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0016",
+      "E-0016"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "Hospice"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0016",
+    "canonical_tag": "E-0016",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7418.113(b)(1)",
+      "\u00a7418.113(c)"
+    ],
+    "provider_types": [
+      "Hospice"
+    ],
+    "ltc_relevant": false,
+    "applicability_notes": [],
+    "source_span": {
+      "start_line": 1575,
+      "end_line": 1641,
+      "start_page": 36,
+      "end_page": 38
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

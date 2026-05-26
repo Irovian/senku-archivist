@@ -1,0 +1,20 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_B",
+  "title": "Appendix B - Mutual Aid Agreements / Memoranda of Understanding",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_B1_SAMPLE_STOP_OVER_POINT_MEMORANDUM_OF_UNDERSTANDING_MOU_DOC",
+    "SRC-13_APPENDICES_APPENDIX_B_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A4-COLLABORATION",
+    "REQ-LTC-48373-B2-B8-OPERATIONS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

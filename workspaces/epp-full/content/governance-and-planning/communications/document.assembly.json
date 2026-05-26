@@ -1,0 +1,105 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+  "title": "Communications",
+  "document_path": "_content/governance-and-planning/communications/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-EMPLOYEE-CONTACT-INFORMATION-LOCATION",
+      "token": "{{employee_contact_information_location}}",
+      "usage": "value_insertion",
+      "notes": "Identifies where staff emergency contact information is maintained.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-10 (footnote 10).",
+        "legacy_topic": "Communications",
+        "original_superscript": "10",
+        "original_instruction_text": "Describe how employee contact information can be obtained and where it is stored. Revise statement to reflect facility processes.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-EMERGENCY-REPORTING-SYSTEM-NAME",
+      "token": "{{emergency_reporting_system_name}}",
+      "usage": "value_insertion",
+      "notes": "Names the applicable emergency reporting or health alert system when one is used.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-12 (footnote 12).",
+        "legacy_topic": "Communications",
+        "original_superscript": "12",
+        "original_instruction_text": "Insert correct terminology (e.g., Health Alert Network, HHAN/HAN, etc.) for any reporting systems in use at the facility. Remove this reference if there are no applicable systems.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-EMERGENCY-REPORTING-SYSTEM-REFERENCE",
+      "token": "{{include_emergency_reporting_system_reference}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the reporting-system sentence remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-12 (footnote 12).",
+        "legacy_topic": "Communications",
+        "original_superscript": "12",
+        "original_instruction_text": "Insert correct terminology (e.g., Health Alert Network, HHAN/HAN, etc.) for any reporting systems in use at the facility. Remove this reference if there are no applicable systems.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-COMMUNICATIONS-EMPLOYEE-CONTACT-INFORMATION-LOCATION",
+      "title": "Employee Contact Information Location",
+      "category": "value_insertion",
+      "target_ref": "contact_information_and_alternate_methods.employee_contact_information_location",
+      "action_summary": "Populate the staff emergency contact information source with the facility-specific system or location.",
+      "section_heading": "Contact Information and Alternate Methods",
+      "placeholder_ids": [
+        "PLH-EMPLOYEE-CONTACT-INFORMATION-LOCATION"
+      ],
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-10 (footnote 10).",
+        "legacy_topic": "Communications",
+        "original_superscript": "10",
+        "original_instruction_text": "Describe how employee contact information can be obtained and where it is stored. Revise statement to reflect facility processes.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-COMMUNICATIONS-EMERGENCY-REPORTING-SYSTEM-REFERENCE",
+      "title": "Emergency Reporting System Reference",
+      "category": "optional_paragraph",
+      "target_ref": "information_sharing_and_reporting.emergency_reporting_system_reference",
+      "action_summary": "Keep the electronic reporting-system sentence only when the facility uses an applicable emergency reporting or health alert platform.",
+      "section_heading": "Information Sharing and Reporting",
+      "placeholder_ids": [
+        "PLH-INCLUDE-EMERGENCY-REPORTING-SYSTEM-REFERENCE",
+        "PLH-EMERGENCY-REPORTING-SYSTEM-NAME"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-EMERGENCY-REPORTING-SYSTEM-REFERENCE",
+      "condition_expected_value": "true",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-12 (footnote 12).",
+        "legacy_topic": "Communications",
+        "original_superscript": "12",
+        "original_instruction_text": "Insert correct terminology (e.g., Health Alert Network, HHAN/HAN, etc.) for any reporting systems in use at the facility. Remove this reference if there are no applicable systems.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_F",
+  "title": "Appendix F - Organizational Chart and Key Disaster Roles",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_F_COVER_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_F_ORGANIZATIONAL_CHART_OF_STAFF_WITH_KEY_DISASTER_ROLES_DOC",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY"
+  ],
+  "placeholder_ids": [
+    "PLH-COLLABORATIVE-PARTNERS",
+    "PLH-FACILITY-NAME",
+    "PLH-LOCAL-RESPONSE-AGENCIES",
+    "PLH-PLAN-OWNER-TITLE"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0001",
+  "title": "Build Archivist as a general app with EPP as the first workspace",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Senku Archivist should be an app-first local document workbench with EPP as the first bundled or importable workspace, not an EPP-only generated browser.",
+  "context": "The original implementation started as Markdown-first EPP content plus a generated static viewer. The tool is now expected to become a true live local browser app, shareable with coworkers for EPP work, while remaining able to support other document collections and future export workflows.",
+  "rationale": "Separating Archivist tool development from the EPP process repo keeps the product reusable and easier for Dovaxis developers to mirror. Keeping EPP as the first serious workspace still gives the app a complex proving ground with real placeholders, review needs, regulatory/static documents, and recommended edit flows.",
+  "alternatives_considered": [
+    "Copy the generated EPP manual browser into the new repo as the product",
+    "Keep all Archivist development inside the Emergency Prep Project repo",
+    "Build a content-agnostic app with no EPP seed"
+  ],
+  "consequences": [
+    "The new repo needs a workspace abstraction rather than hardcoded EPP-only paths",
+    "EPP content can be bundled or imported for coworker use without making EPP the only supported corpus",
+    "The generated static browser is source evidence, not the target architecture",
+    "Write, proposal, and export rules need to be explicit before deeper migration"
+  ],
+  "related_requirements": [
+    "REQ-0001",
+    "REQ-0002",
+    "REQ-0003",
+    "REQ-0004"
+  ],
+  "related_backlog_items": [
+    "SG-0001"
+  ]
+}
+

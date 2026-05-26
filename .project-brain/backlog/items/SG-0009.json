@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "SG-0009",
+  "title": "Define the reusable workbook artifact contract",
+  "type": "docs",
+  "status": "needs_review",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Define Archivist's reusable workbook artifact family so HVA can be the first implementation without hard-coding Appendix A as a special case.",
+  "acceptance_criteria": [
+    "The workbook contract distinguishes document text, workbook definition, workbook user-entered state, derived outputs, and export/print views",
+    "The contract supports schema versioning, renderer templates, workflow steps, fields, calculations, validation, review questions, and import/export behavior",
+    "The contract keeps source/compliance traceability visible through the parent document record",
+    "The contract preserves Git plus Archivist audit history expectations for approved workbook state changes",
+    "The HVA prototype can implement the contract as the first workbook"
+  ],
+  "non_goals": [
+    "Implementing the full HVA UI in this slice",
+    "Defining every future workbook type up front",
+    "Collapsing calculators, directories, logs, forms, and charts into the workbook family unless they need workbook behavior"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0025",
+    "REQ-0026",
+    "REQ-0027"
+  ],
+  "related_questions": [
+    "Q-0013"
+  ],
+  "validation": [
+    "Review docs/architecture/workbook-artifact-contract.md",
+    "Confirm Appendix A artifact metadata can map onto the contract",
+    "Run Senku Prep project-brain validation"
+  ],
+  "notes": "Workbook is a reusable artifact family for multi-step, stateful, exportable document-bound tools. HVA is the first proof case."
+}

@@ -1,0 +1,871 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-07T00:02:43Z",
+  "pilot_doc_ids": [
+    "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+    "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+    "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART"
+  ],
+  "suggestion_count": 44,
+  "suggestions": [
+    {
+      "suggestion_id": "SUG-253D65257F43",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "This document owns the all-hazards EOP activation trigger and first-response expectations. The all-hazards Activation of the Incident Command System document describes command center activation steps, and the Section C Incident Command System documents contain the deeper incident command structure, job action sheets, forms, and role-specific guidance.",
+        "line_start": 28,
+        "line_end": 28,
+        "match_text": "Activation of the Incident Command System"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-53EBE0581452",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "This document owns the all-hazards EOP activation trigger and first-response expectations. The all-hazards Activation of the Incident Command System document describes command center activation steps, and the Section C Incident Command System documents contain the deeper incident command structure, job action sheets, forms, and role-specific guidance.",
+        "line_start": 28,
+        "line_end": 28,
+        "match_text": "Activation of the Incident Command System"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6046615735ED",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
+      "target_title": "Communications",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "Activation may begin with a notification, emergency code announcement, leadership assessment, command center activation, or immediate protective action. The person activating the plan should consider the seriousness of the event, expected duration, resident impact, staffing capacity, communications needs, outside-agency coordination, and whether the incident may escalate.",
+        "line_start": 9,
+        "line_end": 9,
+        "match_text": "Communications"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-E4A6BE327171",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-EVACUATION-COMMUNICATIONS",
+      "target_title": "Communications",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "Activation may begin with a notification, emergency code announcement, leadership assessment, command center activation, or immediate protective action. The person activating the plan should consider the seriousness of the event, expected duration, resident impact, staffing capacity, communications needs, outside-agency coordination, and whether the incident may escalate.",
+        "line_start": 9,
+        "line_end": 9,
+        "match_text": "Communications"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-FD3F36A2EE8F",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "target_title": "Incident Commander",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "The activating leader or Incident Commander should make or delegate notifications based on the type and severity of the event. Notifications may include internal leadership, department heads, direct-care staff, residents or representatives when appropriate, emergency response agencies, emergency management, regulatory contacts, vendors, receiving partners, or other support organizations.",
+        "line_start": 19,
+        "line_end": 19,
+        "match_text": "Incident Commander"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-7A2904F0360B",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "all-hazards-response",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6A76AFC2C1BF",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "field": "requirement_ids"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-CCEDDAF00351",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES",
+      "target_title": "Baseline Assessment of 96 Hr. Capabilities",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "all-hazards-response",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-92A9322A784E",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
+      "target_title": "Building Lockdown",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "all-hazards-response",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-A7CCE31D93E1",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
+      "target_title": "Building Lockdown",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-F4D64A6CEA77",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-CENSUS_REDUCTION_PLAN",
+      "target_title": "Census Reduction Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "all-hazards-response",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-4919C2D8C971",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-CENSUS_REDUCTION_PLAN",
+      "target_title": "Census Reduction Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-558EFCDB8147",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-LOSS_OF_PARKING_INABILITY_TO_COMMUTE_TO_FACILITY",
+      "target_title": "Loss of Parking / Inability to Commute to Facility",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-99BB16F070BA",
+      "source_doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP",
+      "source_title": "Activation of Emergency Operations Plan (EOP)",
+      "target_doc_id": "DOC-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER",
+      "target_title": "Management of Staff During a Disaster",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B-OVERALL-POLICIES, REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-377B9A0F7A25",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-TRANSPORTATION_INTERNAL_EXTERNAL",
+      "target_title": "Transportation (Internal / External)",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "The directory should help the command center, resident placement staff, transportation coordinators, and resident-care leaders identify potential receiving locations, confirm contact methods, understand agreement status, and estimate available capacity during partial or full evacuation.",
+        "line_start": 7,
+        "line_end": 7,
+        "match_text": "Transportation"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-15C1B7F1EA4E",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTION_PLAN",
+      "target_title": "Action Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "evacuation",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-21BCF4CD2420",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTION_PLAN",
+      "target_title": "Action Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-FF9222371475",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTIVATE_LABOR_POOL",
+      "target_title": "Activate Labor Pool",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "evacuation",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-C26022960F68",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTIVATE_LABOR_POOL",
+      "target_title": "Activate Labor Pool",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6DB3486179A6",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTIVATION_OF_PLAN",
+      "target_title": "Activation of Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "evacuation",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-E45CB40AF595",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ACTIVATION_OF_PLAN",
+      "target_title": "Activation of Plan",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-666A65F462B0",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ASSIGNMENT_OF_RESIDENT_EVACUATION_STAFF",
+      "target_title": "Assignment of Resident Evacuation Staff",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "evacuation",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-700DB1FC0E06",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-ASSIGNMENT_OF_RESIDENT_EVACUATION_STAFF",
+      "target_title": "Assignment of Resident Evacuation Staff",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-73BC6C12A874",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES",
+      "target_title": "Care and Treatment of Evacuees",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "evacuation",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-4109C3683051",
+      "source_doc_id": "DOC-EVACUATION-RECEIVING_FACILITIES_FOR_EVACUATION",
+      "source_title": "Receiving Facilities for Evacuation",
+      "target_doc_id": "DOC-EVACUATION-CARE_AND_TREATMENT_OF_EVACUEES",
+      "target_title": "Care and Treatment of Evacuees",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-B2-B8-OPERATIONS, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-E7AC63F50A27",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "target_title": "Incident Commander",
+      "relationship": "see_also",
+      "confidence": "high",
+      "reason": "Title mentioned in document prose.",
+      "evidence": {
+        "source": "document.md",
+        "text": "The chart is not intended to show every possible person working in an emergency. It shows the command roles that may be activated and the relationships between them. The Incident Commander may scale the structure up or down based on the incident.",
+        "line_start": 9,
+        "line_end": 9,
+        "match_text": "Incident Commander"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-876D4E16AC94",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+      "target_title": "Documentation Recorder",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Documentation Recorder",
+        "line_start": 39,
+        "line_end": 39,
+        "match_text": "Documentation Recorder",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-B352F6A40DFD",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-FINANCE_SECTION_CHIEF",
+      "target_title": "Finance Section Chief",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Finance Section Chief",
+        "line_start": 88,
+        "line_end": 88,
+        "match_text": "Finance Section Chief",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-702B7D1B86A3",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMANDER",
+      "target_title": "Incident Commander",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Incident Commander",
+        "line_start": 28,
+        "line_end": 28,
+        "match_text": "Incident Commander",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-E072DCDE20FC",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-LOGISTICS_SECTION_CHIEF",
+      "target_title": "Logistics Section Chief",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Logistics Section Chief",
+        "line_start": 80,
+        "line_end": 80,
+        "match_text": "Logistics Section Chief",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-125AF1C504E7",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-OPERATIONS_SECTION_CHIEF",
+      "target_title": "Operations Section Chief",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Operations Section Chief",
+        "line_start": 64,
+        "line_end": 64,
+        "match_text": "Operations Section Chief",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-927FA9151D96",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-PLANNING_SECTION_CHIEF",
+      "target_title": "Planning Section Chief",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Planning Section Chief",
+        "line_start": 72,
+        "line_end": 72,
+        "match_text": "Planning Section Chief",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-1607DF5EAE83",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-PUBLIC_INFORMATION_OFFICER",
+      "target_title": "Public Information Officer",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Public Information Officer",
+        "line_start": 56,
+        "line_end": 56,
+        "match_text": "Public Information Officer",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6F50C19C3B4D",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-SAFETY_SECURITY_LIAISON_OFFICER",
+      "target_title": "Safety / Security / Liaison Officer",
+      "relationship": "see_also",
+      "confidence": "medium",
+      "reason": "Structured artifact term matches another document title.",
+      "evidence": {
+        "source": "structured_artifact",
+        "text": "label: Safety / Security / Liaison Officer",
+        "line_start": 47,
+        "line_end": 47,
+        "match_text": "Safety / Security / Liaison Officer",
+        "field": "artifact_terms"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-E16D33FC586E",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "incident-command",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-5009ACDE052B",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+      "target_title": "Activation of the Incident Command System",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": true,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-A3224C24F0C7",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+      "target_title": "Command Center Organizational Chart",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "incident-command",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-91E872852F22",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-COMMAND_CENTER_ORGANIZATIONAL_CHART",
+      "target_title": "Command Center Organizational Chart",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-F4A289B26C4F",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS",
+      "target_title": "Concept of Operations",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "incident-command",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-9E98C3B7FCD6",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS",
+      "target_title": "Concept of Operations",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-15DB03C0C9EF",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-DISCHARGE_FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "target_title": "Discharge Floor Evacuation Team - Team Leader",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "incident-command",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6440D6BCE143",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-DISCHARGE_FLOOR_EVACUATION_TEAM_TEAM_LEADER",
+      "target_title": "Discharge Floor Evacuation Team - Team Leader",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-6315B17BAC33",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+      "target_title": "Documentation Recorder",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Same content group.",
+      "evidence": {
+        "source": "catalog",
+        "text": "incident-command",
+        "line_start": null,
+        "line_end": null,
+        "field": "content_group"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    },
+    {
+      "suggestion_id": "SUG-EFFC06442202",
+      "source_doc_id": "DOC-INCIDENT_COMMAND-INCIDENT_COMMAND_SYSTEM_ORGANIZATIONAL_CHART",
+      "source_title": "Incident Command System Organizational Chart",
+      "target_doc_id": "DOC-INCIDENT_COMMAND-DOCUMENTATION_RECORDER",
+      "target_title": "Documentation Recorder",
+      "relationship": "see_also",
+      "confidence": "low",
+      "reason": "Shares mapped compliance requirements.",
+      "evidence": {
+        "source": "catalog",
+        "text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "line_start": null,
+        "line_end": null,
+        "match_text": "REQ-LTC-48373-A3-POPULATION-CONTINUITY, REQ-LTC-48373-C-OVERALL-COMMUNICATION, REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS, REQ-LTC-48373-D-OVERALL-TRAINING-TESTING",
+        "field": "requirement_ids"
+      },
+      "ambiguous": false,
+      "promotion_status": "suggested"
+    }
+  ]
+}

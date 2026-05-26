@@ -1,0 +1,19 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_K",
+  "title": "Appendix K - EPP Quick Reference Guide",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_K_COVER_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_K_EPP_QUICK_REFERENCE_GUIDE_11X17_V3_DOC",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-C8-RESIDENT-FAMILY-SHARING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

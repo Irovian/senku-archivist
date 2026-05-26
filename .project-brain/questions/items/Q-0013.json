@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0013",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should approved workbook state be stored in structured sidecar JSON files linked to the parent document, or embedded back into the parent Markdown document?",
+  "recommended_answer": "Store workbook state in structured sidecar JSON files linked to the parent document and workbook ID.",
+  "answer": "Store workbook state in structured sidecar JSON files linked to the parent document and workbook ID.",
+  "rationale": "Workbook state needs validation, diffs, auditability, import/export, and future reuse. Markdown should remain the explanatory wrapper and definition source, not a fragile data store for stateful workbook answers.",
+  "related_backlog_items": [
+    "SG-0008",
+    "SG-0009"
+  ],
+  "related_requirements": [
+    "REQ-0028"
+  ],
+  "resolved_by": "DEC-SG-0008",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

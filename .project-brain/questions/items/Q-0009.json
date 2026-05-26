@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "Q-0009",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should each accepted proposal create its own Git commit, or should Archivist batch accepted proposals into review-session commits?",
+  "recommended_answer": "One accepted model proposal or approved manual-draft batch should create one Git commit by default.",
+  "answer": "One accepted model proposal or approved manual-draft batch should create one Git commit by default.",
+  "rationale": "Policy content benefits from granular history and rollback investigation. Batching can be added later if review sessions become noisy.",
+  "related_backlog_items": [
+    "SG-0005"
+  ],
+  "related_requirements": [
+    "REQ-0038"
+  ],
+  "resolved_by": "DEC-SG-0018",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

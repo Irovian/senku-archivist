@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0015",
+  "title": "Render documents live from source inside the app",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should render document views live from canonical source files at app view time. Pre-rendering should be reserved for export, print, review snapshots, or disposable caches, not the core reader model.",
+  "context": "The older EPP browser pre-rendered a static review surface as part of its build style. The standalone Archivist app should preserve the old browser's visible behavior without inheriting that static-generation architecture.",
+  "rationale": "Live rendering from Markdown, catalog, crosswalk, eCFR XML, artifact definitions, and workbook sidecars keeps the app local, inspectable, and current while still allowing snapshot generation for exports and reviews.",
+  "alternatives_considered": [
+    "Pre-render the full EPP corpus into static HTML before browsing",
+    "Port every old artifact renderer before any full-corpus browsing",
+    "Render only simple Markdown and hide unsupported artifact blocks"
+  ],
+  "consequences": [
+    "Q-0010 is resolved",
+    "Compatibility rendering means behavior parity, not static pre-rendering",
+    "Artifact work should inventory active EPP artifact blocks and provide runtime renderer support for required active families",
+    "Rare or unknown artifact blocks should degrade gracefully with source-aware placeholders until a runtime renderer exists",
+    "Export, print, and review packets may still generate snapshots from the current approved source"
+  ],
+  "related_requirements": [
+    "REQ-0020",
+    "REQ-0034",
+    "REQ-0036"
+  ],
+  "related_backlog_items": [
+    "SG-0006",
+    "SG-0013",
+    "SG-0014"
+  ],
+  "related_questions": [
+    "Q-0010"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-04T02:28:52Z",
+  "source_id": "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX",
+  "source_path": "13 - Appendices/Appendix N Contact Listing for Facility Physicians 3-2022.docx",
+  "source_type": "docx",
+  "annotations": [
+    {
+      "annotation_id": "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX-footer-footer1",
+      "source_id": "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX",
+      "source_type": "docx",
+      "marker_type": "footer",
+      "marker_id": "footer1",
+      "instruction_text": "\u00a9 Copyright 2022, Jensen Hughes, Inc. All rights reserved. APPENDIX N",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "doc_id": "REG-SOMZ-E-0038",
+  "title": "E-0038 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0038",
+      "E-0038",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0038",
+      "E-0038"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ESRD"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0038",
+    "canonical_tag": "E-0038",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7494.62(d)(1)"
+    ],
+    "provider_types": [
+      "ESRD"
+    ],
+    "ltc_relevant": false,
+    "applicability_notes": [],
+    "source_span": {
+      "start_line": 3637,
+      "end_line": 3727,
+      "start_page": 82,
+      "end_page": 84
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

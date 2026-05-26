@@ -1,0 +1,230 @@
+{
+  "doc_id": "REG-CFR-42-494-120",
+  "title": "42 CFR \u00a7494.120 Condition: Special purpose renal dialysis facilities",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_494_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 494.120",
+      "\u00a7494.120",
+      "Condition: Special purpose renal dialysis facilities"
+    ],
+    "aliases": [
+      "42 CFR 494.120(c)(2)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_494_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "494",
+    "section": "494.120",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 494.120(c)(2)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 494.120",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "0a974efdc305735e55595aed147a2abb31357233722ee3adfd2985e5bdaa621c"
+      },
+      {
+        "citation": "42 CFR 494.120(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "33651c1933b5a1cf5448ee36038a907e981804e01d37659b34b2a43d0f1627e6"
+      },
+      {
+        "citation": "42 CFR 494.120(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "406f09bf8d0d92e1347275fd36ba9560be6dc197a163727b5ac9b267415d2886"
+      },
+      {
+        "citation": "42 CFR 494.120(c)",
+        "anchor_id": "subsection-c",
+        "path": [
+          "c"
+        ],
+        "text_sha256": "4216a9552cf1529992b68f92517775e91032ce7e131c899646e8895ed734b968"
+      },
+      {
+        "citation": "42 CFR 494.120(i)",
+        "anchor_id": "subsection-i",
+        "path": [
+          "i"
+        ],
+        "text_sha256": "06ba6a1a3d3151ab237c78676ecd23bd38005a9f423c5c24ee96c674771deb9a"
+      },
+      {
+        "citation": "42 CFR 494.120(ii)",
+        "anchor_id": "subsection-ii",
+        "path": [
+          "ii"
+        ],
+        "text_sha256": "80ae7257d5e84fac8897fdec5bcda2635a5ba5c699a38170df79c9493741bee4"
+      },
+      {
+        "citation": "42 CFR 494.120(iii)",
+        "anchor_id": "subsection-iii",
+        "path": [
+          "iii"
+        ],
+        "text_sha256": "ef2a6512ce0b5ad6186d18b0eac8ca676334aa4646127d03502208af46115ba7"
+      },
+      {
+        "citation": "42 CFR 494.120(iv)",
+        "anchor_id": "subsection-iv",
+        "path": [
+          "iv"
+        ],
+        "text_sha256": "c12bb95dfbd728238127f5e4b817744307f0322acd29a6ae4a02dac7fb52c8a3"
+      },
+      {
+        "citation": "42 CFR 494.120(v)",
+        "anchor_id": "subsection-v",
+        "path": [
+          "v"
+        ],
+        "text_sha256": "1c9fe004d145f4faf1378325e92e0a580acadaf730b35f6ee51ceeeb1191389c"
+      },
+      {
+        "citation": "42 CFR 494.120(vi)",
+        "anchor_id": "subsection-vi",
+        "path": [
+          "vi"
+        ],
+        "text_sha256": "577f247c3e6e185db205e1085d7d40a0ab4ac4a4bd920594b76dc349d720fa01"
+      },
+      {
+        "citation": "42 CFR 494.120(vii)",
+        "anchor_id": "subsection-vii",
+        "path": [
+          "vii"
+        ],
+        "text_sha256": "fc665f0b0603b8cc66bae1815187b309501dcfac1e0aa779f5ebaf394c3b88de"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)",
+        "anchor_id": "subsection-viii",
+        "path": [
+          "viii"
+        ],
+        "text_sha256": "0448c1a0310dae42dd384e208916e9add6e132d10c52fe8a58a11c6064cf2975"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)",
+        "anchor_id": "subsection-viii-2",
+        "path": [
+          "viii",
+          "2"
+        ],
+        "text_sha256": "0da346489d3d6b7c9df54cf45263e387109630aac38b8772452f79f88f207c9a"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(i)",
+        "anchor_id": "subsection-viii-2-i",
+        "path": [
+          "viii",
+          "2",
+          "i"
+        ],
+        "text_sha256": "cbaed2caeba7c05a06804fe0b9142270b73792bfc15e189b09824a2016459844"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(ii)",
+        "anchor_id": "subsection-viii-2-ii",
+        "path": [
+          "viii",
+          "2",
+          "ii"
+        ],
+        "text_sha256": "f63fc1d3f110ed71a1edb3a366e0e75d57b57ca7a56d5dfd6ddd61b426eed77d"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(iii)",
+        "anchor_id": "subsection-viii-2-iii",
+        "path": [
+          "viii",
+          "2",
+          "iii"
+        ],
+        "text_sha256": "0c540ace67e9160ff9398bbb051b01b64c9578e3efbfa54e132b80b64e7c6158"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(iv)",
+        "anchor_id": "subsection-viii-2-iv",
+        "path": [
+          "viii",
+          "2",
+          "iv"
+        ],
+        "text_sha256": "15d71e530a878ba6d454442c75356575e2b24eb6088bf270eb21ce4adffd555e"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(v)",
+        "anchor_id": "subsection-viii-2-v",
+        "path": [
+          "viii",
+          "2",
+          "v"
+        ],
+        "text_sha256": "45c537766dcd709c582056aa63a612f629fda9586a1f8ce5d3bd8e05ba8b370c"
+      },
+      {
+        "citation": "42 CFR 494.120(viii)(2)(vi)",
+        "anchor_id": "subsection-viii-2-vi",
+        "path": [
+          "viii",
+          "2",
+          "vi"
+        ],
+        "text_sha256": "f514de249178ad2345e9f722e50d040037999f6d5cb75a2bebc643086d1252da"
+      },
+      {
+        "citation": "42 CFR 494.120(d)",
+        "anchor_id": "subsection-d",
+        "path": [
+          "d"
+        ],
+        "text_sha256": "7bebb4e49b2f36324685b87629f8ee96605f1a971fce35b40adc48b49efbcd93"
+      },
+      {
+        "citation": "42 CFR 494.120(e)",
+        "anchor_id": "subsection-e",
+        "path": [
+          "e"
+        ],
+        "text_sha256": "bc61d448236a9f63bb99b7c1a14dc71cd2c3e454e1ac4862466cd6f83000b33e"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 21,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

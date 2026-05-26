@@ -1,0 +1,26 @@
+{
+  "doc_id": "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+  "title": "Activation of the Incident Command System",
+  "content_group": "all-hazards-response",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-B-OVERALL-POLICIES",
+    "REQ-LTC-48373-B2-B8-OPERATIONS",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS"
+  ],
+  "placeholder_ids": [
+    "PLH-COMMAND-CENTER-ALTERNATE",
+    "PLH-COMMAND-CENTER-PRIMARY",
+    "PLH-EMERGENCY-CODE-ALERT",
+    "PLH-FACILITY-NAME",
+    "PLH-CODE-WORD-DIFFERENT-THAN-INDICATED"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

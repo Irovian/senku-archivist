@@ -1,0 +1,60 @@
+{
+  "doc_id": "REG-SOMZ-E-0011",
+  "title": "E-0011 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0011",
+      "E-0011",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0011",
+      "E-0011"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CORF",
+      "OPT/OSP"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0011",
+    "canonical_tag": "E-0011",
+    "revision": "200",
+    "issued_date": "02-21-20",
+    "effective_date": "02-21-20",
+    "implementation_date": "02-21-20",
+    "citations": [
+      "\u00a7485.68(a)(5)",
+      "\u00a7485.727(a)(6)"
+    ],
+    "provider_types": [
+      "CORF",
+      "OPT/OSP"
+    ],
+    "ltc_relevant": false,
+    "applicability_notes": [],
+    "source_span": {
+      "start_line": 1141,
+      "end_line": 1175,
+      "start_page": 27,
+      "end_page": 27
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "doc_id": "DOC-INCIDENT_COMMAND-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
+  "title": "Activation of the Incident Command System",
+  "content_group": "incident-command",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+    "REQ-LTC-48373-D-OVERALL-TRAINING-TESTING"
+  ],
+  "placeholder_ids": [
+    "PLH-COMMAND-CENTER-ALTERNATE",
+    "PLH-EMERGENCY-CODE-ALERT",
+    "PLH-FACILITY-NAME",
+    "PLH-COMMAND-CENTER-PRIMARY"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

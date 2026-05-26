@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "Q-0016",
+  "status": "parked",
+  "priority": "medium",
+  "question": "Should the next HVA UI slice build the full hazard scoring workflow, or expand the review-evidence workflow first?",
+  "recommended_answer": "Expand the review-evidence workflow first, then add hazard scoring.",
+  "answer": null,
+  "rationale": "Review evidence is smaller, proves draft persistence and export linkage, and reduces UI risk before the scoring matrix.",
+  "related_backlog_items": [
+    "SG-0011"
+  ],
+  "related_requirements": [
+    "REQ-0027"
+  ],
+  "resolved_by": null,
+  "created_at": "2026-05-26",
+  "resolved_at": null,
+  "notes": "Parked until HVA UI work resumes; SG-0013 browser-shell work is the active next slice."
+}

@@ -1,0 +1,140 @@
+{
+  "doc_id": "REG-SOMZ-E-0007",
+  "title": "E-0007 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0007",
+      "E-0007",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0007",
+      "E-0007"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0007",
+    "canonical_tag": "E-0007",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748(a)(3)",
+      "\u00a7416.54(a)(3)",
+      "\u00a7418.113(a)(3)",
+      "\u00a7441.184(a)(3)",
+      "\u00a7460.84(a)(3)",
+      "\u00a7482.15(a)(3)",
+      "\u00a7483.475(a)(3)",
+      "\u00a7483.73(a)",
+      "\u00a7483.73(a)(3)",
+      "\u00a7484.102(a)(3)",
+      "\u00a7485.625(a)(3)",
+      "\u00a7485.68(a)(3)",
+      "\u00a7485.727(a)(3)",
+      "\u00a7485.920(a)(3)",
+      "\u00a7491.12(a)(3)",
+      "\u00a7494.62(a)(3)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "*NOTE: [\u201cPersons at risk\u201d does not apply to: ASC, hospice, PACE, HHA, CORF,",
+      "NOTE: This does not apply to Transplant Programs and OPOs.",
+      "NOTE: This standard to the emergency preparedness plan must be reviewed and updated"
+    ],
+    "source_span": {
+      "start_line": 849,
+      "end_line": 986,
+      "start_page": 20,
+      "end_page": 23
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0007-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 13,
+        "end_line": 20,
+        "applies_to": [
+          "LTC Facility"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "Hospital",
+          "ICF/IID",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7483.73(a)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "LTC Facility",
+        "text_sha256": "decb1b866aea3bf41cccd187320a59f14988570b2b41d4d6eaf9d00815c64880"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

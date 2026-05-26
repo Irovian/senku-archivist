@@ -1,0 +1,62 @@
+{
+  "doc_id": "REG-SOMZ-E-0002",
+  "title": "E-0002 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0002",
+      "E-0002",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0002",
+      "E-0002"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "Hospital",
+      "Transplant Program"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0002",
+    "canonical_tag": "E-0002",
+    "revision": "200",
+    "issued_date": "02-21-20",
+    "effective_date": "02-21-20",
+    "implementation_date": "02-21-20",
+    "citations": [
+      "\u00a7482.15",
+      "\u00a7482.15(g)(1)",
+      "\u00a7482.78",
+      "\u00a7482.78(a)"
+    ],
+    "provider_types": [
+      "Hospital",
+      "Transplant Program"
+    ],
+    "ltc_relevant": false,
+    "applicability_notes": [],
+    "source_span": {
+      "start_line": 422,
+      "end_line": 446,
+      "start_page": 11,
+      "end_page": 11
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

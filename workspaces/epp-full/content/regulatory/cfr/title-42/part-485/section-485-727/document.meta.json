@@ -1,0 +1,582 @@
+{
+  "doc_id": "REG-CFR-42-485-727",
+  "title": "42 CFR \u00a7485.727 Condition of participation: Emergency preparedness",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_485_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 485.727",
+      "\u00a7485.727",
+      "Condition of participation: Emergency preparedness"
+    ],
+    "aliases": [
+      "42 CFR 485.727",
+      "42 CFR 485.727(a)",
+      "42 CFR 485.727(a)(1)",
+      "42 CFR 485.727(a)(3)",
+      "42 CFR 485.727(a)(4)",
+      "42 CFR 485.727(a)(5)",
+      "42 CFR 485.727(a)(6)",
+      "42 CFR 485.727(b)",
+      "42 CFR 485.727(b)(1)",
+      "42 CFR 485.727(b)(2)",
+      "42 CFR 485.727(b)(3)",
+      "42 CFR 485.727(b)(4)",
+      "42 CFR 485.727(c)",
+      "42 CFR 485.727(c)(1)",
+      "42 CFR 485.727(c)(2)",
+      "42 CFR 485.727(c)(3)",
+      "42 CFR 485.727(c)(4)",
+      "42 CFR 485.727(c)(5)",
+      "42 CFR 485.727(d)",
+      "42 CFR 485.727(d)(1)",
+      "42 CFR 485.727(d)(2)",
+      "42 CFR 485.727(e)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_485_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "485",
+    "section": "485.727",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 485.727",
+      "42 CFR 485.727(a)",
+      "42 CFR 485.727(a)(1)",
+      "42 CFR 485.727(a)(3)",
+      "42 CFR 485.727(a)(4)",
+      "42 CFR 485.727(a)(5)",
+      "42 CFR 485.727(a)(6)",
+      "42 CFR 485.727(b)",
+      "42 CFR 485.727(b)(1)",
+      "42 CFR 485.727(b)(2)",
+      "42 CFR 485.727(b)(3)",
+      "42 CFR 485.727(b)(4)",
+      "42 CFR 485.727(c)",
+      "42 CFR 485.727(c)(1)",
+      "42 CFR 485.727(c)(2)",
+      "42 CFR 485.727(c)(3)",
+      "42 CFR 485.727(c)(4)",
+      "42 CFR 485.727(c)(5)",
+      "42 CFR 485.727(d)",
+      "42 CFR 485.727(d)(1)",
+      "42 CFR 485.727(d)(2)",
+      "42 CFR 485.727(e)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 485.727",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "f1066c4c544f9f89a220f8d0a178ab6830edbf5da91b5b2c58029e028ef93304"
+      },
+      {
+        "citation": "42 CFR 485.727(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "e6e48b43b7dcd45e42aff725b175e140a497496544bb08ec81fc0aaf0bdeda1b"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(1)",
+        "anchor_id": "subsection-a-1",
+        "path": [
+          "a",
+          "1"
+        ],
+        "text_sha256": "8ea4a9cbe7c269fc3f3d2c2e0de32758a7f771e010cd4dafbf20d38f37d43bbc"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(2)",
+        "anchor_id": "subsection-a-2",
+        "path": [
+          "a",
+          "2"
+        ],
+        "text_sha256": "8ccee727d60732776438ab3ac04ea0e1d1a75689cb3be715f1f80c05499b7a7c"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(3)",
+        "anchor_id": "subsection-a-3",
+        "path": [
+          "a",
+          "3"
+        ],
+        "text_sha256": "037f09bc1d7e2a18745000798a9486ba0cea6c7fa638f8840e77d6e819daacdd"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(4)",
+        "anchor_id": "subsection-a-4",
+        "path": [
+          "a",
+          "4"
+        ],
+        "text_sha256": "0d5e9a0868d071717d668be024245de983bb5432e4144463a5e3ad2ca6a1d61c"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(5)",
+        "anchor_id": "subsection-a-5",
+        "path": [
+          "a",
+          "5"
+        ],
+        "text_sha256": "d2cf32f230b257c4badb8e5438746f42df1f391f541b4ac7d23c1c3bcdb76b3e"
+      },
+      {
+        "citation": "42 CFR 485.727(a)(6)",
+        "anchor_id": "subsection-a-6",
+        "path": [
+          "a",
+          "6"
+        ],
+        "text_sha256": "b3e1ba81475358017b810e786aaf7c0de8ff68e97c2993a731e0dfb239abb79e"
+      },
+      {
+        "citation": "42 CFR 485.727(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "cbb7f7db0e7b6e4f825ce1be65255ba0e5a1bdb605b5aad20c7935b58034c3af"
+      },
+      {
+        "citation": "42 CFR 485.727(b)(1)",
+        "anchor_id": "subsection-b-1",
+        "path": [
+          "b",
+          "1"
+        ],
+        "text_sha256": "d2b19b39c8656f96f84b99949aefd6d3be337b680a99d33eafb86765cd0c684f"
+      },
+      {
+        "citation": "42 CFR 485.727(b)(2)",
+        "anchor_id": "subsection-b-2",
+        "path": [
+          "b",
+          "2"
+        ],
+        "text_sha256": "0cdaa889cbae5a49cce7b4467d7f2c5bff7b59fc18fcc814668cb8d8156977dd"
+      },
+      {
+        "citation": "42 CFR 485.727(b)(3)",
+        "anchor_id": "subsection-b-3",
+        "path": [
+          "b",
+          "3"
+        ],
+        "text_sha256": "d99539a59fa5e62e3bfeb6df92cfdc0a655ec95d9ed2a52bf2cf9642773c2e32"
+      },
+      {
+        "citation": "42 CFR 485.727(b)(4)",
+        "anchor_id": "subsection-b-4",
+        "path": [
+          "b",
+          "4"
+        ],
+        "text_sha256": "49eb19c480c078fcb838fb4526861c10212b96774566338a4a283b9dd3321be7"
+      },
+      {
+        "citation": "42 CFR 485.727(c)",
+        "anchor_id": "subsection-c",
+        "path": [
+          "c"
+        ],
+        "text_sha256": "627a70a79b51ed414043426ea2605e113d20ee2690a849de84e0992370327956"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)",
+        "anchor_id": "subsection-c-1",
+        "path": [
+          "c",
+          "1"
+        ],
+        "text_sha256": "cc3568eb881858e8e740bcdf607339663e65816a3b340c57d0daec2f655658df"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)(i)",
+        "anchor_id": "subsection-c-1-i",
+        "path": [
+          "c",
+          "1",
+          "i"
+        ],
+        "text_sha256": "f23533789ad33cf6fb71f26b4ff0d00efe9732eec12281d38fe607c583c3560d"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)(ii)",
+        "anchor_id": "subsection-c-1-ii",
+        "path": [
+          "c",
+          "1",
+          "ii"
+        ],
+        "text_sha256": "66cb225e9a399d3f48887de82eed03e2fe86376da098cd9178e46e4f87460356"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)(iii)",
+        "anchor_id": "subsection-c-1-iii",
+        "path": [
+          "c",
+          "1",
+          "iii"
+        ],
+        "text_sha256": "8ca75592f257ff8c6641237d18c19533b22862a3164267d83aa9a4f971fecc29"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)(iv)",
+        "anchor_id": "subsection-c-1-iv",
+        "path": [
+          "c",
+          "1",
+          "iv"
+        ],
+        "text_sha256": "cf517b47dfa5515fdf9a2f21d34ecf4d7e8272cfc0e98388999cff5cf4401995"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(1)(v)",
+        "anchor_id": "subsection-c-1-v",
+        "path": [
+          "c",
+          "1",
+          "v"
+        ],
+        "text_sha256": "17ff04665b3a2e8ea5899351d2499ca154ae9c0dff790992c3bfcb526998739c"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(2)",
+        "anchor_id": "subsection-c-2",
+        "path": [
+          "c",
+          "2"
+        ],
+        "text_sha256": "2da597153ae4923d6cfad7886a8922706a0bbbca95f021bc9ef82f056c5ce489"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(2)(i)",
+        "anchor_id": "subsection-c-2-i",
+        "path": [
+          "c",
+          "2",
+          "i"
+        ],
+        "text_sha256": "3793696965f2855c5cdd331dac6b80315a25512ba4b7588f0be98dde5eef7c08"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(2)(ii)",
+        "anchor_id": "subsection-c-2-ii",
+        "path": [
+          "c",
+          "2",
+          "ii"
+        ],
+        "text_sha256": "6a3c86cbc36fe38de1af72e73437fcea3e3e6a05f217e12367cc636aa1099d4f"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(3)",
+        "anchor_id": "subsection-c-3",
+        "path": [
+          "c",
+          "3"
+        ],
+        "text_sha256": "3e9a9df31700b16b6f3ac5f79dec6258c9d7c5b57b7e4e4dfbcdb003a2d8251c"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(3)(i)",
+        "anchor_id": "subsection-c-3-i",
+        "path": [
+          "c",
+          "3",
+          "i"
+        ],
+        "text_sha256": "f345379219d19067de5cfb665bf4932d3057f5f527779eebc560f9bc65d590d9"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(3)(ii)",
+        "anchor_id": "subsection-c-3-ii",
+        "path": [
+          "c",
+          "3",
+          "ii"
+        ],
+        "text_sha256": "9cfea8d3728be1191bef9983f5877e7e60f0273a6e198c23ea74568cb9bab951"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(4)",
+        "anchor_id": "subsection-c-4",
+        "path": [
+          "c",
+          "4"
+        ],
+        "text_sha256": "c4690821bcbf5b468d753a1d9f5ae00012449a72c6a7c2850d3002314bbd839b"
+      },
+      {
+        "citation": "42 CFR 485.727(c)(5)",
+        "anchor_id": "subsection-c-5",
+        "path": [
+          "c",
+          "5"
+        ],
+        "text_sha256": "c0565b2cccf4e59db5e715dc42901030c5b8b1dfc41c01d219928d70f1a26f27"
+      },
+      {
+        "citation": "42 CFR 485.727(d)",
+        "anchor_id": "subsection-d",
+        "path": [
+          "d"
+        ],
+        "text_sha256": "a59be659333121142f58d5b3308f31aa1cd0810809825e05717388bded2cae26"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)",
+        "anchor_id": "subsection-d-1",
+        "path": [
+          "d",
+          "1"
+        ],
+        "text_sha256": "23512884700dcd284b8d3f13d559e32e1799b4ed1512e3bf8ad4ed1860920ac1"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)(i)",
+        "anchor_id": "subsection-d-1-i",
+        "path": [
+          "d",
+          "1",
+          "i"
+        ],
+        "text_sha256": "8e44a818a52872176422fd5e39a1cc4c5a4007c6f5d8f834767700167db6a281"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)(ii)",
+        "anchor_id": "subsection-d-1-ii",
+        "path": [
+          "d",
+          "1",
+          "ii"
+        ],
+        "text_sha256": "937dbbd27d9a780bcb82083fd1f9deaee2fee02b65ddb156aa044a4ba6065aaa"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)(iii)",
+        "anchor_id": "subsection-d-1-iii",
+        "path": [
+          "d",
+          "1",
+          "iii"
+        ],
+        "text_sha256": "ae7b4ef2a275e3f4682ca88508975f2647162dc1ac9f53016f9c7c4fdc8b8fb8"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)(iv)",
+        "anchor_id": "subsection-d-1-iv",
+        "path": [
+          "d",
+          "1",
+          "iv"
+        ],
+        "text_sha256": "10d96a5c5d85a8de3205263066e2bb00300bb874060bbb032b0e96063fc56966"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(1)(v)",
+        "anchor_id": "subsection-d-1-v",
+        "path": [
+          "d",
+          "1",
+          "v"
+        ],
+        "text_sha256": "fec632dbdab22a8ecf983c2b89a8d6c43cc3b9f7d90a48781132f19c0f025f83"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)",
+        "anchor_id": "subsection-d-2",
+        "path": [
+          "d",
+          "2"
+        ],
+        "text_sha256": "c293d65f2f4f06f784dbb849afe392c0f49133122f580e96e75f4a83f4cdcf4d"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(i)",
+        "anchor_id": "subsection-d-2-i",
+        "path": [
+          "d",
+          "2",
+          "i"
+        ],
+        "text_sha256": "d57a53767af67bd1a2564134e24354dd9dfe20b871fe70103e6c90d4e08a8066"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(i)(a)",
+        "anchor_id": "subsection-d-2-i-a",
+        "path": [
+          "d",
+          "2",
+          "i",
+          "a"
+        ],
+        "text_sha256": "c65684624217faab595688f5062176ec8ffbbbd3622b28e2e8cd7d90557a0732"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(i)(b)",
+        "anchor_id": "subsection-d-2-i-b",
+        "path": [
+          "d",
+          "2",
+          "i",
+          "b"
+        ],
+        "text_sha256": "8f860bf34d3f65a3852815a57aac6db6fd092035b101011e4b918ca74bce1fd3"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(ii)",
+        "anchor_id": "subsection-d-2-ii",
+        "path": [
+          "d",
+          "2",
+          "ii"
+        ],
+        "text_sha256": "814737ee15964f6aed7bb986470dcd78454598159a88e99e809579ffe4e882c2"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(ii)(a)",
+        "anchor_id": "subsection-d-2-ii-a",
+        "path": [
+          "d",
+          "2",
+          "ii",
+          "a"
+        ],
+        "text_sha256": "f9e599247ea683a691d7c3a48403d2e5be6bb652d9fef548adc84dec528c0276"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(ii)(b)",
+        "anchor_id": "subsection-d-2-ii-b",
+        "path": [
+          "d",
+          "2",
+          "ii",
+          "b"
+        ],
+        "text_sha256": "924e4b85da767ae3653d240c2353933243e7e77d3c1657237bdee68ab60908b9"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(ii)(c)",
+        "anchor_id": "subsection-d-2-ii-c",
+        "path": [
+          "d",
+          "2",
+          "ii",
+          "c"
+        ],
+        "text_sha256": "97a5560b5e87690e22f7ee0da93f1f96dea50300aa9b9afb259003197244b5f8"
+      },
+      {
+        "citation": "42 CFR 485.727(d)(2)(iii)",
+        "anchor_id": "subsection-d-2-iii",
+        "path": [
+          "d",
+          "2",
+          "iii"
+        ],
+        "text_sha256": "2c1fa8336b3f593168dc4ccd82277cc480ec4d302dc260d8ef69e0791c8d65dd"
+      },
+      {
+        "citation": "42 CFR 485.727(e)",
+        "anchor_id": "subsection-e",
+        "path": [
+          "e"
+        ],
+        "text_sha256": "abc9725601637e2c3217db3cd16660484fb8e153a2d7a9cfa0c4d1598947597d"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(1)",
+        "anchor_id": "subsection-e-1",
+        "path": [
+          "e",
+          "1"
+        ],
+        "text_sha256": "5a2002acd61dbde8f110091b5e56662044c63fbbca61f6aae276348e43dd7a04"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(2)",
+        "anchor_id": "subsection-e-2",
+        "path": [
+          "e",
+          "2"
+        ],
+        "text_sha256": "bca1a1019b4c3352fdd981eeba3768b5b499ad9b1a8431d2d1f9b2d9b2a07b2f"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(3)",
+        "anchor_id": "subsection-e-3",
+        "path": [
+          "e",
+          "3"
+        ],
+        "text_sha256": "fe1037084852365296035afef73409f220f9d4c65e97955d9762416bd7a799df"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(4)",
+        "anchor_id": "subsection-e-4",
+        "path": [
+          "e",
+          "4"
+        ],
+        "text_sha256": "b220ac418b8c9bdebf8dc578a651d9a6c98793899173fbd67ea133998f176e5c"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(4)(i)",
+        "anchor_id": "subsection-e-4-i",
+        "path": [
+          "e",
+          "4",
+          "i"
+        ],
+        "text_sha256": "62c27cf623a7b6c911beed72990cb86be79f99e0fe00e9ccf970acdcd4226f67"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(4)(ii)",
+        "anchor_id": "subsection-e-4-ii",
+        "path": [
+          "e",
+          "4",
+          "ii"
+        ],
+        "text_sha256": "1ab9520055460bab720a183451a56132f1a1d6a3ef2461d349daa619912b484e"
+      },
+      {
+        "citation": "42 CFR 485.727(e)(5)",
+        "anchor_id": "subsection-e-5",
+        "path": [
+          "e",
+          "5"
+        ],
+        "text_sha256": "077212d32ee9805176336e37dc782d3be2853e953cbd2de4452dfc6e50d9771a"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 52,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

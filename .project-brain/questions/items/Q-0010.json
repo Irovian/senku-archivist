@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0010",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should artifact support mean pre-rendering every old artifact output, or live-rendering source documents with runtime renderer support for the active artifact families present in the imported EPP corpus?",
+  "recommended_answer": "Live-render from source, with runtime renderer support for active EPP artifact families. Pre-render only for export, print, review snapshots, or disposable caches.",
+  "answer": "Live-render from source, with runtime renderer support for active EPP artifact families. Pre-render only for export, print, review snapshots, or disposable caches.",
+  "rationale": "This keeps the app source-driven and avoids inheriting the old static build style while still making active EPP artifact content browsable.",
+  "related_backlog_items": [
+    "SG-0006"
+  ],
+  "related_requirements": [
+    "REQ-0020",
+    "REQ-0036"
+  ],
+  "resolved_by": "DEC-SG-0015",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

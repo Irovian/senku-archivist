@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0018",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should Markdown and artifacts be ported through a compatibility renderer first, or rebuilt directly as final React components?",
+  "recommended_answer": "Use a live compatibility renderer first, then promote high-value surfaces into React components.",
+  "answer": "Use a live compatibility renderer first, then promote high-value surfaces into React components.",
+  "rationale": "The old renderer has many edge cases across Markdown, CFR, compliance links, artifacts, and inline editing anchors. Live compatibility output reduces parity risk while the React shell stabilizes.",
+  "related_backlog_items": [
+    "SG-0014"
+  ],
+  "related_requirements": [
+    "REQ-0033",
+    "REQ-0034"
+  ],
+  "resolved_by": "DEC-SG-0013",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

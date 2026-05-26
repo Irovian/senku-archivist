@@ -1,0 +1,23 @@
+{
+  "schema_version": "archivist-workbook-state/v1",
+  "workspace_id": "epp-full",
+  "parent_document_id": "DOC-APPENDICES-APPENDIX_A",
+  "workbook_id": "ART-DOC-APPENDICES-APPENDIX_A-01",
+  "artifact_type": "assessment_workbook",
+  "renderer_template": "hva-workbook-v1",
+  "status": "approved",
+  "state_payload": {},
+  "derived_outputs": {},
+  "validation": {
+    "status": "not_validated",
+    "messages": []
+  },
+  "audit": {
+    "created_at": "2026-05-26T18:50:15Z",
+    "updated_at": "2026-05-26T18:50:15Z",
+    "created_by": "import_epp_workspace.py",
+    "approved_at": null,
+    "approved_by": null,
+    "linked_commit": null
+  }
+}

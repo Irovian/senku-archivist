@@ -1,0 +1,125 @@
+{
+  "doc_id": "REG-SOMZ-E-0015",
+  "title": "E-0015 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0015",
+      "E-0015",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0015",
+      "E-0015"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CAH",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "PACE",
+      "PRTF",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0015",
+    "canonical_tag": "E-0015",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7400.8",
+      "\u00a7403.748(b)(1)",
+      "\u00a7418.113(b)(6)(iii)",
+      "\u00a7441.184(b)(1)",
+      "\u00a7460.84(b)(1)",
+      "\u00a7482.15(a)(4)",
+      "\u00a7482.15(b)(1)",
+      "\u00a7482.41(a)(1)",
+      "\u00a7483.10(i)(6)",
+      "\u00a7483.35(i)",
+      "\u00a7483.475(b)(1)",
+      "\u00a7483.73(b)(1)",
+      "\u00a7485.625(b)(1)",
+      "\u00a7494.40(a)(4)"
+    ],
+    "provider_types": [
+      "CAH",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "PACE",
+      "PRTF",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to ASCs, Outpatient Hospice Providers [applies to",
+      "NOTE: Facilities should also consider subsistence needs of volunteers, visitors and other",
+      "NOTE: For LTC facilities under 483.10(i)(6), there are additional requirements for",
+      "NOTE: This policy and procedure is required to be reviewed and updated annually for"
+    ],
+    "source_span": {
+      "start_line": 1365,
+      "end_line": 1574,
+      "start_page": 32,
+      "end_page": 36
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0015-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 21,
+        "end_line": 33,
+        "applies_to": [
+          "Hospice"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CAH",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospital",
+          "ICF/IID",
+          "LTC Facility",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7418.113(b)(6)(iii)"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "Hospice",
+        "text_sha256": "97122595953013b0d2598689e888c4562ca23ff68ec2821f8868eba97d9c5008"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

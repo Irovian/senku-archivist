@@ -1,0 +1,24 @@
+{
+  "doc_id": "DOC-EVACUATION-RESIDENT_MEDICAL_RECORDS",
+  "title": "Resident Medical Records",
+  "content_group": "evacuation",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-B2-B8-OPERATIONS",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C4-C7-INFORMATION-SHARING",
+    "REQ-LTC-48373-C8-RESIDENT-FAMILY-SHARING"
+  ],
+  "placeholder_ids": [
+    "PLH-EHR-SYSTEM-NAME",
+    "PLH-FACILITY-NAME",
+    "PLH-MEDICAL-RECORDS-SYSTEM-DESCRIPTION"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

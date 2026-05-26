@@ -1,0 +1,118 @@
+{
+  "doc_id": "REG-SOMZ-E-0041",
+  "title": "E-0041 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0041",
+      "E-0041",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0041",
+      "E-0041"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CAH",
+      "Hospital",
+      "LTC Facility"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0041",
+    "canonical_tag": "E-0041",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7482.15(e)",
+      "\u00a7482.15(e)(1)",
+      "\u00a7482.15(e)(2)",
+      "\u00a7482.15(e)(3)",
+      "\u00a7482.15(h)",
+      "\u00a7483.73(e)",
+      "\u00a7483.73(e)(1)",
+      "\u00a7483.73(e)(2)",
+      "\u00a7483.73(e)(3)",
+      "\u00a7483.73(g)",
+      "\u00a7485.625(e)",
+      "\u00a7485.625(e)(1)",
+      "\u00a7485.625(e)(2)",
+      "\u00a7485.625(e)(3)",
+      "\u00a7485.625(g)",
+      "\u00a7617.770"
+    ],
+    "provider_types": [
+      "CAH",
+      "Hospital",
+      "LTC Facility"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: For CAHs under \u00a7485.625(e)(2) \u201cmaintenance\u201d is not included in the",
+      "NOTE: Hospitals, CAHs and LTC facilities are required to base their emergency power"
+    ],
+    "source_span": {
+      "start_line": 4313,
+      "end_line": 4527,
+      "start_page": 97,
+      "end_page": 101
+    },
+    "segments": [
+      {
+        "segment_id": "SEG-SOMZ-E-0041-REGULATORY-BRANCH-1",
+        "segment_type": "provider_specific_branch",
+        "title": "Provider-specific branch 1",
+        "source_section": "Regulatory Text",
+        "start_line": 30,
+        "end_line": 58,
+        "applies_to": [
+          "CAH",
+          "Hospital",
+          "LTC Facility"
+        ],
+        "does_not_apply_to": [
+          "ASC",
+          "CMHC",
+          "CORF",
+          "ESRD",
+          "HHA",
+          "Hospice",
+          "ICF/IID",
+          "OPO",
+          "OPT/OSP",
+          "PACE",
+          "PRTF",
+          "RHC/FQHC",
+          "RNHCI",
+          "Transplant Program"
+        ],
+        "citations": [
+          "\u00a7482.15(h)",
+          "\u00a7483.73(g)",
+          "\u00a7485.625(g)",
+          "\u00a7617.770"
+        ],
+        "default_view": "collapsed_when_not_applicable",
+        "breadcrumb_label": "CAH, Hospital, LTC Facility",
+        "text_sha256": "6bd5e35fb6534984f6840037fac796a3249f9aedcfb959aa8ef766655afb108c"
+      }
+    ],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0005",
+  "title": "Target desktop-only local use",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should target desktop-only local use for v1. Mobile layout and mobile smoke validation are not product requirements.",
+  "context": "The app is a one-person local browser/workbench now and will be shared as local desktop copies for coworkers working on complex policy/manual content.",
+  "rationale": "Desktop-only scope lets the port prioritize dense document navigation, review panels, chat, diff inspection, history, and export without spending early effort on mobile constraints that the user does not need.",
+  "alternatives_considered": [
+    "Keep mobile-responsive behavior as a first-class target",
+    "Build a browser-agnostic responsive app before porting old features"
+  ],
+  "consequences": [
+    "Validation should focus on desktop viewports and Chrome/Chromium local launcher behavior",
+    "The UI can favor dense multi-pane layouts",
+    "Mobile media queries may exist incidentally but should not drive design decisions",
+    "Future mobile support would be a separate scope decision"
+  ],
+  "related_requirements": [
+    "REQ-0013"
+  ],
+  "related_backlog_items": [
+    "SG-0002",
+    "SG-0003",
+    "SG-0004",
+    "SG-0005"
+  ]
+}
+

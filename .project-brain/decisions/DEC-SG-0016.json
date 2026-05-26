@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0016",
+  "title": "Use a provider-neutral local agent interface",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should define a provider-neutral local agent interface, with an LM Studio/OpenAI-compatible local endpoint as the first adapter.",
+  "context": "The old EPP manual browser used a local LM Studio-style bridge. The standalone Archivist app should preserve the local chat/manual-agent behavior without making the old bridge shape the permanent product contract.",
+  "rationale": "The durable contract is that a local agent can read the current view, follow selected-text instructions, generate reviewable proposals, queue pending reviews, expose provider status, and leave inspectable diagnostics. The specific model provider should remain replaceable plumbing.",
+  "alternatives_considered": [
+    "Make the old LM Studio bridge the long-term Archivist contract",
+    "Design around a cloud provider from the start",
+    "Defer the provider interface until after chat UI is rebuilt"
+  ],
+  "consequences": [
+    "Q-0007 is resolved",
+    "SG-0004 no longer needs provider-shape grilling",
+    "Local-only behavior remains the default",
+    "Future providers can be added behind the same local agent interface without changing review and audit workflows"
+  ],
+  "related_requirements": [
+    "REQ-0016",
+    "REQ-0033",
+    "REQ-0037"
+  ],
+  "related_backlog_items": [
+    "SG-0004",
+    "SG-0014"
+  ],
+  "related_questions": [
+    "Q-0007"
+  ]
+}

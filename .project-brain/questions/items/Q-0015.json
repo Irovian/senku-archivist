@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0015",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the first HVA UI prototype edit draft sidecar state directly, or remain read-only against approved sidecar state until review flow exists?",
+  "recommended_answer": "Edit draft sidecar state directly, with a clear draft badge and no approved write path until review/apply exists.",
+  "answer": "Edit draft sidecar state directly, with a clear draft badge and no approved write path until review/apply exists.",
+  "rationale": "Draft editing lets the workbook become useful immediately while keeping approved history protected until the review/apply workflow is implemented.",
+  "related_backlog_items": [
+    "SG-0010",
+    "SG-0011"
+  ],
+  "related_requirements": [
+    "REQ-0030"
+  ],
+  "resolved_by": "DEC-SG-0010",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

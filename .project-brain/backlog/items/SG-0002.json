@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "SG-0002",
+  "title": "Connect the app to service-backed workspace reads",
+  "type": "build_slice",
+  "status": "parked",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Move workspace and document reads behind the loopback service so the Vite app no longer relies on static imports for core behavior.",
+  "acceptance_criteria": [
+    "The service returns workspace manifest data and document payloads from Markdown bundles",
+    "The Vite app reads the EPP seed workspace through the service",
+    "Desktop-only layout remains the validation target",
+    "The service response shape preserves future hooks for Git history, audit ledger, proposals, search, and external workspace paths"
+  ],
+  "non_goals": [
+    "Implementing approved writes",
+    "Implementing full Git history UI",
+    "Migrating the full EPP corpus"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0012",
+    "REQ-0013",
+    "REQ-0014"
+  ],
+  "related_questions": [
+    "Q-0004"
+  ],
+  "validation": [
+    "Run npm run build",
+    "Run Python compile checks",
+    "Smoke /api/workspaces and document-read endpoints",
+    "Smoke the desktop app against the service"
+  ],
+  "superseded_by": "SG-0013",
+  "notes": "Parked as a standalone slice because service-backed workspace and document reads are now mandatory acceptance criteria inside SG-0013."
+}

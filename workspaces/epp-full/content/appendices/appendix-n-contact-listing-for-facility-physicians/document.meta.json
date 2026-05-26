@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC-APPENDICES-APPENDIX_N",
+  "title": "Appendix N - Contact Listing for Facility Physicians",
+  "content_group": "appendices",
+  "content_type": "appendix",
+  "source_ids": [
+    "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX",
+    "SRC-13_APPENDICES_APPENDIX_N_COVER_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-C1-COMMUNICATION-CONTACTS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME",
+    "PLH-LTC-OMBUDSMAN-CONTACT",
+    "PLH-PRIMARY-EMERGENCY-CONTACT"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

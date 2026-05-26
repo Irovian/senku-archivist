@@ -1,0 +1,294 @@
+{
+  "artifact_id": "senku-archivist-requirements-draft",
+  "artifact_type": "requirements",
+  "status": "draft",
+  "requirements": [
+    {
+      "id": "REQ-0001",
+      "priority": "high",
+      "statement": "Archivist must be a general local document-workbench rather than an EPP-only generated browser.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0002",
+      "priority": "high",
+      "statement": "The EPP manual must be usable as the first serious workspace and proving corpus.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0003",
+      "priority": "high",
+      "statement": "The repo should use a Vite-based frontend foundation so Dovaxis developers can later mirror parts they like.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0004",
+      "priority": "high",
+      "statement": "The first architecture must support local-first use, human-reviewed recommendations, coworker local copies, and future export workflows.",
+      "source": "human_direction",
+      "status": "draft"
+    },
+    {
+      "id": "REQ-0005",
+      "priority": "high",
+      "statement": "Markdown bundles must remain the canonical v1 document source, with approved changes writing back through explicit review gates.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0006",
+      "priority": "high",
+      "statement": "The normal reader surface must show the latest approved version of each document by default.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0007",
+      "priority": "high",
+      "statement": "Archivist must preserve inspectable document history so a model or human reviewer can see what changed, when it changed, and why it changed, including changes from a year or more earlier.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0008",
+      "priority": "high",
+      "statement": "Policy-content history must support transparency, rollback investigation, and before/after review rather than only storing the current document text.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0009",
+      "priority": "high",
+      "statement": "Long-term document history must use a hybrid model: real Git commits for durable file snapshots and diffs, plus an Archivist audit ledger for proposal, approval, rationale, export, and review metadata linked to commit hashes.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0010",
+      "priority": "medium",
+      "statement": "Drafts and autosaves should remain outside committed document history until they are accepted through the review flow.",
+      "source": "system_inference",
+      "status": "draft"
+    },
+    {
+      "id": "REQ-0011",
+      "priority": "medium",
+      "statement": "V1 should include a small bundled EPP seed workspace for development and demos while keeping the manifest design compatible with future full external workspaces.",
+      "source": "system_inference",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0012",
+      "priority": "medium",
+      "statement": "Workspace and document filesystem operations should move behind the local service boundary before approved write, Git history, or export behavior is implemented.",
+      "source": "system_inference",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0013",
+      "priority": "high",
+      "statement": "Archivist v1 must target desktop-only local use; mobile layout and mobile smoke validation are not product requirements.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0014",
+      "priority": "high",
+      "statement": "The standalone app must port the existing EPP manual-browser Markdown functionality rather than treating the scaffold renderer as sufficient.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0015",
+      "priority": "high",
+      "statement": "The port must preserve EPP document navigation, Markdown rendering, compliance graph traversal, CFR linking, regulatory pages, source metadata, placeholders, and artifact/tool rendering behavior.",
+      "source": "source_review",
+      "status": "draft",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0016",
+      "priority": "high",
+      "statement": "The port must preserve local chat/manual-agent behavior, including selected-text instructions, local provider status, proposals, pending review events, current-view sync, apply/reject, debug diagnostics, and local-only guardrails.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0017",
+      "priority": "medium",
+      "statement": "The port should preserve low-ceremony inline manual edits, autosaved drafts, and draft review while keeping manual edits separate from model proposal input.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0018",
+      "priority": "high",
+      "statement": "Accepted model proposals and accepted manual draft batches should converge into the same review, Git history, and Archivist audit ledger path.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0019",
+      "priority": "high",
+      "statement": "Regulatory and static reference documents must remain readable and searchable while being blocked from local editing writes.",
+      "source": "source_review",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0020",
+      "priority": "medium",
+      "statement": "Artifact and tool runtime renderer support should be driven by active EPP usage inventory before declaring full EPP migration complete.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0021",
+      "priority": "high",
+      "statement": "Archivist must include the full EPP content corpus as a standalone workspace, not only a small representative seed subset.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0022",
+      "priority": "high",
+      "statement": "The full EPP workspace import must preserve Markdown content, project metadata, source references, extracted source context, regulatory sources, original catalog source files when available, and an audit ledger path.",
+      "source": "system_inference",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0023",
+      "priority": "high",
+      "statement": "Appendix A must be handled as a first-class migration edge case because it combines Markdown, structured HVA workbook data, scoring, mitigation planning, review evidence, JSON import/export, and print/export behavior.",
+      "source": "source_review",
+      "status": "draft"
+    },
+    {
+      "id": "REQ-0024",
+      "priority": "high",
+      "statement": "Appendix A migration must preserve the copyright guardrail against copying proprietary HVA worksheet language, examples, row order, visual layout, or comments.",
+      "source": "source_review",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0025",
+      "priority": "high",
+      "statement": "Archivist must treat workbooks as a first-class artifact family rather than implementing Appendix A / HVA as a one-off component.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0026",
+      "priority": "high",
+      "statement": "The workbook artifact contract must distinguish parent document text, workbook definition, workbook user-entered state, derived outputs, and print/export views.",
+      "source": "system_inference",
+      "status": "draft"
+    },
+    {
+      "id": "REQ-0027",
+      "priority": "high",
+      "statement": "Appendix A / HVA must validate the reusable workbook artifact family as the first implementation while preserving its HVA-specific scoring, mitigation, review evidence, JSON import/export, and print behavior.",
+      "source": "human_direction",
+      "status": "accepted"
+    },
+    {
+      "id": "REQ-0028",
+      "priority": "high",
+      "statement": "Approved workbook state must be stored in structured sidecar JSON files linked to the parent document and workbook ID, while Markdown remains the explanatory wrapper and definition source.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0029",
+      "priority": "high",
+      "statement": "The local service must expose reusable workbook discovery and sidecar state endpoints before the HVA UI prototype depends on workbook state.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0030",
+      "priority": "high",
+      "statement": "The first HVA UI must write draft workbook sidecar state through the local service while keeping approved sidecar writes locked behind a future review/apply workflow.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0031",
+      "priority": "high",
+      "statement": "The old EPP manual browser UI and layout must be treated as the parity baseline for the standalone Archivist app.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0032",
+      "priority": "high",
+      "statement": "The full EPP browser shell must expose the imported full EPP document navigation, including Appendices and Appendix A as normal document routes, before deeper workbook UI polish is considered complete.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0033",
+      "priority": "high",
+      "statement": "Archivist must preserve the old Markdown viewer, low-ceremony inline editing, autosave draft review, proposal lens, and local-only agent review behavior when porting the old browser experience.",
+      "source": "source_review",
+      "status": "draft",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0034",
+      "priority": "high",
+      "statement": "Markdown, CFR, compliance, and artifact output must first be ported through a live compatibility renderer before high-value surfaces are promoted into polished React components.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0035",
+      "priority": "high",
+      "statement": "SG-0013 must include service-backed workspace manifests, document metadata, and document payload reads rather than relying on static seed imports.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0036",
+      "priority": "high",
+      "statement": "Archivist must render document views from canonical source at app view time; pre-rendered output is only for export, print, review snapshots, or disposable caches.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0037",
+      "priority": "high",
+      "statement": "Archivist must define a provider-neutral local agent interface, with an LM Studio/OpenAI-compatible local endpoint as the first adapter rather than the permanent product contract.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    },
+    {
+      "id": "REQ-0038",
+      "priority": "high",
+      "statement": "One accepted model proposal or approved manual-draft batch should create one Git commit by default, with review-session batching reserved for a later workflow option if needed.",
+      "source": "human_direction",
+      "status": "accepted",
+      "open_questions": []
+    }
+  ],
+  "open_questions": []
+}

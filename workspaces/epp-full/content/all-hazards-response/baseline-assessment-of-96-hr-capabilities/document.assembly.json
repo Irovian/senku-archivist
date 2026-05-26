@@ -1,0 +1,148 @@
+{
+  "doc_id": "DOC-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES",
+  "title": "Baseline Assessment of 96 Hr. Capabilities",
+  "document_path": "_content/all-hazards-response/baseline-assessment-of-96-hr-capabilities/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-DIFFERENT-THAN-HOURS",
+      "token": "{{different_than_hours}}",
+      "usage": "value_insertion",
+      "notes": "Use only when the facility's baseline assessment uses a planning duration other than 96 hours.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotations SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-55 through footnote-58.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "55-58",
+        "original_instruction_text": "Revise if different than 96 hours",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-DIFFERENT-THAN-HOURS-FOOD-WATER-MEDICAL",
+      "token": "{{different_than_hours_food_water_medical}}",
+      "usage": "value_insertion",
+      "notes": "Use when food, water, medical supply, or pharmaceutical planning duration differs from the baseline duration.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-59.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "59",
+        "original_instruction_text": "Revise if different than 96 hours. Food, water, medical supplies, and pharmaceuticals are specifically addressed by CMS in their EPP regulations.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-EXAMPLES-ONLY-REFLECT-CAPABILITIES-THIS-COLUMN",
+      "token": "{{examples_only_reflect_capabilities_this_column}}",
+      "usage": "value_insertion",
+      "notes": "Reviewer prompt to ensure example capability statements are replaced with the facility's actual capability information.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-62.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "62",
+        "original_instruction_text": "Examples only - revise to reflect facility's capabilities in this column",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INDICATE-NUMBER-DAYS-UNLIMITED-SUPPLY-THIS",
+      "token": "{{indicate_number_days_unlimited_supply_this}}",
+      "usage": "value_insertion",
+      "notes": "Populate with the number of days or Unlimited Supply for the applicable capability row.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotations SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-60 and footnote-61.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "60-61",
+        "original_instruction_text": "Indicate the number of days or Unlimited Supply in this column",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-REFLECT-PROPER-SYSTEM-PLACE",
+      "token": "{{reflect_proper_system_place}}",
+      "usage": "value_insertion",
+      "notes": "Describe the actual system or backup system in place for the capability row.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotations SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-63 and footnote-64.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "63-64",
+        "original_instruction_text": "Revise to reflect proper system(s) in place",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-ROW-NOT-APPLICABLE",
+      "token": "{{row_not_applicable}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether optional oxygen rows remain in the exported assessment table.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotations SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-65 and footnote-66.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "65-66",
+        "original_instruction_text": "Delete row if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-BASELINE-OXYGEN-PRIMARY-ROW",
+      "title": "Oxygen Primary Conditions Row",
+      "category": "optional_list_item",
+      "target_ref": "capability_assessment_table.oxygen_primary_conditions",
+      "section_heading": "Capability Assessment Table",
+      "placeholder_ids": [
+        "PLH-ROW-NOT-APPLICABLE"
+      ],
+      "condition_placeholder_id": "PLH-ROW-NOT-APPLICABLE",
+      "condition_expected_value": "false",
+      "action_summary": "Keep the oxygen primary conditions row unless the row is marked not applicable for the facility.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-65.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "65",
+        "original_instruction_text": "Delete row if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-BASELINE-OXYGEN-LOSS-PRIMARY-ROW",
+      "title": "Oxygen Loss of Primary Conditions Row",
+      "category": "optional_list_item",
+      "target_ref": "capability_assessment_table.oxygen_loss_primary_conditions",
+      "section_heading": "Capability Assessment Table",
+      "placeholder_ids": [
+        "PLH-ROW-NOT-APPLICABLE"
+      ],
+      "condition_placeholder_id": "PLH-ROW-NOT-APPLICABLE",
+      "condition_expected_value": "false",
+      "action_summary": "Keep the oxygen loss-of-primary row unless the row is marked not applicable for the facility.",
+      "legacy_trace": {
+        "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
+        "source_reference": "Structured source annotation SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX-footnote-66.",
+        "legacy_topic": "Baseline Assessment of 96 Hr. Capabilities",
+        "original_superscript": "66",
+        "original_instruction_text": "Delete row if not applicable",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

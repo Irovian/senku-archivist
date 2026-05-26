@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "project_id": "senku-archivist",
+  "updated_at": "2026-05-26",
+  "status_order": [
+    "inbox",
+    "needs_grill",
+    "needs_research",
+    "needs_prototype",
+    "ready_to_build",
+    "claimed",
+    "running",
+    "needs_review",
+    "done",
+    "blocked",
+    "parked",
+    "rejected"
+  ],
+  "items": [
+    {
+      "id": "SG-0001",
+      "title": "Scaffold the app-first Archivist workspace shell",
+      "status": "needs_review",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0001.json"
+    },
+    {
+      "id": "SG-0002",
+      "title": "Connect the app to service-backed workspace reads",
+      "status": "parked",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0002.json"
+    },
+    {
+      "id": "SG-0003",
+      "title": "Port the EPP Markdown and compliance renderer contract",
+      "status": "needs_grill",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0003.json"
+    },
+    {
+      "id": "SG-0004",
+      "title": "Port local chat, proposal, and review workflows",
+      "status": "blocked",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0004.json"
+    },
+    {
+      "id": "SG-0005",
+      "title": "Port inline manual editing and draft review",
+      "status": "blocked",
+      "type": "build_slice",
+      "priority": "medium",
+      "path": ".project-brain/backlog/items/SG-0005.json"
+    },
+    {
+      "id": "SG-0006",
+      "title": "Inventory and port active artifact renderers",
+      "status": "needs_research",
+      "type": "research",
+      "priority": "medium",
+      "path": ".project-brain/backlog/items/SG-0006.json"
+    },
+    {
+      "id": "SG-0007",
+      "title": "Import the full EPP workspace corpus",
+      "status": "needs_review",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0007.json"
+    },
+    {
+      "id": "SG-0008",
+      "title": "Prototype HVA as the first workbook implementation",
+      "status": "needs_prototype",
+      "type": "prototype",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0008.json"
+    },
+    {
+      "id": "SG-0009",
+      "title": "Define the reusable workbook artifact contract",
+      "status": "needs_review",
+      "type": "docs",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0009.json"
+    },
+    {
+      "id": "SG-0010",
+      "title": "Add service-backed workbook sidecar state skeleton",
+      "status": "needs_review",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0010.json"
+    },
+    {
+      "id": "SG-0011",
+      "title": "Wire the first HVA draft sidecar UI",
+      "status": "needs_review",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0011.json"
+    },
+    {
+      "id": "SG-0012",
+      "title": "Document the EPP browser UI and Markdown editing parity contracts",
+      "status": "needs_review",
+      "type": "docs",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0012.json"
+    },
+    {
+      "id": "SG-0013",
+      "title": "Port the full EPP browser shell and navigation",
+      "status": "ready_to_build",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0013.json"
+    },
+    {
+      "id": "SG-0014",
+      "title": "Port Markdown viewer and low-ceremony editing parity",
+      "status": "blocked",
+      "type": "build_slice",
+      "priority": "high",
+      "path": ".project-brain/backlog/items/SG-0014.json"
+    }
+  ],
+  "recommended_next": "SG-0013"
+}

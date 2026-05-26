@@ -1,0 +1,22 @@
+{
+  "doc_id": "DOC-INCIDENT_COMMAND-PLANNING_SECTION_CHIEF",
+  "title": "Planning Section Chief",
+  "content_group": "incident-command",
+  "content_type": "support_artifact",
+  "source_ids": [
+    "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS",
+    "REQ-LTC-48373-D-OVERALL-TRAINING-TESTING"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

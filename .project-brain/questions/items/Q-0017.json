@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "Q-0017",
+  "status": "resolved",
+  "priority": "high",
+  "question": "Should the next build slice restore the full EPP browser shell/navigation first, or continue polishing HVA workbook UI before Appendix A is visible as a normal document?",
+  "recommended_answer": "Restore the full EPP browser shell/navigation first.",
+  "answer": "Restore the full EPP browser shell/navigation first.",
+  "rationale": "Appendix A and the rest of the full corpus need to be visible through the familiar old document-first layout before workbook-specific UI can be judged in context.",
+  "related_backlog_items": [
+    "SG-0012",
+    "SG-0013"
+  ],
+  "related_requirements": [
+    "REQ-0032"
+  ],
+  "resolved_by": "DEC-SG-0012",
+  "created_at": "2026-05-26",
+  "resolved_at": "2026-05-26",
+  "notes": ""
+}

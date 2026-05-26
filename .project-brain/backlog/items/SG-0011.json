@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "SG-0011",
+  "title": "Wire the first HVA draft sidecar UI",
+  "type": "build_slice",
+  "status": "needs_review",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Add a narrow HVA workbook inspector surface that reads approved/draft sidecar state through the local service and writes draft state only.",
+  "acceptance_criteria": [
+    "The app shows a workbook inspector tab for the first workbook discovered in the full EPP workspace",
+    "The inspector reads approved workbook sidecar state from the local service",
+    "The inspector reads draft workbook sidecar state when present",
+    "The inspector writes local draft workbook sidecar state through the service",
+    "Approved state remains visibly locked and is not written by the UI"
+  ],
+  "non_goals": [
+    "Full HVA scoring interface",
+    "Draft-to-approved review/apply workflow",
+    "All workbook field types",
+    "Replacing the seed document reader with the full EPP reader"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0028",
+    "REQ-0029",
+    "REQ-0030"
+  ],
+  "related_questions": [
+    "Q-0015",
+    "Q-0016"
+  ],
+  "validation": [
+    "Run npm run build",
+    "Run service smoke for HVA approved read and draft write",
+    "Run Senku Prep project-brain validation"
+  ],
+  "notes": "This is intentionally a small UI proof over the workbook service boundary. The fuller HVA workbook remains SG-0008."
+}

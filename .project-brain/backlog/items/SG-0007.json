@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "SG-0007",
+  "title": "Import the full EPP workspace corpus",
+  "type": "build_slice",
+  "status": "needs_review",
+  "priority": "high",
+  "confidence": "high",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Bring the full EPP Markdown corpus, project metadata, extracted source context, regulatory sources, and original catalog source files into a standalone Archivist workspace.",
+  "acceptance_criteria": [
+    "A repeatable import script can rebuild the full EPP workspace from the original repo",
+    "The imported workspace manifest includes every catalog document from the EPP project catalog",
+    "Project metadata needed for navigation, search, compliance, placeholders, sources, artifacts, and requirements is copied with the workspace",
+    "Original catalog source files are copied when present and missing source files are reported in the manifest",
+    "The seed workspace remains available for fast scaffold testing"
+  ],
+  "non_goals": [
+    "Rendering every imported document in the React UI in this slice",
+    "Porting all artifact widgets in this slice",
+    "Changing canonical Markdown content during import"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0002",
+    "REQ-0014",
+    "REQ-0015",
+    "REQ-0021",
+    "REQ-0022"
+  ],
+  "related_questions": [
+    "Q-0012"
+  ],
+  "validation": [
+    "Run scripts/import_epp_workspace.py",
+    "Confirm workspaces/epp-full/workspace.json document_count matches the EPP catalog",
+    "Run Senku Prep project-brain validation",
+    "Run git diff --check"
+  ],
+  "notes": "This slice records the user's full-content decision and makes the import refreshable rather than a one-off copy."
+}

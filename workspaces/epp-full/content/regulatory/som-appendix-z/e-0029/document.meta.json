@@ -1,0 +1,104 @@
+{
+  "doc_id": "REG-SOMZ-E-0029",
+  "title": "E-0029 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0029",
+      "E-0029",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0029",
+      "E-0029"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0029",
+    "canonical_tag": "E-0029",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7403.748(c)",
+      "\u00a7416.54(c)",
+      "\u00a7418.113(c)",
+      "\u00a7441.184(c)",
+      "\u00a7460.84(c)",
+      "\u00a7482.15(c)",
+      "\u00a7483.475(c)",
+      "\u00a7483.73(c)",
+      "\u00a7484.102(c)",
+      "\u00a7485.625(c)",
+      "\u00a7485.68(c)",
+      "\u00a7485.727(c)",
+      "\u00a7485.920(c)",
+      "\u00a7486.360(c)",
+      "\u00a7491.12(c)",
+      "\u00a7494.62(c)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "RNHCI"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs."
+    ],
+    "source_span": {
+      "start_line": 2673,
+      "end_line": 2721,
+      "start_page": 61,
+      "end_page": 62
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

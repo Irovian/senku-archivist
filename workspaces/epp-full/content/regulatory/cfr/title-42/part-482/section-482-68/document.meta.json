@@ -1,0 +1,73 @@
+{
+  "doc_id": "REG-CFR-42-482-68",
+  "title": "42 CFR \u00a7482.68 Special requirement for transplant programs",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_482_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 482.68",
+      "\u00a7482.68",
+      "Special requirement for transplant programs"
+    ],
+    "aliases": [
+      "42 CFR 482.68(b)"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_482_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "482",
+    "section": "482.68",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 482.68(b)"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 482.68",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "82d3b3795b3611dbfcb1d18f01d4ce6c12824006bad237e9a743a805909f2997"
+      },
+      {
+        "citation": "42 CFR 482.68(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "ab50dfbf084911198ad40e7f84bc7fdbf6e6515caa78f35ebe7e345a6de44409"
+      },
+      {
+        "citation": "42 CFR 482.68(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "10ea2690e8cd717be9dd8286c8c668b98721e2a45f1e8ac86d5a8cfafd91ad57"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 3,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

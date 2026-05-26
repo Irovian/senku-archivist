@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0008",
+  "title": "Store workbook state in structured sidecars",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Approved workbook state should be stored in structured sidecar JSON files linked to the parent document and workbook ID, rather than embedded back into the parent Markdown document.",
+  "context": "Workbook definitions and explanatory text can live with Markdown documents, but workbook answers, scores, evidence, imports, exports, and derived state need stronger validation and diff behavior than Markdown can comfortably provide.",
+  "rationale": "Sidecar JSON keeps workbook state validateable, diffable, auditable, import/export friendly, and reusable across future workbook types. It also preserves Markdown as a durable human-authored wrapper instead of turning it into a fragile state container.",
+  "alternatives_considered": [
+    "Embed approved workbook answers directly into the parent Markdown document",
+    "Store all workbook state only in local runtime storage",
+    "Flatten workbook state into generated export documents"
+  ],
+  "consequences": [
+    "Workbook sidecars need stable paths, schema versions, parent document IDs, workbook IDs, and audit metadata",
+    "Approved workbook sidecar changes should participate in the same Git plus Archivist audit history model as approved document edits",
+    "Draft workbook state can remain outside committed history until approved through review",
+    "Export and print pipelines must combine parent Markdown, workbook definition, and approved workbook state"
+  ],
+  "related_requirements": [
+    "REQ-0026",
+    "REQ-0028"
+  ],
+  "related_backlog_items": [
+    "SG-0008",
+    "SG-0009",
+    "SG-0010"
+  ],
+  "related_questions": [
+    "Q-0013"
+  ]
+}

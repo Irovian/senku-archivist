@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "SES-SG-20260526-0001",
+  "title": "Initial Archivist migration grill",
+  "created_at": "2026-05-26",
+  "status": "active",
+  "mode": "grill",
+  "goal": "Shape the standalone Archivist repo and decide how to migrate from the EPP generated browser toward a Vite-based local document app.",
+  "resolved_decisions": [
+    {
+      "summary": "Archivist should be a general local document-workbench, not an EPP-only app.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The EPP manual should remain the first serious workspace/proving corpus because it is complex and immediately useful.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Local copies for coworkers should be supported for EPP work, but the architecture should not trap future content inside EPP assumptions.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The app may sit beside selected EPP workflow concepts, especially recommended edits and review acceleration.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Markdown bundles remain canonical for v1, with approved changes writing back through review gates.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Archivist needs git-like document history: latest approved content is the normal view, while humans and models can inspect what changed, when, and why across long time horizons.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Use a hybrid history model: real Git for durable file history and diffs, plus an Archivist audit ledger that links proposals, approvals, rationale, exports, and review metadata to commit hashes.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Use a small bundled EPP seed workspace for the first scaffold, while preserving a manifest shape that can later open a full external EPP workspace.",
+      "source": "system_inference"
+    },
+    {
+      "summary": "Archivist v1 targets desktop-only local use; mobile layout and mobile smoke validation are out of scope.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The port target includes the old EPP Markdown/browser functionality and local chat/manual-agent workflow, not only the initial Vite scaffold.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The full EPP content corpus should live in the Archivist repo as a standalone workspace, not only as a few seed files.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Workbooks should be a first-class artifact family. Appendix A / HVA is the first workbook implementation, not a one-off exception.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Approved workbook state should live in structured sidecar JSON files linked to the parent document and workbook ID, while Markdown remains the explanatory wrapper and definition source.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The HVA prototype should start by proving the service-backed workbook sidecar state boundary before polishing the HVA UI.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The first HVA UI should edit draft workbook sidecar state directly while keeping approved sidecar writes locked behind future review/apply.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "The old EPP manual browser UI/layout is the parity baseline. The current app gap is that Appendix A is not yet visible as a normal document because the app still uses the seed document list.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Restore the full EPP browser shell and navigation before continuing deeper HVA workbook UI polish.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Use a compatibility renderer first for Markdown, CFR, compliance, and artifact output, then promote high-value surfaces into React components after the browser shell is stable.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Fold service-backed workspace and document reads into SG-0013 instead of keeping SG-0002 as a separate prerequisite.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Render document views live from canonical source inside the app; reserve pre-rendering for export, print, review snapshots, or disposable caches.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Define a provider-neutral local agent interface, with an LM Studio/OpenAI-compatible local endpoint as the first adapter.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Keep manual edits and model proposals separate at input time, but converge accepted output into the same review, Git history, and audit ledger path.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Create one Git commit by default for each accepted model proposal or approved manual-draft batch; add review-session batching later only if needed.",
+      "source": "explicit_human_direction"
+    }
+  ],
+  "open_questions": [],
+  "created_backlog_items": [
+    "SG-0001",
+    "SG-0002",
+    "SG-0003",
+    "SG-0004",
+    "SG-0005",
+    "SG-0006",
+    "SG-0007",
+    "SG-0008",
+    "SG-0009",
+    "SG-0010",
+    "SG-0011",
+    "SG-0012",
+    "SG-0013",
+    "SG-0014"
+  ],
+  "recommended_next_item": "SG-0013",
+  "artifacts": [
+    "README.md",
+    "docs/discovery/senku-grill-discovery-packet.md",
+    "docs/discovery/epp-port-inventory.md",
+    "docs/implementation/mvp-build-brief.md",
+    "docs/requirements/senku-grill-requirements.draft.json",
+    ".project-brain/decisions/DEC-SG-0001.json",
+    ".project-brain/decisions/DEC-SG-0002.json",
+    ".project-brain/decisions/DEC-SG-0003.json",
+    ".project-brain/decisions/DEC-SG-0004.json",
+    ".project-brain/decisions/DEC-SG-0005.json",
+    ".project-brain/decisions/DEC-SG-0006.json",
+    ".project-brain/decisions/DEC-SG-0007.json",
+    ".project-brain/decisions/DEC-SG-0008.json",
+    ".project-brain/decisions/DEC-SG-0009.json",
+    ".project-brain/decisions/DEC-SG-0010.json",
+    ".project-brain/decisions/DEC-SG-0011.json",
+    ".project-brain/decisions/DEC-SG-0012.json",
+    ".project-brain/decisions/DEC-SG-0013.json",
+    ".project-brain/decisions/DEC-SG-0014.json",
+    ".project-brain/decisions/DEC-SG-0015.json",
+    ".project-brain/decisions/DEC-SG-0016.json",
+    ".project-brain/decisions/DEC-SG-0017.json",
+    ".project-brain/decisions/DEC-SG-0018.json",
+    ".project-brain/backlog/items/SG-0001.json",
+    ".project-brain/backlog/items/SG-0002.json",
+    ".project-brain/backlog/items/SG-0003.json",
+    ".project-brain/backlog/items/SG-0004.json",
+    ".project-brain/backlog/items/SG-0005.json",
+    ".project-brain/backlog/items/SG-0006.json",
+    ".project-brain/backlog/items/SG-0007.json",
+    ".project-brain/backlog/items/SG-0008.json",
+    ".project-brain/backlog/items/SG-0009.json",
+    ".project-brain/backlog/items/SG-0010.json",
+    ".project-brain/backlog/items/SG-0011.json",
+    ".project-brain/backlog/items/SG-0012.json",
+    ".project-brain/backlog/items/SG-0013.json",
+    ".project-brain/backlog/items/SG-0014.json",
+    "scripts/import_epp_workspace.py",
+    "workspaces/epp-full/workspace.json",
+    "docs/architecture/workbook-artifact-contract.md",
+    "docs/architecture/epp-browser-ui-parity-contract.md",
+    "docs/architecture/markdown-viewer-editing-contract.md",
+    "docs/implementation/sg-0013-build-checklist.md"
+  ],
+  "readiness_call": {
+    "state": "build",
+    "confidence": "high",
+    "reason": "All current grill questions are resolved. SG-0013 is ready to build next."
+  }
+}

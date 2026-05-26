@@ -1,0 +1,23 @@
+{
+  "doc_id": "DOC-RESOURCES_AND_LISTS-ELEVATOR_KEYS",
+  "title": "Elevator Keys",
+  "content_group": "resources-and-lists",
+  "content_type": "support_artifact",
+  "source_ids": [
+    "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-B1-SUBSISTENCE-UTILITIES",
+    "REQ-LTC-48373-C-OVERALL-COMMUNICATION",
+    "REQ-LTC-48373-C1-COMMUNICATION-CONTACTS",
+    "REQ-LTC-48373-C2-AGENCY-CONTACTS",
+    "REQ-LTC-48373-C3-PRIMARY-ALTERNATE-COMMS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://senku.local/project-brain/run-record.schema.json",
+  "title": "Senku Project Brain Run Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "backlog_item_id",
+    "mode",
+    "status",
+    "started_at",
+    "commands",
+    "changed_files",
+    "evidence",
+    "residual_risks"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "backlog_item_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "changed_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "residual_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

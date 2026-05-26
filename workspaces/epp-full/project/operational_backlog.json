@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-05-06T21:20:00Z",
+  "status": "planning_seed",
+  "epics": [
+    {
+      "epic_id": "OP-RGE-001",
+      "title": "Retrieval Metadata Model",
+      "intent": "Evolve simple sidecar search fields into a richer retrieval profile that supports hybrid semantic, lexical, faceted, and role/task-based search without rendering internal terms in policy bodies.",
+      "outcomes": [
+        "A proposed retrieval metadata shape that can coexist with current search fields during migration.",
+        "Clear term categories for canonical terms, aliases, legacy terms, task queries, role terms, trigger terms, artifact terms, facets, and semantic query examples.",
+        "Guidance for which retrieval terms should be curated by humans versus generated as suggestions."
+      ],
+      "candidate_outputs": [
+        "document.meta.json retrieval block proposal",
+        "_project/search_index_seed.json expansion plan",
+        "_project/retrieval_index_seed.json prototype",
+        "retrieval-term review packet"
+      ],
+      "dependencies": [
+        "Current document.meta.json sidecar pilot",
+        "_project/search_index_seed.json",
+        "Human review workflow for accepting generated metadata"
+      ],
+      "acceptance_criteria": [
+        "The model distinguishes visible document text from internal retrieval signals.",
+        "The model supports SNF vocabulary variation such as EOP, emergency plan, disaster plan, command center, labor pool, and evacuation terms.",
+        "The model supports agent-friendly task queries such as what to do first, who needs to be notified, and which form is used.",
+        "The model remains sidecar-first and does not require changes to policy body content."
+      ],
+      "status": "planned",
+      "notes": "This is not SEO for public web discovery. It is structured retrieval support for BrightSource-style hybrid search and agentic RAG."
+    },
+    {
+      "epic_id": "OP-RGE-002",
+      "title": "Document Graph Expansion",
+      "intent": "Expand the document graph from curated pilot links into a managed network of curated edges, detected mentions, confidence-scored suggestions, evidence spans, backlinks, and promotion workflows.",
+      "outcomes": [
+        "Direct title and alias mentions can become suggested graph edges with evidence spans.",
+        "Curated edges remain separate from generated suggestions until reviewed.",
+        "Backlinks and related-document views can support navigation, review, and RAG context planning.",
+        "Policies that mention tools, forms, charts, or companion policies can surface those resources quickly."
+      ],
+      "candidate_outputs": [
+        "_project/document_graph.json expansion plan",
+        "_project/document_graph_suggestions.json",
+        "graph-edge evidence span format",
+        "related-document review packet"
+      ],
+      "dependencies": [
+        "Stable doc_id registry",
+        "Document title and alias metadata",
+        "Existing related_documents sidecar contract",
+        "Human review workflow for suggested edges"
+      ],
+      "acceptance_criteria": [
+        "Generated suggestions include source doc_id, target doc_id, relationship type candidate, confidence, and evidence span.",
+        "Duplicate curated edges and invalid doc_ids remain validation failures in the main graph workflow.",
+        "Detected mentions do not automatically become curated related_documents entries.",
+        "Graph outputs can support both forward links and backlinks."
+      ],
+      "status": "planned",
+      "notes": "Important edge types include uses_artifact, companion, prerequisite, supports, see_also, and future training-specific edges."
+    },
+    {
+      "epic_id": "OP-RGE-003",
+      "title": "Agentic RAG Affordances",
+      "intent": "Define tool-friendly metadata records that help an agent know what a document can answer, what it can generate, what extra context it requires, and which outputs are safe to produce.",
+      "outcomes": [
+        "Documents can advertise answerable question classes and safe generation tasks.",
+        "Agents can identify required context before producing forms, summaries, notifications, or training updates.",
+        "Chunk-level retrieval IDs can support grounded retrieval, citations, and change impact analysis.",
+        "Related tools and forms can be discovered as part of the same retrieval plan."
+      ],
+      "candidate_outputs": [
+        "agentic_rag metadata proposal",
+        "_project/agentic_rag_index_seed.json",
+        "chunk_id naming convention",
+        "safe_outputs vocabulary",
+        "requires_context vocabulary"
+      ],
+      "dependencies": [
+        "Retrieval metadata model",
+        "Document graph expansion",
+        "Chunking/export pipeline design",
+        "Artifact metadata for forms and tools"
+      ],
+      "acceptance_criteria": [
+        "The proposed records are machine-readable and easy for tools to consume.",
+        "The records can express can_answer, can_generate, requires_context, safe_outputs, related tools/forms, and chunk-level retrieval IDs.",
+        "The records distinguish policy explanation from client-specific generation that needs facility data.",
+        "The records are planning metadata only and do not change publishable document bodies."
+      ],
+      "status": "planned",
+      "notes": "This supports future agents that can answer, assemble, update, or route work while staying grounded in approved source documents."
+    },
+    {
+      "epic_id": "OP-RGE-004",
+      "title": "Education Metadata",
+      "intent": "Capture training relevance and change-impact signals so future education workflows can identify affected audiences, competencies, training triggers, quiz affordances, and suggested learning outputs.",
+      "outcomes": [
+        "Policies can indicate when content has training implications.",
+        "Audience and role metadata can support assignment suggestions for staff education.",
+        "Competency domains and triggers can guide future quiz or microlearning generation.",
+        "Change-impact prompts can help agents ask whether staff re-education is needed after policy updates."
+      ],
+      "candidate_outputs": [
+        "education metadata proposal",
+        "_project/education_index_seed.json prototype",
+        "training trigger vocabulary",
+        "audience and role vocabulary",
+        "change-impact prompt templates"
+      ],
+      "dependencies": [
+        "Document graph expansion",
+        "Retrieval metadata model",
+        "Future training module requirements",
+        "Human review workflow for education suggestions"
+      ],
+      "acceptance_criteria": [
+        "The metadata can express training relevance, affected audiences, roles, competency domains, training triggers, suggested learning outputs, quiz affordances, and change-impact prompts.",
+        "The metadata can point to future training material without requiring training content to exist now.",
+        "Suggested education affordances remain reviewable before becoming curated.",
+        "The metadata supports annual review and policy-change workflows."
+      ],
+      "status": "planned",
+      "notes": "This is intended to prevent customized policy training from becoming too labor-intensive to maintain."
+    },
+    {
+      "epic_id": "OP-RGE-005",
+      "title": "Training Graph Edges",
+      "intent": "Reserve and define graph relationship types that connect policies, artifacts, roles, competency evidence, and future training materials.",
+      "outcomes": [
+        "Training-specific edge types are named early enough to avoid later graph rework.",
+        "Policy-to-training and role-to-knowledge relationships can be represented distinctly.",
+        "Future education agents can traverse from policy changes to suggested training updates."
+      ],
+      "candidate_outputs": [
+        "training edge vocabulary",
+        "document_graph edge-type update proposal",
+        "training graph examples",
+        "edge promotion workflow notes"
+      ],
+      "dependencies": [
+        "Document graph expansion",
+        "Education metadata model",
+        "Future training content identifiers"
+      ],
+      "acceptance_criteria": [
+        "Reserved edge types include requires_training, supports_training, quiz_source_for, role_must_know, annual_education_topic, and training_evidence_for.",
+        "Training edges can be suggested separately from curated operational document links.",
+        "The graph can express policy-to-policy, policy-to-artifact, policy-to-training, and role-to-document relationships.",
+        "The vocabulary remains directional and does not force current training module implementation."
+      ],
+      "status": "planned",
+      "notes": "These edges are expected to matter most once policy updates and education assignments become connected workflows."
+    },
+    {
+      "epic_id": "OP-RGE-006",
+      "title": "BrightSource v2 Directional Interfaces",
+      "intent": "List likely index outputs and metadata feeds BrightSource could consume without turning this planning backlog into product requirements or UI specification work.",
+      "outcomes": [
+        "Future consumers can see likely interface shapes for retrieval, graph, education, export, and review metadata.",
+        "The repo can evolve indexes with BrightSource in mind while avoiding premature app commitments.",
+        "Planning remains grounded in sidecar-first metadata and generated views."
+      ],
+      "candidate_outputs": [
+        "_project/retrieval_index_seed.json",
+        "_project/document_graph.json",
+        "_project/document_graph_suggestions.json",
+        "_project/education_index_seed.json",
+        "_project/agentic_rag_index_seed.json",
+        "_project/export_index_seed.json",
+        "_project/review_queue_seed.json"
+      ],
+      "dependencies": [
+        "Retrieval metadata model",
+        "Document graph expansion",
+        "Education metadata",
+        "Export metadata pilot",
+        "Future BrightSource requirements/spec process"
+      ],
+      "acceptance_criteria": [
+        "The backlog explicitly states BrightSource v2 integration is directional only.",
+        "Candidate outputs are described as likely feeds, not final app contracts.",
+        "No UI requirements, workflow commitments, or product specs are created in this pass.",
+        "The direction supports hybrid semantic, graph, lexical, and agentic retrieval use cases."
+      ],
+      "status": "planned",
+      "notes": "This is the bridge between repo metadata architecture and future product discovery, not a substitute for that discovery."
+    },
+    {
+      "epic_id": "OP-RGE-007",
+      "title": "Human Review Workflow",
+      "intent": "Define how suggested retrieval terms, graph links, education affordances, and agentic RAG records are reviewed before being promoted to curated metadata.",
+      "outcomes": [
+        "Generated suggestions can be inspected, accepted, rejected, or edited by a human reviewer.",
+        "Curated metadata remains explainable and traceable to evidence.",
+        "Review decisions can be stored separately before being applied to sidecars.",
+        "The workflow can reuse the existing HTML review affordance pattern where helpful."
+      ],
+      "candidate_outputs": [
+        "metadata review packet format",
+        "review decision JSON format",
+        "promotion script plan",
+        "review status fields for suggestions",
+        "audit/worklog view"
+      ],
+      "dependencies": [
+        "Document graph suggestions",
+        "Retrieval metadata suggestions",
+        "Education metadata suggestions",
+        "Structured human review affordance pattern"
+      ],
+      "acceptance_criteria": [
+        "Suggestions are never silently promoted to curated metadata.",
+        "Reviewer decisions can capture accept, reject, edit, defer, and needs-source-review states.",
+        "Accepted decisions can later be applied safely to document.meta.json sidecars.",
+        "The workflow can identify low-confidence or high-impact suggestions for human review."
+      ],
+      "status": "planned",
+      "notes": "This keeps the system ambitious without letting generated metadata quietly become policy truth."
+    }
+  ]
+}

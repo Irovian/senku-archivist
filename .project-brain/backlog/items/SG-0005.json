@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SG-0005",
+  "title": "Port inline manual editing and draft review",
+  "type": "build_slice",
+  "status": "blocked",
+  "priority": "medium",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Preserve the low-ceremony inline editing workflow while unifying accepted draft output with the proposal/audit system.",
+  "acceptance_criteria": [
+    "Editable desktop reader blocks support p, li, h2, h3, and h4 edits",
+    "Undo and basic formatting controls exist without per-section save/cancel ceremony",
+    "Drafts autosave on transitions and are reviewed in a separate diff/lens-style surface",
+    "Accepted manual draft batches can enter the same Git/audit history path as accepted model proposals"
+  ],
+  "non_goals": [
+    "A full rich-text editor",
+    "Raw Markdown editing in the normal UI",
+    "Editing static regulatory documents"
+  ],
+  "blocked_by": [
+    "SG-0003",
+    "SG-0004"
+  ],
+  "related_requirements": [
+    "REQ-0013",
+    "REQ-0017",
+    "REQ-0018",
+    "REQ-0038"
+  ],
+  "related_questions": [
+    "Q-0008",
+    "Q-0009"
+  ],
+  "validation": [
+    "Desktop smoke for section edit, undo, autosave, draft review, and rejection",
+    "Hash-check accepted draft output before write",
+    "Run npm run build"
+  ],
+  "notes": "Keep manual edits and model proposals separate at input time, but converge on the same review/audit outputs. One accepted model proposal or approved manual-draft batch creates one Git commit by default."
+}

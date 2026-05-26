@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0014",
+  "title": "Fold service-backed reads into the EPP browser shell slice",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Service-backed workspace and document reads are mandatory inside SG-0013 instead of remaining a separate SG-0002 prerequisite slice.",
+  "context": "The next build slice is the full EPP browser shell/navigation. That shell cannot honestly restore Appendix A visibility, library switching, full navigation, or future history/review hooks while still relying on static seed imports.",
+  "rationale": "Keeping service-backed reads separate would create a detour and risk restoring the old browser shape on the wrong data boundary. Folding the service read path into SG-0013 makes the user-facing acceptance gate and the architecture gate line up.",
+  "alternatives_considered": [
+    "Build SG-0002 as a separate prerequisite before SG-0013",
+    "Keep static imports for the browser shell and move reads to the service later",
+    "Build Git history inspection before service-backed document reads"
+  ],
+  "consequences": [
+    "Q-0004 is resolved",
+    "SG-0002 is parked as absorbed by SG-0013",
+    "SG-0013 acceptance must include workspace manifests and document payloads from the local service",
+    "Later renderer, chat, history, review, export, and coworker-workspace features inherit the same local filesystem boundary"
+  ],
+  "related_requirements": [
+    "REQ-0012",
+    "REQ-0031",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0002",
+    "SG-0013",
+    "SG-0003",
+    "SG-0004"
+  ],
+  "related_questions": [
+    "Q-0004"
+  ]
+}

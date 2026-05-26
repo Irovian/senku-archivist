@@ -1,0 +1,20 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-SERVING_AS_AN_ALTERNATE_CARE_SITE",
+  "title": "Serving as an Alternate Care Site",
+  "content_group": "governance-and-planning",
+  "content_type": "topic_document",
+  "source_ids": [
+    "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+    "SRC-3_TABLE_OF_CONTENTS_DOCX",
+    "SRC-SOM_APPENDIX_Z_2019_PDF"
+  ],
+  "requirement_ids": [
+    "REQ-LTC-48373-A3-POPULATION-CONTINUITY",
+    "REQ-LTC-48373-B2-B8-OPERATIONS"
+  ],
+  "placeholder_ids": [
+    "PLH-FACILITY-NAME"
+  ],
+  "lifecycle_status": "drafting",
+  "review_status": "not_started"
+}

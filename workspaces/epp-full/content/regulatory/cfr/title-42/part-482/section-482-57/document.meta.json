@@ -1,0 +1,127 @@
+{
+  "doc_id": "REG-CFR-42-482-57",
+  "title": "42 CFR \u00a7482.57 Condition of participation: Respiratory care services",
+  "content_group": "regulatory",
+  "content_type": "regulatory_cfr",
+  "source_ids": [
+    "SRC-ECFR_TITLE_42_PART_482_XML"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "42 CFR 482.57",
+      "\u00a7482.57",
+      "Condition of participation: Respiratory care services"
+    ],
+    "aliases": [
+      "42 CFR 482.57"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "CFR",
+      "eCFR",
+      "regulation"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "CFR-TITLE-42-ECFR",
+    "source_id": "SRC-ECFR_TITLE_42_PART_482_XML",
+    "regulatory_doc_type": "cfr_section",
+    "title_number": 42,
+    "part": "482",
+    "section": "482.57",
+    "issue_date": "2026-04-28",
+    "citations": [
+      "42 CFR 482.57"
+    ],
+    "subsections": [
+      {
+        "citation": "42 CFR 482.57",
+        "anchor_id": "section-text",
+        "path": [],
+        "text_sha256": "ecfd5ffc800206cfb554870b1340e65fd31710ac2bb8d0c59732aea29f3d43fb"
+      },
+      {
+        "citation": "42 CFR 482.57(a)",
+        "anchor_id": "subsection-a",
+        "path": [
+          "a"
+        ],
+        "text_sha256": "ceb6b05d5c0e7eb662a78f080b4d2074be549d700b73014e4150183357cc69f3"
+      },
+      {
+        "citation": "42 CFR 482.57(a)(1)",
+        "anchor_id": "subsection-a-1",
+        "path": [
+          "a",
+          "1"
+        ],
+        "text_sha256": "97db17480e7349cfa8bf3af22b3887bf8a25c1fa8b1e736e585e47c574b24044"
+      },
+      {
+        "citation": "42 CFR 482.57(a)(2)",
+        "anchor_id": "subsection-a-2",
+        "path": [
+          "a",
+          "2"
+        ],
+        "text_sha256": "4c4f24674f16fddb7ffe8d279b0ee59e33004c3cd09ec25ff2ddc4f3788fa97b"
+      },
+      {
+        "citation": "42 CFR 482.57(b)",
+        "anchor_id": "subsection-b",
+        "path": [
+          "b"
+        ],
+        "text_sha256": "f42c0b80ee8a27d6ba3500879e695c79412570eba6c1acd43f6584fbc8c16c2b"
+      },
+      {
+        "citation": "42 CFR 482.57(b)(1)",
+        "anchor_id": "subsection-b-1",
+        "path": [
+          "b",
+          "1"
+        ],
+        "text_sha256": "95672e7e7c03dccdc00669005e01d574dc612e37b4e3bab23c9920e8864311a1"
+      },
+      {
+        "citation": "42 CFR 482.57(b)(2)",
+        "anchor_id": "subsection-b-2",
+        "path": [
+          "b",
+          "2"
+        ],
+        "text_sha256": "1d53962f3df2c3bc98703f18bb577319aa20d80ee55137995540e6d6f545389f"
+      },
+      {
+        "citation": "42 CFR 482.57(b)(3)",
+        "anchor_id": "subsection-b-3",
+        "path": [
+          "b",
+          "3"
+        ],
+        "text_sha256": "2ac010a653379ceed54dec79c47edc3b516a0c0f35d4195ae57898d84d002255"
+      },
+      {
+        "citation": "42 CFR 482.57(b)(4)",
+        "anchor_id": "subsection-b-4",
+        "path": [
+          "b",
+          "4"
+        ],
+        "text_sha256": "b465d5bc335e52853376b7ee8bc86b8d92a3a4f0cf05f647fc82ebc9bd2ae266"
+      }
+    ],
+    "source_span": {
+      "start_line": 1,
+      "end_line": 9,
+      "start_page": 1,
+      "end_page": 1
+    },
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

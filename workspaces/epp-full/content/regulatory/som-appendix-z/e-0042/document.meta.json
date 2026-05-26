@@ -1,0 +1,114 @@
+{
+  "doc_id": "REG-SOMZ-E-0042",
+  "title": "E-0042 Regulatory Reference",
+  "content_group": "regulatory",
+  "content_type": "regulatory_etag",
+  "source_ids": [
+    "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
+  ],
+  "requirement_ids": [],
+  "placeholder_ids": [],
+  "lifecycle_status": "structured",
+  "review_status": "requested",
+  "search": {
+    "keywords": [
+      "E-0042",
+      "E-0042",
+      "Appendix Z",
+      "Emergency Preparedness"
+    ],
+    "aliases": [
+      "E-0042",
+      "E-0042"
+    ],
+    "legacy_titles": [],
+    "audience_terms": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "Transplant Program"
+    ]
+  },
+  "regulatory": {
+    "corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
+    "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+    "regulatory_doc_type": "e_tag",
+    "raw_tag": "E-0042",
+    "canonical_tag": "E-0042",
+    "revision": "204",
+    "issued_date": "04-16-21",
+    "effective_date": "04-16-21",
+    "implementation_date": "04-16-21",
+    "citations": [
+      "\u00a7416.54",
+      "\u00a7416.54(e)",
+      "\u00a7418.113",
+      "\u00a7418.113(e)",
+      "\u00a7441.184(e)",
+      "\u00a7460.84",
+      "\u00a7460.84(e)",
+      "\u00a7482.15(f)",
+      "\u00a7482.78(f)",
+      "\u00a7483.475",
+      "\u00a7483.475(e)",
+      "\u00a7483.73(f)",
+      "\u00a7484.102",
+      "\u00a7484.102(e)",
+      "\u00a7485.625(f)",
+      "\u00a7485.68",
+      "\u00a7485.68(e)",
+      "\u00a7485.727",
+      "\u00a7485.727(e)",
+      "\u00a7485.920",
+      "\u00a7485.920(e)",
+      "\u00a7486.360(f)",
+      "\u00a7491.12",
+      "\u00a7491.12(e)",
+      "\u00a7494.62",
+      "\u00a7494.62(e)"
+    ],
+    "provider_types": [
+      "ASC",
+      "CAH",
+      "CMHC",
+      "CORF",
+      "ESRD",
+      "HHA",
+      "Hospice",
+      "Hospital",
+      "ICF/IID",
+      "LTC Facility",
+      "OPO",
+      "OPT/OSP",
+      "PACE",
+      "PRTF",
+      "RHC/FQHC",
+      "Transplant Program"
+    ],
+    "ltc_relevant": true,
+    "applicability_notes": [
+      "NOTE: This does not apply to Transplant Programs."
+    ],
+    "source_span": {
+      "start_line": 4528,
+      "end_line": 4673,
+      "start_page": 102,
+      "end_page": 105
+    },
+    "segments": [],
+    "automation_confidence": "high",
+    "review_status": "needs_human_review"
+  }
+}

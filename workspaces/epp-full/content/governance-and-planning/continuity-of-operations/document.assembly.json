@@ -1,0 +1,331 @@
+{
+  "doc_id": "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS",
+  "title": "Continuity of Operations",
+  "document_path": "_content/governance-and-planning/continuity-of-operations/document.md",
+  "export": {
+    "strip_sections": [
+      "Customization Tokens",
+      "Working Notes"
+    ],
+    "profile": "branded_pdf"
+  },
+  "tokens": [
+    {
+      "placeholder_id": "PLH-FACILITY-NAME",
+      "token": "{{facility_name}}",
+      "usage": "value_insertion",
+      "notes": "Project-wide value token used in the publishable body."
+    },
+    {
+      "placeholder_id": "PLH-FACILITY-TYPE-DESIGNATION",
+      "token": "{{facility_type_designation}}",
+      "usage": "value_insertion",
+      "notes": "Use the facility's real operating designation in the continuity profile sentence.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-14 (footnote 14).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "14",
+        "original_instruction_text": "Revise to reflect proper care level",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-SERVICE-LINES-OFFERED-BULLETS",
+      "token": "{{service_lines_offered_bullets}}",
+      "usage": "value_insertion",
+      "notes": "Build this bullet list from the approved service-line taxonomy and keep only services the facility actually provides.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-15 (footnote 15).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "15",
+        "original_instruction_text": "Revise bulleted list to accurately reflect services provided by the facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-THERAPY-REFERRAL-LOCATION",
+      "token": "{{therapy_referral_location}}",
+      "usage": "value_insertion",
+      "notes": "Populate only if the therapy referral bullet remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-18 (footnote 18).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "18",
+        "original_instruction_text": "Insert location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-ADULT-DAY-CARE-REFERRAL-LOCATION",
+      "token": "{{adult_day_care_referral_location}}",
+      "usage": "value_insertion",
+      "notes": "Populate only if the adult day care referral bullet remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-19 (footnote 19).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "19",
+        "original_instruction_text": "Insert location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-HOME-CARE-REFERRAL-DESTINATION",
+      "token": "{{home_care_referral_destination}}",
+      "usage": "value_insertion",
+      "notes": "Populate only if the Home Care referral bullet remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-21 (footnote 21).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "21",
+        "original_instruction_text": "Insert service or location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-TEMPORARY-STOPOVER-LOCATION",
+      "token": "{{temporary_stopover_location}}",
+      "usage": "value_insertion",
+      "notes": "Name the temporary stop-over location used in relocation arrangements."
+    },
+    {
+      "placeholder_id": "PLH-RECEIVING-FACILITY-PARTNERS",
+      "token": "{{receiving_facility_partners}}",
+      "usage": "value_insertion",
+      "notes": "List receiving facilities or partner sites used for alternate care arrangements."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-MUTUAL-AID-PLAN-SUPPORT-CLAUSE",
+      "token": "{{include_mutual_aid_plan_support_clause}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the mutual aid clause remains in the publishable body.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-16 (footnote 16).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "16",
+        "original_instruction_text": "Remove the reference to mutual aid plan support if the facility is not part of a mutual aid plan",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-OUTPATIENT-SERVICES-REFERRAL-SECTION",
+      "token": "{{include_outpatient_services_referral_section}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the outpatient referral subsection remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-17 (footnote 17).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "17",
+        "original_instruction_text": "Delete paragraph if none of these services are provided by the facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-THERAPY-REFERRAL-BULLET",
+      "token": "{{include_therapy_referral_bullet}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the therapy referral bullet remains in scope."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-ADULT-DAY-CARE-REFERRAL-BULLET",
+      "token": "{{include_adult_day_care_referral_bullet}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the adult day care referral bullet remains in scope."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-HOME-CARE-REFERRAL-BULLET",
+      "token": "{{include_home_care_referral_bullet}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the Home Care referral bullet remains in scope."
+    },
+    {
+      "placeholder_id": "PLH-INCLUDE-HOME-HEALTHCARE-COMPONENT-CLAUSE",
+      "token": "{{include_home_healthcare_component_clause}}",
+      "usage": "assembly_condition",
+      "notes": "Working token controlling whether the Home Healthcare component planning reminder remains in scope.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-20 (footnote 20).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "20",
+        "original_instruction_text": "Home Healthcare has separate unique emergency preparedness requirements. If you have a Home Healthcare component as part of your facility, be prepared to include them in your planning and exercises.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ASM-CONTINUITY-FACILITY-TYPE-DESIGNATION",
+      "title": "Facility Type Designation",
+      "category": "value_insertion",
+      "target_ref": "continuity_profile.facility_type_designation",
+      "section_heading": "Continuity Profile",
+      "placeholder_ids": [
+        "PLH-FACILITY-TYPE-DESIGNATION"
+      ],
+      "action_summary": "Use the facility's actual designation in the continuity profile sentence instead of leaving a generic care-level phrase.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-14 (footnote 14).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "14",
+        "original_instruction_text": "Revise to reflect proper care level",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-SERVICE-LINES-OFFERED-BULLETS",
+      "title": "Service Lines Offered Bullet List",
+      "category": "branch_selection",
+      "target_ref": "continuity_profile.service_lines_offered_bullets",
+      "section_heading": "Continuity Profile",
+      "placeholder_ids": [
+        "PLH-SERVICE-LINES-OFFERED-BULLETS"
+      ],
+      "action_summary": "Build the service-line bullet list from the approved taxonomy and retain only the services the facility actually offers.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-15 (footnote 15).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "15",
+        "original_instruction_text": "Revise bulleted list to accurately reflect services provided by the facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-MUTUAL-AID-PLAN-SUPPORT-CLAUSE",
+      "title": "Mutual Aid Plan Support Clause",
+      "category": "optional_paragraph",
+      "target_ref": "service_continuity_approach.mutual_aid_plan_support_clause",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-MUTUAL-AID-PLAN-SUPPORT-CLAUSE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-MUTUAL-AID-PLAN-SUPPORT-CLAUSE",
+      "condition_expected_value": "true",
+      "action_summary": "Keep the mutual aid plan support clause only if the facility is part of a mutual aid plan.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-16 (footnote 16).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "16",
+        "original_instruction_text": "Remove the reference to mutual aid plan support if the facility is not part of a mutual aid plan",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-HOME-HEALTHCARE-COMPONENT-CLAUSE",
+      "title": "Home Healthcare Component Planning Reminder",
+      "category": "optional_paragraph",
+      "target_ref": "service_continuity_approach.home_healthcare_component_clause",
+      "action_summary": "Keep the Home Healthcare component reminder only if the facility includes a Home Healthcare component.",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-HOME-HEALTHCARE-COMPONENT-CLAUSE"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-HOME-HEALTHCARE-COMPONENT-CLAUSE",
+      "condition_expected_value": "true",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-20 (footnote 20).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "20",
+        "original_instruction_text": "Home Healthcare has separate unique emergency preparedness requirements. If you have a Home Healthcare component as part of your facility, be prepared to include them in your planning and exercises.",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-OUTPATIENT-REFERRAL-SUBSECTION",
+      "title": "Outpatient Referral Subsection",
+      "category": "optional_subsection",
+      "target_ref": "service_continuity_approach.outpatient_services_referral_section",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-OUTPATIENT-SERVICES-REFERRAL-SECTION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-OUTPATIENT-SERVICES-REFERRAL-SECTION",
+      "condition_expected_value": "true",
+      "action_summary": "Keep the outpatient referral subsection only when at least one listed outpatient service is provided by the facility.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-17 (footnote 17).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "17",
+        "original_instruction_text": "Delete paragraph if none of these services are provided by the facility",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-THERAPY-REFERRAL-BULLET",
+      "title": "Therapy Referral Bullet",
+      "category": "optional_list_item",
+      "target_ref": "service_continuity_approach.outpatient_services_referral_section.therapy_referral_bullet",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-THERAPY-REFERRAL-BULLET",
+        "PLH-THERAPY-REFERRAL-LOCATION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-THERAPY-REFERRAL-BULLET",
+      "condition_expected_value": "true",
+      "action_summary": "Keep the therapy referral bullet only if therapy services are offered, and populate the destination with the approved referral location.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-18 (footnote 18).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "18",
+        "original_instruction_text": "Insert location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-ADULT-DAY-CARE-REFERRAL-BULLET",
+      "title": "Adult Day Care Referral Bullet",
+      "category": "optional_list_item",
+      "target_ref": "service_continuity_approach.outpatient_services_referral_section.adult_day_care_referral_bullet",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-ADULT-DAY-CARE-REFERRAL-BULLET",
+        "PLH-ADULT-DAY-CARE-REFERRAL-LOCATION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-ADULT-DAY-CARE-REFERRAL-BULLET",
+      "condition_expected_value": "true",
+      "action_summary": "Keep the adult day care referral bullet only if those services are offered, and populate the destination with the approved referral location.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-19 (footnote 19).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "19",
+        "original_instruction_text": "Insert location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    },
+    {
+      "rule_id": "ASM-CONTINUITY-HOME-CARE-REFERRAL-BULLET",
+      "title": "Home Care Referral Bullet",
+      "category": "optional_list_item",
+      "target_ref": "service_continuity_approach.outpatient_services_referral_section.home_care_referral_bullet",
+      "section_heading": "Service Continuity Approach",
+      "placeholder_ids": [
+        "PLH-INCLUDE-HOME-CARE-REFERRAL-BULLET",
+        "PLH-HOME-CARE-REFERRAL-DESTINATION"
+      ],
+      "condition_placeholder_id": "PLH-INCLUDE-HOME-CARE-REFERRAL-BULLET",
+      "condition_expected_value": "true",
+      "action_summary": "Keep the Home Care referral bullet only if the facility provides Home Care services, and populate the destination with the approved service or location.",
+      "legacy_trace": {
+        "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+        "source_reference": "Structured source annotation SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-21 (footnote 21).",
+        "legacy_topic": "Continuity of Operations",
+        "original_superscript": "21",
+        "original_instruction_text": "Insert service or location where clients will be referred to",
+        "capture_confidence": "confirmed_from_extract"
+      }
+    }
+  ]
+}

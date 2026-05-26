@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-10T21:21:20Z",
+  "sources": [
+    {
+      "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
+      "path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "source_url": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107ap_z_emergprep.pdf",
+      "source_role": "primary_regulatory_source",
+      "retrieved_at": "2026-05-10T21:21:20Z",
+      "sha256": "5e407c9e1edf2a13ecaa781a0e6d5aed34feea71e74cd368644f5e3acc33a3ad",
+      "page_count": 108,
+      "revision": "204",
+      "issued_date": "04-16-21",
+      "effective_date": "04-16-21",
+      "implementation_date": "04-16-21",
+      "latest_transmittal_revision": 204
+    },
+    {
+      "source_id": "SRC-ECFR_42_CFR_PART_483_XML",
+      "path": "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
+      "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-05-07/title-42.xml?part=483",
+      "source_role": "raw_regulatory_source",
+      "retrieved_at": "2026-05-10T21:21:20Z",
+      "sha256": "e974d0a83a52f113d136cda8f6b19ceaabadb4dbf19db716631c4d6fb2a79a66",
+      "section_anchor": "42 CFR 483.73"
+    },
+    {
+      "source_id": "SRC-CMS_R204SOMA_TRANSMITTAL_HTML",
+      "path": "_sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
+      "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/transmittals/transmittals/r204soma",
+      "source_role": "raw_regulatory_source",
+      "retrieved_at": "2026-05-10T21:21:20Z",
+      "sha256": "f04ac6bd4c311cf8f0682eaf8312204a767a725057b5088e3d90ddbe744fd9f0",
+      "revision": "204"
+    }
+  ]
+}

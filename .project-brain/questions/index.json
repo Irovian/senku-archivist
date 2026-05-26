@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-05-26",
+  "items": [
+    {
+      "id": "Q-0004",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0004.json"
+    },
+    {
+      "id": "Q-0005",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0005.json"
+    },
+    {
+      "id": "Q-0006",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0006.json"
+    },
+    {
+      "id": "Q-0007",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0007.json"
+    },
+    {
+      "id": "Q-0008",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0008.json"
+    },
+    {
+      "id": "Q-0009",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0009.json"
+    },
+    {
+      "id": "Q-0010",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0010.json"
+    },
+    {
+      "id": "Q-0011",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0011.json"
+    },
+    {
+      "id": "Q-0012",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0012.json"
+    },
+    {
+      "id": "Q-0013",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0013.json"
+    },
+    {
+      "id": "Q-0014",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0014.json"
+    },
+    {
+      "id": "Q-0015",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0015.json"
+    },
+    {
+      "id": "Q-0016",
+      "status": "parked",
+      "priority": "medium",
+      "path": ".project-brain/questions/items/Q-0016.json"
+    },
+    {
+      "id": "Q-0017",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0017.json"
+    },
+    {
+      "id": "Q-0018",
+      "status": "resolved",
+      "priority": "high",
+      "path": ".project-brain/questions/items/Q-0018.json"
+    }
+  ]
+}

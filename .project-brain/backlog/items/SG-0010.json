@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "SG-0010",
+  "title": "Add service-backed workbook sidecar state skeleton",
+  "type": "build_slice",
+  "status": "needs_review",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Create the first local service and workspace-file contract for reading and writing workbook sidecar JSON state, using HVA as the proving workbook.",
+  "acceptance_criteria": [
+    "A stable workspace path convention exists for workbook sidecar JSON files",
+    "Sidecar files include schema version, parent document ID, workbook ID, state payload, and audit metadata",
+    "The local service can read workbook state for a document/workbook pair",
+    "Draft state and approved state are distinguishable",
+    "The HVA prototype can consume the sidecar shape without hard-coding an Appendix A-only storage path"
+  ],
+  "non_goals": [
+    "Final workbook approval workflow",
+    "Full Git commit automation for workbook state",
+    "Final HVA visual design",
+    "Every future workbook schema"
+  ],
+  "blocked_by": [],
+  "related_requirements": [
+    "REQ-0026",
+    "REQ-0028",
+    "REQ-0029"
+  ],
+  "related_questions": [
+    "Q-0014",
+    "Q-0015"
+  ],
+  "validation": [
+    "Run service smoke for workbook state endpoints or manifest reads",
+    "Run npm run build",
+    "Run Senku Prep project-brain validation"
+  ],
+  "notes": "This is the build slice implied by the sidecar-state decision. It should stay small and local-first."
+}

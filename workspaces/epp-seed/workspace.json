@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "workspace_id": "epp-seed",
+  "name": "EPP Manual Seed",
+  "description": "Small Emergency Prep Project seed workspace used to prove Archivist without copying the full process repo.",
+  "source_reference": {
+    "kind": "local_repo",
+    "path": "~/Dovaxis - DevOps/Emergency Prep Project",
+    "branch_at_seed": "codex/archivist-local-service"
+  },
+  "canonical_source": {
+    "kind": "markdown_bundles",
+    "write_policy": "proposal_review_required"
+  },
+  "history": {
+    "mode": "git_plus_archivist_ledger",
+    "git_strategy": "workspace_repository_preferred",
+    "latest_view": "latest_approved_or_current_tracked_markdown",
+    "drafts_committed": false
+  },
+  "audit": {
+    "ledger_path": "audit/ledger.jsonl",
+    "links_to_git_commits": true
+  },
+  "documents": [
+    {
+      "doc_id": "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS",
+      "title": "Continuity of Operations",
+      "group": "Governance and Planning",
+      "path": "content/governance-and-planning/continuity-of-operations/document.md",
+      "meta_path": "content/governance-and-planning/continuity-of-operations/document.meta.json",
+      "editable": true
+    },
+    {
+      "doc_id": "DOC-GOVERNANCE_AND_PLANNING-RISK_ASSESSMENT_PROCESS",
+      "title": "Risk Assessment Process",
+      "group": "Governance and Planning",
+      "path": "content/governance-and-planning/risk-assessment-process/document.md",
+      "meta_path": "content/governance-and-planning/risk-assessment-process/document.meta.json",
+      "editable": true
+    },
+    {
+      "doc_id": "DOC-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN",
+      "title": "Communications Plan",
+      "group": "All-Hazards Response",
+      "path": "content/all-hazards-response/communications-plan/document.md",
+      "meta_path": "content/all-hazards-response/communications-plan/document.meta.json",
+      "editable": true
+    }
+  ]
+}
+

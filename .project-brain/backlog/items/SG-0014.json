@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SG-0014",
+  "title": "Port Markdown viewer and low-ceremony editing parity",
+  "type": "build_slice",
+  "status": "blocked",
+  "priority": "high",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Port the old Markdown viewer, artifact renderer compatibility, inline manual editing, autosave draft capture, and proposal-review lens behavior into the standalone app.",
+  "acceptance_criteria": [
+    "Compatibility rendering preserves old Markdown reader behavior",
+    "Editable manual documents support section-scoped inline edits",
+    "Manual edits autosave to draft review instead of using per-section save/cancel ceremony",
+    "Draft review reuses the proposal-review lens shape",
+    "Model proposals remain separate at input time but converge into the same review/audit output"
+  ],
+  "non_goals": [
+    "Building every artifact as polished React components immediately",
+    "Live apply without review",
+    "Regulatory source editing"
+  ],
+  "blocked_by": [
+    "SG-0013"
+  ],
+  "related_requirements": [
+    "REQ-0014",
+    "REQ-0015",
+    "REQ-0016",
+    "REQ-0017",
+    "REQ-0033"
+  ],
+  "related_questions": [
+    "Q-0018"
+  ],
+  "validation": [
+    "Compare rendered samples against the old browser",
+    "Smoke inline edit draft capture and draft review",
+    "Smoke proposal preview apply/reject guardrails"
+  ],
+  "notes": "This is the larger parity slice after the full browser shell exists. Renderer strategy is resolved: use compatibility rendering first, then promote high-value surfaces into React components."
+}

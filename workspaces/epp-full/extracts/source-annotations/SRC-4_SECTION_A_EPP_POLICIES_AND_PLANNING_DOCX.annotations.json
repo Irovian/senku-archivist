@@ -1,0 +1,719 @@
+{
+  "project_id": "epp-snf-emergency-preparedness",
+  "generated_at": "2026-05-04T02:28:52Z",
+  "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+  "source_path": "4 - Section A - EPP Policies and Planning.docx",
+  "source_type": "docx",
+  "annotations": [
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-2",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "2",
+      "instruction_text": "Insert names of collaborative partners and stakeholders",
+      "anchor_text": "The EPP was developed in collaboration with< Insert names of collaborative partners and stakeholders >.",
+      "heading_context": "Policy and Organizational Statements",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "suggested_token": "{{collaborative_partners}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-3",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "3",
+      "instruction_text": "Insert name of local, regional or state response agencies plan was coordinated with",
+      "anchor_text": "This plan has been reviewed with <Insert local emergency response agencies > to ensure an integrated response during a disaster or emergency situation impacting the facility.",
+      "heading_context": "Policy and Organizational Statements",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "suggested_token": "{{local_response_agencies}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-4",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "4",
+      "instruction_text": "Insert position title who will be assigned this responsibility. Use Appendix J to document annual review. The entire EPP can be reviewed at once or sections can be reviewed individually on an annual basis.",
+      "anchor_text": "This plan will be reviewed and updated on an annual basis, and the <Insert title > will be assigned this responsibility. Should there be significant revisions to the plan, all staff will be trained regarding the revisions. An \u201cAnnual Review and Analysis\u201d document is found in Appendix J.",
+      "heading_context": "Policy and Organizational Statements",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "suggested_token": "{{plan_owner_title}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-5",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "5",
+      "instruction_text": "Revise to match Table of Contents",
+      "anchor_text": "Appendices:",
+      "heading_context": "Policy and Organizational Statements",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "suggested_token": "{{match_table_contents}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-6",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "6",
+      "instruction_text": "Insert correct position title",
+      "anchor_text": "The EPP is always in effect. The plans and operational procedures within the EPP are executed on an as-needed basis as determined by the Administrator or highest-ranking member of the leadership team onsite at the time of the event (Incident Commander).",
+      "heading_context": "Policy and Organizational Statements",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
+      ],
+      "suggested_token": "{{training_program_owner_title}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-7",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "7",
+      "instruction_text": "Revise to reflect proper care level",
+      "anchor_text": "The HVA provides a systematic approach to recognizing hazards that may affect demand for nursing homes or assisted living residences or the ability to provide those services. The risks associated with each hazard are analyzed to prioritize planning, mitigation, response, and recovery activities. The HVA serves as a needs assessment for the Emergency Preparedness Program. This process involves facility staff representing the safety and/or emergency management committee and community partners (area emergency managers, fire and police departments, and emergency management services).",
+      "heading_context": "Risk Assessment Process",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-RISK_ASSESSMENT_PROCESS"
+      ],
+      "suggested_token": "{{facility_type_designation}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-8",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "8",
+      "instruction_text": "Revise if your planned shelter in place time is less",
+      "anchor_text": "The disaster or emergency may exceed the facility\u2019s capabilities, and external resources and assets may not be available from vendors or others. The facility is prepared to be self-sustaining for a minimum of 96 hours or longer without outside assistance if conditions allow for safe sheltering in place.",
+      "heading_context": "Planning Assumptions",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-PLANNING_ASSUMPTIONS"
+      ],
+      "suggested_token": "{{planned_shelter_in_place_duration}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-9",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "9",
+      "instruction_text": "Revise content of this plan to best fit the facility needs",
+      "anchor_text": "Communications",
+      "heading_context": "Communications",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "suggested_token": null,
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-10",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "10",
+      "instruction_text": "Describe how employee contact information can be obtained and where it is stored. Revise statement to reflect facility processes.",
+      "anchor_text": "The facility maintains a list of all staff members in the __________________ software program located on the facility Intranet, including emergency contact information .",
+      "heading_context": "Communications",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "suggested_token": "{{employee_contact_information_location}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-11",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "11",
+      "instruction_text": "Revise if different than stated",
+      "anchor_text": "The facility maintains a daily list of residents, including their condition and location. The census list will be updated routinely throughout the day, as necessary . During emergency or disaster-related events, resident information may be shared or released, as permitted under 45 CFR 164,510 (b) (1) (ii) and 164.510 (b) (4), through assigned roles and responsibilities in the facility Incident Command System.",
+      "heading_context": "Communications",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "suggested_token": null,
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-12",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "12",
+      "instruction_text": "Insert correct terminology (e.g., Health Alert Network, HHAN/HAN, etc.) for any reporting systems in use at the facility. Remove this reference if there are no applicable systems.",
+      "anchor_text": "The Incident Command System assigns specific roles and responsibilities for the communication of this information. Additionally, reporting of this information is accomplished electronically through the use of <Insert correct terminology >.",
+      "heading_context": "Communications",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-COMMUNICATIONS"
+      ],
+      "suggested_token": "{{emergency_reporting_system_name}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-13",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "13",
+      "instruction_text": "Delete statement if not applicable to facility",
+      "anchor_text": "Alternatively, the facility may share information relative to the status of the facility or disaster on its webpage at <Insert facility website >.",
+      "heading_context": "Resident and Family Information",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION"
+      ],
+      "suggested_token": "{{facility_website}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-14",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "14",
+      "instruction_text": "Revise to reflect proper care level",
+      "anchor_text": "The facility is an Assisted Living Facility/Nursing Home/Skilled Nursing Home that provides the following levels of service :",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{facility_type_designation}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-15",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "15",
+      "instruction_text": "Revise bulleted list to accurately reflect services provided by the facility",
+      "anchor_text": "The facility is an Assisted Living Facility/Nursing Home/Skilled Nursing Home that provides the following levels of service :",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{service_lines_offered_bullets}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-16",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "16",
+      "instruction_text": "Remove the reference to mutual aid plan support if the facility is not part of a mutual aid plan",
+      "anchor_text": "In the event an emergency or disaster impacts any of the services provided by the facility to its residents, the facility has developed contingency plans to ensure continued services to the extent possible. These plans include, but are not limited to, emergency procedures, vendor support, agreements with other healthcare facilities, mutual aid plan support, and support from local/state emergency management.",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{include_mutual_aid_plan_support_clause}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-17",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "17",
+      "instruction_text": "Delete paragraph if none of these services are provided by the facility",
+      "anchor_text": "Where specific outpatient services can no longer be provided, the facility has made arrangements with other providers as follows:",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{include_outpatient_services_referral_section}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-18",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "18",
+      "instruction_text": "Insert location where clients will be referred to",
+      "anchor_text": "Therapy (Respiratory, Speech, OT/PT) residents will be directed to<Insert location >",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{therapy_referral_location}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-19",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "19",
+      "instruction_text": "Insert location where clients will be referred to",
+      "anchor_text": "Adult Day Care responsible parties will be notified that the Adult Day Care is closed and that alternative arrangements for long-duration cessation of services have been made with <Insert location >.",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{adult_day_care_referral_location}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-20",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "20",
+      "instruction_text": "Home Healthcare has separate unique emergency preparedness requirements. If you have a Home Healthcare component as part of your facility, be prepared to include them in your planning and exercises.",
+      "anchor_text": "Home Care client responsible parties will be notified that Home Care services cannot be provided and that alternative arrangements for long-duration cessation of services have been made with <Insert service or location >.",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{include_home_healthcare_component_clause}}",
+      "suggested_action": "review_context",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-21",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "21",
+      "instruction_text": "Insert service or location where clients will be referred to",
+      "anchor_text": "Home Care client responsible parties will be notified that Home Care services cannot be provided and that alternative arrangements for long-duration cessation of services have been made with <Insert service or location >.",
+      "heading_context": "Continuity of Operations",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+      ],
+      "suggested_token": "{{home_care_referral_destination}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-22",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "22",
+      "instruction_text": "Insert the facility\u2019s EOP activation code word as applicable",
+      "anchor_text": "Activation of Emergency Operations, a < EOP activation code word > would be initiated, and the response would be coordinated from the Facility Command Center by the Facility Incident Management Team.",
+      "heading_context": "Shelter in Place Plan",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-SHELTER_IN_PLACE_PLAN"
+      ],
+      "suggested_token": "{{eop_activation_code_word}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-23",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "23",
+      "instruction_text": "Insert applicable position title(s)",
+      "anchor_text": "In the event the CEO, Administrator, or Assistant Administrator are not available, the highest-ranking person in the facility at the time of the event will assume the role of Incident Commander and have overall authority relative to the facility\u2019s response to the event. The facility organizational chart and staff roster with key disaster-related roles are located in Appendix F.",
+      "heading_context": "Authority to Activate the Plan",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-AUTHORITY_TO_ACTIVATE_THE_PLAN"
+      ],
+      "suggested_token": "{{activation_authority_position_titles}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-24",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "24",
+      "instruction_text": "The chart is populated with sample positions. Revise to reflect position titles in use at your facility.",
+      "anchor_text": "Order of Succession \u2013 Incident Command Team",
+      "heading_context": "Order of Succession - Incident Command Team",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-ORDER_OF_SUCCESSION_INCIDENT_COMMAND_TEAM"
+      ],
+      "suggested_token": "{{incident_command_succession_titles}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-25",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "25",
+      "instruction_text": "Outline the facility\u2019s medical records systems. Outline electronic health record (EHR) systems, hardcopy systems, or a combination. Provide details on the system(s). For example, if you utilize EHR, list the name of the system, location, security and redundancy of servers, and accessibility to records from other, or off-site locations. For hard copy paper records, identify where they are located and how they are secured and kept safe. Reference any facility Protected Health Record Policies and Procedures.",
+      "anchor_text": "Insert information on the system of medical documentation here . The following are \u201csample\u201d statements:",
+      "heading_context": "Resident Medical Information",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "suggested_token": "{{medical_records_system_description}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-26",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "26",
+      "instruction_text": "Insert name of EHR system. Delete if none.",
+      "anchor_text": "The facility utilizes _______________ for Electronic Health Records (EHR), and it is backed up on a regular basis.",
+      "heading_context": "Resident Medical Information",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "suggested_token": "{{ehr_system_name}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-27",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "27",
+      "instruction_text": "Revise statement to reflect best practices at your facility",
+      "anchor_text": "In the event of a facility evacuation, patient medical records will be transferred with the patient to their final destination. Electronic records will be printed on each patient unit, or as necessary may be remotely accessed using secure login information and passwords from other healthcare facilities by facility staff using the facility laptop .",
+      "heading_context": "Resident Medical Information",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-RESIDENT_MEDICAL_INFORMATION"
+      ],
+      "suggested_token": null,
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-28",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "28",
+      "instruction_text": "Some states require semi-annual review, revise as necessary",
+      "anchor_text": "The Training & Testing Program will be reviewed and updated at least annually . The <Insert Title > will be responsible for reviewing and updating the Training & Testing Program.",
+      "heading_context": "Training and Testing Program",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "suggested_token": "{{include_state_specific_semiannual_review_clause}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-29",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "29",
+      "instruction_text": "Insert position title responsibility is assigned to",
+      "anchor_text": "The Training & Testing Program will be reviewed and updated at least annually . The <Insert Title > will be responsible for reviewing and updating the Training & Testing Program.",
+      "heading_context": "Training and Testing Program",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM"
+      ],
+      "suggested_token": "{{training_testing_review_owner_title}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-30",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "30",
+      "instruction_text": "Revise as needed",
+      "anchor_text": "The facility will test staff competence in their knowledge of the Emergency Preparedness Program through the use of a post-training quiz and evaluations during drills and exercises.",
+      "heading_context": "Training",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-TRAINING"
+      ],
+      "suggested_token": null,
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-31",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "31",
+      "instruction_text": "Delete bullet and reference to mutual aid if not part of a formal mutual aid plan",
+      "anchor_text": "The facility is a mutual aid plan member and participates in a mutual aid exercise involving other healthcare facilities and local/regional partners, and emergency responders. This exercise serves as the required community-based, full-scale exercise.",
+      "heading_context": "Annual Testing",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING"
+      ],
+      "suggested_token": "{{include_mutual_aid_plan_support_clause}}",
+      "suggested_action": "optional_content",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-32",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "32",
+      "instruction_text": "Revise if using a different documentation format",
+      "anchor_text": "The facility will document all drills, tabletop exercises, and emergency events utilizing the After-Action Report (AAR) . Any plan revisions needed as a result of a drill or exercise will be captured in the Improvement Plan of the AAR. The <insert position or committee > will be responsible for reviewing, tracking, and assigning improvement tasks.",
+      "heading_context": "Annual Testing",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING"
+      ],
+      "suggested_token": "{{after_action_report_format}}",
+      "suggested_action": "review_or_alternate_wording",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footnote-33",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footnote",
+      "marker_id": "33",
+      "instruction_text": "Insert the appropriate position or committee for this purpose. Where applicable, consider this the role of the Emergency Preparedness Committee or Safety Committee.",
+      "anchor_text": "The facility will document all drills, tabletop exercises, and emergency events utilizing the After-Action Report (AAR) . Any plan revisions needed as a result of a drill or exercise will be captured in the Improvement Plan of the AAR. The <insert position or committee > will be responsible for reviewing, tracking, and assigning improvement tasks.",
+      "heading_context": "Annual Testing",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [
+        "DOC-GOVERNANCE_AND_PLANNING-ANNUAL_TESTING"
+      ],
+      "suggested_token": "{{after_action_improvement_owner}}",
+      "suggested_action": "value_insertion",
+      "status": "candidate",
+      "confidence": "high"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footer-footer4",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footer",
+      "marker_id": "footer4",
+      "instruction_text": "A. 3",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-footer-footer6",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "footer",
+      "marker_id": "footer6",
+      "instruction_text": "A. 4",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-header-header2",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header2",
+      "instruction_text": "EMERGENCY MANAGEMENT PLAN",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-header-header3",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header3",
+      "instruction_text": "EMERGENCY MANAGEMENT PLAN",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-header-header4",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header4",
+      "instruction_text": "SECTION A: POLICIES AND PLANNING",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    },
+    {
+      "annotation_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX-header-header6",
+      "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
+      "source_type": "docx",
+      "marker_type": "header",
+      "marker_id": "header6",
+      "instruction_text": "SECTION A: POLICIES AND PLANNING",
+      "anchor_text": "",
+      "heading_context": "",
+      "page_number": null,
+      "page_label": "",
+      "doc_id_candidates": [],
+      "suggested_token": null,
+      "suggested_action": "layout_context",
+      "status": "needs_review",
+      "confidence": "medium"
+    }
+  ]
+}
