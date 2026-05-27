@@ -3,29 +3,38 @@
   "id": "SG-0015",
   "title": "Establish Archivist regression and smoke test harness",
   "type": "build_slice",
-  "status": "needs_grill",
+  "status": "done",
   "priority": "medium",
   "confidence": "medium",
   "created_at": "2026-05-26",
-  "updated_at": "2026-05-26",
+  "updated_at": "2026-05-27",
   "goal": "Create a durable local regression and smoke test harness for Archivist service contracts, desktop browser behavior, document rendering coverage, and future review/edit workflows.",
   "acceptance_criteria": [
-    "Define local commands for service endpoint smoke, frontend build, desktop browser smoke, and screenshot/evidence capture",
-    "Cover both fast fixture checks against epp-seed and parity checks against epp-full where appropriate",
-    "Include regression coverage for navigation completeness, direct document URLs, service-unavailable state, representative document rendering, and key placeholder/artifact fallback behavior",
-    "Provide a path for expanding into renderer parity samples, workbook flows, proposal/review flows, and history/audit checks as those features land",
+    "Define local npm commands for service endpoint smoke, frontend build, desktop browser smoke, and screenshot/evidence capture",
+    "Implement the first harness with lightweight local smoke tooling, using Python stdlib scripts plus existing npm commands and headless Chrome instead of introducing Playwright, Cypress, or cloud CI",
+    "Cover fast service fixture checks against epp-seed where useful and parity checks against epp-full where real corpus behavior matters",
+    "Service smoke verifies /api/status, /api/workspaces, /api/workspaces/epp-full, /api/workspaces/epp-full/navigation, representative document-read endpoints, and absence of SG-0007 staging workspace discovery",
+    "Navigation smoke verifies epp-full document completeness and expected library counts for Emergency Preparedness Program, Survey Guidance, and CFR",
+    "Document-read smoke verifies rendered compatibility output, stable anchors, sanitized metadata, source/compliance orientation, Appendix A artifact context, and the missing Evacuation Floor Plans fallback payload",
+    "Browser smoke captures deterministic desktop screenshots for the default EPP document, Appendix A, Survey Guidance, CFR, and the service-required retry state",
+    "Browser smoke uses document-level hash routes and asserts visible markers for selected navigation, selected library, reader title, and Appendix A workbook entry point",
+    "Harness writes disposable evidence under .tmp/archivist-smoke or an equivalent ignored local evidence folder and prints a concise command summary",
+    "Harness fails clearly when local service, Vite server, Chrome, or expected response contracts are unavailable; it does not silently skip primary coverage",
+    "Provide a documented path for expanding into renderer parity samples, workbook flows, proposal/review flows, and history/audit checks as those features land",
     "Document when tests are expected to run locally before handoff and what evidence should be captured"
   ],
   "non_goals": [
     "Blocking SG-0013 on the full regression harness",
     "Mobile test coverage",
     "Pixel-perfect visual regression for every document",
+    "Formal browser test framework adoption in this slice",
     "External tracker sync or cloud-only CI as the first test path",
-    "Autonomous daemon runners"
+    "Autonomous daemon runners",
+    "Full renderer parity assertions for every document",
+    "Persistent screenshot baselines or visual diff approval workflows",
+    "Running imports or mutating workspace content as part of normal smoke tests"
   ],
-  "blocked_by": [
-    "SG-0013"
-  ],
+  "blocked_by": [],
   "related_requirements": [
     "REQ-0013",
     "REQ-0021",
@@ -37,7 +46,126 @@
   "related_questions": [],
   "validation": [
     "Run Senku Prep project-brain validation",
-    "Run the documented local smoke/regression command set once the harness exists"
+    "Run npm run build",
+    "Run npm run check:epp-source-leaks",
+    "Run npm run check:epp-references",
+    "Run the documented service smoke command",
+    "Run the documented desktop browser smoke command",
+    "Run the documented combined local smoke/regression command once the harness exists",
+    "Run git diff --check"
   ],
-  "notes": "Created from prep agreement that SG-0013 should have repeatable desktop smoke, while broader regression coverage should live as its own future quality-infrastructure slice rather than bloating the browser-shell build."
+  "implementation_artifacts": [
+    "docs/implementation/sg-0015-regression-smoke-harness-checklist.md"
+  ],
+  "technical_defaults": [
+    {
+      "created_at": "2026-05-27",
+      "summary": "Use lightweight local smoke tooling first instead of adopting a formal browser test framework.",
+      "impact": "implementation",
+      "details": [
+        "Use Python stdlib scripts, existing npm commands, and headless Chrome screenshots.",
+        "Defer Playwright, Cypress, cloud CI, and persistent visual baselines until renderer and workbook behavior stabilizes."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Write smoke evidence to an ignored local evidence directory.",
+      "impact": "validation",
+      "details": [
+        "Use .tmp/archivist-smoke/<run-id>/ or an equivalent ignored local folder for screenshots and machine-readable summaries.",
+        "Print a concise pass/fail summary with command names and evidence paths."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Smoke scripts may manage temporary local child processes but must not install daemon runners.",
+      "impact": "workflow",
+      "details": [
+        "Scripts may start the Archivist service and Vite app when needed.",
+        "Scripts should stop child processes after completion and fail clearly on port conflicts or unavailable local capabilities."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Use desktop-only headless Chrome smoke at stable viewport sizes.",
+      "impact": "validation",
+      "details": [
+        "Use a stable desktop viewport such as 1440x1000.",
+        "Defer mobile coverage, pixel-perfect regression, and screenshot diff approval workflows."
+      ]
+    }
+  ],
+  "prep_summary": {
+    "resolved_human_choice": "Use lightweight local smoke tooling for the first harness instead of adopting a formal browser test framework.",
+    "readiness": "build"
+  },
+  "build_evidence": {
+    "completed_at": "2026-05-27T03:32:12Z",
+    "changed_surfaces": [
+      "scripts/smoke_archivist.py adds the lightweight local smoke harness for service and browser coverage",
+      "package.json exposes smoke:service, smoke:browser, and smoke:all",
+      ".gitignore ignores .tmp/ disposable smoke evidence",
+      "docs/implementation/sg-0015-regression-smoke-harness-checklist.md documents the implemented commands, coverage, evidence contract, and future expansion path"
+    ],
+    "validation_commands": [
+      {
+        "command": "python3 -m py_compile scripts/smoke_archivist.py",
+        "result": "passed"
+      },
+      {
+        "command": "npm run smoke:service",
+        "result": "passed",
+        "evidence": "Run service-20260527T032929Z verified status, workspace discovery, epp-full/epp-seed manifests, navigation counts, representative document reads, Appendix A artifact context, and missing Markdown fallback."
+      },
+      {
+        "command": "npm run smoke:browser",
+        "result": "passed",
+        "evidence": "Run browser-20260527T033008Z captured default EPP, Appendix A, Survey Guidance, CFR, and service-required screenshots with DOM marker checks."
+      },
+      {
+        "command": "npm run build",
+        "result": "passed",
+        "evidence": "Passed inside npm run smoke:all."
+      },
+      {
+        "command": "npm run check:epp-source-leaks",
+        "result": "passed",
+        "evidence": "Passed inside npm run smoke:all."
+      },
+      {
+        "command": "npm run check:epp-references",
+        "result": "passed",
+        "evidence": "Passed inside npm run smoke:all."
+      },
+      {
+        "command": "npm run smoke:all",
+        "result": "passed",
+        "evidence": "Run all-20260527T033145Z produced summary.json, service-summary.json, browser-summary.json, and five screenshots under .tmp/archivist-smoke/all-20260527T033145Z."
+      },
+      {
+        "command": "python3 ${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py validate",
+        "result": "passed"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed"
+      }
+    ],
+    "evidence": [
+      "Service smoke confirms only epp-full and epp-seed are discoverable; no staging workspace candidate is exposed.",
+      "Navigation smoke confirms 261 documents with library counts EPP 177, Survey Guidance 52, and CFR 32.",
+      "Document smoke confirms rendered HTML and stable anchors for a policy document, Appendix A, E-0001 Survey Guidance, and 42 CFR 483.73.",
+      "Appendix A smoke confirms source/compliance orientation and hva-workbook-v1 artifact context.",
+      "Missing-document smoke confirms DOC-EVACUATION-EVACUATION_FLOOR_PLANS remains reachable with a clear missing Markdown fallback payload.",
+      "Browser smoke captured screenshots for default EPP, Appendix A, Survey Guidance, CFR, and service-required retry state.",
+      "Browser smoke starts and stops temporary service/Vite child processes; ports 8798 and 5173 were free after validation."
+    ],
+    "residual_risks": [
+      "DOM assertions are marker-based and intentionally lighter than a formal browser framework.",
+      "Screenshots are disposable local evidence under .tmp and are not tracked baselines.",
+      "Pixel diffing, mobile coverage, Playwright/Cypress adoption, and persistent visual approvals remain deferred.",
+      "Browser smoke requires local headless Chrome and control of port 8798 so it can verify the service-required state; the script fails clearly if that port is already occupied."
+    ]
+  },
+  "notes": "Created from prep agreement that SG-0013 should have repeatable desktop smoke, while broader regression coverage should live as its own future quality-infrastructure slice rather than bloating the browser-shell build. On 2026-05-27 the first harness style was resolved as lightweight local smoke tooling: Python stdlib scripts plus existing npm commands and headless Chrome, with formal browser frameworks deferred until behavior stabilizes."
 }

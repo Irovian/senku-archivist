@@ -3,7 +3,7 @@
   "id": "SG-0007",
   "title": "Import the full EPP workspace corpus",
   "type": "build_slice",
-  "status": "ready_to_build",
+  "status": "done",
   "priority": "high",
   "confidence": "high",
   "created_at": "2026-05-26",
@@ -95,5 +95,54 @@
   "implementation_artifacts": [
     "docs/implementation/sg-0007-import-cleanup-checklist.md"
   ],
+  "build_evidence": {
+    "completed_at": "2026-05-27T02:32:41Z",
+    "changed_surfaces": [
+      "scripts/import_epp_workspace.py now builds a hidden staged candidate, validates it, appends a sanitized audit event, and promotes only after checks pass",
+      "scripts/check_epp_workspace_source_leaks.py adds the repeatable source-leak check",
+      "scripts/check_epp_workspace_references.py adds the repeatable reference-integrity check",
+      "package.json exposes check:epp-source-leaks and check:epp-references",
+      "workspaces/epp-full was refreshed as sanitized app-facing workspace metadata plus retained regulatory sources and preserved app-owned state"
+    ],
+    "validation_commands": [
+      {
+        "command": "python3 -m py_compile scripts/import_epp_workspace.py scripts/check_epp_workspace_source_leaks.py scripts/check_epp_workspace_references.py",
+        "result": "passed"
+      },
+      {
+        "command": "npm run import:epp",
+        "result": "passed",
+        "evidence": "Imported 261 documents into epp-full; 47 provenance-only source records, 16 retained regulatory sources, 2 preserved app-state files, and 0 seeded workbook sidecars."
+      },
+      {
+        "command": "npm run check:epp-source-leaks",
+        "result": "passed"
+      },
+      {
+        "command": "npm run check:epp-references",
+        "result": "passed"
+      },
+      {
+        "command": "python3 ${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py validate",
+        "result": "passed"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed"
+      }
+    ],
+    "evidence": [
+      "A first staged candidate failed the source-leak check before live promotion, leaving the live workspace untouched and with no success audit event appended.",
+      "workspaces/epp-full/source-files is absent after successful refresh.",
+      "workspaces/epp-full/sources/regulatory is present after successful refresh.",
+      "workspaces/epp-full/workspace.json uses explicit document_count, provenance_source_count, and retained_regulatory_source_count fields without source_count or original source-file counters.",
+      "workspaces/epp-full/audit/ledger.jsonl contains one sanitized workspace_import_refreshed event with passed validation statuses.",
+      "Only epp-full and epp-seed workspace manifests are discoverable under workspaces."
+    ],
+    "residual_risks": [
+      "Canonical Markdown document bodies were intentionally not scanned or rewritten by SG-0007, so future content review may still find historical worksheet or source-name mentions inside content.",
+      "One upstream catalog document path, DOC-EVACUATION-EVACUATION_FLOOR_PLANS, still has no corresponding canonical Markdown file; SG-0007 preserved catalog count rather than inventing missing content."
+    ]
+  },
   "notes": "This slice records the user's full-content decision and makes the import refreshable rather than a one-off copy. Source retention is now narrowed: retain canonical EPP documents plus regulatory sources used by the app, but physically remove the development-only original office/catalog source-files folder from the app-facing workspace. The app-facing catalog is normalized in place; do not keep a raw upstream catalog copy with original file paths inside Archivist v1. All app-facing project metadata copied into the workspace should be sanitized so original office/catalog paths do not leak through crosswalks, metadata panels, search, compliance, or future service responses. App-facing provenance should keep source kind, branch, commit, and a non-browseable label without exposing absolute local checkout paths. Original catalog source records remain only as non-browseable provenance stubs so document source_ids do not dangle or imply retained files. Development-only original source annotations should be removed or normalized rather than retained as app-facing extracted context; retained regulatory extracted context remains allowed. The cleanup requires a repeatable leak check that fails on disallowed original-source markers while allowing retained regulatory source data, plus an integrity check that fails on dangling references to removed source annotations or removed raw paths. Import summaries should use explicit source count fields instead of bare source_count so provenance-only records are not confused with retained files. The leak check should not scan canonical Markdown document bodies under content. Normal import refresh should build and validate a staged candidate before promoting imported surfaces into the live epp-full workspace. Promotion should preserve app-owned audit, workbook, draft, and runtime state; missing workbook sidecars may be seeded non-destructively. Successful refresh should append a sanitized import event to the audit ledger and print a matching console summary without retaining raw source paths or development-only source details. Failed candidate import or validation should leave the live workspace usable and append no success audit event. It is now the build prerequisite for SG-0013 so the browser shell starts from the cleaned app-facing workspace."
 }

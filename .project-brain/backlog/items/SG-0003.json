@@ -3,26 +3,32 @@
   "id": "SG-0003",
   "title": "Port the EPP Markdown and compliance renderer contract",
   "type": "build_slice",
-  "status": "needs_grill",
+  "status": "done",
   "priority": "high",
-  "confidence": "medium",
+  "confidence": "high",
   "created_at": "2026-05-26",
-  "updated_at": "2026-05-26",
-  "goal": "Preserve the old EPP manual-browser Markdown, compliance, CFR, and regulatory rendering behavior in the standalone app.",
+  "updated_at": "2026-05-27",
+  "goal": "Preserve the current generated EPP manual-browser Markdown, compliance, CFR, regulatory rendering, reader presentation, and visible review/editing affordance contract in the standalone app.",
   "acceptance_criteria": [
+    "Treat the current generated EPP manual-browser file at /home/irovian/Dovaxis - DevOps/Emergency Prep Project/_reviews/epp-manual-browser/index.html?v=1779817496 as the visual and behavior baseline; older saved screenshots are historical context only",
     "Reader output strips internal sections while keeping canonical Markdown unchanged",
-    "Headings, anchors, lists, code blocks, tables, assembly blocks, regulatory segments, placeholders, and inline CFR links render correctly",
-    "Compliance graph links, source metadata, CFR pages, Appendix Z pages, and static regulatory lockout are represented",
-    "Desktop screenshot smoke covers representative policy, Appendix Z, CFR, and placeholder-heavy documents"
+    "Headings, anchors, lists, code blocks, tables, assembly blocks, regulatory segments, placeholders, and inline CFR links render correctly from service-backed compatibility output",
+    "The EPP reader presentation is brought closer to the current generated browser: DOVAXIS logo-forward top bar, compact left navigation, centered paper-like reader, pale masthead, document utility icon tray, readable document typography, and quieter metadata/context placement",
+    "Visible reader affordances from the current generated browser are represented in the standalone app, including the bottom-right assistant bubble, docked review handle or lens sliver beside the reader, assistant panel shell, editable-section pencil affordance, inline edit toolbar shape, and draft-review New/Old lens overlay",
+    "Draft/review/lens states may use deterministic fixture or demo state in this slice, but their DOM, styling, and screenshot-visible behavior must be stable enough for SG-0014 to wire persistent draft review and proposal apply/reject behavior",
+    "Compliance graph links, source metadata, CFR pages, Appendix Z pages, and static regulatory lockout are represented with current generated-browser parity as the comparison point",
+    "Desktop screenshot smoke covers representative policy, Appendix A, Survey Guidance, CFR, placeholder-heavy content, assistant panel, edit-mode affordances, and draft-review lens states",
+    "The SG-0015 smoke harness remains the local validation path; any new screenshot coverage writes disposable evidence under .tmp and does not require persistent visual baselines"
   ],
   "non_goals": [
     "Final export generation",
     "Editing or rewriting regulatory source documents",
-    "Full redesign of every artifact renderer"
+    "Full redesign of every artifact renderer",
+    "Persistent inline edit saves, live apply, model proposal queueing, approval history, or write-back review workflow implementation, which remain SG-0014 scope",
+    "Adopting Playwright, Cypress, cloud CI, or persistent pixel-diff baselines as repo dependencies in this slice",
+    "Pixel-perfect visual matching across every EPP document"
   ],
-  "blocked_by": [
-    "SG-0013"
-  ],
+  "blocked_by": [],
   "related_requirements": [
     "REQ-0013",
     "REQ-0014",
@@ -33,9 +39,126 @@
     "Q-0006"
   ],
   "validation": [
-    "Compare rendered output against the old generated browser for representative documents",
-    "Run desktop Chrome screenshot smoke",
-    "Run npm run build"
+    "Compare rendered output against the current generated EPP manual-browser file for representative documents",
+    "Capture desktop screenshots for the current generated browser baseline and the standalone Archivist counterpart at 1440x1000",
+    "Confirm screenshot coverage includes default policy, Appendix A, Survey Guidance, CFR, placeholder-heavy content, assistant panel, edit-mode affordance, and draft-review lens states",
+    "Run npm run build",
+    "Run npm run check:epp-source-leaks",
+    "Run npm run check:epp-references",
+    "Run npm run smoke:all",
+    "Run Senku Prep project-brain validation",
+    "Run git diff --check"
   ],
-  "notes": "Use the old generator as behavior evidence. Prefer staged React/service slices over copying generated HTML. Service-backed document reads are expected to arrive through SG-0013."
+  "technical_defaults": [
+    {
+      "created_at": "2026-05-27",
+      "summary": "Use the current generated EPP manual-browser HTML as the parity baseline.",
+      "impact": "interface",
+      "details": [
+        "Baseline file: /home/irovian/Dovaxis - DevOps/Emergency Prep Project/_reviews/epp-manual-browser/index.html?v=1779817496.",
+        "Older saved screenshots are useful as historical context but should not drive acceptance."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Preserve visible edit and review affordances without implementing the full write workflow in SG-0003.",
+      "impact": "implementation",
+      "details": [
+        "Include the assistant bubble, docked review handle or lens sliver, assistant panel shell, editable-section pencil/tool affordances, and draft-review New/Old lens state in the parity target.",
+        "Use fixture or demo state where needed for screenshot validation.",
+        "Persistent manual edit draft capture, proposal apply/reject, audit, and write-back behavior remain SG-0014 scope."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Use Playwright only as ad hoc prep evidence unless the repo later chooses a formal browser test dependency.",
+      "impact": "validation",
+      "details": [
+        "Current prep evidence was captured with an existing local Playwright install plus Chrome.",
+        "The SG-0015 lightweight smoke harness remains the repo validation path for this slice."
+      ]
+    }
+  ],
+  "prep_summary": {
+    "readiness": "build",
+    "resolved_human_choice": "The current generated EPP manual-browser surface, including editing and draft-review lens affordances, is the parity baseline for SG-0003.",
+    "evidence": [
+      ".tmp/sg-0003-prep/current-default.png",
+      ".tmp/sg-0003-prep/current-agent-panel.png",
+      ".tmp/sg-0003-prep/current-edit-mode.png",
+      ".tmp/sg-0003-prep/current-draft-review-lens.png",
+      ".tmp/sg-0003-prep/current-ui-affordances.json"
+    ],
+    "top_risks": [
+      "The current Archivist reader is functionally service-backed but visually more app/tool-dense than the generated EPP paper-like surface.",
+      "The generated browser's edit/review affordances are sophisticated enough that SG-0003 should preserve their visible hooks while SG-0014 owns full persistence and review behavior.",
+      "Renderer parity spans Markdown, compliance, CFR, Survey Guidance, Appendix A artifacts, and UI presentation, so validation needs a small representative screenshot set rather than broad pixel-perfect coverage."
+    ]
+  },
+  "build_evidence": {
+    "completed_at": "2026-05-27T04:15:47Z",
+    "changed_surfaces": [
+      "service/archivist_service.py extends the compatibility Markdown renderer for internal section stripping, hidden title anchors, CFR citation links, assembly blocks, and regulatory segment blocks",
+      "src/main.tsx and src/styles.css reshape the standalone reader toward the current generated EPP browser: DOVAXIS-forward header, compact navigation, paper-like reader, pale masthead, utility tray, context rail, assistant bubble, review handle, edit affordance, and draft-review lens demo states",
+      "scripts/smoke_archivist.py expands service and browser coverage across representative policy, Appendix A, placeholder-heavy content, Survey Guidance, CFR, assistant panel, edit mode, draft-review lens, and service-required states"
+    ],
+    "validation_commands": [
+      {
+        "command": "python3 -m py_compile service/archivist_service.py scripts/smoke_archivist.py",
+        "result": "passed"
+      },
+      {
+        "command": "npm run build",
+        "result": "passed",
+        "evidence": "Passed directly and again inside npm run smoke:all."
+      },
+      {
+        "command": "npm run smoke:service",
+        "result": "passed",
+        "evidence": "Run service-20260527T041401Z verified representative document reads plus assembly block, regulatory segment, CFR inline-link, internal-section stripping, Appendix A artifact context, and missing Markdown fallback checks."
+      },
+      {
+        "command": "npm run smoke:browser",
+        "result": "passed",
+        "evidence": "Run browser-20260527T041245Z captured expanded desktop screenshots including assistant, edit, and draft-review affordance states."
+      },
+      {
+        "command": "npm run smoke:all",
+        "result": "passed",
+        "evidence": "Run all-20260527T041520Z produced summary.json, service-summary.json, browser-summary.json, and nine screenshots under .tmp/archivist-smoke/all-20260527T041520Z."
+      },
+      {
+        "command": "python3 /home/irovian/.codex/skills/senku-prep/scripts/brain.py validate",
+        "result": "passed"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed"
+      }
+    ],
+    "evidence": [
+      ".tmp/archivist-smoke/all-20260527T041520Z/browser-summary.json",
+      ".tmp/archivist-smoke/all-20260527T041520Z/service-summary.json",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/default-epp.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/appendix-a.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/placeholder-heavy.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/survey-guidance.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/cfr.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/agent-panel.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/edit-mode.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/draft-review-lens.png",
+      ".tmp/archivist-smoke/all-20260527T041520Z/screenshots/service-required.png"
+    ],
+    "residual_risks": [
+      "Assistant, inline edit, and draft-review lens states are deterministic demo affordances in this slice; persistent draft capture, model proposal queues, apply/reject, audit, and write-back remain SG-0014 scope.",
+      "The EPP visual contract is representative and screenshot-covered, not pixel-perfect across every document.",
+      "Browser smoke depends on local headless Chrome and free local ports for temporary service/Vite processes."
+    ]
+  },
+  "review_result": {
+    "reviewed_at": "2026-05-27",
+    "decision": "accepted",
+    "summary": "Human review accepted the SG-0003 parity slice as passable, roughly 90% of the desired visual/layout target. Remaining cosmetic polish is intentionally deferred until the real edit/draft/review workflow creates representative UI pressure."
+  },
+  "notes": "Use the current generated browser as behavior and visual evidence. Prefer staged React/service slices over copying generated HTML. SG-0013 completed the service-backed browser shell and document-read compatibility output, so this item is now ready to build. The May 27 prep pass corrected the baseline from older saved screenshots to the current generated index.html?v=1779817496 and explicitly pulled assistant/edit/draft-review lens affordances into the parity contract while leaving persistent write/review behavior to SG-0014."
 }

@@ -3,15 +3,18 @@
   "id": "SG-0014",
   "title": "Port Markdown viewer and low-ceremony editing parity",
   "type": "build_slice",
-  "status": "blocked",
+  "status": "needs_review",
   "priority": "high",
-  "confidence": "medium",
+  "confidence": "high",
   "created_at": "2026-05-26",
-  "updated_at": "2026-05-26",
+  "updated_at": "2026-05-27",
   "goal": "Port the old Markdown viewer, artifact renderer compatibility, inline manual editing, autosave draft capture, and proposal-review lens behavior into the standalone app.",
   "acceptance_criteria": [
     "Compatibility rendering preserves old Markdown reader behavior",
-    "Editable manual documents support section-scoped inline edits",
+    "Editable manual documents support whole-section inline edits: clicking any editable paragraph/list/heading selects the logical section, not only the individual block",
+    "A logical editable section is bounded by its heading and the next same-or-higher-level heading, with the section body editable as one low-ceremony region",
+    "Toolbar block controls operate inside the active section; H2/H3/H4 controls can create or split sections instead of only changing one selected paragraph",
+    "Structured policy rules are enforced before a draft is captured, including allowed heading levels, section hierarchy, and non-editable static/regulatory content boundaries",
     "Manual edits autosave to draft review instead of using per-section save/cancel ceremony",
     "Draft review reuses the proposal-review lens shape",
     "Model proposals remain separate at input time but converge into the same review/audit output"
@@ -21,9 +24,7 @@
     "Live apply without review",
     "Regulatory source editing"
   ],
-  "blocked_by": [
-    "SG-0013"
-  ],
+  "blocked_by": [],
   "related_requirements": [
     "REQ-0014",
     "REQ-0015",
@@ -37,7 +38,135 @@
   "validation": [
     "Compare rendered samples against the old browser",
     "Smoke inline edit draft capture and draft review",
-    "Smoke proposal preview apply/reject guardrails"
+    "Smoke proposal preview apply/reject guardrails",
+    "Run npm run build",
+    "Run npm run smoke:all",
+    "Run Senku Prep project-brain validation",
+    "Run git diff --check"
   ],
+  "technical_defaults": [
+    {
+      "created_at": "2026-05-27",
+      "summary": "Build real workflow behavior before spending the last polish pass on cosmetics.",
+      "impact": "workflow",
+      "details": [
+        "Treat the SG-0003 layout as good enough for the workflow build.",
+        "Allow small style/layout fixes when real edit, draft, or review states require them.",
+        "Defer broad visual refinement until persistent workflow states exist and can be judged on screen."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Use logical sections as the edit unit, with narrow block controls inside the section.",
+      "impact": "interface",
+      "details": [
+        "Clicking a paragraph, list item, H2, H3, or H4 should select the enclosing section.",
+        "The highlight/lens should cover the heading plus the section body, not a tiny one-block rectangle.",
+        "The block type controls remain available, but they edit or create blocks inside the active section."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Header insertion should be structure-aware.",
+      "impact": "workflow",
+      "details": [
+        "Inserting H2/H3/H4 creates a new section boundary at the cursor or splits the active section.",
+        "Invalid hierarchy transitions should be prevented or captured as validation messages before draft review.",
+        "The normal UI should expose policy structure without turning into a raw Markdown editor."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Persist draft workflow state through the local service boundary.",
+      "impact": "implementation",
+      "details": [
+        "Do not make the normal reader a raw Markdown editor.",
+        "Keep canonical Markdown unchanged until a later reviewed apply step.",
+        "Use service-backed draft/review state so reloads and future audit/history work have a durable seam."
+      ]
+    },
+    {
+      "created_at": "2026-05-27",
+      "summary": "Keep manual edits and model proposals separate at intake but converged at review output.",
+      "impact": "workflow",
+      "details": [
+        "Manual section edits should autosave into draft review without per-section save/cancel ceremony.",
+        "Model proposal previews should remain distinct while being authored.",
+        "Both paths should converge on the same old/new lens-style review and future audit/apply shape."
+      ]
+    }
+  ],
+  "prep_summary": {
+    "readiness": "build",
+    "resolved_human_choice": "Use the accepted SG-0003 layout as the structural baseline, but restore the old section-level editing model before accepting SG-0014.",
+    "handoff": [
+      "Start from the visible assistant/edit/draft-review affordances added in SG-0003.",
+      "Replace per-block click targeting with whole logical section targeting.",
+      "Wire persistent low-ceremony manual draft capture for editable sections.",
+      "Support structure-aware H2/H3/H4 insertion or section splitting.",
+      "Validate policy structure before draft capture.",
+      "Preserve static regulatory lockout.",
+      "Reuse the old/new lens review shape for drafts and proposal previews.",
+      "Keep broad style cleanup out of scope unless needed to make the workflow usable."
+    ],
+    "top_risks": [
+      "The current SG-0014 review build targets individual rendered blocks and feels weird on click; revision must move the editing unit back to the old whole-section model.",
+      "Canonical Markdown writes should stay behind review/apply semantics; autosave drafts must not mutate source documents directly.",
+      "Section splitting and header insertion add structure-validation pressure, so the first revision should be conservative about allowed heading hierarchy."
+    ]
+  },
+  "build_evidence": {
+    "completed_at": "2026-05-27T05:40:40Z",
+    "changed_surfaces": [
+      "service/archivist_service.py now renders editable logical section wrappers with section ids, heading levels, hierarchy validation messages, and static/structured content boundaries outside editable regions",
+      "service/archivist_service.py preserves manual/model draft sidecars with canonical section fields while keeping legacy block fields for compatibility",
+      "src/lib/archivistApi.ts promotes edit_sections and section-shaped manual drafts into the typed browser contract",
+      "src/main.tsx targets whole editable sections on click, autosaves section drafts on transition/Escape, reuses the old/new draft lens, and adds H2/H3/H4 insertion controls inside the active section",
+      "src/styles.css moves selected/editing/draft styling from tiny rendered blocks to full editable sections",
+      "scripts/smoke_archivist.py asserts editable section hooks, heading-level metadata, and section-shaped manual/model draft sidecar persistence"
+    ],
+    "validation_commands": [
+      {
+        "command": "python3 -m py_compile service/archivist_service.py scripts/smoke_archivist.py",
+        "result": "passed"
+      },
+      {
+        "command": "npm run build",
+        "result": "passed"
+      },
+      {
+        "command": "python3 scripts/smoke_archivist.py --mode service --run-id sg-0014-section-edit-service",
+        "result": "passed",
+        "evidence": ".tmp/archivist-smoke/sg-0014-section-edit-service/service-summary.json"
+      },
+      {
+        "command": "python3 scripts/smoke_archivist.py --mode browser --run-id sg-0014-section-edit-browser",
+        "result": "passed",
+        "evidence": ".tmp/archivist-smoke/sg-0014-section-edit-browser/browser-summary.json"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed"
+      }
+    ],
+    "evidence": [
+      ".tmp/archivist-smoke/sg-0014-section-edit-service/service-summary.json",
+      ".tmp/archivist-smoke/sg-0014-section-edit-browser/browser-summary.json",
+      ".tmp/archivist-smoke/sg-0014-section-edit-browser/screenshots/edit-mode.png",
+      ".tmp/archivist-smoke/sg-0014-section-edit-browser/screenshots/draft-review-lens.png",
+      ".tmp/archivist-smoke/sg-0014-section-edit-browser/screenshots/agent-panel.png"
+    ],
+    "residual_risks": [
+      "Approved apply/write-back remains intentionally locked; canonical Markdown is not mutated by draft autosave.",
+      "The model proposal path is deterministic preview plumbing, not a live local-model call yet.",
+      "Heading insertion creates reviewable structure inside the active editable section; final canonical Markdown section splitting still belongs to the later reviewed apply workflow.",
+      "Table, code, artifact, assembly, and static regulatory surfaces stay read-only in the normal manual editing path."
+    ]
+  },
+  "review_result": {
+    "reviewed_at": "2026-05-27",
+    "decision": "needs_changes",
+    "summary": "Human review found the click/edit behavior odd because SG-0014 targeted individual rendered blocks. The previous manual browser treated editable blocks as whole logical sections, supported header insertion to create new sections, and used that structure to enforce policy shape. Revise SG-0014 around section-level editing before acceptance."
+  },
   "notes": "This is the larger parity slice after the full browser shell exists. Renderer strategy is resolved: SG-0013 should expose service-rendered compatibility output first, then SG-0014 can deepen Markdown, artifact, editing, and proposal-review parity and promote high-value surfaces into React components."
 }

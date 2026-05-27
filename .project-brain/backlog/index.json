@@ -36,7 +36,7 @@
     {
       "id": "SG-0003",
       "title": "Port the EPP Markdown and compliance renderer contract",
-      "status": "needs_grill",
+      "status": "done",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0003.json"
@@ -68,7 +68,7 @@
     {
       "id": "SG-0007",
       "title": "Import the full EPP workspace corpus",
-      "status": "ready_to_build",
+      "status": "done",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0007.json"
@@ -116,7 +116,7 @@
     {
       "id": "SG-0013",
       "title": "Port the full EPP browser shell and navigation",
-      "status": "blocked",
+      "status": "done",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0013.json"
@@ -124,7 +124,7 @@
     {
       "id": "SG-0014",
       "title": "Port Markdown viewer and low-ceremony editing parity",
-      "status": "blocked",
+      "status": "needs_review",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0014.json"
@@ -132,11 +132,11 @@
     {
       "id": "SG-0015",
       "title": "Establish Archivist regression and smoke test harness",
-      "status": "needs_grill",
+      "status": "done",
       "type": "build_slice",
       "priority": "medium",
       "path": ".project-brain/backlog/items/SG-0015.json"
     }
   ],
-  "recommended_next": "SG-0007"
+  "recommended_next": "SG-0014"
 }

@@ -3,7 +3,7 @@
   "id": "SG-0013",
   "title": "Port the full EPP browser shell and navigation",
   "type": "build_slice",
-  "status": "blocked",
+  "status": "done",
   "priority": "high",
   "confidence": "medium",
   "created_at": "2026-05-26",
@@ -86,9 +86,7 @@
     "Discovering or browsing SG-0007 staging import candidates as app workspaces",
     "Mobile layout"
   ],
-  "blocked_by": [
-    "SG-0007"
-  ],
+  "blocked_by": [],
   "related_requirements": [
     "REQ-0012",
     "REQ-0022",
@@ -124,5 +122,76 @@
   "implementation_artifacts": [
     "docs/implementation/sg-0013-build-checklist.md"
   ],
+  "build_evidence": {
+    "completed_at": "2026-05-27T03:05:11Z",
+    "changed_surfaces": [
+      "service/archivist_service.py now exposes /api/workspaces/epp-full/navigation and /api/workspaces/epp-full/documents/{doc_id}",
+      "service document reads return service-rendered HTML, stable anchors, sanitized document metadata, source/compliance orientation, and artifact context",
+      "src/lib/archivistApi.ts adds typed local-service reads for status, workspace summaries, navigation, and documents",
+      "src/main.tsx now opens epp-full directly through the service and owns the grouped shell, library selector, search, document routes, reader controls, and Appendix A artifact entry",
+      "src/styles.css now supports the full document-first browser layout, grouped navigation, service-required state, orientation panels, artifact entry, and rendered document content"
+    ],
+    "validation_commands": [
+      {
+        "command": "python3 -m py_compile service/archivist_service.py",
+        "result": "passed"
+      },
+      {
+        "command": "curl http://127.0.0.1:8798/api/workspaces/epp-full/navigation",
+        "result": "passed",
+        "evidence": "Navigation returned 261 documents across Emergency Preparedness Program (177), Survey Guidance (52), and CFR (32)."
+      },
+      {
+        "command": "curl http://127.0.0.1:8798/api/workspaces/epp-full/documents/DOC-APPENDICES-APPENDIX_A",
+        "result": "passed",
+        "evidence": "Appendix A returned rendered HTML, one stable anchor, five source references, one compliance reference, and the hva-workbook-v1 artifact context."
+      },
+      {
+        "command": "curl http://127.0.0.1:8798/api/workspaces/epp-full/documents/REG-SOMZ-E-0001",
+        "result": "passed",
+        "evidence": "Survey Guidance document returned rendered HTML and anchors."
+      },
+      {
+        "command": "curl http://127.0.0.1:8798/api/workspaces/epp-full/documents/REG-CFR-42-483-73",
+        "result": "passed",
+        "evidence": "CFR document returned rendered HTML and anchors."
+      },
+      {
+        "command": "npm run build",
+        "result": "passed"
+      },
+      {
+        "command": "npm run check:epp-source-leaks",
+        "result": "passed"
+      },
+      {
+        "command": "npm run check:epp-references",
+        "result": "passed"
+      },
+      {
+        "command": "python3 ${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py validate",
+        "result": "passed"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed"
+      }
+    ],
+    "evidence": [
+      "Headless Chrome screenshot captured Appendix A direct URL at .tmp/sg-0013/appendix-a.png with grouped navigation, Appendix A selected, and the HVA workbook entry point visible.",
+      "Headless Chrome screenshot captured Survey Guidance direct URL at .tmp/sg-0013/survey-guidance.png.",
+      "Headless Chrome screenshot captured CFR direct URL at .tmp/sg-0013/cfr.png.",
+      "Headless Chrome screenshot captured service-required retry state at .tmp/sg-0013/service-required.png after temporarily stopping the local service.",
+      "The epp-full navigation service default opens Policy and Organizational Statements and retains manifest ordering inside deterministic browser groups.",
+      "The Appendix A document remains a normal document route and reports artifact_count 1 in navigation metadata.",
+      "The missing Evacuation Floor Plans manifest entry remains reachable and returns a clear missing-Markdown reader payload instead of disappearing from navigation."
+    ],
+    "residual_risks": [
+      "Markdown rendering is intentionally compatibility-level; polished CFR indentation, citation linking, compliance popovers, and specialized artifact renderer parity remain deferred.",
+      "Bookmark, history, settings, recommendation, export, and review-lock controls are visible placeholders only.",
+      "The HVA workbook entry point expands local context only; scoring, sidecar writes, print/export, and Appendix J linkage remain deferred.",
+      "Source orientation labels are sanitized provenance stubs derived from source ids, not browsable retained source records."
+    ]
+  },
   "notes": "This should come before deeper workbook UI polish because workbook affordances need to attach to visible documents. SG-0002 is absorbed here so the browser shell is built on the durable local service boundary from the start. SG-0007 is now a prerequisite so the browser build starts from a promoted cleaned app-facing workspace where development-only source-files are physically absent, project metadata is app-facing and sanitized, original source annotations are not exposed as app-facing extracted context, original catalog sources are provenance-only, absolute local source checkout paths are hidden from app-facing metadata, dangling references fail validation, source counts are explicit, regulatory sources remain retained, app-owned audit/workbook/draft/runtime state survives import refresh, import audit events are sanitized, and staging import candidates are not discoverable app workspaces. The SG-0013 document-read endpoint should return service-rendered compatibility output so React can focus on shell, navigation, and controls instead of rebuilding the full renderer. Full artifact renderer parity is deferred, but renderer gaps must not prevent the user from browsing the real corpus in the app."
 }
