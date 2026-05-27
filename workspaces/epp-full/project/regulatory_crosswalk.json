@@ -23,7 +23,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Table of Contents",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1,
         "end_line": 48,
@@ -38,7 +38,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Introduction",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 49,
         "end_line": 88,
@@ -53,7 +53,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Applicability and Format of this Appendix",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 89,
         "end_line": 115,
@@ -68,7 +68,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Resources",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 116,
         "end_line": 126,
@@ -83,7 +83,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Survey Protocol",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 127,
         "end_line": 187,
@@ -98,7 +98,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Definitions",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 188,
         "end_line": 304,
@@ -115,7 +115,7 @@
       "raw_tag": "E-0001",
       "canonical_tag": "E-0001",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 305,
         "end_line": 421,
@@ -127,22 +127,22 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748",
-        "\u00a7416.54",
-        "\u00a7418.113",
-        "\u00a7441.184",
-        "\u00a7460.84",
-        "\u00a7482.15",
-        "\u00a7483.475",
-        "\u00a7483.73",
-        "\u00a7483.73(a)",
-        "\u00a7484.102",
-        "\u00a7485.625",
-        "\u00a7485.68",
-        "\u00a7485.727",
-        "\u00a7485.920",
-        "\u00a7486.360",
-        "\u00a7491.12"
+        "§403.748",
+        "§416.54",
+        "§418.113",
+        "§441.184",
+        "§460.84",
+        "§482.15",
+        "§483.475",
+        "§483.73",
+        "§483.73(a)",
+        "§484.102",
+        "§485.625",
+        "§485.68",
+        "§485.727",
+        "§485.920",
+        "§486.360",
+        "§491.12"
       ],
       "provider_types": [
         "ASC",
@@ -197,7 +197,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7482.15"
+            "§482.15"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospital",
@@ -232,7 +232,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.625"
+            "§485.625"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH",
@@ -270,7 +270,7 @@
       "raw_tag": "E-0002",
       "canonical_tag": "E-0002",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 422,
         "end_line": 446,
@@ -282,10 +282,10 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7482.15",
-        "\u00a7482.15(g)(1)",
-        "\u00a7482.78",
-        "\u00a7482.78(a)"
+        "§482.15",
+        "§482.15(g)(1)",
+        "§482.78",
+        "§482.78(a)"
       ],
       "provider_types": [
         "Hospital",
@@ -312,7 +312,7 @@
       "raw_tag": "E-0003",
       "canonical_tag": "E-0003",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 447,
         "end_line": 474,
@@ -324,7 +324,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7494.62"
+        "§494.62"
       ],
       "provider_types": [
         "ESRD"
@@ -350,7 +350,7 @@
       "raw_tag": "E-0004",
       "canonical_tag": "E-0004",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 475,
         "end_line": 624,
@@ -362,23 +362,23 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(a)",
-        "\u00a7416.54(a)",
-        "\u00a7418.113(a)",
-        "\u00a7441.184(a)",
-        "\u00a7460.84(a)",
-        "\u00a7482.15",
-        "\u00a7482.15(a)",
-        "\u00a7483.475(a)",
-        "\u00a7483.73(a)",
-        "\u00a7484.102(a)",
-        "\u00a7485.625(a)",
-        "\u00a7485.68(a)",
-        "\u00a7485.727(a)",
-        "\u00a7485.920(a)",
-        "\u00a7486.360(a)",
-        "\u00a7491.12(a)",
-        "\u00a7494.62(a)"
+        "§403.748(a)",
+        "§416.54(a)",
+        "§418.113(a)",
+        "§441.184(a)",
+        "§460.84(a)",
+        "§482.15",
+        "§482.15(a)",
+        "§483.475(a)",
+        "§483.73(a)",
+        "§484.102(a)",
+        "§485.625(a)",
+        "§485.68(a)",
+        "§485.727(a)",
+        "§485.920(a)",
+        "§486.360(a)",
+        "§491.12(a)",
+        "§494.62(a)"
       ],
       "provider_types": [
         "ASC",
@@ -432,8 +432,8 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7482.15",
-            "\u00a7485.625(a)"
+            "§482.15",
+            "§485.625(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH, Hospital",
@@ -468,7 +468,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(a)"
+            "§483.73(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -503,7 +503,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7494.62(a)"
+            "§494.62(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ESRD",
@@ -534,7 +534,7 @@
       "raw_tag": "E-0005",
       "canonical_tag": "E-0005",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 625,
         "end_line": 649,
@@ -546,8 +546,8 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7482.15(g)",
-        "\u00a7482.78(a)"
+        "§482.15(g)",
+        "§482.78(a)"
       ],
       "provider_types": [
         "Hospital",
@@ -574,7 +574,7 @@
       "raw_tag": "E-0006",
       "canonical_tag": "E-0006",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 650,
         "end_line": 848,
@@ -586,25 +586,25 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(a)(1)",
-        "\u00a7416.54(a)(1)",
-        "\u00a7418.113(a)",
-        "\u00a7418.113(a)(1)",
-        "\u00a7441.184(a)(1)",
-        "\u00a7460.84(a)(1)",
-        "\u00a7482.15(a)(1)",
-        "\u00a7483.475(a)",
-        "\u00a7483.475(a)(1)",
-        "\u00a7483.73(a)",
-        "\u00a7483.73(a)(1)",
-        "\u00a7484.102(a)(1)",
-        "\u00a7485.625(a)(1)",
-        "\u00a7485.68(a)(1)",
-        "\u00a7485.727(a)(1)",
-        "\u00a7485.920(a)(1)",
-        "\u00a7486.360(a)(1)",
-        "\u00a7491.12(a)(1)",
-        "\u00a7494.62(a)(1)"
+        "§403.748(a)(1)",
+        "§416.54(a)(1)",
+        "§418.113(a)",
+        "§418.113(a)(1)",
+        "§441.184(a)(1)",
+        "§460.84(a)(1)",
+        "§482.15(a)(1)",
+        "§483.475(a)",
+        "§483.475(a)(1)",
+        "§483.73(a)",
+        "§483.73(a)(1)",
+        "§484.102(a)(1)",
+        "§485.625(a)(1)",
+        "§485.68(a)(1)",
+        "§485.727(a)(1)",
+        "§485.920(a)(1)",
+        "§486.360(a)(1)",
+        "§491.12(a)(1)",
+        "§494.62(a)(1)"
       ],
       "provider_types": [
         "ASC",
@@ -628,7 +628,7 @@
       "applicability_notes": [
         "NOTE: This does not apply to Transplant Programs.",
         "NOTE: In situations where the facility does not own the structure(s) where care is",
-        "NOTE: Surveyors are not expected to analyze a facility\u2019s risk assessment to determine"
+        "NOTE: Surveyors are not expected to analyze a facility’s risk assessment to determine"
       ],
       "segments": [
         {
@@ -660,7 +660,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(a)"
+            "§418.113(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -695,7 +695,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(a)"
+            "§483.73(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -730,7 +730,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.475(a)"
+            "§483.475(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -820,7 +820,7 @@
       "raw_tag": "E-0007",
       "canonical_tag": "E-0007",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 849,
         "end_line": 986,
@@ -832,22 +832,22 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(a)(3)",
-        "\u00a7416.54(a)(3)",
-        "\u00a7418.113(a)(3)",
-        "\u00a7441.184(a)(3)",
-        "\u00a7460.84(a)(3)",
-        "\u00a7482.15(a)(3)",
-        "\u00a7483.475(a)(3)",
-        "\u00a7483.73(a)",
-        "\u00a7483.73(a)(3)",
-        "\u00a7484.102(a)(3)",
-        "\u00a7485.625(a)(3)",
-        "\u00a7485.68(a)(3)",
-        "\u00a7485.727(a)(3)",
-        "\u00a7485.920(a)(3)",
-        "\u00a7491.12(a)(3)",
-        "\u00a7494.62(a)(3)"
+        "§403.748(a)(3)",
+        "§416.54(a)(3)",
+        "§418.113(a)(3)",
+        "§441.184(a)(3)",
+        "§460.84(a)(3)",
+        "§482.15(a)(3)",
+        "§483.475(a)(3)",
+        "§483.73(a)",
+        "§483.73(a)(3)",
+        "§484.102(a)(3)",
+        "§485.625(a)(3)",
+        "§485.68(a)(3)",
+        "§485.727(a)(3)",
+        "§485.920(a)(3)",
+        "§491.12(a)(3)",
+        "§494.62(a)(3)"
       ],
       "provider_types": [
         "ASC",
@@ -868,7 +868,7 @@
       ],
       "ltc_relevant": true,
       "applicability_notes": [
-        "*NOTE: [\u201cPersons at risk\u201d does not apply to: ASC, hospice, PACE, HHA, CORF,",
+        "*NOTE: [“Persons at risk” does not apply to: ASC, hospice, PACE, HHA, CORF,",
         "NOTE: This does not apply to Transplant Programs and OPOs.",
         "NOTE: This standard to the emergency preparedness plan must be reviewed and updated"
       ],
@@ -902,7 +902,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(a)"
+            "§483.73(a)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -980,7 +980,7 @@
       "raw_tag": "E-0008",
       "canonical_tag": "E-0008",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 987,
         "end_line": 1032,
@@ -992,7 +992,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7486.360(a)(3)"
+        "§486.360(a)(3)"
       ],
       "provider_types": [
         "OPO"
@@ -1018,7 +1018,7 @@
       "raw_tag": "E-0009",
       "canonical_tag": "E-0009",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1033,
         "end_line": 1112,
@@ -1030,23 +1030,23 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(a)(4)",
-        "\u00a7416.54(a)(4)",
-        "\u00a7418.113(a)(4)",
-        "\u00a7441.184(a)(4)",
-        "\u00a7460.84(a)(4)",
-        "\u00a7482.15(a)(4)",
-        "\u00a7483.475(a)(4)",
-        "\u00a7483.73(a)(4)",
-        "\u00a7484.102(a)(4)",
-        "\u00a7485.625(a)(4)",
-        "\u00a7485.68(a)(4)",
-        "\u00a7485.727(a)(5)",
-        "\u00a7485.920(a)(4)",
-        "\u00a7486.360(a)(4)",
-        "\u00a7491.12(a)(4)",
-        "\u00a7494.120(c)(2)",
-        "\u00a7494.62(a)(4)"
+        "§403.748(a)(4)",
+        "§416.54(a)(4)",
+        "§418.113(a)(4)",
+        "§441.184(a)(4)",
+        "§460.84(a)(4)",
+        "§482.15(a)(4)",
+        "§483.475(a)(4)",
+        "§483.73(a)(4)",
+        "§484.102(a)(4)",
+        "§485.625(a)(4)",
+        "§485.68(a)(4)",
+        "§485.727(a)(5)",
+        "§485.920(a)(4)",
+        "§486.360(a)(4)",
+        "§491.12(a)(4)",
+        "§494.120(c)(2)",
+        "§494.62(a)(4)"
       ],
       "provider_types": [
         "ASC",
@@ -1101,7 +1101,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7494.62(a)(4)"
+            "§494.62(a)(4)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ESRD",
@@ -1142,7 +1142,7 @@
       "raw_tag": "E-0010",
       "canonical_tag": "E-0010",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1113,
         "end_line": 1140,
@@ -1154,7 +1154,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7485.727(a)(4)"
+        "§485.727(a)(4)"
       ],
       "provider_types": [
         "OPT/OSP"
@@ -1180,7 +1180,7 @@
       "raw_tag": "E-0011",
       "canonical_tag": "E-0011",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1141,
         "end_line": 1175,
@@ -1192,8 +1192,8 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7485.68(a)(5)",
-        "\u00a7485.727(a)(6)"
+        "§485.68(a)(5)",
+        "§485.727(a)(6)"
       ],
       "provider_types": [
         "CORF",
@@ -1220,7 +1220,7 @@
       "raw_tag": "E-0012",
       "canonical_tag": "E-0012",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1176,
         "end_line": 1217,
@@ -1232,10 +1232,10 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7482.15",
-        "\u00a7482.78",
-        "\u00a7482.78(a)",
-        "\u00a7482.78(b)"
+        "§482.15",
+        "§482.78",
+        "§482.78(a)",
+        "§482.78(b)"
       ],
       "provider_types": [
         "Hospital",
@@ -1262,7 +1262,7 @@
       "raw_tag": "E-0013",
       "canonical_tag": "E-0013",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1218,
         "end_line": 1322,
@@ -1274,22 +1274,22 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)",
-        "\u00a7416.54(b)",
-        "\u00a7418.113(b)",
-        "\u00a7441.184(b)",
-        "\u00a7460.84(b)",
-        "\u00a7482.15(b)",
-        "\u00a7483.475(b)",
-        "\u00a7483.73(b)",
-        "\u00a7484.102(b)",
-        "\u00a7485.625(b)",
-        "\u00a7485.68(b)",
-        "\u00a7485.727(b)",
-        "\u00a7485.920(b)",
-        "\u00a7486.360(b)",
-        "\u00a7491.12(b)",
-        "\u00a7494.62(b)"
+        "§403.748(b)",
+        "§416.54(b)",
+        "§418.113(b)",
+        "§441.184(b)",
+        "§460.84(b)",
+        "§482.15(b)",
+        "§483.475(b)",
+        "§483.73(b)",
+        "§484.102(b)",
+        "§485.625(b)",
+        "§485.68(b)",
+        "§485.727(b)",
+        "§485.920(b)",
+        "§486.360(b)",
+        "§491.12(b)",
+        "§494.62(b)"
       ],
       "provider_types": [
         "ASC",
@@ -1344,7 +1344,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(b)"
+            "§483.73(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -1379,7 +1379,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7460.84(b)"
+            "§460.84(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPT/OSP, PACE",
@@ -1414,7 +1414,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7494.62(b)"
+            "§494.62(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ESRD",
@@ -1520,7 +1520,7 @@
       "raw_tag": "E-0014",
       "canonical_tag": "E-0014",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1323,
         "end_line": 1364,
@@ -1532,12 +1532,12 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7482.1",
-        "\u00a7482.15",
-        "\u00a7482.57",
-        "\u00a7482.68(b)",
-        "\u00a7482.70",
-        "\u00a7482.78(b)"
+        "§482.1",
+        "§482.15",
+        "§482.57",
+        "§482.68(b)",
+        "§482.70",
+        "§482.78(b)"
       ],
       "provider_types": [
         "Hospital",
@@ -1564,7 +1564,7 @@
       "raw_tag": "E-0015",
       "canonical_tag": "E-0015",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1365,
         "end_line": 1574,
@@ -1576,20 +1576,20 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7400.8",
-        "\u00a7403.748(b)(1)",
-        "\u00a7418.113(b)(6)(iii)",
-        "\u00a7441.184(b)(1)",
-        "\u00a7460.84(b)(1)",
-        "\u00a7482.15(a)(4)",
-        "\u00a7482.15(b)(1)",
-        "\u00a7482.41(a)(1)",
-        "\u00a7483.10(i)(6)",
-        "\u00a7483.35(i)",
-        "\u00a7483.475(b)(1)",
-        "\u00a7483.73(b)(1)",
-        "\u00a7485.625(b)(1)",
-        "\u00a7494.40(a)(4)"
+        "§400.8",
+        "§403.748(b)(1)",
+        "§418.113(b)(6)(iii)",
+        "§441.184(b)(1)",
+        "§460.84(b)(1)",
+        "§482.15(a)(4)",
+        "§482.15(b)(1)",
+        "§482.41(a)(1)",
+        "§483.10(i)(6)",
+        "§483.35(i)",
+        "§483.475(b)(1)",
+        "§483.73(b)(1)",
+        "§485.625(b)(1)",
+        "§494.40(a)(4)"
       ],
       "provider_types": [
         "CAH",
@@ -1638,7 +1638,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)(6)(iii)"
+            "§418.113(b)(6)(iii)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -1705,7 +1705,7 @@
       "raw_tag": "E-0016",
       "canonical_tag": "E-0016",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1575,
         "end_line": 1641,
@@ -1717,8 +1717,8 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7418.113(b)(1)",
-        "\u00a7418.113(c)"
+        "§418.113(b)(1)",
+        "§418.113(c)"
       ],
       "provider_types": [
         "Hospice"
@@ -1744,7 +1744,7 @@
       "raw_tag": "E-0017",
       "canonical_tag": "E-0017",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1642,
         "end_line": 1695,
@@ -1756,8 +1756,8 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7484.102(b)(1)",
-        "\u00a7484.55"
+        "§484.102(b)(1)",
+        "§484.55"
       ],
       "provider_types": [
         "HHA"
@@ -1783,7 +1783,7 @@
       "raw_tag": "E-0018",
       "canonical_tag": "E-0018",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1696,
         "end_line": 1809,
@@ -1795,26 +1795,26 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)(2)",
-        "\u00a7416.54(b)(1)",
-        "\u00a7418.113(b)(6)",
-        "\u00a7418.113(b)(6)(ii)",
-        "\u00a7441.184(b)",
-        "\u00a7441.184(b)(2)",
-        "\u00a7460.84(b)",
-        "\u00a7460.84(b)(2)",
-        "\u00a7482.15(b)(2)",
-        "\u00a7483.475(b)",
-        "\u00a7483.475(b)(2)",
-        "\u00a7483.73(b)",
-        "\u00a7483.73(b)(2)",
-        "\u00a7485.625(b)(2)",
-        "\u00a7485.920(b)",
-        "\u00a7485.920(b)(1)",
-        "\u00a7486.360(b)",
-        "\u00a7486.360(b)(1)",
-        "\u00a7494.62(b)",
-        "\u00a7494.62(b)(1)"
+        "§403.748(b)(2)",
+        "§416.54(b)(1)",
+        "§418.113(b)(6)",
+        "§418.113(b)(6)(ii)",
+        "§441.184(b)",
+        "§441.184(b)(2)",
+        "§460.84(b)",
+        "§460.84(b)(2)",
+        "§482.15(b)(2)",
+        "§483.475(b)",
+        "§483.475(b)(2)",
+        "§483.73(b)",
+        "§483.73(b)(2)",
+        "§485.625(b)(2)",
+        "§485.920(b)",
+        "§485.920(b)(1)",
+        "§486.360(b)",
+        "§486.360(b)(1)",
+        "§494.62(b)",
+        "§494.62(b)(1)"
       ],
       "provider_types": [
         "ASC",
@@ -1865,10 +1865,10 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7441.184(b)",
-            "\u00a7460.84(b)",
-            "\u00a7483.475(b)",
-            "\u00a7483.73(b)"
+            "§441.184(b)",
+            "§460.84(b)",
+            "§483.475(b)",
+            "§483.73(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID, LTC Facility, PACE, PRTF",
@@ -1903,7 +1903,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)(6)"
+            "§418.113(b)(6)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -1938,7 +1938,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.920(b)"
+            "§485.920(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CMHC",
@@ -1973,7 +1973,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7486.360(b)"
+            "§486.360(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPO",
@@ -2008,7 +2008,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7494.62(b)"
+            "§494.62(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ESRD",
@@ -2039,7 +2039,7 @@
       "raw_tag": "E-0019",
       "canonical_tag": "E-0019",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1810,
         "end_line": 1878,
@@ -2051,9 +2051,9 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7418.113(b)(2)",
-        "\u00a7460.84(b)(4)",
-        "\u00a7484.102(b)(2)"
+        "§418.113(b)(2)",
+        "§460.84(b)(4)",
+        "§484.102(b)(2)"
       ],
       "provider_types": [
         "HHA",
@@ -2062,7 +2062,7 @@
       ],
       "ltc_relevant": false,
       "applicability_notes": [
-        "NOTE: The regulatory language for hospices under \u00a7418.113(b)(2) does not include",
+        "NOTE: The regulatory language for hospices under §418.113(b)(2) does not include",
         "NOTE: This only applies to homebound Hospice, PACE and HHAs."
       ],
       "segments": [
@@ -2095,9 +2095,9 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)(2)",
-            "\u00a7460.84(b)(4)",
-            "\u00a7484.102(b)(2)"
+            "§418.113(b)(2)",
+            "§460.84(b)(4)",
+            "§484.102(b)(2)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "HHA, Hospice, PACE",
@@ -2122,7 +2122,7 @@
       "raw_tag": "E-0020",
       "canonical_tag": "E-0020",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 1879,
         "end_line": 2003,
@@ -2134,21 +2134,21 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)(3)",
-        "\u00a7416.54(b)(2)",
-        "\u00a7418.113(b)(6)(ii)",
-        "\u00a7441.184(b)(3)",
-        "\u00a7460.84(b)(3)",
-        "\u00a7482.13(c)(2)",
-        "\u00a7482.15(b)(3)",
-        "\u00a7483.475(b)(3)",
-        "\u00a7483.73(b)(3)",
-        "\u00a7485.625(b)(3)",
-        "\u00a7485.68(b)(1)",
-        "\u00a7485.727(b)(1)",
-        "\u00a7485.920(b)(2)",
-        "\u00a7491.12(b)(1)",
-        "\u00a7494.62(b)(2)"
+        "§403.748(b)(3)",
+        "§416.54(b)(2)",
+        "§418.113(b)(6)(ii)",
+        "§441.184(b)(3)",
+        "§460.84(b)(3)",
+        "§482.13(c)(2)",
+        "§482.15(b)(3)",
+        "§483.475(b)(3)",
+        "§483.73(b)(3)",
+        "§485.625(b)(3)",
+        "§485.68(b)(1)",
+        "§485.727(b)(1)",
+        "§485.920(b)(2)",
+        "§491.12(b)(1)",
+        "§494.62(b)(2)"
       ],
       "provider_types": [
         "ASC",
@@ -2169,7 +2169,7 @@
       "ltc_relevant": true,
       "applicability_notes": [
         "NOTE: This does not apply to HHAs, OPOs, and Transplant Programs.",
-        "NOTE: The requirements under \u00a7418.113(b)(6)(ii) is not a requirement for"
+        "NOTE: The requirements under §418.113(b)(6)(ii) is not a requirement for"
       ],
       "segments": [
         {
@@ -2201,8 +2201,8 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(b)(3)",
-            "\u00a7416.54(b)(2)"
+            "§403.748(b)(3)",
+            "§416.54(b)(2)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC, RNHCI",
@@ -2237,9 +2237,9 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.68(b)(1)",
-            "\u00a7485.727(b)(1)",
-            "\u00a7494.62(b)(2)"
+            "§485.68(b)(1)",
+            "§485.727(b)(1)",
+            "§494.62(b)(2)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CORF, ESRD, OPT/OSP",
@@ -2274,7 +2274,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7491.12(b)(1)"
+            "§491.12(b)(1)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RHC/FQHC",
@@ -2405,7 +2405,7 @@
       "raw_tag": "E-0021",
       "canonical_tag": "E-0021",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2004,
         "end_line": 2062,
@@ -2417,8 +2417,8 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7418.113(c)",
-        "\u00a7484.102(b)(3)"
+        "§418.113(c)",
+        "§484.102(b)(3)"
       ],
       "provider_types": [
         "HHA",
@@ -2545,7 +2545,7 @@
       "raw_tag": "E-0022",
       "canonical_tag": "E-0022",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2063,
         "end_line": 2120,
@@ -2557,21 +2557,21 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)(4)",
-        "\u00a7416.54(b)(3)",
-        "\u00a7418.113(b)",
-        "\u00a7418.113(b)(6)(i)",
-        "\u00a7441.184(b)(4)",
-        "\u00a7460.84(b)(5)",
-        "\u00a7482.15(b)(4)",
-        "\u00a7483.475(b)(4)",
-        "\u00a7483.73(b)(4)",
-        "\u00a7485.625(b)(4)",
-        "\u00a7485.68(b)(2)",
-        "\u00a7485.727(b)(2)",
-        "\u00a7485.920(b)(3)",
-        "\u00a7491.12(b)(2)",
-        "\u00a7494.62(b)(3)"
+        "§403.748(b)(4)",
+        "§416.54(b)(3)",
+        "§418.113(b)",
+        "§418.113(b)(6)(i)",
+        "§441.184(b)(4)",
+        "§460.84(b)(5)",
+        "§482.15(b)(4)",
+        "§483.475(b)(4)",
+        "§483.73(b)(4)",
+        "§485.625(b)(4)",
+        "§485.68(b)(2)",
+        "§485.727(b)(2)",
+        "§485.920(b)(3)",
+        "§491.12(b)(2)",
+        "§494.62(b)(3)"
       ],
       "provider_types": [
         "ASC",
@@ -2623,7 +2623,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)"
+            "§418.113(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -2654,7 +2654,7 @@
       "raw_tag": "E-0023",
       "canonical_tag": "E-0023",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2121,
         "end_line": 2173,
@@ -2666,25 +2666,25 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)",
-        "\u00a7403.748(b)(5)",
-        "\u00a7416.54(b)(4)",
-        "\u00a7418.113(b)(3)",
-        "\u00a7441.184(b)(5)",
-        "\u00a7460.84(b)(6)",
-        "\u00a7482.15(b)(5)",
-        "\u00a7483.475(b)(5)",
-        "\u00a7483.73(b)(5)",
-        "\u00a7484.102(b)(4)",
-        "\u00a7485.625(b)(5)",
-        "\u00a7485.68(b)(3)",
-        "\u00a7485.727(b)(3)",
-        "\u00a7485.920(b)(4)",
-        "\u00a7486.360",
-        "\u00a7486.360(b)",
-        "\u00a7486.360(b)(2)",
-        "\u00a7491.12(b)(3)",
-        "\u00a7494.62(b)(4)"
+        "§403.748(b)",
+        "§403.748(b)(5)",
+        "§416.54(b)(4)",
+        "§418.113(b)(3)",
+        "§441.184(b)(5)",
+        "§460.84(b)(6)",
+        "§482.15(b)(5)",
+        "§483.475(b)(5)",
+        "§483.73(b)(5)",
+        "§484.102(b)(4)",
+        "§485.625(b)(5)",
+        "§485.68(b)(3)",
+        "§485.727(b)(3)",
+        "§485.920(b)(4)",
+        "§486.360",
+        "§486.360(b)",
+        "§486.360(b)(2)",
+        "§491.12(b)(3)",
+        "§494.62(b)(4)"
       ],
       "provider_types": [
         "ASC",
@@ -2738,7 +2738,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(b)"
+            "§403.748(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -2773,7 +2773,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7486.360(b)"
+            "§486.360(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPO",
@@ -2804,7 +2804,7 @@
       "raw_tag": "E-0024",
       "canonical_tag": "E-0024",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2174,
         "end_line": 2312,
@@ -2816,23 +2816,23 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)",
-        "\u00a7403.748(b)(6)",
-        "\u00a7416.54(b)(5)",
-        "\u00a7418.113(b)",
-        "\u00a7418.113(b)(4)",
-        "\u00a7441.184(b)(6)",
-        "\u00a7460.84(b)(7)",
-        "\u00a7482.15(b)(6)",
-        "\u00a7483.475(b)(6)",
-        "\u00a7483.73(b)(6)",
-        "\u00a7484.102(b)(5)",
-        "\u00a7485.625(b)(6)",
-        "\u00a7485.68(b)(4)",
-        "\u00a7485.727(b)(4)",
-        "\u00a7485.920(b)(5)",
-        "\u00a7491.12(b)(4)",
-        "\u00a7494.62(b)(5)"
+        "§403.748(b)",
+        "§403.748(b)(6)",
+        "§416.54(b)(5)",
+        "§418.113(b)",
+        "§418.113(b)(4)",
+        "§441.184(b)(6)",
+        "§460.84(b)(7)",
+        "§482.15(b)(6)",
+        "§483.475(b)(6)",
+        "§483.73(b)(6)",
+        "§484.102(b)(5)",
+        "§485.625(b)(6)",
+        "§485.68(b)(4)",
+        "§485.727(b)(4)",
+        "§485.920(b)(5)",
+        "§491.12(b)(4)",
+        "§494.62(b)(5)"
       ],
       "provider_types": [
         "ASC",
@@ -2886,7 +2886,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(b)"
+            "§403.748(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -2921,7 +2921,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)"
+            "§418.113(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -3052,7 +3052,7 @@
       "raw_tag": "E-0025",
       "canonical_tag": "E-0025",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2313,
         "end_line": 2391,
@@ -3064,26 +3064,26 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)",
-        "\u00a7403.748(b)(7)",
-        "\u00a7418.113(b)",
-        "\u00a7418.113(b)(5)",
-        "\u00a7441.184",
-        "\u00a7441.184(b)(7)",
-        "\u00a7460.84(b)",
-        "\u00a7460.84(b)(8)",
-        "\u00a7482.15(b)",
-        "\u00a7482.15(b)(7)",
-        "\u00a7483.475(b)",
-        "\u00a7483.475(b)(7)",
-        "\u00a7483.73(b)",
-        "\u00a7483.73(b)(7)",
-        "\u00a7485.625(b)(7)",
-        "\u00a7485.920(b)",
-        "\u00a7485.920(b)(6)",
-        "\u00a7486.625(b)",
-        "\u00a7494.62(b)",
-        "\u00a7494.62(b)(6)"
+        "§403.748(b)",
+        "§403.748(b)(7)",
+        "§418.113(b)",
+        "§418.113(b)(5)",
+        "§441.184",
+        "§441.184(b)(7)",
+        "§460.84(b)",
+        "§460.84(b)(8)",
+        "§482.15(b)",
+        "§482.15(b)(7)",
+        "§483.475(b)",
+        "§483.475(b)(7)",
+        "§483.73(b)",
+        "§483.73(b)(7)",
+        "§485.625(b)(7)",
+        "§485.920(b)",
+        "§485.920(b)(6)",
+        "§486.625(b)",
+        "§494.62(b)",
+        "§494.62(b)(6)"
       ],
       "provider_types": [
         "CAH",
@@ -3099,7 +3099,7 @@
       ],
       "ltc_relevant": true,
       "applicability_notes": [
-        "NOTE: The differences for some providers and suppliers between \u201cand\u201d and \u201cor\u201d",
+        "NOTE: The differences for some providers and suppliers between “and” and “or”",
         "NOTE: This does not apply to ASCs, Transplant Programs, HHAs, CORFs, Clinics,"
       ],
       "segments": [
@@ -3132,10 +3132,10 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(b)",
-            "\u00a7441.184",
-            "\u00a7482.15(b)",
-            "\u00a7483.73(b)"
+            "§418.113(b)",
+            "§441.184",
+            "§482.15(b)",
+            "§483.73(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice, Hospital, LTC Facility, PRTF",
@@ -3170,11 +3170,11 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7460.84(b)",
-            "\u00a7483.475(b)",
-            "\u00a7485.920(b)",
-            "\u00a7486.625(b)",
-            "\u00a7494.62(b)"
+            "§460.84(b)",
+            "§483.475(b)",
+            "§485.920(b)",
+            "§486.625(b)",
+            "§494.62(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH, CMHC, ESRD, ICF/IID, PACE",
@@ -3209,7 +3209,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(b)"
+            "§403.748(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -3340,7 +3340,7 @@
       "raw_tag": "E-0026",
       "canonical_tag": "E-0026",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2392,
         "end_line": 2548,
@@ -3352,18 +3352,18 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(b)",
-        "\u00a7403.748(b)(8)",
-        "\u00a7416.54(b)(6)",
-        "\u00a7418.113(b)(6)(C)(iv)",
-        "\u00a7441.184(b)(8)",
-        "\u00a7460.84(b)(9)",
-        "\u00a7482.15(b)(8)",
-        "\u00a7483.475(b)(8)",
-        "\u00a7483.73(b)(8)",
-        "\u00a7485.625(b)(8)",
-        "\u00a7485.920(b)(7)",
-        "\u00a7494.62(b)(7)"
+        "§403.748(b)",
+        "§403.748(b)(8)",
+        "§416.54(b)(6)",
+        "§418.113(b)(6)(C)(iv)",
+        "§441.184(b)(8)",
+        "§460.84(b)(9)",
+        "§482.15(b)(8)",
+        "§483.475(b)(8)",
+        "§483.73(b)(8)",
+        "§485.625(b)(8)",
+        "§485.920(b)(7)",
+        "§494.62(b)(7)"
       ],
       "provider_types": [
         "ASC",
@@ -3413,7 +3413,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(b)"
+            "§403.748(b)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -3449,7 +3449,7 @@
       "raw_tag": "E-0027",
       "canonical_tag": "E-0027",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2549,
         "end_line": 2573,
@@ -3461,7 +3461,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7494.62(b)(8)"
+        "§494.62(b)(8)"
       ],
       "provider_types": [
         "ESRD"
@@ -3487,7 +3487,7 @@
       "raw_tag": "E-0028",
       "canonical_tag": "E-0028",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2574,
         "end_line": 2645,
@@ -3499,7 +3499,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7494.62(b)(9)"
+        "§494.62(b)(9)"
       ],
       "provider_types": [
         "ESRD"
@@ -3523,7 +3523,7 @@
       "item_type": "support_section",
       "title": "Appendix Z PACE Non-Citable Reference",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2646,
         "end_line": 2672,
@@ -3540,7 +3540,7 @@
       "raw_tag": "E-0029",
       "canonical_tag": "E-0029",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2673,
         "end_line": 2721,
@@ -3552,22 +3552,22 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(c)",
-        "\u00a7416.54(c)",
-        "\u00a7418.113(c)",
-        "\u00a7441.184(c)",
-        "\u00a7460.84(c)",
-        "\u00a7482.15(c)",
-        "\u00a7483.475(c)",
-        "\u00a7483.73(c)",
-        "\u00a7484.102(c)",
-        "\u00a7485.625(c)",
-        "\u00a7485.68(c)",
-        "\u00a7485.727(c)",
-        "\u00a7485.920(c)",
-        "\u00a7486.360(c)",
-        "\u00a7491.12(c)",
-        "\u00a7494.62(c)"
+        "§403.748(c)",
+        "§416.54(c)",
+        "§418.113(c)",
+        "§441.184(c)",
+        "§460.84(c)",
+        "§482.15(c)",
+        "§483.475(c)",
+        "§483.73(c)",
+        "§484.102(c)",
+        "§485.625(c)",
+        "§485.68(c)",
+        "§485.727(c)",
+        "§485.920(c)",
+        "§486.360(c)",
+        "§491.12(c)",
+        "§494.62(c)"
       ],
       "provider_types": [
         "ASC",
@@ -3734,7 +3734,7 @@
       "raw_tag": "E-0030",
       "canonical_tag": "E-0030",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2722,
         "end_line": 2847,
@@ -3746,30 +3746,30 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(c)",
-        "\u00a7403.748(c)(1)",
-        "\u00a7416.45(c)",
-        "\u00a7416.54(c)(1)",
-        "\u00a7418.113(c)",
-        "\u00a7418.113(c)(1)",
-        "\u00a7441.184(c)(1)",
-        "\u00a7460.84(c)(1)",
-        "\u00a7482.15(c)",
-        "\u00a7482.15(c)(1)",
-        "\u00a7483.475(c)(1)",
-        "\u00a7483.73(c)(1)",
-        "\u00a7484.102(c)",
-        "\u00a7484.102(c)(1)",
-        "\u00a7484.60",
-        "\u00a7485.625(c)",
-        "\u00a7485.625(c)(1)",
-        "\u00a7485.68(c)(1)",
-        "\u00a7485.727(c)(1)",
-        "\u00a7485.920(c)(1)",
-        "\u00a7486.360(c)",
-        "\u00a7486.360(c)(1)",
-        "\u00a7491.12(c)(1)",
-        "\u00a7494.62(c)(1)"
+        "§403.748(c)",
+        "§403.748(c)(1)",
+        "§416.45(c)",
+        "§416.54(c)(1)",
+        "§418.113(c)",
+        "§418.113(c)(1)",
+        "§441.184(c)(1)",
+        "§460.84(c)(1)",
+        "§482.15(c)",
+        "§482.15(c)(1)",
+        "§483.475(c)(1)",
+        "§483.73(c)(1)",
+        "§484.102(c)",
+        "§484.102(c)(1)",
+        "§484.60",
+        "§485.625(c)",
+        "§485.625(c)(1)",
+        "§485.68(c)(1)",
+        "§485.727(c)(1)",
+        "§485.920(c)(1)",
+        "§486.360(c)",
+        "§486.360(c)(1)",
+        "§491.12(c)(1)",
+        "§494.62(c)(1)"
       ],
       "provider_types": [
         "ASC",
@@ -3792,7 +3792,7 @@
       "ltc_relevant": true,
       "applicability_notes": [
         "NOTE: This does not apply to Transplant Programs.",
-        "NOTE: For Home Health Agencies, contact information should also include patient\u2019s"
+        "NOTE: For Home Health Agencies, contact information should also include patient’s"
       ],
       "segments": [
         {
@@ -3824,8 +3824,8 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7482.15(c)",
-            "\u00a7485.625(c)"
+            "§482.15(c)",
+            "§485.625(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH, Hospital",
@@ -3860,7 +3860,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(c)"
+            "§403.748(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -3895,7 +3895,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7416.45(c)"
+            "§416.45(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC",
@@ -3930,7 +3930,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(c)"
+            "§418.113(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -3965,7 +3965,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7484.102(c)"
+            "§484.102(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "HHA",
@@ -4000,7 +4000,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7486.360(c)"
+            "§486.360(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPO",
@@ -4053,7 +4053,7 @@
       "raw_tag": "E-0031",
       "canonical_tag": "E-0031",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2848,
         "end_line": 2911,
@@ -4065,24 +4065,24 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(c)(2)",
-        "\u00a7416.54(c)(2)",
-        "\u00a7418.113(c)(2)",
-        "\u00a7441.184(c)(2)",
-        "\u00a7460.84(c)(2)",
-        "\u00a7482.15(c)(2)",
-        "\u00a7483.475(c)",
-        "\u00a7483.475(c)(2)",
-        "\u00a7483.73(c)",
-        "\u00a7483.73(c)(2)",
-        "\u00a7484.102(c)(2)",
-        "\u00a7485.625(c)(2)",
-        "\u00a7485.68(c)(2)",
-        "\u00a7485.727(c)(2)",
-        "\u00a7485.920(c)(2)",
-        "\u00a7486.360(c)(2)",
-        "\u00a7491.12(c)(2)",
-        "\u00a7494.62(c)(2)"
+        "§403.748(c)(2)",
+        "§416.54(c)(2)",
+        "§418.113(c)(2)",
+        "§441.184(c)(2)",
+        "§460.84(c)(2)",
+        "§482.15(c)(2)",
+        "§483.475(c)",
+        "§483.475(c)(2)",
+        "§483.73(c)",
+        "§483.73(c)(2)",
+        "§484.102(c)(2)",
+        "§485.625(c)(2)",
+        "§485.68(c)(2)",
+        "§485.727(c)(2)",
+        "§485.920(c)(2)",
+        "§486.360(c)(2)",
+        "§491.12(c)(2)",
+        "§494.62(c)(2)"
       ],
       "provider_types": [
         "ASC",
@@ -4137,7 +4137,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(c)"
+            "§483.73(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -4172,7 +4172,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.475(c)"
+            "§483.475(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -4224,7 +4224,7 @@
       "raw_tag": "E-0032",
       "canonical_tag": "E-0032",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2912,
         "end_line": 2983,
@@ -4236,23 +4236,23 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(c)(3)",
-        "\u00a7416.54(c)(3)",
-        "\u00a7418.113(c)(3)",
-        "\u00a7441.184(c)(3)",
-        "\u00a7460.84(c)(3)",
-        "\u00a7482.15(c)(3)",
-        "\u00a7483.475(c)",
-        "\u00a7483.475(c)(3)",
-        "\u00a7483.73(c)(3)",
-        "\u00a7484.102(c)(3)",
-        "\u00a7485.625(c)(3)",
-        "\u00a7485.68(c)(3)",
-        "\u00a7485.727(c)(3)",
-        "\u00a7485.920(c)(3)",
-        "\u00a7486.360(c)(3)",
-        "\u00a7491.12(c)(3)",
-        "\u00a7494.62(c)(3)"
+        "§403.748(c)(3)",
+        "§416.54(c)(3)",
+        "§418.113(c)(3)",
+        "§441.184(c)(3)",
+        "§460.84(c)(3)",
+        "§482.15(c)(3)",
+        "§483.475(c)",
+        "§483.475(c)(3)",
+        "§483.73(c)(3)",
+        "§484.102(c)(3)",
+        "§485.625(c)(3)",
+        "§485.68(c)(3)",
+        "§485.727(c)(3)",
+        "§485.920(c)(3)",
+        "§486.360(c)(3)",
+        "§491.12(c)(3)",
+        "§494.62(c)(3)"
       ],
       "provider_types": [
         "ASC",
@@ -4306,7 +4306,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.475(c)"
+            "§483.475(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -4394,7 +4394,7 @@
       "raw_tag": "E-0033",
       "canonical_tag": "E-0033",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 2984,
         "end_line": 3079,
@@ -4406,28 +4406,28 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7164.510",
-        "\u00a7164.510(b)(1)(ii)",
-        "\u00a7164.510(b)(4)",
-        "\u00a7403.748(c)",
-        "\u00a7403.748(c)(4)",
-        "\u00a7416.54(c)(4)",
-        "\u00a7418.113(c)(4)",
-        "\u00a7441.184(c)(4)",
-        "\u00a7460.84(c)(4)",
-        "\u00a7482.15(c)(4)",
-        "\u00a7483.475(c)(4)",
-        "\u00a7483.73(c)(4)",
-        "\u00a7484.102(c)",
-        "\u00a7484.102(c)(4)",
-        "\u00a7485.625(c)(4)",
-        "\u00a7485.68(c)",
-        "\u00a7485.68(c)(4)",
-        "\u00a7485.727(c)(4)",
-        "\u00a7485.920(c)(4)",
-        "\u00a7491.12(c)",
-        "\u00a7491.12(c)(4)",
-        "\u00a7494.62(c)(4)"
+        "§164.510",
+        "§164.510(b)(1)(ii)",
+        "§164.510(b)(4)",
+        "§403.748(c)",
+        "§403.748(c)(4)",
+        "§416.54(c)(4)",
+        "§418.113(c)(4)",
+        "§441.184(c)(4)",
+        "§460.84(c)(4)",
+        "§482.15(c)(4)",
+        "§483.475(c)(4)",
+        "§483.73(c)(4)",
+        "§484.102(c)",
+        "§484.102(c)(4)",
+        "§485.625(c)(4)",
+        "§485.68(c)",
+        "§485.68(c)(4)",
+        "§485.727(c)(4)",
+        "§485.920(c)(4)",
+        "§491.12(c)",
+        "§491.12(c)(4)",
+        "§494.62(c)(4)"
       ],
       "provider_types": [
         "ASC",
@@ -4448,7 +4448,7 @@
       ],
       "ltc_relevant": true,
       "applicability_notes": [
-        "NOTE: For RHCs/FQHC\u2019s the regulatory language differs under (c)(4).",
+        "NOTE: For RHCs/FQHC’s the regulatory language differs under (c)(4).",
         "NOTE: This does not apply to Transplant Programs."
       ],
       "segments": [
@@ -4481,7 +4481,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748(c)"
+            "§403.748(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RNHCI",
@@ -4516,8 +4516,8 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7164.510(b)(4)",
-            "\u00a7491.12(c)"
+            "§164.510(b)(4)",
+            "§491.12(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "RHC/FQHC",
@@ -4580,7 +4580,7 @@
       "raw_tag": "E-0034",
       "canonical_tag": "E-0034",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3080,
         "end_line": 3220,
@@ -4592,24 +4592,24 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748(c)(7)",
-        "\u00a7416.54(c)",
-        "\u00a7416.54(c)(7)",
-        "\u00a7418.113(c)",
-        "\u00a7418.113(c)(7)",
-        "\u00a7441.184(c)(7)",
-        "\u00a7460.84(c)(7)",
-        "\u00a7482.15(c)(7)",
-        "\u00a7483.475(c)(7)",
-        "\u00a7483.73(c)(7)",
-        "\u00a7484.102(c)(6)",
-        "\u00a7485.625(c)(7)",
-        "\u00a7485.68(c)(5)",
-        "\u00a7485.727(c)(5)",
-        "\u00a7485.920(c)(7)",
-        "\u00a7491.12",
-        "\u00a7491.12(c)(5)",
-        "\u00a7494.62(c)(7)"
+        "§403.748(c)(7)",
+        "§416.54(c)",
+        "§416.54(c)(7)",
+        "§418.113(c)",
+        "§418.113(c)(7)",
+        "§441.184(c)(7)",
+        "§460.84(c)(7)",
+        "§482.15(c)(7)",
+        "§483.475(c)(7)",
+        "§483.73(c)(7)",
+        "§484.102(c)(6)",
+        "§485.625(c)(7)",
+        "§485.68(c)(5)",
+        "§485.727(c)(5)",
+        "§485.920(c)(7)",
+        "§491.12",
+        "§491.12(c)(5)",
+        "§494.62(c)(7)"
       ],
       "provider_types": [
         "ASC",
@@ -4664,7 +4664,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7416.54(c)"
+            "§416.54(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC",
@@ -4699,7 +4699,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(c)"
+            "§418.113(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -4762,7 +4762,7 @@
       "raw_tag": "E-0035",
       "canonical_tag": "E-0035",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3221,
         "end_line": 3267,
@@ -4774,10 +4774,10 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7483.475(c)",
-        "\u00a7483.475(c)(8)",
-        "\u00a7483.73(c)",
-        "\u00a7483.73(c)(8)"
+        "§483.475(c)",
+        "§483.475(c)(8)",
+        "§483.73(c)",
+        "§483.73(c)(8)"
       ],
       "provider_types": [
         "ICF/IID",
@@ -4817,7 +4817,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(c)"
+            "§483.73(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -4852,7 +4852,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.475(c)"
+            "§483.475(c)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -4906,7 +4906,7 @@
       "raw_tag": "E-0036",
       "canonical_tag": "E-0036",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3268,
         "end_line": 3384,
@@ -4918,36 +4918,36 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748",
-        "\u00a7403.748(d)",
-        "\u00a7416.54",
-        "\u00a7416.54(d)",
-        "\u00a7418.113",
-        "\u00a7418.113(d)",
-        "\u00a7441.184",
-        "\u00a7441.184(d)",
-        "\u00a7460.84",
-        "\u00a7460.84(d)",
-        "\u00a7482.15",
-        "\u00a7482.15(d)",
-        "\u00a7483.470(i)",
-        "\u00a7483.475(d)",
-        "\u00a7483.73(d)",
-        "\u00a7484.102",
-        "\u00a7484.102(d)",
-        "\u00a7485.625(d)",
-        "\u00a7485.68",
-        "\u00a7485.68(d)",
-        "\u00a7485.727",
-        "\u00a7485.727(d)",
-        "\u00a7485.920",
-        "\u00a7485.920(d)",
-        "\u00a7486.360",
-        "\u00a7486.360(d)",
-        "\u00a7486.625",
-        "\u00a7491.12",
-        "\u00a7491.12(d)",
-        "\u00a7494.62(d)"
+        "§403.748",
+        "§403.748(d)",
+        "§416.54",
+        "§416.54(d)",
+        "§418.113",
+        "§418.113(d)",
+        "§441.184",
+        "§441.184(d)",
+        "§460.84",
+        "§460.84(d)",
+        "§482.15",
+        "§482.15(d)",
+        "§483.470(i)",
+        "§483.475(d)",
+        "§483.73(d)",
+        "§484.102",
+        "§484.102(d)",
+        "§485.625(d)",
+        "§485.68",
+        "§485.68(d)",
+        "§485.727",
+        "§485.727(d)",
+        "§485.920",
+        "§485.920(d)",
+        "§486.360",
+        "§486.360(d)",
+        "§486.625",
+        "§491.12",
+        "§491.12(d)",
+        "§494.62(d)"
       ],
       "provider_types": [
         "ASC",
@@ -5001,19 +5001,19 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748",
-            "\u00a7416.54",
-            "\u00a7418.113",
-            "\u00a7441.184",
-            "\u00a7460.84",
-            "\u00a7482.15",
-            "\u00a7484.102",
-            "\u00a7485.68",
-            "\u00a7485.727",
-            "\u00a7485.920",
-            "\u00a7486.360",
-            "\u00a7486.625",
-            "\u00a7491.12"
+            "§403.748",
+            "§416.54",
+            "§418.113",
+            "§441.184",
+            "§460.84",
+            "§482.15",
+            "§484.102",
+            "§485.68",
+            "§485.727",
+            "§485.920",
+            "§486.360",
+            "§486.625",
+            "§491.12"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC, CMHC, CORF, HHA, Hospice, Hospital, OPO, OPT/OSP, PACE, PRTF, RHC/FQHC, RNHCI",
@@ -5048,7 +5048,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(d)"
+            "§483.73(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -5083,8 +5083,8 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.470(i)",
-            "\u00a7483.475(d)"
+            "§483.470(i)",
+            "§483.475(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -5119,7 +5119,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7494.62(d)"
+            "§494.62(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ESRD",
@@ -5175,7 +5175,7 @@
       "raw_tag": "E-0037",
       "canonical_tag": "E-0037",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3385,
         "end_line": 3636,
@@ -5187,36 +5187,36 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748",
-        "\u00a7403.748(d)(1)",
-        "\u00a7416.54",
-        "\u00a7416.54(d)(1)",
-        "\u00a7418.113(d)",
-        "\u00a7418.113(d)(1)",
-        "\u00a7441.184(d)",
-        "\u00a7441.184(d)(1)",
-        "\u00a7460.84(d)",
-        "\u00a7460.84(d)(1)",
-        "\u00a7482.15",
-        "\u00a7482.15(d)(1)",
-        "\u00a7483.475",
-        "\u00a7483.475(d)(1)",
-        "\u00a7483.73(d)",
-        "\u00a7483.73(d)(1)",
-        "\u00a7484.102",
-        "\u00a7484.102(d)(1)",
-        "\u00a7485.625(d)",
-        "\u00a7485.625(d)(1)",
-        "\u00a7485.68(d)",
-        "\u00a7485.68(d)(1)",
-        "\u00a7485.727",
-        "\u00a7485.727(d)(1)",
-        "\u00a7485.920(d)",
-        "\u00a7485.920(d)(1)",
-        "\u00a7486.360",
-        "\u00a7486.360(d)(1)",
-        "\u00a7491.12",
-        "\u00a7491.12(d)(1)"
+        "§403.748",
+        "§403.748(d)(1)",
+        "§416.54",
+        "§416.54(d)(1)",
+        "§418.113(d)",
+        "§418.113(d)(1)",
+        "§441.184(d)",
+        "§441.184(d)(1)",
+        "§460.84(d)",
+        "§460.84(d)(1)",
+        "§482.15",
+        "§482.15(d)(1)",
+        "§483.475",
+        "§483.475(d)(1)",
+        "§483.73(d)",
+        "§483.73(d)(1)",
+        "§484.102",
+        "§484.102(d)(1)",
+        "§485.625(d)",
+        "§485.625(d)(1)",
+        "§485.68(d)",
+        "§485.68(d)(1)",
+        "§485.727",
+        "§485.727(d)(1)",
+        "§485.920(d)",
+        "§485.920(d)(1)",
+        "§486.360",
+        "§486.360(d)(1)",
+        "§491.12",
+        "§491.12(d)(1)"
       ],
       "provider_types": [
         "ASC",
@@ -5270,14 +5270,14 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748",
-            "\u00a7416.54",
-            "\u00a7482.15",
-            "\u00a7483.475",
-            "\u00a7484.102",
-            "\u00a7485.727",
-            "\u00a7486.360",
-            "\u00a7491.12"
+            "§403.748",
+            "§416.54",
+            "§482.15",
+            "§483.475",
+            "§484.102",
+            "§485.727",
+            "§486.360",
+            "§491.12"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC, HHA, Hospital, ICF/IID, OPO, OPT/OSP, RHC/FQHC, RNHCI",
@@ -5312,7 +5312,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(d)"
+            "§418.113(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -5347,7 +5347,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7441.184(d)"
+            "§441.184(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "PRTF",
@@ -5382,7 +5382,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7460.84(d)"
+            "§460.84(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPT/OSP, PACE",
@@ -5417,7 +5417,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(d)"
+            "§483.73(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -5452,7 +5452,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.68(d)"
+            "§485.68(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CORF",
@@ -5487,7 +5487,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.625(d)"
+            "§485.625(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH",
@@ -5522,7 +5522,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7485.920(d)"
+            "§485.920(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CMHC",
@@ -5558,7 +5558,7 @@
       "raw_tag": "E-0038",
       "canonical_tag": "E-0038",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3637,
         "end_line": 3727,
@@ -5570,7 +5570,7 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7494.62(d)(1)"
+        "§494.62(d)(1)"
       ],
       "provider_types": [
         "ESRD"
@@ -5596,7 +5596,7 @@
       "raw_tag": "E-0039",
       "canonical_tag": "E-0039",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 3728,
         "end_line": 4273,
@@ -5608,39 +5608,39 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7403.748",
-        "\u00a7403.748(d)(2)",
-        "\u00a7416.54",
-        "\u00a7416.54(d)(2)",
-        "\u00a7418.113(d)",
-        "\u00a7418.113(d)(2)",
-        "\u00a7441.184(d)",
-        "\u00a7441.184(d)(2)",
-        "\u00a7460.84(d)",
-        "\u00a7460.84(d)(2)",
-        "\u00a7482.15(d)",
-        "\u00a7482.15(d)(1)",
-        "\u00a7482.15(d)(2)",
-        "\u00a7483.475(d)",
-        "\u00a7483.475(d)(2)",
-        "\u00a7483.73(d)",
-        "\u00a7483.73(d)(2)",
-        "\u00a7484.102",
-        "\u00a7484.102(d)(2)",
-        "\u00a7485.625(d)",
-        "\u00a7485.625(d)(2)",
-        "\u00a7485.68",
-        "\u00a7485.68(d)(2)",
-        "\u00a7485.727",
-        "\u00a7485.727(d)(2)",
-        "\u00a7485.920",
-        "\u00a7485.920(d)(2)",
-        "\u00a7486.360",
-        "\u00a7486.360(d)(2)",
-        "\u00a7491.12",
-        "\u00a7491.12(d)(2)",
-        "\u00a7494.62",
-        "\u00a7494.62(d)(2)"
+        "§403.748",
+        "§403.748(d)(2)",
+        "§416.54",
+        "§416.54(d)(2)",
+        "§418.113(d)",
+        "§418.113(d)(2)",
+        "§441.184(d)",
+        "§441.184(d)(2)",
+        "§460.84(d)",
+        "§460.84(d)(2)",
+        "§482.15(d)",
+        "§482.15(d)(1)",
+        "§482.15(d)(2)",
+        "§483.475(d)",
+        "§483.475(d)(2)",
+        "§483.73(d)",
+        "§483.73(d)(2)",
+        "§484.102",
+        "§484.102(d)(2)",
+        "§485.625(d)",
+        "§485.625(d)(2)",
+        "§485.68",
+        "§485.68(d)(2)",
+        "§485.727",
+        "§485.727(d)(2)",
+        "§485.920",
+        "§485.920(d)(2)",
+        "§486.360",
+        "§486.360(d)(2)",
+        "§491.12",
+        "§491.12(d)(2)",
+        "§494.62",
+        "§494.62(d)(2)"
       ],
       "provider_types": [
         "ASC",
@@ -5696,13 +5696,13 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7403.748",
-            "\u00a7416.54",
-            "\u00a7485.68",
-            "\u00a7485.727",
-            "\u00a7485.920",
-            "\u00a7491.12",
-            "\u00a7494.62"
+            "§403.748",
+            "§416.54",
+            "§485.68",
+            "§485.727",
+            "§485.920",
+            "§491.12",
+            "§494.62"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ASC, CMHC, CORF, ESRD, OPO, OPT/OSP, RHC/FQHC, RNHCI",
@@ -5737,7 +5737,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7418.113(d)"
+            "§418.113(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "Hospice",
@@ -5772,9 +5772,9 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7441.184(d)",
-            "\u00a7482.15(d)",
-            "\u00a7485.625(d)"
+            "§441.184(d)",
+            "§482.15(d)",
+            "§485.625(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH, Hospital, PRTF",
@@ -5809,7 +5809,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7460.84(d)"
+            "§460.84(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "PACE",
@@ -5844,7 +5844,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.73(d)"
+            "§483.73(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "LTC Facility",
@@ -5879,7 +5879,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7483.475(d)"
+            "§483.475(d)"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "ICF/IID",
@@ -5914,7 +5914,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7484.102"
+            "§484.102"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "HHA",
@@ -5949,7 +5949,7 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7486.360"
+            "§486.360"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "OPO",
@@ -5997,7 +5997,7 @@
       "raw_tag": "E-0040",
       "canonical_tag": "E-0040",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4274,
         "end_line": 4312,
@@ -6009,8 +6009,8 @@
       "effective_date": "06-09-17",
       "implementation_date": "06-09-17",
       "citations": [
-        "\u00a7494.62(d)(1)",
-        "\u00a7494.62(d)(3)"
+        "§494.62(d)(1)",
+        "§494.62(d)(3)"
       ],
       "provider_types": [
         "ESRD"
@@ -6036,7 +6036,7 @@
       "raw_tag": "E-0041",
       "canonical_tag": "E-0041",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4313,
         "end_line": 4527,
@@ -6048,22 +6048,22 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7482.15(e)",
-        "\u00a7482.15(e)(1)",
-        "\u00a7482.15(e)(2)",
-        "\u00a7482.15(e)(3)",
-        "\u00a7482.15(h)",
-        "\u00a7483.73(e)",
-        "\u00a7483.73(e)(1)",
-        "\u00a7483.73(e)(2)",
-        "\u00a7483.73(e)(3)",
-        "\u00a7483.73(g)",
-        "\u00a7485.625(e)",
-        "\u00a7485.625(e)(1)",
-        "\u00a7485.625(e)(2)",
-        "\u00a7485.625(e)(3)",
-        "\u00a7485.625(g)",
-        "\u00a7617.770"
+        "§482.15(e)",
+        "§482.15(e)(1)",
+        "§482.15(e)(2)",
+        "§482.15(e)(3)",
+        "§482.15(h)",
+        "§483.73(e)",
+        "§483.73(e)(1)",
+        "§483.73(e)(2)",
+        "§483.73(e)(3)",
+        "§483.73(g)",
+        "§485.625(e)",
+        "§485.625(e)(1)",
+        "§485.625(e)(2)",
+        "§485.625(e)(3)",
+        "§485.625(g)",
+        "§617.770"
       ],
       "provider_types": [
         "CAH",
@@ -6072,7 +6072,7 @@
       ],
       "ltc_relevant": true,
       "applicability_notes": [
-        "NOTE: For CAHs under \u00a7485.625(e)(2) \u201cmaintenance\u201d is not included in the",
+        "NOTE: For CAHs under §485.625(e)(2) “maintenance” is not included in the",
         "NOTE: Hospitals, CAHs and LTC facilities are required to base their emergency power"
       ],
       "segments": [
@@ -6105,10 +6105,10 @@
             "Transplant Program"
           ],
           "citations": [
-            "\u00a7482.15(h)",
-            "\u00a7483.73(g)",
-            "\u00a7485.625(g)",
-            "\u00a7617.770"
+            "§482.15(h)",
+            "§483.73(g)",
+            "§485.625(g)",
+            "§617.770"
           ],
           "default_view": "collapsed_when_not_applicable",
           "breadcrumb_label": "CAH, Hospital, LTC Facility",
@@ -6161,7 +6161,7 @@
       "raw_tag": "E-0042",
       "canonical_tag": "E-0042",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4528,
         "end_line": 4673,
@@ -6173,32 +6173,32 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7416.54",
-        "\u00a7416.54(e)",
-        "\u00a7418.113",
-        "\u00a7418.113(e)",
-        "\u00a7441.184(e)",
-        "\u00a7460.84",
-        "\u00a7460.84(e)",
-        "\u00a7482.15(f)",
-        "\u00a7482.78(f)",
-        "\u00a7483.475",
-        "\u00a7483.475(e)",
-        "\u00a7483.73(f)",
-        "\u00a7484.102",
-        "\u00a7484.102(e)",
-        "\u00a7485.625(f)",
-        "\u00a7485.68",
-        "\u00a7485.68(e)",
-        "\u00a7485.727",
-        "\u00a7485.727(e)",
-        "\u00a7485.920",
-        "\u00a7485.920(e)",
-        "\u00a7486.360(f)",
-        "\u00a7491.12",
-        "\u00a7491.12(e)",
-        "\u00a7494.62",
-        "\u00a7494.62(e)"
+        "§416.54",
+        "§416.54(e)",
+        "§418.113",
+        "§418.113(e)",
+        "§441.184(e)",
+        "§460.84",
+        "§460.84(e)",
+        "§482.15(f)",
+        "§482.78(f)",
+        "§483.475",
+        "§483.475(e)",
+        "§483.73(f)",
+        "§484.102",
+        "§484.102(e)",
+        "§485.625(f)",
+        "§485.68",
+        "§485.68(e)",
+        "§485.727",
+        "§485.727(e)",
+        "§485.920",
+        "§485.920(e)",
+        "§486.360(f)",
+        "§491.12",
+        "§491.12(e)",
+        "§494.62",
+        "§494.62(e)"
       ],
       "provider_types": [
         "ASC",
@@ -6249,7 +6249,7 @@
       "raw_tag": "E-043",
       "canonical_tag": "E-0043",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4674,
         "end_line": 4715,
@@ -6261,10 +6261,10 @@
       "effective_date": "02-21-20",
       "implementation_date": "02-21-20",
       "citations": [
-        "\u00a7482.15",
-        "\u00a7482.15(g)",
-        "\u00a7482.70",
-        "\u00a7482.78"
+        "§482.15",
+        "§482.15(g)",
+        "§482.70",
+        "§482.78"
       ],
       "provider_types": [
         "Hospital",
@@ -6291,7 +6291,7 @@
       "raw_tag": "E-044",
       "canonical_tag": "E-0044",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4716,
         "end_line": 4757,
@@ -6303,8 +6303,8 @@
       "effective_date": "04-16-21",
       "implementation_date": "04-16-21",
       "citations": [
-        "\u00a7486.344(d)",
-        "\u00a7486.360(e)"
+        "§486.344(d)",
+        "§486.360(e)"
       ],
       "provider_types": [
         "OPO"
@@ -6328,7 +6328,7 @@
       "item_type": "support_section",
       "title": "Appendix Z Transmittals Issued for this Chapter",
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "retained_path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_span": {
         "start_line": 4758,
         "end_line": 4787,

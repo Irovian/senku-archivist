@@ -1,6 +1,6 @@
 {
   "source_id": "SRC-ECFR_42_CFR_PART_483_XML",
-  "path": "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
+  "path": "sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
   "extract_status": "generated",
   "extract_method": "xml_text",
   "warning": null,

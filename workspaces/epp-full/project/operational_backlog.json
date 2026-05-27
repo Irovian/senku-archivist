@@ -14,13 +14,13 @@
       ],
       "candidate_outputs": [
         "document.meta.json retrieval block proposal",
-        "_project/search_index_seed.json expansion plan",
-        "_project/retrieval_index_seed.json prototype",
+        "project/search_index_seed.json expansion plan",
+        "project/retrieval_index_seed.json prototype",
         "retrieval-term review packet"
       ],
       "dependencies": [
         "Current document.meta.json sidecar pilot",
-        "_project/search_index_seed.json",
+        "project/search_index_seed.json",
         "Human review workflow for accepting generated metadata"
       ],
       "acceptance_criteria": [
@@ -43,8 +43,8 @@
         "Policies that mention tools, forms, charts, or companion policies can surface those resources quickly."
       ],
       "candidate_outputs": [
-        "_project/document_graph.json expansion plan",
-        "_project/document_graph_suggestions.json",
+        "project/document_graph.json expansion plan",
+        "project/document_graph_suggestions.json",
         "graph-edge evidence span format",
         "related-document review packet"
       ],
@@ -75,7 +75,7 @@
       ],
       "candidate_outputs": [
         "agentic_rag metadata proposal",
-        "_project/agentic_rag_index_seed.json",
+        "project/agentic_rag_index_seed.json",
         "chunk_id naming convention",
         "safe_outputs vocabulary",
         "requires_context vocabulary"
@@ -107,7 +107,7 @@
       ],
       "candidate_outputs": [
         "education metadata proposal",
-        "_project/education_index_seed.json prototype",
+        "project/education_index_seed.json prototype",
         "training trigger vocabulary",
         "audience and role vocabulary",
         "change-impact prompt templates"
@@ -166,13 +166,13 @@
         "Planning remains grounded in sidecar-first metadata and generated views."
       ],
       "candidate_outputs": [
-        "_project/retrieval_index_seed.json",
-        "_project/document_graph.json",
-        "_project/document_graph_suggestions.json",
-        "_project/education_index_seed.json",
-        "_project/agentic_rag_index_seed.json",
-        "_project/export_index_seed.json",
-        "_project/review_queue_seed.json"
+        "project/retrieval_index_seed.json",
+        "project/document_graph.json",
+        "project/document_graph_suggestions.json",
+        "project/education_index_seed.json",
+        "project/agentic_rag_index_seed.json",
+        "project/export_index_seed.json",
+        "project/review_queue_seed.json"
       ],
       "dependencies": [
         "Retrieval metadata model",

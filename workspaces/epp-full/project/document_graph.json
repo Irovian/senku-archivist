@@ -7,7 +7,7 @@
       "title": "Policy and Organizational Statements",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/policy-and-organizational-statements/document.md",
+      "path": "content/governance-and-planning/policy-and-organizational-statements/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -16,7 +16,7 @@
       "title": "Risk Assessment Process",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/risk-assessment-process/document.md",
+      "path": "content/governance-and-planning/risk-assessment-process/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -25,7 +25,7 @@
       "title": "Mitigation Overview",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/mitigation-overview/document.md",
+      "path": "content/governance-and-planning/mitigation-overview/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -34,7 +34,7 @@
       "title": "Planning Assumptions",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/planning-assumptions/document.md",
+      "path": "content/governance-and-planning/planning-assumptions/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -43,7 +43,7 @@
       "title": "Communications",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/communications/document.md",
+      "path": "content/governance-and-planning/communications/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -52,7 +52,7 @@
       "title": "Resident and Family Information",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/resident-and-family-information/document.md",
+      "path": "content/governance-and-planning/resident-and-family-information/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -61,7 +61,7 @@
       "title": "Continuity of Operations",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/continuity-of-operations/document.md",
+      "path": "content/governance-and-planning/continuity-of-operations/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -70,7 +70,7 @@
       "title": "Role of the Facility under an 1135 Waiver",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/role-of-the-facility-under-an-1135-waiver/document.md",
+      "path": "content/governance-and-planning/role-of-the-facility-under-an-1135-waiver/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -79,7 +79,7 @@
       "title": "Serving as an Alternate Care Site",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/serving-as-an-alternate-care-site/document.md",
+      "path": "content/governance-and-planning/serving-as-an-alternate-care-site/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -88,7 +88,7 @@
       "title": "Shelter in Place Plan",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/shelter-in-place-plan/document.md",
+      "path": "content/governance-and-planning/shelter-in-place-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -97,7 +97,7 @@
       "title": "Loss of Utilities",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/loss-of-utilities/document.md",
+      "path": "content/governance-and-planning/loss-of-utilities/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -106,7 +106,7 @@
       "title": "Authority to Activate the Plan",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/authority-to-activate-the-plan/document.md",
+      "path": "content/governance-and-planning/authority-to-activate-the-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -115,7 +115,7 @@
       "title": "Order of Succession - Incident Command Team",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/order-of-succession-incident-command-team/document.md",
+      "path": "content/governance-and-planning/order-of-succession-incident-command-team/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -124,7 +124,7 @@
       "title": "Disaster Staffing",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/disaster-staffing/document.md",
+      "path": "content/governance-and-planning/disaster-staffing/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -133,7 +133,7 @@
       "title": "Resident Medical Information",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/resident-medical-information/document.md",
+      "path": "content/governance-and-planning/resident-medical-information/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -142,7 +142,7 @@
       "title": "Training and Testing Program",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/training-and-testing-program/document.md",
+      "path": "content/governance-and-planning/training-and-testing-program/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -151,7 +151,7 @@
       "title": "Training",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/training/document.md",
+      "path": "content/governance-and-planning/training/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -160,7 +160,7 @@
       "title": "Annual Testing",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/annual-testing/document.md",
+      "path": "content/governance-and-planning/annual-testing/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -169,7 +169,7 @@
       "title": "Activation of Emergency Operations Plan (EOP)",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/activation-of-emergency-operations-plan-eop/document.md",
+      "path": "content/all-hazards-response/activation-of-emergency-operations-plan-eop/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": true
     },
@@ -178,7 +178,7 @@
       "title": "Emergency Codes",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/emergency-codes/document.md",
+      "path": "content/all-hazards-response/emergency-codes/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -187,7 +187,7 @@
       "title": "Activation of the Incident Command System",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/activation-of-the-incident-command-system/document.md",
+      "path": "content/all-hazards-response/activation-of-the-incident-command-system/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -196,7 +196,7 @@
       "title": "Communications Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/communications-plan/document.md",
+      "path": "content/all-hazards-response/communications-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -205,7 +205,7 @@
       "title": "Internal Communications During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/internal-communications-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/internal-communications-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -214,7 +214,7 @@
       "title": "External Communications During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/external-communications-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/external-communications-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -223,7 +223,7 @@
       "title": "Managing Resources and Assets",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-resources-and-assets/document.md",
+      "path": "content/all-hazards-response/managing-resources-and-assets/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -232,7 +232,7 @@
       "title": "Responsibilities for Ensuring Critical Supplies and Activities",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/responsibilities-for-ensuring-critical-supplies-and-activities/document.md",
+      "path": "content/all-hazards-response/responsibilities-for-ensuring-critical-supplies-and-activities/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -241,7 +241,7 @@
       "title": "Baseline Assessment of 96 Hr. Capabilities",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/baseline-assessment-of-96-hr-capabilities/document.md",
+      "path": "content/all-hazards-response/baseline-assessment-of-96-hr-capabilities/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -250,7 +250,7 @@
       "title": "Managing Security and Safety During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-security-and-safety-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-security-and-safety-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -259,7 +259,7 @@
       "title": "Building Lockdown",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/building-lockdown/document.md",
+      "path": "content/all-hazards-response/building-lockdown/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -268,7 +268,7 @@
       "title": "Management of Staff During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/management-of-staff-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/management-of-staff-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -277,7 +277,7 @@
       "title": "Notification of Off-Duty Staff / Disaster Staffing Options",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/notification-of-off-duty-staff-disaster-staffing-options/document.md",
+      "path": "content/all-hazards-response/notification-of-off-duty-staff-disaster-staffing-options/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -286,7 +286,7 @@
       "title": "Staff Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-sheltering/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -295,7 +295,7 @@
       "title": "Staff Family Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-family-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-family-sheltering/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -304,7 +304,7 @@
       "title": "Staff Pet Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-pet-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-pet-sheltering/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -313,7 +313,7 @@
       "title": "Critical Incident Stress Debriefing (CISD) for Staff",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/critical-incident-stress-debriefing-cisd-for-staff/document.md",
+      "path": "content/all-hazards-response/critical-incident-stress-debriefing-cisd-for-staff/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -322,7 +322,7 @@
       "title": "Emergency Credentialing Program",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/emergency-credentialing-program/document.md",
+      "path": "content/all-hazards-response/emergency-credentialing-program/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -331,7 +331,7 @@
       "title": "Loss of Parking / Inability to Commute to Facility",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/loss-of-parking-inability-to-commute-to-facility/document.md",
+      "path": "content/all-hazards-response/loss-of-parking-inability-to-commute-to-facility/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -340,7 +340,7 @@
       "title": "Managing Utilities During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-utilities-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-utilities-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -349,7 +349,7 @@
       "title": "Managing Residents During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-residents-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-residents-during-a-disaster/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -358,7 +358,7 @@
       "title": "Census Reduction Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/census-reduction-plan/document.md",
+      "path": "content/all-hazards-response/census-reduction-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -367,7 +367,7 @@
       "title": "Morgue / Mass Fatality Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/morgue-mass-fatality-plan/document.md",
+      "path": "content/all-hazards-response/morgue-mass-fatality-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -376,7 +376,7 @@
       "title": "Surge Capacity Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/surge-capacity-plan/document.md",
+      "path": "content/all-hazards-response/surge-capacity-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -385,7 +385,7 @@
       "title": "Concept of Operations",
       "content_group": "incident-command",
       "content_type": "topic_document",
-      "path": "_content/incident-command/concept-of-operations/document.md",
+      "path": "content/incident-command/concept-of-operations/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -394,7 +394,7 @@
       "title": "Activation of the Incident Command System",
       "content_group": "incident-command",
       "content_type": "topic_document",
-      "path": "_content/incident-command/activation-of-the-incident-command-system/document.md",
+      "path": "content/incident-command/activation-of-the-incident-command-system/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -403,7 +403,7 @@
       "title": "Incident Command System Organizational Chart",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/incident-command-system-organizational-chart/document.md",
+      "path": "content/incident-command/incident-command-system-organizational-chart/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": true
     },
@@ -412,7 +412,7 @@
       "title": "Command Center Organizational Chart",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/command-center-organizational-chart/document.md",
+      "path": "content/incident-command/command-center-organizational-chart/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -421,7 +421,7 @@
       "title": "Job Action Sheets and Associated Forms",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/job-action-sheets-and-associated-forms/document.md",
+      "path": "content/incident-command/job-action-sheets-and-associated-forms/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -430,7 +430,7 @@
       "title": "Incident Commander",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/incident-commander/document.md",
+      "path": "content/incident-command/incident-commander/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -439,7 +439,7 @@
       "title": "Documentation Recorder",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/documentation-recorder/document.md",
+      "path": "content/incident-command/documentation-recorder/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -448,7 +448,7 @@
       "title": "Safety / Security / Liaison Officer",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/safety-security-liaison-officer/document.md",
+      "path": "content/incident-command/safety-security-liaison-officer/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -457,7 +457,7 @@
       "title": "Public Information Officer",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/public-information-officer/document.md",
+      "path": "content/incident-command/public-information-officer/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -466,7 +466,7 @@
       "title": "Logistics Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/logistics-section-chief/document.md",
+      "path": "content/incident-command/logistics-section-chief/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -475,7 +475,7 @@
       "title": "Planning Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/planning-section-chief/document.md",
+      "path": "content/incident-command/planning-section-chief/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -484,7 +484,7 @@
       "title": "Labor Pool Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/labor-pool-unit-leader/document.md",
+      "path": "content/incident-command/labor-pool-unit-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -493,7 +493,7 @@
       "title": "Floor Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/floor-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/floor-evacuation-team-team-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -502,7 +502,7 @@
       "title": "Elevator Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/elevator-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/elevator-evacuation-team-team-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -511,7 +511,7 @@
       "title": "Stairwell Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/stairwell-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/stairwell-evacuation-team-team-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -520,7 +520,7 @@
       "title": "Discharge Floor Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/discharge-floor-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/discharge-floor-evacuation-team-team-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -529,7 +529,7 @@
       "title": "Finance Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/finance-section-chief/document.md",
+      "path": "content/incident-command/finance-section-chief/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -538,7 +538,7 @@
       "title": "Operations Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/operations-section-chief/document.md",
+      "path": "content/incident-command/operations-section-chief/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -547,7 +547,7 @@
       "title": "Nursing Supervisor / Director of Nursing / Charge Nurse / Department Director",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/nursing-supervisor-director-of-nursing-charge-nurse-department-director/document.md",
+      "path": "content/incident-command/nursing-supervisor-director-of-nursing-charge-nurse-department-director/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -556,7 +556,7 @@
       "title": "Triage Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/triage-unit-leader/document.md",
+      "path": "content/incident-command/triage-unit-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -565,7 +565,7 @@
       "title": "Holding Area Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/holding-area-unit-leader/document.md",
+      "path": "content/incident-command/holding-area-unit-leader/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -574,7 +574,7 @@
       "title": "Full Building Evacuation Plan Algorithm",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/full-building-evacuation-plan-algorithm/document.md",
+      "path": "content/evacuation/full-building-evacuation-plan-algorithm/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -583,7 +583,7 @@
       "title": "Introduction",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/introduction/document.md",
+      "path": "content/evacuation/introduction/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -592,7 +592,7 @@
       "title": "Action Plan",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/action-plan/document.md",
+      "path": "content/evacuation/action-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -601,7 +601,7 @@
       "title": "Activation of Plan",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/activation-of-plan/document.md",
+      "path": "content/evacuation/activation-of-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -610,7 +610,7 @@
       "title": "Activate Labor Pool",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/activate-labor-pool/document.md",
+      "path": "content/evacuation/activate-labor-pool/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -619,7 +619,7 @@
       "title": "Transportation (Internal / External)",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/transportation-internal-external/document.md",
+      "path": "content/evacuation/transportation-internal-external/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -628,7 +628,7 @@
       "title": "Census Reduction",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/census-reduction/document.md",
+      "path": "content/evacuation/census-reduction/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -637,7 +637,7 @@
       "title": "Assignment of Resident Evacuation Staff",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/assignment-of-resident-evacuation-staff/document.md",
+      "path": "content/evacuation/assignment-of-resident-evacuation-staff/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -646,7 +646,7 @@
       "title": "Holding Areas",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/holding-areas/document.md",
+      "path": "content/evacuation/holding-areas/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -655,7 +655,7 @@
       "title": "Communications",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/communications/document.md",
+      "path": "content/evacuation/communications/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -664,7 +664,7 @@
       "title": "Evacuation Prioritization",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/evacuation-prioritization/document.md",
+      "path": "content/evacuation/evacuation-prioritization/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -673,7 +673,7 @@
       "title": "Staff and Emergency Services",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/staff-and-emergency-services/document.md",
+      "path": "content/evacuation/staff-and-emergency-services/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -682,7 +682,7 @@
       "title": "Internal Routes of Travel",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/internal-routes-of-travel/document.md",
+      "path": "content/evacuation/internal-routes-of-travel/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -691,7 +691,7 @@
       "title": "Evacuation Order",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/evacuation-order/document.md",
+      "path": "content/evacuation/evacuation-order/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -700,7 +700,7 @@
       "title": "Resident Placement Into Other Facilities",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-placement-into-other-facilities/document.md",
+      "path": "content/evacuation/resident-placement-into-other-facilities/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -709,7 +709,7 @@
       "title": "Resident Medical Records",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-medical-records/document.md",
+      "path": "content/evacuation/resident-medical-records/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -718,7 +718,7 @@
       "title": "Medications and Federally Controlled Substances",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/medications-and-federally-controlled-substances/document.md",
+      "path": "content/evacuation/medications-and-federally-controlled-substances/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -727,7 +727,7 @@
       "title": "Care and Treatment of Evacuees",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/care-and-treatment-of-evacuees/document.md",
+      "path": "content/evacuation/care-and-treatment-of-evacuees/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -736,7 +736,7 @@
       "title": "Resident Personal Belongings",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-personal-belongings/document.md",
+      "path": "content/evacuation/resident-personal-belongings/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -745,7 +745,7 @@
       "title": "Resident Preparation Guide - Independent Living Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-independent-living-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-independent-living-residents/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -754,7 +754,7 @@
       "title": "Resident Preparation Guide - Assisted Living Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-assisted-living-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-assisted-living-residents/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -763,7 +763,7 @@
       "title": "Resident Preparation Guide - Skilled Nursing Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-skilled-nursing-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-skilled-nursing-residents/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -772,7 +772,7 @@
       "title": "Resident Evacuation Tracking Form",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/resident-evacuation-tracking-form/document.md",
+      "path": "content/evacuation/resident-evacuation-tracking-form/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -781,7 +781,7 @@
       "title": "Evacuation Floor Plans",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/evacuation-floor-plans/document.md",
+      "path": "content/evacuation/evacuation-floor-plans/document.md",
       "lifecycle_status": "planned",
       "has_extended_metadata": false
     },
@@ -790,7 +790,7 @@
       "title": "Receiving Facilities for Evacuation",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/receiving-facilities-for-evacuation/document.md",
+      "path": "content/evacuation/receiving-facilities-for-evacuation/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": true
     },
@@ -799,7 +799,7 @@
       "title": "Active Shooter / Person with a Weapon",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/active-shooter-person-with-a-weapon/document.md",
+      "path": "content/hazard-specific-procedures/active-shooter-person-with-a-weapon/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -808,7 +808,7 @@
       "title": "Bioterrorism / Terrorism",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bioterrorism-terrorism/document.md",
+      "path": "content/hazard-specific-procedures/bioterrorism-terrorism/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -817,7 +817,7 @@
       "title": "Bomb Threat / Suspicious Package",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bomb-threat-suspicious-package/document.md",
+      "path": "content/hazard-specific-procedures/bomb-threat-suspicious-package/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -826,7 +826,7 @@
       "title": "Department-Specific Evacuation Guidelines",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/department-specific-evacuation-guidelines/document.md",
+      "path": "content/hazard-specific-procedures/department-specific-evacuation-guidelines/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -835,7 +835,7 @@
       "title": "Building Search Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/building-search-checklist/document.md",
+      "path": "content/hazard-specific-procedures/building-search-checklist/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -844,7 +844,7 @@
       "title": "Bomb Threat Call Log",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bomb-threat-call-log/document.md",
+      "path": "content/hazard-specific-procedures/bomb-threat-call-log/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -853,7 +853,7 @@
       "title": "Carbon Monoxide Alarm Activation",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/carbon-monoxide-alarm-activation/document.md",
+      "path": "content/hazard-specific-procedures/carbon-monoxide-alarm-activation/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -862,7 +862,7 @@
       "title": "Civil Disturbance / Demonstration",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/civil-disturbance-demonstration/document.md",
+      "path": "content/hazard-specific-procedures/civil-disturbance-demonstration/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -871,7 +871,7 @@
       "title": "Contamination of Outside Air",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/contamination-of-outside-air/document.md",
+      "path": "content/hazard-specific-procedures/contamination-of-outside-air/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -880,7 +880,7 @@
       "title": "Data Security Breach - Cyber Attack",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/data-security-breach-cyber-attack/document.md",
+      "path": "content/hazard-specific-procedures/data-security-breach-cyber-attack/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -889,7 +889,7 @@
       "title": "Earthquake",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/earthquake/document.md",
+      "path": "content/hazard-specific-procedures/earthquake/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -898,7 +898,7 @@
       "title": "Emerging Infectious Disease",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/emerging-infectious-disease/document.md",
+      "path": "content/hazard-specific-procedures/emerging-infectious-disease/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -907,7 +907,7 @@
       "title": "Fire",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/fire/document.md",
+      "path": "content/hazard-specific-procedures/fire/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -916,7 +916,7 @@
       "title": "Flood (Internal / External)",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/flood-internal-external/document.md",
+      "path": "content/hazard-specific-procedures/flood-internal-external/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -925,7 +925,7 @@
       "title": "First 24-Hour Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/first-24-hour-checklist/document.md",
+      "path": "content/hazard-specific-procedures/first-24-hour-checklist/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -934,7 +934,7 @@
       "title": "Hazardous Material Spill or Leak",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hazardous-material-spill-or-leak/document.md",
+      "path": "content/hazard-specific-procedures/hazardous-material-spill-or-leak/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -943,7 +943,7 @@
       "title": "Hostage Taking",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hostage-taking/document.md",
+      "path": "content/hazard-specific-procedures/hostage-taking/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -952,7 +952,7 @@
       "title": "Aggressive or Violent Behavior Guide",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/aggressive-or-violent-behavior-guide/document.md",
+      "path": "content/hazard-specific-procedures/aggressive-or-violent-behavior-guide/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -961,7 +961,7 @@
       "title": "Hurricane",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hurricane/document.md",
+      "path": "content/hazard-specific-procedures/hurricane/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -970,7 +970,7 @@
       "title": "Loss of Central Services",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-central-services/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-central-services/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -979,7 +979,7 @@
       "title": "Loss of Air Conditioning / High Heat",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-air-conditioning-high-heat/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-air-conditioning-high-heat/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -988,7 +988,7 @@
       "title": "Loss of Cooking Ability",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-cooking-ability/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-cooking-ability/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -997,7 +997,7 @@
       "title": "Loss of Electric Service",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-electric-service/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-electric-service/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1006,7 +1006,7 @@
       "title": "Loss of Electric Service During Dialysis",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-electric-service-during-dialysis/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-electric-service-during-dialysis/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1015,7 +1015,7 @@
       "title": "Loss of Emergency Generator Power",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-emergency-generator-power/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-emergency-generator-power/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1024,7 +1024,7 @@
       "title": "Loss of Elevator Service",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-elevator-service/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-elevator-service/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1033,7 +1033,7 @@
       "title": "Loss of Fire Protection Systems",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-fire-protection-systems/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-fire-protection-systems/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1042,7 +1042,7 @@
       "title": "Fire Watch Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/fire-watch-checklist/document.md",
+      "path": "content/hazard-specific-procedures/fire-watch-checklist/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1051,7 +1051,7 @@
       "title": "Loss of Heating System",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-heating-system/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-heating-system/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1060,7 +1060,7 @@
       "title": "Loss of Information Technology",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-information-technology/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-information-technology/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1069,7 +1069,7 @@
       "title": "Loss of Natural Gas / Propane",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-natural-gas-propane/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-natural-gas-propane/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1078,7 +1078,7 @@
       "title": "Loss of Oxygen / Vacuum",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-oxygen-vacuum/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-oxygen-vacuum/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1087,7 +1087,7 @@
       "title": "Loss of Sewer / Waste System",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-sewer-waste-system/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-sewer-waste-system/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1096,7 +1096,7 @@
       "title": "Loss of Steam Pressure",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-steam-pressure/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-steam-pressure/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1105,7 +1105,7 @@
       "title": "Loss of Telephone Service / Internal Communications / Nurse Call",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-telephone-service-internal-communications-nurse-call/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-telephone-service-internal-communications-nurse-call/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1114,7 +1114,7 @@
       "title": "Loss of Water Service / Contamination of Water Supply",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-water-service-contamination-of-water-supply/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-water-service-contamination-of-water-supply/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1123,7 +1123,7 @@
       "title": "Loss of Water Service During Dialysis",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-water-service-during-dialysis/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-water-service-during-dialysis/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1132,7 +1132,7 @@
       "title": "Missing Resident",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1141,7 +1141,7 @@
       "title": "Missing Resident Information Sheet",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident-information-sheet/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident-information-sheet/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1150,7 +1150,7 @@
       "title": "Missing Resident Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident-checklist/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident-checklist/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1159,7 +1159,7 @@
       "title": "Natural Gas / Propane Odor / Leak",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/natural-gas-propane-odor-leak/document.md",
+      "path": "content/hazard-specific-procedures/natural-gas-propane-odor-leak/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1168,7 +1168,7 @@
       "title": "Pandemic Emergency Plan",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/pandemic-emergency-plan/document.md",
+      "path": "content/hazard-specific-procedures/pandemic-emergency-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1177,7 +1177,7 @@
       "title": "Security Situation",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/security-situation/document.md",
+      "path": "content/hazard-specific-procedures/security-situation/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1186,7 +1186,7 @@
       "title": "Snow Emergency / Ice Storm",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/snow-emergency-ice-storm/document.md",
+      "path": "content/hazard-specific-procedures/snow-emergency-ice-storm/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1195,7 +1195,7 @@
       "title": "Tornado / High Winds",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/tornado-high-winds/document.md",
+      "path": "content/hazard-specific-procedures/tornado-high-winds/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1204,7 +1204,7 @@
       "title": "Volcanic Eruption",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/volcanic-eruption/document.md",
+      "path": "content/hazard-specific-procedures/volcanic-eruption/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1213,7 +1213,7 @@
       "title": "Wildfire",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/wildfire/document.md",
+      "path": "content/hazard-specific-procedures/wildfire/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1222,7 +1222,7 @@
       "title": "Facility Information Detail",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/facility-information-detail/document.md",
+      "path": "content/resources-and-lists/facility-information-detail/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1231,7 +1231,7 @@
       "title": "Emergency Contacts",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-contacts/document.md",
+      "path": "content/resources-and-lists/emergency-contacts/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1240,7 +1240,7 @@
       "title": "Supply Delivery Location",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/supply-delivery-location/document.md",
+      "path": "content/resources-and-lists/supply-delivery-location/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1249,7 +1249,7 @@
       "title": "Disaster Kit Contents",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/disaster-kit-contents/document.md",
+      "path": "content/resources-and-lists/disaster-kit-contents/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1258,7 +1258,7 @@
       "title": "Emergency Response Agency Phone Numbers",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-response-agency-phone-numbers/document.md",
+      "path": "content/resources-and-lists/emergency-response-agency-phone-numbers/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1267,7 +1267,7 @@
       "title": "External Response Partners Phone Numbers",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/external-response-partners-phone-numbers/document.md",
+      "path": "content/resources-and-lists/external-response-partners-phone-numbers/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1276,7 +1276,7 @@
       "title": "Emergency Bedding Materials",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-bedding-materials/document.md",
+      "path": "content/resources-and-lists/emergency-bedding-materials/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1285,7 +1285,7 @@
       "title": "Emergency Food Supply List",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-food-supply-list/document.md",
+      "path": "content/resources-and-lists/emergency-food-supply-list/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1294,7 +1294,7 @@
       "title": "Emergency Transport Equipment to Move Residents",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-transport-equipment-to-move-residents/document.md",
+      "path": "content/resources-and-lists/emergency-transport-equipment-to-move-residents/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1303,7 +1303,7 @@
       "title": "Elevator Keys",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/elevator-keys/document.md",
+      "path": "content/resources-and-lists/elevator-keys/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1312,7 +1312,7 @@
       "title": "Transportation Resources - Facility Owned Vehicles",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/transportation-resources-facility-owned-vehicles/document.md",
+      "path": "content/resources-and-lists/transportation-resources-facility-owned-vehicles/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1321,7 +1321,7 @@
       "title": "Emergency Utility Shut-Off Locations",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-utility-shut-off-locations/document.md",
+      "path": "content/resources-and-lists/emergency-utility-shut-off-locations/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1330,7 +1330,7 @@
       "title": "Generator Information",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/generator-information/document.md",
+      "path": "content/resources-and-lists/generator-information/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1339,7 +1339,7 @@
       "title": "Vendor Sources of Fuel",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/vendor-sources-of-fuel/document.md",
+      "path": "content/resources-and-lists/vendor-sources-of-fuel/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1348,7 +1348,7 @@
       "title": "Emergency Contractor / Vendor Lists",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-contractor-vendor-lists/document.md",
+      "path": "content/resources-and-lists/emergency-contractor-vendor-lists/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1357,7 +1357,7 @@
       "title": "Recovery Plan Overview",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/recovery-plan-overview/document.md",
+      "path": "content/recovery/recovery-plan-overview/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1366,7 +1366,7 @@
       "title": "Damage and Operational Assessments",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/damage-and-operational-assessments/document.md",
+      "path": "content/recovery/damage-and-operational-assessments/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1375,7 +1375,7 @@
       "title": "Facility System Status Report",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/facility-system-status-report/document.md",
+      "path": "content/recovery/facility-system-status-report/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1384,7 +1384,7 @@
       "title": "Recovery Checklist",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/recovery-checklist/document.md",
+      "path": "content/recovery/recovery-checklist/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1393,7 +1393,7 @@
       "title": "Form 301 - Department Rapid Assessment Form",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/form-301-department-rapid-assessment-form/document.md",
+      "path": "content/recovery/form-301-department-rapid-assessment-form/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1402,7 +1402,7 @@
       "title": "Full Recovery Structure",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/full-recovery-structure/document.md",
+      "path": "content/recovery/full-recovery-structure/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1411,7 +1411,7 @@
       "title": "Utilities Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/utilities-recovery/document.md",
+      "path": "content/recovery/utilities-recovery/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1420,7 +1420,7 @@
       "title": "Food Services Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/food-services-recovery/document.md",
+      "path": "content/recovery/food-services-recovery/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1429,7 +1429,7 @@
       "title": "Resident Services Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/resident-services-recovery/document.md",
+      "path": "content/recovery/resident-services-recovery/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1438,7 +1438,7 @@
       "title": "Information Technology Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/information-technology-recovery/document.md",
+      "path": "content/recovery/information-technology-recovery/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1447,7 +1447,7 @@
       "title": "Staffing Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/staffing-recovery/document.md",
+      "path": "content/recovery/staffing-recovery/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1456,7 +1456,7 @@
       "title": "Appendix A - Hazard Vulnerability Assessment",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-a-hazard-vulnerability-assessment/document.md",
+      "path": "content/appendices/appendix-a-hazard-vulnerability-assessment/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1465,7 +1465,7 @@
       "title": "Appendix B - Mutual Aid Agreements / Memoranda of Understanding",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-b-mutual-aid-agreements-memoranda-of-understanding/document.md",
+      "path": "content/appendices/appendix-b-mutual-aid-agreements-memoranda-of-understanding/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1474,7 +1474,7 @@
       "title": "Appendix C - Compliance Schedule / Calendar",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-c-compliance-schedule-calendar/document.md",
+      "path": "content/appendices/appendix-c-compliance-schedule-calendar/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1483,7 +1483,7 @@
       "title": "Appendix D - Sample Vendor Agreement",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-d-sample-vendor-agreement/document.md",
+      "path": "content/appendices/appendix-d-sample-vendor-agreement/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1492,7 +1492,7 @@
       "title": "Appendix E - Evacuation Route Maps",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-e-evacuation-route-maps/document.md",
+      "path": "content/appendices/appendix-e-evacuation-route-maps/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1501,7 +1501,7 @@
       "title": "Appendix F - Organizational Chart and Key Disaster Roles",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-f-organizational-chart-and-key-disaster-roles/document.md",
+      "path": "content/appendices/appendix-f-organizational-chart-and-key-disaster-roles/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1510,7 +1510,7 @@
       "title": "Appendix G - Resident and Responsible Party Emergency Communications Plan",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-g-resident-and-responsible-party-emergency-communications-plan/document.md",
+      "path": "content/appendices/appendix-g-resident-and-responsible-party-emergency-communications-plan/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1519,7 +1519,7 @@
       "title": "Appendix H - Staff Competency Post Training Test",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-h-staff-competency-post-training-test/document.md",
+      "path": "content/appendices/appendix-h-staff-competency-post-training-test/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1528,7 +1528,7 @@
       "title": "Appendix I - Collaborative and Cooperative Planning Efforts Documentation",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-i-collaborative-and-cooperative-planning-efforts-documentation/document.md",
+      "path": "content/appendices/appendix-i-collaborative-and-cooperative-planning-efforts-documentation/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1537,7 +1537,7 @@
       "title": "Appendix J - Annual Analysis and Review",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-j-annual-analysis-and-review/document.md",
+      "path": "content/appendices/appendix-j-annual-analysis-and-review/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1546,7 +1546,7 @@
       "title": "Appendix K - EPP Quick Reference Guide",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-k-epp-quick-reference-guide/document.md",
+      "path": "content/appendices/appendix-k-epp-quick-reference-guide/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1555,7 +1555,7 @@
       "title": "Appendix L - 1135 Waivers",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-l-1135-waivers/document.md",
+      "path": "content/appendices/appendix-l-1135-waivers/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1564,7 +1564,7 @@
       "title": "Appendix M - PPE Burn Rate Calculator",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-m-ppe-burn-rate-calculator/document.md",
+      "path": "content/appendices/appendix-m-ppe-burn-rate-calculator/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1573,7 +1573,7 @@
       "title": "Appendix N - Contact Listing for Facility Physicians",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-n-contact-listing-for-facility-physicians/document.md",
+      "path": "content/appendices/appendix-n-contact-listing-for-facility-physicians/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1582,7 +1582,7 @@
       "title": "Appendix O - Entities Providing Services Under Arrangement",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-o-entities-providing-services-under-arrangement/document.md",
+      "path": "content/appendices/appendix-o-entities-providing-services-under-arrangement/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     },
@@ -1591,7 +1591,7 @@
       "title": "Appendix P - Contact Listing for Facility Volunteers",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-p-contact-listing-for-facility-volunteers/document.md",
+      "path": "content/appendices/appendix-p-contact-listing-for-facility-volunteers/document.md",
       "lifecycle_status": "drafting",
       "has_extended_metadata": false
     }

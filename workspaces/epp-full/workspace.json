@@ -3,10 +3,10 @@
   "workspace_id": "epp-full",
   "name": "EPP Manual Full",
   "description": "Full Emergency Prep Project workspace imported for Archivist parity, renderer, history, and artifact work.",
-  "imported_at": "2026-05-26T18:50:15Z",
+  "imported_at": "2026-05-27T02:31:17Z",
   "source_reference": {
     "kind": "local_repo_import",
-    "path": "/home/irovian/Dovaxis - DevOps/Emergency Prep Project",
+    "label": "Emergency Prep Project",
     "branch_at_import": "codex/archivist-local-service",
     "commit_at_import": "6e1dd006a561ac153b61296811de25510d6d5274"
   },
@@ -16,7 +16,6 @@
     "project_data_path": "project",
     "extracted_source_path": "extracts",
     "regulatory_source_path": "sources",
-    "original_source_files_path": "source-files",
     "workbook_state_path": "workbook-state",
     "draft_workbook_state_path": "runtime/workbook-state",
     "write_policy": "proposal_review_required"
@@ -33,8 +32,8 @@
   },
   "import_summary": {
     "document_count": 261,
-    "source_count": 63,
-    "copied_original_source_files": 63,
+    "provenance_source_count": 47,
+    "retained_regulatory_source_count": 16,
     "content_groups": [
       "all-hazards-response",
       "appendices",
@@ -60,8 +59,9 @@
       "extracts": 175,
       "sources": 16
     },
-    "missing_original_source_files": [],
-    "seeded_workbook_sidecars": 1
+    "preserved_state_file_count": 2,
+    "removed_development_extracted_source_count": 47,
+    "seeded_workbook_sidecar_count": 0
   },
   "documents": [
     {

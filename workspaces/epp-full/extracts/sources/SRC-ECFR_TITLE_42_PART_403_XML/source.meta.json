@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "source_id": "SRC-ECFR_TITLE_42_PART_403_XML",
-  "source_path": "_sources/regulatory/ecfr/title-42/part-403/title-42-part-403-ecfr-2026-04-28.xml",
+  "retained_path": "sources/regulatory/ecfr/title-42/part-403/title-42-part-403-ecfr-2026-04-28.xml",
   "source_type": "xml",
   "extraction_method": "xml_text",
   "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-04-28/title-42.xml?part=403",

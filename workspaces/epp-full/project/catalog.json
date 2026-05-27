@@ -4,387 +4,618 @@
   "sources": [
     {
       "source_id": "SRC-10_SECTION_E_EMERGENCY_PROCEDURES_PART_3_MISSING_RESIDENT_THROUGH_WILDFIRE_DOCX",
-      "path": "10 - Section E - Emergency Procedures Part 3 Missing Resident through Wildfire.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section E",
+      "label": "10 - Section E - Emergency Procedures Part 3 Missing Resident through Wildfire",
       "title": "10 - Section E - Emergency Procedures Part 3 Missing Resident through Wildfire",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
-      "path": "11 - Section F - Emergency Lists.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section F",
+      "label": "11 - Section F - Emergency Lists",
       "title": "11 - Section F - Emergency Lists",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
-      "path": "12 - Section G - Disaster Recovery Plan.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section G",
+      "label": "12 - Section G - Disaster Recovery Plan",
       "title": "12 - Section G - Disaster Recovery Plan",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDICES_TABLE_OF_CONTENTS_DOCX",
-      "path": "13 - Appendices/Appendices - Table of Contents.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendices - Table of Contents",
       "title": "Appendices - Table of Contents",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_A_COVER_DOCX",
-      "path": "13 - Appendices/Appendix A (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix A (cover)",
       "title": "Appendix A (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_A_AHCA_HVA_WORKSHEETS_XLSX",
-      "path": "13 - Appendices/Appendix A AHCA HVA Worksheets.xlsx",
-      "source_type": "xlsx",
+      "source_type": "provenance_stub",
+      "original_source_type": "xlsx",
       "section": "Appendices",
+      "label": "Appendix A AHCA HVA Worksheets",
       "title": "Appendix A AHCA HVA Worksheets",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_A2_COMMUNITY_HVA_PLACEHOLDER_DOCX",
-      "path": "13 - Appendices/Appendix A2 Community HVA (placeholder).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix A2 Community HVA (placeholder)",
       "title": "Appendix A2 Community HVA (placeholder)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_A3_HVA_EVIDENCE_OF_ANNUAL_ANALYSIS_AND_REVIEW_COMPLIANCE_DOCUMENT_XLS",
-      "path": "13 - Appendices/Appendix A3 HVA Evidence of Annual Analysis and Review - Compliance Document.xls",
-      "source_type": "xls",
+      "source_type": "provenance_stub",
+      "original_source_type": "xls",
       "section": "Appendices",
+      "label": "Appendix A3 HVA Evidence of Annual Analysis and Review - Compliance Document",
       "title": "Appendix A3 HVA Evidence of Annual Analysis and Review - Compliance Document",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_B_COVER_DOCX",
-      "path": "13 - Appendices/Appendix B (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix B (cover)",
       "title": "Appendix B (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_B1_SAMPLE_STOP_OVER_POINT_MEMORANDUM_OF_UNDERSTANDING_MOU_DOC",
-      "path": "13 - Appendices/Appendix B1 Sample Stop Over Point Memorandum of Understanding (MOU).doc",
-      "source_type": "doc",
+      "source_type": "provenance_stub",
+      "original_source_type": "doc",
       "section": "Appendices",
+      "label": "Appendix B1 Sample Stop Over Point Memorandum of Understanding (MOU)",
       "title": "Appendix B1 Sample Stop Over Point Memorandum of Understanding (MOU)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_C_COVER_DOCX",
-      "path": "13 - Appendices/Appendix C (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix C (cover)",
       "title": "Appendix C (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_C_COMPLIANCE_CALENDAR_DOC",
-      "path": "13 - Appendices/Appendix C Compliance Calendar.doc",
-      "source_type": "doc",
+      "source_type": "provenance_stub",
+      "original_source_type": "doc",
       "section": "Appendices",
+      "label": "Appendix C Compliance Calendar",
       "title": "Appendix C Compliance Calendar",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_D_COVER_DOCX",
-      "path": "13 - Appendices/Appendix D (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix D (cover)",
       "title": "Appendix D (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_D_SAMPLE_VENDOR_AGREEMENT_DOCX",
-      "path": "13 - Appendices/Appendix D Sample Vendor Agreement.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix D Sample Vendor Agreement",
       "title": "Appendix D Sample Vendor Agreement",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_E_COVER_DOCX",
-      "path": "13 - Appendices/Appendix E (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix E (cover)",
       "title": "Appendix E (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_E_EVACUATION_MAPS_PLACEHOLDER_DOCX",
-      "path": "13 - Appendices/Appendix E Evacuation Maps - Placeholder.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix E Evacuation Maps - Placeholder",
       "title": "Appendix E Evacuation Maps - Placeholder",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_F_COVER_DOCX",
-      "path": "13 - Appendices/Appendix F (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix F (cover)",
       "title": "Appendix F (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_F_ORGANIZATIONAL_CHART_OF_STAFF_WITH_KEY_DISASTER_ROLES_DOC",
-      "path": "13 - Appendices/Appendix F Organizational Chart of Staff with Key Disaster Roles.doc",
-      "source_type": "doc",
+      "source_type": "provenance_stub",
+      "original_source_type": "doc",
       "section": "Appendices",
+      "label": "Appendix F Organizational Chart of Staff with Key Disaster Roles",
       "title": "Appendix F Organizational Chart of Staff with Key Disaster Roles",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_G_COVER_1_DOCX",
-      "path": "13 - Appendices/Appendix G (cover) (1).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix G (cover) (1)",
       "title": "Appendix G (cover) (1)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
-      "path": "13 - Appendices/Appendix G Resident Reponsible Party Emergency Communcations Plan.doc",
-      "source_type": "doc",
+      "source_type": "provenance_stub",
+      "original_source_type": "doc",
       "section": "Appendices",
+      "label": "Appendix G Resident Reponsible Party Emergency Communcations Plan",
       "title": "Appendix G Resident Reponsible Party Emergency Communcations Plan",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_H_COVER_DOCX",
-      "path": "13 - Appendices/Appendix H (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix H (cover)",
       "title": "Appendix H (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_H_STAFF_COMPETENCY_POST_TRAINING_TEST_DOCX",
-      "path": "13 - Appendices/Appendix H Staff Competency Post Training Test.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix H Staff Competency Post Training Test",
       "title": "Appendix H Staff Competency Post Training Test",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_I_COVER_DOCX",
-      "path": "13 - Appendices/Appendix I (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix I (cover)",
       "title": "Appendix I (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_I_COLLABORATIVE_AND_COOPERATIVE_PLANNING_EFFORTS_XLS",
-      "path": "13 - Appendices/Appendix I Collaborative and Cooperative Planning Efforts.xls",
-      "source_type": "xls",
+      "source_type": "provenance_stub",
+      "original_source_type": "xls",
       "section": "Appendices",
+      "label": "Appendix I Collaborative and Cooperative Planning Efforts",
       "title": "Appendix I Collaborative and Cooperative Planning Efforts",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_J_COVER_DOCX",
-      "path": "13 - Appendices/Appendix J (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix J (cover)",
       "title": "Appendix J (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_J_ANNUAL_ANALYSIS_AND_REVIEW_XLS",
-      "path": "13 - Appendices/Appendix J Annual Analysis and Review.xls",
-      "source_type": "xls",
+      "source_type": "provenance_stub",
+      "original_source_type": "xls",
       "section": "Appendices",
+      "label": "Appendix J Annual Analysis and Review",
       "title": "Appendix J Annual Analysis and Review",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_K_COVER_DOCX",
-      "path": "13 - Appendices/Appendix K (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix K (cover)",
       "title": "Appendix K (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_K_EPP_QUICK_REFERENCE_GUIDE_11X17_V3_DOC",
-      "path": "13 - Appendices/Appendix K EPP Quick Reference Guide (11x17) v3.doc",
-      "source_type": "doc",
+      "source_type": "provenance_stub",
+      "original_source_type": "doc",
       "section": "Appendices",
+      "label": "Appendix K EPP Quick Reference Guide (11x17) v3",
       "title": "Appendix K EPP Quick Reference Guide (11x17) v3",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_L_COVER_DOCX",
-      "path": "13 - Appendices/Appendix L (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix L (cover)",
       "title": "Appendix L (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_L_1135_WAIVER_1_DOCX",
-      "path": "13 - Appendices/Appendix L 1135 Waiver (1).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix L 1135 Waiver (1)",
       "title": "Appendix L 1135 Waiver (1)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_M_COVER_DOCX",
-      "path": "13 - Appendices/Appendix M (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix M (cover)",
       "title": "Appendix M (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_M_PPE_BURN_RATE_CALCULATOR_XLSX",
-      "path": "13 - Appendices/Appendix M PPE Burn Rate Calculator.xlsx",
-      "source_type": "xlsx",
+      "source_type": "provenance_stub",
+      "original_source_type": "xlsx",
       "section": "Appendices",
+      "label": "Appendix M PPE Burn Rate Calculator",
       "title": "Appendix M PPE Burn Rate Calculator",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_N_COVER_DOCX",
-      "path": "13 - Appendices/Appendix N (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix N (cover)",
       "title": "Appendix N (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX",
-      "path": "13 - Appendices/Appendix N Contact Listing for Facility Physicians 3-2022.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix N Contact Listing for Facility Physicians 3-2022",
       "title": "Appendix N Contact Listing for Facility Physicians 3-2022",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_O_COVER_DOCX",
-      "path": "13 - Appendices/Appendix O (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix O (cover)",
       "title": "Appendix O (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_O_ENTITIES_PROVIDING_SERVICES_UNDER_ARRANGEMENT_1_DOCX",
-      "path": "13 - Appendices/Appendix O Entities Providing Services Under Arrangement (1).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix O Entities Providing Services Under Arrangement (1)",
       "title": "Appendix O Entities Providing Services Under Arrangement (1)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_P_COVER_DOCX",
-      "path": "13 - Appendices/Appendix P (cover).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix P (cover)",
       "title": "Appendix P (cover)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-13_APPENDICES_APPENDIX_P_CONTACT_LISTING_FOR_FACILITY_VOLUNTEERS_1_DOCX",
-      "path": "13 - Appendices/Appendix P Contact Listing for Facility Volunteers (1).docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Appendices",
+      "label": "Appendix P Contact Listing for Facility Volunteers (1)",
       "title": "Appendix P Contact Listing for Facility Volunteers (1)",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-2_EPP_COVER_PAGE_DOCX",
-      "path": "2 - EPP Cover Page.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Cover",
+      "label": "2 - EPP Cover Page",
       "title": "2 - EPP Cover Page",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-3_TABLE_OF_CONTENTS_DOCX",
-      "path": "3 - Table of Contents.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Master Table of Contents",
+      "label": "3 - Table of Contents",
       "title": "3 - Table of Contents",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
-      "path": "4 - Section A - EPP Policies and Planning.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section A",
+      "label": "4 - Section A - EPP Policies and Planning",
       "title": "4 - Section A - EPP Policies and Planning",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
-      "path": "5 - Section B - Procedures Applicable to All Hazard Responses.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section B",
+      "label": "5 - Section B - Procedures Applicable to All Hazard Responses",
       "title": "5 - Section B - Procedures Applicable to All Hazard Responses",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
-      "path": "6 - Section C - Incident Command System.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section C",
+      "label": "6 - Section C - Incident Command System",
       "title": "6 - Section C - Incident Command System",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
-      "path": "7 - Section D - Full Building Evacuation Plan.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section D",
+      "label": "7 - Section D - Full Building Evacuation Plan",
       "title": "7 - Section D - Full Building Evacuation Plan",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
-      "path": "8 - Section E - Emergency Procedures Part 1 Active Shooter through Fire.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section E",
+      "label": "8 - Section E - Emergency Procedures Part 1 Active Shooter through Fire",
       "title": "8 - Section E - Emergency Procedures Part 1 Active Shooter through Fire",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
-      "path": "9 - Section E - Emergency Procedures Part 2  Flood through Loss of Water.docx",
-      "source_type": "docx",
+      "source_type": "provenance_stub",
+      "original_source_type": "docx",
       "section": "Section E",
+      "label": "9 - Section E - Emergency Procedures Part 2  Flood through Loss of Water",
       "title": "9 - Section E - Emergency Procedures Part 2  Flood through Loss of Water",
-      "extract_status": "pending"
+      "extract_status": "pending",
+      "source_role": "original_catalog_source",
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-SOM_APPENDIX_Z_2019_PDF",
-      "path": "SOM Appendix Z 2019.pdf",
-      "source_type": "pdf",
+      "source_type": "provenance_stub",
+      "original_source_type": "pdf",
       "section": "Regulatory Reference",
+      "label": "SOM Appendix Z 2019",
       "title": "SOM Appendix Z 2019",
       "extract_status": "pending",
       "source_role": "superseded_reference",
-      "revision": "186",
-      "superseded_by": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "source_notes": "Retained as the original local Appendix Z source used for early rewrite seeding; superseded for regulatory intake by Rev. 204."
+      "retention": "provenance_only",
+      "browseable": false,
+      "source_file_retained": false
     },
     {
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_type": "pdf",
       "section": "Regulatory Reference",
       "title": "SOM Appendix Z Rev 204 2021",
@@ -400,11 +631,13 @@
       "implementation_date": "04-16-21",
       "supersedes": [
         "SRC-SOM_APPENDIX_Z_2019_PDF"
-      ]
+      ],
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_42_CFR_PART_483_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "42 CFR Part 483 eCFR Current XML",
@@ -413,11 +646,13 @@
       "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-05-07/title-42.xml?part=483",
       "retrieved_at": "2026-05-10T21:21:20Z",
       "sha256": "e974d0a83a52f113d136cda8f6b19ceaabadb4dbf19db716631c4d6fb2a79a66",
-      "source_notes": "Official eCFR API XML for Title 42 Part 483; section 483.73 is the LTC emergency preparedness regulation layer."
+      "source_notes": "Official eCFR API XML for Title 42 Part 483; section 483.73 is the LTC emergency preparedness regulation layer.",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-CMS_R204SOMA_TRANSMITTAL_HTML",
-      "path": "_sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
+      "path": "sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
       "source_type": "html",
       "section": "Regulatory Reference",
       "title": "CMS R204SOMA Transmittal",
@@ -426,11 +661,13 @@
       "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/transmittals/transmittals/r204soma",
       "retrieved_at": "2026-05-10T21:21:20Z",
       "sha256": "f04ac6bd4c311cf8f0682eaf8312204a767a725057b5088e3d90ddbe744fd9f0",
-      "revision": "204"
+      "revision": "204",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_400_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-400/title-42-part-400-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-400/title-42-part-400-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 400 eCFR XML",
@@ -442,11 +679,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "400"
+      "part_number": "400",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_403_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-403/title-42-part-403-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-403/title-42-part-403-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 403 eCFR XML",
@@ -458,11 +697,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "403"
+      "part_number": "403",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_416_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-416/title-42-part-416-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-416/title-42-part-416-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 416 eCFR XML",
@@ -474,11 +715,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "416"
+      "part_number": "416",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_418_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-418/title-42-part-418-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-418/title-42-part-418-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 418 eCFR XML",
@@ -490,11 +733,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "418"
+      "part_number": "418",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_441_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-441/title-42-part-441-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-441/title-42-part-441-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 441 eCFR XML",
@@ -506,11 +751,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "441"
+      "part_number": "441",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_460_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-460/title-42-part-460-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-460/title-42-part-460-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 460 eCFR XML",
@@ -522,11 +769,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "460"
+      "part_number": "460",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_482_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-482/title-42-part-482-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-482/title-42-part-482-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 482 eCFR XML",
@@ -538,11 +787,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "482"
+      "part_number": "482",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_483_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 483 eCFR XML",
@@ -554,11 +805,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "483"
+      "part_number": "483",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_484_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-484/title-42-part-484-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-484/title-42-part-484-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 484 eCFR XML",
@@ -570,11 +823,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "484"
+      "part_number": "484",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_485_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-485/title-42-part-485-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-485/title-42-part-485-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 485 eCFR XML",
@@ -586,11 +841,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "485"
+      "part_number": "485",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_486_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-486/title-42-part-486-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-486/title-42-part-486-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 486 eCFR XML",
@@ -602,11 +859,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "486"
+      "part_number": "486",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_491_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-491/title-42-part-491-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-491/title-42-part-491-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 491 eCFR XML",
@@ -618,11 +877,13 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "491"
+      "part_number": "491",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     },
     {
       "source_id": "SRC-ECFR_TITLE_42_PART_494_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-494/title-42-part-494-ecfr-2026-04-28.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-494/title-42-part-494-ecfr-2026-04-28.xml",
       "source_type": "xml",
       "section": "Raw Regulatory Reference",
       "title": "Title 42 CFR Part 494 eCFR XML",
@@ -634,7 +895,9 @@
       "issue_date": "2026-04-28",
       "up_to_date_as_of": "2026-05-07",
       "title_number": "42",
-      "part_number": "494"
+      "part_number": "494",
+      "retention": "retained_regulatory_source",
+      "browseable": true
     }
   ],
   "documents": [
@@ -643,7 +906,7 @@
       "title": "Policy and Organizational Statements",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/policy-and-organizational-statements/document.md",
+      "path": "content/governance-and-planning/policy-and-organizational-statements/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -668,7 +931,7 @@
       "title": "Risk Assessment Process",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/risk-assessment-process/document.md",
+      "path": "content/governance-and-planning/risk-assessment-process/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -689,7 +952,7 @@
       "title": "Mitigation Overview",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/mitigation-overview/document.md",
+      "path": "content/governance-and-planning/mitigation-overview/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -708,7 +971,7 @@
       "title": "Planning Assumptions",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/planning-assumptions/document.md",
+      "path": "content/governance-and-planning/planning-assumptions/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -729,7 +992,7 @@
       "title": "Communications",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/communications/document.md",
+      "path": "content/governance-and-planning/communications/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -757,7 +1020,7 @@
       "title": "Resident and Family Information",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/resident-and-family-information/document.md",
+      "path": "content/governance-and-planning/resident-and-family-information/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -778,7 +1041,7 @@
       "title": "Continuity of Operations",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/continuity-of-operations/document.md",
+      "path": "content/governance-and-planning/continuity-of-operations/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -810,7 +1073,7 @@
       "title": "Role of the Facility under an 1135 Waiver",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/role-of-the-facility-under-an-1135-waiver/document.md",
+      "path": "content/governance-and-planning/role-of-the-facility-under-an-1135-waiver/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -829,7 +1092,7 @@
       "title": "Serving as an Alternate Care Site",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/serving-as-an-alternate-care-site/document.md",
+      "path": "content/governance-and-planning/serving-as-an-alternate-care-site/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -849,7 +1112,7 @@
       "title": "Shelter in Place Plan",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/shelter-in-place-plan/document.md",
+      "path": "content/governance-and-planning/shelter-in-place-plan/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -870,7 +1133,7 @@
       "title": "Loss of Utilities",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/loss-of-utilities/document.md",
+      "path": "content/governance-and-planning/loss-of-utilities/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -891,7 +1154,7 @@
       "title": "Authority to Activate the Plan",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/authority-to-activate-the-plan/document.md",
+      "path": "content/governance-and-planning/authority-to-activate-the-plan/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -911,7 +1174,7 @@
       "title": "Order of Succession - Incident Command Team",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/order-of-succession-incident-command-team/document.md",
+      "path": "content/governance-and-planning/order-of-succession-incident-command-team/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -931,7 +1194,7 @@
       "title": "Disaster Staffing",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/disaster-staffing/document.md",
+      "path": "content/governance-and-planning/disaster-staffing/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -951,7 +1214,7 @@
       "title": "Resident Medical Information",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/resident-medical-information/document.md",
+      "path": "content/governance-and-planning/resident-medical-information/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -973,7 +1236,7 @@
       "title": "Training and Testing Program",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/training-and-testing-program/document.md",
+      "path": "content/governance-and-planning/training-and-testing-program/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -994,7 +1257,7 @@
       "title": "Training",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/training/document.md",
+      "path": "content/governance-and-planning/training/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1013,7 +1276,7 @@
       "title": "Annual Testing",
       "content_group": "governance-and-planning",
       "content_type": "topic_document",
-      "path": "_content/governance-and-planning/annual-testing/document.md",
+      "path": "content/governance-and-planning/annual-testing/document.md",
       "source_ids": [
         "SRC-4_SECTION_A_EPP_POLICIES_AND_PLANNING_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1035,7 +1298,7 @@
       "title": "Activation of Emergency Operations Plan (EOP)",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/activation-of-emergency-operations-plan-eop/document.md",
+      "path": "content/all-hazards-response/activation-of-emergency-operations-plan-eop/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1064,7 +1327,7 @@
       "title": "Emergency Codes",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/emergency-codes/document.md",
+      "path": "content/all-hazards-response/emergency-codes/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1088,7 +1351,7 @@
       "title": "Activation of the Incident Command System",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/activation-of-the-incident-command-system/document.md",
+      "path": "content/all-hazards-response/activation-of-the-incident-command-system/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1114,7 +1377,7 @@
       "title": "Communications Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/communications-plan/document.md",
+      "path": "content/all-hazards-response/communications-plan/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1140,7 +1403,7 @@
       "title": "Internal Communications During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/internal-communications-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/internal-communications-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1173,7 +1436,7 @@
       "title": "External Communications During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/external-communications-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/external-communications-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1212,7 +1475,7 @@
       "title": "Managing Resources and Assets",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-resources-and-assets/document.md",
+      "path": "content/all-hazards-response/managing-resources-and-assets/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1233,7 +1496,7 @@
       "title": "Responsibilities for Ensuring Critical Supplies and Activities",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/responsibilities-for-ensuring-critical-supplies-and-activities/document.md",
+      "path": "content/all-hazards-response/responsibilities-for-ensuring-critical-supplies-and-activities/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1254,7 +1517,7 @@
       "title": "Baseline Assessment of 96 Hr. Capabilities",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/baseline-assessment-of-96-hr-capabilities/document.md",
+      "path": "content/all-hazards-response/baseline-assessment-of-96-hr-capabilities/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1280,7 +1543,7 @@
       "title": "Managing Security and Safety During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-security-and-safety-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-security-and-safety-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1307,7 +1570,7 @@
       "title": "Building Lockdown",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/building-lockdown/document.md",
+      "path": "content/all-hazards-response/building-lockdown/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1334,7 +1597,7 @@
       "title": "Management of Staff During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/management-of-staff-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/management-of-staff-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1361,7 +1624,7 @@
       "title": "Notification of Off-Duty Staff / Disaster Staffing Options",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/notification-of-off-duty-staff-disaster-staffing-options/document.md",
+      "path": "content/all-hazards-response/notification-of-off-duty-staff-disaster-staffing-options/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1388,7 +1651,7 @@
       "title": "Staff Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-sheltering/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1416,7 +1679,7 @@
       "title": "Staff Family Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-family-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-family-sheltering/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1438,7 +1701,7 @@
       "title": "Staff Pet Sheltering",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/staff-pet-sheltering/document.md",
+      "path": "content/all-hazards-response/staff-pet-sheltering/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1460,7 +1723,7 @@
       "title": "Critical Incident Stress Debriefing (CISD) for Staff",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/critical-incident-stress-debriefing-cisd-for-staff/document.md",
+      "path": "content/all-hazards-response/critical-incident-stress-debriefing-cisd-for-staff/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1480,7 +1743,7 @@
       "title": "Emergency Credentialing Program",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/emergency-credentialing-program/document.md",
+      "path": "content/all-hazards-response/emergency-credentialing-program/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1500,7 +1763,7 @@
       "title": "Loss of Parking / Inability to Commute to Facility",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/loss-of-parking-inability-to-commute-to-facility/document.md",
+      "path": "content/all-hazards-response/loss-of-parking-inability-to-commute-to-facility/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1522,7 +1785,7 @@
       "title": "Managing Utilities During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-utilities-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-utilities-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1553,7 +1816,7 @@
       "title": "Managing Residents During a Disaster",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/managing-residents-during-a-disaster/document.md",
+      "path": "content/all-hazards-response/managing-residents-during-a-disaster/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1577,7 +1840,7 @@
       "title": "Census Reduction Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/census-reduction-plan/document.md",
+      "path": "content/all-hazards-response/census-reduction-plan/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1599,7 +1862,7 @@
       "title": "Morgue / Mass Fatality Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/morgue-mass-fatality-plan/document.md",
+      "path": "content/all-hazards-response/morgue-mass-fatality-plan/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1620,7 +1883,7 @@
       "title": "Surge Capacity Plan",
       "content_group": "all-hazards-response",
       "content_type": "topic_document",
-      "path": "_content/all-hazards-response/surge-capacity-plan/document.md",
+      "path": "content/all-hazards-response/surge-capacity-plan/document.md",
       "source_ids": [
         "SRC-5_SECTION_B_PROCEDURES_APPLICABLE_TO_ALL_HAZARD_RESPONSES_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1643,7 +1906,7 @@
       "title": "Concept of Operations",
       "content_group": "incident-command",
       "content_type": "topic_document",
-      "path": "_content/incident-command/concept-of-operations/document.md",
+      "path": "content/incident-command/concept-of-operations/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1666,7 +1929,7 @@
       "title": "Activation of the Incident Command System",
       "content_group": "incident-command",
       "content_type": "topic_document",
-      "path": "_content/incident-command/activation-of-the-incident-command-system/document.md",
+      "path": "content/incident-command/activation-of-the-incident-command-system/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1691,7 +1954,7 @@
       "title": "Incident Command System Organizational Chart",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/incident-command-system-organizational-chart/document.md",
+      "path": "content/incident-command/incident-command-system-organizational-chart/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1713,7 +1976,7 @@
       "title": "Command Center Organizational Chart",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/command-center-organizational-chart/document.md",
+      "path": "content/incident-command/command-center-organizational-chart/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1740,7 +2003,7 @@
       "title": "Job Action Sheets and Associated Forms",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/job-action-sheets-and-associated-forms/document.md",
+      "path": "content/incident-command/job-action-sheets-and-associated-forms/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1762,7 +2025,7 @@
       "title": "Incident Commander",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/incident-commander/document.md",
+      "path": "content/incident-command/incident-commander/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1784,7 +2047,7 @@
       "title": "Documentation Recorder",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/documentation-recorder/document.md",
+      "path": "content/incident-command/documentation-recorder/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1806,7 +2069,7 @@
       "title": "Safety / Security / Liaison Officer",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/safety-security-liaison-officer/document.md",
+      "path": "content/incident-command/safety-security-liaison-officer/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1828,7 +2091,7 @@
       "title": "Public Information Officer",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/public-information-officer/document.md",
+      "path": "content/incident-command/public-information-officer/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1850,7 +2113,7 @@
       "title": "Logistics Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/logistics-section-chief/document.md",
+      "path": "content/incident-command/logistics-section-chief/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1872,7 +2135,7 @@
       "title": "Planning Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/planning-section-chief/document.md",
+      "path": "content/incident-command/planning-section-chief/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1894,7 +2157,7 @@
       "title": "Labor Pool Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/labor-pool-unit-leader/document.md",
+      "path": "content/incident-command/labor-pool-unit-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1916,7 +2179,7 @@
       "title": "Floor Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/floor-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/floor-evacuation-team-team-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1938,7 +2201,7 @@
       "title": "Elevator Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/elevator-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/elevator-evacuation-team-team-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1960,7 +2223,7 @@
       "title": "Stairwell Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/stairwell-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/stairwell-evacuation-team-team-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -1982,7 +2245,7 @@
       "title": "Discharge Floor Evacuation Team - Team Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/discharge-floor-evacuation-team-team-leader/document.md",
+      "path": "content/incident-command/discharge-floor-evacuation-team-team-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2004,7 +2267,7 @@
       "title": "Finance Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/finance-section-chief/document.md",
+      "path": "content/incident-command/finance-section-chief/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2026,7 +2289,7 @@
       "title": "Operations Section Chief",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/operations-section-chief/document.md",
+      "path": "content/incident-command/operations-section-chief/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2048,7 +2311,7 @@
       "title": "Nursing Supervisor / Director of Nursing / Charge Nurse / Department Director",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/nursing-supervisor-director-of-nursing-charge-nurse-department-director/document.md",
+      "path": "content/incident-command/nursing-supervisor-director-of-nursing-charge-nurse-department-director/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2070,7 +2333,7 @@
       "title": "Triage Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/triage-unit-leader/document.md",
+      "path": "content/incident-command/triage-unit-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2092,7 +2355,7 @@
       "title": "Holding Area Unit Leader",
       "content_group": "incident-command",
       "content_type": "support_artifact",
-      "path": "_content/incident-command/holding-area-unit-leader/document.md",
+      "path": "content/incident-command/holding-area-unit-leader/document.md",
       "source_ids": [
         "SRC-6_SECTION_C_INCIDENT_COMMAND_SYSTEM_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2114,7 +2377,7 @@
       "title": "Full Building Evacuation Plan Algorithm",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/full-building-evacuation-plan-algorithm/document.md",
+      "path": "content/evacuation/full-building-evacuation-plan-algorithm/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2135,7 +2398,7 @@
       "title": "Introduction",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/introduction/document.md",
+      "path": "content/evacuation/introduction/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2158,7 +2421,7 @@
       "title": "Action Plan",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/action-plan/document.md",
+      "path": "content/evacuation/action-plan/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2182,7 +2445,7 @@
       "title": "Activation of Plan",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/activation-of-plan/document.md",
+      "path": "content/evacuation/activation-of-plan/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2206,7 +2469,7 @@
       "title": "Activate Labor Pool",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/activate-labor-pool/document.md",
+      "path": "content/evacuation/activate-labor-pool/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2228,7 +2491,7 @@
       "title": "Transportation (Internal / External)",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/transportation-internal-external/document.md",
+      "path": "content/evacuation/transportation-internal-external/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2252,7 +2515,7 @@
       "title": "Census Reduction",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/census-reduction/document.md",
+      "path": "content/evacuation/census-reduction/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2273,7 +2536,7 @@
       "title": "Assignment of Resident Evacuation Staff",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/assignment-of-resident-evacuation-staff/document.md",
+      "path": "content/evacuation/assignment-of-resident-evacuation-staff/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2295,7 +2558,7 @@
       "title": "Holding Areas",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/holding-areas/document.md",
+      "path": "content/evacuation/holding-areas/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2319,7 +2582,7 @@
       "title": "Communications",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/communications/document.md",
+      "path": "content/evacuation/communications/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2343,7 +2606,7 @@
       "title": "Evacuation Prioritization",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/evacuation-prioritization/document.md",
+      "path": "content/evacuation/evacuation-prioritization/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2365,7 +2628,7 @@
       "title": "Staff and Emergency Services",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/staff-and-emergency-services/document.md",
+      "path": "content/evacuation/staff-and-emergency-services/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2388,7 +2651,7 @@
       "title": "Internal Routes of Travel",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/internal-routes-of-travel/document.md",
+      "path": "content/evacuation/internal-routes-of-travel/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2409,7 +2672,7 @@
       "title": "Evacuation Order",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/evacuation-order/document.md",
+      "path": "content/evacuation/evacuation-order/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2432,7 +2695,7 @@
       "title": "Resident Placement Into Other Facilities",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-placement-into-other-facilities/document.md",
+      "path": "content/evacuation/resident-placement-into-other-facilities/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2456,7 +2719,7 @@
       "title": "Resident Medical Records",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-medical-records/document.md",
+      "path": "content/evacuation/resident-medical-records/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2480,7 +2743,7 @@
       "title": "Medications and Federally Controlled Substances",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/medications-and-federally-controlled-substances/document.md",
+      "path": "content/evacuation/medications-and-federally-controlled-substances/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2501,7 +2764,7 @@
       "title": "Care and Treatment of Evacuees",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/care-and-treatment-of-evacuees/document.md",
+      "path": "content/evacuation/care-and-treatment-of-evacuees/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2524,7 +2787,7 @@
       "title": "Resident Personal Belongings",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-personal-belongings/document.md",
+      "path": "content/evacuation/resident-personal-belongings/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2546,7 +2809,7 @@
       "title": "Resident Preparation Guide - Independent Living Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-independent-living-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-independent-living-residents/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2570,7 +2833,7 @@
       "title": "Resident Preparation Guide - Assisted Living Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-assisted-living-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-assisted-living-residents/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2594,7 +2857,7 @@
       "title": "Resident Preparation Guide - Skilled Nursing Residents",
       "content_group": "evacuation",
       "content_type": "topic_document",
-      "path": "_content/evacuation/resident-preparation-guide-skilled-nursing-residents/document.md",
+      "path": "content/evacuation/resident-preparation-guide-skilled-nursing-residents/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2618,7 +2881,7 @@
       "title": "Resident Evacuation Tracking Form",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/resident-evacuation-tracking-form/document.md",
+      "path": "content/evacuation/resident-evacuation-tracking-form/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2640,7 +2903,7 @@
       "title": "Evacuation Floor Plans",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/evacuation-floor-plans/document.md",
+      "path": "content/evacuation/evacuation-floor-plans/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2661,7 +2924,7 @@
       "title": "Receiving Facilities for Evacuation",
       "content_group": "evacuation",
       "content_type": "support_artifact",
-      "path": "_content/evacuation/receiving-facilities-for-evacuation/document.md",
+      "path": "content/evacuation/receiving-facilities-for-evacuation/document.md",
       "source_ids": [
         "SRC-7_SECTION_D_FULL_BUILDING_EVACUATION_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -2682,7 +2945,7 @@
       "title": "Active Shooter / Person with a Weapon",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/active-shooter-person-with-a-weapon/document.md",
+      "path": "content/hazard-specific-procedures/active-shooter-person-with-a-weapon/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2706,7 +2969,7 @@
       "title": "Bioterrorism / Terrorism",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bioterrorism-terrorism/document.md",
+      "path": "content/hazard-specific-procedures/bioterrorism-terrorism/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2730,7 +2993,7 @@
       "title": "Bomb Threat / Suspicious Package",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bomb-threat-suspicious-package/document.md",
+      "path": "content/hazard-specific-procedures/bomb-threat-suspicious-package/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2754,7 +3017,7 @@
       "title": "Department-Specific Evacuation Guidelines",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/department-specific-evacuation-guidelines/document.md",
+      "path": "content/hazard-specific-procedures/department-specific-evacuation-guidelines/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2778,7 +3041,7 @@
       "title": "Building Search Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/building-search-checklist/document.md",
+      "path": "content/hazard-specific-procedures/building-search-checklist/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2802,7 +3065,7 @@
       "title": "Bomb Threat Call Log",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/bomb-threat-call-log/document.md",
+      "path": "content/hazard-specific-procedures/bomb-threat-call-log/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2826,7 +3089,7 @@
       "title": "Carbon Monoxide Alarm Activation",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/carbon-monoxide-alarm-activation/document.md",
+      "path": "content/hazard-specific-procedures/carbon-monoxide-alarm-activation/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2851,7 +3114,7 @@
       "title": "Civil Disturbance / Demonstration",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/civil-disturbance-demonstration/document.md",
+      "path": "content/hazard-specific-procedures/civil-disturbance-demonstration/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2875,7 +3138,7 @@
       "title": "Contamination of Outside Air",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/contamination-of-outside-air/document.md",
+      "path": "content/hazard-specific-procedures/contamination-of-outside-air/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2899,7 +3162,7 @@
       "title": "Data Security Breach - Cyber Attack",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/data-security-breach-cyber-attack/document.md",
+      "path": "content/hazard-specific-procedures/data-security-breach-cyber-attack/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2923,7 +3186,7 @@
       "title": "Earthquake",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/earthquake/document.md",
+      "path": "content/hazard-specific-procedures/earthquake/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2947,7 +3210,7 @@
       "title": "Emerging Infectious Disease",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/emerging-infectious-disease/document.md",
+      "path": "content/hazard-specific-procedures/emerging-infectious-disease/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2971,7 +3234,7 @@
       "title": "Fire",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/fire/document.md",
+      "path": "content/hazard-specific-procedures/fire/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -2995,7 +3258,7 @@
       "title": "Flood (Internal / External)",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/flood-internal-external/document.md",
+      "path": "content/hazard-specific-procedures/flood-internal-external/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3019,7 +3282,7 @@
       "title": "First 24-Hour Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/first-24-hour-checklist/document.md",
+      "path": "content/hazard-specific-procedures/first-24-hour-checklist/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3043,7 +3306,7 @@
       "title": "Hazardous Material Spill or Leak",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hazardous-material-spill-or-leak/document.md",
+      "path": "content/hazard-specific-procedures/hazardous-material-spill-or-leak/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3067,7 +3330,7 @@
       "title": "Hostage Taking",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hostage-taking/document.md",
+      "path": "content/hazard-specific-procedures/hostage-taking/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3091,7 +3354,7 @@
       "title": "Aggressive or Violent Behavior Guide",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/aggressive-or-violent-behavior-guide/document.md",
+      "path": "content/hazard-specific-procedures/aggressive-or-violent-behavior-guide/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3115,7 +3378,7 @@
       "title": "Hurricane",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/hurricane/document.md",
+      "path": "content/hazard-specific-procedures/hurricane/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3139,7 +3402,7 @@
       "title": "Loss of Central Services",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-central-services/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-central-services/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3163,7 +3426,7 @@
       "title": "Loss of Air Conditioning / High Heat",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-air-conditioning-high-heat/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-air-conditioning-high-heat/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3194,7 +3457,7 @@
       "title": "Loss of Cooking Ability",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-cooking-ability/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-cooking-ability/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3224,7 +3487,7 @@
       "title": "Loss of Electric Service",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-electric-service/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-electric-service/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3258,7 +3521,7 @@
       "title": "Loss of Electric Service During Dialysis",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-electric-service-during-dialysis/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-electric-service-during-dialysis/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3288,7 +3551,7 @@
       "title": "Loss of Emergency Generator Power",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-emergency-generator-power/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-emergency-generator-power/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3321,7 +3584,7 @@
       "title": "Loss of Elevator Service",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-elevator-service/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-elevator-service/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3349,7 +3612,7 @@
       "title": "Loss of Fire Protection Systems",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-fire-protection-systems/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-fire-protection-systems/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3380,7 +3643,7 @@
       "title": "Fire Watch Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/fire-watch-checklist/document.md",
+      "path": "content/hazard-specific-procedures/fire-watch-checklist/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3410,7 +3673,7 @@
       "title": "Loss of Heating System",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-heating-system/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-heating-system/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3441,7 +3704,7 @@
       "title": "Loss of Information Technology",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-information-technology/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-information-technology/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3465,7 +3728,7 @@
       "title": "Loss of Natural Gas / Propane",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-natural-gas-propane/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-natural-gas-propane/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3498,7 +3761,7 @@
       "title": "Loss of Oxygen / Vacuum",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-oxygen-vacuum/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-oxygen-vacuum/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3531,7 +3794,7 @@
       "title": "Loss of Sewer / Waste System",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-sewer-waste-system/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-sewer-waste-system/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3562,7 +3825,7 @@
       "title": "Loss of Steam Pressure",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-steam-pressure/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-steam-pressure/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3594,7 +3857,7 @@
       "title": "Loss of Telephone Service / Internal Communications / Nurse Call",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-telephone-service-internal-communications-nurse-call/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-telephone-service-internal-communications-nurse-call/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3628,7 +3891,7 @@
       "title": "Loss of Water Service / Contamination of Water Supply",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-water-service-contamination-of-water-supply/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-water-service-contamination-of-water-supply/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3663,7 +3926,7 @@
       "title": "Loss of Water Service During Dialysis",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/loss-of-water-service-during-dialysis/document.md",
+      "path": "content/hazard-specific-procedures/loss-of-water-service-during-dialysis/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3693,7 +3956,7 @@
       "title": "Missing Resident",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3718,7 +3981,7 @@
       "title": "Missing Resident Information Sheet",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident-information-sheet/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident-information-sheet/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3743,7 +4006,7 @@
       "title": "Missing Resident Checklist",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/missing-resident-checklist/document.md",
+      "path": "content/hazard-specific-procedures/missing-resident-checklist/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3768,7 +4031,7 @@
       "title": "Natural Gas / Propane Odor / Leak",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/natural-gas-propane-odor-leak/document.md",
+      "path": "content/hazard-specific-procedures/natural-gas-propane-odor-leak/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3796,7 +4059,7 @@
       "title": "Pandemic Emergency Plan",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/pandemic-emergency-plan/document.md",
+      "path": "content/hazard-specific-procedures/pandemic-emergency-plan/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3820,7 +4083,7 @@
       "title": "Security Situation",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/security-situation/document.md",
+      "path": "content/hazard-specific-procedures/security-situation/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3844,7 +4107,7 @@
       "title": "Snow Emergency / Ice Storm",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/snow-emergency-ice-storm/document.md",
+      "path": "content/hazard-specific-procedures/snow-emergency-ice-storm/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3868,7 +4131,7 @@
       "title": "Tornado / High Winds",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/tornado-high-winds/document.md",
+      "path": "content/hazard-specific-procedures/tornado-high-winds/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3892,7 +4155,7 @@
       "title": "Volcanic Eruption",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/volcanic-eruption/document.md",
+      "path": "content/hazard-specific-procedures/volcanic-eruption/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3916,7 +4179,7 @@
       "title": "Wildfire",
       "content_group": "hazard-specific-procedures",
       "content_type": "topic_document",
-      "path": "_content/hazard-specific-procedures/wildfire/document.md",
+      "path": "content/hazard-specific-procedures/wildfire/document.md",
       "source_ids": [
         "SRC-8_SECTION_E_EMERGENCY_PROCEDURES_PART_1_ACTIVE_SHOOTER_THROUGH_FIRE_DOCX",
         "SRC-9_SECTION_E_EMERGENCY_PROCEDURES_PART_2_FLOOD_THROUGH_LOSS_OF_WATER_DOCX",
@@ -3940,7 +4203,7 @@
       "title": "Facility Information Detail",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/facility-information-detail/document.md",
+      "path": "content/resources-and-lists/facility-information-detail/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -3963,7 +4226,7 @@
       "title": "Emergency Contacts",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-contacts/document.md",
+      "path": "content/resources-and-lists/emergency-contacts/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -3989,7 +4252,7 @@
       "title": "Supply Delivery Location",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/supply-delivery-location/document.md",
+      "path": "content/resources-and-lists/supply-delivery-location/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4012,7 +4275,7 @@
       "title": "Disaster Kit Contents",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/disaster-kit-contents/document.md",
+      "path": "content/resources-and-lists/disaster-kit-contents/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4035,7 +4298,7 @@
       "title": "Emergency Response Agency Phone Numbers",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-response-agency-phone-numbers/document.md",
+      "path": "content/resources-and-lists/emergency-response-agency-phone-numbers/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4058,7 +4321,7 @@
       "title": "External Response Partners Phone Numbers",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/external-response-partners-phone-numbers/document.md",
+      "path": "content/resources-and-lists/external-response-partners-phone-numbers/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4081,7 +4344,7 @@
       "title": "Emergency Bedding Materials",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-bedding-materials/document.md",
+      "path": "content/resources-and-lists/emergency-bedding-materials/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4104,7 +4367,7 @@
       "title": "Emergency Food Supply List",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-food-supply-list/document.md",
+      "path": "content/resources-and-lists/emergency-food-supply-list/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4127,7 +4390,7 @@
       "title": "Emergency Transport Equipment to Move Residents",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-transport-equipment-to-move-residents/document.md",
+      "path": "content/resources-and-lists/emergency-transport-equipment-to-move-residents/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4151,7 +4414,7 @@
       "title": "Elevator Keys",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/elevator-keys/document.md",
+      "path": "content/resources-and-lists/elevator-keys/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4174,7 +4437,7 @@
       "title": "Transportation Resources - Facility Owned Vehicles",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/transportation-resources-facility-owned-vehicles/document.md",
+      "path": "content/resources-and-lists/transportation-resources-facility-owned-vehicles/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4197,7 +4460,7 @@
       "title": "Emergency Utility Shut-Off Locations",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-utility-shut-off-locations/document.md",
+      "path": "content/resources-and-lists/emergency-utility-shut-off-locations/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4220,7 +4483,7 @@
       "title": "Generator Information",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/generator-information/document.md",
+      "path": "content/resources-and-lists/generator-information/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4244,7 +4507,7 @@
       "title": "Vendor Sources of Fuel",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/vendor-sources-of-fuel/document.md",
+      "path": "content/resources-and-lists/vendor-sources-of-fuel/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4268,7 +4531,7 @@
       "title": "Emergency Contractor / Vendor Lists",
       "content_group": "resources-and-lists",
       "content_type": "support_artifact",
-      "path": "_content/resources-and-lists/emergency-contractor-vendor-lists/document.md",
+      "path": "content/resources-and-lists/emergency-contractor-vendor-lists/document.md",
       "source_ids": [
         "SRC-11_SECTION_F_EMERGENCY_LISTS_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4291,7 +4554,7 @@
       "title": "Recovery Plan Overview",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/recovery-plan-overview/document.md",
+      "path": "content/recovery/recovery-plan-overview/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4312,7 +4575,7 @@
       "title": "Damage and Operational Assessments",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/damage-and-operational-assessments/document.md",
+      "path": "content/recovery/damage-and-operational-assessments/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4333,7 +4596,7 @@
       "title": "Facility System Status Report",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/facility-system-status-report/document.md",
+      "path": "content/recovery/facility-system-status-report/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4354,7 +4617,7 @@
       "title": "Recovery Checklist",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/recovery-checklist/document.md",
+      "path": "content/recovery/recovery-checklist/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4375,7 +4638,7 @@
       "title": "Form 301 - Department Rapid Assessment Form",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/form-301-department-rapid-assessment-form/document.md",
+      "path": "content/recovery/form-301-department-rapid-assessment-form/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4396,7 +4659,7 @@
       "title": "Full Recovery Structure",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/full-recovery-structure/document.md",
+      "path": "content/recovery/full-recovery-structure/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4417,7 +4680,7 @@
       "title": "Utilities Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/utilities-recovery/document.md",
+      "path": "content/recovery/utilities-recovery/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4438,7 +4701,7 @@
       "title": "Food Services Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/food-services-recovery/document.md",
+      "path": "content/recovery/food-services-recovery/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4459,7 +4722,7 @@
       "title": "Resident Services Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/resident-services-recovery/document.md",
+      "path": "content/recovery/resident-services-recovery/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4481,7 +4744,7 @@
       "title": "Information Technology Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/information-technology-recovery/document.md",
+      "path": "content/recovery/information-technology-recovery/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4502,7 +4765,7 @@
       "title": "Staffing Recovery",
       "content_group": "recovery",
       "content_type": "topic_document",
-      "path": "_content/recovery/staffing-recovery/document.md",
+      "path": "content/recovery/staffing-recovery/document.md",
       "source_ids": [
         "SRC-12_SECTION_G_DISASTER_RECOVERY_PLAN_DOCX",
         "SRC-3_TABLE_OF_CONTENTS_DOCX",
@@ -4523,7 +4786,7 @@
       "title": "Appendix A - Hazard Vulnerability Assessment",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-a-hazard-vulnerability-assessment/document.md",
+      "path": "content/appendices/appendix-a-hazard-vulnerability-assessment/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_A2_COMMUNITY_HVA_PLACEHOLDER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_A3_HVA_EVIDENCE_OF_ANNUAL_ANALYSIS_AND_REVIEW_COMPLIANCE_DOCUMENT_XLS",
@@ -4544,7 +4807,7 @@
       "title": "Appendix B - Mutual Aid Agreements / Memoranda of Understanding",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-b-mutual-aid-agreements-memoranda-of-understanding/document.md",
+      "path": "content/appendices/appendix-b-mutual-aid-agreements-memoranda-of-understanding/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_B1_SAMPLE_STOP_OVER_POINT_MEMORANDUM_OF_UNDERSTANDING_MOU_DOC",
         "SRC-13_APPENDICES_APPENDIX_B_COVER_DOCX",
@@ -4564,7 +4827,7 @@
       "title": "Appendix C - Compliance Schedule / Calendar",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-c-compliance-schedule-calendar/document.md",
+      "path": "content/appendices/appendix-c-compliance-schedule-calendar/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_C_COMPLIANCE_CALENDAR_DOC",
         "SRC-13_APPENDICES_APPENDIX_C_COVER_DOCX",
@@ -4583,7 +4846,7 @@
       "title": "Appendix D - Sample Vendor Agreement",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-d-sample-vendor-agreement/document.md",
+      "path": "content/appendices/appendix-d-sample-vendor-agreement/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_D_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_D_SAMPLE_VENDOR_AGREEMENT_DOCX",
@@ -4602,7 +4865,7 @@
       "title": "Appendix E - Evacuation Route Maps",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-e-evacuation-route-maps/document.md",
+      "path": "content/appendices/appendix-e-evacuation-route-maps/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_E_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_E_EVACUATION_MAPS_PLACEHOLDER_DOCX",
@@ -4621,7 +4884,7 @@
       "title": "Appendix F - Organizational Chart and Key Disaster Roles",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-f-organizational-chart-and-key-disaster-roles/document.md",
+      "path": "content/appendices/appendix-f-organizational-chart-and-key-disaster-roles/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_F_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_F_ORGANIZATIONAL_CHART_OF_STAFF_WITH_KEY_DISASTER_ROLES_DOC",
@@ -4643,7 +4906,7 @@
       "title": "Appendix G - Resident and Responsible Party Emergency Communications Plan",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-g-resident-and-responsible-party-emergency-communications-plan/document.md",
+      "path": "content/appendices/appendix-g-resident-and-responsible-party-emergency-communications-plan/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_G_COVER_1_DOCX",
         "SRC-13_APPENDICES_APPENDIX_G_RESIDENT_REPONSIBLE_PARTY_EMERGENCY_COMMUNCATIONS_PLAN_DOC",
@@ -4664,7 +4927,7 @@
       "title": "Appendix H - Staff Competency Post Training Test",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-h-staff-competency-post-training-test/document.md",
+      "path": "content/appendices/appendix-h-staff-competency-post-training-test/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_H_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_H_STAFF_COMPETENCY_POST_TRAINING_TEST_DOCX",
@@ -4683,7 +4946,7 @@
       "title": "Appendix I - Collaborative and Cooperative Planning Efforts Documentation",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-i-collaborative-and-cooperative-planning-efforts-documentation/document.md",
+      "path": "content/appendices/appendix-i-collaborative-and-cooperative-planning-efforts-documentation/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_I_COLLABORATIVE_AND_COOPERATIVE_PLANNING_EFFORTS_XLS",
         "SRC-13_APPENDICES_APPENDIX_I_COVER_DOCX",
@@ -4702,7 +4965,7 @@
       "title": "Appendix J - Annual Analysis and Review",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-j-annual-analysis-and-review/document.md",
+      "path": "content/appendices/appendix-j-annual-analysis-and-review/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_J_ANNUAL_ANALYSIS_AND_REVIEW_XLS",
         "SRC-13_APPENDICES_APPENDIX_J_COVER_DOCX",
@@ -4721,7 +4984,7 @@
       "title": "Appendix K - EPP Quick Reference Guide",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-k-epp-quick-reference-guide/document.md",
+      "path": "content/appendices/appendix-k-epp-quick-reference-guide/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_K_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_K_EPP_QUICK_REFERENCE_GUIDE_11X17_V3_DOC",
@@ -4740,7 +5003,7 @@
       "title": "Appendix L - 1135 Waivers",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-l-1135-waivers/document.md",
+      "path": "content/appendices/appendix-l-1135-waivers/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_L_1135_WAIVER_1_DOCX",
         "SRC-13_APPENDICES_APPENDIX_L_COVER_DOCX",
@@ -4759,7 +5022,7 @@
       "title": "Appendix M - PPE Burn Rate Calculator",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-m-ppe-burn-rate-calculator/document.md",
+      "path": "content/appendices/appendix-m-ppe-burn-rate-calculator/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_M_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_M_PPE_BURN_RATE_CALCULATOR_XLSX",
@@ -4778,7 +5041,7 @@
       "title": "Appendix N - Contact Listing for Facility Physicians",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-n-contact-listing-for-facility-physicians/document.md",
+      "path": "content/appendices/appendix-n-contact-listing-for-facility-physicians/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_N_CONTACT_LISTING_FOR_FACILITY_PHYSICIANS_3_2022_DOCX",
         "SRC-13_APPENDICES_APPENDIX_N_COVER_DOCX",
@@ -4799,7 +5062,7 @@
       "title": "Appendix O - Entities Providing Services Under Arrangement",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-o-entities-providing-services-under-arrangement/document.md",
+      "path": "content/appendices/appendix-o-entities-providing-services-under-arrangement/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_O_COVER_DOCX",
         "SRC-13_APPENDICES_APPENDIX_O_ENTITIES_PROVIDING_SERVICES_UNDER_ARRANGEMENT_1_DOCX",
@@ -4819,7 +5082,7 @@
       "title": "Appendix P - Contact Listing for Facility Volunteers",
       "content_group": "appendices",
       "content_type": "appendix",
-      "path": "_content/appendices/appendix-p-contact-listing-for-facility-volunteers/document.md",
+      "path": "content/appendices/appendix-p-contact-listing-for-facility-volunteers/document.md",
       "source_ids": [
         "SRC-13_APPENDICES_APPENDIX_P_CONTACT_LISTING_FOR_FACILITY_VOLUNTEERS_1_DOCX",
         "SRC-13_APPENDICES_APPENDIX_P_COVER_DOCX",
@@ -4837,10 +5100,10 @@
     },
     {
       "doc_id": "REG-CFR-42-403-748",
-      "title": "42 CFR \u00a7403.748 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §403.748 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-403/section-403-748/document.md",
+      "path": "content/regulatory/cfr/title-42/part-403/section-403-748/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_403_XML"
       ],
@@ -4850,10 +5113,10 @@
     },
     {
       "doc_id": "REG-CFR-42-416-45",
-      "title": "42 CFR \u00a7416.45 Condition for coverage\u2014Medical staff",
+      "title": "42 CFR §416.45 Condition for coverage—Medical staff",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-416/section-416-45/document.md",
+      "path": "content/regulatory/cfr/title-42/part-416/section-416-45/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_416_XML"
       ],
@@ -4863,10 +5126,10 @@
     },
     {
       "doc_id": "REG-CFR-42-416-54",
-      "title": "42 CFR \u00a7416.54 Condition for coverage\u2014Emergency preparedness",
+      "title": "42 CFR §416.54 Condition for coverage—Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-416/section-416-54/document.md",
+      "path": "content/regulatory/cfr/title-42/part-416/section-416-54/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_416_XML"
       ],
@@ -4876,10 +5139,10 @@
     },
     {
       "doc_id": "REG-CFR-42-418-113",
-      "title": "42 CFR \u00a7418.113 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §418.113 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-418/section-418-113/document.md",
+      "path": "content/regulatory/cfr/title-42/part-418/section-418-113/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_418_XML"
       ],
@@ -4889,10 +5152,10 @@
     },
     {
       "doc_id": "REG-CFR-42-441-184",
-      "title": "42 CFR \u00a7441.184 Emergency preparedness",
+      "title": "42 CFR §441.184 Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-441/section-441-184/document.md",
+      "path": "content/regulatory/cfr/title-42/part-441/section-441-184/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_441_XML"
       ],
@@ -4902,10 +5165,10 @@
     },
     {
       "doc_id": "REG-CFR-42-460-84",
-      "title": "42 CFR \u00a7460.84 Emergency preparedness",
+      "title": "42 CFR §460.84 Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-460/section-460-84/document.md",
+      "path": "content/regulatory/cfr/title-42/part-460/section-460-84/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_460_XML"
       ],
@@ -4915,10 +5178,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-1",
-      "title": "42 CFR \u00a7482.1 Basis and scope",
+      "title": "42 CFR §482.1 Basis and scope",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-1/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-1/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4928,10 +5191,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-13",
-      "title": "42 CFR \u00a7482.13 Condition of participation: Patient's rights",
+      "title": "42 CFR §482.13 Condition of participation: Patient's rights",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-13/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-13/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4941,10 +5204,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-15",
-      "title": "42 CFR \u00a7482.15 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §482.15 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-15/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-15/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4954,10 +5217,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-41",
-      "title": "42 CFR \u00a7482.41 Condition of participation: Physical environment",
+      "title": "42 CFR §482.41 Condition of participation: Physical environment",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-41/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-41/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4967,10 +5230,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-57",
-      "title": "42 CFR \u00a7482.57 Condition of participation: Respiratory care services",
+      "title": "42 CFR §482.57 Condition of participation: Respiratory care services",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-57/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-57/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4980,10 +5243,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-68",
-      "title": "42 CFR \u00a7482.68 Special requirement for transplant programs",
+      "title": "42 CFR §482.68 Special requirement for transplant programs",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-68/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-68/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -4993,10 +5256,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-70",
-      "title": "42 CFR \u00a7482.70 Definitions",
+      "title": "42 CFR §482.70 Definitions",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-70/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-70/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -5006,10 +5269,10 @@
     },
     {
       "doc_id": "REG-CFR-42-482-78",
-      "title": "42 CFR \u00a7482.78 Condition of participation: Emergency preparedness for transplant programs",
+      "title": "42 CFR §482.78 Condition of participation: Emergency preparedness for transplant programs",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-482/section-482-78/document.md",
+      "path": "content/regulatory/cfr/title-42/part-482/section-482-78/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_482_XML"
       ],
@@ -5019,10 +5282,10 @@
     },
     {
       "doc_id": "REG-CFR-42-483-10",
-      "title": "42 CFR \u00a7483.10 Resident rights",
+      "title": "42 CFR §483.10 Resident rights",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-483/section-483-10/document.md",
+      "path": "content/regulatory/cfr/title-42/part-483/section-483-10/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_483_XML"
       ],
@@ -5032,10 +5295,10 @@
     },
     {
       "doc_id": "REG-CFR-42-483-35",
-      "title": "42 CFR \u00a7483.35 Nursing services",
+      "title": "42 CFR §483.35 Nursing services",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-483/section-483-35/document.md",
+      "path": "content/regulatory/cfr/title-42/part-483/section-483-35/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_483_XML"
       ],
@@ -5045,10 +5308,10 @@
     },
     {
       "doc_id": "REG-CFR-42-483-73",
-      "title": "42 CFR \u00a7483.73 Emergency preparedness",
+      "title": "42 CFR §483.73 Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-483/section-483-73/document.md",
+      "path": "content/regulatory/cfr/title-42/part-483/section-483-73/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_483_XML"
       ],
@@ -5058,10 +5321,10 @@
     },
     {
       "doc_id": "REG-CFR-42-483-470",
-      "title": "42 CFR \u00a7483.470 Condition of participation: Physical environment",
+      "title": "42 CFR §483.470 Condition of participation: Physical environment",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-483/section-483-470/document.md",
+      "path": "content/regulatory/cfr/title-42/part-483/section-483-470/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_483_XML"
       ],
@@ -5071,10 +5334,10 @@
     },
     {
       "doc_id": "REG-CFR-42-483-475",
-      "title": "42 CFR \u00a7483.475 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §483.475 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-483/section-483-475/document.md",
+      "path": "content/regulatory/cfr/title-42/part-483/section-483-475/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_483_XML"
       ],
@@ -5084,10 +5347,10 @@
     },
     {
       "doc_id": "REG-CFR-42-484-55",
-      "title": "42 CFR \u00a7484.55 Condition of participation: Comprehensive assessment of patients",
+      "title": "42 CFR §484.55 Condition of participation: Comprehensive assessment of patients",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-484/section-484-55/document.md",
+      "path": "content/regulatory/cfr/title-42/part-484/section-484-55/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_484_XML"
       ],
@@ -5097,10 +5360,10 @@
     },
     {
       "doc_id": "REG-CFR-42-484-60",
-      "title": "42 CFR \u00a7484.60 Condition of participation: Care planning, coordination of services, and quality of care",
+      "title": "42 CFR §484.60 Condition of participation: Care planning, coordination of services, and quality of care",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-484/section-484-60/document.md",
+      "path": "content/regulatory/cfr/title-42/part-484/section-484-60/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_484_XML"
       ],
@@ -5110,10 +5373,10 @@
     },
     {
       "doc_id": "REG-CFR-42-484-102",
-      "title": "42 CFR \u00a7484.102 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §484.102 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-484/section-484-102/document.md",
+      "path": "content/regulatory/cfr/title-42/part-484/section-484-102/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_484_XML"
       ],
@@ -5123,10 +5386,10 @@
     },
     {
       "doc_id": "REG-CFR-42-485-68",
-      "title": "42 CFR \u00a7485.68 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §485.68 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-485/section-485-68/document.md",
+      "path": "content/regulatory/cfr/title-42/part-485/section-485-68/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_485_XML"
       ],
@@ -5136,10 +5399,10 @@
     },
     {
       "doc_id": "REG-CFR-42-485-625",
-      "title": "42 CFR \u00a7485.625 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §485.625 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-485/section-485-625/document.md",
+      "path": "content/regulatory/cfr/title-42/part-485/section-485-625/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_485_XML"
       ],
@@ -5149,10 +5412,10 @@
     },
     {
       "doc_id": "REG-CFR-42-485-727",
-      "title": "42 CFR \u00a7485.727 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §485.727 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-485/section-485-727/document.md",
+      "path": "content/regulatory/cfr/title-42/part-485/section-485-727/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_485_XML"
       ],
@@ -5162,10 +5425,10 @@
     },
     {
       "doc_id": "REG-CFR-42-485-920",
-      "title": "42 CFR \u00a7485.920 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §485.920 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-485/section-485-920/document.md",
+      "path": "content/regulatory/cfr/title-42/part-485/section-485-920/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_485_XML"
       ],
@@ -5175,10 +5438,10 @@
     },
     {
       "doc_id": "REG-CFR-42-486-344",
-      "title": "42 CFR \u00a7486.344 Condition: Evaluation and management of potential donors and organ placement and recovery",
+      "title": "42 CFR §486.344 Condition: Evaluation and management of potential donors and organ placement and recovery",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-486/section-486-344/document.md",
+      "path": "content/regulatory/cfr/title-42/part-486/section-486-344/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_486_XML"
       ],
@@ -5188,10 +5451,10 @@
     },
     {
       "doc_id": "REG-CFR-42-486-360",
-      "title": "42 CFR \u00a7486.360 Condition for Coverage: Emergency preparedness",
+      "title": "42 CFR §486.360 Condition for Coverage: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-486/section-486-360/document.md",
+      "path": "content/regulatory/cfr/title-42/part-486/section-486-360/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_486_XML"
       ],
@@ -5201,10 +5464,10 @@
     },
     {
       "doc_id": "REG-CFR-42-491-12",
-      "title": "42 CFR \u00a7491.12 Emergency preparedness",
+      "title": "42 CFR §491.12 Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-491/section-491-12/document.md",
+      "path": "content/regulatory/cfr/title-42/part-491/section-491-12/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_491_XML"
       ],
@@ -5214,10 +5477,10 @@
     },
     {
       "doc_id": "REG-CFR-42-494-40",
-      "title": "42 CFR \u00a7494.40 Condition: Water and dialysate quality",
+      "title": "42 CFR §494.40 Condition: Water and dialysate quality",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-494/section-494-40/document.md",
+      "path": "content/regulatory/cfr/title-42/part-494/section-494-40/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_494_XML"
       ],
@@ -5227,10 +5490,10 @@
     },
     {
       "doc_id": "REG-CFR-42-494-62",
-      "title": "42 CFR \u00a7494.62 Condition of participation: Emergency preparedness",
+      "title": "42 CFR §494.62 Condition of participation: Emergency preparedness",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-494/section-494-62/document.md",
+      "path": "content/regulatory/cfr/title-42/part-494/section-494-62/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_494_XML"
       ],
@@ -5240,10 +5503,10 @@
     },
     {
       "doc_id": "REG-CFR-42-494-120",
-      "title": "42 CFR \u00a7494.120 Condition: Special purpose renal dialysis facilities",
+      "title": "42 CFR §494.120 Condition: Special purpose renal dialysis facilities",
       "content_group": "regulatory",
       "content_type": "regulatory_cfr",
-      "path": "_content/regulatory/cfr/title-42/part-494/section-494-120/document.md",
+      "path": "content/regulatory/cfr/title-42/part-494/section-494-120/document.md",
       "source_ids": [
         "SRC-ECFR_TITLE_42_PART_494_XML"
       ],
@@ -5256,7 +5519,7 @@
       "title": "Appendix Z Table of Contents",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/table-of-contents/document.md",
+      "path": "content/regulatory/som-appendix-z/table-of-contents/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5269,7 +5532,7 @@
       "title": "Appendix Z Introduction",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/introduction/document.md",
+      "path": "content/regulatory/som-appendix-z/introduction/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5282,7 +5545,7 @@
       "title": "Appendix Z Applicability and Format of this Appendix",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/applicability-and-format/document.md",
+      "path": "content/regulatory/som-appendix-z/applicability-and-format/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5295,7 +5558,7 @@
       "title": "Appendix Z Resources",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/general-resources/document.md",
+      "path": "content/regulatory/som-appendix-z/general-resources/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5308,7 +5571,7 @@
       "title": "Appendix Z Survey Protocol",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/survey-protocol/document.md",
+      "path": "content/regulatory/som-appendix-z/survey-protocol/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5321,7 +5584,7 @@
       "title": "Appendix Z Definitions",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/definitions/document.md",
+      "path": "content/regulatory/som-appendix-z/definitions/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5334,7 +5597,7 @@
       "title": "E-0001 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0001/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0001/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5347,7 +5610,7 @@
       "title": "E-0002 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0002/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0002/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5360,7 +5623,7 @@
       "title": "E-0003 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0003/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0003/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5373,7 +5636,7 @@
       "title": "E-0004 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0004/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0004/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5386,7 +5649,7 @@
       "title": "E-0005 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0005/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0005/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5399,7 +5662,7 @@
       "title": "E-0006 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0006/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0006/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5412,7 +5675,7 @@
       "title": "E-0007 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0007/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0007/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5425,7 +5688,7 @@
       "title": "E-0008 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0008/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0008/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5438,7 +5701,7 @@
       "title": "E-0009 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0009/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0009/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5451,7 +5714,7 @@
       "title": "E-0010 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0010/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0010/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5464,7 +5727,7 @@
       "title": "E-0011 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0011/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0011/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5477,7 +5740,7 @@
       "title": "E-0012 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0012/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0012/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5490,7 +5753,7 @@
       "title": "E-0013 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0013/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0013/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5503,7 +5766,7 @@
       "title": "E-0014 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0014/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0014/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5516,7 +5779,7 @@
       "title": "E-0015 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0015/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0015/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5529,7 +5792,7 @@
       "title": "E-0016 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0016/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0016/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5542,7 +5805,7 @@
       "title": "E-0017 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0017/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0017/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5555,7 +5818,7 @@
       "title": "E-0018 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0018/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0018/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5568,7 +5831,7 @@
       "title": "E-0019 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0019/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0019/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5581,7 +5844,7 @@
       "title": "E-0020 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0020/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0020/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5594,7 +5857,7 @@
       "title": "E-0021 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0021/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0021/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5607,7 +5870,7 @@
       "title": "E-0022 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0022/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0022/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5620,7 +5883,7 @@
       "title": "E-0023 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0023/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0023/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5633,7 +5896,7 @@
       "title": "E-0024 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0024/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0024/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5646,7 +5909,7 @@
       "title": "E-0025 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0025/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0025/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5659,7 +5922,7 @@
       "title": "E-0026 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0026/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0026/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5672,7 +5935,7 @@
       "title": "E-0027 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0027/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0027/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5685,7 +5948,7 @@
       "title": "E-0028 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0028/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0028/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5698,7 +5961,7 @@
       "title": "Appendix Z PACE Non-Citable Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/pace-non-citable-reference/document.md",
+      "path": "content/regulatory/som-appendix-z/pace-non-citable-reference/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5711,7 +5974,7 @@
       "title": "E-0029 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0029/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0029/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5724,7 +5987,7 @@
       "title": "E-0030 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0030/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0030/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5737,7 +6000,7 @@
       "title": "E-0031 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0031/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0031/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5750,7 +6013,7 @@
       "title": "E-0032 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0032/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0032/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5763,7 +6026,7 @@
       "title": "E-0033 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0033/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0033/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5776,7 +6039,7 @@
       "title": "E-0034 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0034/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0034/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5789,7 +6052,7 @@
       "title": "E-0035 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0035/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0035/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5802,7 +6065,7 @@
       "title": "E-0036 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0036/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0036/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5815,7 +6078,7 @@
       "title": "E-0037 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0037/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0037/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5828,7 +6091,7 @@
       "title": "E-0038 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0038/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0038/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5841,7 +6104,7 @@
       "title": "E-0039 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0039/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0039/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5854,7 +6117,7 @@
       "title": "E-0040 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0040/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0040/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5867,7 +6130,7 @@
       "title": "E-0041 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0041/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0041/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5880,7 +6143,7 @@
       "title": "E-0042 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0042/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0042/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5893,7 +6156,7 @@
       "title": "E-0043 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0043/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0043/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5906,7 +6169,7 @@
       "title": "E-0044 Regulatory Reference",
       "content_group": "regulatory",
       "content_type": "regulatory_etag",
-      "path": "_content/regulatory/som-appendix-z/e-0044/document.md",
+      "path": "content/regulatory/som-appendix-z/e-0044/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],
@@ -5919,7 +6182,7 @@
       "title": "Appendix Z Transmittals Issued for this Chapter",
       "content_group": "regulatory",
       "content_type": "regulatory_support",
-      "path": "_content/regulatory/som-appendix-z/transmittals-issued/document.md",
+      "path": "content/regulatory/som-appendix-z/transmittals-issued/document.md",
       "source_ids": [
         "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF"
       ],

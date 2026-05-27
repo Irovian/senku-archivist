@@ -22,7 +22,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Pilot-tightened mapping. Kept \u00a7483.73 / E-0001 because this topic defines the program purpose, ownership, and annual maintenance expectations. Kept \u00a7483.73(a)(4) / E-0009 because the legacy text documents coordination with collaborative partners and local response agencies. Removed risk-assessment and continuity obligations because those are drafted as separate pilot topics. Human checkpoint: confirm this topic should stay policy-level and not absorb operational planning content."
+      "notes": "Pilot-tightened mapping. Kept §483.73 / E-0001 because this topic defines the program purpose, ownership, and annual maintenance expectations. Kept §483.73(a)(4) / E-0009 because the legacy text documents coordination with collaborative partners and local response agencies. Removed risk-assessment and continuity obligations because those are drafted as separate pilot topics. Human checkpoint: confirm this topic should stay policy-level and not absorb operational planning content."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-RISK_ASSESSMENT_PROCESS",
@@ -44,7 +44,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Pilot-tightened mapping. Kept \u00a7483.73(a)(1)-(2) / E-0006 because this topic covers the facility-based and community-based HVA process plus strategy development from identified risks. Kept \u00a7483.73(a)(4) / E-0009 because the legacy text ties local officials and community partners directly to the HVA effort. Removed overall-program and continuity obligations to keep this document focused on risk method and outputs. Human checkpoint: confirm the collaboration evidence belongs here and in Appendix I, not only in appendix support files."
+      "notes": "Pilot-tightened mapping. Kept §483.73(a)(1)-(2) / E-0006 because this topic covers the facility-based and community-based HVA process plus strategy development from identified risks. Kept §483.73(a)(4) / E-0009 because the legacy text ties local officials and community partners directly to the HVA effort. Removed overall-program and continuity obligations to keep this document focused on risk method and outputs. Human checkpoint: confirm the collaboration evidence belongs here and in Appendix I, not only in appendix support files."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-MITIGATION_OVERVIEW",
@@ -87,7 +87,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(a)(1)-(2) / E-0006 because this topic states the assumptions that connect identified hazards to emergency strategies. Kept \u00a7483.73(a)(3) / E-0007 because the assumptions address resident population needs, service continuity, staffing access, utilities, resources, and continuity of operations. Removed overall-program and collaboration seed requirements because program ownership and collaborative planning are handled in adjacent governance topics. Human checkpoint: confirm this document remains a shared planning foundation and does not duplicate detailed staffing, utility, sheltering, alternate-care-site, or evacuation procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(a)(1)-(2) / E-0006 because this topic states the assumptions that connect identified hazards to emergency strategies. Kept §483.73(a)(3) / E-0007 because the assumptions address resident population needs, service continuity, staffing access, utilities, resources, and continuity of operations. Removed overall-program and collaboration seed requirements because program ownership and collaborative planning are handled in adjacent governance topics. Human checkpoint: confirm this document remains a shared planning foundation and does not duplicate detailed staffing, utility, sheltering, alternate-care-site, or evacuation procedures."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-COMMUNICATIONS",
@@ -112,7 +112,7 @@
       ],
       "depends_on": [],
       "review_owner": "",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(c) / E-0029 plus \u00a7483.73(c)(1)-(3) / E-0030, E-0031, E-0032 because this topic owns the communication-plan framework, contact-category coverage, and primary/alternate communication governance. Kept \u00a7483.73(c)(4)-(7) / E-0033, E-0034 at a policy/reporting level because the legacy topic also covers resident information sharing, occupancy/needs reporting, and communication roles. Removed Section A seed requirements and \u00a7483.73(c)(8) because resident/family plan-sharing lives in its own adjacent topic. Human checkpoint: confirm the \u00a7483.73(c)(4)-(7) overlap is appropriate here at a governance level and not too much belongs only in Resident Medical Information or future evacuation docs."
+      "notes": "Batch-tightened mapping. Kept §483.73(c) / E-0029 plus §483.73(c)(1)-(3) / E-0030, E-0031, E-0032 because this topic owns the communication-plan framework, contact-category coverage, and primary/alternate communication governance. Kept §483.73(c)(4)-(7) / E-0033, E-0034 at a policy/reporting level because the legacy topic also covers resident information sharing, occupancy/needs reporting, and communication roles. Removed Section A seed requirements and §483.73(c)(8) because resident/family plan-sharing lives in its own adjacent topic. Human checkpoint: confirm the §483.73(c)(4)-(7) overlap is appropriate here at a governance level and not too much belongs only in Resident Medical Information or future evacuation docs."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-RESIDENT_AND_FAMILY_INFORMATION",
@@ -133,7 +133,7 @@
       ],
       "depends_on": [],
       "review_owner": "",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(c)(8) / E-0035 because this topic covers how emergency-plan information and alternate contact/update expectations are shared with residents and responsible parties. Removed Section A seed requirements and any \u00a7483.73(c)(1)-(7) carryover because those duties stay with broader communication, reporting, and medical-record topics. Human checkpoint: confirm this stays as plan-sharing guidance and does not absorb broader family-notification or resident-status reporting workflow."
+      "notes": "Batch-tightened mapping. Kept §483.73(c)(8) / E-0035 because this topic covers how emergency-plan information and alternate contact/update expectations are shared with residents and responsible parties. Removed Section A seed requirements and any §483.73(c)(1)-(7) carryover because those duties stay with broader communication, reporting, and medical-record topics. Human checkpoint: confirm this stays as plan-sharing guidance and does not absorb broader family-notification or resident-status reporting workflow."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS",
@@ -154,7 +154,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Pilot-tightened mapping. Kept \u00a7483.73(a)(3) / E-0007 because this topic addresses resident population needs, service-line continuity, alternate care arrangements, and continuity of operations. Removed overall-program, risk-assessment, and collaboration requirements because those are handled in adjacent governance topics. Human checkpoint: confirm whether any collaboration language in this topic is contextual only and does not need its own A4 mapping."
+      "notes": "Pilot-tightened mapping. Kept §483.73(a)(3) / E-0007 because this topic addresses resident population needs, service-line continuity, alternate care arrangements, and continuity of operations. Removed overall-program, risk-assessment, and collaboration requirements because those are handled in adjacent governance topics. Human checkpoint: confirm whether any collaboration language in this topic is contextual only and does not need its own A4 mapping."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-ROLE_OF_THE_FACILITY_UNDER_AN_1135_WAIVER",
@@ -175,7 +175,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Replaced the broad operations cluster with the focused \u00a7483.73(b)(8) / E-0026 requirement because this topic owns the facility role under an 1135 waiver and emergency-management-directed alternate-care-site coordination. Removed broad Section A seed requirements because risk assessment, continuity, collaboration, and overall program ownership are handled in adjacent governance topics. Human checkpoint: confirm this document should stay as a waiver-role coordination policy and leave evacuation mechanics, credentialing details, and resource lists to related operational documents."
+      "notes": "Batch-tightened mapping. Replaced the broad operations cluster with the focused §483.73(b)(8) / E-0026 requirement because this topic owns the facility role under an 1135 waiver and emergency-management-directed alternate-care-site coordination. Removed broad Section A seed requirements because risk assessment, continuity, collaboration, and overall program ownership are handled in adjacent governance topics. Human checkpoint: confirm this document should stay as a waiver-role coordination policy and leave evacuation mechanics, credentialing details, and resource lists to related operational documents."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-SERVING_AS_AN_ALTERNATE_CARE_SITE",
@@ -197,7 +197,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(a)(3) / E-0007 because this topic addresses continuity of operations, resident population needs, and the facility services that can be supported when receiving residents from another facility. Kept the remaining \u00a7483.73(b)(2)-(7) operations cluster because this topic depends on operational policies for resident tracking, staffing, transfer/receiving arrangements, and emergency procedures. Removed overall-program, risk-assessment, and collaboration seed requirements because this document should stay focused on receiving-site readiness; waiver authority lives in the adjacent 1135 waiver topic."
+      "notes": "Batch-tightened mapping. Kept §483.73(a)(3) / E-0007 because this topic addresses continuity of operations, resident population needs, and the facility services that can be supported when receiving residents from another facility. Kept the remaining §483.73(b)(2)-(7) operations cluster because this topic depends on operational policies for resident tracking, staffing, transfer/receiving arrangements, and emergency procedures. Removed overall-program, risk-assessment, and collaboration seed requirements because this document should stay focused on receiving-site readiness; waiver authority lives in the adjacent 1135 waiver topic."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-SHELTER_IN_PLACE_PLAN",
@@ -219,7 +219,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(a)(1)-(2) / E-0006 because this topic connects shelter-in-place readiness to identified hazards and emergency strategies. Kept \u00a7483.73(a)(3) / E-0007 because sheltering in place depends on resident population needs, essential services, and continuity of operations. Removed overall-program and collaboration seed requirements because program ownership and collaborative planning are handled in adjacent governance topics. Human checkpoint: confirm this document stays governance-level and leaves detailed lockdown, staff sheltering, utilities, resources, and evacuation procedures to related operational documents."
+      "notes": "Batch-tightened mapping. Kept §483.73(a)(1)-(2) / E-0006 because this topic connects shelter-in-place readiness to identified hazards and emergency strategies. Kept §483.73(a)(3) / E-0007 because sheltering in place depends on resident population needs, essential services, and continuity of operations. Removed overall-program and collaboration seed requirements because program ownership and collaborative planning are handled in adjacent governance topics. Human checkpoint: confirm this document stays governance-level and leaves detailed lockdown, staff sheltering, utilities, resources, and evacuation procedures to related operational documents."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-LOSS_OF_UTILITIES",
@@ -327,7 +327,7 @@
       ],
       "depends_on": [],
       "review_owner": "",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(c)(4)-(7) / E-0033, E-0034 because this topic covers medical documentation preservation, confidentiality, availability, and continuity-of-care transfer during emergencies. Removed Section A seed requirements, \u00a7483.73(c)(1)-(3), and \u00a7483.73(c)(8) because contact-list governance and resident/family plan-sharing belong in adjacent topics. Human checkpoint: confirm this stays records-focused and leaves packet/form-level evacuation handling to future evacuation content."
+      "notes": "Batch-tightened mapping. Kept §483.73(c)(4)-(7) / E-0033, E-0034 because this topic covers medical documentation preservation, confidentiality, availability, and continuity-of-care transfer during emergencies. Removed Section A seed requirements, §483.73(c)(1)-(3), and §483.73(c)(8) because contact-list governance and resident/family plan-sharing belong in adjacent topics. Human checkpoint: confirm this stays records-focused and leaves packet/form-level evacuation handling to future evacuation content."
     },
     {
       "item_id": "ITEM-GOVERNANCE_AND_PLANNING-TRAINING_AND_TESTING_PROGRAM",
@@ -414,7 +414,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because this topic owns the all-hazards activation procedure. Kept \u00a7483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 because activation starts operational response coordination. Kept \u00a7483.73(c) and \u00a7483.73(c)(3) / E-0029, E-0032 because the source activation steps depend on staff alerts and external notification paths. Removed \u00a7483.73(b)(1) because subsistence and utilities are handled in the baseline capability and utility topics. Human checkpoint resolved 2026-05-04: this stays the EOP activation trigger and notification topic, not the detailed Section C incident command procedure."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because this topic owns the all-hazards activation procedure. Kept §483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 because activation starts operational response coordination. Kept §483.73(c) and §483.73(c)(3) / E-0029, E-0032 because the source activation steps depend on staff alerts and external notification paths. Removed §483.73(b)(1) because subsistence and utilities are handled in the baseline capability and utility topics. Human checkpoint resolved 2026-05-04: this stays the EOP activation trigger and notification topic, not the detailed Section C incident command procedure."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-EMERGENCY_CODES",
@@ -437,7 +437,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because emergency code language is part of the facility's emergency policies and procedures. Kept \u00a7483.73(c) and \u00a7483.73(c)(3) / E-0029, E-0032 because this topic owns staff alert methods and primary/alternate notification expectations. Removed subsistence and broad operations requirements because this document defines alert language rather than response operations. Human checkpoint resolved 2026-05-04: the code list stays as a notification standard and leaves hazard-specific actions to the related procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because emergency code language is part of the facility's emergency policies and procedures. Kept §483.73(c) and §483.73(c)(3) / E-0029, E-0032 because this topic owns staff alert methods and primary/alternate notification expectations. Removed subsistence and broad operations requirements because this document defines alert language rather than response operations. Human checkpoint resolved 2026-05-04: the code list stays as a notification standard and leaves hazard-specific actions to the related procedures."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_THE_INCIDENT_COMMAND_SYSTEM",
@@ -461,7 +461,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 and \u00a7483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 because this all-hazards topic activates command coordination for emergency operations. Kept \u00a7483.73(c) and \u00a7483.73(c)(3) / E-0029, E-0032 because command center activation depends on staff notification and communication methods. Removed \u00a7483.73(b)(1) because supply and utility capability live in the baseline assessment and resource documents. Human checkpoint resolved 2026-05-04: this all-hazards Section B topic remains separate from the Section C Incident Command System document."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 and §483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 because this all-hazards topic activates command coordination for emergency operations. Kept §483.73(c) and §483.73(c)(3) / E-0029, E-0032 because command center activation depends on staff notification and communication methods. Removed §483.73(b)(1) because supply and utility capability live in the baseline assessment and resource documents. Human checkpoint resolved 2026-05-04: this all-hazards Section B topic remains separate from the Section C Incident Command System document."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-COMMUNICATIONS_PLAN",
@@ -487,7 +487,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because this umbrella topic frames communication procedures under the emergency preparedness policies. Kept \u00a7483.73(c), \u00a7483.73(c)(1), \u00a7483.73(c)(2), \u00a7483.73(c)(3), and \u00a7483.73(c)(4)-(7) / E-0029, E-0030, E-0031, E-0032, E-0033, E-0034 because this topic owns the all-hazards communication-plan framework, contact categories, agency contacts, primary/alternate methods, and emergency information sharing boundaries. Removed \u00a7483.73(b)(1), \u00a7483.73(b)(2)-(7), and \u00a7483.73(c)(8) because subsistence, detailed operations, and resident/family plan-sharing are handled in adjacent documents. Decision recorded: this remains the all-hazards communication framework and does not duplicate detailed internal/external procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because this umbrella topic frames communication procedures under the emergency preparedness policies. Kept §483.73(c), §483.73(c)(1), §483.73(c)(2), §483.73(c)(3), and §483.73(c)(4)-(7) / E-0029, E-0030, E-0031, E-0032, E-0033, E-0034 because this topic owns the all-hazards communication-plan framework, contact categories, agency contacts, primary/alternate methods, and emergency information sharing boundaries. Removed §483.73(b)(1), §483.73(b)(2)-(7), and §483.73(c)(8) because subsistence, detailed operations, and resident/family plan-sharing are handled in adjacent documents. Decision recorded: this remains the all-hazards communication framework and does not duplicate detailed internal/external procedures."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
@@ -510,7 +510,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because internal communication methods are emergency procedures staff use during response. Kept \u00a7483.73(c) and \u00a7483.73(c)(3) / E-0029, E-0032 because this topic owns primary and alternate staff communication methods inside the facility. Removed subsistence, broad operations, agency contacts, information-sharing, and resident/family plan-sharing requirements because those obligations live in the umbrella, external communication, resident/family, resource, and operations documents. Decision recorded: this document stays focused on staff and command-center communication methods, not public or agency messaging."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because internal communication methods are emergency procedures staff use during response. Kept §483.73(c) and §483.73(c)(3) / E-0029, E-0032 because this topic owns primary and alternate staff communication methods inside the facility. Removed subsistence, broad operations, agency contacts, information-sharing, and resident/family plan-sharing requirements because those obligations live in the umbrella, external communication, resident/family, resource, and operations documents. Decision recorded: this document stays focused on staff and command-center communication methods, not public or agency messaging."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-EXTERNAL_COMMUNICATIONS_DURING_A_DISASTER",
@@ -535,7 +535,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because external communication methods are part of the emergency procedure set. Kept \u00a7483.73(c), \u00a7483.73(c)(2), \u00a7483.73(c)(3), and \u00a7483.73(c)(4)-(7) / E-0029, E-0031, E-0032, E-0033, E-0034 because this topic owns communication with agencies, outside partners, public information channels, and information-sharing during response. Removed subsistence, broad operations, staff-only internal methods, and resident/family plan-sharing requirements because those are handled in adjacent documents. Decision recorded: external public-information channels remain here while resident/family plan-sharing remains in its dedicated topic."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because external communication methods are part of the emergency procedure set. Kept §483.73(c), §483.73(c)(2), §483.73(c)(3), and §483.73(c)(4)-(7) / E-0029, E-0031, E-0032, E-0033, E-0034 because this topic owns communication with agencies, outside partners, public information channels, and information-sharing during response. Removed subsistence, broad operations, staff-only internal methods, and resident/family plan-sharing requirements because those are handled in adjacent documents. Decision recorded: external public-information channels remain here while resident/family plan-sharing remains in its dedicated topic."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MANAGING_RESOURCES_AND_ASSETS",
@@ -558,7 +558,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because this topic is an all-hazards emergency procedure for resource management. Kept \u00a7483.73(b)(1) / E-0015 because the topic owns assessment, conservation, replenishment, and contingency sourcing for critical subsistence and operational resources. Kept \u00a7483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 as supporting operating-procedure context for resource decisions that affect resident care, staffing support, census reduction, transfer support, and recovery. Removed communication requirements because communication methods are handled in the communications documents. Human checkpoint: confirm this topic owns resource assessment, conservation, replenishment, contingency sourcing, and recovery coordination, while responsibilities, utilities, staffing, and detailed resource lists stay separate."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because this topic is an all-hazards emergency procedure for resource management. Kept §483.73(b)(1) / E-0015 because the topic owns assessment, conservation, replenishment, and contingency sourcing for critical subsistence and operational resources. Kept §483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 as supporting operating-procedure context for resource decisions that affect resident care, staffing support, census reduction, transfer support, and recovery. Removed communication requirements because communication methods are handled in the communications documents. Human checkpoint: confirm this topic owns resource assessment, conservation, replenishment, contingency sourcing, and recovery coordination, while responsibilities, utilities, staffing, and detailed resource lists stay separate."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-RESPONSIBILITIES_FOR_ENSURING_CRITICAL_SUPPLIES_AND_ACTIVITIES",
@@ -581,7 +581,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because department responsibility assignments are part of the facility emergency procedure set. Kept \u00a7483.73(b)(1) / E-0015 because the topic assigns accountability for critical supplies including food, water, medical supplies, pharmaceuticals, utility-support supplies, waste, linen, and related subsistence resources. Kept \u00a7483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 as supporting operating-procedure context for staffing, resident care, transfer support, and command reassignment of supply responsibilities during activation. Removed communication requirements because this topic assigns supply responsibilities rather than communication methods. Human checkpoint: confirm this topic should stay a responsibility assignment matrix and should not absorb detailed resource management procedures, detailed vendor lists, or utility/generator procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because department responsibility assignments are part of the facility emergency procedure set. Kept §483.73(b)(1) / E-0015 because the topic assigns accountability for critical supplies including food, water, medical supplies, pharmaceuticals, utility-support supplies, waste, linen, and related subsistence resources. Kept §483.73(b)(2)-(7) / E-0020, E-0021, E-0024, E-0025 as supporting operating-procedure context for staffing, resident care, transfer support, and command reassignment of supply responsibilities during activation. Removed communication requirements because this topic assigns supply responsibilities rather than communication methods. Human checkpoint: confirm this topic should stay a responsibility assignment matrix and should not absorb detailed resource management procedures, detailed vendor lists, or utility/generator procedures."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-BASELINE_ASSESSMENT_OF_96_HR_CAPABILITIES",
@@ -603,7 +603,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) / E-0013 because the capability assessment is an emergency preparedness policy/procedure tool. Kept \u00a7483.73(b)(1) / E-0015 because this topic directly assesses food, water, medical supplies, pharmaceuticals, alternate systems, emergency lighting, fire protection, sewage, and waste disposal capability. Removed broad operations and communication requirements because activation, command, notification, transfer, and staffing details live in adjacent documents. Human checkpoint resolved 2026-05-04: oxygen rows remain optional assembly-controlled rows in this baseline snapshot; detailed oxygen inventory, vendor, or clinical process detail may move to a future oxygen resource list if needed."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) / E-0013 because the capability assessment is an emergency preparedness policy/procedure tool. Kept §483.73(b)(1) / E-0015 because this topic directly assesses food, water, medical supplies, pharmaceuticals, alternate systems, emergency lighting, fire protection, sewage, and waste disposal capability. Removed broad operations and communication requirements because activation, command, notification, transfer, and staffing details live in adjacent documents. Human checkpoint resolved 2026-05-04: oxygen rows remain optional assembly-controlled rows in this baseline snapshot; detailed oxygen inventory, vendor, or clinical process detail may move to a future oxygen resource list if needed."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MANAGING_SECURITY_AND_SAFETY_DURING_A_DISASTER",
@@ -627,7 +627,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns security coordination, safety monitoring, staff assignment, and communication escalation during all-hazards response. Removed \u00a7483.73(b)(1) because subsistence logistics belong in resources, utilities, and staff sheltering documents. Human checkpoint: confirm this overview does not absorb detailed lockdown steps or staff sheltering logistics."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns security coordination, safety monitoring, staff assignment, and communication escalation during all-hazards response. Removed §483.73(b)(1) because subsistence logistics belong in resources, utilities, and staff sheltering documents. Human checkpoint: confirm this overview does not absorb detailed lockdown steps or staff sheltering logistics."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-BUILDING_LOCKDOWN",
@@ -651,7 +651,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns lockdown activation, access control, entry monitoring, and internal/external communication during restricted access. Removed \u00a7483.73(b)(1) because subsistence needs are not the primary burden of lockdown procedure. Human checkpoint: confirm lockdown preserves emergency egress and does not conflict with fire/life-safety procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns lockdown activation, access control, entry monitoring, and internal/external communication during restricted access. Removed §483.73(b)(1) because subsistence needs are not the primary burden of lockdown procedure. Human checkpoint: confirm lockdown preserves emergency egress and does not conflict with fire/life-safety procedures."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MANAGEMENT_OF_STAFF_DURING_A_DISASTER",
@@ -675,7 +675,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns staffing assessment, reassignment, staff support, and communication during disaster operations. Removed \u00a7483.73(b)(1) because food, water, utilities, and physical shelter logistics belong in separate resource/sheltering documents. Human checkpoint: confirm department-specific staffing details remain high-level enough for an all-hazards staffing overview."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns staffing assessment, reassignment, staff support, and communication during disaster operations. Removed §483.73(b)(1) because food, water, utilities, and physical shelter logistics belong in separate resource/sheltering documents. Human checkpoint: confirm department-specific staffing details remain high-level enough for an all-hazards staffing overview."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-NOTIFICATION_OF_OFF_DUTY_STAFF_DISASTER_STAFFING_OPTIONS",
@@ -699,7 +699,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns staff call-down, off-duty notification, and contingency staffing communication. Removed \u00a7483.73(b)(1) because subsistence and physical sheltering support are covered elsewhere. Human checkpoint: confirm this document owns call-in process while Management of Staff owns assignment and deployment decisions."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns staff call-down, off-duty notification, and contingency staffing communication. Removed §483.73(b)(1) because subsistence and physical sheltering support are covered elsewhere. Human checkpoint: confirm this document owns call-in process while Management of Staff owns assignment and deployment decisions."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-STAFF_SHELTERING",
@@ -724,7 +724,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(1), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns staff sheltering, rest locations, support needs, and communication during extended operations. Human checkpoint: confirm family/pet sheltering stays out of scope for this staff-only sheltering document."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(1), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns staff sheltering, rest locations, support needs, and communication during extended operations. Human checkpoint: confirm family/pet sheltering stays out of scope for this staff-only sheltering document."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-STAFF_FAMILY_SHELTERING",
@@ -748,7 +748,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns optional staff-family sheltering activation, registration, assignment, accountability, and staff communication during extended operations. Removed \u00a7483.73(b)(1) because resident subsistence and utility support stay in resident/resource documents. Removed \u00a7483.73(c)(8) because this topic does not own emergency plan sharing with residents or resident representatives. Human checkpoint: confirm staff family sheltering remains optional workforce-continuity support and does not become a resident-family or public-shelter obligation."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns optional staff-family sheltering activation, registration, assignment, accountability, and staff communication during extended operations. Removed §483.73(b)(1) because resident subsistence and utility support stay in resident/resource documents. Removed §483.73(c)(8) because this topic does not own emergency plan sharing with residents or resident representatives. Human checkpoint: confirm staff family sheltering remains optional workforce-continuity support and does not become a resident-family or public-shelter obligation."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-STAFF_PET_SHELTERING",
@@ -772,7 +772,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns optional staff pet sheltering activation, registration, accountability, and staff communication during extended operations. Removed \u00a7483.73(b)(1) because pet supplies and pet sheltering are not resident subsistence obligations. Human checkpoint: confirm staff pet sheltering stays optional and does not create an animal-boarding or public-shelter obligation."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns optional staff pet sheltering activation, registration, accountability, and staff communication during extended operations. Removed §483.73(b)(1) because pet supplies and pet sheltering are not resident subsistence obligations. Human checkpoint: confirm staff pet sheltering stays optional and does not create an animal-boarding or public-shelter obligation."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-CRITICAL_INCIDENT_STRESS_DEBRIEFING_CISD_FOR_STAFF",
@@ -794,7 +794,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) and \u00a7483.73(b)(2)-(7) because this topic owns staff-support procedures that help sustain emergency operations and staffing after critical incidents. Removed \u00a7483.73(b)(1) because subsistence and utilities are not the burden of this topic. Removed communication requirements because detailed emergency communication methods stay in the communication documents. Human checkpoint: confirm CISD remains staff-support guidance and does not become a clinical behavioral-health treatment procedure."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) and §483.73(b)(2)-(7) because this topic owns staff-support procedures that help sustain emergency operations and staffing after critical incidents. Removed §483.73(b)(1) because subsistence and utilities are not the burden of this topic. Removed communication requirements because detailed emergency communication methods stay in the communication documents. Human checkpoint: confirm CISD remains staff-support guidance and does not become a clinical behavioral-health treatment procedure."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-EMERGENCY_CREDENTIALING_PROGRAM",
@@ -816,7 +816,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b) and \u00a7483.73(b)(2)-(7) because this topic owns emergency operating procedures for temporary disaster privileges, supervision, and use of licensed volunteers or incoming personnel. Removed \u00a7483.73(b)(1) because subsistence and utilities are not part of credentialing. Removed communication requirements because notification methods remain in the communication and staffing documents. Human checkpoint: confirm emergency credentialing language aligns with facility credentialing, medical director, and nursing leadership expectations."
+      "notes": "Batch-tightened mapping. Kept §483.73(b) and §483.73(b)(2)-(7) because this topic owns emergency operating procedures for temporary disaster privileges, supervision, and use of licensed volunteers or incoming personnel. Removed §483.73(b)(1) because subsistence and utilities are not part of credentialing. Removed communication requirements because notification methods remain in the communication and staffing documents. Human checkpoint: confirm emergency credentialing language aligns with facility credentialing, medical director, and nursing leadership expectations."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-LOSS_OF_PARKING_INABILITY_TO_COMMUTE_TO_FACILITY",
@@ -840,7 +840,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns staff reporting, commute disruption, alternate parking, transportation coordination, and staff communication during access disruptions. Removed \u00a7483.73(b)(1) because resident subsistence and utility support are not the burden of this topic. Human checkpoint: confirm alternate parking and transportation details can remain procedure-level until facility-specific locations or agreements are approved."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns staff reporting, commute disruption, alternate parking, transportation coordination, and staff communication during access disruptions. Removed §483.73(b)(1) because resident subsistence and utility support are not the burden of this topic. Human checkpoint: confirm alternate parking and transportation details can remain procedure-level until facility-specific locations or agreements are approved."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MANAGING_UTILITIES_DURING_A_DISASTER",
@@ -864,7 +864,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(1), \u00a7483.73(b)(2)-(7), and \u00a7483.73(e)(1)-(3) because this topic owns all-hazards utility monitoring, conservation, emergency power framing, and utility continuity. Removed communication requirements because detailed primary/alternate communication methods remain in the communications documents. Human checkpoint: confirm this overview does not absorb generator failure, water loss, sewer/waste, fire protection, vendor-list, or equipment-list procedures."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(1), §483.73(b)(2)-(7), and §483.73(e)(1)-(3) because this topic owns all-hazards utility monitoring, conservation, emergency power framing, and utility continuity. Removed communication requirements because detailed primary/alternate communication methods remain in the communications documents. Human checkpoint: confirm this overview does not absorb generator failure, water loss, sewer/waste, fire protection, vendor-list, or equipment-list procedures."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MANAGING_RESIDENTS_DURING_A_DISASTER",
@@ -890,7 +890,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(1), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), \u00a7483.73(c)(3), and \u00a7483.73(c)(8) because this topic owns all-hazards resident care continuity, resident status awareness, essential services, and resident/responsible-party communication during emergency operations. Human checkpoint: confirm detailed evacuation tracking, medical-record packet preparation, and resident placement remain in dedicated evacuation or resident-information documents."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(1), §483.73(b)(2)-(7), §483.73(c), §483.73(c)(3), and §483.73(c)(8) because this topic owns all-hazards resident care continuity, resident status awareness, essential services, and resident/responsible-party communication during emergency operations. Human checkpoint: confirm detailed evacuation tracking, medical-record packet preparation, and resident placement remain in dedicated evacuation or resident-information documents."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-CENSUS_REDUCTION_PLAN",
@@ -914,7 +914,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns emergency census-reduction decisions, coordination, transportation, and staff/resident communication. Removed \u00a7483.73(b)(1) because resident subsistence and resource inventories stay in resource and surge documents. Human checkpoint: confirm this all-hazards census-reduction plan stays distinct from the evacuation-specific Census Reduction document."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns emergency census-reduction decisions, coordination, transportation, and staff/resident communication. Removed §483.73(b)(1) because resident subsistence and resource inventories stay in resource and surge documents. Human checkpoint: confirm this all-hazards census-reduction plan stays distinct from the evacuation-specific Census Reduction document."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-MORGUE_MASS_FATALITY_PLAN",
@@ -937,7 +937,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(2)-(7), and \u00a7483.73(c) because this topic owns emergency mass-fatality process, coordination, privacy, and required communication with families/authorities. Removed \u00a7483.73(b)(1) because subsistence and utilities are not the burden of this topic. Removed \u00a7483.73(c)(3) because primary/alternate communication methods stay in the communication procedures. Human checkpoint: confirm this draft remains process-level and does not need facility-specific morgue capacity, body-bag storage, or temporary morgue location tokens before nurse review."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(2)-(7), and §483.73(c) because this topic owns emergency mass-fatality process, coordination, privacy, and required communication with families/authorities. Removed §483.73(b)(1) because subsistence and utilities are not the burden of this topic. Removed §483.73(c)(3) because primary/alternate communication methods stay in the communication procedures. Human checkpoint: confirm this draft remains process-level and does not need facility-specific morgue capacity, body-bag storage, or temporary morgue location tokens before nurse review."
     },
     {
       "item_id": "ITEM-ALL_HAZARDS_RESPONSE-SURGE_CAPACITY_PLAN",
@@ -962,7 +962,7 @@
       ],
       "depends_on": [],
       "review_owner": "TBD",
-      "notes": "Batch-tightened mapping. Kept \u00a7483.73(b), \u00a7483.73(b)(1), \u00a7483.73(b)(2)-(7), \u00a7483.73(c), and \u00a7483.73(c)(3) because this topic owns incoming resident surge, capacity/resource assessment, receiving, staffing coordination, and communication during surge operations. Human checkpoint: confirm detailed surge-space locations and licensed-bed-capacity decisions remain facility-specific follow-up rather than draft blockers."
+      "notes": "Batch-tightened mapping. Kept §483.73(b), §483.73(b)(1), §483.73(b)(2)-(7), §483.73(c), and §483.73(c)(3) because this topic owns incoming resident surge, capacity/resource assessment, receiving, staffing coordination, and communication during surge operations. Human checkpoint: confirm detailed surge-space locations and licensed-bed-capacity decisions remain facility-specific follow-up rather than draft blockers."
     },
     {
       "item_id": "ITEM-INCIDENT_COMMAND-CONCEPT_OF_OPERATIONS",

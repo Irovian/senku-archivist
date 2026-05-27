@@ -5,7 +5,7 @@
   "sources": [
     {
       "source_id": "SRC-SOM_APPENDIX_Z_REV_204_2021_PDF",
-      "path": "_sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
+      "path": "sources/regulatory/som-appendix-z/SOM Appendix Z Rev 204 2021.pdf",
       "source_url": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107ap_z_emergprep.pdf",
       "source_role": "primary_regulatory_source",
       "retrieved_at": "2026-05-10T21:21:20Z",
@@ -19,7 +19,7 @@
     },
     {
       "source_id": "SRC-ECFR_42_CFR_PART_483_XML",
-      "path": "_sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
+      "path": "sources/regulatory/ecfr/title-42/part-483/title-42-part-483-ecfr-2026-05-07.xml",
       "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-05-07/title-42.xml?part=483",
       "source_role": "raw_regulatory_source",
       "retrieved_at": "2026-05-10T21:21:20Z",
@@ -28,7 +28,7 @@
     },
     {
       "source_id": "SRC-CMS_R204SOMA_TRANSMITTAL_HTML",
-      "path": "_sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
+      "path": "sources/regulatory/cms/CMS R204SOMA Transmittal 2021.html",
       "source_url": "https://www.cms.gov/regulations-and-guidance/guidance/transmittals/transmittals/r204soma",
       "source_role": "raw_regulatory_source",
       "retrieved_at": "2026-05-10T21:21:20Z",

@@ -6,10 +6,10 @@
     "som-appendix-z": {
       "label": "SOM Appendix Z CFR layer",
       "title_number": 42,
-      "source_crosswalk_path": "_project/regulatory_crosswalk.json",
+      "source_crosswalk_path": "project/regulatory_crosswalk.json",
       "source_corpus_id": "SOM-APPENDIX-Z-REV-204-2021",
-      "content_root": "_content/regulatory/cfr/title-42",
-      "source_root": "_sources/regulatory/ecfr/title-42",
+      "content_root": "content/regulatory/cfr/title-42",
+      "source_root": "sources/regulatory/ecfr/title-42",
       "ecfr_full_url_template": "https://www.ecfr.gov/api/versioner/v1/full/{issue_date}/title-{title}.xml?part={part}",
       "ecfr_titles_url": "https://www.ecfr.gov/api/versioner/v1/titles",
       "citation_policy": "derive_title_42_parts_and_sections_from_source_crosswalk"
