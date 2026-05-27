@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import subprocess
 from datetime import datetime, timezone
@@ -27,6 +28,8 @@ COPY_DIRS = (
 APP_STATE_DIRS = ("audit", "workbook-state", "runtime")
 IMPORTED_SURFACES = ("content", "project", "extracts", "sources", "workspace.json")
 ORIGINAL_OFFICE_EXTENSIONS = (".docx", ".xlsx", ".xls", ".doc")
+TEXT_REDACTION_SUFFIXES = {".html", ".json", ".jsonl", ".md", ".txt", ".xml"}
+MAPBOX_TOKEN_RE = re.compile(r"pk\.[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+){2}")
 OMIT = object()
 
 
@@ -122,13 +125,33 @@ def sanitize_label(source: dict) -> str:
 
 
 def sanitize_scalar(value: str) -> str | object:
-    normalized = normalize_imported_path(value)
+    normalized = normalize_imported_path(redact_secret_text(value))
     lowered = normalized.lower()
     if "source-files" in lowered:
         return OMIT
     if has_office_extension(normalized):
         return OMIT
     return normalized
+
+
+def redact_secret_text(value: str) -> str:
+    return MAPBOX_TOKEN_RE.sub("pk.REDACTED_MAPBOX_TOKEN", value)
+
+
+def redact_text_secrets_in_tree(root: Path) -> int:
+    redacted = 0
+    for path in sorted(root.rglob("*")):
+        if not path.is_file() or path.suffix.lower() not in TEXT_REDACTION_SUFFIXES:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        cleaned = redact_secret_text(text)
+        if cleaned != text:
+            path.write_text(cleaned, encoding="utf-8")
+            redacted += 1
+    return redacted
 
 
 def is_removed_target_key(key: str) -> bool:
@@ -489,6 +512,7 @@ def import_workspace(source_root: Path, target_root: Path, staging_root: Path) -
     removed_extracted_source_count = sanitize_extracted_context(candidate_root, retained_source_ids)
     preserved_state_file_count = copy_app_state(target_root, candidate_root)
     seeded_workbook_sidecars = seed_workbook_sidecars(candidate_root)
+    redact_text_secrets_in_tree(candidate_root)
 
     manifest = build_manifest(
         source_root,

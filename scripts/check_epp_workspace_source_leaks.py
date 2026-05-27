@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -31,6 +32,9 @@ RAW_TARGET_KEYS = {
     "attachment_path",
 }
 SCAN_SUFFIXES = {".json", ".jsonl", ".txt", ".md", ".xml", ".html"}
+SECRET_PATTERNS = (
+    ("Mapbox access token", re.compile(r"pk\.[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+){2}")),
+)
 
 
 def is_allowed_path(relative_path: Path) -> bool:
@@ -55,6 +59,14 @@ def iter_scan_files(workspace_root: Path) -> list[Path]:
     return paths
 
 
+def iter_text_files(workspace_root: Path) -> list[Path]:
+    return [
+        path
+        for path in sorted(workspace_root.rglob("*"))
+        if path.is_file() and path.suffix.lower() in SCAN_SUFFIXES
+    ]
+
+
 def read_text(path: Path) -> str:
     try:
         return path.read_text(encoding="utf-8")
@@ -70,6 +82,12 @@ def check_text_markers(path: Path, text: str, errors: list[str]) -> None:
     source_root = str(DEFAULT_SOURCE_ROOT)
     if source_root and source_root in text:
         errors.append(f"{path}: contains absolute original source checkout path")
+
+
+def check_secret_patterns(path: Path, text: str, errors: list[str]) -> None:
+    for label, pattern in SECRET_PATTERNS:
+        if pattern.search(text):
+            errors.append(f"{path}: contains disallowed {label}")
 
 
 def walk_json(value: Any, path: Path, json_path: str, errors: list[str]) -> None:
@@ -109,6 +127,9 @@ def main() -> int:
         return 2
 
     errors: list[str] = []
+    for path in iter_text_files(workspace_root):
+        check_secret_patterns(path, read_text(path), errors)
+
     for path in iter_scan_files(workspace_root):
         text = read_text(path)
         check_text_markers(path, text, errors)
