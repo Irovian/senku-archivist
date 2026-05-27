@@ -25,6 +25,7 @@ The current React app does not yet satisfy browser parity: it still uses `epp-se
 
 ### Markdown Rendering
 
+- SG-0013 document-read responses should return browser-ready rendered compatibility output from the local service, not only raw Markdown for React to render.
 - Strip internal working sections from reader output while preserving canonical Markdown source.
 - Preserve H1 extraction, heading anchors, duplicate heading disambiguation, lists, paragraphs, code blocks, tables, and Markdown table safety.
 - Render assembly/customizable sections as facility-specific content.
@@ -53,7 +54,21 @@ The current React app does not yet satisfy browser parity: it still uses `epp-se
 - The EPP catalog contains 261 documents and 63 source records.
 - Imported document types include topic documents, regulatory E-tags, CFR pages, support artifacts, appendices, and regulatory support documents.
 - Imported content groups include regulatory, hazard-specific procedures, evacuation, all-hazards response, incident command, governance and planning, appendices, resources and lists, and recovery.
-- The standalone workspace should preserve `_content`, `_project`, extracted source context, regulatory sources, and original catalog source files when available.
+- The standalone app workspace should preserve canonical content, sanitized project metadata, retained app-facing extracted context, and retained regulatory sources used for CFR and Survey Guidance views.
+- Import refresh should build and validate a non-app-facing staged candidate before promoting imported surfaces into the live `epp-full` workspace.
+- Failed candidate import or validation should leave the live workspace usable and append no success import audit event.
+- Normal import refresh should preserve app-owned audit, workbook, draft, and runtime state; missing workbook sidecars may be seeded only non-destructively.
+- Successful import refresh should append a sanitized audit ledger event and print a matching console summary without raw source paths, development-only source filenames, browse targets, or download targets.
+- Original office/catalog source files under `workspaces/epp-full/source-files` are development-only reference material for the manual-building process and should be physically absent from the refreshed app workspace.
+- Development-only original source annotations under `workspaces/epp-full/extracts/source-annotations` should be absent or normalized without original `source_path` values; retained regulatory extracted context can remain when it supports CFR or Survey Guidance views.
+- `workspaces/epp-full/project/catalog.json` should be normalized in place as app-facing metadata; Archivist v1 should not retain a raw upstream catalog copy with development-only source file paths.
+- Original source records in `project/catalog.json` should remain only as non-browseable provenance stubs so document `source_ids` can preserve traceability without exposing original file paths, retained-file status, or open/download actions.
+- All copied app-facing project metadata should be sanitized so development-only original source paths do not leak through crosswalks, search metadata, compliance metadata, source metadata, or service responses.
+- App-facing source provenance should preserve source kind, branch, commit, and a non-browseable label without exposing absolute local paths to the original EPP source checkout.
+- Import and workspace summaries should use explicit counts such as provenance-only source records and retained regulatory sources, not a generic `source_count`.
+- A repeatable post-import leak check should fail on disallowed original-source markers such as `.docx`, `.xlsx`, `.xls`, `source-files`, `source_path`, original source-file manifest keys, and raw open/download target fields while allowing retained regulatory source data; this check should not scan canonical Markdown document bodies.
+- A post-cleanup reference-integrity check should fail if retained app-facing metadata points to removed source annotations, removed `source-files` paths, removed raw source paths, or missing source records.
+- Regulatory source files under `workspaces/epp-full/sources/regulatory` are retained because they feed viewed and used app content.
 - The generated `_reviews/epp-manual-browser` output remains behavior evidence, not copied app architecture.
 
 ### Appendix A / HVA Edge Case

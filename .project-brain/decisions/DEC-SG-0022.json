@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0022",
+  "title": "Keep original source records as provenance stubs",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "Original office/catalog source records from project/catalog.json should remain only as minimal non-browseable provenance stubs. They may preserve stable source IDs and human-readable labels for traceability, but they must not retain original file paths, open targets, download targets, or retained-file semantics.",
+  "context": "Documents in the imported EPP corpus reference source_ids. After deciding that workspaces/epp-full/source-files should be physically removed, the remaining risk was dangling source_ids or app-visible metadata that still looked like browseable source files.",
+  "rationale": "Provenance stubs preserve useful traceability without turning development-only original documents into app content. This keeps document metadata honest and prevents future source-detail or download affordances from exposing files that should not be retained.",
+  "alternatives_considered": [
+    "Remove original source records entirely and allow source_ids to dangle",
+    "Keep original source paths in catalog metadata but do not copy the files",
+    "Retain original source files as hidden attachments"
+  ],
+  "consequences": [
+    "SG-0007 should normalize original catalog sources during import refresh",
+    "Document source_ids for development-only originals resolve to provenance-only records",
+    "The app should not offer open, browse, download, or attachment affordances for original source stubs",
+    "Retained regulatory sources remain separate app inputs and may keep the metadata needed for CFR and Survey Guidance views"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

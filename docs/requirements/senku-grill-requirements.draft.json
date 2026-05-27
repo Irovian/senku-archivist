@@ -160,8 +160,8 @@
     {
       "id": "REQ-0022",
       "priority": "high",
-      "statement": "The full EPP workspace import must preserve Markdown content, project metadata, source references, extracted source context, regulatory sources, original catalog source files when available, and an audit ledger path.",
-      "source": "system_inference",
+      "statement": "The full EPP workspace import must preserve canonical Markdown content, project metadata, source references, retained app-facing extracted context, retained regulatory sources used for CFR and Survey Guidance views, and an audit ledger path. Normal import refresh must build and validate a non-app-facing staged candidate before promoting imported surfaces into the live epp-full workspace. Failed candidate import or validation must leave the existing live workspace usable and must not append a success import audit event. Normal import refresh must preserve app-owned state such as audit ledger, approved workbook sidecars, draft workbook state, and runtime data; destructive resets require a future explicit reset workflow. Successful normal import refresh must append a sanitized import event to the audit ledger and print a matching console summary without raw source paths, development-only source filenames, source-files paths, source_path values, browse targets, or download targets. Original office/catalog source files under source-files are development-only material and must be physically absent from the refreshed app-facing workspace. Development-only original source annotations under extracts/source-annotations must be absent or normalized without original source_path values. project/catalog.json must be normalized in place as app-facing metadata; no raw upstream catalog copy with development-only source file paths should be retained in Archivist v1. Original source records may remain only as non-browseable provenance stubs without original file paths or open/download targets. All app-facing project metadata must be sanitized so development-only original source paths do not leak through crosswalk, search, compliance, source metadata, or service responses. App-facing source provenance must not expose absolute local paths to the original source checkout. Import summaries and service-facing workspace summaries must use explicit count fields that distinguish provenance-only source records from retained regulatory sources, not a generic source_count. A repeatable post-import leak check must fail on disallowed original-source markers while allowing retained regulatory source data, but it must not scan canonical Markdown document bodies. A post-cleanup reference-integrity check must fail if retained app-facing metadata points to removed source annotations, removed source-files paths, removed raw source paths, or missing source records.",
+      "source": "human_direction",
       "status": "accepted",
       "open_questions": []
     },
@@ -260,7 +260,7 @@
     {
       "id": "REQ-0035",
       "priority": "high",
-      "statement": "SG-0013 must include service-backed workspace manifests, document metadata, and document payload reads rather than relying on static seed imports.",
+      "statement": "SG-0013 must include service-backed workspace manifests, document metadata, and document payload reads rather than relying on static seed imports. Document-read responses must return browser-ready rendered compatibility output from current canonical source, with sanitized metadata, stable anchors, source/compliance orientation, and artifact placeholder/context data; raw Markdown alone is not sufficient as the primary normal-reader payload.",
       "source": "human_direction",
       "status": "accepted",
       "open_questions": []

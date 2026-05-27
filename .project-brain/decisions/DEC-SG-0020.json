@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0020",
+  "title": "Clean app-facing import before browser build",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "SG-0007 should be completed as the immediate prerequisite for SG-0013. The full browser shell should be built only after the app-facing epp-full workspace has been refreshed so development-only source-files are physically removed while retained regulatory sources remain available.",
+  "context": "SG-0013 will introduce service-backed browsing over the full workspace. Because the current imported workspace and import script still know about workspaces/epp-full/source-files, building the browser first would risk exposing development-only original files through navigation, metadata, download placeholders, or future service responses.",
+  "rationale": "Cleaning the import boundary first makes the browser slice safer and simpler. The browser can treat the workspace as app-facing content without needing defensive UI rules around material that should not be there.",
+  "alternatives_considered": [
+    "Build SG-0013 first and rely on the UI to hide source-files",
+    "Leave source-files in the workspace but omit them from navigation",
+    "Remove all source folders, including retained regulatory sources"
+  ],
+  "consequences": [
+    "SG-0007 is promoted to ready_to_build and becomes the recommended next item",
+    "SG-0013 is blocked by SG-0007 until the import refresh physically removes source-files from the app-facing workspace",
+    "SG-0013 validation keeps a guard that source-files are not exposed through the app",
+    "Regulatory sources under sources/regulatory remain retained inputs for CFR and Survey Guidance"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

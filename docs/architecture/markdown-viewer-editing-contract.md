@@ -12,7 +12,7 @@ Runtime drafts, autosaves, model proposals, and workbook draft state stay outsid
 
 ## Viewer Responsibilities
 
-The first implementation pass should use live compatibility rendering for Markdown, CFR, compliance, and artifact output. Source Markdown, catalog data, crosswalks, eCFR XML, artifact definitions, and workbook sidecars remain canonical. Pre-rendered output is acceptable for export, print, review snapshots, or disposable caches, but the normal reader should render from current source at view time. Native React components should be promoted later for high-value surfaces once the full browser shell is stable.
+The first implementation pass should use live compatibility rendering for Markdown, CFR, compliance, and artifact output. Source Markdown, catalog data, crosswalks, eCFR XML, artifact definitions, and workbook sidecars remain canonical. The local service document-read path should return browser-ready rendered compatibility output from current source at view time, not a raw-Markdown-only payload for the normal reader. Pre-rendered output is acceptable for export, print, review snapshots, or disposable caches, but the normal reader should render from current source at view time. Native React components should be promoted later for high-value surfaces once the full browser shell is stable.
 
 The viewer must preserve these old-browser behaviors:
 
@@ -115,7 +115,7 @@ The React app should not write Markdown directly. Viewer and editor work should 
 
 - Read workspace/document metadata.
 - Read Markdown document source.
-- Read rendered compatibility output when needed.
+- Read rendered compatibility output as the normal browser payload.
 - Queue manual drafts.
 - Queue model proposals.
 - Read pending reviews.

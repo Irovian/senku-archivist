@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0027",
+  "title": "Hide absolute source checkout paths",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "App-facing workspace metadata should not expose absolute local filesystem paths to the original EPP source checkout. The import may retain source kind, branch, commit, import timestamp, and a non-browseable human label such as Emergency Prep Project source repo.",
+  "context": "The current import manifest records the original EPP repo path in source_reference.path. That is useful for developer debugging but should not be treated as app-facing workspace metadata or shown through future service responses.",
+  "rationale": "Absolute local paths are machine- and user-specific, create noisy UI metadata, and can leak developer environment details. Branch and commit provenance keep the useful audit trail without exposing local filesystem structure.",
+  "alternatives_considered": [
+    "Keep the absolute source repo path in workspace.json",
+    "Remove all source_reference provenance",
+    "Expose the path only in the app metadata inspector"
+  ],
+  "consequences": [
+    "SG-0007 should replace app-facing absolute source paths with non-browseable labels plus commit/branch provenance",
+    "The original EPP checkout path may remain an importer default or developer CLI argument, but not app-facing workspace metadata",
+    "SG-0013 service responses should not surface absolute local original-source checkout paths",
+    "The source-leak check should cover absolute local original-source checkout paths in app-facing metadata"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

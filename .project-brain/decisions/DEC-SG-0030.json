@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0030",
+  "title": "Use explicit source count fields",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 should replace ambiguous generic source_count fields or messages with explicit source count labels, such as provenance_source_count and retained_regulatory_source_count. document_count remains separate.",
+  "context": "After deciding that many original source records become non-browseable provenance stubs while regulatory sources remain retained app inputs, a bare source_count in workspace.json or import output could imply retained source files.",
+  "rationale": "Explicit counts make the cleaned workspace easier to understand and reduce the chance that UI, service responses, or validation reports misrepresent provenance stubs as retained source files.",
+  "alternatives_considered": [
+    "Keep the existing generic source_count field",
+    "Remove all source counts from import summaries",
+    "Count only retained regulatory sources and discard provenance counts"
+  ],
+  "consequences": [
+    "workspace.json import_summary should keep document_count but avoid a bare source_count",
+    "The import summary should distinguish provenance-only source records from retained regulatory sources",
+    "Importer console output should use the same explicit labels",
+    "SG-0013 service responses should not expose a generic source_count that blurs retained and provenance-only sources"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

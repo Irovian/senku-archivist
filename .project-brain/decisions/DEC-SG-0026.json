@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0026",
+  "title": "Keep leak check out of canonical Markdown bodies",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "The SG-0007 source-leak check should not scan canonical Markdown document bodies under workspaces/epp-full/content. It should focus on app-facing workspace metadata, manifests, project metadata, and service-response inputs.",
+  "context": "Canonical Markdown is retained app content and SG-0007 explicitly does not rewrite canonical document content during import. Some canonical documents may mention historical worksheet or source file names as part of their content.",
+  "rationale": "Keeping the leak check out of canonical Markdown prevents an import-retention cleanup from becoming a content-review or rewriting task. Mentions inside retained documents can be handled by later content review if needed.",
+  "alternatives_considered": [
+    "Scan canonical Markdown bodies and fail on original-source filename mentions",
+    "Rewrite canonical Markdown content during import to remove source-like mentions",
+    "Skip the leak check entirely"
+  ],
+  "consequences": [
+    "SG-0007 remains an import and metadata cleanup slice",
+    "Canonical Markdown content remains unchanged during import",
+    "Historical file-name mentions inside retained documents are not treated as SG-0007 failures",
+    "Future content-review work may address document-body mentions if they become user-facing problems"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

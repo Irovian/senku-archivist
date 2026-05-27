@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0028",
+  "title": "Do not retain original source annotations as app context",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 should not retain development-only original source annotations as app-facing extracted context. Files and fields under workspaces/epp-full/extracts/source-annotations that represent original office/catalog source files should be removed or normalized so original file names, source_path fields, and source-file semantics are not exposed. Retained regulatory extracted context may remain when it supports CFR or Survey Guidance views.",
+  "context": "A repo scan showed workspaces/epp-full/extracts/source-annotations contains annotation files named after original .docx/.xls/.xlsx sources, with source_path fields inside. This would reintroduce the development-only source-file layer even after removing source-files and sanitizing catalog/project metadata.",
+  "rationale": "Extracted context can be app-facing data. Removing or normalizing development-only original source annotations keeps the retention boundary consistent while preserving regulatory context that the app actually uses.",
+  "alternatives_considered": [
+    "Keep all source annotations as extracted context",
+    "Retain source annotation filenames but strip source_path fields",
+    "Remove all extracted context, including retained regulatory context"
+  ],
+  "consequences": [
+    "SG-0007 must clean or omit development-only original source annotations during import refresh",
+    "The source-leak check should include app-facing extracted context, while still excluding canonical Markdown document bodies",
+    "Retained regulatory extracted context remains allowed where it supports CFR and Survey Guidance",
+    "SG-0013 should not read or expose original source annotations as document/source metadata"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

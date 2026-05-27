@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0032",
+  "title": "Record sanitized import refresh events",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 import refresh should append a sanitized import event to workspaces/epp-full/audit/ledger.jsonl and print a matching console summary. The event may include counts, validation statuses, preserved-state status, seeded-sidecar counts, source kind labels, source commit/branch provenance, and error summaries, but must not include raw source paths, development-only source filenames, source-files paths, original source_path values, browse targets, or download targets.",
+  "context": "Import refresh mutates the app-facing workspace and now preserves app-owned audit/workbook/runtime state. The user agreed that this mutation should be traceable in the app's audit trail, while keeping the source-cleanup guardrails intact.",
+  "rationale": "A sanitized ledger event gives future humans and local agents a durable explanation of what changed during import without reintroducing development-only source details into app-owned state.",
+  "alternatives_considered": [
+    "Only print import results to the console",
+    "Write a detailed developer report containing raw source paths",
+    "Defer all import traceability until the audit UI exists"
+  ],
+  "consequences": [
+    "SG-0007 should preserve the existing audit ledger and append one sanitized import event per successful refresh",
+    "The console summary and audit event should use the same explicit count labels for documents, provenance-only sources, retained regulatory sources, preserved state, and seeded sidecars",
+    "The source-leak check should include audit import events so ledger entries cannot retain disallowed source markers",
+    "Detailed developer-only diagnostics may remain console-only or in failing command output, but should not be retained in the app-facing workspace ledger"
+  ],
+  "related_requirements": [
+    "REQ-0009",
+    "REQ-0022"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0019",
+  "title": "Exclude development-only original source files from app workspace",
+  "status": "accepted",
+  "created_at": "2026-05-26",
+  "decision": "Archivist should retain canonical EPP documents, CFR documents, Survey Guidance documents, and regulatory source data used by app views. Original office/catalog source files under workspaces/epp-full/source-files are development-only references for manual content work and should not be retained as app workspace content.",
+  "context": "The full EPP import previously treated original catalog source files as part of the retained workspace. The user clarified that workspaces/epp-full/source-files is not needed for the app, while workspaces/epp-full/sources/regulatory is retained because those regulatory sources are pulled into and displayed or used by the app.",
+  "rationale": "Keeping app workspace content focused on canonical Markdown documents and retained regulatory sources reduces noise, storage, and accidental exposure of development-only source material while preserving the regulatory data needed for CFR and Survey Guidance browsing.",
+  "alternatives_considered": [
+    "Retain every original catalog source file in the app workspace",
+    "Remove all source material, including regulatory sources",
+    "Expose original source files through the app as attachments"
+  ],
+  "consequences": [
+    "REQ-0022 is narrowed to app-facing canonical documents, project metadata, extracted context, retained regulatory sources, and audit ledger data",
+    "SG-0007 must update the import/refresh path so source-files is physically absent from refreshed app workspaces",
+    "SG-0013 should not expose source-files in navigation, metadata controls, downloads, or document views",
+    "Regulatory sources under sources/regulatory remain retained app inputs"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

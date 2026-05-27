@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SG-0015",
+  "title": "Establish Archivist regression and smoke test harness",
+  "type": "build_slice",
+  "status": "needs_grill",
+  "priority": "medium",
+  "confidence": "medium",
+  "created_at": "2026-05-26",
+  "updated_at": "2026-05-26",
+  "goal": "Create a durable local regression and smoke test harness for Archivist service contracts, desktop browser behavior, document rendering coverage, and future review/edit workflows.",
+  "acceptance_criteria": [
+    "Define local commands for service endpoint smoke, frontend build, desktop browser smoke, and screenshot/evidence capture",
+    "Cover both fast fixture checks against epp-seed and parity checks against epp-full where appropriate",
+    "Include regression coverage for navigation completeness, direct document URLs, service-unavailable state, representative document rendering, and key placeholder/artifact fallback behavior",
+    "Provide a path for expanding into renderer parity samples, workbook flows, proposal/review flows, and history/audit checks as those features land",
+    "Document when tests are expected to run locally before handoff and what evidence should be captured"
+  ],
+  "non_goals": [
+    "Blocking SG-0013 on the full regression harness",
+    "Mobile test coverage",
+    "Pixel-perfect visual regression for every document",
+    "External tracker sync or cloud-only CI as the first test path",
+    "Autonomous daemon runners"
+  ],
+  "blocked_by": [
+    "SG-0013"
+  ],
+  "related_requirements": [
+    "REQ-0013",
+    "REQ-0021",
+    "REQ-0032",
+    "REQ-0034",
+    "REQ-0035",
+    "REQ-0036"
+  ],
+  "related_questions": [],
+  "validation": [
+    "Run Senku Prep project-brain validation",
+    "Run the documented local smoke/regression command set once the harness exists"
+  ],
+  "notes": "Created from prep agreement that SG-0013 should have repeatable desktop smoke, while broader regression coverage should live as its own future quality-infrastructure slice rather than bloating the browser-shell build."
+}

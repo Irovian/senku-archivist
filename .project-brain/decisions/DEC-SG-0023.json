@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0023",
+  "title": "Normalize catalog in place for app workspace",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "workspaces/epp-full/project/catalog.json should be normalized in place as app-facing workspace metadata during SG-0007. Archivist v1 should not retain a separate raw upstream catalog copy containing development-only original source file paths.",
+  "context": "After deciding that original source records become non-browseable provenance stubs, the remaining question was whether Archivist should preserve the raw upstream catalog somewhere else. The user approved using the original EPP repo as the raw source of truth instead.",
+  "rationale": "Keeping only the normalized app-facing catalog inside Archivist prevents the cleaned workspace from carrying a second metadata surface that could re-expose development-only file paths. The original EPP repo remains available when raw catalog/source-process evidence is needed.",
+  "alternatives_considered": [
+    "Keep both a normalized app catalog and a raw upstream catalog copy in Archivist",
+    "Move the raw upstream catalog into a hidden archive folder",
+    "Delete all source provenance from the catalog"
+  ],
+  "consequences": [
+    "SG-0007 should transform project/catalog.json into the app-facing catalog during refresh",
+    "No raw catalog copy with development-only source file paths should be retained in workspaces/epp-full",
+    "Document source_ids should resolve through normalized app-facing source records",
+    "Raw catalog/source-process investigation should refer back to the original EPP repo rather than a retained Archivist copy"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

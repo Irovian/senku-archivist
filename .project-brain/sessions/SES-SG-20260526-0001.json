@@ -98,6 +98,70 @@
     {
       "summary": "Create one Git commit by default for each accepted model proposal or approved manual-draft batch; add review-session batching later only if needed.",
       "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Retain canonical EPP documents, CFR documents, Survey Guidance documents, and regulatory sources used by app views; treat source-files as development-only material.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Complete SG-0007 import cleanup before SG-0013 so service-backed browsing starts from a cleaned app-facing workspace.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Physically remove workspaces/epp-full/source-files from the refreshed Archivist app workspace while leaving the original EPP repo and retained regulatory sources alone.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Keep original project/catalog.json source records only as non-browseable provenance stubs without original file paths or open/download targets.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Normalize workspaces/epp-full/project/catalog.json in place as app-facing metadata and do not retain a raw upstream catalog copy in Archivist v1.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Sanitize all app-facing project metadata so development-only original office/catalog source paths do not leak through crosswalks, search, compliance, source metadata, or service responses.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Require an automated SG-0007 post-import leak check that fails on disallowed original-source markers while allowing retained regulatory source data.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Keep the SG-0007 source-leak check focused on metadata and service-response inputs, not canonical Markdown document bodies.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Hide absolute local original-source checkout paths from app-facing workspace metadata while retaining non-browseable source labels plus branch and commit provenance.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Do not retain development-only original source annotations as app-facing extracted context; keep retained regulatory extracted context where it supports CFR or Survey Guidance.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Fail SG-0007 loudly if cleanup leaves dangling app-facing references to removed source annotations, removed raw paths, or missing source records.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Replace generic source_count summaries with explicit provenance-only source and retained regulatory source counts.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Preserve app-owned audit ledger, workbook state, draft workbook state, and runtime data during SG-0007 import refresh; seed missing workbook sidecars without overwriting existing state.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Append a sanitized import-refresh event to the audit ledger and print a matching console summary, without retaining raw source paths or development-only source details.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "Build SG-0007 import refreshes in a non-app-facing staging area and promote only after candidate validation passes; failed candidates leave the live workspace usable and append no success audit event.",
+      "source": "explicit_human_direction"
+    },
+    {
+      "summary": "SG-0013 document-read endpoints should return browser-ready rendered compatibility output from the local service, while React owns shell, navigation, selected state, filtering, and reader controls.",
+      "source": "explicit_human_direction"
     }
   ],
   "open_questions": [],
@@ -115,9 +179,10 @@
     "SG-0011",
     "SG-0012",
     "SG-0013",
-    "SG-0014"
+    "SG-0014",
+    "SG-0015"
   ],
-  "recommended_next_item": "SG-0013",
+  "recommended_next_item": "SG-0007",
   "artifacts": [
     "README.md",
     "docs/discovery/senku-grill-discovery-packet.md",
@@ -142,6 +207,22 @@
     ".project-brain/decisions/DEC-SG-0016.json",
     ".project-brain/decisions/DEC-SG-0017.json",
     ".project-brain/decisions/DEC-SG-0018.json",
+    ".project-brain/decisions/DEC-SG-0019.json",
+    ".project-brain/decisions/DEC-SG-0020.json",
+    ".project-brain/decisions/DEC-SG-0021.json",
+    ".project-brain/decisions/DEC-SG-0022.json",
+    ".project-brain/decisions/DEC-SG-0023.json",
+    ".project-brain/decisions/DEC-SG-0024.json",
+    ".project-brain/decisions/DEC-SG-0025.json",
+    ".project-brain/decisions/DEC-SG-0026.json",
+    ".project-brain/decisions/DEC-SG-0027.json",
+    ".project-brain/decisions/DEC-SG-0028.json",
+    ".project-brain/decisions/DEC-SG-0029.json",
+    ".project-brain/decisions/DEC-SG-0030.json",
+    ".project-brain/decisions/DEC-SG-0031.json",
+    ".project-brain/decisions/DEC-SG-0032.json",
+    ".project-brain/decisions/DEC-SG-0033.json",
+    ".project-brain/decisions/DEC-SG-0034.json",
     ".project-brain/backlog/items/SG-0001.json",
     ".project-brain/backlog/items/SG-0002.json",
     ".project-brain/backlog/items/SG-0003.json",
@@ -156,16 +237,18 @@
     ".project-brain/backlog/items/SG-0012.json",
     ".project-brain/backlog/items/SG-0013.json",
     ".project-brain/backlog/items/SG-0014.json",
+    ".project-brain/backlog/items/SG-0015.json",
     "scripts/import_epp_workspace.py",
     "workspaces/epp-full/workspace.json",
     "docs/architecture/workbook-artifact-contract.md",
     "docs/architecture/epp-browser-ui-parity-contract.md",
     "docs/architecture/markdown-viewer-editing-contract.md",
+    "docs/implementation/sg-0007-import-cleanup-checklist.md",
     "docs/implementation/sg-0013-build-checklist.md"
   ],
   "readiness_call": {
     "state": "build",
     "confidence": "high",
-    "reason": "All current grill questions are resolved. SG-0013 is ready to build next."
+    "reason": "All current grill questions are resolved. SG-0007 is ready to build next as the cleanup prerequisite for SG-0013."
   }
 }

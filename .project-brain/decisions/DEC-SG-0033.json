@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0033",
+  "title": "Build import candidates in staging before promotion",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 import refresh should build a candidate epp-full workspace in a non-app-facing staging area, run source-leak and reference-integrity checks against the candidate, and promote imported surfaces into workspaces/epp-full only after checks pass. If candidate import or validation fails, the existing live epp-full workspace remains usable, no success import audit event is appended, and failure details stay in command output.",
+  "context": "SG-0007 now preserves app-owned state and appends sanitized success events to the audit ledger. Because SG-0013 depends on the cleaned epp-full workspace, failed cleanup must not leave the live workspace half-refreshed.",
+  "rationale": "A staging-and-promote flow keeps import refresh repeatable while protecting the current app workspace from partial writes, failed cleanup, and misleading audit history.",
+  "alternatives_considered": [
+    "Refresh workspaces/epp-full in place and rely on manual cleanup after failures",
+    "Delete and rebuild the live workspace before validation",
+    "Append audit failure events even when no workspace mutation was promoted"
+  ],
+  "consequences": [
+    "The app and local service should not discover or browse staging import candidates as workspaces",
+    "Source-leak and reference-integrity checks should run against the staged candidate before promotion",
+    "Promotion should replace only imported surfaces and preserve app-owned audit, workbook, draft, and runtime state",
+    "A sanitized success audit event should be appended only after successful validation and promotion",
+    "Failed candidate imports should produce clear console output without mutating the live workspace or appending a success event"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

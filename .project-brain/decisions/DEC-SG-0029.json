@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0029",
+  "title": "Fail on dangling cleanup references",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 should fail loudly if cleanup leaves app-facing references pointing to removed source annotations, removed source-files paths, removed raw source paths, or unresolved development-only source records. The importer should rewrite affected references to retained document/source/regulatory IDs or normalized provenance stubs, or fail with a clear report.",
+  "context": "Removing source-files, normalizing source records, sanitizing project metadata, and dropping development-only source annotations can leave references behind. Silent dangling references would make later service-backed browsing unreliable.",
+  "rationale": "A reference-integrity gate catches broken cleanup before SG-0013 consumes the workspace. Failing with a clear report is preferable to letting the browser or service quietly omit metadata or display confusing empty states.",
+  "alternatives_considered": [
+    "Silently drop dangling references during import",
+    "Leave dangling references for SG-0013 to tolerate",
+    "Keep removed source annotations only to satisfy references"
+  ],
+  "consequences": [
+    "SG-0007 must include a post-cleanup reference-integrity check",
+    "References affected by cleanup should point to retained IDs or normalized provenance stubs",
+    "The importer should report unresolved references with enough context to fix them",
+    "SG-0013 should only consume epp-full service responses after the integrity check passes"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

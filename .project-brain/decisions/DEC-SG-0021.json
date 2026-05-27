@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0021",
+  "title": "Physically remove source-files from app workspace",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 should physically remove workspaces/epp-full/source-files from the Archivist app workspace during import refresh. The original EPP repo and manual-development source process are not affected, and workspaces/epp-full/sources/regulatory remains retained.",
+  "context": "After clarifying that source-files is development-only material, the remaining ambiguity was whether the Archivist app workspace should keep the folder but stop advertising it, or remove it entirely. The user approved physical removal from the app workspace.",
+  "rationale": "Physical removal better matches the retention boundary and reduces the chance that future service, metadata, browsing, or download work accidentally exposes development-only source material.",
+  "alternatives_considered": [
+    "Keep source-files in the app workspace but omit it from workspace metadata",
+    "Keep source-files and rely on the UI to hide it",
+    "Remove both source-files and retained regulatory sources"
+  ],
+  "consequences": [
+    "SG-0007 validation must confirm workspaces/epp-full/source-files is absent after refresh",
+    "Workspace metadata should remove source-file path and copied/missing source-file counts",
+    "The original EPP repo remains the place for development-only source material",
+    "Regulatory sources under workspaces/epp-full/sources/regulatory remain retained app inputs"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

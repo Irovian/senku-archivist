@@ -39,5 +39,5 @@
     "Smoke inline edit draft capture and draft review",
     "Smoke proposal preview apply/reject guardrails"
   ],
-  "notes": "This is the larger parity slice after the full browser shell exists. Renderer strategy is resolved: use compatibility rendering first, then promote high-value surfaces into React components."
+  "notes": "This is the larger parity slice after the full browser shell exists. Renderer strategy is resolved: SG-0013 should expose service-rendered compatibility output first, then SG-0014 can deepen Markdown, artifact, editing, and proposal-review parity and promote high-value surfaces into React components."
 }

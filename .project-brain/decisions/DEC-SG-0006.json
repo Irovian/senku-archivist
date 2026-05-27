@@ -14,7 +14,9 @@
   ],
   "consequences": [
     "Full-content import must be repeatable so the workspace can be refreshed from the old EPP repo",
-    "The full EPP workspace must include project metadata and source references, not just Markdown bodies",
+    "The full EPP workspace must include project metadata and app-facing source references, not just Markdown bodies",
+    "Regulatory source files used for CFR and Survey Guidance app views are retained",
+    "Original office/catalog source files under source-files are development-only references and should not be retained as app workspace content",
     "The app can keep the seed workspace for fast scaffold testing while using the full workspace for parity and edge-case work",
     "Appendix A and other interactive artifacts become migration drivers rather than deferred oddities"
   ],

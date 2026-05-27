@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0025",
+  "title": "Require automated source-leak check",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 must include a repeatable post-import leak check that fails when app-facing workspace metadata contains disallowed development-only original-source markers. The check should cover patterns such as .docx, .xlsx, .xls, source-files, original_source_files_path, copied_original_source_files, missing_original_source_files, and raw open/download target fields, while allowing retained regulatory source data under sources/regulatory. The check should not scan canonical Markdown document bodies under workspaces/epp-full/content.",
+  "context": "The import cleanup now depends on sanitizing multiple metadata surfaces, not only catalog.json. Manual inspection would be fragile because project metadata can feed crosswalks, search, compliance views, source panels, and future service responses.",
+  "rationale": "An automated leak check turns the retention boundary into a crisp validation gate. It gives build agents a clear pass/fail signal and makes future import changes less likely to reintroduce development-only source paths.",
+  "alternatives_considered": [
+    "Rely on manual review of workspace JSON after import",
+    "Check only catalog.json",
+    "Block all source-related metadata, including retained regulatory data"
+  ],
+  "consequences": [
+    "SG-0007 validation must run the leak check after import refresh",
+    "The leak check scope is metadata/manifests/project data and excludes retained canonical Markdown document bodies",
+    "The check should report the file and offending marker when it fails",
+    "Retained regulatory source data remains allowed where it supports CFR and Survey Guidance",
+    "SG-0013 should only consume epp-full service responses after the leak check passes"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

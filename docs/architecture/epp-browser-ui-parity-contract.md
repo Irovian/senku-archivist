@@ -86,7 +86,7 @@ The reader must preserve:
 - Related documents, backlinks, mentioned documents, and source/build details.
 - eCFR-style rendering for CFR pages.
 
-The app should use a live compatibility renderer first. The app should render from current canonical source at view time instead of pre-rendering the full corpus as a static browse path. Direct React components can replace high-value surfaces later after the browser shell is stable and usage proves which surfaces deserve native component polish.
+The app should use a live compatibility renderer first. The local service document-read endpoint should return browser-ready rendered compatibility output from current canonical source, plus sanitized metadata, stable anchors, source/compliance orientation, and artifact placeholder/context data. React should own shell layout, navigation state, selected-document state, filters, masthead controls, and reader affordances; it should not rebuild the full old Markdown/CFR/compliance/artifact renderer from raw Markdown in the first browser-shell slice. Direct React components can replace high-value surfaces later after the browser shell is stable and usage proves which surfaces deserve native component polish.
 
 ## Utility Surfaces
 

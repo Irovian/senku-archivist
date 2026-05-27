@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0024",
+  "title": "Sanitize all app-facing project metadata",
+  "status": "accepted",
+  "created_at": "2026-05-27",
+  "decision": "SG-0007 should sanitize all app-facing project metadata copied into workspaces/epp-full/project, not only project/catalog.json. Development-only original office/catalog source paths must not leak through crosswalks, source metadata, search metadata, compliance metadata, or future service responses. Retained regulatory source metadata remains available where it supports CFR and Survey Guidance app views.",
+  "context": "After deciding that catalog.json should be normalized in place, a scan showed other copied project metadata such as crosswalk.json also contains original .docx/.xls/.xlsx source names. Those files could later feed metadata panels, search, compliance views, or service endpoints.",
+  "rationale": "Sanitizing all app-facing metadata preserves the retention boundary consistently. It avoids moving the exposure risk from catalog.json into another project file while still keeping useful stable IDs, human labels, and retained regulatory context.",
+  "alternatives_considered": [
+    "Sanitize only catalog.json and rely on SG-0013 to avoid other metadata files",
+    "Keep raw crosswalk/source metadata because it is not directly shown today",
+    "Remove all crosswalk and source relationship metadata from the app workspace"
+  ],
+  "consequences": [
+    "SG-0007 import refresh must normalize/sanitize every copied app-facing project metadata file that can carry original office/catalog source paths",
+    "Human-readable source labels and stable IDs may remain when they do not imply retained files or provide open/download targets",
+    "SG-0013 should assume service responses are based on sanitized app-facing metadata",
+    "Retained regulatory source metadata under sources/regulatory remains available for CFR and Survey Guidance"
+  ],
+  "related_requirements": [
+    "REQ-0021",
+    "REQ-0022",
+    "REQ-0032",
+    "REQ-0035"
+  ],
+  "related_backlog_items": [
+    "SG-0007",
+    "SG-0013"
+  ],
+  "related_questions": []
+}

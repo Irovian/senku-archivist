@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project_id": "senku-archivist",
-  "updated_at": "2026-05-26",
+  "updated_at": "2026-05-27",
   "status_order": [
     "inbox",
     "needs_grill",
@@ -68,7 +68,7 @@
     {
       "id": "SG-0007",
       "title": "Import the full EPP workspace corpus",
-      "status": "needs_review",
+      "status": "ready_to_build",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0007.json"
@@ -116,7 +116,7 @@
     {
       "id": "SG-0013",
       "title": "Port the full EPP browser shell and navigation",
-      "status": "ready_to_build",
+      "status": "blocked",
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0013.json"
@@ -128,7 +128,15 @@
       "type": "build_slice",
       "priority": "high",
       "path": ".project-brain/backlog/items/SG-0014.json"
+    },
+    {
+      "id": "SG-0015",
+      "title": "Establish Archivist regression and smoke test harness",
+      "status": "needs_grill",
+      "type": "build_slice",
+      "priority": "medium",
+      "path": ".project-brain/backlog/items/SG-0015.json"
     }
   ],
-  "recommended_next": "SG-0013"
+  "recommended_next": "SG-0007"
 }
