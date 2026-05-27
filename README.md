@@ -63,3 +63,20 @@ npm run service
 ```
 
 The service listens on `http://127.0.0.1:8798/` and currently exposes workspace metadata endpoints.
+
+Start the service and app together:
+
+```bash
+npm run launch
+```
+
+The desktop `Archivist` icon runs the same launcher. It starts the local service on
+`127.0.0.1:8798`, starts the Vite app on `127.0.0.1:5173`, and opens the full EPP
+workspace. Launcher logs are written under `.tmp/archivist-launch/`.
+
+Useful launcher checks:
+
+```bash
+npm run launch:status
+npm run launch:stop
+```

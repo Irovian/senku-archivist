@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .vite/
+.tmp/
 *.tsbuildinfo
 __pycache__/
 *.pyc
