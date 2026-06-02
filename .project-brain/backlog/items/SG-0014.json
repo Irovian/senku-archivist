@@ -494,6 +494,49 @@
           "This pass fixes the reachability/running-away behavior for the existing edit handle; office-style iconography remains a separate focused pass.",
           "Between-section insertion controls and hover-in-margin heading insertion remain separate focused passes."
         ]
+      },
+      {
+        "completed_at": "2026-06-02T16:27:15Z",
+        "addressed_requested_change": "Simplify the hover edit affordance so it appears at a fixed point on the left side of the section under the mouse instead of chasing or dodging the pointer.",
+        "changed_surfaces": [
+          "src/main.tsx removes cursor-Y based edit-handle placement and always anchors the compact or expanded handle to the hovered/active section edge.",
+          "src/main.tsx keeps stage-level hover selection for choosing the target section, but only moves the handle when the target section changes.",
+          "src/main.tsx and scripts/smoke_archivist.py update the hover-edit-handle smoke probe to assert fixed placement while the pointer moves inside the section and through the left gutter."
+        ],
+        "validation_commands": [
+          {
+            "command": "python3 -m py_compile scripts/smoke_archivist.py service/archivist_service.py",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run smoke:all",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/all-20260602T162646Z/summary.json"
+          },
+          {
+            "command": "python3 \"${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py\" validate",
+            "result": "passed"
+          },
+          {
+            "command": "git diff --check",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          ".tmp/archivist-smoke/all-20260602T162646Z/summary.json",
+          ".tmp/archivist-smoke/all-20260602T162646Z/browser-summary.json",
+          ".tmp/archivist-smoke/all-20260602T162646Z/screenshots/hover-edit-handle.png",
+          ".tmp/archivist-smoke/all-20260602T162646Z/screenshots/edit-switch-autosave.png",
+          ".tmp/archivist-smoke/all-20260602T162646Z/screenshots/edit-mode.png"
+        ],
+        "residual_risks": [
+          "Office-style iconography remains a separate focused pass.",
+          "Between-section insertion controls and hover-in-margin heading insertion remain separate focused passes."
+        ]
       }
     ],
     "readiness": "build"

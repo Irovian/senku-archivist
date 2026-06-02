@@ -538,8 +538,8 @@ function DocumentReader({
     [readyDocument?.metadata.editable, runDraftTransition, saveCurrentDraft, syncEditableDomForSection],
   )
 
-  const placeEditHandle = React.useCallback((sectionId: string, pointerY?: number) => {
-    const placement = measureEditHandlePlacement(readerStageRef.current, articleRef.current, sectionId, pointerY)
+  const placeEditHandle = React.useCallback((sectionId: string) => {
+    const placement = measureEditHandlePlacement(readerStageRef.current, articleRef.current, sectionId)
     if (!placement) return false
     setEditHandlePlacement((current) =>
       current &&
@@ -790,7 +790,7 @@ function DocumentReader({
         if (!secondElement) throw new Error('second section missing')
         const secondRect = secondElement.getBoundingClientRect()
         setSelectedSectionId(targetSection.section_id)
-        if (!placeEditHandle(targetSection.section_id, secondRect.top + Math.min(46, secondRect.height / 2))) {
+        if (!placeEditHandle(targetSection.section_id)) {
           throw new Error('second handle placement failed')
         }
         await waitForUiTick()
@@ -807,10 +807,13 @@ function DocumentReader({
         const sectionMiddleY = secondRect.top + Math.min(46, secondRect.height / 2)
         dispatchPointerMove(readerStageRef.current, secondRect.left + 24, sectionMiddleY)
         await waitForUiTick()
-        const anchoredHandle = findEditHandleElement(readerStageRef.current)
-        if (!anchoredHandle) throw new Error('anchored handle missing')
-        const anchoredTop = anchoredHandle.style.top
-        const anchoredLeft = anchoredHandle.style.left
+        const insideHandle = findEditHandleElement(readerStageRef.current)
+        if (!insideHandle) throw new Error('inside-section handle missing')
+        const anchoredTop = insideHandle.style.top
+        const anchoredLeft = insideHandle.style.left
+        if (anchoredTop !== secondHandle.style.top || anchoredLeft !== secondHandle.style.left) {
+          throw new Error('handle moved while hovering inside section')
+        }
         dispatchPointerMove(readerStageRef.current, secondRect.left - 72, sectionMiddleY + 16)
         await waitForUiTick()
         const approachableHandle = findEditHandleElement(readerStageRef.current)
@@ -833,7 +836,7 @@ function DocumentReader({
         ) {
           throw new Error('active handle did not expand')
         }
-        setSmokeHoverHandleStatus('hover-handle passed magnetic-edit-handle stable compact expanded')
+        setSmokeHoverHandleStatus('hover-handle passed fixed-edit-handle stable compact expanded')
       } catch (caught) {
         setSmokeHoverHandleStatus(
           `hover-handle failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
@@ -892,10 +895,7 @@ function DocumentReader({
     const handle = findEditHandleElement(readerStageRef.current)
     const pointerInHandle = handle ? pointInElement(handle, event.clientX, event.clientY) : false
     if (editingSectionId) {
-      const editingElement = findEditSectionElement(articleRef.current, editingSectionId)
-      if (!pointerInHandle && editingElement && pointInElement(editingElement, event.clientX, event.clientY)) {
-        placeEditHandle(editingSectionId, event.clientY)
-      } else if (editHandlePlacementRef.current?.sectionId !== editingSectionId) {
+      if (editHandlePlacementRef.current?.sectionId !== editingSectionId) {
         placeEditHandle(editingSectionId)
       }
       return
@@ -906,8 +906,9 @@ function DocumentReader({
       return
     }
     setSelectedSectionId((current) => (current === match.sectionId ? current : match.sectionId))
-    if (editHandlePlacementRef.current?.sectionId === match.sectionId && !match.exact) return
-    placeEditHandle(match.sectionId, event.clientY)
+    if (editHandlePlacementRef.current?.sectionId !== match.sectionId) {
+      placeEditHandle(match.sectionId)
+    }
   }
 
   function handleReaderStagePointerLeave() {
@@ -1510,24 +1511,16 @@ function measureEditHandlePlacement(
   stage: HTMLElement | null,
   root: HTMLElement | null,
   sectionId: string,
-  pointerY?: number,
 ): EditHandlePlacement | null {
   const section = findEditSectionElement(root, sectionId)
   if (!stage || !section) return null
   const stageRect = stage.getBoundingClientRect()
   const sectionRect = section.getBoundingClientRect()
-  const minTop = sectionRect.top - stageRect.top + 8
-  const maxTop = sectionRect.bottom - stageRect.top - 38
-  const desiredTop = pointerY === undefined ? minTop : pointerY - stageRect.top + 14
   return {
     sectionId,
-    top: Math.round(clamp(desiredTop, minTop, Math.max(minTop, maxTop))),
+    top: Math.round(sectionRect.top - stageRect.top + 8),
     left: Math.round(sectionRect.left - stageRect.left - 72),
   }
-}
-
-function clamp(value: number, min: number, max: number): number {
-  return Math.min(Math.max(value, min), max)
 }
 
 function insertHeadingAtSelection(container: HTMLElement, level: 2 | 3 | 4) {
