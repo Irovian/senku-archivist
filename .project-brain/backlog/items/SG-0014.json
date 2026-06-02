@@ -356,6 +356,55 @@
           "Clicking away from the active section now uses the same autosave transition path; the browser smoke specifically covers switching from one editable section to another.",
           "Anchored hover edit affordance, formatting toolbar hidden-until-edit behavior, between-section insertion affordances, and office-style iconography remain separate focused passes."
         ]
+      },
+      {
+        "completed_at": "2026-06-02T01:37:54Z",
+        "addressed_requested_change": "Make the active section easier to click into by preventing edit chrome and full-section selection from fighting the caret target.",
+        "changed_surfaces": [
+          "src/main.tsx now records the section click point and restores a collapsed caret there after enabling contenteditable, instead of selecting the entire section on first edit activation.",
+          "src/main.tsx keeps formatting controls hidden until a section is actually in editing state; the pre-edit surface exposes only the compact edit handle.",
+          "src/styles.css gives edit-preview sections explicit text cursor/caret behavior and reduces the edit-mode agent dock from a wide translucent panel to a narrow margin rail.",
+          "scripts/smoke_archivist.py now asserts that default edit mode exposes only the edit handle, while the edit-switch route confirms the active editor has a collapsed caret and then shows the full toolbar."
+        ],
+        "validation_commands": [
+          {
+            "command": "python3 -m py_compile scripts/smoke_archivist.py service/archivist_service.py",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run smoke:browser",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/browser-20260602T013703Z/browser-summary.json"
+          },
+          {
+            "command": "npm run smoke:all",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/all-20260602T013733Z/summary.json"
+          },
+          {
+            "command": "python3 \"${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py\" validate",
+            "result": "passed"
+          },
+          {
+            "command": "git diff --check",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          ".tmp/archivist-smoke/all-20260602T013733Z/summary.json",
+          ".tmp/archivist-smoke/all-20260602T013733Z/browser-summary.json",
+          ".tmp/archivist-smoke/all-20260602T013733Z/screenshots/edit-mode.png",
+          ".tmp/archivist-smoke/all-20260602T013733Z/screenshots/edit-switch-autosave.png",
+          ".tmp/archivist-smoke/browser-20260602T013703Z/screenshots/edit-mode.png"
+        ],
+        "residual_risks": [
+          "The edit handle is still fixed near the section edge rather than being fully hover-anchored to the exact section boundary.",
+          "Office-style toolbar iconography and between-section insertion controls remain separate focused passes."
+        ]
       }
     ],
     "readiness": "build"

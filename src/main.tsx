@@ -48,6 +48,7 @@ type AppLoadState = 'loading' | 'ready' | 'error'
 type DemoMode = 'reader' | 'agent' | 'edit' | 'draft-review'
 type ReviewVersion = 'draft' | 'original'
 type SmokeScenario = 'edit-switch' | null
+type PendingCaretPoint = { sectionId: string; x: number; y: number }
 type DocumentLoadState =
   | { status: 'idle' | 'loading'; document: null; error: null }
   | { status: 'ready'; document: BrowserDocument; error: null }
@@ -368,6 +369,7 @@ function DocumentReader({
   const draftTransitionRef = React.useRef(false)
   const editingSectionIdRef = React.useRef<string | null>(null)
   const lastSavedDraftsRef = React.useRef<ManualDraft[]>([])
+  const pendingCaretPointRef = React.useRef<PendingCaretPoint | null>(null)
   const smokeEditSwitchRanRef = React.useRef(false)
   const readyDocument = documentState.status === 'ready' ? documentState.document : null
   const editable = Boolean(readyDocument?.metadata.editable)
@@ -481,6 +483,7 @@ function DocumentReader({
 
   const startEditing = React.useCallback(
     (sectionId?: string | null) => {
+      pendingCaretPointRef.current = null
       const nextSectionId = sectionId ?? selectedSectionId ?? editSections[0]?.section_id
       void activateSection(nextSectionId, { edit: true })
     },
@@ -593,10 +596,12 @@ function DocumentReader({
     const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
     const element = findEditSectionElement(articleRef.current, editingSectionId)
     if (!section || !element) return
+    const caretPoint =
+      pendingCaretPointRef.current?.sectionId === editingSectionId ? pendingCaretPointRef.current : null
+    pendingCaretPointRef.current = null
     element.setAttribute('contenteditable', 'true')
     element.classList.add('manual-section-editing')
-    element.focus()
-    selectElementContents(element)
+    focusEditableSection(element, caretPoint)
     return () => {
       element.removeAttribute('contenteditable')
       element.classList.remove('manual-section-editing')
@@ -629,10 +634,12 @@ function DocumentReader({
         await activateSection(firstSection.section_id, { edit: true })
         const firstElement = await waitForEditableSection(() => articleRef.current, firstSection.section_id)
         if (!firstElement) throw new Error('first section did not become editable')
+        const firstSelectionCollapsed = window.getSelection()?.isCollapsed !== false
         appendSmokeText(firstElement, smokeMarker)
         await activateSection(targetSection.section_id, { edit: true })
         const secondElement = await waitForEditableSection(() => articleRef.current, targetSection.section_id)
         if (!secondElement) throw new Error('second section did not become editable')
+        const secondSelectionCollapsed = window.getSelection()?.isCollapsed !== false
         const activeElements = Array.from(
           articleRef.current?.querySelectorAll<HTMLElement>('.editable-section[contenteditable="true"]') ?? [],
         )
@@ -645,14 +652,15 @@ function DocumentReader({
         )
         const onlySecondEditable =
           activeElements.length === 1 && activeElements[0]?.dataset.editSectionId === targetSection.section_id
-        if (!firstDraftSaved || !onlySecondEditable) {
+        const clickReadyCaret = firstSelectionCollapsed && secondSelectionCollapsed
+        if (!firstDraftSaved || !onlySecondEditable || !clickReadyCaret) {
           throw new Error(
-            `draft_saved=${String(firstDraftSaved)} active_sections=${activeElements
+            `draft_saved=${String(firstDraftSaved)} caret_collapsed=${String(clickReadyCaret)} active_sections=${activeElements
               .map((element) => element.dataset.editSectionId)
               .join(',')}`,
           )
         }
-        setSmokeEditSwitchStatus(`single-active-editor passed ${smokeMarker}`)
+        setSmokeEditSwitchStatus(`single-active-editor passed editable-caret collapsed ${smokeMarker}`)
       } catch (caught) {
         setSmokeEditSwitchStatus(
           `single-active-editor failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
@@ -696,6 +704,13 @@ function DocumentReader({
     const target = (event.target as HTMLElement).closest<HTMLElement>('.editable-section[data-edit-section-id]')
     const nextSectionId = target?.dataset.editSectionId
     if (!nextSectionId) return
+    if (demoMode === 'edit') {
+      pendingCaretPointRef.current = {
+        sectionId: nextSectionId,
+        x: event.clientX,
+        y: event.clientY,
+      }
+    }
     void activateSection(nextSectionId, { edit: demoMode === 'edit' })
   }
 
@@ -902,6 +917,8 @@ function ManualAgentAffordances({
     )
   }
 
+  const controlsVisible = Boolean(editingSection)
+
   return (
     <>
       {!reviewOpen && (
@@ -955,7 +972,11 @@ function ManualAgentAffordances({
 
       {(mode === 'edit' || selectedSection || editingSection) && !reviewOpen && (
         <section className="manual-edit-affordance" aria-label="Editable section preview">
-          <div className="manual-edit-tools" aria-label="Inline edit toolbar" onMouseDown={(event) => event.preventDefault()}>
+          <div
+            className={controlsVisible ? 'manual-edit-tools expanded' : 'manual-edit-tools compact'}
+            aria-label={controlsVisible ? 'Inline edit toolbar' : 'Edit section handle'}
+            onMouseDown={(event) => event.preventDefault()}
+          >
             <button
               type="button"
               title="Edit section"
@@ -965,16 +986,20 @@ function ManualAgentAffordances({
             >
               <PencilLine size={15} />
             </button>
-            <button type="button" title="Undo" aria-label="Undo" disabled={!editingSection || draftTransitioning} onClick={onUndo}>
-              <RefreshCcw size={15} />
-            </button>
-            <button type="button" title="Bold selected text" aria-label="Bold selected text">B</button>
-            <button type="button" title="Italic selected text" aria-label="Italic selected text">I</button>
-            <button type="button" title="Paragraph" aria-label="Paragraph">P</button>
-            <button type="button" title="Heading 2" aria-label="Heading 2" disabled={draftTransitioning} onClick={() => onInsertHeading(2)}>H2</button>
-            <button type="button" title="Heading 3" aria-label="Heading 3" disabled={draftTransitioning} onClick={() => onInsertHeading(3)}>H3</button>
-            <button type="button" title="Heading 4" aria-label="Heading 4" disabled={draftTransitioning} onClick={() => onInsertHeading(4)}>H4</button>
-            <button type="button" title="Bullet list" aria-label="Bullet list">*</button>
+            {controlsVisible && (
+              <>
+                <button type="button" title="Undo" aria-label="Undo" disabled={draftTransitioning} onClick={onUndo}>
+                  <RefreshCcw size={15} />
+                </button>
+                <button type="button" title="Bold selected text" aria-label="Bold selected text">B</button>
+                <button type="button" title="Italic selected text" aria-label="Italic selected text">I</button>
+                <button type="button" title="Paragraph" aria-label="Paragraph">P</button>
+                <button type="button" title="Heading 2" aria-label="Heading 2" disabled={draftTransitioning} onClick={() => onInsertHeading(2)}>H2</button>
+                <button type="button" title="Heading 3" aria-label="Heading 3" disabled={draftTransitioning} onClick={() => onInsertHeading(3)}>H3</button>
+                <button type="button" title="Heading 4" aria-label="Heading 4" disabled={draftTransitioning} onClick={() => onInsertHeading(4)}>H4</button>
+                <button type="button" title="Bullet list" aria-label="Bullet list">*</button>
+              </>
+            )}
           </div>
           {draftError && <div className="manual-draft-error">{draftError}</div>}
         </section>
@@ -1296,9 +1321,48 @@ function cssEscape(value: string): string {
   return value.replace(/["\\]/g, '\\$&')
 }
 
-function selectElementContents(element: HTMLElement) {
+function focusEditableSection(element: HTMLElement, caretPoint: PendingCaretPoint | null) {
+  element.focus({ preventScroll: true })
+  if (caretPoint && placeCaretAtPoint(element, caretPoint.x, caretPoint.y)) {
+    return
+  }
+  placeCaretAtEnd(element)
+}
+
+function placeCaretAtPoint(container: HTMLElement, x: number, y: number): boolean {
+  const range = editableRangeFromPoint(x, y)
+  if (!range || !container.contains(range.startContainer)) return false
+  const parentElement =
+    range.startContainer instanceof HTMLElement ? range.startContainer : range.startContainer.parentElement
+  if (parentElement?.closest('[contenteditable="false"]')) return false
+  const selection = window.getSelection()
+  if (!selection) return false
+  selection?.removeAllRanges()
+  selection?.addRange(range)
+  return true
+}
+
+function editableRangeFromPoint(x: number, y: number): Range | null {
+  const doc = window.document as Document & {
+    caretPositionFromPoint?: (x: number, y: number) => { offsetNode: Node; offset: number } | null
+    caretRangeFromPoint?: (x: number, y: number) => Range | null
+  }
+  const position = doc.caretPositionFromPoint?.(x, y)
+  if (position) {
+    const range = document.createRange()
+    range.setStart(position.offsetNode, position.offset)
+    range.collapse(true)
+    return range
+  }
+  const range = doc.caretRangeFromPoint?.(x, y) ?? null
+  if (range) range.collapse(true)
+  return range
+}
+
+function placeCaretAtEnd(element: HTMLElement) {
   const range = window.document.createRange()
   range.selectNodeContents(element)
+  range.collapse(false)
   const selection = window.getSelection()
   selection?.removeAllRanges()
   selection?.addRange(range)

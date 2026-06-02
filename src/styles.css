@@ -880,8 +880,10 @@ button:disabled {
 }
 
 .manual-agent-dock.editing {
-  --dock-handle-width: 112px;
-  top: 74px;
+  --dock-handle-width: 40px;
+  top: 84px;
+  left: -24px;
+  grid-template-columns: var(--dock-handle-width);
 }
 
 .manual-agent-dock-bar {
@@ -915,6 +917,14 @@ button:disabled {
   border-radius: 0 16px 16px 0;
 }
 
+.manual-agent-dock.editing .manual-agent-dock-lens {
+  display: none;
+}
+
+.manual-agent-dock.editing .manual-agent-dock-bar {
+  border-radius: 14px;
+}
+
 .manual-agent-dock-lens span {
   position: absolute;
   inset: 0;
@@ -939,6 +949,12 @@ button:disabled {
   pointer-events: auto;
 }
 
+.manual-agent-dock.editing .manual-draft-count {
+  right: auto;
+  left: 8px;
+  transform: translateX(-8px);
+}
+
 .manual-draft-count span {
   display: grid;
   min-width: 18px;
@@ -960,6 +976,12 @@ button:disabled {
     background-color 140ms ease,
     outline-color 140ms ease,
     box-shadow 140ms ease;
+}
+
+.document-paper.manual-edit-preview .editable-section {
+  caret-color: #087b91;
+  cursor: text;
+  user-select: text;
 }
 
 .document-paper .editable-section:hover,
@@ -1005,6 +1027,14 @@ button:disabled {
   box-shadow: 0 12px 28px rgba(8, 54, 71, 0.12);
   padding: 6px;
   pointer-events: auto;
+}
+
+.manual-edit-tools.compact {
+  grid-template-columns: 30px;
+}
+
+.manual-edit-tools.expanded {
+  grid-template-columns: repeat(2, 30px);
 }
 
 .manual-edit-tools button,
