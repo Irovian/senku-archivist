@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0035",
+  "title": "Do not use finish-session helper for this project by default",
+  "status": "accepted",
+  "created_at": "2026-06-02",
+  "decision": "Codex should not invoke the legacy finish-session helper for the senku-archivist workspace unless the user explicitly asks to publish, commit, push, or run finish-session. Normal Senku Archivist work should use project-brain validation, focused smoke evidence, and explicit user-directed git operations instead.",
+  "context": "The finish-session helper is an older workspace-closing workflow and this repository does not contain the .agents/workspace-skills.json manifest it expects. Running it in senku-archivist creates noise and reports a blocked helper state even when the actual project work is healthy.",
+  "rationale": "Senku Archivist already uses .project-brain, SG backlog evidence, npm smoke checks, and explicit commit/push choices as its operating model. Suppressing the old helper avoids confusing closeout chatter while preserving the ability to run it manually if the user asks.",
+  "alternatives_considered": [
+    "Add .agents/workspace-skills.json to satisfy the old helper",
+    "Keep probing finish-session proactively after every dirty-tree pass",
+    "Remove finish-session from the global Codex install"
+  ],
+  "consequences": [
+    "Do not run /home/irovian/.codex/skills/finish-session/scripts/finish_session.py during routine senku-archivist work.",
+    "If the user asks to commit or push, use normal explicit git operations or a project-appropriate publication workflow.",
+    "If the user explicitly asks for finish-session by name, treat that as an override.",
+    "Continue reporting changed files and validation evidence in final responses when useful."
+  ],
+  "related_requirements": [],
+  "related_backlog_items": [
+    "SG-0014"
+  ],
+  "related_questions": []
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "DEC-SG-0036",
+  "title": "Commit and push meaningful work promptly",
+  "status": "accepted",
+  "created_at": "2026-06-02",
+  "decision": "For Senku Archivist, Codex should commit and push after each meaningful unit of work once validation for that unit passes. Meaningful units should be split into small logical commits, such as implementation behavior, smoke/evidence updates, and repo workflow decisions, rather than waiting for a large end-of-session bundle.",
+  "context": "The project is growing in complexity and the user wants frequent, reviewable git checkpoints. Previous SG-0014 follow-up work also established a preference for liberal commit granularity.",
+  "rationale": "Small pushed commits make it easier to resume from another machine, review the evolution of the editor workflow, and avoid losing useful project-brain evidence between sessions.",
+  "alternatives_considered": [
+    "Wait until the end of a long session before committing",
+    "Create one broad commit for unrelated implementation and workflow changes",
+    "Leave meaningful local work unpushed until a separate closeout workflow runs"
+  ],
+  "consequences": [
+    "Run the relevant validation gates before committing a meaningful unit.",
+    "Use direct git operations for this project rather than the legacy finish-session helper.",
+    "Prefer small logical commits and push them to origin/main after they pass validation.",
+    "Continue keeping generated local-only outputs such as .tmp, dist, node_modules, and caches out of commits."
+  ],
+  "related_requirements": [],
+  "related_backlog_items": [
+    "SG-0014"
+  ],
+  "related_questions": []
+}
