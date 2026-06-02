@@ -160,7 +160,7 @@ def artifact_placeholder_html(artifacts: list[dict]) -> str:
         template = html.escape(str(artifact.get("renderer_template") or artifact.get("artifact_type") or "artifact"))
         items.append(f"<li><strong>{title}</strong><span>{template}</span></li>")
     return (
-        '<section class="artifact-inline-placeholder" aria-label="Artifact placeholder">'
+        '<section class="artifact-inline-placeholder" aria-label="Artifact placeholder" contenteditable="false">'
         "<h2>Linked Artifact</h2>"
         "<p>Structured artifact available from the entry point above.</p>"
         f"<ul>{''.join(items)}</ul>"
@@ -206,14 +206,17 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             parts.append("</section>")
             open_structured_blocks.pop()
 
-    open_edit_sections: list[dict[str, Any]] = []
+    active_edit_section: dict[str, Any] | None = None
+    heading_context_levels: list[int] = []
 
-    def close_edit_sections_until(level: int | None = None) -> None:
-        while open_edit_sections and (level is None or int(open_edit_sections[-1]["level"]) >= level):
-            parts.append("</section>")
-            section = open_edit_sections.pop()
-            section["original_text"] = "\n".join(section.pop("_text_parts", [])).strip()
-            section["block_types"] = sorted(section.pop("_block_types", set()))
+    def close_edit_section() -> None:
+        nonlocal active_edit_section
+        if active_edit_section is None:
+            return
+        parts.append("</section>")
+        active_edit_section["original_text"] = "\n".join(active_edit_section.pop("_text_parts", [])).strip()
+        active_edit_section["block_types"] = sorted(active_edit_section.pop("_block_types", set()))
+        active_edit_section = None
 
     def skip_section(start_index: int, level: int) -> int:
         next_index = start_index + 1
@@ -224,17 +227,36 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             next_index += 1
         return next_index
 
-    def start_edit_section(level: int, heading: str, visible_heading: bool = True) -> dict[str, Any]:
+    def edit_enabled_here() -> bool:
+        return editable and not open_structured_blocks and not in_artifact_block and not code_open
+
+    def heading_validation(level: int, heading: str, parent_level: int | None) -> list[str]:
         validation: list[str] = []
         if level not in {2, 3, 4}:
             validation.append("Editable manual sections must use H2, H3, or H4 headings.")
-        if level > 2 and not open_edit_sections:
+        if level > 2 and parent_level is None:
             validation.append(f"H{level} section is missing its parent heading.")
-        if level > 2 and open_edit_sections and int(open_edit_sections[-1]["level"]) != level - 1:
+        if level > 2 and parent_level is not None and parent_level != level - 1:
             validation.append(f"H{level} section must sit under an H{level - 1} heading.")
         if not heading.strip():
             validation.append("Editable manual sections require a heading.")
+        return validation
 
+    def update_heading_context(level: int) -> int | None:
+        while heading_context_levels and heading_context_levels[-1] >= level:
+            heading_context_levels.pop()
+        parent_level = heading_context_levels[-1] if heading_context_levels else None
+        heading_context_levels.append(level)
+        return parent_level
+
+    def start_edit_section(
+        level: int,
+        heading: str,
+        visible_heading: bool = True,
+        validation_messages: list[str] | None = None,
+    ) -> dict[str, Any]:
+        nonlocal active_edit_section
+        close_edit_section()
         section_id = f"section-{unique_anchor(heading, used_edit_sections)}"
         section = {
             "section_id": section_id,
@@ -242,12 +264,12 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             "heading": heading,
             "original_text": "",
             "block_types": [],
-            "validation_messages": validation,
+            "validation_messages": validation_messages or [],
             "_text_parts": [],
             "_block_types": set(),
         }
         edit_sections.append(section)
-        open_edit_sections.append(section)
+        active_edit_section = section
         classes = "editable-section" if visible_heading else "editable-section implicit"
         parts.append(
             f'<section class="{classes}" data-edit-section-id="{html.escape(section_id)}"'
@@ -256,24 +278,30 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
         return section
 
     def ensure_implicit_edit_section(seed_text: str) -> dict[str, Any] | None:
-        if not editable:
+        if not edit_enabled_here():
             return None
-        if open_edit_sections:
-            return open_edit_sections[-1]
+        if active_edit_section is not None:
+            return active_edit_section
         heading = truncate_plain(seed_text, 52) or "Introduction"
-        return start_edit_section(2, heading, visible_heading=False)
+        return start_edit_section(2, heading, visible_heading=False, validation_messages=heading_validation(2, heading, None))
 
     def record_edit_child(block_type: str, text: str) -> str:
-        if not editable:
+        if not edit_enabled_here():
             return ""
-        if not open_edit_sections:
+        if active_edit_section is None:
             ensure_implicit_edit_section(text)
-        if not open_edit_sections:
+        if active_edit_section is None:
             return ""
-        for section in open_edit_sections:
-            section["_block_types"].add(block_type)
-            section["_text_parts"].append(text)
-        child_id = f"{open_edit_sections[-1]['section_id']}-{block_type}"
+        text_part = text
+        if block_type.startswith("h") and block_type[1:].isdigit():
+            text_part = f"{'#' * int(block_type[1:])} {text}"
+        elif block_type == "li":
+            text_part = f"- {text}"
+        elif block_type == "blockquote":
+            text_part = f"> {text}"
+        active_edit_section["_block_types"].add(block_type)
+        active_edit_section["_text_parts"].append(text_part)
+        child_id = f"{active_edit_section['section_id']}-{block_type}"
         edit_blocks.append(
             {
                 "block_id": child_id,
@@ -282,7 +310,7 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             }
         )
         return (
-            f' data-edit-section-child="true" data-edit-section-id="{html.escape(str(open_edit_sections[-1]["section_id"]))}"'
+            f' data-edit-section-child="true" data-edit-section-id="{html.escape(str(active_edit_section["section_id"]))}"'
             f' data-edit-block-type="{html.escape(block_type)}"'
         )
 
@@ -303,16 +331,14 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
 
         if stripped.startswith("```epp-artifact"):
             close_lists()
-            close_edit_sections_until()
             in_artifact_block = True
             index += 1
             continue
 
         if stripped.startswith("```"):
             close_lists()
-            close_edit_sections_until()
             if code_open:
-                parts.append(f"<pre><code>{html.escape(chr(10).join(code_lines))}</code></pre>")
+                parts.append(f'<pre contenteditable="false"><code>{html.escape(chr(10).join(code_lines))}</code></pre>')
                 code_lines = []
                 code_open = False
             else:
@@ -333,13 +359,13 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
         structured_start = re.match(r"^<!--\s*(assembly|regulatory-segment):([A-Za-z0-9_-]+)\s+start\s*-->$", stripped)
         if structured_start:
             close_lists()
-            close_edit_sections_until()
             block_kind = structured_start.group(1)
             block_id = structured_start.group(2)
             class_name = "assembly-block" if block_kind == "assembly" else "regulatory-segment-block"
             label = "Assembly block" if block_kind == "assembly" else "Regulatory segment"
             parts.append(
-                f'<section class="{class_name}" data-block-id="{html.escape(block_id)}" aria-label="{label}">'
+                f'<section class="{class_name}" data-block-id="{html.escape(block_id)}"'
+                f' aria-label="{label}" contenteditable="false">'
             )
             open_structured_blocks.append(block_kind)
             index += 1
@@ -370,7 +396,7 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             row_html = "".join(
                 "<tr>" + "".join(f"<td>{render_inline(cell)}</td>" for cell in row) + "</tr>" for row in rows
             )
-            parts.append(f"<table><thead><tr>{head_html}</tr></thead><tbody>{row_html}</tbody></table>")
+            parts.append(f'<table contenteditable="false"><thead><tr>{head_html}</tr></thead><tbody>{row_html}</tbody></table>')
             continue
 
         heading_match = re.match(r"^(#{1,6})\s+(.+)$", stripped)
@@ -379,20 +405,23 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             level = min(len(heading_match.group(1)), 4)
             text = heading_match.group(2).strip()
             if level == 1:
-                close_edit_sections_until()
+                close_edit_section()
+                heading_context_levels.clear()
                 anchor_id = unique_anchor(text, used_anchors)
                 anchors.append({"id": anchor_id, "label": text, "level": level})
                 parts.append(f'<span id="{anchor_id}" class="reader-title-anchor" aria-hidden="true"></span>')
                 index += 1
                 continue
-            close_edit_sections_until(level)
+            parent_level = update_heading_context(level)
+            if not open_structured_blocks:
+                close_edit_section()
             if text.strip().lower() in INTERNAL_READER_SECTIONS:
                 index = skip_section(index, level)
                 continue
             anchor_id = unique_anchor(text, used_anchors)
             anchors.append({"id": anchor_id, "label": text, "level": level})
-            if editable:
-                start_edit_section(level, text)
+            if edit_enabled_here():
+                start_edit_section(level, text, validation_messages=heading_validation(level, text, parent_level))
             parts.append(
                 f'<h{level} id="{anchor_id}" class="editable-section-heading"'
                 f'{record_edit_child(f"h{level}", text)}>{render_inline(text)}</h{level}>'
@@ -431,7 +460,6 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
             record_edit_child("blockquote", stripped.lstrip("> ").strip())
             parts.append(f'<blockquote>{render_inline(stripped.lstrip("> ").strip())}</blockquote>')
         elif stripped == "---":
-            close_edit_sections_until()
             parts.append("<hr>")
         else:
             paragraph = [stripped]
@@ -455,10 +483,10 @@ def render_markdown(markdown: str, artifacts: list[dict], editable: bool = False
         index += 1
 
     close_lists()
-    close_edit_sections_until()
+    close_edit_section()
     close_structured_blocks()
     if code_open:
-        parts.append(f"<pre><code>{html.escape(chr(10).join(code_lines))}</code></pre>")
+        parts.append(f'<pre contenteditable="false"><code>{html.escape(chr(10).join(code_lines))}</code></pre>')
     for section in edit_sections:
         section.pop("_text_parts", None)
         section.pop("_block_types", None)

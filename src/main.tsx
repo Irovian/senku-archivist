@@ -374,6 +374,7 @@ function DocumentReader({
   const [reviewOpen, setReviewOpen] = React.useState(false)
   const [reviewIndex, setReviewIndex] = React.useState(0)
   const [reviewVersion, setReviewVersion] = React.useState<ReviewVersion>('draft')
+  const [readerRenderVersion, setReaderRenderVersion] = React.useState(0)
 
   const pendingDrafts = React.useMemo(
     () => draftState?.drafts.filter((draft) => draft.status === 'pending') ?? [],
@@ -417,7 +418,7 @@ function DocumentReader({
       setEditingSectionId(null)
       return
     }
-    const draftText = normalizeEditedText(element.innerText || element.textContent || '')
+    const draftText = serializeEditedSection(element)
     const otherDrafts = pendingDrafts.filter(
       (draft) => !(draftSectionId(draft) === section.section_id && draft.source === 'manual_edit'),
     )
@@ -446,12 +447,9 @@ function DocumentReader({
 
   const undoCurrentEdit = React.useCallback(() => {
     if (!editingSectionId) return
-    const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
-    const element = findEditSectionElement(articleRef.current, editingSectionId)
-    if (section && element && !hasNestedEditSections(element)) {
-      element.textContent = section.original_text
-    }
-  }, [editSections, editingSectionId])
+    setEditingSectionId(null)
+    setReaderRenderVersion((version) => version + 1)
+  }, [editingSectionId])
 
   const insertHeading = React.useCallback(
     (level: 2 | 3 | 4) => {
@@ -496,6 +494,7 @@ function DocumentReader({
     setEditingSectionId(null)
     setReviewOpen(false)
     setReviewIndex(0)
+    setReaderRenderVersion(0)
     if (!readyDocument?.metadata.editable) return
 
     let cancelled = false
@@ -528,30 +527,15 @@ function DocumentReader({
       element.classList.toggle('manual-section-selected', sectionId === selectedSectionId)
       element.classList.toggle('manual-section-editing', sectionId === editingSectionId)
       element.classList.toggle('manual-section-has-draft', bySection.has(sectionId))
-      const draft = bySection.get(sectionId)
-      const canReplacePreview = !hasNestedEditSections(element)
-      if (draft && sectionId !== editingSectionId && canReplacePreview) {
-        element.textContent = draft.draft_text
-        element.dataset.manualDraftPreview = 'true'
-      } else if (!draft && element.dataset.manualDraftPreview === 'true' && canReplacePreview) {
-        const section = editSections.find((candidate) => candidate.section_id === sectionId)
-        if (section) element.textContent = section.original_text
-        delete element.dataset.manualDraftPreview
-      }
+      delete element.dataset.manualDraftPreview
     })
-  }, [editSections, editingSectionId, pendingDrafts, selectedSectionId, readyDocument?.doc_id])
+  }, [editingSectionId, pendingDrafts, selectedSectionId, readyDocument?.doc_id])
 
   React.useEffect(() => {
     if (!editingSectionId) return
     const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
     const element = findEditSectionElement(articleRef.current, editingSectionId)
     if (!section || !element) return
-    const draft = pendingDrafts.find(
-      (candidate) => draftSectionId(candidate) === editingSectionId && candidate.source === 'manual_edit',
-    )
-    if (draft && !hasNestedEditSections(element)) {
-      element.textContent = draft.draft_text
-    }
     element.setAttribute('contenteditable', 'true')
     element.classList.add('manual-section-editing')
     element.focus()
@@ -560,7 +544,7 @@ function DocumentReader({
       element.removeAttribute('contenteditable')
       element.classList.remove('manual-section-editing')
     }
-  }, [editSections, editingSectionId, pendingDrafts])
+  }, [editSections, editingSectionId])
 
   if (documentState.status === 'idle' || documentState.status === 'loading') {
     return (
@@ -688,7 +672,7 @@ function DocumentReader({
 
         <div className="reader-grid">
           <article
-            key={`${browserDocument.doc_id}-${draftState?.audit.updated_at ?? 'clean'}`}
+            key={`${browserDocument.doc_id}-${draftState?.audit.updated_at ?? 'clean'}-${readerRenderVersion}`}
             ref={articleRef}
             className={demoMode === 'edit' || editingSectionId ? 'document-paper manual-edit-preview' : 'document-paper'}
             dangerouslySetInnerHTML={{ __html: browserDocument.rendered.html }}
@@ -864,13 +848,6 @@ function ManualAgentAffordances({
             <button type="button" title="Heading 4" aria-label="Heading 4" onClick={() => onInsertHeading(4)}>H4</button>
             <button type="button" title="Bullet list" aria-label="Bullet list">*</button>
           </div>
-          {selectedSection && (
-            <div className="manual-selected-block">
-              <span>H{selectedSection.level}</span>
-              <strong>{truncateText(selectedSection.heading || selectedSection.original_text, 72)}</strong>
-            </div>
-          )}
-          <div className="manual-edit-outline" />
           {draftError && <div className="manual-draft-error">{draftError}</div>}
         </section>
       )}
@@ -1077,6 +1054,23 @@ function validateSectionDraft(section: EditSection, draftText: string): string[]
   if (![2, 3, 4].includes(section.level)) {
     messages.push('Section heading level must be H2, H3, or H4.')
   }
+  const headingLevels = Array.from(draftText.matchAll(/^(#{2,4})\s+.+$/gm)).map((match) => match[1].length)
+  if (headingLevels.length === 0) {
+    messages.push('Section draft should keep a visible H2, H3, or H4 heading.')
+  } else if (headingLevels[0] !== section.level) {
+    messages.push(`Section draft should start with the selected H${section.level} heading.`)
+  }
+  const stack: number[] = []
+  headingLevels.forEach((level) => {
+    while (stack.length && stack[stack.length - 1] >= level) {
+      stack.pop()
+    }
+    const parentLevel = stack[stack.length - 1]
+    if (level > 2 && parentLevel !== level - 1) {
+      messages.push(`H${level} section must sit under an H${level - 1} heading.`)
+    }
+    stack.push(level)
+  })
   return Array.from(new Set(messages))
 }
 
@@ -1089,19 +1083,21 @@ function findEditSectionElement(root: HTMLElement | null, sectionId: string): HT
   return root.querySelector<HTMLElement>(`.editable-section[data-edit-section-id="${cssEscape(sectionId)}"]`)
 }
 
-function hasNestedEditSections(element: HTMLElement): boolean {
-  return Boolean(element.querySelector('.editable-section[data-edit-section-id]'))
-}
-
 function insertHeadingAtSelection(container: HTMLElement, level: 2 | 3 | 4) {
   const selection = window.getSelection()
-  if (!selection || selection.rangeCount === 0 || !container.contains(selection.anchorNode)) {
+  if (!selection) return
+  let range: Range
+  if (selection && selection.rangeCount > 0 && container.contains(selection.anchorNode)) {
+    range = selection.getRangeAt(0)
+  } else {
     container.focus()
-    return
+    range = window.document.createRange()
+    range.selectNodeContents(container)
+    range.collapse(false)
   }
-  const range = selection.getRangeAt(0)
   const heading = document.createElement(`h${level}`)
   heading.textContent = `New H${level} Section`
+  heading.dataset.draftHeadingLevel = `${level}`
   range.deleteContents()
   range.insertNode(heading)
   const spacer = document.createTextNode('\n')
@@ -1110,6 +1106,59 @@ function insertHeadingAtSelection(container: HTMLElement, level: 2 | 3 | 4) {
   nextRange.selectNodeContents(heading)
   selection.removeAllRanges()
   selection.addRange(nextRange)
+}
+
+function serializeEditedSection(element: HTMLElement): string {
+  const blocks: string[] = []
+
+  function pushBlock(value: string) {
+    const normalized = normalizeEditedText(value)
+    if (normalized) blocks.push(normalized)
+  }
+
+  function serializeElement(child: HTMLElement) {
+    if (child.getAttribute('contenteditable') === 'false' || child.closest('[contenteditable="false"]')) {
+      return
+    }
+    const tagName = child.tagName.toLowerCase()
+    if (/^h[2-4]$/.test(tagName)) {
+      pushBlock(`${'#'.repeat(Number(tagName.slice(1)))} ${child.textContent ?? ''}`)
+      return
+    }
+    if (tagName === 'li') {
+      pushBlock(`- ${child.textContent ?? ''}`)
+      return
+    }
+    if (tagName === 'ul' || tagName === 'ol') {
+      Array.from(child.children).forEach((listItem, index) => {
+        if (!(listItem instanceof HTMLElement) || listItem.tagName.toLowerCase() !== 'li') return
+        const marker = tagName === 'ol' ? `${index + 1}.` : '-'
+        pushBlock(`${marker} ${listItem.textContent ?? ''}`)
+      })
+      return
+    }
+    if (tagName === 'blockquote') {
+      pushBlock(`> ${child.textContent ?? ''}`)
+      return
+    }
+    if (tagName === 'p') {
+      pushBlock(child.textContent ?? '')
+      return
+    }
+    Array.from(child.children).forEach((nested) => {
+      if (nested instanceof HTMLElement) serializeElement(nested)
+    })
+  }
+
+  Array.from(element.childNodes).forEach((child) => {
+    if (child instanceof HTMLElement) {
+      serializeElement(child)
+    } else if (child.nodeType === Node.TEXT_NODE) {
+      pushBlock(child.textContent ?? '')
+    }
+  })
+
+  return normalizeEditedText(blocks.join('\n\n'))
 }
 
 function cssEscape(value: string): string {
@@ -1125,11 +1174,6 @@ function selectElementContents(element: HTMLElement) {
   const selection = window.getSelection()
   selection?.removeAllRanges()
   selection?.addRange(range)
-}
-
-function truncateText(value: string, maxLength: number): string {
-  if (value.length <= maxLength) return value
-  return `${value.slice(0, maxLength - 3).trim()}...`
 }
 
 function filterGroups(groups: NavigationGroup[], query: string): NavigationGroup[] {

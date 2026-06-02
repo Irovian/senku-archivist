@@ -13,6 +13,7 @@ import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.error import URLError
@@ -20,6 +21,11 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from service.archivist_service import render_markdown
+
 SERVICE_PORT = 8798
 APP_PORT = 5173
 SERVICE_BASE_URL = f"http://127.0.0.1:{SERVICE_PORT}"
@@ -35,6 +41,47 @@ CFR_DOC_ID = "REG-CFR-42-483-73"
 MISSING_DOC_ID = "DOC-EVACUATION-EVACUATION_FLOOR_PLANS"
 PLACEHOLDER_HEAVY_DOC_ID = "DOC-ALL_HAZARDS_RESPONSE-ACTIVATION_OF_EMERGENCY_OPERATIONS_PLAN_EOP"
 ASSEMBLY_DOC_ID = "DOC-ALL_HAZARDS_RESPONSE-INTERNAL_COMMUNICATIONS_DURING_A_DISASTER"
+HIERARCHY_DOC_ID = "DOC-GOVERNANCE_AND_PLANNING-CONTINUITY_OF_OPERATIONS"
+
+
+class EditSectionContractParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.stack: list[str] = []
+        self.edit_depth = 0
+        self.static_depth = 0
+        self.nested_edit_sections = 0
+        self.static_edit_hooks = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attr_map = {name: value or "" for name, value in attrs}
+        classes = set(attr_map.get("class", "").split())
+        is_edit_section = tag == "section" and "editable-section" in classes
+        is_static = attr_map.get("contenteditable") == "false" or bool(
+            classes & {"assembly-block", "regulatory-segment-block", "artifact-inline-placeholder"}
+        )
+        if self.static_depth and attr_map.get("data-edit-section-child") == "true":
+            self.static_edit_hooks += 1
+        if is_edit_section:
+            if self.edit_depth:
+                self.nested_edit_sections += 1
+            self.edit_depth += 1
+            self.stack.append("edit")
+            return
+        if is_static:
+            self.static_depth += 1
+            self.stack.append("static")
+            return
+        self.stack.append("")
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self.stack:
+            return
+        kind = self.stack.pop()
+        if kind == "edit":
+            self.edit_depth = max(0, self.edit_depth - 1)
+        elif kind == "static":
+            self.static_depth = max(0, self.static_depth - 1)
 
 
 class SmokeError(RuntimeError):
@@ -184,6 +231,82 @@ def require(condition: bool, message: str) -> None:
         raise SmokeError(message)
 
 
+def assert_edit_section_contract(label: str, rendered: dict[str, Any]) -> None:
+    html = str(rendered.get("html", ""))
+    edit_sections = rendered.get("edit_sections", [])
+    require(isinstance(edit_sections, list), f"{label} edit_sections was not a list")
+    parser = EditSectionContractParser()
+    parser.feed(html)
+    require(parser.nested_edit_sections == 0, f"{label} rendered nested editable sections")
+    require(parser.static_edit_hooks == 0, f"{label} rendered editable child hooks inside static blocks")
+    require(
+        html.count('<section class="editable-section') == len(edit_sections),
+        f"{label} editable wrapper count did not match edit_sections metadata",
+    )
+    for section in edit_sections:
+        require(section.get("section_id"), f"{label} edit section was missing section_id")
+        require(section.get("level") in {2, 3, 4}, f"{label} edit section had invalid heading level")
+        require(str(section.get("heading", "")).strip(), f"{label} edit section was missing heading")
+        require(str(section.get("original_text", "")).strip(), f"{label} edit section was missing original_text")
+        require(
+            str(section.get("original_text", "")).lstrip().startswith("#" * int(section.get("level", 2))),
+            f"{label} edit section original_text did not preserve heading structure",
+        )
+
+
+def assert_renderer_fixture_contract() -> None:
+    fixture_markdown = """# Fixture
+
+## Parent Section
+Editable parent paragraph.
+
+<!-- assembly:ASM-FIXTURE start -->
+Static assembly text.
+### Static Assembly Heading
+- Static assembly bullet.
+<!-- assembly:ASM-FIXTURE end -->
+
+More editable parent text.
+
+### Child Section
+Child paragraph.
+
+#### Grandchild Section
+Grandchild paragraph.
+
+```epp-artifact
+artifact_id: fixture
+```
+
+```
+static code
+```
+
+| A | B |
+| - | - |
+| 1 | 2 |
+"""
+    rendered = render_markdown(
+        fixture_markdown,
+        [{"artifact_id": "fixture", "title": "Fixture Artifact", "renderer_template": "fixture-tool"}],
+        editable=True,
+    )
+    assert_edit_section_contract("renderer fixture", rendered)
+    edit_sections = rendered.get("edit_sections", [])
+    require(
+        [section.get("level") for section in edit_sections] == [2, 3, 4],
+        "renderer fixture did not preserve H2/H3/H4 editable section metadata",
+    )
+    html = str(rendered.get("html", ""))
+    require('class="assembly-block"' in html and 'contenteditable="false"' in html, "assembly block was not static")
+    require(
+        'class="artifact-inline-placeholder"' in html and 'contenteditable="false"' in html,
+        "artifact placeholder was not static",
+    )
+    require("<pre contenteditable=\"false\">" in html, "code block was not static")
+    require("<table contenteditable=\"false\">" in html, "table block was not static")
+
+
 def ensure_no_source_leaks(label: str, payload: Any) -> None:
     text = json.dumps(payload, ensure_ascii=True)
     blocked = [
@@ -210,6 +333,9 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
     started_service = start_service(evidence_dir, require_owned=False)
     checks: list[str] = []
     try:
+        assert_renderer_fixture_contract()
+        checks.append("renderer edit-section contract")
+
         status_payload = http_get_json("/api/status")
         require(status_payload.get("ok") is True, "status endpoint did not return ok=true")
         status = status_payload.get("data", {})
@@ -251,7 +377,15 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
                 f"{library_id} library count was {libraries[library_id].get('count')}, expected {expected_count}",
             )
         document_index = navigation.get("document_index", {})
-        for doc_id in [DEFAULT_DOC_ID, APPENDIX_A_DOC_ID, SURVEY_DOC_ID, CFR_DOC_ID, ASSEMBLY_DOC_ID, MISSING_DOC_ID]:
+        for doc_id in [
+            DEFAULT_DOC_ID,
+            APPENDIX_A_DOC_ID,
+            SURVEY_DOC_ID,
+            CFR_DOC_ID,
+            ASSEMBLY_DOC_ID,
+            HIERARCHY_DOC_ID,
+            MISSING_DOC_ID,
+        ]:
             require(doc_id in document_index, f"{doc_id} was missing from navigation")
         checks.append("navigation")
 
@@ -261,6 +395,7 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
             SURVEY_DOC_ID: {"title": "E-0001 Regulatory Reference", "type": "regulatory_etag"},
             CFR_DOC_ID: {"title": "42 CFR", "type": "regulatory_cfr"},
             ASSEMBLY_DOC_ID: {"title": "Internal Communications During a Disaster", "type": "topic_document"},
+            HIERARCHY_DOC_ID: {"title": "Continuity of Operations", "type": "topic_document"},
         }
         for doc_id, expectation in document_checks.items():
             document = data_from_envelope(f"/api/workspaces/epp-full/documents/{doc_id}")
@@ -275,6 +410,8 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
             require("<h1" in html or "<h2" in html, f"{doc_id} did not include rendered heading html")
             require("```" not in html[:500], f"{doc_id} looked like raw Markdown instead of rendered html")
             require(isinstance(anchors, list) and anchors, f"{doc_id} did not include stable anchors")
+            if metadata.get("editable") and edit_sections:
+                assert_edit_section_contract(doc_id, document.get("rendered", {}))
             if doc_id == DEFAULT_DOC_ID:
                 require(isinstance(edit_sections, list) and edit_sections, f"{doc_id} did not expose edit sections")
                 require("data-edit-section-id" in html, f"{doc_id} did not render editable section hooks")
@@ -284,6 +421,21 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
                 )
                 for internal_heading in ["Customization Tokens", "Working Notes", "Compliance References"]:
                     require(internal_heading not in html, f"{doc_id} exposed internal reader section: {internal_heading}")
+            if doc_id == HIERARCHY_DOC_ID:
+                headings = {str(section.get("heading", "")) for section in edit_sections}
+                require("Outpatient Service Referral Arrangements" not in headings, f"{doc_id} made assembly H3 editable")
+                require(
+                    not any(heading.startswith("When ") or heading.startswith("Residents receiving") for heading in headings),
+                    f"{doc_id} made assembly body content editable",
+                )
+                service_section = next(
+                    (section for section in edit_sections if section.get("heading") == "Service Continuity Approach"),
+                    None,
+                )
+                require(service_section is not None, f"{doc_id} did not expose Service Continuity Approach section")
+                original_text = str(service_section.get("original_text", ""))
+                require("If a needed service cannot be continued" in original_text, f"{doc_id} lost editable text after static assembly blocks")
+                require("mutual aid plan" not in original_text.lower(), f"{doc_id} included static assembly text in editable draft text")
             if doc_id == SURVEY_DOC_ID:
                 require("regulatory-segment-block" in html, f"{doc_id} did not preserve regulatory segment blocks")
             if doc_id == CFR_DOC_ID:
@@ -414,11 +566,18 @@ def assert_dom_markers(label: str, dom: str, markers: list[str]) -> None:
     require(not missing, f"{label} DOM was missing markers: {', '.join(missing)}")
 
 
+def assert_dom_absent(label: str, dom: str, markers: list[str]) -> None:
+    found = [marker for marker in markers if marker in dom]
+    require(not found, f"{label} DOM included removed markers: {', '.join(found)}")
+
+
 def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
     chrome = chrome_binary()
     service = start_service(evidence_dir, require_owned=True)
     app = start_app(evidence_dir)
     screenshots: dict[str, str] = {}
+    seeded_draft_path = f"/api/workspaces/epp-full/manual-drafts/{PLACEHOLDER_HEAVY_DOC_ID}"
+    seeded_draft_hash = ""
     routes = {
         "default-epp": {
             "url": route_url(DEFAULT_DOC_ID),
@@ -448,6 +607,10 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "emergency_code_alert",
                 "code_alert_has_been_provided_sample",
                 "Review handle",
+            ],
+            "absent_markers": [
+                "## Purpose",
+                "Browser smoke manual draft",
             ],
         },
         "survey-guidance": {
@@ -483,6 +646,14 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "Inline edit toolbar",
                 "Heading 2",
                 "Bold selected text",
+                "manual-section-selected",
+                "data-edit-section-id",
+            ],
+            "absent_markers": [
+                "manual-edit-outline",
+                "manual-selected-block",
+                "## Purpose",
+                "Browser smoke manual draft",
             ],
         },
         "draft-review-lens": {
@@ -492,13 +663,50 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "Draft version",
                 "Original version",
                 "Draft review probe",
+                "Browser smoke manual draft",
             ],
         },
     }
     try:
+        draft_document = data_from_envelope(f"/api/workspaces/epp-full/documents/{PLACEHOLDER_HEAVY_DOC_ID}")
+        draft_sections = draft_document.get("rendered", {}).get("edit_sections", [])
+        require(isinstance(draft_sections, list) and draft_sections, "browser smoke document exposed no editable sections")
+        draft_section = next(
+            (
+                section
+                for section in draft_sections
+                if "p" in section.get("block_types", [])
+            ),
+            draft_sections[0],
+        )
+        require(isinstance(draft_section, dict), "browser smoke could not find editable draft section")
+        seeded_draft_hash = str(draft_document.get("metadata", {}).get("source_hash", ""))
+        write_json_request(
+            seeded_draft_path,
+            {
+                "source_hash": seeded_draft_hash,
+                "drafts": [
+                    {
+                        "draft_id": f"manual_edit-{draft_section['section_id']}",
+                        "section_id": draft_section["section_id"],
+                        "section_level": draft_section["level"],
+                        "section_heading": draft_section["heading"],
+                        "block_id": draft_section["section_id"],
+                        "block_type": f"h{draft_section['level']}",
+                        "original_text": draft_section["original_text"],
+                        "draft_text": f"{draft_section['original_text']}\n\nBrowser smoke manual draft.",
+                        "validation_messages": draft_section.get("validation_messages", []),
+                        "source": "manual_edit",
+                        "status": "pending",
+                    }
+                ],
+            },
+        )
+
         for label, route in routes.items():
             dom = dump_dom(chrome, route["url"])
             assert_dom_markers(label, dom, route["markers"])
+            assert_dom_absent(label, dom, route.get("absent_markers", []))
             image_path = evidence_dir / "screenshots" / f"{label}.png"
             screenshot(chrome, route["url"], image_path)
             screenshots[label] = str(image_path.relative_to(ROOT))
@@ -526,6 +734,11 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
         json_dump(evidence_dir / "browser-summary.json", summary)
         return summary
     finally:
+        if seeded_draft_hash and url_ready(f"{SERVICE_BASE_URL}/api/status"):
+            try:
+                write_json_request(seeded_draft_path, {"source_hash": seeded_draft_hash, "drafts": []}, timeout=2.0)
+            except Exception:
+                pass
         if service:
             service.stop()
         if app:
