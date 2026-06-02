@@ -50,6 +50,7 @@ type ReviewVersion = 'draft' | 'original'
 type SmokeScenario = 'edit-switch' | 'hover-handle' | null
 type PendingCaretPoint = { sectionId: string; x: number; y: number }
 type EditHandlePlacement = { sectionId: string; top: number; left: number }
+type MagneticEditSection = { sectionId: string; element: HTMLElement; exact: boolean }
 type DocumentLoadState =
   | { status: 'idle' | 'loading'; document: null; error: null }
   | { status: 'ready'; document: BrowserDocument; error: null }
@@ -803,6 +804,24 @@ function DocumentReader({
         ) {
           throw new Error('second compact handle was not magnetic')
         }
+        const sectionMiddleY = secondRect.top + Math.min(46, secondRect.height / 2)
+        dispatchPointerMove(readerStageRef.current, secondRect.left + 24, sectionMiddleY)
+        await waitForUiTick()
+        const anchoredHandle = findEditHandleElement(readerStageRef.current)
+        if (!anchoredHandle) throw new Error('anchored handle missing')
+        const anchoredTop = anchoredHandle.style.top
+        const anchoredLeft = anchoredHandle.style.left
+        dispatchPointerMove(readerStageRef.current, secondRect.left - 72, sectionMiddleY + 16)
+        await waitForUiTick()
+        const approachableHandle = findEditHandleElement(readerStageRef.current)
+        if (
+          !approachableHandle ||
+          approachableHandle.dataset.hoverEditSectionId !== targetSection.section_id ||
+          approachableHandle.style.top !== anchoredTop ||
+          approachableHandle.style.left !== anchoredLeft
+        ) {
+          throw new Error('handle moved away during gutter approach')
+        }
         await activateSection(targetSection.section_id, { edit: true })
         await waitForEditableSection(() => articleRef.current, targetSection.section_id)
         await waitForUiTick()
@@ -814,7 +833,7 @@ function DocumentReader({
         ) {
           throw new Error('active handle did not expand')
         }
-        setSmokeHoverHandleStatus('hover-handle passed magnetic-edit-handle compact expanded')
+        setSmokeHoverHandleStatus('hover-handle passed magnetic-edit-handle stable compact expanded')
       } catch (caught) {
         setSmokeHoverHandleStatus(
           `hover-handle failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
@@ -868,19 +887,30 @@ function DocumentReader({
     void activateSection(nextSectionId, { edit: demoMode === 'edit' })
   }
 
-  function handlePaperPointerMove(event: React.PointerEvent<HTMLElement>) {
+  function handleReaderStagePointerMove(event: React.PointerEvent<HTMLElement>) {
     if (!editable || reviewOpen || draftTransitioning) return
+    const handle = findEditHandleElement(readerStageRef.current)
+    const pointerInHandle = handle ? pointInElement(handle, event.clientX, event.clientY) : false
     if (editingSectionId) {
-      placeEditHandle(editingSectionId, event.clientY)
+      const editingElement = findEditSectionElement(articleRef.current, editingSectionId)
+      if (!pointerInHandle && editingElement && pointInElement(editingElement, event.clientX, event.clientY)) {
+        placeEditHandle(editingSectionId, event.clientY)
+      } else if (editHandlePlacementRef.current?.sectionId !== editingSectionId) {
+        placeEditHandle(editingSectionId)
+      }
       return
     }
     const match = findMagneticEditSection(articleRef.current, event.clientX, event.clientY)
-    if (!match) return
+    if (!match) {
+      if (!pointerInHandle) setEditHandlePlacement(null)
+      return
+    }
     setSelectedSectionId((current) => (current === match.sectionId ? current : match.sectionId))
+    if (editHandlePlacementRef.current?.sectionId === match.sectionId && !match.exact) return
     placeEditHandle(match.sectionId, event.clientY)
   }
 
-  function handlePaperPointerLeave() {
+  function handleReaderStagePointerLeave() {
     if (editingSectionId) {
       placeEditHandle(editingSectionId)
       return
@@ -958,7 +988,12 @@ function DocumentReader({
         </div>
       )}
 
-      <div className="reader-stage" ref={readerStageRef}>
+      <div
+        className="reader-stage"
+        ref={readerStageRef}
+        onPointerLeave={handleReaderStagePointerLeave}
+        onPointerMove={handleReaderStagePointerMove}
+      >
         <ManualAgentAffordances
           mode={demoMode}
           editable={editable}
@@ -996,8 +1031,6 @@ function DocumentReader({
             onBlur={handlePaperBlur}
             onClick={handlePaperClick}
             onKeyDown={handlePaperKeyDown}
-            onPointerLeave={handlePaperPointerLeave}
-            onPointerMove={handlePaperPointerMove}
           />
           <aside className="anchor-rail" aria-label="Document context">
             <span>On this page</span>
@@ -1438,7 +1471,7 @@ function findEditHandleElement(root: HTMLElement | null): HTMLElement | null {
   return root.querySelector<HTMLElement>('.manual-edit-affordance')
 }
 
-function findMagneticEditSection(root: HTMLElement | null, x: number, y: number): { sectionId: string; element: HTMLElement } | null {
+function findMagneticEditSection(root: HTMLElement | null, x: number, y: number): MagneticEditSection | null {
   if (!root) return null
   const candidates = Array.from(root.querySelectorAll<HTMLElement>('.editable-section[data-edit-section-id]'))
   let bestSectionId: string | null = null
@@ -1451,10 +1484,10 @@ function findMagneticEditSection(root: HTMLElement | null, x: number, y: number)
     const rect = element.getBoundingClientRect()
     const exact = x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom
     const near =
-      x >= rect.left - 56 &&
+      x >= rect.left - 112 &&
       x <= rect.right + 24 &&
-      y >= rect.top - 10 &&
-      y <= rect.bottom + 10
+      y >= rect.top - 18 &&
+      y <= rect.bottom + 18
     if (!exact && !near) return
     const centerY = rect.top + rect.height / 2
     const distance = exact ? 0 : Math.abs(y - centerY)
@@ -1465,7 +1498,12 @@ function findMagneticEditSection(root: HTMLElement | null, x: number, y: number)
       bestExact = exact
     }
   })
-  return bestSectionId && bestElement ? { sectionId: bestSectionId, element: bestElement } : null
+  return bestSectionId && bestElement ? { sectionId: bestSectionId, element: bestElement, exact: bestExact } : null
+}
+
+function pointInElement(element: HTMLElement, x: number, y: number): boolean {
+  const rect = element.getBoundingClientRect()
+  return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom
 }
 
 function measureEditHandlePlacement(
@@ -1637,6 +1675,16 @@ async function waitForEditableSection(root: () => HTMLElement | null, sectionId:
 
 function waitForUiTick(): Promise<void> {
   return new Promise((resolve) => window.setTimeout(resolve, 25))
+}
+
+function dispatchPointerMove(element: HTMLElement | null, clientX: number, clientY: number) {
+  element?.dispatchEvent(
+    new PointerEvent('pointermove', {
+      bubbles: true,
+      clientX,
+      clientY,
+    }),
+  )
 }
 
 function appendSmokeText(element: HTMLElement, marker: string) {

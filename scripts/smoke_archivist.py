@@ -669,7 +669,7 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
             "markers": [
                 "Magnetic edit handle smoke",
                 "hover-handle passed",
-                "magnetic-edit-handle compact expanded",
+                "magnetic-edit-handle stable compact expanded",
                 "data-hover-edit-section-id",
                 "data-edit-handle-mode=\"expanded\"",
                 "data-edit-handle-left",

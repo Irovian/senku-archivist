@@ -450,6 +450,50 @@
           "The compact edit handle now tracks the target section, but toolbar iconography still uses letter controls for formatting and should be replaced with clearer office-style icons in a separate focused pass.",
           "Between-section insertion controls and hover-in-margin heading insertion remain separate focused passes."
         ]
+      },
+      {
+        "completed_at": "2026-06-02T05:32:46Z",
+        "addressed_requested_change": "Prevent the magnetic edit handle from running away while the pointer leaves the text block and moves toward the handle.",
+        "changed_surfaces": [
+          "src/main.tsx now tracks pointer movement at the reader-stage level so the section handle remains reachable after the cursor leaves the article surface.",
+          "src/main.tsx expands the section magnet lane into the left gutter and freezes the current handle placement while the pointer approaches the handle outside the section body.",
+          "src/main.tsx keeps the active editing toolbar anchored unless the pointer is still inside the edited section, avoiding toolbar movement while the user is trying to click a control.",
+          "src/main.tsx and scripts/smoke_archivist.py extend the hover-edit-handle smoke probe to dispatch a gutter-approach pointer movement and assert stable compact-to-expanded behavior."
+        ],
+        "validation_commands": [
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run smoke:browser",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/browser-20260602T053129Z/browser-summary.json"
+          },
+          {
+            "command": "npm run smoke:all",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/all-20260602T053226Z/summary.json"
+          },
+          {
+            "command": "python3 \"${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py\" validate",
+            "result": "passed"
+          },
+          {
+            "command": "git diff --check",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          ".tmp/archivist-smoke/all-20260602T053226Z/summary.json",
+          ".tmp/archivist-smoke/all-20260602T053226Z/browser-summary.json",
+          ".tmp/archivist-smoke/all-20260602T053226Z/screenshots/hover-edit-handle.png",
+          ".tmp/archivist-smoke/browser-20260602T053129Z/screenshots/hover-edit-handle.png"
+        ],
+        "residual_risks": [
+          "This pass fixes the reachability/running-away behavior for the existing edit handle; office-style iconography remains a separate focused pass.",
+          "Between-section insertion controls and hover-in-margin heading insertion remain separate focused passes."
+        ]
       }
     ],
     "readiness": "build"
