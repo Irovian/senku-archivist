@@ -664,6 +664,24 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "Browser smoke manual draft",
             ],
         },
+        "hover-edit-handle": {
+            "url": route_url(PLACEHOLDER_HEAVY_DOC_ID, "edit", "hover-handle"),
+            "markers": [
+                "Magnetic edit handle smoke",
+                "hover-handle passed",
+                "magnetic-edit-handle compact expanded",
+                "data-hover-edit-section-id",
+                "data-edit-handle-mode=\"expanded\"",
+                "data-edit-handle-left",
+                "data-edit-handle-top",
+                "Inline edit toolbar",
+            ],
+            "absent_markers": [
+                "hover-handle failed",
+                "manual-edit-outline",
+                "manual-selected-block",
+            ],
+        },
         "draft-review-lens": {
             "url": route_url(PLACEHOLDER_HEAVY_DOC_ID, "draft-review"),
             "markers": [

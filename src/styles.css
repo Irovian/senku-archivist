@@ -950,9 +950,7 @@ button:disabled {
 }
 
 .manual-agent-dock.editing .manual-draft-count {
-  right: auto;
-  left: 8px;
-  transform: translateX(-8px);
+  display: none;
 }
 
 .manual-draft-count span {
@@ -1008,16 +1006,20 @@ button:disabled {
 .manual-edit-affordance {
   position: absolute;
   top: 42px;
-  right: 242px;
-  left: 26px;
+  left: 14px;
   z-index: 15;
+  width: max-content;
   pointer-events: none;
+  transition:
+    top 90ms ease,
+    left 90ms ease,
+    opacity 120ms ease;
 }
 
 .manual-edit-tools {
-  position: absolute;
-  top: 12px;
-  left: -42px;
+  position: relative;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: repeat(2, 30px);
   gap: 5px;
@@ -1484,7 +1486,7 @@ button:disabled {
   }
 
   .manual-edit-affordance {
-    right: 24px;
+    left: 12px;
   }
 }
 

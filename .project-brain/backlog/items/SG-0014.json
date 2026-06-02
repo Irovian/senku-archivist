@@ -405,6 +405,51 @@
           "The edit handle is still fixed near the section edge rather than being fully hover-anchored to the exact section boundary.",
           "Office-style toolbar iconography and between-section insertion controls remain separate focused passes."
         ]
+      },
+      {
+        "completed_at": "2026-06-02T03:56:12Z",
+        "addressed_requested_change": "Anchor the edit handle to the section being approached, keep the full toolbar hidden until edit activation, and keep section editing stable while autosave stores drafts.",
+        "changed_surfaces": [
+          "src/main.tsx now measures an edit-handle placement against the active or hovered editable section so the compact edit affordance follows the section margin instead of a fixed rail.",
+          "src/main.tsx treats the rendered article as an imperative Markdown surface: service HTML is injected only on document/reset changes, preventing normal selection, toolbar, and autosave state updates from rewriting the live contenteditable DOM.",
+          "src/main.tsx defers click-away blur handling so focus moves between editable sections do not immediately flush and close the next active section.",
+          "src/styles.css positions the compact/expanded edit toolbar at the measured section edge and hides the draft-count badge while the inline edit toolbar is open.",
+          "scripts/smoke_archivist.py adds a hover-edit-handle browser route that asserts magnetic compact placement, expanded edit controls, and shared active-section editing behavior."
+        ],
+        "validation_commands": [
+          {
+            "command": "python3 -m py_compile scripts/smoke_archivist.py service/archivist_service.py",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run smoke:all",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/all-20260602T035544Z/summary.json"
+          },
+          {
+            "command": "python3 \"${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py\" validate",
+            "result": "passed"
+          },
+          {
+            "command": "git diff --check",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          ".tmp/archivist-smoke/all-20260602T035544Z/summary.json",
+          ".tmp/archivist-smoke/all-20260602T035544Z/browser-summary.json",
+          ".tmp/archivist-smoke/all-20260602T035544Z/screenshots/hover-edit-handle.png",
+          ".tmp/archivist-smoke/all-20260602T035544Z/screenshots/edit-switch-autosave.png",
+          ".tmp/archivist-smoke/all-20260602T035544Z/screenshots/edit-mode.png"
+        ],
+        "residual_risks": [
+          "The compact edit handle now tracks the target section, but toolbar iconography still uses letter controls for formatting and should be replaced with clearer office-style icons in a separate focused pass.",
+          "Between-section insertion controls and hover-in-margin heading insertion remain separate focused passes."
+        ]
       }
     ],
     "readiness": "build"

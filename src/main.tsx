@@ -47,8 +47,9 @@ const WORKSPACE_ID = 'epp-full'
 type AppLoadState = 'loading' | 'ready' | 'error'
 type DemoMode = 'reader' | 'agent' | 'edit' | 'draft-review'
 type ReviewVersion = 'draft' | 'original'
-type SmokeScenario = 'edit-switch' | null
+type SmokeScenario = 'edit-switch' | 'hover-handle' | null
 type PendingCaretPoint = { sectionId: string; x: number; y: number }
+type EditHandlePlacement = { sectionId: string; top: number; left: number }
 type DocumentLoadState =
   | { status: 'idle' | 'loading'; document: null; error: null }
   | { status: 'ready'; document: BrowserDocument; error: null }
@@ -365,12 +366,16 @@ function DocumentReader({
   documentState: DocumentLoadState
   onRetry: () => void
 }) {
+  const readerStageRef = React.useRef<HTMLDivElement | null>(null)
   const articleRef = React.useRef<HTMLElement | null>(null)
+  const articleHtmlRef = React.useRef<{ docId: string; html: string; version: number } | null>(null)
   const draftTransitionRef = React.useRef(false)
   const editingSectionIdRef = React.useRef<string | null>(null)
   const lastSavedDraftsRef = React.useRef<ManualDraft[]>([])
   const pendingCaretPointRef = React.useRef<PendingCaretPoint | null>(null)
+  const editHandlePlacementRef = React.useRef<EditHandlePlacement | null>(null)
   const smokeEditSwitchRanRef = React.useRef(false)
+  const smokeHoverHandleRanRef = React.useRef(false)
   const readyDocument = documentState.status === 'ready' ? documentState.document : null
   const editable = Boolean(readyDocument?.metadata.editable)
   const editSections = React.useMemo(() => readyDocument?.rendered.edit_sections ?? [], [readyDocument])
@@ -383,7 +388,9 @@ function DocumentReader({
   const [reviewVersion, setReviewVersion] = React.useState<ReviewVersion>('draft')
   const [readerRenderVersion, setReaderRenderVersion] = React.useState(0)
   const [draftTransitioning, setDraftTransitioning] = React.useState(false)
+  const [editHandlePlacement, setEditHandlePlacement] = React.useState<EditHandlePlacement | null>(null)
   const [smokeEditSwitchStatus, setSmokeEditSwitchStatus] = React.useState<string | null>(null)
+  const [smokeHoverHandleStatus, setSmokeHoverHandleStatus] = React.useState<string | null>(null)
   const smokeScenario = smokeScenarioFromSearch()
 
   const pendingDrafts = React.useMemo(
@@ -401,6 +408,25 @@ function DocumentReader({
     pendingDrafts[reviewIndex] ??
     pendingDrafts[0] ??
     fallbackReviewDraft(preferredEditSection(editSections), readyDocument?.title)
+
+  React.useLayoutEffect(() => {
+    const root = articleRef.current
+    if (!root || !readyDocument) return
+    const previous = articleHtmlRef.current
+    if (
+      previous?.docId === readyDocument.doc_id &&
+      previous?.html === readyDocument.rendered.html &&
+      previous?.version === readerRenderVersion
+    ) {
+      return
+    }
+    root.innerHTML = readyDocument.rendered.html
+    articleHtmlRef.current = {
+      docId: readyDocument.doc_id,
+      html: readyDocument.rendered.html,
+      version: readerRenderVersion,
+    }
+  }, [readerRenderVersion, readyDocument])
 
   const persistDrafts = React.useCallback(
     async (drafts: ManualDraft[]) => {
@@ -435,6 +461,35 @@ function DocumentReader({
       setDraftTransitioning(false)
     }
   }, [])
+
+  const syncEditableDomForSection = React.useCallback(
+    (sectionId: string | null) => {
+      const root = articleRef.current
+      if (!root) return false
+      root.querySelectorAll<HTMLElement>('.editable-section[contenteditable="true"]').forEach((element) => {
+        if (element.dataset.editSectionId !== sectionId) {
+          element.removeAttribute('contenteditable')
+          element.classList.remove('manual-section-editing')
+        }
+      })
+      if (!sectionId) return true
+      const section = editSections.find((candidate) => candidate.section_id === sectionId)
+      const element = findEditSectionElement(root, sectionId)
+      if (!section || !element) {
+        return false
+      }
+      const alreadyEditable = element.getAttribute('contenteditable') === 'true'
+      const caretPoint = pendingCaretPointRef.current?.sectionId === sectionId ? pendingCaretPointRef.current : null
+      pendingCaretPointRef.current = null
+      element.setAttribute('contenteditable', 'true')
+      element.classList.add('manual-section-editing')
+      if (!alreadyEditable || document.activeElement !== element) {
+        focusEditableSection(element, caretPoint)
+      }
+      return true
+    },
+    [editSections],
+  )
 
   const saveCurrentDraft = React.useCallback(async (sectionId = editingSectionId) => {
     if (!sectionId || !readyDocument?.metadata.editable) return false
@@ -475,11 +530,26 @@ function DocumentReader({
         if (options.edit) {
           setReviewOpen(false)
           setEditingSectionId(sectionId)
+          window.requestAnimationFrame(() => syncEditableDomForSection(sectionId))
         }
       })
     },
-    [readyDocument?.metadata.editable, runDraftTransition, saveCurrentDraft],
+    [readyDocument?.metadata.editable, runDraftTransition, saveCurrentDraft, syncEditableDomForSection],
   )
+
+  const placeEditHandle = React.useCallback((sectionId: string, pointerY?: number) => {
+    const placement = measureEditHandlePlacement(readerStageRef.current, articleRef.current, sectionId, pointerY)
+    if (!placement) return false
+    setEditHandlePlacement((current) =>
+      current &&
+      current.sectionId === placement.sectionId &&
+      Math.abs(current.top - placement.top) < 2 &&
+      Math.abs(current.left - placement.left) < 2
+        ? current
+        : placement,
+    )
+    return true
+  }, [])
 
   const startEditing = React.useCallback(
     (sectionId?: string | null) => {
@@ -549,8 +619,11 @@ function DocumentReader({
     setReviewOpen(false)
     setReviewIndex(0)
     setReaderRenderVersion(0)
+    setEditHandlePlacement(null)
     setSmokeEditSwitchStatus(null)
+    setSmokeHoverHandleStatus(null)
     smokeEditSwitchRanRef.current = false
+    smokeHoverHandleRanRef.current = false
     if (!readyDocument?.metadata.editable) return
 
     let cancelled = false
@@ -592,21 +665,26 @@ function DocumentReader({
   }, [editingSectionId])
 
   React.useEffect(() => {
-    if (!editingSectionId) return
-    const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
-    const element = findEditSectionElement(articleRef.current, editingSectionId)
-    if (!section || !element) return
-    const caretPoint =
-      pendingCaretPointRef.current?.sectionId === editingSectionId ? pendingCaretPointRef.current : null
-    pendingCaretPointRef.current = null
-    element.setAttribute('contenteditable', 'true')
-    element.classList.add('manual-section-editing')
-    focusEditableSection(element, caretPoint)
-    return () => {
-      element.removeAttribute('contenteditable')
-      element.classList.remove('manual-section-editing')
-    }
-  }, [editSections, editingSectionId])
+    editHandlePlacementRef.current = editHandlePlacement
+  }, [editHandlePlacement])
+
+  React.useEffect(() => {
+    const targetSectionId = editingSectionId ?? editHandlePlacement?.sectionId ?? selectedSectionId
+    if (!targetSectionId || !readyDocument?.metadata.editable) return
+    placeEditHandle(targetSectionId)
+  }, [
+    editingSectionId,
+    editHandlePlacement?.sectionId,
+    draftState?.audit.updated_at,
+    placeEditHandle,
+    readerRenderVersion,
+    readyDocument?.metadata.editable,
+    selectedSectionId,
+  ])
+
+  React.useLayoutEffect(() => {
+    syncEditableDomForSection(editingSectionId)
+  }, [draftState?.audit.updated_at, editingSectionId, readerRenderVersion, syncEditableDomForSection])
 
   React.useEffect(() => {
     if (
@@ -671,6 +749,82 @@ function DocumentReader({
     void runSmokeProbe()
   }, [activateSection, draftStateReady, editSections, readyDocument, smokeScenario])
 
+  React.useEffect(() => {
+    if (
+      smokeScenario !== 'hover-handle' ||
+      smokeHoverHandleRanRef.current ||
+      !readyDocument?.metadata.editable ||
+      !draftStateReady ||
+      editSections.length < 2
+    ) {
+      return
+    }
+    const firstSection = editSections.find((section) => section.block_types.includes('p')) ?? editSections[0]
+    const secondSection =
+      editSections.find((section) => section.section_id !== firstSection.section_id && section.block_types.includes('p')) ??
+      editSections.find((section) => section.section_id !== firstSection.section_id)
+    if (!secondSection) return
+
+    const targetSection = secondSection
+    smokeHoverHandleRanRef.current = true
+
+    async function runHoverProbe() {
+      setSmokeHoverHandleStatus('hover-handle running')
+      try {
+        setSelectedSectionId(firstSection.section_id)
+        if (!placeEditHandle(firstSection.section_id)) throw new Error('first handle placement failed')
+        await waitForUiTick()
+        const firstHandle = findEditHandleElement(readerStageRef.current)
+        if (
+          !firstHandle ||
+          firstHandle.dataset.hoverEditSectionId !== firstSection.section_id ||
+          firstHandle.dataset.editHandleMode !== 'compact'
+        ) {
+          throw new Error('first compact handle was not anchored')
+        }
+        const firstTop = firstHandle.style.top
+        const firstLeft = firstHandle.style.left
+
+        const secondElement = findEditSectionElement(articleRef.current, targetSection.section_id)
+        if (!secondElement) throw new Error('second section missing')
+        const secondRect = secondElement.getBoundingClientRect()
+        setSelectedSectionId(targetSection.section_id)
+        if (!placeEditHandle(targetSection.section_id, secondRect.top + Math.min(46, secondRect.height / 2))) {
+          throw new Error('second handle placement failed')
+        }
+        await waitForUiTick()
+        const secondHandle = findEditHandleElement(readerStageRef.current)
+        if (!secondHandle) throw new Error('second handle missing')
+        const handleMoved = secondHandle.style.top !== firstTop || secondHandle.style.left !== firstLeft
+        if (
+          secondHandle.dataset.hoverEditSectionId !== targetSection.section_id ||
+          secondHandle.dataset.editHandleMode !== 'compact' ||
+          !handleMoved
+        ) {
+          throw new Error('second compact handle was not magnetic')
+        }
+        await activateSection(targetSection.section_id, { edit: true })
+        await waitForEditableSection(() => articleRef.current, targetSection.section_id)
+        await waitForUiTick()
+        const expandedHandle = findEditHandleElement(readerStageRef.current)
+        if (
+          !expandedHandle ||
+          expandedHandle.dataset.hoverEditSectionId !== targetSection.section_id ||
+          expandedHandle.dataset.editHandleMode !== 'expanded'
+        ) {
+          throw new Error('active handle did not expand')
+        }
+        setSmokeHoverHandleStatus('hover-handle passed magnetic-edit-handle compact expanded')
+      } catch (caught) {
+        setSmokeHoverHandleStatus(
+          `hover-handle failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
+        )
+      }
+    }
+
+    void runHoverProbe()
+  }, [activateSection, draftStateReady, editSections, placeEditHandle, readyDocument, smokeScenario])
+
   if (documentState.status === 'idle' || documentState.status === 'loading') {
     return (
       <section className="reader-empty">
@@ -714,14 +868,36 @@ function DocumentReader({
     void activateSection(nextSectionId, { edit: demoMode === 'edit' })
   }
 
+  function handlePaperPointerMove(event: React.PointerEvent<HTMLElement>) {
+    if (!editable || reviewOpen || draftTransitioning) return
+    if (editingSectionId) {
+      placeEditHandle(editingSectionId, event.clientY)
+      return
+    }
+    const match = findMagneticEditSection(articleRef.current, event.clientX, event.clientY)
+    if (!match) return
+    setSelectedSectionId((current) => (current === match.sectionId ? current : match.sectionId))
+    placeEditHandle(match.sectionId, event.clientY)
+  }
+
+  function handlePaperPointerLeave() {
+    if (editingSectionId) {
+      placeEditHandle(editingSectionId)
+      return
+    }
+    setEditHandlePlacement(null)
+  }
+
   function handlePaperBlur(event: React.FocusEvent<HTMLElement>) {
     const relatedTarget = event.relatedTarget
-    if (
-      editingSectionId &&
-      (!relatedTarget || !(relatedTarget instanceof Node) || !event.currentTarget.contains(relatedTarget))
-    ) {
+    if (!editingSectionId) return
+    if (relatedTarget instanceof Node && event.currentTarget.contains(relatedTarget)) return
+    const root = event.currentTarget
+    window.setTimeout(() => {
+      const activeElement = document.activeElement
+      if (activeElement instanceof Node && root.contains(activeElement)) return
       flushCurrentDraft()
-    }
+    }, 0)
   }
 
   function handlePaperKeyDown(event: React.KeyboardEvent<HTMLElement>) {
@@ -743,6 +919,11 @@ function DocumentReader({
       {smokeEditSwitchStatus && (
         <div hidden data-smoke-marker="Single active editor smoke" data-smoke-result={smokeEditSwitchStatus}>
           {smokeEditSwitchStatus}
+        </div>
+      )}
+      {smokeHoverHandleStatus && (
+        <div hidden data-smoke-marker="Magnetic edit handle smoke" data-smoke-result={smokeHoverHandleStatus}>
+          {smokeHoverHandleStatus}
         </div>
       )}
       <header className="reader-header manual-document-hero">
@@ -777,7 +958,7 @@ function DocumentReader({
         </div>
       )}
 
-      <div className="reader-stage">
+      <div className="reader-stage" ref={readerStageRef}>
         <ManualAgentAffordances
           mode={demoMode}
           editable={editable}
@@ -790,7 +971,8 @@ function DocumentReader({
           reviewOpen={reviewOpen || demoMode === 'draft-review'}
           reviewVersion={reviewVersion}
           draftTransitioning={draftTransitioning}
-          onStartEdit={() => startEditing()}
+          editHandlePlacement={editHandlePlacement}
+          onStartEdit={() => startEditing(editHandlePlacement?.sectionId ?? selectedSectionId)}
           onUndo={undoCurrentEdit}
           onOpenReview={() => {
             setReviewVersion('draft')
@@ -807,14 +989,15 @@ function DocumentReader({
 
         <div className="reader-grid">
           <article
-            key={`${browserDocument.doc_id}-${draftState?.audit.updated_at ?? 'clean'}-${readerRenderVersion}`}
+            key={`${browserDocument.doc_id}-${readerRenderVersion}`}
             ref={articleRef}
             className={demoMode === 'edit' || editingSectionId ? 'document-paper manual-edit-preview' : 'document-paper'}
-            dangerouslySetInnerHTML={{ __html: browserDocument.rendered.html }}
             aria-label={browserDocument.title}
             onBlur={handlePaperBlur}
             onClick={handlePaperClick}
             onKeyDown={handlePaperKeyDown}
+            onPointerLeave={handlePaperPointerLeave}
+            onPointerMove={handlePaperPointerMove}
           />
           <aside className="anchor-rail" aria-label="Document context">
             <span>On this page</span>
@@ -879,6 +1062,7 @@ function ManualAgentAffordances({
   reviewOpen,
   reviewVersion,
   draftTransitioning,
+  editHandlePlacement,
   onStartEdit,
   onUndo,
   onOpenReview,
@@ -899,6 +1083,7 @@ function ManualAgentAffordances({
   reviewOpen: boolean
   reviewVersion: ReviewVersion
   draftTransitioning: boolean
+  editHandlePlacement: EditHandlePlacement | null
   onStartEdit: () => void
   onUndo: () => void
   onOpenReview: () => void
@@ -918,6 +1103,10 @@ function ManualAgentAffordances({
   }
 
   const controlsVisible = Boolean(editingSection)
+  const showEditHandle = Boolean(mode === 'edit' || selectedSection || editingSection || editHandlePlacement)
+  const editHandleStyle = editHandlePlacement
+    ? ({ top: `${editHandlePlacement.top}px`, left: `${editHandlePlacement.left}px` } as React.CSSProperties)
+    : undefined
 
   return (
     <>
@@ -970,8 +1159,16 @@ function ManualAgentAffordances({
         </section>
       )}
 
-      {(mode === 'edit' || selectedSection || editingSection) && !reviewOpen && (
-        <section className="manual-edit-affordance" aria-label="Editable section preview">
+      {showEditHandle && !reviewOpen && (
+        <section
+          className="manual-edit-affordance"
+          aria-label="Editable section preview"
+          data-hover-edit-section-id={editHandlePlacement?.sectionId ?? ''}
+          data-edit-handle-mode={controlsVisible ? 'expanded' : 'compact'}
+          data-edit-handle-left={editHandlePlacement ? Math.round(editHandlePlacement.left) : ''}
+          data-edit-handle-top={editHandlePlacement ? Math.round(editHandlePlacement.top) : ''}
+          style={editHandleStyle}
+        >
           <div
             className={controlsVisible ? 'manual-edit-tools expanded' : 'manual-edit-tools compact'}
             aria-label={controlsVisible ? 'Inline edit toolbar' : 'Edit section handle'}
@@ -1236,6 +1433,65 @@ function findEditSectionElement(root: HTMLElement | null, sectionId: string): HT
   return root.querySelector<HTMLElement>(`.editable-section[data-edit-section-id="${cssEscape(sectionId)}"]`)
 }
 
+function findEditHandleElement(root: HTMLElement | null): HTMLElement | null {
+  if (!root) return null
+  return root.querySelector<HTMLElement>('.manual-edit-affordance')
+}
+
+function findMagneticEditSection(root: HTMLElement | null, x: number, y: number): { sectionId: string; element: HTMLElement } | null {
+  if (!root) return null
+  const candidates = Array.from(root.querySelectorAll<HTMLElement>('.editable-section[data-edit-section-id]'))
+  let bestSectionId: string | null = null
+  let bestElement: HTMLElement | null = null
+  let bestDistance = Number.POSITIVE_INFINITY
+  let bestExact = false
+  candidates.forEach((element) => {
+    const sectionId = element.dataset.editSectionId
+    if (!sectionId) return
+    const rect = element.getBoundingClientRect()
+    const exact = x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom
+    const near =
+      x >= rect.left - 56 &&
+      x <= rect.right + 24 &&
+      y >= rect.top - 10 &&
+      y <= rect.bottom + 10
+    if (!exact && !near) return
+    const centerY = rect.top + rect.height / 2
+    const distance = exact ? 0 : Math.abs(y - centerY)
+    if (!bestElement || (exact && !bestExact) || distance < bestDistance) {
+      bestSectionId = sectionId
+      bestElement = element
+      bestDistance = distance
+      bestExact = exact
+    }
+  })
+  return bestSectionId && bestElement ? { sectionId: bestSectionId, element: bestElement } : null
+}
+
+function measureEditHandlePlacement(
+  stage: HTMLElement | null,
+  root: HTMLElement | null,
+  sectionId: string,
+  pointerY?: number,
+): EditHandlePlacement | null {
+  const section = findEditSectionElement(root, sectionId)
+  if (!stage || !section) return null
+  const stageRect = stage.getBoundingClientRect()
+  const sectionRect = section.getBoundingClientRect()
+  const minTop = sectionRect.top - stageRect.top + 8
+  const maxTop = sectionRect.bottom - stageRect.top - 38
+  const desiredTop = pointerY === undefined ? minTop : pointerY - stageRect.top + 14
+  return {
+    sectionId,
+    top: Math.round(clamp(desiredTop, minTop, Math.max(minTop, maxTop))),
+    left: Math.round(sectionRect.left - stageRect.left - 72),
+  }
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max)
+}
+
 function insertHeadingAtSelection(container: HTMLElement, level: 2 | 3 | 4) {
   const selection = window.getSelection()
   if (!selection) return
@@ -1456,6 +1712,7 @@ function demoModeFromSearch(): DemoMode {
 function smokeScenarioFromSearch(): SmokeScenario {
   const value = new URLSearchParams(window.location.search).get('archivist-smoke')
   if (value === 'edit-switch') return value
+  if (value === 'hover-handle') return value
   return null
 }
 
