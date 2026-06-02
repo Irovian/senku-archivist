@@ -47,6 +47,7 @@ const WORKSPACE_ID = 'epp-full'
 type AppLoadState = 'loading' | 'ready' | 'error'
 type DemoMode = 'reader' | 'agent' | 'edit' | 'draft-review'
 type ReviewVersion = 'draft' | 'original'
+type SmokeScenario = 'edit-switch' | null
 type DocumentLoadState =
   | { status: 'idle' | 'loading'; document: null; error: null }
   | { status: 'ready'; document: BrowserDocument; error: null }
@@ -364,6 +365,10 @@ function DocumentReader({
   onRetry: () => void
 }) {
   const articleRef = React.useRef<HTMLElement | null>(null)
+  const draftTransitionRef = React.useRef(false)
+  const editingSectionIdRef = React.useRef<string | null>(null)
+  const lastSavedDraftsRef = React.useRef<ManualDraft[]>([])
+  const smokeEditSwitchRanRef = React.useRef(false)
   const readyDocument = documentState.status === 'ready' ? documentState.document : null
   const editable = Boolean(readyDocument?.metadata.editable)
   const editSections = React.useMemo(() => readyDocument?.rendered.edit_sections ?? [], [readyDocument])
@@ -375,11 +380,15 @@ function DocumentReader({
   const [reviewIndex, setReviewIndex] = React.useState(0)
   const [reviewVersion, setReviewVersion] = React.useState<ReviewVersion>('draft')
   const [readerRenderVersion, setReaderRenderVersion] = React.useState(0)
+  const [draftTransitioning, setDraftTransitioning] = React.useState(false)
+  const [smokeEditSwitchStatus, setSmokeEditSwitchStatus] = React.useState<string | null>(null)
+  const smokeScenario = smokeScenarioFromSearch()
 
   const pendingDrafts = React.useMemo(
     () => draftState?.drafts.filter((draft) => draft.status === 'pending') ?? [],
     [draftState],
   )
+  const draftStateReady = draftState !== null
   const selectedSection = selectedSectionId
     ? editSections.find((section) => section.section_id === selectedSectionId) ?? null
     : null
@@ -393,7 +402,7 @@ function DocumentReader({
 
   const persistDrafts = React.useCallback(
     async (drafts: ManualDraft[]) => {
-      if (!readyDocument?.metadata.editable) return
+      if (!readyDocument?.metadata.editable) return false
       setDraftError(null)
       try {
         const response = await writeManualDraftState(WORKSPACE_ID, readyDocument.doc_id, {
@@ -403,20 +412,35 @@ function DocumentReader({
         })
         setDraftState(response.state)
         setReviewIndex((current) => Math.min(current, Math.max(response.state.drafts.length - 1, 0)))
+        return true
       } catch (caught) {
         setDraftError(caught instanceof Error ? caught.message : 'Unable to save draft.')
+        return false
       }
     },
     [draftState?.audit, readyDocument],
   )
 
-  const saveCurrentDraft = React.useCallback(async () => {
-    if (!editingSectionId || !readyDocument?.metadata.editable) return
-    const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
-    const element = findEditSectionElement(articleRef.current, editingSectionId)
+  const runDraftTransition = React.useCallback(async (action: () => Promise<void>) => {
+    if (draftTransitionRef.current) return false
+    draftTransitionRef.current = true
+    setDraftTransitioning(true)
+    try {
+      await action()
+      return true
+    } finally {
+      draftTransitionRef.current = false
+      setDraftTransitioning(false)
+    }
+  }, [])
+
+  const saveCurrentDraft = React.useCallback(async (sectionId = editingSectionId) => {
+    if (!sectionId || !readyDocument?.metadata.editable) return false
+    const section = editSections.find((candidate) => candidate.section_id === sectionId)
+    const element = findEditSectionElement(articleRef.current, sectionId)
     if (!section || !element) {
-      setEditingSectionId(null)
-      return
+      setEditingSectionId((current) => (current === sectionId ? null : current))
+      return false
     }
     const draftText = serializeEditedSection(element)
     const otherDrafts = pendingDrafts.filter(
@@ -429,20 +453,47 @@ function DocumentReader({
             buildManualDraft(section, draftText, 'manual_edit', validateSectionDraft(section, draftText)),
           ]
         : otherDrafts
-    await persistDrafts(nextDrafts)
-    setEditingSectionId(null)
+    setEditingSectionId((current) => (current === section.section_id ? null : current))
+    const saved = await persistDrafts(nextDrafts)
+    if (saved) {
+      lastSavedDraftsRef.current = nextDrafts
+    }
+    return saved
   }, [editSections, editingSectionId, pendingDrafts, persistDrafts, readyDocument?.metadata.editable])
+
+  const activateSection = React.useCallback(
+    async (sectionId: string | null | undefined, options: { edit?: boolean } = {}) => {
+      if (!readyDocument?.metadata.editable || !sectionId) return false
+      return runDraftTransition(async () => {
+        const currentEditingSectionId = editingSectionIdRef.current
+        if (currentEditingSectionId && currentEditingSectionId !== sectionId) {
+          await saveCurrentDraft(currentEditingSectionId)
+        }
+        setSelectedSectionId(sectionId)
+        if (options.edit) {
+          setReviewOpen(false)
+          setEditingSectionId(sectionId)
+        }
+      })
+    },
+    [readyDocument?.metadata.editable, runDraftTransition, saveCurrentDraft],
+  )
 
   const startEditing = React.useCallback(
     (sectionId?: string | null) => {
-      if (!readyDocument?.metadata.editable) return
       const nextSectionId = sectionId ?? selectedSectionId ?? editSections[0]?.section_id
-      if (!nextSectionId) return
-      setSelectedSectionId(nextSectionId)
-      setEditingSectionId(nextSectionId)
-      setReviewOpen(false)
+      void activateSection(nextSectionId, { edit: true })
     },
-    [editSections, readyDocument?.metadata.editable, selectedSectionId],
+    [activateSection, editSections, selectedSectionId],
+  )
+
+  const flushCurrentDraft = React.useCallback(
+    () => {
+      void runDraftTransition(async () => {
+        await saveCurrentDraft()
+      })
+    },
+    [runDraftTransition, saveCurrentDraft],
   )
 
   const undoCurrentEdit = React.useCallback(() => {
@@ -495,6 +546,8 @@ function DocumentReader({
     setReviewOpen(false)
     setReviewIndex(0)
     setReaderRenderVersion(0)
+    setSmokeEditSwitchStatus(null)
+    smokeEditSwitchRanRef.current = false
     if (!readyDocument?.metadata.editable) return
 
     let cancelled = false
@@ -532,6 +585,10 @@ function DocumentReader({
   }, [editingSectionId, pendingDrafts, selectedSectionId, readyDocument?.doc_id])
 
   React.useEffect(() => {
+    editingSectionIdRef.current = editingSectionId
+  }, [editingSectionId])
+
+  React.useEffect(() => {
     if (!editingSectionId) return
     const section = editSections.find((candidate) => candidate.section_id === editingSectionId)
     const element = findEditSectionElement(articleRef.current, editingSectionId)
@@ -545,6 +602,66 @@ function DocumentReader({
       element.classList.remove('manual-section-editing')
     }
   }, [editSections, editingSectionId])
+
+  React.useEffect(() => {
+    if (
+      smokeScenario !== 'edit-switch' ||
+      smokeEditSwitchRanRef.current ||
+      !readyDocument?.metadata.editable ||
+      !draftStateReady ||
+      editSections.length < 2
+    ) {
+      return
+    }
+    const firstSection = editSections.find((section) => section.block_types.includes('p')) ?? editSections[0]
+    const secondSection =
+      editSections.find((section) => section.section_id !== firstSection.section_id && section.block_types.includes('p')) ??
+      editSections.find((section) => section.section_id !== firstSection.section_id)
+    if (!secondSection) return
+
+    const targetSection = secondSection
+    smokeEditSwitchRanRef.current = true
+    const smokeMarker = 'Browser smoke switched section autosave'
+
+    async function runSmokeProbe() {
+      setSmokeEditSwitchStatus('single-active-editor running')
+      try {
+        await activateSection(firstSection.section_id, { edit: true })
+        const firstElement = await waitForEditableSection(() => articleRef.current, firstSection.section_id)
+        if (!firstElement) throw new Error('first section did not become editable')
+        appendSmokeText(firstElement, smokeMarker)
+        await activateSection(targetSection.section_id, { edit: true })
+        const secondElement = await waitForEditableSection(() => articleRef.current, targetSection.section_id)
+        if (!secondElement) throw new Error('second section did not become editable')
+        const activeElements = Array.from(
+          articleRef.current?.querySelectorAll<HTMLElement>('.editable-section[contenteditable="true"]') ?? [],
+        )
+        const firstDraftSaved = lastSavedDraftsRef.current.some(
+          (draft) =>
+            draft.status === 'pending' &&
+            draft.source === 'manual_edit' &&
+            draftSectionId(draft) === firstSection.section_id &&
+            draft.draft_text.includes(smokeMarker),
+        )
+        const onlySecondEditable =
+          activeElements.length === 1 && activeElements[0]?.dataset.editSectionId === targetSection.section_id
+        if (!firstDraftSaved || !onlySecondEditable) {
+          throw new Error(
+            `draft_saved=${String(firstDraftSaved)} active_sections=${activeElements
+              .map((element) => element.dataset.editSectionId)
+              .join(',')}`,
+          )
+        }
+        setSmokeEditSwitchStatus(`single-active-editor passed ${smokeMarker}`)
+      } catch (caught) {
+        setSmokeEditSwitchStatus(
+          `single-active-editor failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
+        )
+      }
+    }
+
+    void runSmokeProbe()
+  }, [activateSection, draftStateReady, editSections, readyDocument, smokeScenario])
 
   if (documentState.status === 'idle' || documentState.status === 'loading') {
     return (
@@ -579,13 +696,7 @@ function DocumentReader({
     const target = (event.target as HTMLElement).closest<HTMLElement>('.editable-section[data-edit-section-id]')
     const nextSectionId = target?.dataset.editSectionId
     if (!nextSectionId) return
-    if (editingSectionId && editingSectionId !== nextSectionId) {
-      void saveCurrentDraft()
-    }
-    setSelectedSectionId(nextSectionId)
-    if (demoMode === 'edit') {
-      startEditing(nextSectionId)
-    }
+    void activateSection(nextSectionId, { edit: demoMode === 'edit' })
   }
 
   function handlePaperBlur(event: React.FocusEvent<HTMLElement>) {
@@ -594,14 +705,14 @@ function DocumentReader({
       editingSectionId &&
       (!relatedTarget || !(relatedTarget instanceof Node) || !event.currentTarget.contains(relatedTarget))
     ) {
-      void saveCurrentDraft()
+      flushCurrentDraft()
     }
   }
 
   function handlePaperKeyDown(event: React.KeyboardEvent<HTMLElement>) {
     if (event.key === 'Escape' && editingSectionId) {
       event.preventDefault()
-      void saveCurrentDraft()
+      flushCurrentDraft()
     }
   }
 
@@ -610,7 +721,15 @@ function DocumentReader({
       className={`manual-reader demo-${demoMode}${reviewOpen ? ' review-open' : ''}`}
       data-demo-mode={demoMode}
       data-draft-count={pendingDrafts.length}
+      data-editor-transition-state={draftTransitioning ? 'saving' : 'idle'}
+      data-active-edit-section-id={editingSectionId ?? ''}
+      aria-busy={draftTransitioning}
     >
+      {smokeEditSwitchStatus && (
+        <div hidden data-smoke-marker="Single active editor smoke" data-smoke-result={smokeEditSwitchStatus}>
+          {smokeEditSwitchStatus}
+        </div>
+      )}
       <header className="reader-header manual-document-hero">
         <div className="manual-hero-copy">
           <span className="eyebrow">{activeNavDocument?.subgroup ?? formatLabel(browserDocument.metadata.content_group)}</span>
@@ -655,6 +774,7 @@ function DocumentReader({
           reviewDraft={reviewDraft}
           reviewOpen={reviewOpen || demoMode === 'draft-review'}
           reviewVersion={reviewVersion}
+          draftTransitioning={draftTransitioning}
           onStartEdit={() => startEditing()}
           onUndo={undoCurrentEdit}
           onOpenReview={() => {
@@ -743,6 +863,7 @@ function ManualAgentAffordances({
   reviewDraft,
   reviewOpen,
   reviewVersion,
+  draftTransitioning,
   onStartEdit,
   onUndo,
   onOpenReview,
@@ -762,6 +883,7 @@ function ManualAgentAffordances({
   reviewDraft: ManualDraft | null
   reviewOpen: boolean
   reviewVersion: ReviewVersion
+  draftTransitioning: boolean
   onStartEdit: () => void
   onUndo: () => void
   onOpenReview: () => void
@@ -834,18 +956,24 @@ function ManualAgentAffordances({
       {(mode === 'edit' || selectedSection || editingSection) && !reviewOpen && (
         <section className="manual-edit-affordance" aria-label="Editable section preview">
           <div className="manual-edit-tools" aria-label="Inline edit toolbar" onMouseDown={(event) => event.preventDefault()}>
-            <button type="button" title="Edit section" aria-label="Edit section" onClick={onStartEdit}>
+            <button
+              type="button"
+              title="Edit section"
+              aria-label="Edit section"
+              disabled={draftTransitioning}
+              onClick={onStartEdit}
+            >
               <PencilLine size={15} />
             </button>
-            <button type="button" title="Undo" aria-label="Undo" disabled={!editingSection} onClick={onUndo}>
+            <button type="button" title="Undo" aria-label="Undo" disabled={!editingSection || draftTransitioning} onClick={onUndo}>
               <RefreshCcw size={15} />
             </button>
             <button type="button" title="Bold selected text" aria-label="Bold selected text">B</button>
             <button type="button" title="Italic selected text" aria-label="Italic selected text">I</button>
             <button type="button" title="Paragraph" aria-label="Paragraph">P</button>
-            <button type="button" title="Heading 2" aria-label="Heading 2" onClick={() => onInsertHeading(2)}>H2</button>
-            <button type="button" title="Heading 3" aria-label="Heading 3" onClick={() => onInsertHeading(3)}>H3</button>
-            <button type="button" title="Heading 4" aria-label="Heading 4" onClick={() => onInsertHeading(4)}>H4</button>
+            <button type="button" title="Heading 2" aria-label="Heading 2" disabled={draftTransitioning} onClick={() => onInsertHeading(2)}>H2</button>
+            <button type="button" title="Heading 3" aria-label="Heading 3" disabled={draftTransitioning} onClick={() => onInsertHeading(3)}>H3</button>
+            <button type="button" title="Heading 4" aria-label="Heading 4" disabled={draftTransitioning} onClick={() => onInsertHeading(4)}>H4</button>
             <button type="button" title="Bullet list" aria-label="Bullet list">*</button>
           </div>
           {draftError && <div className="manual-draft-error">{draftError}</div>}
@@ -1176,6 +1304,26 @@ function selectElementContents(element: HTMLElement) {
   selection?.addRange(range)
 }
 
+async function waitForEditableSection(root: () => HTMLElement | null, sectionId: string): Promise<HTMLElement | null> {
+  for (let attempt = 0; attempt < 40; attempt += 1) {
+    const element = findEditSectionElement(root(), sectionId)
+    if (element?.getAttribute('contenteditable') === 'true') {
+      return element
+    }
+    await waitForUiTick()
+  }
+  return null
+}
+
+function waitForUiTick(): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, 25))
+}
+
+function appendSmokeText(element: HTMLElement, marker: string) {
+  const target = element.querySelector<HTMLElement>('p') ?? element
+  target.textContent = normalizeEditedText(`${target.textContent ?? ''} ${marker}.`)
+}
+
 function filterGroups(groups: NavigationGroup[], query: string): NavigationGroup[] {
   const normalizedQuery = query.trim().toLowerCase()
   if (!normalizedQuery) return groups
@@ -1239,6 +1387,12 @@ function demoModeFromSearch(): DemoMode {
   const value = new URLSearchParams(window.location.search).get('archivist-demo')
   if (value === 'agent' || value === 'edit' || value === 'draft-review') return value
   return 'reader'
+}
+
+function smokeScenarioFromSearch(): SmokeScenario {
+  const value = new URLSearchParams(window.location.search).get('archivist-smoke')
+  if (value === 'edit-switch') return value
+  return null
 }
 
 function routeHash(documentId: string): string {

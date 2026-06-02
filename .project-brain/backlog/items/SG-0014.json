@@ -7,7 +7,7 @@
   "priority": "high",
   "confidence": "high",
   "created_at": "2026-05-26",
-  "updated_at": "2026-05-27",
+  "updated_at": "2026-06-02",
   "goal": "Port the old Markdown viewer, artifact renderer compatibility, inline manual editing, autosave draft capture, and proposal-review lens behavior into the standalone app.",
   "acceptance_criteria": [
     "Compatibility rendering preserves old Markdown reader behavior",
@@ -311,6 +311,50 @@
         "residual_risks": [
           "Pending draft text remains visible in the old/new review lens rather than being rendered inline in the article until a proper rendered draft preview path exists.",
           "Single active editor click-away behavior, anchored hover edit affordance, between-section insertion controls, and toolbar iconography remain separate requested changes."
+        ]
+      },
+      {
+        "completed_at": "2026-06-02T00:55:27Z",
+        "addressed_requested_change": "Allow only one active editable section at a time. Clicking into another section, clicking away, or otherwise leaving the active section must autosave the former section as a pending draft before any new section becomes editable.",
+        "changed_surfaces": [
+          "src/main.tsx now serializes section transitions through an awaited draft-save path before assigning a new contenteditable section.",
+          "src/main.tsx exposes editor transition state and active editable section metadata for browser evidence, and disables edit/heading controls while a draft transition is saving.",
+          "src/main.tsx adds an edit-switch smoke probe that appends text in one section, activates another section, and asserts the former section was saved as a pending manual draft while only one section remains contenteditable.",
+          "scripts/smoke_archivist.py adds an archivist-smoke=edit-switch browser route with screenshot evidence for single-active-editor autosave behavior."
+        ],
+        "validation_commands": [
+          {
+            "command": "python3 -m py_compile scripts/smoke_archivist.py service/archivist_service.py",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run smoke:all",
+            "result": "passed",
+            "evidence": ".tmp/archivist-smoke/all-20260602T005457Z/summary.json"
+          },
+          {
+            "command": "python3 \"${CODEX_HOME:-$HOME/.codex}/skills/senku-prep/scripts/brain.py\" validate",
+            "result": "passed"
+          },
+          {
+            "command": "git diff --check",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          ".tmp/archivist-smoke/all-20260602T005457Z/summary.json",
+          ".tmp/archivist-smoke/all-20260602T005457Z/browser-summary.json",
+          ".tmp/archivist-smoke/all-20260602T005457Z/screenshots/edit-switch-autosave.png",
+          ".tmp/archivist-smoke/all-20260602T005457Z/screenshots/edit-mode.png",
+          ".tmp/archivist-smoke/all-20260602T005457Z/screenshots/draft-review-lens.png"
+        ],
+        "residual_risks": [
+          "Clicking away from the active section now uses the same autosave transition path; the browser smoke specifically covers switching from one editable section to another.",
+          "Anchored hover edit affordance, formatting toolbar hidden-until-edit behavior, between-section insertion affordances, and office-style iconography remain separate focused passes."
         ]
       }
     ],

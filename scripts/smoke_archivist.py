@@ -17,6 +17,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.error import URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
@@ -527,8 +528,13 @@ def chrome_binary() -> str:
     raise SmokeError("No headless Chrome binary found; expected google-chrome, chromium, or chromium-browser.")
 
 
-def route_url(doc_id: str, demo_mode: str | None = None) -> str:
-    query = f"?archivist-demo={demo_mode}" if demo_mode else ""
+def route_url(doc_id: str, demo_mode: str | None = None, smoke_mode: str | None = None) -> str:
+    params = {}
+    if demo_mode:
+        params["archivist-demo"] = demo_mode
+    if smoke_mode:
+        params["archivist-smoke"] = smoke_mode
+    query = f"?{urlencode(params)}" if params else ""
     return f"{APP_BASE_URL}/{query}#/workspaces/epp-full/documents/{doc_id}"
 
 
@@ -664,6 +670,20 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "Original version",
                 "Draft review probe",
                 "Browser smoke manual draft",
+            ],
+        },
+        "edit-switch-autosave": {
+            "url": route_url(PLACEHOLDER_HEAVY_DOC_ID, "edit", "edit-switch"),
+            "markers": [
+                "Single active editor smoke",
+                "single-active-editor passed",
+                "Browser smoke switched section autosave",
+                "data-active-edit-section-id",
+                "data-editor-transition-state=\"idle\"",
+            ],
+            "absent_markers": [
+                "single-active-editor failed",
+                "data-editor-transition-state=\"saving\"",
             ],
         },
     }
