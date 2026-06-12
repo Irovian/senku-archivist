@@ -841,12 +841,21 @@ def normalized_manual_draft_state(workspace_id: str, document_id: str, payload: 
         draft_text = str(draft.get("draft_text", ""))
         source = str(draft.get("source", "manual_edit"))
         status = str(draft.get("status", "pending"))
+        change_type = str(draft.get("change_type", "")).strip()
+        insert_after_section_id = draft.get("insert_after_section_id")
+        insert_before_section_id = draft.get("insert_before_section_id")
         if not section_id:
             continue
         if source not in MANUAL_DRAFT_SOURCES:
             source = "manual_edit"
         if status not in MANUAL_DRAFT_STATUSES:
             status = "pending"
+        if change_type not in {"replace_section", "insert_section"}:
+            change_type = ""
+        if insert_after_section_id is not None:
+            insert_after_section_id = str(insert_after_section_id).strip() or None
+        if insert_before_section_id is not None:
+            insert_before_section_id = str(insert_before_section_id).strip() or None
         validation_messages = draft.get("validation_messages", [])
         if not isinstance(validation_messages, list):
             validation_messages = []
@@ -865,6 +874,9 @@ def normalized_manual_draft_state(workspace_id: str, document_id: str, payload: 
                 "validation_messages": validation_messages,
                 "source": source,
                 "status": status,
+                **({"change_type": change_type} if change_type else {}),
+                **({"insert_after_section_id": insert_after_section_id} if insert_after_section_id is not None else {}),
+                **({"insert_before_section_id": insert_before_section_id} if insert_before_section_id is not None else {}),
                 "created_at": str(draft.get("created_at") or now),
                 "updated_at": now,
             }

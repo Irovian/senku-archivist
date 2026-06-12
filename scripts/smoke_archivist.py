@@ -33,7 +33,7 @@ SERVICE_BASE_URL = f"http://127.0.0.1:{SERVICE_PORT}"
 APP_BASE_URL = f"http://127.0.0.1:{APP_PORT}"
 EVIDENCE_ROOT = ROOT / ".tmp" / "archivist-smoke"
 VIEWPORT = "1440,1000"
-CHROME_VIRTUAL_TIME_MS = "5000"
+CHROME_VIRTUAL_TIME_MS = "8000"
 
 DEFAULT_DOC_ID = "DOC-GOVERNANCE_AND_PLANNING-POLICY_AND_ORGANIZATIONAL_STATEMENTS"
 APPENDIX_A_DOC_ID = "DOC-APPENDICES-APPENDIX_A"
@@ -217,9 +217,12 @@ def start_app(evidence_dir: Path) -> ManagedProcess | None:
         return None
     if port_open(APP_PORT):
         raise SmokeError(f"Port {APP_PORT} is in use but {app_url} is not healthy.")
+    npm = shutil.which("npm") or shutil.which("npm.cmd")
+    if not npm:
+        raise SmokeError("npm executable was not found on PATH.")
     process = ManagedProcess(
         "vite-app",
-        ["npm", "run", "dev", "--", "--port", str(APP_PORT)],
+        [npm, "run", "dev", "--", "--port", str(APP_PORT)],
         evidence_dir / "vite.log",
     )
     process.start()
@@ -521,6 +524,20 @@ def run_service_smoke(evidence_dir: Path) -> dict[str, Any]:
 
 
 def chrome_binary() -> str:
+    configured = os.environ.get("ARCHIVIST_CHROME_BINARY")
+    if configured:
+        configured_path = Path(configured)
+        if configured_path.exists():
+            return str(configured_path)
+        raise SmokeError(f"ARCHIVIST_CHROME_BINARY does not exist: {configured}")
+    windows_candidates = [
+        Path(os.environ.get("PROGRAMFILES", "")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+        Path(os.environ.get("PROGRAMFILES(X86)", "")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+        Path(os.environ.get("LOCALAPPDATA", "")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+    ]
+    for candidate in windows_candidates:
+        if candidate.exists():
+            return str(candidate)
     for candidate in ["google-chrome", "chromium", "chromium-browser"]:
         path = shutil.which(candidate)
         if path:
@@ -548,7 +565,15 @@ def run_chrome(chrome: str, args: list[str], timeout: int = 45) -> subprocess.Co
         f"--virtual-time-budget={CHROME_VIRTUAL_TIME_MS}",
         *args,
     ]
-    completed = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=timeout)
+    completed = subprocess.run(
+        command,
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=timeout,
+    )
     if completed.returncode != 0:
         raise SmokeError(
             f"Chrome command failed with exit {completed.returncode}: {' '.join(command)}\n{completed.stderr}"
@@ -659,7 +684,7 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "manual-selected-block",
                 "Inline edit toolbar",
                 "Heading 2",
-                "Bold selected text",
+                "aria-label=\"Bold\"",
                 "## Purpose",
                 "Browser smoke manual draft",
             ],
@@ -698,16 +723,59 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
                 "Single active editor smoke",
                 "single-active-editor passed",
                 "editable-caret collapsed",
+                "persistent-toolbar followed",
                 "Browser smoke switched section autosave",
                 "Inline edit toolbar",
-                "Heading 2",
-                "Bold selected text",
+                "aria-label=\"Bold\"",
+                "aria-label=\"Italic\"",
+                "aria-label=\"Bullet list\"",
                 "data-active-edit-section-id",
+                "data-edit-mode-active=\"true\"",
                 "data-editor-transition-state=\"idle\"",
             ],
             "absent_markers": [
                 "single-active-editor failed",
                 "data-editor-transition-state=\"saving\"",
+                "aria-label=\"Edit section\"",
+                "aria-label=\"Paragraph\"",
+            ],
+        },
+        "formatting-toolbar": {
+            "url": route_url(PLACEHOLDER_HEAVY_DOC_ID, "edit", "formatting-toolbar"),
+            "markers": [
+                "Inline formatting smoke",
+                "formatting-toolbar passed",
+                "bold-selection saved",
+                "italic-selection saved",
+                "italic-selection visible",
+                "collapsed-bold typing",
+                "bullet-list saved",
+                "aria-label=\"Bold\"",
+                "aria-label=\"Italic\"",
+                "aria-label=\"Bullet list\"",
+            ],
+            "absent_markers": [
+                "formatting-toolbar failed",
+                "Bold selected text",
+                "Italic selected text",
+                "aria-label=\"Paragraph\"",
+                "aria-label=\"Edit section\"",
+            ],
+        },
+        "insert-heading-pin": {
+            "url": route_url(PLACEHOLDER_HEAVY_DOC_ID, "edit", "insert-heading"),
+            "markers": [
+                "Margin heading insert smoke",
+                "insert-heading passed",
+                "filtered H2 only",
+                "local placeholder-selected",
+                "placeholder-selected",
+                "data-active-edit-section-id=\"inserted-section-",
+            ],
+            "absent_markers": [
+                "insert-heading failed",
+                "Insert H3",
+                "Insert H4",
             ],
         },
     }
@@ -751,6 +819,14 @@ def run_browser_smoke(evidence_dir: Path) -> dict[str, Any]:
             dom = dump_dom(chrome, route["url"])
             assert_dom_markers(label, dom, route["markers"])
             assert_dom_absent(label, dom, route.get("absent_markers", []))
+            if label == "insert-heading-pin":
+                insert_state = data_from_envelope(seeded_draft_path)
+                inserted_drafts = [
+                    draft
+                    for draft in insert_state.get("drafts", [])
+                    if draft.get("change_type") == "insert_section"
+                ]
+                require(not inserted_drafts, "untouched inserted heading placeholder persisted to manual draft state")
             image_path = evidence_dir / "screenshots" / f"{label}.png"
             screenshot(chrome, route["url"], image_path)
             screenshots[label] = str(image_path.relative_to(ROOT))

@@ -185,6 +185,7 @@ export type BrowserDocument = {
 }
 
 export type ManualDraftSource = 'manual_edit' | 'model_proposal'
+export type ManualDraftChangeType = 'replace_section' | 'insert_section'
 
 export type ManualDraft = {
   draft_id: string
@@ -198,6 +199,9 @@ export type ManualDraft = {
   validation_messages?: string[]
   source: ManualDraftSource
   status: 'pending' | 'rejected'
+  change_type?: ManualDraftChangeType
+  insert_after_section_id?: string | null
+  insert_before_section_id?: string | null
   created_at?: string
   updated_at?: string
 }

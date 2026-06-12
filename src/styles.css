@@ -526,6 +526,11 @@ button:disabled {
   margin: 0 0 14px;
 }
 
+.document-paper em,
+.document-paper i {
+  font-style: italic;
+}
+
 .document-paper ul,
 .document-paper ol {
   margin: 0 0 18px 22px;
@@ -999,6 +1004,11 @@ button:disabled {
   outline-color: rgba(203, 142, 36, 0.3);
 }
 
+.document-paper .manual-inserted-section {
+  border-left: 3px solid rgba(8, 123, 145, 0.42);
+  padding-left: 12px;
+}
+
 .document-paper .editable-section:focus {
   outline-color: #087b91;
 }
@@ -1010,6 +1020,7 @@ button:disabled {
   z-index: 15;
   width: max-content;
   pointer-events: none;
+  transform: translateX(-100%);
   transition:
     top 90ms ease,
     left 90ms ease,
@@ -1036,7 +1047,7 @@ button:disabled {
 }
 
 .manual-edit-tools.expanded {
-  grid-template-columns: repeat(2, 30px);
+  grid-template-columns: repeat(4, 30px);
 }
 
 .manual-edit-tools button,
@@ -1054,6 +1065,7 @@ button:disabled {
 }
 
 .manual-edit-tools button:hover,
+.manual-edit-tools button[aria-pressed="true"],
 .manual-draft-handle button.active {
   border-color: #087b91;
   background: #087b91;
@@ -1064,6 +1076,56 @@ button:disabled {
 .manual-review-actions button:disabled {
   cursor: not-allowed;
   opacity: 0.48;
+}
+
+.manual-heading-insert-affordance {
+  position: absolute;
+  z-index: 16;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  pointer-events: auto;
+  transition:
+    top 90ms ease,
+    left 90ms ease,
+    opacity 120ms ease;
+}
+
+.manual-heading-insert-pin,
+.manual-heading-insert-menu button {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid rgba(8, 123, 145, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 24px rgba(8, 54, 71, 0.12);
+  color: #153d4d;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.manual-heading-insert-pin {
+  background: #087b91;
+  color: #ffffff;
+}
+
+.manual-heading-insert-menu {
+  display: flex;
+  gap: 5px;
+  border: 1px solid rgba(8, 123, 145, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 28px rgba(8, 54, 71, 0.12);
+  padding: 4px;
+}
+
+.manual-heading-insert-menu button:hover {
+  border-color: #087b91;
+  background: #087b91;
+  color: #ffffff;
 }
 
 .manual-draft-error {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import {
   AlertTriangle,
   Bookmark,
+  Bold as BoldIcon,
   BookOpen,
   CheckCircle2,
   ChevronDown,
@@ -12,13 +13,17 @@ import {
   FileText,
   GitBranch,
   History,
+  Italic as ItalicIcon,
+  List as ListIcon,
   Link2,
   LockKeyhole,
   PencilLine,
+  Plus,
   RefreshCcw,
   Search,
   Settings,
   Sparkles,
+  Undo2,
 } from 'lucide-react'
 import {
   listWorkspaces,
@@ -47,10 +52,22 @@ const WORKSPACE_ID = 'epp-full'
 type AppLoadState = 'loading' | 'ready' | 'error'
 type DemoMode = 'reader' | 'agent' | 'edit' | 'draft-review'
 type ReviewVersion = 'draft' | 'original'
-type SmokeScenario = 'edit-switch' | 'hover-handle' | null
+type SmokeScenario = 'edit-switch' | 'hover-handle' | 'insert-heading' | 'formatting-toolbar' | null
+type HeadingLevel = 2 | 3 | 4
 type PendingCaretPoint = { sectionId: string; x: number; y: number }
 type EditHandlePlacement = { sectionId: string; top: number; left: number }
+type InlineToolbarState = { bold: boolean; italic: boolean; bulletList: boolean }
+type HeadingInsertPlacement = {
+  slotId: string
+  top: number
+  left: number
+  afterSectionId: string | null
+  beforeSectionId: string | null
+  previousLevel: 1 | HeadingLevel
+  levels: HeadingLevel[]
+}
 type MagneticEditSection = { sectionId: string; element: HTMLElement; exact: boolean }
+const EMPTY_INLINE_TOOLBAR_STATE: InlineToolbarState = { bold: false, italic: false, bulletList: false }
 type DocumentLoadState =
   | { status: 'idle' | 'loading'; document: null; error: null }
   | { status: 'ready'; document: BrowserDocument; error: null }
@@ -374,29 +391,47 @@ function DocumentReader({
   const editingSectionIdRef = React.useRef<string | null>(null)
   const lastSavedDraftsRef = React.useRef<ManualDraft[]>([])
   const pendingCaretPointRef = React.useRef<PendingCaretPoint | null>(null)
+  const pendingHeadingSelectionRef = React.useRef<string | null>(null)
   const editHandlePlacementRef = React.useRef<EditHandlePlacement | null>(null)
+  const insertCounterRef = React.useRef(0)
   const smokeEditSwitchRanRef = React.useRef(false)
   const smokeHoverHandleRanRef = React.useRef(false)
+  const smokeInsertHeadingRanRef = React.useRef(false)
+  const smokeFormattingRanRef = React.useRef(false)
   const readyDocument = documentState.status === 'ready' ? documentState.document : null
   const editable = Boolean(readyDocument?.metadata.editable)
-  const editSections = React.useMemo(() => readyDocument?.rendered.edit_sections ?? [], [readyDocument])
+  const sourceEditSections = React.useMemo(() => readyDocument?.rendered.edit_sections ?? [], [readyDocument])
   const [draftState, setDraftState] = React.useState<ManualDraftState | null>(null)
   const [draftError, setDraftError] = React.useState<string | null>(null)
   const [selectedSectionId, setSelectedSectionId] = React.useState<string | null>(null)
   const [editingSectionId, setEditingSectionId] = React.useState<string | null>(null)
+  const [editModeActive, setEditModeActive] = React.useState(false)
   const [reviewOpen, setReviewOpen] = React.useState(false)
   const [reviewIndex, setReviewIndex] = React.useState(0)
   const [reviewVersion, setReviewVersion] = React.useState<ReviewVersion>('draft')
   const [readerRenderVersion, setReaderRenderVersion] = React.useState(0)
   const [draftTransitioning, setDraftTransitioning] = React.useState(false)
   const [editHandlePlacement, setEditHandlePlacement] = React.useState<EditHandlePlacement | null>(null)
+  const [headingInsertPlacement, setHeadingInsertPlacement] = React.useState<HeadingInsertPlacement | null>(null)
+  const [inlineToolbarState, setInlineToolbarState] =
+    React.useState<InlineToolbarState>(EMPTY_INLINE_TOOLBAR_STATE)
   const [smokeEditSwitchStatus, setSmokeEditSwitchStatus] = React.useState<string | null>(null)
   const [smokeHoverHandleStatus, setSmokeHoverHandleStatus] = React.useState<string | null>(null)
+  const [smokeInsertHeadingStatus, setSmokeInsertHeadingStatus] = React.useState<string | null>(null)
+  const [smokeFormattingStatus, setSmokeFormattingStatus] = React.useState<string | null>(null)
   const smokeScenario = smokeScenarioFromSearch()
 
   const pendingDrafts = React.useMemo(
     () => draftState?.drafts.filter((draft) => draft.status === 'pending') ?? [],
     [draftState],
+  )
+  const insertDrafts = React.useMemo(
+    () => pendingDrafts.filter((draft) => draft.change_type === 'insert_section'),
+    [pendingDrafts],
+  )
+  const editSections = React.useMemo(
+    () => mergeEditSections(sourceEditSections, insertDrafts),
+    [insertDrafts, sourceEditSections],
   )
   const draftStateReady = draftState !== null
   const selectedSection = selectedSectionId
@@ -428,6 +463,11 @@ function DocumentReader({
       version: readerRenderVersion,
     }
   }, [readerRenderVersion, readyDocument])
+
+  React.useLayoutEffect(() => {
+    if (!readyDocument?.metadata.editable) return
+    rehydrateInsertedDraftSections(articleRef.current, insertDrafts)
+  }, [insertDrafts, readerRenderVersion, readyDocument?.doc_id, readyDocument?.metadata.editable])
 
   const persistDrafts = React.useCallback(
     async (drafts: ManualDraft[]) => {
@@ -487,6 +527,10 @@ function DocumentReader({
       if (!alreadyEditable || document.activeElement !== element) {
         focusEditableSection(element, caretPoint)
       }
+      if (pendingHeadingSelectionRef.current === sectionId) {
+        pendingHeadingSelectionRef.current = null
+        selectFirstHeadingText(element)
+      }
       return true
     },
     [editSections],
@@ -501,16 +545,28 @@ function DocumentReader({
       return false
     }
     const draftText = serializeEditedSection(element)
+    const existingManualDraft = pendingDrafts.find(
+      (draft) => draft.source === 'manual_edit' && draftSectionId(draft) === section.section_id,
+    )
     const otherDrafts = pendingDrafts.filter(
       (draft) => !(draftSectionId(draft) === section.section_id && draft.source === 'manual_edit'),
     )
-    const nextDrafts =
-      draftText && draftText !== section.original_text
-        ? [
-            ...otherDrafts,
-            buildManualDraft(section, draftText, 'manual_edit', validateSectionDraft(section, draftText)),
-          ]
-        : otherDrafts
+    const shouldKeepDraft =
+      draftText &&
+      draftText !== section.original_text &&
+      !(existingManualDraft?.change_type === 'insert_section' && draftText === existingManualDraft.draft_text)
+    const nextDrafts = shouldKeepDraft
+      ? [
+          ...otherDrafts,
+          buildManualDraft(
+            section,
+            draftText,
+            'manual_edit',
+            validateSectionDraft(section, draftText),
+            existingManualDraft,
+          ),
+        ]
+      : otherDrafts
     setEditingSectionId((current) => (current === section.section_id ? null : current))
     const saved = await persistDrafts(nextDrafts)
     if (saved) {
@@ -529,6 +585,7 @@ function DocumentReader({
         }
         setSelectedSectionId(sectionId)
         if (options.edit) {
+          setEditModeActive(true)
           setReviewOpen(false)
           setEditingSectionId(sectionId)
           window.requestAnimationFrame(() => syncEditableDomForSection(sectionId))
@@ -556,6 +613,7 @@ function DocumentReader({
     (sectionId?: string | null) => {
       pendingCaretPointRef.current = null
       const nextSectionId = sectionId ?? selectedSectionId ?? editSections[0]?.section_id
+      setEditModeActive(true)
       void activateSection(nextSectionId, { edit: true })
     },
     [activateSection, editSections, selectedSectionId],
@@ -570,24 +628,71 @@ function DocumentReader({
     [runDraftTransition, saveCurrentDraft],
   )
 
+  const refreshInlineToolbarState = React.useCallback(() => {
+    const sectionId = editingSectionIdRef.current
+    const activeElement = sectionId ? findEditSectionElement(articleRef.current, sectionId) : null
+    setInlineToolbarState(inlineToolbarStateFor(activeElement))
+  }, [])
+
+  const applyInlineEditorCommand = React.useCallback(
+    (command: 'bold' | 'italic' | 'insertUnorderedList') => {
+      const sectionId = editingSectionIdRef.current
+      const activeElement = sectionId ? findEditSectionElement(articleRef.current, sectionId) : null
+      if (!activeElement || draftTransitionRef.current) return
+      if (!selectionWithinElement(activeElement)) {
+        activeElement.focus({ preventScroll: true })
+        placeCaretAtEnd(activeElement)
+      }
+      try {
+        document.execCommand(command)
+      } catch {
+        return
+      }
+      activeElement.focus({ preventScroll: true })
+      window.requestAnimationFrame(refreshInlineToolbarState)
+    },
+    [refreshInlineToolbarState],
+  )
+
   const undoCurrentEdit = React.useCallback(() => {
     if (!editingSectionId) return
     setEditingSectionId(null)
     setReaderRenderVersion((version) => version + 1)
   }, [editingSectionId])
 
-  const insertHeading = React.useCallback(
-    (level: 2 | 3 | 4) => {
-      if (!editingSectionId) {
-        startEditing()
-        return
-      }
-      const element = findEditSectionElement(articleRef.current, editingSectionId)
-      if (element) {
-        insertHeadingAtSelection(element, level)
-      }
+  const insertHeadingSection = React.useCallback(
+    (placement: HeadingInsertPlacement, level: HeadingLevel) => {
+      if (!readyDocument?.metadata.editable) return
+      const nextDraft = buildInsertedHeadingDraft(placement, level, ++insertCounterRef.current)
+      void runDraftTransition(async () => {
+        let baseDrafts = pendingDrafts
+        const currentEditingSectionId = editingSectionIdRef.current
+        if (currentEditingSectionId) {
+          await saveCurrentDraft(currentEditingSectionId)
+          baseDrafts = lastSavedDraftsRef.current
+        }
+        const nextDrafts = [
+          ...baseDrafts.filter((draft) => draft.draft_id !== nextDraft.draft_id),
+          nextDraft,
+        ]
+        lastSavedDraftsRef.current = nextDrafts
+        setDraftState((current) => (current ? { ...current, drafts: nextDrafts } : current))
+        pendingHeadingSelectionRef.current = nextDraft.section_id
+        setReviewOpen(false)
+        setSelectedSectionId(nextDraft.section_id)
+        setEditingSectionId(nextDraft.section_id)
+        setHeadingInsertPlacement(null)
+        window.requestAnimationFrame(() => syncEditableDomForSection(nextDraft.section_id))
+      })
     },
-    [editingSectionId, startEditing],
+    [
+      pendingDrafts,
+      persistDrafts,
+      readyDocument?.metadata.editable,
+      runDraftTransition,
+      saveCurrentDraft,
+      syncEditableDomForSection,
+    ],
   )
 
   const rejectDraft = React.useCallback(
@@ -617,14 +722,21 @@ function DocumentReader({
     setDraftError(null)
     setSelectedSectionId(null)
     setEditingSectionId(null)
+    setEditModeActive(false)
     setReviewOpen(false)
     setReviewIndex(0)
     setReaderRenderVersion(0)
     setEditHandlePlacement(null)
+    setHeadingInsertPlacement(null)
+    setInlineToolbarState(EMPTY_INLINE_TOOLBAR_STATE)
     setSmokeEditSwitchStatus(null)
     setSmokeHoverHandleStatus(null)
+    setSmokeInsertHeadingStatus(null)
+    setSmokeFormattingStatus(null)
     smokeEditSwitchRanRef.current = false
     smokeHoverHandleRanRef.current = false
+    smokeInsertHeadingRanRef.current = false
+    smokeFormattingRanRef.current = false
     if (!readyDocument?.metadata.editable) return
 
     let cancelled = false
@@ -663,7 +775,19 @@ function DocumentReader({
 
   React.useEffect(() => {
     editingSectionIdRef.current = editingSectionId
+    if (!editingSectionId) {
+      setInlineToolbarState(EMPTY_INLINE_TOOLBAR_STATE)
+    }
   }, [editingSectionId])
+
+  React.useEffect(() => {
+    if (!editingSectionId) return
+    refreshInlineToolbarState()
+    document.addEventListener('selectionchange', refreshInlineToolbarState)
+    return () => {
+      document.removeEventListener('selectionchange', refreshInlineToolbarState)
+    }
+  }, [editingSectionId, refreshInlineToolbarState])
 
   React.useEffect(() => {
     editHandlePlacementRef.current = editHandlePlacement
@@ -715,9 +839,13 @@ function DocumentReader({
         if (!firstElement) throw new Error('first section did not become editable')
         const firstSelectionCollapsed = window.getSelection()?.isCollapsed !== false
         appendSmokeText(firstElement, smokeMarker)
-        await activateSection(targetSection.section_id, { edit: true })
+        const targetElement = findEditSectionElement(articleRef.current, targetSection.section_id)
+        if (!targetElement) throw new Error('target section missing')
+        const targetRect = targetElement.getBoundingClientRect()
+        dispatchMouseClick(targetElement, targetRect.left + 24, targetRect.top + Math.min(46, targetRect.height / 2))
         const secondElement = await waitForEditableSection(() => articleRef.current, targetSection.section_id)
         if (!secondElement) throw new Error('second section did not become editable')
+        await waitForUiTick()
         const secondSelectionCollapsed = window.getSelection()?.isCollapsed !== false
         const activeElements = Array.from(
           articleRef.current?.querySelectorAll<HTMLElement>('.editable-section[contenteditable="true"]') ?? [],
@@ -731,15 +859,19 @@ function DocumentReader({
         )
         const onlySecondEditable =
           activeElements.length === 1 && activeElements[0]?.dataset.editSectionId === targetSection.section_id
+        const expandedHandle = findEditHandleElement(readerStageRef.current)
+        const toolbarFollowed =
+          expandedHandle?.dataset.hoverEditSectionId === targetSection.section_id &&
+          expandedHandle?.dataset.editHandleMode === 'expanded'
         const clickReadyCaret = firstSelectionCollapsed && secondSelectionCollapsed
-        if (!firstDraftSaved || !onlySecondEditable || !clickReadyCaret) {
+        if (!firstDraftSaved || !onlySecondEditable || !clickReadyCaret || !toolbarFollowed) {
           throw new Error(
-            `draft_saved=${String(firstDraftSaved)} caret_collapsed=${String(clickReadyCaret)} active_sections=${activeElements
+            `draft_saved=${String(firstDraftSaved)} caret_collapsed=${String(clickReadyCaret)} toolbar_followed=${String(toolbarFollowed)} active_sections=${activeElements
               .map((element) => element.dataset.editSectionId)
               .join(',')}`,
           )
         }
-        setSmokeEditSwitchStatus(`single-active-editor passed editable-caret collapsed ${smokeMarker}`)
+        setSmokeEditSwitchStatus(`single-active-editor passed editable-caret collapsed persistent-toolbar followed ${smokeMarker}`)
       } catch (caught) {
         setSmokeEditSwitchStatus(
           `single-active-editor failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
@@ -847,6 +979,171 @@ function DocumentReader({
     void runHoverProbe()
   }, [activateSection, draftStateReady, editSections, placeEditHandle, readyDocument, smokeScenario])
 
+  React.useEffect(() => {
+    if (
+      smokeScenario !== 'insert-heading' ||
+      smokeInsertHeadingRanRef.current ||
+      !readyDocument?.metadata.editable ||
+      !draftStateReady ||
+      sourceEditSections.length < 1
+    ) {
+      return
+    }
+    const firstSection = sourceEditSections[0]
+    smokeInsertHeadingRanRef.current = true
+
+    async function runInsertHeadingProbe() {
+      setSmokeInsertHeadingStatus('insert-heading running')
+      try {
+        const firstElement = findEditSectionElement(articleRef.current, firstSection.section_id)
+        if (!firstElement) throw new Error('first section missing')
+        const firstRect = firstElement.getBoundingClientRect()
+        dispatchPointerMove(readerStageRef.current, firstRect.left - 52, firstRect.top - 10)
+        await waitForUiTick()
+        const insertAffordance = findHeadingInsertElement(readerStageRef.current)
+        if (!insertAffordance) throw new Error('insert affordance missing')
+        const allowedLevels = insertAffordance.dataset.allowedHeadingLevels ?? ''
+        if (allowedLevels !== 'H2') {
+          throw new Error(`unexpected allowed levels ${allowedLevels}`)
+        }
+        const h2Button = Array.from(insertAffordance.querySelectorAll<HTMLButtonElement>('button')).find(
+          (button) => button.textContent?.trim() === 'H2',
+        )
+        if (!h2Button) throw new Error('H2 insert button missing')
+        h2Button.click()
+        const insertedElement = await waitForInsertedEditableSection(() => articleRef.current)
+        if (!insertedElement) throw new Error('inserted section did not become editable')
+        const insertedSectionId = insertedElement.dataset.editSectionId
+        const firstHeading = insertedElement.querySelector('h2, h3, h4')
+        const selection = window.getSelection()
+        const headingSelected =
+          firstHeading !== null &&
+          selection !== null &&
+          !selection.isCollapsed &&
+          firstHeading.contains(selection.anchorNode) &&
+          firstHeading.contains(selection.focusNode)
+        const localPlaceholderInserted = lastSavedDraftsRef.current.some(
+          (draft) =>
+            draft.status === 'pending' &&
+            draft.source === 'manual_edit' &&
+            draft.change_type === 'insert_section' &&
+            draftSectionId(draft) === insertedSectionId &&
+            draft.draft_text.includes('Add section text'),
+        )
+        if (!localPlaceholderInserted || !headingSelected) {
+          throw new Error(
+            `local_placeholder=${String(localPlaceholderInserted)} heading_selected=${String(headingSelected)}`,
+          )
+        }
+        setSmokeInsertHeadingStatus('insert-heading passed filtered H2 only local placeholder-selected')
+      } catch (caught) {
+        setSmokeInsertHeadingStatus(
+          `insert-heading failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
+        )
+      }
+    }
+
+    void runInsertHeadingProbe()
+  }, [draftStateReady, readyDocument?.metadata.editable, smokeScenario, sourceEditSections])
+
+  React.useEffect(() => {
+    if (
+      smokeScenario !== 'formatting-toolbar' ||
+      smokeFormattingRanRef.current ||
+      !readyDocument?.metadata.editable ||
+      !draftStateReady ||
+      editSections.length < 1
+    ) {
+      return
+    }
+    const formatSection = editSections.find((section) => section.block_types.includes('p')) ?? editSections[0]
+    smokeFormattingRanRef.current = true
+
+    async function runFormattingProbe() {
+      setSmokeFormattingStatus('formatting-toolbar running')
+      try {
+        await activateSection(formatSection.section_id, { edit: true })
+        const sectionElement = await waitForEditableSection(() => articleRef.current, formatSection.section_id)
+        if (!sectionElement) throw new Error('format section did not become editable')
+        await waitForUiTick()
+
+        const boldTarget = appendSmokeParagraph(sectionElement, formatSection.section_id, 'Browser smoke bold target')
+        const italicTarget = appendSmokeParagraph(sectionElement, formatSection.section_id, 'Browser smoke italic target')
+        const typingTarget = appendSmokeParagraph(sectionElement, formatSection.section_id, 'Browser smoke typing target')
+        const listTarget = appendSmokeParagraph(sectionElement, formatSection.section_id, 'Browser smoke list target')
+
+        selectElementContents(boldTarget)
+        clickEditToolbarButton(readerStageRef.current, 'bold')
+        await waitForUiTick()
+        const boldApplied = Boolean(boldTarget.querySelector('strong, b'))
+        const boldButton = findEditToolbarButton(readerStageRef.current, 'bold')
+        const boldPressed = boldButton?.getAttribute('aria-pressed') === 'true'
+
+        selectElementContents(italicTarget)
+        clickEditToolbarButton(readerStageRef.current, 'italic')
+        await waitForUiTick()
+        const italicElement = italicTarget.querySelector<HTMLElement>('em, i')
+        const italicApplied = Boolean(italicElement)
+        const italicVisible = italicElement ? computedFontStyleIsItalic(italicElement) : false
+
+        placeCaretAtEnd(typingTarget)
+        clickEditToolbarButton(readerStageRef.current, 'bold')
+        await waitForUiTick()
+        document.execCommand('insertText', false, ' collapsed bold typing')
+        await waitForUiTick()
+        const collapsedBoldApplied = Boolean(typingTarget.querySelector('strong, b'))
+        clickEditToolbarButton(readerStageRef.current, 'bold')
+
+        selectElementContents(listTarget)
+        clickEditToolbarButton(readerStageRef.current, 'bullet-list')
+        await waitForUiTick()
+        const listApplied = Boolean(sectionElement.querySelector('li'))
+
+        await saveCurrentDraft(formatSection.section_id)
+        const savedDraft = lastSavedDraftsRef.current.find(
+          (draft) =>
+            draft.status === 'pending' &&
+            draft.source === 'manual_edit' &&
+            draftSectionId(draft) === formatSection.section_id,
+        )
+        const savedText = savedDraft?.draft_text ?? ''
+        const boldSaved = savedText.includes('**Browser smoke bold target**')
+        const italicSaved = savedText.includes('*Browser smoke italic target*')
+        const collapsedBoldSaved = savedText.includes('** collapsed bold typing**')
+        const listSaved = savedText.includes('- Browser smoke list target')
+        if (
+          !boldApplied ||
+          !boldPressed ||
+          !italicApplied ||
+          !italicVisible ||
+          !collapsedBoldApplied ||
+          !listApplied ||
+          !boldSaved ||
+          !italicSaved ||
+          !collapsedBoldSaved ||
+          !listSaved
+        ) {
+          throw new Error(
+            `bold=${String(boldApplied)}/${String(boldSaved)} bold_pressed=${String(boldPressed)} italic=${String(
+              italicApplied,
+            )}/${String(italicVisible)}/${String(italicSaved)} collapsed=${String(collapsedBoldApplied)}/${String(
+              collapsedBoldSaved,
+            )} list=${String(listApplied)}/${String(listSaved)}`,
+          )
+        }
+        setSmokeFormattingStatus(
+          'formatting-toolbar passed bold-selection saved italic-selection saved italic-selection visible collapsed-bold typing bullet-list saved',
+        )
+      } catch (caught) {
+        setSmokeFormattingStatus(
+          `formatting-toolbar failed ${caught instanceof Error ? caught.message : 'unknown error'}`,
+        )
+      }
+    }
+
+    void runFormattingProbe()
+  }, [activateSection, draftStateReady, editSections, readyDocument?.metadata.editable, saveCurrentDraft, smokeScenario])
+
   if (documentState.status === 'idle' || documentState.status === 'loading') {
     return (
       <section className="reader-empty">
@@ -880,20 +1177,39 @@ function DocumentReader({
     const target = (event.target as HTMLElement).closest<HTMLElement>('.editable-section[data-edit-section-id]')
     const nextSectionId = target?.dataset.editSectionId
     if (!nextSectionId) return
-    if (demoMode === 'edit') {
+    const shouldEdit = demoMode === 'edit' || editModeActive || Boolean(editingSectionId)
+    if (shouldEdit) {
       pendingCaretPointRef.current = {
         sectionId: nextSectionId,
         x: event.clientX,
         y: event.clientY,
       }
     }
-    void activateSection(nextSectionId, { edit: demoMode === 'edit' })
+    void activateSection(nextSectionId, { edit: shouldEdit })
   }
 
   function handleReaderStagePointerMove(event: React.PointerEvent<HTMLElement>) {
     if (!editable || reviewOpen || draftTransitioning) return
     const handle = findEditHandleElement(readerStageRef.current)
     const pointerInHandle = handle ? pointInElement(handle, event.clientX, event.clientY) : false
+    const insertAffordance = findHeadingInsertElement(readerStageRef.current)
+    const pointerInInsertAffordance = insertAffordance ? pointInElement(insertAffordance, event.clientX, event.clientY) : false
+    const canShowHeadingInsert = demoMode === 'edit' || editModeActive || Boolean(editingSectionId)
+    if (canShowHeadingInsert && !pointerInHandle) {
+      const insertMatch = findHeadingInsertPlacement(
+        readerStageRef.current,
+        articleRef.current,
+        event.clientX,
+        event.clientY,
+      )
+      if (insertMatch) {
+        setHeadingInsertPlacement((current) => (sameHeadingInsertPlacement(current, insertMatch) ? current : insertMatch))
+      } else if (!pointerInInsertAffordance) {
+        setHeadingInsertPlacement(null)
+      }
+    } else if (!pointerInInsertAffordance) {
+      setHeadingInsertPlacement(null)
+    }
     if (editingSectionId) {
       if (editHandlePlacementRef.current?.sectionId !== editingSectionId) {
         placeEditHandle(editingSectionId)
@@ -913,9 +1229,11 @@ function DocumentReader({
 
   function handleReaderStagePointerLeave() {
     if (editingSectionId) {
+      setHeadingInsertPlacement(null)
       placeEditHandle(editingSectionId)
       return
     }
+    setHeadingInsertPlacement(null)
     setEditHandlePlacement(null)
   }
 
@@ -931,7 +1249,24 @@ function DocumentReader({
     }, 0)
   }
 
+  function handlePaperInput() {
+    refreshInlineToolbarState()
+  }
+
   function handlePaperKeyDown(event: React.KeyboardEvent<HTMLElement>) {
+    if ((event.ctrlKey || event.metaKey) && !event.altKey && editingSectionId) {
+      const shortcut = event.key.toLowerCase()
+      if (shortcut === 'b') {
+        event.preventDefault()
+        applyInlineEditorCommand('bold')
+        return
+      }
+      if (shortcut === 'i') {
+        event.preventDefault()
+        applyInlineEditorCommand('italic')
+        return
+      }
+    }
     if (event.key === 'Escape' && editingSectionId) {
       event.preventDefault()
       flushCurrentDraft()
@@ -945,6 +1280,7 @@ function DocumentReader({
       data-draft-count={pendingDrafts.length}
       data-editor-transition-state={draftTransitioning ? 'saving' : 'idle'}
       data-active-edit-section-id={editingSectionId ?? ''}
+      data-edit-mode-active={editModeActive}
       aria-busy={draftTransitioning}
     >
       {smokeEditSwitchStatus && (
@@ -955,6 +1291,16 @@ function DocumentReader({
       {smokeHoverHandleStatus && (
         <div hidden data-smoke-marker="Magnetic edit handle smoke" data-smoke-result={smokeHoverHandleStatus}>
           {smokeHoverHandleStatus}
+        </div>
+      )}
+      {smokeInsertHeadingStatus && (
+        <div hidden data-smoke-marker="Margin heading insert smoke" data-smoke-result={smokeInsertHeadingStatus}>
+          {smokeInsertHeadingStatus}
+        </div>
+      )}
+      {smokeFormattingStatus && (
+        <div hidden data-smoke-marker="Inline formatting smoke" data-smoke-result={smokeFormattingStatus}>
+          {smokeFormattingStatus}
         </div>
       )}
       <header className="reader-header manual-document-hero">
@@ -1001,6 +1347,7 @@ function DocumentReader({
           title={browserDocument.title}
           selectedSection={selectedSection}
           editingSection={editingSection}
+          editModeActive={editModeActive}
           draftCount={pendingDrafts.length}
           draftError={draftError}
           reviewDraft={reviewDraft}
@@ -1008,8 +1355,12 @@ function DocumentReader({
           reviewVersion={reviewVersion}
           draftTransitioning={draftTransitioning}
           editHandlePlacement={editHandlePlacement}
+          inlineToolbarState={inlineToolbarState}
           onStartEdit={() => startEditing(editHandlePlacement?.sectionId ?? selectedSectionId)}
           onUndo={undoCurrentEdit}
+          onBold={() => applyInlineEditorCommand('bold')}
+          onItalic={() => applyInlineEditorCommand('italic')}
+          onBulletList={() => applyInlineEditorCommand('insertUnorderedList')}
           onOpenReview={() => {
             setReviewVersion('draft')
             setReviewOpen(true)
@@ -1018,7 +1369,12 @@ function DocumentReader({
           onRejectDraft={rejectDraft}
           onReviewVersionChange={setReviewVersion}
           onCreateProposal={createProposalPreview}
-          onInsertHeading={insertHeading}
+        />
+
+        <ManualHeadingInsertAffordance
+          placement={headingInsertPlacement}
+          draftTransitioning={draftTransitioning}
+          onInsert={insertHeadingSection}
         />
 
         <ArtifactEntry artifacts={browserDocument.artifacts} />
@@ -1027,10 +1383,11 @@ function DocumentReader({
           <article
             key={`${browserDocument.doc_id}-${readerRenderVersion}`}
             ref={articleRef}
-            className={demoMode === 'edit' || editingSectionId ? 'document-paper manual-edit-preview' : 'document-paper'}
+            className={demoMode === 'edit' || editModeActive || editingSectionId ? 'document-paper manual-edit-preview' : 'document-paper'}
             aria-label={browserDocument.title}
             onBlur={handlePaperBlur}
             onClick={handlePaperClick}
+            onInput={handlePaperInput}
             onKeyDown={handlePaperKeyDown}
           />
           <aside className="anchor-rail" aria-label="Document context">
@@ -1090,6 +1447,7 @@ function ManualAgentAffordances({
   title,
   selectedSection,
   editingSection,
+  editModeActive,
   draftCount,
   draftError,
   reviewDraft,
@@ -1097,20 +1455,24 @@ function ManualAgentAffordances({
   reviewVersion,
   draftTransitioning,
   editHandlePlacement,
+  inlineToolbarState,
   onStartEdit,
   onUndo,
+  onBold,
+  onItalic,
+  onBulletList,
   onOpenReview,
   onCloseReview,
   onRejectDraft,
   onReviewVersionChange,
   onCreateProposal,
-  onInsertHeading,
 }: {
   mode: DemoMode
   editable: boolean
   title: string
   selectedSection: EditSection | null
   editingSection: EditSection | null
+  editModeActive: boolean
   draftCount: number
   draftError: string | null
   reviewDraft: ManualDraft | null
@@ -1118,14 +1480,17 @@ function ManualAgentAffordances({
   reviewVersion: ReviewVersion
   draftTransitioning: boolean
   editHandlePlacement: EditHandlePlacement | null
+  inlineToolbarState: InlineToolbarState
   onStartEdit: () => void
   onUndo: () => void
+  onBold: () => void
+  onItalic: () => void
+  onBulletList: () => void
   onOpenReview: () => void
   onCloseReview: () => void
   onRejectDraft: (draftId: string) => void | Promise<void>
   onReviewVersionChange: (version: ReviewVersion) => void
   onCreateProposal: () => void | Promise<void>
-  onInsertHeading: (level: 2 | 3 | 4) => void
 }) {
   if (!editable) {
     return (
@@ -1136,8 +1501,8 @@ function ManualAgentAffordances({
     )
   }
 
-  const controlsVisible = Boolean(editingSection)
-  const showEditHandle = Boolean(mode === 'edit' || selectedSection || editingSection || editHandlePlacement)
+  const controlsVisible = Boolean(editingSection || editModeActive)
+  const showEditHandle = Boolean(mode === 'edit' || selectedSection || editingSection || editModeActive || editHandlePlacement)
   const editHandleStyle = editHandlePlacement
     ? ({ top: `${editHandlePlacement.top}px`, left: `${editHandlePlacement.left}px` } as React.CSSProperties)
     : undefined
@@ -1208,27 +1573,54 @@ function ManualAgentAffordances({
             aria-label={controlsVisible ? 'Inline edit toolbar' : 'Edit section handle'}
             onMouseDown={(event) => event.preventDefault()}
           >
-            <button
-              type="button"
-              title="Edit section"
-              aria-label="Edit section"
-              disabled={draftTransitioning}
-              onClick={onStartEdit}
-            >
-              <PencilLine size={15} />
-            </button>
-            {controlsVisible && (
+            {!controlsVisible ? (
+              <button
+                type="button"
+                title="Edit section"
+                aria-label="Edit section"
+                disabled={draftTransitioning}
+                onClick={onStartEdit}
+              >
+                <PencilLine size={15} />
+              </button>
+            ) : (
               <>
                 <button type="button" title="Undo" aria-label="Undo" disabled={draftTransitioning} onClick={onUndo}>
-                  <RefreshCcw size={15} />
+                  <Undo2 size={15} />
                 </button>
-                <button type="button" title="Bold selected text" aria-label="Bold selected text">B</button>
-                <button type="button" title="Italic selected text" aria-label="Italic selected text">I</button>
-                <button type="button" title="Paragraph" aria-label="Paragraph">P</button>
-                <button type="button" title="Heading 2" aria-label="Heading 2" disabled={draftTransitioning} onClick={() => onInsertHeading(2)}>H2</button>
-                <button type="button" title="Heading 3" aria-label="Heading 3" disabled={draftTransitioning} onClick={() => onInsertHeading(3)}>H3</button>
-                <button type="button" title="Heading 4" aria-label="Heading 4" disabled={draftTransitioning} onClick={() => onInsertHeading(4)}>H4</button>
-                <button type="button" title="Bullet list" aria-label="Bullet list">*</button>
+                <button
+                  type="button"
+                  title="Bold"
+                  aria-label="Bold"
+                  aria-pressed={inlineToolbarState.bold}
+                  data-edit-command="bold"
+                  disabled={draftTransitioning}
+                  onClick={onBold}
+                >
+                  <BoldIcon size={15} />
+                </button>
+                <button
+                  type="button"
+                  title="Italic"
+                  aria-label="Italic"
+                  aria-pressed={inlineToolbarState.italic}
+                  data-edit-command="italic"
+                  disabled={draftTransitioning}
+                  onClick={onItalic}
+                >
+                  <ItalicIcon size={15} />
+                </button>
+                <button
+                  type="button"
+                  title="Bullet list"
+                  aria-label="Bullet list"
+                  aria-pressed={inlineToolbarState.bulletList}
+                  data-edit-command="bullet-list"
+                  disabled={draftTransitioning}
+                  onClick={onBulletList}
+                >
+                  <ListIcon size={15} />
+                </button>
               </>
             )}
           </div>
@@ -1286,6 +1678,49 @@ function ManualAgentAffordances({
         </section>
       )}
     </>
+  )
+}
+
+function ManualHeadingInsertAffordance({
+  placement,
+  draftTransitioning,
+  onInsert,
+}: {
+  placement: HeadingInsertPlacement | null
+  draftTransitioning: boolean
+  onInsert: (placement: HeadingInsertPlacement, level: HeadingLevel) => void
+}) {
+  if (!placement) return null
+  const style = { top: `${placement.top}px`, left: `${placement.left}px` } as React.CSSProperties
+  return (
+    <section
+      className="manual-heading-insert-affordance"
+      aria-label="Insert heading section"
+      data-heading-insert-slot={placement.slotId}
+      data-insert-after-section-id={placement.afterSectionId ?? ''}
+      data-insert-before-section-id={placement.beforeSectionId ?? ''}
+      data-allowed-heading-levels={placement.levels.map((level) => `H${level}`).join(',')}
+      style={style}
+      onMouseDown={(event) => event.preventDefault()}
+    >
+      <button className="manual-heading-insert-pin" type="button" title="Insert heading" aria-label="Insert heading">
+        <Plus size={15} />
+      </button>
+      <div className="manual-heading-insert-menu" aria-label="Heading level options">
+        {placement.levels.map((level) => (
+          <button
+            key={level}
+            type="button"
+            title={`Insert H${level}`}
+            aria-label={`Insert H${level}`}
+            disabled={draftTransitioning}
+            onClick={() => onInsert(placement, level)}
+          >
+            H{level}
+          </button>
+        ))}
+      </div>
+    </section>
   )
 }
 
@@ -1376,12 +1811,14 @@ function buildManualDraft(
   draftText: string,
   source: ManualDraftSource,
   validationMessages: string[] = [],
+  previousDraft?: ManualDraft,
 ): ManualDraft {
+  const heading = draftHeadingFromText(draftText) ?? section.heading
   return {
     draft_id: `${source}-${section.section_id}`,
     section_id: section.section_id,
     section_level: section.level,
-    section_heading: section.heading,
+    section_heading: heading,
     block_id: section.section_id,
     block_type: `h${section.level}`,
     original_text: section.original_text,
@@ -1389,6 +1826,77 @@ function buildManualDraft(
     validation_messages: validationMessages,
     source,
     status: 'pending',
+    change_type: previousDraft?.change_type,
+    insert_after_section_id: previousDraft?.insert_after_section_id,
+    insert_before_section_id: previousDraft?.insert_before_section_id,
+  }
+}
+
+function buildInsertedHeadingDraft(
+  placement: HeadingInsertPlacement,
+  level: HeadingLevel,
+  sequence: number,
+): ManualDraft {
+  const timestamp = Date.now().toString(36)
+  const sectionId = `inserted-section-${timestamp}-${sequence}`
+  const heading = `New H${level} Section`
+  const draftText = `${'#'.repeat(level)} ${heading}\n\nAdd section text`
+  return {
+    draft_id: `manual_edit-${sectionId}`,
+    section_id: sectionId,
+    section_level: level,
+    section_heading: heading,
+    block_id: sectionId,
+    block_type: `h${level}`,
+    original_text: '',
+    draft_text: draftText,
+    validation_messages: [],
+    source: 'manual_edit',
+    status: 'pending',
+    change_type: 'insert_section',
+    insert_after_section_id: placement.afterSectionId,
+    insert_before_section_id: placement.beforeSectionId,
+  }
+}
+
+function mergeEditSections(sourceSections: EditSection[], insertDrafts: ManualDraft[]): EditSection[] {
+  if (!insertDrafts.length) return sourceSections
+  const merged = [...sourceSections]
+  insertDrafts.forEach((draft) => {
+    const section = editSectionFromInsertDraft(draft)
+    const existingIndex = merged.findIndex((candidate) => candidate.section_id === section.section_id)
+    if (existingIndex >= 0) {
+      merged[existingIndex] = section
+      return
+    }
+    const beforeIndex = draft.insert_before_section_id
+      ? merged.findIndex((candidate) => candidate.section_id === draft.insert_before_section_id)
+      : -1
+    if (beforeIndex >= 0) {
+      merged.splice(beforeIndex, 0, section)
+      return
+    }
+    const afterIndex = draft.insert_after_section_id
+      ? merged.findIndex((candidate) => candidate.section_id === draft.insert_after_section_id)
+      : -1
+    if (afterIndex >= 0) {
+      merged.splice(afterIndex + 1, 0, section)
+      return
+    }
+    merged.push(section)
+  })
+  return merged
+}
+
+function editSectionFromInsertDraft(draft: ManualDraft): EditSection {
+  const level = normalizeHeadingLevel(draft.section_level)
+  return {
+    section_id: draftSectionId(draft),
+    level,
+    heading: draftHeadingFromText(draft.draft_text) || draft.section_heading || `New H${level} Section`,
+    original_text: '',
+    block_types: ['p', `h${level}` as 'h2' | 'h3' | 'h4'],
+    validation_messages: draft.validation_messages ?? [],
   }
 }
 
@@ -1428,6 +1936,24 @@ function proposalTextFor(text: string): string {
 
 function normalizeEditedText(value: string): string {
   return value.replace(/\u00a0/g, ' ').replace(/\s+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim()
+}
+
+function normalizeHeadingLevel(value: number): HeadingLevel {
+  if (value === 3 || value === 4) return value
+  return 2
+}
+
+function draftHeadingFromText(value: string): string | null {
+  const match = normalizeEditedText(value).match(/^#{2,4}\s+(.+)$/m)
+  return match?.[1]?.trim() || null
+}
+
+function draftBodyBlocks(value: string): string[] {
+  return normalizeEditedText(value)
+    .split(/\n{2,}/)
+    .filter((block) => !/^#{2,4}\s+/.test(block.trim()))
+    .map((block) => block.replace(/\n+/g, ' ').trim())
+    .filter(Boolean)
 }
 
 function validateSectionDraft(section: EditSection, draftText: string): string[] {
@@ -1519,33 +2045,175 @@ function measureEditHandlePlacement(
   return {
     sectionId,
     top: Math.round(sectionRect.top - stageRect.top + 8),
-    left: Math.round(sectionRect.left - stageRect.left - 72),
+    left: Math.round(sectionRect.right - stageRect.left - 8),
   }
 }
 
-function insertHeadingAtSelection(container: HTMLElement, level: 2 | 3 | 4) {
-  const selection = window.getSelection()
-  if (!selection) return
-  let range: Range
-  if (selection && selection.rangeCount > 0 && container.contains(selection.anchorNode)) {
-    range = selection.getRangeAt(0)
-  } else {
-    container.focus()
-    range = window.document.createRange()
-    range.selectNodeContents(container)
-    range.collapse(false)
-  }
+function rehydrateInsertedDraftSections(root: HTMLElement | null, drafts: ManualDraft[]) {
+  if (!root) return
+  root.querySelectorAll<HTMLElement>('.manual-inserted-section[data-inserted-draft="true"]').forEach((element) => {
+    element.remove()
+  })
+  drafts.forEach((draft) => {
+    const element = sectionElementFromInsertDraft(draft)
+    const beforeElement = draft.insert_before_section_id
+      ? findEditSectionElement(root, draft.insert_before_section_id)
+      : null
+    if (beforeElement) {
+      beforeElement.before(element)
+      return
+    }
+    const afterElement = draft.insert_after_section_id
+      ? findEditSectionElement(root, draft.insert_after_section_id)
+      : null
+    if (afterElement) {
+      afterElement.after(element)
+      return
+    }
+    root.append(element)
+  })
+}
+
+function sectionElementFromInsertDraft(draft: ManualDraft): HTMLElement {
+  const level = normalizeHeadingLevel(draft.section_level)
+  const sectionId = draftSectionId(draft)
+  const section = document.createElement('section')
+  section.className = 'editable-section manual-inserted-section manual-section-has-draft'
+  section.dataset.insertedDraft = 'true'
+  section.dataset.editSectionId = sectionId
+  section.dataset.editSectionLevel = `${level}`
+  section.dataset.editSectionHeading = draft.section_heading
+
   const heading = document.createElement(`h${level}`)
-  heading.textContent = `New H${level} Section`
-  heading.dataset.draftHeadingLevel = `${level}`
-  range.deleteContents()
-  range.insertNode(heading)
-  const spacer = document.createTextNode('\n')
-  heading.after(spacer)
-  const nextRange = document.createRange()
-  nextRange.selectNodeContents(heading)
-  selection.removeAllRanges()
-  selection.addRange(nextRange)
+  heading.className = 'editable-section-heading'
+  heading.dataset.editSectionChild = 'true'
+  heading.dataset.editSectionId = sectionId
+  heading.dataset.editBlockType = `h${level}`
+  appendInlineMarkdown(heading, draftHeadingFromText(draft.draft_text) || draft.section_heading || `New H${level} Section`)
+  section.append(heading)
+
+  const bodyBlocks = draftBodyBlocks(draft.draft_text)
+  bodyBlocks.forEach((block) => {
+    const paragraph = document.createElement('p')
+    paragraph.dataset.editSectionChild = 'true'
+    paragraph.dataset.editSectionId = sectionId
+    paragraph.dataset.editBlockType = 'p'
+    appendInlineMarkdown(paragraph, block)
+    section.append(paragraph)
+  })
+  if (!bodyBlocks.length) {
+    const paragraph = document.createElement('p')
+    paragraph.dataset.editSectionChild = 'true'
+    paragraph.dataset.editSectionId = sectionId
+    paragraph.dataset.editBlockType = 'p'
+    paragraph.textContent = 'Add section text'
+    section.append(paragraph)
+  }
+  return section
+}
+
+function appendInlineMarkdown(parent: HTMLElement, value: string) {
+  const pattern = /(\*\*([^*]+)\*\*|\*([^*]+)\*)/g
+  let cursor = 0
+  let match: RegExpExecArray | null
+  while ((match = pattern.exec(value))) {
+    if (match.index > cursor) {
+      parent.append(document.createTextNode(value.slice(cursor, match.index)))
+    }
+    const element = document.createElement(match[2] ? 'strong' : 'em')
+    element.textContent = match[2] ?? match[3] ?? ''
+    parent.append(element)
+    cursor = match.index + match[0].length
+  }
+  if (cursor < value.length) {
+    parent.append(document.createTextNode(value.slice(cursor)))
+  }
+}
+
+function findHeadingInsertPlacement(
+  stage: HTMLElement | null,
+  root: HTMLElement | null,
+  x: number,
+  y: number,
+): HeadingInsertPlacement | null {
+  if (!stage || !root) return null
+  const sections = Array.from(root.querySelectorAll<HTMLElement>('.editable-section[data-edit-section-id]'))
+  if (!sections.length) return null
+  const stageRect = stage.getBoundingClientRect()
+  let previousSection: HTMLElement | null = null
+  for (const section of sections) {
+    const rect = section.getBoundingClientRect()
+    const inGutter = x >= rect.left - 112 && x <= rect.left + 58
+    const inGap = y >= rect.top - 42 && y <= rect.top + 34
+    if (inGutter && inGap) {
+      return headingInsertPlacementFromBoundary(stageRect, section, previousSection, rect.top)
+    }
+    previousSection = section
+  }
+  const lastSection = sections[sections.length - 1]
+  const lastRect = lastSection.getBoundingClientRect()
+  const inFinalGutter = x >= lastRect.left - 112 && x <= lastRect.left + 58
+  const inFinalGap = y >= lastRect.bottom - 10 && y <= lastRect.bottom + 58
+  if (inFinalGutter && inFinalGap) {
+    return headingInsertPlacementFromBoundary(stageRect, null, lastSection, lastRect.bottom + 18)
+  }
+  return null
+}
+
+function headingInsertPlacementFromBoundary(
+  stageRect: DOMRect,
+  beforeElement: HTMLElement | null,
+  afterElement: HTMLElement | null,
+  boundaryY: number,
+): HeadingInsertPlacement {
+  const anchorElement = beforeElement ?? afterElement
+  const anchorRect = anchorElement?.getBoundingClientRect()
+  const beforeSectionId = beforeElement?.dataset.editSectionId ?? null
+  const afterSectionId = afterElement?.dataset.editSectionId ?? null
+  const previousLevel = headingLevelFromElement(afterElement) ?? 1
+  return {
+    slotId: `${afterSectionId ?? 'start'}--${beforeSectionId ?? 'end'}`,
+    top: Math.round(boundaryY - stageRect.top - 18),
+    left: Math.round((anchorRect?.left ?? stageRect.left + 56) - stageRect.left - 56),
+    afterSectionId,
+    beforeSectionId,
+    previousLevel,
+    levels: allowedHeadingLevels(previousLevel),
+  }
+}
+
+function sameHeadingInsertPlacement(
+  current: HeadingInsertPlacement | null,
+  next: HeadingInsertPlacement,
+): boolean {
+  return Boolean(
+    current &&
+      current.slotId === next.slotId &&
+      Math.abs(current.top - next.top) < 2 &&
+      Math.abs(current.left - next.left) < 2 &&
+      current.levels.join(',') === next.levels.join(','),
+  )
+}
+
+function findHeadingInsertElement(root: HTMLElement | null): HTMLElement | null {
+  if (!root) return null
+  return root.querySelector<HTMLElement>('.manual-heading-insert-affordance')
+}
+
+function allowedHeadingLevels(previousLevel: 1 | HeadingLevel): HeadingLevel[] {
+  const maxLevel = Math.min(previousLevel + 1, 4) as HeadingLevel
+  const levels: HeadingLevel[] = []
+  for (let level = 2; level <= maxLevel; level += 1) {
+    levels.push(level as HeadingLevel)
+  }
+  return levels
+}
+
+function headingLevelFromElement(element: HTMLElement | null): 1 | HeadingLevel | null {
+  if (!element) return null
+  const rawLevel = Number(element.dataset.editSectionLevel)
+  if (rawLevel === 2 || rawLevel === 3 || rawLevel === 4) return rawLevel
+  return null
 }
 
 function serializeEditedSection(element: HTMLElement): string {
@@ -1562,32 +2230,40 @@ function serializeEditedSection(element: HTMLElement): string {
     }
     const tagName = child.tagName.toLowerCase()
     if (/^h[2-4]$/.test(tagName)) {
-      pushBlock(`${'#'.repeat(Number(tagName.slice(1)))} ${child.textContent ?? ''}`)
+      pushBlock(`${'#'.repeat(Number(tagName.slice(1)))} ${serializeInlineNodes(child)}`)
       return
     }
     if (tagName === 'li') {
-      pushBlock(`- ${child.textContent ?? ''}`)
+      pushBlock(`- ${serializeInlineNodes(child)}`)
       return
     }
     if (tagName === 'ul' || tagName === 'ol') {
       Array.from(child.children).forEach((listItem, index) => {
         if (!(listItem instanceof HTMLElement) || listItem.tagName.toLowerCase() !== 'li') return
         const marker = tagName === 'ol' ? `${index + 1}.` : '-'
-        pushBlock(`${marker} ${listItem.textContent ?? ''}`)
+        pushBlock(`${marker} ${serializeInlineNodes(listItem)}`)
       })
       return
     }
     if (tagName === 'blockquote') {
-      pushBlock(`> ${child.textContent ?? ''}`)
+      pushBlock(`> ${serializeInlineNodes(child)}`)
+      return
+    }
+    if (hasEditableBlockChildren(child)) {
+      Array.from(child.childNodes).forEach((nested) => {
+        if (nested instanceof HTMLElement && isEditableBlockElement(nested)) {
+          serializeElement(nested)
+        } else if (nested.nodeType === Node.TEXT_NODE) {
+          pushBlock(nested.textContent ?? '')
+        }
+      })
       return
     }
     if (tagName === 'p') {
-      pushBlock(child.textContent ?? '')
+      pushBlock(serializeInlineNodes(child))
       return
     }
-    Array.from(child.children).forEach((nested) => {
-      if (nested instanceof HTMLElement) serializeElement(nested)
-    })
+    pushBlock(serializeInlineNodes(child))
   }
 
   Array.from(element.childNodes).forEach((child) => {
@@ -1599,6 +2275,57 @@ function serializeEditedSection(element: HTMLElement): string {
   })
 
   return normalizeEditedText(blocks.join('\n\n'))
+}
+
+function serializeInlineNodes(parent: Node): string {
+  return Array.from(parent.childNodes).map(serializeInlineNode).join('')
+}
+
+function serializeInlineNode(node: Node): string {
+  if (node.nodeType === Node.TEXT_NODE) {
+    return node.textContent ?? ''
+  }
+  if (!(node instanceof HTMLElement)) return ''
+  if (node.getAttribute('contenteditable') === 'false' || node.closest('[contenteditable="false"]')) {
+    return ''
+  }
+  const tagName = node.tagName.toLowerCase()
+  if (tagName === 'br') return '\n'
+  const content = serializeInlineNodes(node)
+  if (!content) return ''
+  if (tagName === 'strong' || tagName === 'b' || inlineFontWeightIsBold(node)) {
+    return `**${content}**`
+  }
+  if (tagName === 'em' || tagName === 'i' || node.style.fontStyle === 'italic') {
+    return `*${content}*`
+  }
+  if (tagName === 'code') {
+    return `\`${content.replace(/`/g, '')}\``
+  }
+  return content
+}
+
+function inlineFontWeightIsBold(element: HTMLElement): boolean {
+  const rawWeight = element.style.fontWeight
+  if (!rawWeight) return false
+  if (rawWeight === 'bold' || rawWeight === 'bolder') return true
+  const numericWeight = Number(rawWeight)
+  return Number.isFinite(numericWeight) && numericWeight >= 600
+}
+
+function computedFontStyleIsItalic(element: HTMLElement): boolean {
+  return window.getComputedStyle(element).fontStyle === 'italic'
+}
+
+function isEditableBlockElement(element: HTMLElement): boolean {
+  const tagName = element.tagName.toLowerCase()
+  return /^(h[2-4]|p|ul|ol|li|blockquote|div)$/.test(tagName)
+}
+
+function hasEditableBlockChildren(element: HTMLElement): boolean {
+  return Array.from(element.children).some(
+    (child) => child instanceof HTMLElement && isEditableBlockElement(child),
+  )
 }
 
 function cssEscape(value: string): string {
@@ -1614,6 +2341,16 @@ function focusEditableSection(element: HTMLElement, caretPoint: PendingCaretPoin
     return
   }
   placeCaretAtEnd(element)
+}
+
+function selectFirstHeadingText(element: HTMLElement) {
+  const heading = element.querySelector<HTMLElement>('h2, h3, h4')
+  if (!heading) return
+  const selection = window.getSelection()
+  const range = window.document.createRange()
+  range.selectNodeContents(heading)
+  selection?.removeAllRanges()
+  selection?.addRange(range)
 }
 
 function placeCaretAtPoint(container: HTMLElement, x: number, y: number): boolean {
@@ -1655,6 +2392,55 @@ function placeCaretAtEnd(element: HTMLElement) {
   selection?.addRange(range)
 }
 
+function selectionWithinElement(element: HTMLElement): boolean {
+  const selection = window.getSelection()
+  if (!selection || selection.rangeCount === 0) return false
+  const anchorNode = selection.anchorNode
+  const focusNode = selection.focusNode
+  return Boolean(anchorNode && focusNode && element.contains(anchorNode) && element.contains(focusNode))
+}
+
+function selectionElementWithin(element: HTMLElement): HTMLElement | null {
+  const selection = window.getSelection()
+  const node = selection?.focusNode ?? selection?.anchorNode
+  if (!node || !element.contains(node)) return null
+  return node instanceof HTMLElement ? node : node.parentElement
+}
+
+function inlineToolbarStateFor(element: HTMLElement | null): InlineToolbarState {
+  if (!element || !selectionWithinElement(element)) {
+    return EMPTY_INLINE_TOOLBAR_STATE
+  }
+  const selectionElement = selectionElementWithin(element)
+  return {
+    bold:
+      queryCommandStateSafely('bold') ||
+      Boolean(selectionElement?.closest('strong, b')) ||
+      Boolean(selectionElement && inlineFontWeightIsBold(selectionElement)),
+    italic:
+      queryCommandStateSafely('italic') ||
+      Boolean(selectionElement?.closest('em, i')) ||
+      selectionElement?.style.fontStyle === 'italic',
+    bulletList: queryCommandStateSafely('insertUnorderedList') || Boolean(selectionElement?.closest('li')),
+  }
+}
+
+function queryCommandStateSafely(command: string): boolean {
+  try {
+    return document.queryCommandState(command)
+  } catch {
+    return false
+  }
+}
+
+function selectElementContents(element: HTMLElement) {
+  const range = document.createRange()
+  range.selectNodeContents(element)
+  const selection = window.getSelection()
+  selection?.removeAllRanges()
+  selection?.addRange(range)
+}
+
 async function waitForEditableSection(root: () => HTMLElement | null, sectionId: string): Promise<HTMLElement | null> {
   for (let attempt = 0; attempt < 40; attempt += 1) {
     const element = findEditSectionElement(root(), sectionId)
@@ -1666,6 +2452,38 @@ async function waitForEditableSection(root: () => HTMLElement | null, sectionId:
   return null
 }
 
+async function waitForInsertedEditableSection(root: () => HTMLElement | null): Promise<HTMLElement | null> {
+  for (let attempt = 0; attempt < 40; attempt += 1) {
+    const element = root()?.querySelector<HTMLElement>(
+      '.manual-inserted-section[data-inserted-draft="true"][contenteditable="true"]',
+    )
+    if (element) return element
+    await waitForUiTick()
+  }
+  return null
+}
+
+function appendSmokeParagraph(sectionElement: HTMLElement, sectionId: string, text: string): HTMLElement {
+  const paragraph = document.createElement('p')
+  paragraph.dataset.editSectionChild = 'true'
+  paragraph.dataset.editSectionId = sectionId
+  paragraph.dataset.editBlockType = 'p'
+  paragraph.textContent = text
+  sectionElement.append(paragraph)
+  return paragraph
+}
+
+function findEditToolbarButton(root: HTMLElement | null, command: string): HTMLButtonElement | null {
+  if (!root) return null
+  return root.querySelector<HTMLButtonElement>(`.manual-edit-tools [data-edit-command="${cssEscape(command)}"]`)
+}
+
+function clickEditToolbarButton(root: HTMLElement | null, command: string) {
+  const button = findEditToolbarButton(root, command)
+  if (!button) throw new Error(`${command} toolbar button missing`)
+  button.click()
+}
+
 function waitForUiTick(): Promise<void> {
   return new Promise((resolve) => window.setTimeout(resolve, 25))
 }
@@ -1674,6 +2492,17 @@ function dispatchPointerMove(element: HTMLElement | null, clientX: number, clien
   element?.dispatchEvent(
     new PointerEvent('pointermove', {
       bubbles: true,
+      clientX,
+      clientY,
+    }),
+  )
+}
+
+function dispatchMouseClick(element: HTMLElement | null, clientX: number, clientY: number) {
+  element?.dispatchEvent(
+    new MouseEvent('click', {
+      bubbles: true,
+      cancelable: true,
       clientX,
       clientY,
     }),
@@ -1754,6 +2583,8 @@ function smokeScenarioFromSearch(): SmokeScenario {
   const value = new URLSearchParams(window.location.search).get('archivist-smoke')
   if (value === 'edit-switch') return value
   if (value === 'hover-handle') return value
+  if (value === 'insert-heading') return value
+  if (value === 'formatting-toolbar') return value
   return null
 }
 

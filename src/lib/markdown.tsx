@@ -6,6 +6,7 @@ export type MarkdownBlock =
   | { kind: 'list'; items: string[] }
 
 const placeholderPattern = /(\{\{[^}]+}})/g
+const inlineTokenPattern = /(\{\{[^}]+}}|\*\*([^*]+)\*\*|\*([^*]+)\*)/g
 
 export function placeholdersIn(markdown: string): string[] {
   return Array.from(new Set(markdown.match(placeholderPattern) ?? [])).sort()
@@ -66,18 +67,32 @@ export function parseMarkdown(markdown: string): MarkdownBlock[] {
 }
 
 export function renderInline(text: string): ReactNode[] {
-  return text.split(placeholderPattern).map((part, index) => {
-    if (placeholderPattern.test(part)) {
-      placeholderPattern.lastIndex = 0
-      return (
-        <span className="placeholder-token" key={`${part}-${index}`}>
-          {part}
-        </span>
-      )
+  const nodes: ReactNode[] = []
+  let cursor = 0
+  let match: RegExpExecArray | null
+
+  inlineTokenPattern.lastIndex = 0
+  while ((match = inlineTokenPattern.exec(text))) {
+    if (match.index > cursor) {
+      nodes.push(text.slice(cursor, match.index))
     }
-    placeholderPattern.lastIndex = 0
-    return part
-  })
+    if (match[0].startsWith('{{')) {
+      nodes.push(
+        <span className="placeholder-token" key={`${match[0]}-${match.index}`}>
+          {match[0]}
+        </span>,
+      )
+    } else if (match[2]) {
+      nodes.push(<strong key={`strong-${match.index}`}>{match[2]}</strong>)
+    } else if (match[3]) {
+      nodes.push(<em key={`em-${match.index}`}>{match[3]}</em>)
+    }
+    cursor = match.index + match[0].length
+  }
+  if (cursor < text.length) {
+    nodes.push(text.slice(cursor))
+  }
+  return nodes
 }
 
 function slugify(value: string): string {
